@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "FocusTube - Distraction Remover for YouTube",
+  "description": "Eliminate Shorts videos and irrelevant recommendations on YouTube for a distraction-free viewing experience.",
+  "version": "2.2.4",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://www.youtube.com/*",
+    "*://m.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "front.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*",
+      "*://www.youtube.com/*",
+      "*://m.youtube.com/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
