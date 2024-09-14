@@ -5,9 +5,7 @@ let hideShortsEnabled = true;
 let hideSuggestionsEnabled = true;
 let hideBlacklistedChannelsEnabled = true;
 let hideBlacklistedWordsEnabled = true;
-
-let initialSwitchStateStored = false;
-
+let hideHomePageContentEnabled = false;
 
 let blacklist = [];
 let blacklistWords = [];
@@ -50,13 +48,17 @@ function makeElementsVisibleByAttribute(attributeName, attributeValue) {
 
 function removeElementsByTextContent(textContent) {
   const elements = document.querySelectorAll(`yt-formatted-string`);
-  const matchedElements = Array.from(elements).filter((element) => element.textContent.trim() === textContent);
+  const matchedElements = Array.from(elements).filter(
+    (element) => element.textContent.trim() === textContent
+  );
   removeElements(matchedElements);
 }
 
 function makeElementsVisibleByTextContent(textContent) {
   const elements = document.querySelectorAll(`yt-formatted-string`);
-  const matchedElements = Array.from(elements).filter((element) => element.textContent.trim() === textContent);
+  const matchedElements = Array.from(elements).filter(
+    (element) => element.textContent.trim() === textContent
+  );
   makeElementsVisible(matchedElements);
 }
 
@@ -81,7 +83,7 @@ function makeElementsVisibleByTagName(tagName) {
 }
 
 function removeYtdVideoRendererWithShortsHref() {
-  const videoRendererElements = document.querySelectorAll('ytd-video-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-video-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
     const anchorElement = videoRendererElement.querySelector('a[href^="/shorts"]');
     if (anchorElement) {
@@ -91,7 +93,7 @@ function removeYtdVideoRendererWithShortsHref() {
 }
 
 function makeYtdVideoRendererWithShortsHrefVisible() {
-  const videoRendererElements = document.querySelectorAll('ytd-video-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-video-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
     const anchorElement = videoRendererElement.querySelector('a[href^="/shorts"]');
     if (anchorElement) {
@@ -105,10 +107,25 @@ function removeElementsByTitle(title) {
   removeElements(elements);
 }
 
+function makeElementsVisibleByTitle(title) {
+  const elements = document.querySelectorAll(`[title="${title}"]`);
+  makeElementsVisible(elements);
+}
+
+function isChannelInBlacklist(channelName) {
+  return blacklist.includes(channelName);
+}
+
+function isWordInBlacklistWords(word) {
+  return blacklistWords.some((blacklistWord) =>
+    word.toLowerCase().includes(blacklistWord.toLowerCase())
+  );
+}
+
 function removeBlacklistedVideos() {
-  const videoRendererElements = document.querySelectorAll('ytd-rich-grid-row ytd-rich-item-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-rich-item-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
-    const channelNameElement = videoRendererElement.querySelector('#text-container yt-formatted-string a');
+    const channelNameElement = videoRendererElement.querySelector("#channel-name #text a");
     if (channelNameElement) {
       const channelName = channelNameElement.textContent.trim();
       if (isChannelInBlacklist(channelName)) {
@@ -119,9 +136,9 @@ function removeBlacklistedVideos() {
 }
 
 function makeVisibleBlacklistedVideos() {
-  const videoRendererElements = document.querySelectorAll('ytd-rich-grid-row ytd-rich-item-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-rich-item-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
-    const channelNameElement = videoRendererElement.querySelector('#text-container yt-formatted-string a');
+    const channelNameElement = videoRendererElement.querySelector("#channel-name #text a");
     if (channelNameElement) {
       const channelName = channelNameElement.textContent.trim();
       if (isChannelInBlacklist(channelName)) {
@@ -131,14 +148,10 @@ function makeVisibleBlacklistedVideos() {
   });
 }
 
-function isChannelInBlacklist(channelName) {
-  return blacklist.includes(channelName);
-}
-
 function removeBlacklistedWordsVideos() {
-  const videoRendererElements = document.querySelectorAll('ytd-rich-grid-row ytd-rich-item-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-rich-item-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
-    const videoTitleElement = videoRendererElement.querySelector('#video-title');
+    const videoTitleElement = videoRendererElement.querySelector("#video-title");
     if (videoTitleElement) {
       const videoTitle = videoTitleElement.textContent.trim();
       if (isWordInBlacklistWords(videoTitle)) {
@@ -149,25 +162,42 @@ function removeBlacklistedWordsVideos() {
 }
 
 function makeVisibleBlacklistedWordsVideos() {
-  const videoRendererElements = document.querySelectorAll('ytd-rich-grid-row ytd-rich-item-renderer');
+  const videoRendererElements = document.querySelectorAll("ytd-rich-item-renderer");
   videoRendererElements.forEach((videoRendererElement) => {
-    const videoTitleElement = videoRendererElement.querySelector('#video-title');
+    const videoTitleElement = videoRendererElement.querySelector("#video-title");
     if (videoTitleElement) {
       const videoTitle = videoTitleElement.textContent.trim();
       if (isWordInBlacklistWords(videoTitle)) {
-        videoRendererElement.style.display = ""; // Empty string to make it visible
+        videoRendererElement.style.display = "";
       }
     }
   });
 }
 
-function makeElementsVisibleByTitle(title) {
-  const elements = document.querySelectorAll(`[title="${title}"]`);
-  makeElementsVisible(elements);
+function removeHomePageContent() {
+  if (window.location.pathname === "/") {
+    const contentsElement = document.getElementById("contents");
+    if (contentsElement) {
+      contentsElement.style.display = "none";
+    }
+    const sections = document.querySelectorAll("ytd-rich-grid-renderer");
+    sections.forEach((section) => {
+      section.style.display = "none";
+    });
+  }
 }
 
-function isWordInBlacklistWords(word) {
-  return blacklistWords.some(blacklistWord => word.toLowerCase().includes(blacklistWord.toLowerCase()));
+function showHomePageContent() {
+  if (window.location.pathname === "/") {
+    const contentsElement = document.getElementById("contents");
+    if (contentsElement) {
+      contentsElement.style.display = "";
+    }
+    const sections = document.querySelectorAll("ytd-rich-grid-renderer");
+    sections.forEach((section) => {
+      section.style.display = "";
+    });
+  }
 }
 
 function handleDOMChangesBasedOnSwitches() {
@@ -197,26 +227,21 @@ function handleDOMChangesBasedOnSwitches() {
 
   if (hideBlacklistedChannelsEnabled) {
     removeBlacklistedVideos();
-  }else{
+  } else {
     makeVisibleBlacklistedVideos();
+  }
 
-  } if (hideBlacklistedWordsEnabled) {
+  if (hideBlacklistedWordsEnabled) {
     removeBlacklistedWordsVideos();
   } else {
     makeVisibleBlacklistedWordsVideos();
   }
-}
 
-function handleInitialStateMessage(message) {
-  hideShortsEnabled = message.state.hideShorts;
-  hideSuggestionsEnabled = message.state.hideSuggestions;
-  hideBlacklistedChannelsEnabled = message.state.hideBlacklistedChannels;
-  hideBlacklistedWordsEnabled = message.state.hideBlacklistedWords;
-  blacklist = message.state.blacklist;
-  blacklistWords = message.state.blacklistWords;
-  
-
-  handleDOMChangesBasedOnSwitches();
+  if (hideHomePageContentEnabled) {
+    removeHomePageContent();
+  } else {
+    showHomePageContent();
+  }
 }
 
 function observeDOMChanges() {
@@ -225,12 +250,49 @@ function observeDOMChanges() {
   }
 
   chrome.storage.sync.get(
-    ["hideShorts", "hideSuggestions", "hideBlacklistedChannels", "blacklist", "blacklistWords", "hideBlacklistedWords"],
+    [
+      "hideShorts",
+      "hideSuggestions",
+      "hideBlacklistedChannels",
+      "blacklist",
+      "blacklistWords",
+      "hideBlacklistedWords",
+      "hideHomePageContent",
+    ],
     (result) => {
-      hideShortsEnabled = result.hideShorts ?? true;
-      hideSuggestionsEnabled = result.hideSuggestions ?? true;
-      hideBlacklistedChannelsEnabled = result.hideBlacklistedChannels ?? true;
-      hideBlacklistedWordsEnabled = result.hideBlacklistedWords ?? true;
+      const defaultStates = {
+        hideShorts: true,
+        hideSuggestions: true,
+        hideBlacklistedChannels: true,
+        hideBlacklistedWords: true,
+        hideHomePageContent: false,
+      };
+
+      hideShortsEnabled =
+        result.hideShorts !== undefined ? result.hideShorts : defaultStates.hideShorts;
+      hideSuggestionsEnabled =
+        result.hideSuggestions !== undefined ? result.hideSuggestions : defaultStates.hideSuggestions;
+      hideBlacklistedChannelsEnabled =
+        result.hideBlacklistedChannels !== undefined
+          ? result.hideBlacklistedChannels
+          : defaultStates.hideBlacklistedChannels;
+      hideBlacklistedWordsEnabled =
+        result.hideBlacklistedWords !== undefined
+          ? result.hideBlacklistedWords
+          : defaultStates.hideBlacklistedWords;
+      hideHomePageContentEnabled =
+        result.hideHomePageContent !== undefined
+          ? result.hideHomePageContent
+          : defaultStates.hideHomePageContent;
+
+      console.log("Initial States:", {
+        hideShortsEnabled,
+        hideSuggestionsEnabled,
+        hideBlacklistedChannelsEnabled,
+        hideBlacklistedWordsEnabled,
+        hideHomePageContentEnabled,
+      });
+
       blacklist = result.blacklist ?? [];
       blacklistWords = result.blacklistWords ?? [];
 
@@ -239,7 +301,6 @@ function observeDOMChanges() {
       observer = new MutationObserver(() => {
         handleDOMChangesBasedOnSwitches();
         HTML = document.documentElement;
-        console.log("DOM changed");
       });
 
       const config = { childList: true, subtree: true };
@@ -248,11 +309,10 @@ function observeDOMChanges() {
   );
 }
 
-async function init() {
+function init() {
   chrome.runtime.onMessage.addListener((message) => {
-    if (message.type === "initialState") {
-      handleInitialStateMessage(message);
-    } else if (message.type === "switchChange") {
+    if (message.type === "switchChange") {
+      console.log("Received switchChange message:", message);
       if (message.switchType === "hideShorts") {
         hideShortsEnabled = message.state;
       } else if (message.switchType === "hideSuggestions") {
@@ -261,11 +321,42 @@ async function init() {
         hideBlacklistedChannelsEnabled = message.state;
       } else if (message.switchType === "blacklist") {
         blacklist = message.state;
-      }else if (message.switchType === "blacklistWords") {
+      } else if (message.switchType === "blacklistWords") {
         blacklistWords = message.state;
       } else if (message.switchType === "hideBlacklistedWords") {
         hideBlacklistedWordsEnabled = message.state;
+      } else if (message.switchType === "hideHomePageContent") {
+        hideHomePageContentEnabled = message.state;
       }
+      console.log("Updated States:", {
+        hideShortsEnabled,
+        hideSuggestionsEnabled,
+        hideBlacklistedChannelsEnabled,
+        hideBlacklistedWordsEnabled,
+        hideHomePageContentEnabled,
+      });
+      handleDOMChangesBasedOnSwitches();
+    }
+  });
+
+  chrome.storage.onChanged.addListener((changes, area) => {
+    if (area === "sync") {
+      for (let [key, { newValue }] of Object.entries(changes)) {
+        if (key === "hideShorts") hideShortsEnabled = newValue;
+        if (key === "hideSuggestions") hideSuggestionsEnabled = newValue;
+        if (key === "hideBlacklistedChannels") hideBlacklistedChannelsEnabled = newValue;
+        if (key === "blacklist") blacklist = newValue;
+        if (key === "blacklistWords") blacklistWords = newValue;
+        if (key === "hideBlacklistedWords") hideBlacklistedWordsEnabled = newValue;
+        if (key === "hideHomePageContent") hideHomePageContentEnabled = newValue;
+      }
+      console.log("Storage changed, updated states:", {
+        hideShortsEnabled,
+        hideSuggestionsEnabled,
+        hideBlacklistedChannelsEnabled,
+        hideBlacklistedWordsEnabled,
+        hideHomePageContentEnabled,
+      });
       handleDOMChangesBasedOnSwitches();
     }
   });

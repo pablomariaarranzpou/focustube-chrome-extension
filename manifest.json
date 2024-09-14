@@ -25,8 +25,5 @@
       "js": ["content.js"],
       "all_frames": true
     }
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+  ]
 }

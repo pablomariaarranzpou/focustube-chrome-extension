@@ -1,10 +1,13 @@
 function updateSwitchState(switchType, state) {
-  chrome.storage.sync.set({ [switchType]: state });
+  return new Promise((resolve) => {
+    chrome.storage.sync.set({ [switchType]: state }, resolve);
+  });
 }
 
-function handleSwitchChange(switchType, checkbox) {
+
+async function handleSwitchChange(switchType, checkbox) {
   const state = checkbox.checked;
-  updateSwitchState(switchType, state);
+  await updateSwitchState(switchType, state);
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs.length > 0) {
       chrome.tabs.sendMessage(tabs[0].id, {
@@ -17,17 +20,27 @@ function handleSwitchChange(switchType, checkbox) {
 }
 
 function handleCheckboxStates(states) {
+  const defaultStates = {
+    hideShorts: true,
+    hideSuggestions: true,
+    hideBlacklistedChannels: true,
+    hideBlacklistedWords: true,
+    hideHomePageContent: false,
+  };
+
   const checkboxMappings = {
-    "hideShortsCheckbox": "hideShorts",
-    "hideSuggestionsCheckbox": "hideSuggestions",
-    "hideBlacklistedCheckbox": "hideBlacklistedChannels",
-    "hideBlacklistedWordsCheckbox": "hideBlacklistedWords",
+    hideShortsCheckbox: "hideShorts",
+    hideSuggestionsCheckbox: "hideSuggestions",
+    hideBlacklistedCheckbox: "hideBlacklistedChannels",
+    hideBlacklistedWordsCheckbox: "hideBlacklistedWords",
+    hideHomePageContentCheckbox: "hideHomePageContent",
   };
 
   Object.entries(checkboxMappings).forEach(([checkboxId, switchType]) => {
     const checkbox = document.getElementById(checkboxId);
     if (checkbox) {
-      checkbox.checked = states[switchType] ?? true;
+      checkbox.checked =
+        states[switchType] !== undefined ? states[switchType] : defaultStates[switchType];
       checkbox.addEventListener("change", () => handleSwitchChange(switchType, checkbox));
     }
   });
@@ -36,15 +49,21 @@ function handleCheckboxStates(states) {
   updateBlacklistWordsList(states.blacklistWords ?? []);
 }
 
+
 function createBlacklistItem(channelId) {
   const blacklistItem = document.createElement("div");
   blacklistItem.className = "blacklist-item";
   blacklistItem.innerHTML = `<div class="channel-id">${channelId}</div><button class="remove-button">Remove</button>`;
   blacklistItem.querySelector(".remove-button").addEventListener("click", () => {
     chrome.storage.sync.get("blacklist", (result) => {
-      const updatedBlacklist = result.blacklist.filter(id => id !== channelId);
+      const updatedBlacklist = result.blacklist.filter((id) => id !== channelId);
       updateBlacklist(updatedBlacklist);
       blacklistItem.remove();
+      sendMessageToContentScript({
+        type: "switchChange",
+        switchType: "blacklist",
+        state: updatedBlacklist,
+      });
     });
   });
   return blacklistItem;
@@ -56,13 +75,28 @@ function createBlacklistWordsItem(word) {
   blacklistWordsItem.innerHTML = `<div class="word">${word}</div><button class="remove-button">Remove</button>`;
   blacklistWordsItem.querySelector(".remove-button").addEventListener("click", () => {
     chrome.storage.sync.get("blacklistWords", (result) => {
-      const updatedBlacklistWords = result.blacklistWords.filter(w => w !== word);
+      const updatedBlacklistWords = result.blacklistWords.filter((w) => w !== word);
       updateBlacklistWords(updatedBlacklistWords);
       blacklistWordsItem.remove();
+      sendMessageToContentScript({
+        type: "switchChange",
+        switchType: "blacklistWords",
+        state: updatedBlacklistWords,
+      });
     });
   });
   return blacklistWordsItem;
 }
+
+function sendMessageToContentScript(message) {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    if (tabs.length > 0) {
+      chrome.tabs.sendMessage(tabs[0].id, message);
+    }
+  });
+}
+
+
 
 function updateBlacklist(blacklist) {
   chrome.storage.sync.set({ blacklist: blacklist });
@@ -151,10 +185,3 @@ function handleAddToBlacklistWords() {
   }
 }
 
-function sendMessageToContentScript(message) {
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    if (tabs.length > 0) {
-      chrome.tabs.sendMessage(tabs[0].id, message);
-    }
-  });
-}
