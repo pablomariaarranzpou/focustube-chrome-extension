@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "FocusTube - YouTubeの気を散らす要素を除去"
+  },
+  "extensionDescription": {
+    "message": "YouTubeのショート動画や不要なおすすめを排除し、集中できる視聴体験を提供します。"
+  },
+  "hideShorts": {
+    "message": "ショート動画を非表示"
+  },
+  "hideSuggestions": {
+    "message": "おすすめを非表示"
+  },
+  "hideBlacklistedChannels": {
+    "message": "ブラックリストのチャンネルを非表示"
+  },
+  "hideBlacklistedWords": {
+    "message": "ブラックリストの単語を非表示"
+  },
+  "hideHomePageContent": {
+    "message": "ホームページのコンテンツを非表示"
+  },
+  "disableAutoplay": {
+    "message": "自動再生を無効化"
+  },
+  "editBlacklistedChannels": {
+    "message": "ブラックリストのチャンネルを編集"
+  },
+  "concentrationModeBlacklist": {
+    "message": "集中モードのブラックリスト"
+  },
+  "channelNamePlaceholder": {
+    "message": "チャンネル名"
+  },
+  "add": {
+    "message": "追加"
+  },
+  "editBlacklistedWords": {
+    "message": "ブラックリストの単語を編集"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "集中モードのブラックリスト単語"
+  },
+  "wordPlaceholder": {
+    "message": "例: ゲーム"
+  },
+  "remove": {
+    "message": "削除"
+  }
+}

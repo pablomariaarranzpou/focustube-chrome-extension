@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "FocusTube - Ablenkungen auf YouTube entfernen"
+  },
+  "extensionDescription": {
+    "message": "Eliminieren Sie Shorts-Videos und irrelevante Empfehlungen auf YouTube für ein ablenkungsfreies Seherlebnis."
+  },
+  "hideShorts": {
+    "message": "Shorts ausblenden"
+  },
+  "hideSuggestions": {
+    "message": "Vorschläge ausblenden"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Gesperrte Kanäle ausblenden"
+  },
+  "hideBlacklistedWords": {
+    "message": "Gesperrte Wörter ausblenden"
+  },
+  "hideHomePageContent": {
+    "message": "Inhalte der Startseite ausblenden"
+  },
+  "disableAutoplay": {
+    "message": "Autoplay deaktivieren"
+  },
+  "editBlacklistedChannels": {
+    "message": "Gesperrte Kanäle bearbeiten"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Blacklist für Konzentrationsmodus"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanalname"
+  },
+  "add": {
+    "message": "Hinzufügen"
+  },
+  "editBlacklistedWords": {
+    "message": "Gesperrte Wörter bearbeiten"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Blacklist-Wörter für Konzentrationsmodus"
+  },
+  "wordPlaceholder": {
+    "message": "Beispiel: Gaming"
+  },
+  "remove": {
+    "message": "Entfernen"
+  }
+}

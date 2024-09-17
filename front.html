@@ -1,78 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Existing head content -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Extension Settings</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <title><span class="i18n" data-message="extensionName"></span></title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+  />
   <style>
-    .toggle-container { display: inline-flex; align-items: center; cursor: pointer; }
-    .toggle-input { display: none; }
-    .toggle-slider { position: relative; width: 40px; height: 20px; border-radius: 999px; background-color: #ccc; transition: background-color 0.2s; }
-    .toggle-slider:before { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s; }
-    .toggle-input:checked + .toggle-slider { background-color: #f9737a; }
-    .toggle-input:checked + .toggle-slider:before { transform: translateX(20px); }
-    .extension-container { max-width: 600px; min-width: 400px; margin: 0 auto; }
-    .blacklist-item { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; background-color: #fddede; border: 1px solid #f9737a; border-radius: 8px; }
-    .blacklist-item .channel-id { flex: 1; margin-right: 1rem; }
+    .toggle-container {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .toggle-input {
+      display: none;
+    }
+    .toggle-slider {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      border-radius: 999px;
+      background-color: #ccc;
+      transition: background-color 0.2s;
+    }
+    .toggle-slider:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+    .toggle-input:checked + .toggle-slider {
+      background-color: #f9737a;
+    }
+    .toggle-input:checked + .toggle-slider:before {
+      transform: translateX(20px);
+    }
+    .extension-container {
+      max-width: 600px;
+      min-width: 400px;
+      margin: 0 auto;
+    }
+    .blacklist-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: #fddede;
+      border: 1px solid #f9737a;
+      border-radius: 8px;
+    }
+    .blacklist-item .channel-id {
+      flex: 1;
+      margin-right: 1rem;
+    }
   </style>
 </head>
 <body class="bg-gray-400">
   <div class="flex justify-center items-center">
     <div class="p-8 bg-white shadow-md rounded-md extension-container">
-      <img src="logo.png" alt="Logo" style="width: 100%; align-items: center;">
+      <img src="logo.png" alt="Logo" style="width: 100%; align-items: center;" />
       <div class="space-y-4">
+        <!-- Existing toggles with localization -->
         <label class="toggle-container">
-          <input type="checkbox" id="hideShortsCheckbox" class="toggle-input" checked>
+          <input type="checkbox" id="hideShortsCheckbox" class="toggle-input" checked />
           <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">Hide Shorts</span>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideShorts"></span>
         </label>
         <label class="toggle-container">
-          <input type="checkbox" id="hideSuggestionsCheckbox" class="toggle-input" checked>
+          <input
+            type="checkbox"
+            id="hideSuggestionsCheckbox"
+            class="toggle-input"
+            checked
+          />
           <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">Hide Suggestions</span>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSuggestions"></span>
         </label>
         <label class="toggle-container">
-          <input type="checkbox" id="hideBlacklistedCheckbox" class="toggle-input" checked>
+          <input
+            type="checkbox"
+            id="hideBlacklistedCheckbox"
+            class="toggle-input"
+            checked
+          />
           <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">Hide Blacklisted Channels</span>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedChannels"></span>
         </label>
         <label class="toggle-container">
-          <input type="checkbox" id="hideBlacklistedWordsCheckbox" class="toggle-input" checked>
+          <input
+            type="checkbox"
+            id="hideBlacklistedWordsCheckbox"
+            class="toggle-input"
+            checked
+          />
           <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">Hide Blacklisted Words</span>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedWords"></span>
         </label>
         <label class="toggle-container">
-          <input type="checkbox" id="hideHomePageContentCheckbox" class="toggle-input">
+          <input
+            type="checkbox"
+            id="hideHomePageContentCheckbox"
+            class="toggle-input"
+          />
           <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">Hide Home Page Content</span>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideHomePageContent"></span>
+        </label>
+        <!-- New toggle -->
+        <label class="toggle-container">
+          <input
+            type="checkbox"
+            id="hideAutoplayOverlayCheckbox"
+            class="toggle-input"
+          />
+          <div class="toggle-slider"></div>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="disableAutoplay"></span>
         </label>
       </div>
-      <hr class="my-4 border-t border-gray-300">
+      <hr class="my-4 border-t border-gray-300" />
+      <!-- Existing blacklist sections -->
       <label class="toggle-container toggle-blacklist">
-        <button id="toggleBlacklistButton" class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300">Edit List Blacklisted Channels</button>
+        <button
+          id="toggleBlacklistButton"
+          class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+          data-message="editBlacklistedChannels"
+        >
+        </button>
       </label>
       <label class="toggle-container">
         <div id="blacklistContainer" class="space-y-4">
-          <h2 class="text-xl font-medium text-gray-900">Concentration Mode Blacklist</h2>
+          <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklist"></h2>
           <div class="flex justify-between items-center">
-            <input type="text" id="blacklistInput" class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Channel Name">
-            <button id="blacklistButton" class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300">Add</button>
+            <input
+              type="text"
+              id="blacklistInput"
+              class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+              placeholder=""
+            />
+            <button
+              id="blacklistButton"
+              class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+              data-message="add"
+            >
+            </button>
           </div>
           <div id="blacklistList" class="space-y-2"></div>
         </div>
       </label>
-      <br>
-      <br>
+      <br />
+      <br />
       <label class="toggle-container toggle-blacklist-words">
-        <button id="toggleBlacklistWordsButton" class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300">Edit List Blacklisted Words</button>
+        <button
+          id="toggleBlacklistWordsButton"
+          class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+          data-message="editBlacklistedWords"
+        >
+        </button>
       </label>
       <label class="toggle-container">
         <div id="wordsBlacklistContainer" class="space-y-4">
-          <h2 class="text-xl font-medium text-gray-900">Concentration Mode Blacklist Words</h2>
+          <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklistWords"></h2>
           <div class="flex justify-between items-center">
-            <input type="text" id="blacklistWordsInput" class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Ex: Gaming">
-            <button id="blacklistButtonWords" class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300">Add</button>
+            <input
+              type="text"
+              id="blacklistWordsInput"
+              class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+              placeholder=""
+            />
+            <button
+              id="blacklistButtonWords"
+              class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+              data-message="add"
+            >
+            </button>
           </div>
           <div id="blacklistListWords" class="space-y-2"></div>
         </div>

@@ -1,9 +1,10 @@
+// popup.js
+
 function updateSwitchState(switchType, state) {
   return new Promise((resolve) => {
     chrome.storage.sync.set({ [switchType]: state }, resolve);
   });
 }
-
 
 async function handleSwitchChange(switchType, checkbox) {
   const state = checkbox.checked;
@@ -26,6 +27,7 @@ function handleCheckboxStates(states) {
     hideBlacklistedChannels: true,
     hideBlacklistedWords: true,
     hideHomePageContent: false,
+    hideAutoplayOverlay: false, // Added
   };
 
   const checkboxMappings = {
@@ -34,6 +36,7 @@ function handleCheckboxStates(states) {
     hideBlacklistedCheckbox: "hideBlacklistedChannels",
     hideBlacklistedWordsCheckbox: "hideBlacklistedWords",
     hideHomePageContentCheckbox: "hideHomePageContent",
+    hideAutoplayOverlayCheckbox: "hideAutoplayOverlay", // Added
   };
 
   Object.entries(checkboxMappings).forEach(([checkboxId, switchType]) => {
@@ -48,7 +51,6 @@ function handleCheckboxStates(states) {
   updateBlacklistList(states.blacklist ?? []);
   updateBlacklistWordsList(states.blacklistWords ?? []);
 }
-
 
 function createBlacklistItem(channelId) {
   const blacklistItem = document.createElement("div");
@@ -96,8 +98,6 @@ function sendMessageToContentScript(message) {
   });
 }
 
-
-
 function updateBlacklist(blacklist) {
   chrome.storage.sync.set({ blacklist: blacklist });
 }
@@ -109,13 +109,17 @@ function updateBlacklistWords(blacklistWords) {
 function updateBlacklistList(blacklist) {
   const blacklistList = document.getElementById("blacklistList");
   blacklistList.innerHTML = "";
-  blacklist.forEach(channelId => blacklistList.appendChild(createBlacklistItem(channelId)));
+  blacklist.forEach((channelId) =>
+    blacklistList.appendChild(createBlacklistItem(channelId))
+  );
 }
 
 function updateBlacklistWordsList(blacklistWords) {
   const blacklistWordsList = document.getElementById("blacklistListWords");
   blacklistWordsList.innerHTML = "";
-  blacklistWords.forEach(word => blacklistWordsList.appendChild(createBlacklistWordsItem(word)));
+  blacklistWords.forEach((word) =>
+    blacklistWordsList.appendChild(createBlacklistWordsItem(word))
+  );
 }
 
 function monitorStorageChanges() {
@@ -141,16 +145,53 @@ function toggleVisibility(elementId) {
 
 async function startPopup() {
   document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll('.i18n');
+      elements.forEach(el => {
+        const messageName = el.getAttribute('data-message');
+        el.textContent = chrome.i18n.getMessage(messageName);
+      });
+      const blacklistInput = document.getElementById('blacklistInput');
+      if (blacklistInput) {
+        blacklistInput.placeholder = chrome.i18n.getMessage('channelNamePlaceholder');
+      }
+      const blacklistWordsInput = document.getElementById('blacklistWordsInput');
+      if (blacklistWordsInput) {
+        blacklistWordsInput.placeholder = chrome.i18n.getMessage('wordPlaceholder');
+      }
+
+      // Set document title
+      document.title = chrome.i18n.getMessage('extensionName');
     blacklistContainer.style.display = "none";
     wordsBlacklistContainer.style.display = "none";
-    document.getElementById("toggleBlacklistButton").addEventListener("click", () => toggleVisibility("blacklistContainer"));
-    document.getElementById("toggleBlacklistWordsButton").addEventListener("click", () => toggleVisibility("wordsBlacklistContainer"));
-    
-    document.getElementById("blacklistButton").addEventListener("click", handleAddToBlacklist);
-    document.getElementById("blacklistButtonWords").addEventListener("click", handleAddToBlacklistWords);
+    document
+      .getElementById("toggleBlacklistButton")
+      .addEventListener("click", () => toggleVisibility("blacklistContainer"));
+    document
+      .getElementById("toggleBlacklistWordsButton")
+      .addEventListener("click", () => toggleVisibility("wordsBlacklistContainer"));
+
+    document
+      .getElementById("blacklistButton")
+      .addEventListener("click", handleAddToBlacklist);
+    document
+      .getElementById("blacklistButtonWords")
+      .addEventListener("click", handleAddToBlacklistWords);
 
     monitorStorageChanges();
-    chrome.storage.sync.get(["hideSuggestions", "hideShorts", "hideBlacklistedChannels", "hideBlacklistedWords", "blacklist", "blacklistWords"], handleCheckboxStates);
+    chrome.storage.sync.get(
+      [
+        "hideSuggestions",
+        "hideShorts",
+        "hideBlacklistedChannels",
+        "hideBlacklistedWords",
+        "hideHomePageContent",
+        "hideAutoplayOverlay",
+        "blacklist",
+        "blacklistWords",
+      ],
+      handleCheckboxStates
+    );
   });
 }
 
@@ -161,11 +202,12 @@ function handleAddToBlacklist() {
   const channelId = blacklistInput.value.trim();
   if (channelId) {
     chrome.storage.sync.get("blacklist", (result) => {
-      const updatedBlacklist = result.blacklist ? [...result.blacklist, channelId] : [channelId];
+      const updatedBlacklist = result.blacklist
+        ? [...result.blacklist, channelId]
+        : [channelId];
       updateBlacklist(updatedBlacklist);
       blacklistInput.value = "";
-      sendMessageToContentScript({action: "updateBlacklist"});
-      
+      sendMessageToContentScript({ action: "updateBlacklist" });
     });
   }
 }
@@ -175,13 +217,12 @@ function handleAddToBlacklistWords() {
   const word = blacklistWordsInput.value.trim();
   if (word) {
     chrome.storage.sync.get("blacklistWords", (result) => {
-      const updatedBlacklistWords = result.blacklistWords ? [...result.blacklistWords, word] : [word];
+      const updatedBlacklistWords = result.blacklistWords
+        ? [...result.blacklistWords, word]
+        : [word];
       updateBlacklistWords(updatedBlacklistWords);
       blacklistWordsInput.value = "";
-     
-      sendMessageToContentScript({action: "updateBlacklistWords"});
-
+      sendMessageToContentScript({ action: "updateBlacklistWords" });
     });
   }
 }
-

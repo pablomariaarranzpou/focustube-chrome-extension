@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Удаление отвлекающих факторов на YouTube"
+    },
+    "extensionDescription": {
+      "message": "Устраняйте видео Shorts и нерелевантные рекомендации на YouTube для просмотра без отвлечений."
+    },
+    "hideShorts": {
+      "message": "Скрыть Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Скрыть рекомендации"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Скрыть заблокированные каналы"
+    },
+    "hideBlacklistedWords": {
+      "message": "Скрыть заблокированные слова"
+    },
+    "hideHomePageContent": {
+      "message": "Скрыть содержимое главной страницы"
+    },
+    "disableAutoplay": {
+      "message": "Отключить автозапуск"
+    },
+    "editBlacklistedChannels": {
+      "message": "Редактировать заблокированные каналы"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Черный список режима концентрации"
+    },
+    "channelNamePlaceholder": {
+      "message": "Название канала"
+    },
+    "add": {
+      "message": "Добавить"
+    },
+    "editBlacklistedWords": {
+      "message": "Редактировать заблокированные слова"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Черный список слов режима концентрации"
+    },
+    "wordPlaceholder": {
+      "message": "Пример: Игры"
+    },
+    "remove": {
+      "message": "Удалить"
+    }
+  }
+  

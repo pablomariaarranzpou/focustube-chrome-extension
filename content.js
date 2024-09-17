@@ -1,3 +1,5 @@
+// content.js
+
 let HTML = document.documentElement;
 let observer = null;
 
@@ -6,6 +8,7 @@ let hideSuggestionsEnabled = true;
 let hideBlacklistedChannelsEnabled = true;
 let hideBlacklistedWordsEnabled = true;
 let hideHomePageContentEnabled = false;
+let hideAutoplayOverlayEnabled = false; // Added
 
 let blacklist = [];
 let blacklistWords = [];
@@ -200,6 +203,50 @@ function showHomePageContent() {
   }
 }
 
+// Added functions to remove and show autoplay overlay
+function removeAutoplayOverlay() {
+  const classNames = [
+    "ytp-autonav-endscreen-countdown-container",
+    "ytp-autonav-endscreen-small-mode",
+    "ytp-autonav-endscreen-upnext-no-alternative-header",
+    "ytp-player-content",
+    "ytp-next-button",
+  ];
+  classNames.forEach((className) => {
+    const elements = document.getElementsByClassName(className);
+    Array.from(elements).forEach((element) => {
+      element.style.display = "none";
+    });
+  });
+
+  // Disable autoplay
+  const autoplayToggle = document.querySelector(".ytp-autonav-toggle-button");
+  if (autoplayToggle && autoplayToggle.getAttribute("aria-checked") === "true") {
+    autoplayToggle.click();
+  }
+}
+
+function showAutoplayOverlay() {
+  const classNames = [
+    "ytp-autonav-endscreen-countdown-container",
+    "ytp-autonav-endscreen-small-mode",
+    "ytp-autonav-endscreen-upnext-no-alternative-header",
+    "ytp-player-content",
+  ];
+  classNames.forEach((className) => {
+    const elements = document.getElementsByClassName(className);
+    Array.from(elements).forEach((element) => {
+      element.style.display = "";
+    });
+  });
+
+  // Enable autoplay
+  const autoplayToggle = document.querySelector(".ytp-autonav-toggle-button");
+  if (autoplayToggle && autoplayToggle.getAttribute("aria-checked") === "false") {
+    autoplayToggle.click();
+  }
+}
+
 function handleDOMChangesBasedOnSwitches() {
   if (hideShortsEnabled) {
     removeElementsByAttribute("is-shorts", "");
@@ -242,6 +289,12 @@ function handleDOMChangesBasedOnSwitches() {
   } else {
     showHomePageContent();
   }
+
+  if (hideAutoplayOverlayEnabled) {
+    removeAutoplayOverlay(); // Added
+  } else {
+    showAutoplayOverlay(); // Added
+  }
 }
 
 function observeDOMChanges() {
@@ -258,6 +311,7 @@ function observeDOMChanges() {
       "blacklistWords",
       "hideBlacklistedWords",
       "hideHomePageContent",
+      "hideAutoplayOverlay", // Added
     ],
     (result) => {
       const defaultStates = {
@@ -266,12 +320,15 @@ function observeDOMChanges() {
         hideBlacklistedChannels: true,
         hideBlacklistedWords: true,
         hideHomePageContent: false,
+        hideAutoplayOverlay: false, // Added
       };
 
       hideShortsEnabled =
         result.hideShorts !== undefined ? result.hideShorts : defaultStates.hideShorts;
       hideSuggestionsEnabled =
-        result.hideSuggestions !== undefined ? result.hideSuggestions : defaultStates.hideSuggestions;
+        result.hideSuggestions !== undefined
+          ? result.hideSuggestions
+          : defaultStates.hideSuggestions;
       hideBlacklistedChannelsEnabled =
         result.hideBlacklistedChannels !== undefined
           ? result.hideBlacklistedChannels
@@ -284,6 +341,10 @@ function observeDOMChanges() {
         result.hideHomePageContent !== undefined
           ? result.hideHomePageContent
           : defaultStates.hideHomePageContent;
+      hideAutoplayOverlayEnabled =
+        result.hideAutoplayOverlay !== undefined
+          ? result.hideAutoplayOverlay
+          : defaultStates.hideAutoplayOverlay;
 
       console.log("Initial States:", {
         hideShortsEnabled,
@@ -291,6 +352,7 @@ function observeDOMChanges() {
         hideBlacklistedChannelsEnabled,
         hideBlacklistedWordsEnabled,
         hideHomePageContentEnabled,
+        hideAutoplayOverlayEnabled,
       });
 
       blacklist = result.blacklist ?? [];
@@ -327,6 +389,8 @@ function init() {
         hideBlacklistedWordsEnabled = message.state;
       } else if (message.switchType === "hideHomePageContent") {
         hideHomePageContentEnabled = message.state;
+      } else if (message.switchType === "hideAutoplayOverlay") {
+        hideAutoplayOverlayEnabled = message.state; // Added
       }
       console.log("Updated States:", {
         hideShortsEnabled,
@@ -334,6 +398,7 @@ function init() {
         hideBlacklistedChannelsEnabled,
         hideBlacklistedWordsEnabled,
         hideHomePageContentEnabled,
+        hideAutoplayOverlayEnabled, // Added
       });
       handleDOMChangesBasedOnSwitches();
     }
@@ -349,6 +414,7 @@ function init() {
         if (key === "blacklistWords") blacklistWords = newValue;
         if (key === "hideBlacklistedWords") hideBlacklistedWordsEnabled = newValue;
         if (key === "hideHomePageContent") hideHomePageContentEnabled = newValue;
+        if (key === "hideAutoplayOverlay") hideAutoplayOverlayEnabled = newValue; // Added
       }
       console.log("Storage changed, updated states:", {
         hideShortsEnabled,
@@ -356,6 +422,7 @@ function init() {
         hideBlacklistedChannelsEnabled,
         hideBlacklistedWordsEnabled,
         hideHomePageContentEnabled,
+        hideAutoplayOverlayEnabled, // Added
       });
       handleDOMChangesBasedOnSwitches();
     }

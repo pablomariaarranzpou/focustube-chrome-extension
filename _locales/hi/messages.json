@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube के लिए विचलन हटाने वाला"
+    },
+    "extensionDescription": {
+      "message": "YouTube पर Shorts वीडियो और अप्रासंगिक सिफारिशों को समाप्त करें, एक विचलन-मुक्त देखने का अनुभव प्राप्त करें।"
+    },
+    "hideShorts": {
+      "message": "Shorts छुपाएं"
+    },
+    "hideSuggestions": {
+      "message": "सुझाव छुपाएं"
+    },
+    "hideBlacklistedChannels": {
+      "message": "ब्लैकलिस्ट किए गए चैनल छुपाएं"
+    },
+    "hideBlacklistedWords": {
+      "message": "ब्लैकलिस्ट किए गए शब्द छुपाएं"
+    },
+    "hideHomePageContent": {
+      "message": "होम पेज सामग्री छुपाएं"
+    },
+    "disableAutoplay": {
+      "message": "ऑटोप्ले अक्षम करें"
+    },
+    "editBlacklistedChannels": {
+      "message": "ब्लैकलिस्ट किए गए चैनल संपादित करें"
+    },
+    "concentrationModeBlacklist": {
+      "message": "कंसंट्रेशन मोड ब्लैकलिस्ट"
+    },
+    "channelNamePlaceholder": {
+      "message": "चैनल नाम"
+    },
+    "add": {
+      "message": "जोड़ें"
+    },
+    "editBlacklistedWords": {
+      "message": "ब्लैकलिस्ट किए गए शब्द संपादित करें"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "कंसंट्रेशन मोड ब्लैकलिस्ट शब्द"
+    },
+    "wordPlaceholder": {
+      "message": "उदा: गेमिंग"
+    },
+    "remove": {
+      "message": "हटाएं"
+    }
+  }
+  

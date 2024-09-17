@@ -1,0 +1,47 @@
+{
+  "extensionName": {
+    "message": "FocusTube - Eliminador de Distracciones para YouTube"
+  },
+  "extensionDescription": {
+    "message": "Elimina los Shorts y videos recomendados irrelevantes en YouTube para una experiencia sin distracciones."
+  },
+  "hideShorts": {
+    "message": "Ocultar Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Ocultar Sugerencias"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Ocultar Canales en la Lista Negra"
+  },
+  "hideBlacklistedWords": {
+    "message": "Ocultar Palabras en la Lista Negra"
+  },
+  "hideHomePageContent": {
+    "message": "Ocultar Contenido de la Página Principal"
+  },
+  "disableAutoplay": {
+    "message": "Desactivar Reproducción Automática"
+  },
+  "editBlacklistedChannels": {
+    "message": "Editar Canales en la Lista Negra"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Lista Negra del Modo Concentración"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nombre del Canal"
+  },
+  "add": {
+    "message": "Agregar"
+  },
+  "editBlacklistedWords": {
+    "message": "Editar Palabras en la Lista Negra"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Lista Negra de Palabras del Modo Concentración"
+  },
+  "wordPlaceholder": {
+    "message": "Ej: Call of Duty"
+  }
+}

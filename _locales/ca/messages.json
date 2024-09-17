@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Eliminador de Distraccions a YouTube"
+    },
+    "extensionDescription": {
+      "message": "Elimina els vídeos Shorts i les recomanacions irrellevants a YouTube per a una experiència de visualització sense distraccions."
+    },
+    "hideShorts": {
+      "message": "Amaga Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Amaga Suggeriments"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Amaga Canals a la Llista Negra"
+    },
+    "hideBlacklistedWords": {
+      "message": "Amaga Paraules a la Llista Negra"
+    },
+    "hideHomePageContent": {
+      "message": "Amaga Contingut de la Pàgina Principal"
+    },
+    "disableAutoplay": {
+      "message": "Desactiva la Reproducció Automàtica"
+    },
+    "editBlacklistedChannels": {
+      "message": "Edita Canals a la Llista Negra"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Llista Negra del Mode de Concentració"
+    },
+    "channelNamePlaceholder": {
+      "message": "Nom del Canal"
+    },
+    "add": {
+      "message": "Afegeix"
+    },
+    "editBlacklistedWords": {
+      "message": "Edita Paraules a la Llista Negra"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Llista Negra de Paraules del Mode de Concentració"
+    },
+    "wordPlaceholder": {
+      "message": "Ex: Jocs"
+    },
+    "remove": {
+      "message": "Elimina"
+    }
+  }
+  

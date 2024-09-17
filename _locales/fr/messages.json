@@ -1,0 +1,47 @@
+{
+  "extensionName": {
+    "message": "FocusTube - Suppresseur de Distractions pour YouTube"
+  },
+  "extensionDescription": {
+    "message": "Éliminez les vidéos Shorts et les recommandations non pertinentes sur YouTube pour une expérience sans distraction."
+  },
+  "hideShorts": {
+    "message": "Masquer les Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Masquer les Suggestions"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Masquer les Chaînes sur Liste Noire"
+  },
+  "hideBlacklistedWords": {
+    "message": "Masquer les Mots sur Liste Noire"
+  },
+  "hideHomePageContent": {
+    "message": "Masquer le Contenu de la Page d'Accueil"
+  },
+  "disableAutoplay": {
+    "message": "Désactiver la Lecture Automatique"
+  },
+  "editBlacklistedChannels": {
+    "message": "Modifier les Chaînes sur Liste Noire"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Liste Noire du Mode Concentration"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nom de la Chaîne"
+  },
+  "add": {
+    "message": "Ajouter"
+  },
+  "editBlacklistedWords": {
+    "message": "Modifier les Mots sur Liste Noire"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Liste Noire de Mots du Mode Concentration"
+  },
+  "wordPlaceholder": {
+    "message": "Ex : Jeux"
+  }
+}

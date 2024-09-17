@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "FocusTube - Rimuovi Distrazioni da YouTube"
+  },
+  "extensionDescription": {
+    "message": "Elimina i video Shorts e le raccomandazioni irrilevanti su YouTube per un'esperienza di visione senza distrazioni."
+  },
+  "hideShorts": {
+    "message": "Nascondi Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Nascondi Suggerimenti"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Nascondi Canali nella Lista Nera"
+  },
+  "hideBlacklistedWords": {
+    "message": "Nascondi Parole nella Lista Nera"
+  },
+  "hideHomePageContent": {
+    "message": "Nascondi Contenuto della Home Page"
+  },
+  "disableAutoplay": {
+    "message": "Disabilita Riproduzione Automatica"
+  },
+  "editBlacklistedChannels": {
+    "message": "Modifica Canali nella Lista Nera"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Lista Nera Modalità Concentrazione"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nome del Canale"
+  },
+  "add": {
+    "message": "Aggiungi"
+  },
+  "editBlacklistedWords": {
+    "message": "Modifica Parole nella Lista Nera"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Lista Nera Parole Modalità Concentrazione"
+  },
+  "wordPlaceholder": {
+    "message": "Es: Gaming"
+  },
+  "remove": {
+    "message": "Rimuovi"
+  }
+}
