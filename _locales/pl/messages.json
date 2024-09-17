@@ -1,0 +1,50 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Usuwanie zakłóceń na YouTube"
+    },
+    "extensionDescription": {
+      "message": "Usuń filmy Shorts i nieistotne rekomendacje na YouTube, aby uzyskać nieskazitelne wrażenia z oglądania."
+    },
+    "hideShorts": {
+      "message": "Ukryj Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Ukryj Rekomendacje"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Ukryj Zablokowane Kanały"
+    },
+    "hideBlacklistedWords": {
+      "message": "Ukryj Zablokowane Słowa"
+    },
+    "hideHomePageContent": {
+      "message": "Ukryj Zawartość Strony Głównej"
+    },
+    "disableAutoplay": {
+      "message": "Wyłącz Autoodtwarzanie"
+    },
+    "editBlacklistedChannels": {
+      "message": "Edytuj Zablokowane Kanały"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Czarna Lista Trybu Koncentracji"
+    },
+    "channelNamePlaceholder": {
+      "message": "Nazwa Kanału"
+    },
+    "add": {
+      "message": "Dodaj"
+    },
+    "editBlacklistedWords": {
+      "message": "Edytuj Zablokowane Słowa"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Czarna Lista Słów w Trybie Koncentracji"
+    },
+    "wordPlaceholder": {
+      "message": "Np.: Gry"
+    },
+    "remove": {
+      "message": "Usuń"
+    }
+  }

@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Αφαίρεση περισπασμών στο YouTube"
+    },
+    "extensionDescription": {
+      "message": "Καταργήστε τα βίντεο Shorts και τις άσχετες προτάσεις στο YouTube για μια εμπειρία παρακολούθησης χωρίς περισπασμούς."
+    },
+    "hideShorts": {
+      "message": "Απόκρυψη Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Απόκρυψη Προτάσεων"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Απόκρυψη Μαύρης Λίστας Καναλιών"
+    },
+    "hideBlacklistedWords": {
+      "message": "Απόκρυψη Μαύρης Λίστας Λέξεων"
+    },
+    "hideHomePageContent": {
+      "message": "Απόκρυψη Περιεχομένου Αρχικής Σελίδας"
+    },
+    "disableAutoplay": {
+      "message": "Απενεργοποίηση Αυτόματης Αναπαραγωγής"
+    },
+    "editBlacklistedChannels": {
+      "message": "Επεξεργασία Μαύρης Λίστας Καναλιών"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Μαύρη Λίστα Λειτουργίας Συγκέντρωσης"
+    },
+    "channelNamePlaceholder": {
+      "message": "Όνομα Καναλιού"
+    },
+    "add": {
+      "message": "Προσθήκη"
+    },
+    "editBlacklistedWords": {
+      "message": "Επεξεργασία Μαύρης Λίστας Λέξεων"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Μαύρη Λίστα Λέξεων Λειτουργίας Συγκέντρωσης"
+    },
+    "wordPlaceholder": {
+      "message": "Π.χ.: Gaming"
+    },
+    "remove": {
+      "message": "Αφαίρεση"
+    }
+  }
+  

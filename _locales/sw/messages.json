@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Kiondoa Mvuto Usiofaa kwenye YouTube"
+    },
+    "extensionDescription": {
+      "message": "Ondoa video za Shorts na mapendekezo yasiyo ya muhimu kwenye YouTube kwa ajili ya uzoefu wa kutazama bila mvuto usiofaa."
+    },
+    "hideShorts": {
+      "message": "Ficha Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Ficha Mapendekezo"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Ficha Mituo Iliyopo kwenye Orodha Nyeusi"
+    },
+    "hideBlacklistedWords": {
+      "message": "Ficha Maneno Yaliyopo kwenye Orodha Nyeusi"
+    },
+    "hideHomePageContent": {
+      "message": "Ficha Maudhui ya Ukurasa wa Nyumbani"
+    },
+    "disableAutoplay": {
+      "message": "Zima Kucheza Kiotomatiki"
+    },
+    "editBlacklistedChannels": {
+      "message": "Hariri Mituo Iliyopo kwenye Orodha Nyeusi"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Orodha Nyeusi ya Hali ya Umakini"
+    },
+    "channelNamePlaceholder": {
+      "message": "Jina la Kituo"
+    },
+    "add": {
+      "message": "Ongeza"
+    },
+    "editBlacklistedWords": {
+      "message": "Hariri Maneno Yaliyopo kwenye Orodha Nyeusi"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Maneno Yaliyopo kwenye Orodha Nyeusi ya Hali ya Umakini"
+    },
+    "wordPlaceholder": {
+      "message": "Mfano: Michezo"
+    },
+    "remove": {
+      "message": "Ondoa"
+    }
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Zavaró tényezők eltávolítása a YouTube-on"
+    },
+    "extensionDescription": {
+      "message": "Távolítsa el a Shorts videókat és a nem releváns ajánlásokat a YouTube-ról a zavartalan nézési élmény érdekében."
+    },
+    "hideShorts": {
+      "message": "Shorts elrejtése"
+    },
+    "hideSuggestions": {
+      "message": "Ajánlások elrejtése"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Tiltott csatornák elrejtése"
+    },
+    "hideBlacklistedWords": {
+      "message": "Tiltott szavak elrejtése"
+    },
+    "hideHomePageContent": {
+      "message": "Kezdőlap tartalom elrejtése"
+    },
+    "disableAutoplay": {
+      "message": "Automatikus lejátszás letiltása"
+    },
+    "editBlacklistedChannels": {
+      "message": "Tiltott csatornák szerkesztése"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Koncentrációs mód tiltólistája"
+    },
+    "channelNamePlaceholder": {
+      "message": "Csatorna neve"
+    },
+    "add": {
+      "message": "Hozzáadás"
+    },
+    "editBlacklistedWords": {
+      "message": "Tiltott szavak szerkesztése"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Koncentrációs mód tiltott szavai"
+    },
+    "wordPlaceholder": {
+      "message": "Példa: Gaming"
+    },
+    "remove": {
+      "message": "Eltávolítás"
+    }
+  }
+  

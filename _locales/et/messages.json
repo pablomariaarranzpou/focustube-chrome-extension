@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube'i tähelepanu kõrvalejuhtijate eemaldaja"
+    },
+    "extensionDescription": {
+      "message": "Eemaldage YouTube'ist Shorts-videod ja ebaolulised soovitused, et pakkuda segamatut vaatamiskogemust."
+    },
+    "hideShorts": {
+      "message": "Peida Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Peida soovitused"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Peida mustas nimekirjas olevad kanalid"
+    },
+    "hideBlacklistedWords": {
+      "message": "Peida mustas nimekirjas olevad sõnad"
+    },
+    "hideHomePageContent": {
+      "message": "Peida avalehe sisu"
+    },
+    "disableAutoplay": {
+      "message": "Keela automaatne esitus"
+    },
+    "editBlacklistedChannels": {
+      "message": "Redigeeri mustas nimekirjas olevaid kanaleid"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Keskendumisrežiimi must nimekiri"
+    },
+    "channelNamePlaceholder": {
+      "message": "Kanalinimi"
+    },
+    "add": {
+      "message": "Lisa"
+    },
+    "editBlacklistedWords": {
+      "message": "Redigeeri mustas nimekirjas olevaid sõnu"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Keskendumisrežiimi mustas nimekirjas olevad sõnad"
+    },
+    "wordPlaceholder": {
+      "message": "Näide: Mängud"
+    },
+    "remove": {
+      "message": "Eemalda"
+    }
+  }
+  

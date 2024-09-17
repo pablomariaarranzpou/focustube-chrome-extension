@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Dėmesio atitraukimo šalinimas YouTube"
+    },
+    "extensionDescription": {
+      "message": "Pašalinkite „YouTube“ Shorts vaizdo įrašus ir nereikšmingas rekomendacijas, kad galėtumėte žiūrėti be trukdžių."
+    },
+    "hideShorts": {
+      "message": "Slėpti Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Slėpti Rekomendacijas"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Slėpti Juodajame Sąraše esančius Kanalus"
+    },
+    "hideBlacklistedWords": {
+      "message": "Slėpti Juodajame Sąraše esančius Žodžius"
+    },
+    "hideHomePageContent": {
+      "message": "Slėpti Pradžios Puslapio Turinį"
+    },
+    "disableAutoplay": {
+      "message": "Išjungti Automatinį Paleidimą"
+    },
+    "editBlacklistedChannels": {
+      "message": "Redaguoti Juodajame Sąraše esančius Kanalus"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Konsentracijos Režimo Juodasis Sąrašas"
+    },
+    "channelNamePlaceholder": {
+      "message": "Kanalo Pavadinimas"
+    },
+    "add": {
+      "message": "Pridėti"
+    },
+    "editBlacklistedWords": {
+      "message": "Redaguoti Juodajame Sąraše esančius Žodžius"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Konsentracijos Režimo Juodasis Sąrašas Žodžių"
+    },
+    "wordPlaceholder": {
+      "message": "Pvz.: Žaidimai"
+    },
+    "remove": {
+      "message": "Pašalinti"
+    }
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube માટે વ્યાકુલતા દૂર કરવા માટેનું સાધન"
+    },
+    "extensionDescription": {
+      "message": "YouTube પર Shorts વિડિઓઝ અને અપ્રસ્તુત ભલામણોને દૂર કરો અને નિરાધાર જુઓ અનુભવ મેળવો."
+    },
+    "hideShorts": {
+      "message": "Shorts છુપાવો"
+    },
+    "hideSuggestions": {
+      "message": "ભલામણો છુપાવો"
+    },
+    "hideBlacklistedChannels": {
+      "message": "કાળા યાદીમાં આવેલી ચેનલો છુપાવો"
+    },
+    "hideBlacklistedWords": {
+      "message": "કાળા યાદીમાં આવેલા શબ્દો છુપાવો"
+    },
+    "hideHomePageContent": {
+      "message": "મુખ્ય પૃષ્ઠની સામગ્રી છુપાવો"
+    },
+    "disableAutoplay": {
+      "message": "સ્વચાલિત શરૂ કરવું બંધ કરો"
+    },
+    "editBlacklistedChannels": {
+      "message": "કાળા યાદીમાં આવેલી ચેનલો સંપાદિત કરો"
+    },
+    "concentrationModeBlacklist": {
+      "message": "કેન્દ્રીકરણ મોડ કાળા યાદી"
+    },
+    "channelNamePlaceholder": {
+      "message": "ચેનલનું નામ"
+    },
+    "add": {
+      "message": "ઉમેરો"
+    },
+    "editBlacklistedWords": {
+      "message": "કાળા યાદીમાં આવેલા શબ્દો સંપાદિત કરો"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "કેન્દ્રીકરણ મોડ કાળા યાદીમાં આવેલા શબ્દો"
+    },
+    "wordPlaceholder": {
+      "message": "ઉદાહરણ: ગેમિંગ"
+    },
+    "remove": {
+      "message": "દૂર કરો"
+    }
+  }
+  

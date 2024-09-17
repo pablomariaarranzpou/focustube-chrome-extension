@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube वरील विचलने काढून टाका"
+    },
+    "extensionDescription": {
+      "message": "YouTube वर Shorts व्हिडिओ आणि अनावश्यक शिफारसी काढून टाका आणि एक व्यत्ययमुक्त पाहण्याचा अनुभव मिळवा."
+    },
+    "hideShorts": {
+      "message": "Shorts लपवा"
+    },
+    "hideSuggestions": {
+      "message": "शिफारसी लपवा"
+    },
+    "hideBlacklistedChannels": {
+      "message": "काळ्या यादीतील चॅनेल लपवा"
+    },
+    "hideBlacklistedWords": {
+      "message": "काळ्या यादीतील शब्द लपवा"
+    },
+    "hideHomePageContent": {
+      "message": "मुख्य पृष्ठावरील सामग्री लपवा"
+    },
+    "disableAutoplay": {
+      "message": "स्वयं प्ले निष्क्रिय करा"
+    },
+    "editBlacklistedChannels": {
+      "message": "काळ्या यादीतील चॅनेल संपादित करा"
+    },
+    "concentrationModeBlacklist": {
+      "message": "केंद्रित मोड काळी यादी"
+    },
+    "channelNamePlaceholder": {
+      "message": "चॅनेलचे नाव"
+    },
+    "add": {
+      "message": "जोड़ा"
+    },
+    "editBlacklistedWords": {
+      "message": "काळ्या यादीतील शब्द संपादित करा"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "केंद्रित मोड काळ्या यादीतील शब्द"
+    },
+    "wordPlaceholder": {
+      "message": "उदा.: गेमिंग"
+    },
+    "remove": {
+      "message": "काढा"
+    }
+  }
+  

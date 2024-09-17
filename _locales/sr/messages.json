@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Uklanjanje ometanja na YouTube-u"
+    },
+    "extensionDescription": {
+      "message": "Uklonite Shorts video zapise i nebitne preporuke na YouTube-u za neometano iskustvo gledanja."
+    },
+    "hideShorts": {
+      "message": "Sakrij Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Sakrij Preporuke"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Sakrij Kanale na Crnoj Listi"
+    },
+    "hideBlacklistedWords": {
+      "message": "Sakrij Reči na Crnoj Listi"
+    },
+    "hideHomePageContent": {
+      "message": "Sakrij Sadržaj Početne Strane"
+    },
+    "disableAutoplay": {
+      "message": "Onemogući Automatsku Reprodukciju"
+    },
+    "editBlacklistedChannels": {
+      "message": "Uredi Kanale na Crnoj Listi"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Crna Lista za Režim Koncentracije"
+    },
+    "channelNamePlaceholder": {
+      "message": "Ime Kanala"
+    },
+    "add": {
+      "message": "Dodaj"
+    },
+    "editBlacklistedWords": {
+      "message": "Uredi Reči na Crnoj Listi"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Crna Lista Reči za Režim Koncentracije"
+    },
+    "wordPlaceholder": {
+      "message": "Primer: Igre"
+    },
+    "remove": {
+      "message": "Ukloni"
+    }
+  }
+  

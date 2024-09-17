@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Fjerner distraktioner på YouTube"
+    },
+    "extensionDescription": {
+      "message": "Fjern Shorts-videoer og irrelevante anbefalinger på YouTube for en distraktionsfri seeroplevelse."
+    },
+    "hideShorts": {
+      "message": "Skjul Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Skjul anbefalinger"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Skjul sortlistede kanaler"
+    },
+    "hideBlacklistedWords": {
+      "message": "Skjul sortlistede ord"
+    },
+    "hideHomePageContent": {
+      "message": "Skjul startsideindhold"
+    },
+    "disableAutoplay": {
+      "message": "Deaktiver Autoplay"
+    },
+    "editBlacklistedChannels": {
+      "message": "Rediger sortlistede kanaler"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Sortliste for koncentrationstilstand"
+    },
+    "channelNamePlaceholder": {
+      "message": "Kanalnavn"
+    },
+    "add": {
+      "message": "Tilføj"
+    },
+    "editBlacklistedWords": {
+      "message": "Rediger sortlistede ord"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Sortliste over ord for koncentrationstilstand"
+    },
+    "wordPlaceholder": {
+      "message": "Eksempel: Gaming"
+    },
+    "remove": {
+      "message": "Fjern"
+    }
+  }
+  

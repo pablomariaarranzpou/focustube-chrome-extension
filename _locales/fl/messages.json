@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Häiriötekijöiden poistaja YouTubeen"
+    },
+    "extensionDescription": {
+      "message": "Poista Shorts-videot ja merkityksettömät suositukset YouTubesta keskeytyksettömän katselukokemuksen takaamiseksi."
+    },
+    "hideShorts": {
+      "message": "Piilota Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Piilota suositukset"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Piilota mustalla listalla olevat kanavat"
+    },
+    "hideBlacklistedWords": {
+      "message": "Piilota mustalla listalla olevat sanat"
+    },
+    "hideHomePageContent": {
+      "message": "Piilota etusivun sisältö"
+    },
+    "disableAutoplay": {
+      "message": "Poista Autoplay käytöstä"
+    },
+    "editBlacklistedChannels": {
+      "message": "Muokkaa mustalla listalla olevia kanavia"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Keskittymismoodin musta lista"
+    },
+    "channelNamePlaceholder": {
+      "message": "Kanavan nimi"
+    },
+    "add": {
+      "message": "Lisää"
+    },
+    "editBlacklistedWords": {
+      "message": "Muokkaa mustalla listalla olevia sanoja"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Keskittymismoodin musta lista"
+    },
+    "wordPlaceholder": {
+      "message": "Esim.: Pelit"
+    },
+    "remove": {
+      "message": "Poista"
+    }
+  }
+  

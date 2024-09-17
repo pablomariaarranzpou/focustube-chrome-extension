@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Eliminator de Distrageri pe YouTube"
+    },
+    "extensionDescription": {
+      "message": "Eliminați videoclipurile Shorts și recomandările nerelevante pe YouTube pentru o experiență de vizionare fără distrageri."
+    },
+    "hideShorts": {
+      "message": "Ascunde Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Ascunde Sugestii"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Ascunde Canale pe Lista Neagră"
+    },
+    "hideBlacklistedWords": {
+      "message": "Ascunde Cuvinte pe Lista Neagră"
+    },
+    "hideHomePageContent": {
+      "message": "Ascunde Conținutul de pe Pagina Principală"
+    },
+    "disableAutoplay": {
+      "message": "Dezactivează Autoplay"
+    },
+    "editBlacklistedChannels": {
+      "message": "Editează Canale pe Lista Neagră"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Lista Neagră pentru Modul de Concentrare"
+    },
+    "channelNamePlaceholder": {
+      "message": "Numele Canalului"
+    },
+    "add": {
+      "message": "Adăugați"
+    },
+    "editBlacklistedWords": {
+      "message": "Editează Cuvinte pe Lista Neagră"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Cuvinte pe Lista Neagră pentru Modul de Concentrare"
+    },
+    "wordPlaceholder": {
+      "message": "Exemplu: Jocuri"
+    },
+    "remove": {
+      "message": "Elimină"
+    }
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube에서 산만함 제거"
+    },
+    "extensionDescription": {
+      "message": "YouTube에서 Shorts 동영상과 관련 없는 추천을 제거하여 산만함이 없는 시청 경험을 제공하세요."
+    },
+    "hideShorts": {
+      "message": "Shorts 숨기기"
+    },
+    "hideSuggestions": {
+      "message": "추천 숨기기"
+    },
+    "hideBlacklistedChannels": {
+      "message": "차단된 채널 숨기기"
+    },
+    "hideBlacklistedWords": {
+      "message": "차단된 단어 숨기기"
+    },
+    "hideHomePageContent": {
+      "message": "홈페이지 콘텐츠 숨기기"
+    },
+    "disableAutoplay": {
+      "message": "자동재생 비활성화"
+    },
+    "editBlacklistedChannels": {
+      "message": "차단된 채널 수정"
+    },
+    "concentrationModeBlacklist": {
+      "message": "집중 모드 차단 목록"
+    },
+    "channelNamePlaceholder": {
+      "message": "채널 이름"
+    },
+    "add": {
+      "message": "추가"
+    },
+    "editBlacklistedWords": {
+      "message": "차단된 단어 수정"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "집중 모드 차단 단어 목록"
+    },
+    "wordPlaceholder": {
+      "message": "예: 게임"
+    },
+    "remove": {
+      "message": "제거"
+    }
+  }
+  

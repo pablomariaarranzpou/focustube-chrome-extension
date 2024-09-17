@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - Премахване на разсейващи елементи в YouTube"
+    },
+    "extensionDescription": {
+      "message": "Премахнете видеоклиповете Shorts и нерелевантните препоръки в YouTube за фокусирано гледане."
+    },
+    "hideShorts": {
+      "message": "Скриване на Shorts"
+    },
+    "hideSuggestions": {
+      "message": "Скриване на препоръки"
+    },
+    "hideBlacklistedChannels": {
+      "message": "Скриване на забранени канали"
+    },
+    "hideBlacklistedWords": {
+      "message": "Скриване на забранени думи"
+    },
+    "hideHomePageContent": {
+      "message": "Скриване на съдържанието на началната страница"
+    },
+    "disableAutoplay": {
+      "message": "Деактивиране на автоматичното възпроизвеждане"
+    },
+    "editBlacklistedChannels": {
+      "message": "Редактиране на забранени канали"
+    },
+    "concentrationModeBlacklist": {
+      "message": "Черен списък на режим концентрация"
+    },
+    "channelNamePlaceholder": {
+      "message": "Име на канал"
+    },
+    "add": {
+      "message": "Добави"
+    },
+    "editBlacklistedWords": {
+      "message": "Редактиране на забранени думи"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "Черен списък на думи за режим концентрация"
+    },
+    "wordPlaceholder": {
+      "message": "Пример: Игри"
+    },
+    "remove": {
+      "message": "Премахване"
+    }
+  }
+  

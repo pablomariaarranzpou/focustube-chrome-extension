@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - مزيل التشتيت على YouTube"
+    },
+    "extensionDescription": {
+      "message": "قم بإزالة مقاطع فيديو Shorts والتوصيات غير المهمة على YouTube لتجربة مشاهدة خالية من التشتيت."
+    },
+    "hideShorts": {
+      "message": "إخفاء Shorts"
+    },
+    "hideSuggestions": {
+      "message": "إخفاء التوصيات"
+    },
+    "hideBlacklistedChannels": {
+      "message": "إخفاء القنوات المحظورة"
+    },
+    "hideBlacklistedWords": {
+      "message": "إخفاء الكلمات المحظورة"
+    },
+    "hideHomePageContent": {
+      "message": "إخفاء محتوى الصفحة الرئيسية"
+    },
+    "disableAutoplay": {
+      "message": "تعطيل التشغيل التلقائي"
+    },
+    "editBlacklistedChannels": {
+      "message": "تحرير القنوات المحظورة"
+    },
+    "concentrationModeBlacklist": {
+      "message": "قائمة الحظر لوضع التركيز"
+    },
+    "channelNamePlaceholder": {
+      "message": "اسم القناة"
+    },
+    "add": {
+      "message": "إضافة"
+    },
+    "editBlacklistedWords": {
+      "message": "تحرير الكلمات المحظورة"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "قائمة الكلمات المحظورة لوضع التركيز"
+    },
+    "wordPlaceholder": {
+      "message": "مثال: ألعاب"
+    },
+    "remove": {
+      "message": "إزالة"
+    }
+  }
+  
