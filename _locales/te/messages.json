@@ -1,0 +1,51 @@
+{
+    "extensionName": {
+      "message": "FocusTube - YouTube లో శ్రద్ధని చెరిపివేయడం"
+    },
+    "extensionDescription": {
+      "message": "YouTube లో Shorts వీడియోలు మరియు అప్రాధాన్యతగల సిఫారసులు తొలగించి శ్రద్ధ చెరగని వీక్షణ అనుభూతిని పొందండి."
+    },
+    "hideShorts": {
+      "message": "Shorts దాచు"
+    },
+    "hideSuggestions": {
+      "message": "సిఫారసులు దాచు"
+    },
+    "hideBlacklistedChannels": {
+      "message": "నిషేధిత ఛానెల్లు దాచు"
+    },
+    "hideBlacklistedWords": {
+      "message": "నిషేధిత పదాలు దాచు"
+    },
+    "hideHomePageContent": {
+      "message": "హోమ్ పేజీ కంటెంట్ దాచు"
+    },
+    "disableAutoplay": {
+      "message": "ఆటోప్లే డిసేబుల్ చేయి"
+    },
+    "editBlacklistedChannels": {
+      "message": "నిషేధిత ఛానెల్లు సవరించు"
+    },
+    "concentrationModeBlacklist": {
+      "message": "శ్రద్ధ మోడ్ నిషేధిత జాబితా"
+    },
+    "channelNamePlaceholder": {
+      "message": "ఛానెల్ పేరు"
+    },
+    "add": {
+      "message": "చేర్చు"
+    },
+    "editBlacklistedWords": {
+      "message": "నిషేధిత పదాలు సవరించు"
+    },
+    "concentrationModeBlacklistWords": {
+      "message": "శ్రద్ధ మోడ్ నిషేధిత పదాల జాబితా"
+    },
+    "wordPlaceholder": {
+      "message": "ఉదా: గేమింగ్"
+    },
+    "remove": {
+      "message": "తొలగించు"
+    }
+  }
+  

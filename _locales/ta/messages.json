@@ -1,51 +1,50 @@
 {
     "extensionName": {
-      "message": "FocusTube - YouTubeல் கவனத்தை சிதறடிக்கும் விசயங்களை நீக்குங்கள்"
+        "message": "FocusTube - YouTubeல் கவனத்தை சிதறடிக்கும் விசயங்களை நீக்குங்கள்"
     },
     "extensionDescription": {
-      "message": "YouTubeல் Shorts வீடியோக்களையும் தொடர்பற்ற பரிந்துரைகளையும் நீக்கி, ஒரு கவனச்சிதறாத பார்வையாளர் அனுபவத்தைப் பெறுங்கள்."
+        "message": "YouTubeல் Shorts வீடியோக்களையும் தொடர்பற்ற பரிந்துரைகளையும் நீக்கி, ஒரு கவனச்சிதறாத பார்வையாளர் அனுபவத்தைப் பெறுங்கள்."
     },
     "hideShorts": {
-      "message": "Shorts மறை"
+        "message": "Shorts மறை"
     },
     "hideSuggestions": {
-      "message": "பரிந்துரைகளை மறை"
+        "message": "பரிந்துரைகளை மறை"
     },
     "hideBlacklistedChannels": {
-      "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை மறை"
+        "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை மறை"
     },
     "hideBlacklistedWords": {
-      "message": "நிறைவுபடுத்தப்பட்ட சொற்களை மறை"
+        "message": "நிறைவுபடுத்தப்பட்ட சொற்களை மறை"
     },
     "hideHomePageContent": {
-      "message": "முகப்பு பக்க உள்ளடக்கத்தை மறை"
+        "message": "முகப்பு பக்க உள்ளடக்கத்தை மறை"
     },
     "disableAutoplay": {
-      "message": "தானியங்கியாக இயங்குவதை முடக்கு"
+        "message": "தானியங்கியாக இயங்குவதை முடக்கு"
     },
     "editBlacklistedChannels": {
-      "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை திருத்து"
+        "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை திருத்து"
     },
     "concentrationModeBlacklist": {
-      "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல்"
+        "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல்"
     },
     "channelNamePlaceholder": {
-      "message": "சேனல் பெயர்"
+        "message": "சேனல் பெயர்"
     },
     "add": {
-      "message": "சேர்க்கவும்"
+        "message": "சேர்க்கவும்"
     },
     "editBlacklistedWords": {
-      "message": "நிறைவுபடுத்தப்பட்ட சொற்களை திருத்து"
+        "message": "நிறைவுபடுத்தப்பட்ட சொற்களை திருத்து"
     },
     "concentrationModeBlacklistWords": {
-      "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல் சொற்கள்"
+        "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல் சொற்கள்"
     },
     "wordPlaceholder": {
-      "message": "உதாரணம்: கேமிங்"
+        "message": "உதாரணம்: கேமிங்"
     },
     "remove": {
-      "message": "நீக்கவும்"
+        "message": "நீக்கவும்"
     }
-  }
-  
+}
