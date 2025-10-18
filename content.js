@@ -19,6 +19,8 @@ let blacklistWords = [];
 
 // CSS injection for sidebar hiding
 let sidebarStyleElement = null;
+// CSS injection for ensuring comments are visible
+let commentsVisibleStyleElement = null;
 
 function injectSidebarCSS() {
   if (sidebarStyleElement) return; // Already injected
@@ -30,7 +32,8 @@ function injectSidebarCSS() {
     #guide-inner-content,
     ytd-guide-renderer,
     ytd-mini-guide-renderer,
-    #sections,
+    ytd-guide-renderer #sections,
+    #guide #sections,
     ytd-guide-section-renderer,
     tp-yt-app-drawer,
     #contentContainer.tp-yt-app-drawer {
@@ -92,6 +95,7 @@ function removeSidebarCSS() {
   }
 }
 
+// Solo prevenir renderizado de Shorts si el toggle está activado
 (function preventShortsStandaloneRender() {
   function isShortsPath() {
     try {
@@ -103,74 +107,87 @@ function removeSidebarCSS() {
 
   if (!isShortsPath()) return;
 
-  try {
-    const css = `
-      ytd-reel-player-renderer, ytm-reel-player, #shorts-container, .shorts, shorts-container, ytm-shorts-lockup-view-model { display: none !important; visibility: hidden !important; height: 0 !important; max-height: 0 !important; }
-      a[href^="/shorts"] { display: none !important; }
-    `;
-    const style = document.createElement('style');
-    style.id = '__focustube_shortcss_early';
-    style.appendChild(document.createTextNode(css));
-    (document.head || document.documentElement).appendChild(style);
-  } catch (e) {
-    // ignore
-  }
-  try { document.documentElement.style.visibility = 'hidden'; } catch (e) {}
-  function stopVideoEl(video) {
+  // Verificar el estado del toggle antes de bloquear
+  chrome.storage.sync.get(['hideShorts'], (result) => {
+    const shouldHideShorts = result.hideShorts !== undefined ? result.hideShorts : true;
+    
+    if (!shouldHideShorts) {
+      console.debug('FocusTube: hideShorts is OFF, allowing Shorts to load');
+      return; // No bloquear si el toggle está desactivado
+    }
+
+    console.debug('FocusTube: hideShorts is ON, blocking Shorts on /shorts path');
+    
     try {
-      video.autoplay = false;
-      video.removeAttribute && video.removeAttribute('autoplay');
-      video.muted = true;
-      video.pause && video.pause();
-    } catch (e) {}
-  }
-
-  try {
-    document.querySelectorAll && document.querySelectorAll('video').forEach(stopVideoEl);
-  } catch (e) {}
-
-  try {
-    const _origPlay = HTMLMediaElement.prototype.play;
-    HTMLMediaElement.prototype.play = function() {
+      const css = `
+        ytd-reel-player-renderer, ytm-reel-player, #shorts-container, .shorts, shorts-container, ytm-shorts-lockup-view-model { display: none !important; visibility: hidden !important; height: 0 !important; max-height: 0 !important; }
+        a[href^="/shorts"] { display: none !important; }
+      `;
+      const style = document.createElement('style');
+      style.id = '__focustube_shortcss_early';
+      style.appendChild(document.createTextNode(css));
+      (document.head || document.documentElement).appendChild(style);
+    } catch (e) {
+      // ignore
+    }
+    try { document.documentElement.style.visibility = 'hidden'; } catch (e) {}
+    function stopVideoEl(video) {
       try {
-        if (isShortsPath()) {
-          const el = this;
-          if (
-            (el.closest && (el.closest('#shorts-container') || el.closest('ytd-reel-player-renderer') || el.closest('ytm-reel-player') || el.closest('ytm-shorts-lockup-view-model')))
-          ) {
-            try { el.pause && el.pause(); } catch (e) {}
-            return Promise.resolve();
-          }
-        }
+        video.autoplay = false;
+        video.removeAttribute && video.removeAttribute('autoplay');
+        video.muted = true;
+        video.pause && video.pause();
       } catch (e) {}
-      return _origPlay.apply(this, arguments);
-    };
-  } catch (e) {
-    // ignore if we can't override
-  }
+    }
 
-  try {
-    const mo = new MutationObserver((mutations) => {
-      for (const m of mutations) {
-        if (!m.addedNodes) continue;
-        m.addedNodes.forEach((node) => {
-          try {
-            if (node.nodeType !== 1) return;
-            const el = node;
+    try {
+      document.querySelectorAll && document.querySelectorAll('video').forEach(stopVideoEl);
+    } catch (e) {}
+
+    try {
+      const _origPlay = HTMLMediaElement.prototype.play;
+      const origPlayBackup = _origPlay;
+      HTMLMediaElement.prototype.play = function() {
+        try {
+          if (isShortsPath() && shouldHideShorts) {
+            const el = this;
             if (
-              (el.matches && (el.matches('ytd-reel-player-renderer') || el.matches('ytm-reel-player') || el.matches('#shorts-container') || el.matches('ytm-shorts-lockup-view-model'))) ||
-              (el.querySelector && (el.querySelector('ytd-reel-player-renderer') || el.querySelector('#shorts-container')))
+              (el.closest && (el.closest('#shorts-container') || el.closest('ytd-reel-player-renderer') || el.closest('ytm-reel-player') || el.closest('ytm-shorts-lockup-view-model')))
             ) {
-              try { el.style.display = 'none'; } catch (e) {}
-              try { el.querySelectorAll && el.querySelectorAll('video').forEach(stopVideoEl); } catch (e) {}
+              try { el.pause && el.pause(); } catch (e) {}
+              return Promise.resolve();
             }
-          } catch (e) {}
-        });
-      }
-    });
-    mo.observe(document.documentElement || document.body, { childList: true, subtree: true });
-    setTimeout(() => { try { document.documentElement.style.visibility = ''; } catch (e) {} }, 700);
-  } catch (e) {}
+          }
+        } catch (e) {}
+        return origPlayBackup.apply(this, arguments);
+      };
+    } catch (e) {
+      // ignore if we can't override
+    }
+
+    try {
+      const mo = new MutationObserver((mutations) => {
+        for (const m of mutations) {
+          if (!m.addedNodes) continue;
+          m.addedNodes.forEach((node) => {
+            try {
+              if (node.nodeType !== 1) return;
+              const el = node;
+              if (
+                (el.matches && (el.matches('ytd-reel-player-renderer') || el.matches('ytm-reel-player') || el.matches('#shorts-container') || el.matches('ytm-shorts-lockup-view-model'))) ||
+                (el.querySelector && (el.querySelector('ytd-reel-player-renderer') || el.querySelector('#shorts-container')))
+              ) {
+                try { el.style.display = 'none'; } catch (e) {}
+                try { el.querySelectorAll && el.querySelectorAll('video').forEach(stopVideoEl); } catch (e) {}
+              }
+            } catch (e) {}
+          });
+        }
+      });
+      mo.observe(document.documentElement || document.body, { childList: true, subtree: true });
+      setTimeout(() => { try { document.documentElement.style.visibility = ''; } catch (e) {} }, 700);
+    } catch (e) {}
+  });
 })();
 
 function makeElementVisible(elementId) {
@@ -295,7 +312,10 @@ function removeShortsShelves() {
   shortsShelves.forEach(shelf => {
     const title = shelf.querySelector('h2, .yt-shelf-header-layout__title');
     if (title && title.textContent.trim().toLowerCase().includes('shorts')) {
-      shelf.remove();
+      // Ocultar en lugar de eliminar
+      shelf.style.setProperty('display', 'none', 'important');
+      shelf.style.setProperty('visibility', 'hidden', 'important');
+      shelf.setAttribute('data-focustube-hidden', 'true');
     }
   });
 
@@ -313,14 +333,19 @@ function removeShortsShelves() {
     if (hasShortsText || hasShortsAnchor || hasShortsComponent || hasShortsInShadow) {
       try {
         const snippet = (shelf && shelf.outerHTML) ? shelf.outerHTML.slice(0, 300).replace(/\s+/g, ' ') : '[no outerHTML]';
-        if (hasShortsText) console.debug('FocusTube: removed grid-shelf-view-model (innerText match)', snippet);
-        else if (hasShortsAnchor) console.debug('FocusTube: removed grid-shelf-view-model (anchor /shorts match)', snippet);
-        else if (hasShortsComponent) console.debug('FocusTube: removed grid-shelf-view-model (known component match)', snippet);
-        else console.debug('FocusTube: removed grid-shelf-view-model (shadow text match)', snippet);
+        if (hasShortsText) console.debug('FocusTube: hidden grid-shelf-view-model (innerText match)', snippet);
+        else if (hasShortsAnchor) console.debug('FocusTube: hidden grid-shelf-view-model (anchor /shorts match)', snippet);
+        else if (hasShortsComponent) console.debug('FocusTube: hidden grid-shelf-view-model (known component match)', snippet);
+        else console.debug('FocusTube: hidden grid-shelf-view-model (shadow text match)', snippet);
       } catch (e) {
-        console.debug('FocusTube: removed grid-shelf-view-model (matching)', e);
+        console.debug('FocusTube: hidden grid-shelf-view-model (matching)', e);
       }
-      shelf.remove();
+      // Ocultar en lugar de eliminar
+      shelf.style.setProperty('display', 'none', 'important');
+      shelf.style.setProperty('visibility', 'hidden', 'important');
+      shelf.style.setProperty('height', '0', 'important');
+      shelf.style.setProperty('max-height', '0', 'important');
+      shelf.setAttribute('data-focustube-hidden', 'true');
     } else {
       // console.debug('FocusTube: kept grid-shelf-view-model', shelf);
     }
@@ -351,7 +376,7 @@ function elementContainsTextInShadow(rootElement, searchText) {
     if (rootElement.innerText && rootElement.innerText.toLowerCase().includes(searchText)) return true;
     if (rootElement.textContent && rootElement.textContent.toLowerCase().includes(searchText)) return true;
   } catch (e) {
-  }o
+  }
 
   // Walk light DOM text nodes
   if (elementContainsText(rootElement, searchText)) return true;
@@ -381,7 +406,16 @@ function elementContainsTextInShadow(rootElement, searchText) {
 }
 
 function showShortsShelves() {
-  // Can't restore removed shelves, so do nothing
+  // Restaurar los shelves que fueron ocultados
+  const hiddenShelves = document.querySelectorAll('[data-focustube-hidden="true"]');
+  hiddenShelves.forEach(shelf => {
+    shelf.style.removeProperty('display');
+    shelf.style.removeProperty('visibility');
+    shelf.style.removeProperty('height');
+    shelf.style.removeProperty('max-height');
+    shelf.removeAttribute('data-focustube-hidden');
+    console.debug('FocusTube: Restored shorts shelf');
+  });
 }
 
 function removeYtdVideoRendererWithShortsHref() {
@@ -612,7 +646,8 @@ function removeYouTubeSidebar() {
       '#guide-inner-content',
       'ytd-guide-renderer',
       'ytd-mini-guide-renderer',
-      '#sections',
+      'ytd-guide-renderer #sections',
+      '#guide #sections',
       'ytd-guide-section-renderer',
       'tp-yt-app-drawer',
       '#contentContainer', // Mobile sidebar
@@ -710,7 +745,8 @@ function showYouTubeSidebar() {
       '#guide-inner-content',
       'ytd-guide-renderer',
       'ytd-mini-guide-renderer',
-      '#sections',
+      'ytd-guide-renderer #sections',
+      '#guide #sections',
       'ytd-guide-section-renderer',
       'tp-yt-app-drawer',
       '#contentContainer',
@@ -821,6 +857,11 @@ function hideSuggestedVideos() {
         });
       }
     }
+    
+    // IMPORTANTE: Asegurarse de que los comentarios SIEMPRE sean visibles si hideCommentsEnabled es false
+    if (!hideCommentsEnabled) {
+      showComments();
+    }
   } catch (e) {
     console.debug('FocusTube: hideSuggestedVideos error', e);
   }
@@ -858,10 +899,25 @@ function showSuggestedVideos() {
 // New: functions to hide/show YouTube comments
 function hideComments() {
   try {
+    // Remover el CSS que fuerza la visibilidad
+    if (commentsVisibleStyleElement && commentsVisibleStyleElement.parentNode) {
+      commentsVisibleStyleElement.parentNode.removeChild(commentsVisibleStyleElement);
+      commentsVisibleStyleElement = null;
+      console.debug('FocusTube: Comments visibility CSS removed');
+    }
+    
     const commentsElements = document.querySelectorAll('ytd-comments');
     commentsElements.forEach(comments => {
-      try { 
-        comments.style.display = 'none';
+      try {
+        comments.style.setProperty('display', 'none', 'important');
+        comments.style.setProperty('visibility', 'hidden', 'important');
+        comments.style.setProperty('width', '0', 'important');
+        comments.style.setProperty('max-width', '0', 'important');
+        comments.style.setProperty('min-width', '0', 'important');
+        comments.style.setProperty('opacity', '0', 'important');
+        comments.setAttribute('hidden', 'true');
+        comments.setAttribute('aria-hidden', 'true');
+        comments.setAttribute('inert', 'true');
         console.debug('FocusTube: Comments hidden');
       } catch (e) {}
     });
@@ -872,12 +928,47 @@ function hideComments() {
 
 function showComments() {
   try {
+    console.debug('FocusTube: showComments() called, hideCommentsEnabled =', hideCommentsEnabled);
+    
+    // Inyectar CSS para forzar que los comentarios sean visibles
+    if (!commentsVisibleStyleElement) {
+      const css = `
+        ytd-comments,
+        ytd-comments #comments,
+        ytd-comments #sections,
+        ytd-item-section-renderer#sections {
+          display: block !important;
+          visibility: visible !important;
+          width: auto !important;
+          max-width: none !important;
+          min-width: 0 !important;
+          opacity: 1 !important;
+        }
+      `;
+      commentsVisibleStyleElement = document.createElement('style');
+      commentsVisibleStyleElement.id = '__focustube_comments_visible_css';
+      commentsVisibleStyleElement.appendChild(document.createTextNode(css));
+      (document.head || document.documentElement).appendChild(commentsVisibleStyleElement);
+      console.debug('FocusTube: Comments visibility CSS injected');
+    }
+    
     const commentsElements = document.querySelectorAll('ytd-comments');
+    console.debug('FocusTube: Found', commentsElements.length, 'ytd-comments elements');
     commentsElements.forEach(comments => {
-      try { 
-        comments.style.display = '';
+      try {
+        comments.style.removeProperty('display');
+        comments.style.removeProperty('visibility');
+        comments.style.removeProperty('width');
+        comments.style.removeProperty('max-width');
+        comments.style.removeProperty('min-width');
+        comments.style.removeProperty('opacity');
+        comments.removeAttribute('hidden');
+        comments.removeAttribute('aria-hidden');
+        comments.removeAttribute('inert');
         console.debug('FocusTube: Comments shown');
-      } catch (e) {}
+      } catch (e) {
+        console.debug('FocusTube: Error showing individual comment', e);
+      }
     });
   } catch (e) {
     console.debug('FocusTube: showComments error', e);
@@ -962,12 +1053,7 @@ function observeDOMChanges() {
   if (observer) {
     return;
   }
-
-  // Hide shorts container immediately to prevent flash
-  makeElementInvisible("shorts-container");
-  muteAndPauseShortsVideos();
-    // Initial call to remove any existing shelves
-    removeShortsShelves();
+  // Ya no ocultamos Shorts por defecto aquí. El control lo lleva handleDOMChangesBasedOnSwitches según el estado del toggle.
 
   chrome.storage.sync.get(
     [
@@ -1036,11 +1122,16 @@ function observeDOMChanges() {
       blacklist = result.blacklist ?? [];
       blacklistWords = result.blacklistWords ?? [];
 
+      // Asegurar que los comentarios estén visibles si el toggle está desactivado
+      if (!hideCommentsEnabled) {
+        showComments();
+      }
+
       handleDOMChangesBasedOnSwitches();
 
       observer = new MutationObserver(() => {
         handleDOMChangesBasedOnSwitches();
-        removeShortsShelves();
+        // removeShortsShelves() se ejecuta dentro de handleDOMChangesBasedOnSwitches() solo si hideShortsEnabled es true
         HTML = document.documentElement;
       });
 
