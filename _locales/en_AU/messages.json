@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Hide Suggestions"
     },
+    "hideComments": {
+      "message": "Hide Comments"
+    },
     "hideBlacklistedChannels": {
       "message": "Hide Blacklisted Channels"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Disable Autoplay"
+    },
+    "hideSidebar": {
+      "message": "Hide Sidebar"
     },
     "editBlacklistedChannels": {
       "message": "Edit Blacklisted Channels"

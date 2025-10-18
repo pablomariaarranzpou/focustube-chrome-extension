@@ -88,6 +88,15 @@
         <label class="toggle-container">
           <input
             type="checkbox"
+            id="hideCommentsCheckbox"
+            class="toggle-input"
+          />
+          <div class="toggle-slider"></div>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideComments"></span>
+        </label>
+        <label class="toggle-container">
+          <input
+            type="checkbox"
             id="hideBlacklistedCheckbox"
             class="toggle-input"
             checked
@@ -123,6 +132,16 @@
           />
           <div class="toggle-slider"></div>
           <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="disableAutoplay"></span>
+        </label>
+        <!-- New toggle: hide YouTube sidebar / guide -->
+        <label class="toggle-container">
+          <input
+            type="checkbox"
+            id="hideSidebarCheckbox"
+            class="toggle-input"
+          />
+          <div class="toggle-slider"></div>
+          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSidebar"></span>
         </label>
       </div>
       <hr class="my-4 border-t border-gray-300" />

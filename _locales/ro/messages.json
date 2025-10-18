@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Ascunde Sugestii"
     },
+    "hideComments": {
+      "message": "Ascunde Comentarii"
+    },
     "hideBlacklistedChannels": {
       "message": "Ascunde Canale pe Lista Neagră"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Dezactivează Autoplay"
+    },
+    "hideSidebar": {
+      "message": "Ascunde Bara Laterală"
     },
     "editBlacklistedChannels": {
       "message": "Editează Canale pe Lista Neagră"

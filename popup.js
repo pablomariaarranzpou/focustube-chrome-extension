@@ -24,19 +24,23 @@ function handleCheckboxStates(states) {
   const defaultStates = {
     hideShorts: true,
     hideSuggestions: true,
+    hideComments: false,
     hideBlacklistedChannels: true,
     hideBlacklistedWords: true,
     hideHomePageContent: false,
     hideAutoplayOverlay: false, // Added
+    hideSidebar: false,
   };
 
   const checkboxMappings = {
     hideShortsCheckbox: "hideShorts",
     hideSuggestionsCheckbox: "hideSuggestions",
+    hideCommentsCheckbox: "hideComments",
     hideBlacklistedCheckbox: "hideBlacklistedChannels",
     hideBlacklistedWordsCheckbox: "hideBlacklistedWords",
     hideHomePageContentCheckbox: "hideHomePageContent",
     hideAutoplayOverlayCheckbox: "hideAutoplayOverlay", // Added
+    hideSidebarCheckbox: "hideSidebar",
   };
 
   Object.entries(checkboxMappings).forEach(([checkboxId, switchType]) => {
@@ -187,6 +191,7 @@ async function startPopup() {
         "hideBlacklistedWords",
         "hideHomePageContent",
         "hideAutoplayOverlay",
+        "hideSidebar",
         "blacklist",
         "blacklistWords",
       ],

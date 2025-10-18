@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Ocultar Sugestões"
     },
+    "hideComments": {
+      "message": "Ocultar Comentários"
+    },
     "hideBlacklistedChannels": {
       "message": "Ocultar Canais na Lista Negra"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Desativar Reprodução Automática"
+    },
+    "hideSidebar": {
+      "message": "Ocultar Barra Lateral"
     },
     "editBlacklistedChannels": {
       "message": "Editar Canais na Lista Negra"

@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Απόκρυψη Προτάσεων"
     },
+    "hideComments": {
+      "message": "Απόκρυψη Σχολίων"
+    },
     "hideBlacklistedChannels": {
       "message": "Απόκρυψη Μαύρης Λίστας Καναλιών"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Απενεργοποίηση Αυτόματης Αναπαραγωγής"
+    },
+    "hideSidebar": {
+      "message": "Απόκρυψη Πλαϊνής Μπάρας"
     },
     "editBlacklistedChannels": {
       "message": "Επεξεργασία Μαύρης Λίστας Καναλιών"

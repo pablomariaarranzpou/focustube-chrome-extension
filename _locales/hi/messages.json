@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "सुझाव छुपाएं"
     },
+    "hideComments": {
+      "message": "टिप्पणियाँ छुपाएं"
+    },
     "hideBlacklistedChannels": {
       "message": "ब्लैकलिस्ट किए गए चैनल छुपाएं"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "ऑटोप्ले अक्षम करें"
+    },
+    "hideSidebar": {
+      "message": "साइडबार छुपाएं"
     },
     "editBlacklistedChannels": {
       "message": "ब्लैकलिस्ट किए गए चैनल संपादित करें"

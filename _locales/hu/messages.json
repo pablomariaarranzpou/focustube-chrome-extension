@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Ajánlások elrejtése"
     },
+    "hideComments": {
+      "message": "Megjegyzések elrejtése"
+    },
     "hideBlacklistedChannels": {
       "message": "Tiltott csatornák elrejtése"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Automatikus lejátszás letiltása"
+    },
+    "hideSidebar": {
+      "message": "Oldalsáv elrejtése"
     },
     "editBlacklistedChannels": {
       "message": "Tiltott csatornák szerkesztése"

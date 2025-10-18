@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Sembunyikan Rekomendasi"
     },
+    "hideComments": {
+      "message": "Sembunyikan Komentar"
+    },
     "hideBlacklistedChannels": {
       "message": "Sembunyikan Saluran dalam Daftar Hitam"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Nonaktifkan Pemutaran Otomatis"
+    },
+    "hideSidebar": {
+      "message": "Sembunyikan Sidebar"
     },
     "editBlacklistedChannels": {
       "message": "Edit Saluran dalam Daftar Hitam"

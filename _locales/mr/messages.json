@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "शिफारसी लपवा"
     },
+    "hideComments": {
+      "message": "टिप्पण्या लपवा"
+    },
     "hideBlacklistedChannels": {
       "message": "काळ्या यादीतील चॅनेल लपवा"
     },

@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Dölj Rekommendationer"
     },
+    "hideComments": {
+      "message": "Dölj Kommentarer"
+    },
     "hideBlacklistedChannels": {
       "message": "Dölj Svartlistade Kanaler"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Inaktivera Autoplay"
+    },
+    "hideSidebar": {
+      "message": "Dölj Sidopanel"
     },
     "editBlacklistedChannels": {
       "message": "Redigera Svartlistade Kanaler"

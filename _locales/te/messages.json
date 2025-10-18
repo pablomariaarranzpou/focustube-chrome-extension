@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "సిఫారసులు దాచు"
     },
+    "hideComments": {
+      "message": "వ్యాఖ్యలు దాచు"
+    },
     "hideBlacklistedChannels": {
       "message": "నిషేధిత ఛానెల్లు దాచు"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "ఆటోప్లే డిసేబుల్ చేయి"
+    },
+    "hideSidebar": {
+      "message": "సైడ్‌బార్ దాచు"
     },
     "editBlacklistedChannels": {
       "message": "నిషేధిత ఛానెల్లు సవరించు"

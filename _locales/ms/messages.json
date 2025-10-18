@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Sembunyikan Cadangan"
     },
+    "hideComments": {
+      "message": "Sembunyikan Komen"
+    },
     "hideBlacklistedChannels": {
       "message": "Sembunyikan Saluran yang Disenarai Hitam"
     },

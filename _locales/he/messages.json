@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "הסתר המלצות"
     },
+    "hideComments": {
+      "message": "הסתר תגובות"
+    },
     "hideBlacklistedChannels": {
       "message": "הסתר ערוצים ברשימה השחורה"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "השבת הפעלה אוטומטית"
+    },
+    "hideSidebar": {
+      "message": "הסתר סרגל צדדי"
     },
     "editBlacklistedChannels": {
       "message": "ערוך ערוצים ברשימה השחורה"

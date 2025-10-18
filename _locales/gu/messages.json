@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "ભલામણો છુપાવો"
     },
+    "hideComments": {
+      "message": "ટિપ્પણીઓ છુપાવો"
+    },
     "hideBlacklistedChannels": {
       "message": "કાળા યાદીમાં આવેલી ચેનલો છુપાવો"
     },

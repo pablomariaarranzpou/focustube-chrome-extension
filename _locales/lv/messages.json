@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Paslēpt Ieteikumus"
     },
+    "hideComments": {
+      "message": "Paslēpt Komentārus"
+    },
     "hideBlacklistedChannels": {
       "message": "Paslēpt Melnajā Sarakstā Iekļautus Kanālus"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Atspējot Automātisko Atskaņošanu"
+    },
+    "hideSidebar": {
+      "message": "Paslēpt Sānjoslu"
     },
     "editBlacklistedChannels": {
       "message": "Rediģēt Melnajā Sarakstā Iekļautus Kanālus"

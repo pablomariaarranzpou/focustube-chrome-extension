@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Sakrij Preporuke"
     },
+    "hideComments": {
+      "message": "Sakrij Komentare"
+    },
     "hideBlacklistedChannels": {
       "message": "Sakrij Kanale na Crnoj Listi"
     },

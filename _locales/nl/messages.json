@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Verberg Aanbevelingen"
     },
+    "hideComments": {
+      "message": "Verberg Reacties"
+    },
     "hideBlacklistedChannels": {
       "message": "Verberg Geblokkeerde Kanalen"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Schakel Automatisch Afspelen Uit"
+    },
+    "hideSidebar": {
+      "message": "Verberg Zijbalk"
     },
     "editBlacklistedChannels": {
       "message": "Bewerk Geblokkeerde Kanalen"

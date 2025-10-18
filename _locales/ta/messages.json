@@ -11,6 +11,9 @@
     "hideSuggestions": {
         "message": "பரிந்துரைகளை மறை"
     },
+    "hideComments": {
+        "message": "கருத்துகளை மறை"
+    },
     "hideBlacklistedChannels": {
         "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை மறை"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
         "message": "தானியங்கியாக இயங்குவதை முடக்கு"
+    },
+    "hideSidebar": {
+        "message": "பக்கப்பட்டையை மறை"
     },
     "editBlacklistedChannels": {
         "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை திருத்து"

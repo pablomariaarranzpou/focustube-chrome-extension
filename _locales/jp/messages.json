@@ -11,6 +11,9 @@
   "hideSuggestions": {
     "message": "おすすめを非表示"
   },
+  "hideComments": {
+    "message": "コメントを非表示"
+  },
   "hideBlacklistedChannels": {
     "message": "ブラックリストのチャンネルを非表示"
   },
@@ -22,6 +25,9 @@
   },
   "disableAutoplay": {
     "message": "自動再生を無効化"
+  },
+  "hideSidebar": {
+    "message": "サイドバーを非表示"
   },
   "editBlacklistedChannels": {
     "message": "ブラックリストのチャンネルを編集"

@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "إخفاء التوصيات"
     },
+    "hideComments": {
+      "message": "إخفاء التعليقات"
+    },
     "hideBlacklistedChannels": {
       "message": "إخفاء القنوات المحظورة"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "تعطيل التشغيل التلقائي"
+    },
+    "hideSidebar": {
+      "message": "إخفاء الشريط الجانبي"
     },
     "editBlacklistedChannels": {
       "message": "تحرير القنوات المحظورة"

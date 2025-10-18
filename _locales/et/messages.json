@@ -1,51 +1,53 @@
-{
-    "extensionName": {
-      "message": "FocusTube - YouTube'i tähelepanu kõrvalejuhtijate eemaldaja"
-    },
-    "extensionDescription": {
-      "message": "Eemaldage YouTube'ist Shorts-videod ja ebaolulised soovitused, et pakkuda segamatut vaatamiskogemust."
-    },
-    "hideShorts": {
-      "message": "Peida Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Peida soovitused"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Peida mustas nimekirjas olevad kanalid"
-    },
-    "hideBlacklistedWords": {
-      "message": "Peida mustas nimekirjas olevad sõnad"
-    },
-    "hideHomePageContent": {
-      "message": "Peida avalehe sisu"
-    },
-    "disableAutoplay": {
-      "message": "Keela automaatne esitus"
-    },
-    "editBlacklistedChannels": {
-      "message": "Redigeeri mustas nimekirjas olevaid kanaleid"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Keskendumisrežiimi must nimekiri"
-    },
-    "channelNamePlaceholder": {
-      "message": "Kanalinimi"
-    },
-    "add": {
-      "message": "Lisa"
-    },
-    "editBlacklistedWords": {
-      "message": "Redigeeri mustas nimekirjas olevaid sõnu"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Keskendumisrežiimi mustas nimekirjas olevad sõnad"
-    },
-    "wordPlaceholder": {
-      "message": "Näide: Mängud"
-    },
-    "remove": {
-      "message": "Eemalda"
-    }
+﻿{
+  "extensionName": {
+    "message": "FocusTube - Eliminador de Distracciones para YouTube"
+  },
+  "extensionDescription": {
+    "message": "Elimina los Shorts y videos recomendados irrelevantes en YouTube para una experiencia sin distracciones."
+  },
+  "hideShorts": {
+    "message": "Ocultar Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Ocultar Sugerencias"
+  },
+  "hideComments": {
+    "message": "Ocultar Comentarios"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Ocultar Canales en la Lista Negra"
+  },
+  "hideBlacklistedWords": {
+    "message": "Ocultar Palabras en la Lista Negra"
+  },
+  "hideHomePageContent": {
+    "message": "Ocultar Contenido de la PÃ¡gina Principal"
+  },
+  "disableAutoplay": {
+    "message": "Desactivar ReproducciÃ³n AutomÃ¡tica"
+  },
+  "hideSidebar": {
+    "message": "Ocultar Barra Lateral"
+  },
+  "editBlacklistedChannels": {
+    "message": "Editar Canales en la Lista Negra"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Lista Negra del Modo ConcentraciÃ³n"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nombre del Canal"
+  },
+  "add": {
+    "message": "Agregar"
+  },
+  "editBlacklistedWords": {
+    "message": "Editar Palabras en la Lista Negra"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Lista Negra de Palabras del Modo ConcentraciÃ³n"
+  },
+  "wordPlaceholder": {
+    "message": "Ej: Call of Duty"
   }
-  
+}

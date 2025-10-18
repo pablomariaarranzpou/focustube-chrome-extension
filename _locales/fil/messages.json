@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Itago ang Mga Rekomendasyon"
     },
+    "hideComments": {
+      "message": "Itago ang Mga Komento"
+    },
     "hideBlacklistedChannels": {
       "message": "Itago ang Mga Channel na Nasa Blacklist"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "I-disable ang Autoplay"
+    },
+    "hideSidebar": {
+      "message": "Itago ang Sidebar"
     },
     "editBlacklistedChannels": {
       "message": "I-edit ang Mga Channel na Nasa Blacklist"

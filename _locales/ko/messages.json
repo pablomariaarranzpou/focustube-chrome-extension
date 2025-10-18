@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "추천 숨기기"
     },
+    "hideComments": {
+      "message": "댓글 숨기기"
+    },
     "hideBlacklistedChannels": {
       "message": "차단된 채널 숨기기"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "자동재생 비활성화"
+    },
+    "hideSidebar": {
+      "message": "사이드바 숨기기"
     },
     "editBlacklistedChannels": {
       "message": "차단된 채널 수정"

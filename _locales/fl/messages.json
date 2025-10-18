@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Piilota suositukset"
     },
+    "hideComments": {
+      "message": "Piilota kommentit"
+    },
     "hideBlacklistedChannels": {
       "message": "Piilota mustalla listalla olevat kanavat"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Poista Autoplay käytöstä"
+    },
+    "hideSidebar": {
+      "message": "Piilota sivupalkki"
     },
     "editBlacklistedChannels": {
       "message": "Muokkaa mustalla listalla olevia kanavia"

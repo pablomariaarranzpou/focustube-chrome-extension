@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Skrij Priporočila"
     },
+    "hideComments": {
+      "message": "Skrij Komentarje"
+    },
     "hideBlacklistedChannels": {
       "message": "Skrij Kanale na Črnem Seznamu"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Onemogoči Samodejno Predvajanje"
+    },
+    "hideSidebar": {
+      "message": "Skrij Stransko Vrstico"
     },
     "editBlacklistedChannels": {
       "message": "Uredi Kanale na Črnem Seznamu"

@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Ficha Mapendekezo"
     },
+    "hideComments": {
+      "message": "Ficha Maoni"
+    },
     "hideBlacklistedChannels": {
       "message": "Ficha Mituo Iliyopo kwenye Orodha Nyeusi"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Zima Kucheza Kiotomatiki"
+    },
+    "hideSidebar": {
+      "message": "Ficha Upau wa Kando"
     },
     "editBlacklistedChannels": {
       "message": "Hariri Mituo Iliyopo kwenye Orodha Nyeusi"

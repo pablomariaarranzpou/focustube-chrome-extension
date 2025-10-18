@@ -11,6 +11,9 @@
   "hideSuggestions": {
     "message": "Vorschläge ausblenden"
   },
+  "hideComments": {
+    "message": "Kommentare ausblenden"
+  },
   "hideBlacklistedChannels": {
     "message": "Gesperrte Kanäle ausblenden"
   },
@@ -22,6 +25,9 @@
   },
   "disableAutoplay": {
     "message": "Autoplay deaktivieren"
+  },
+  "hideSidebar": {
+    "message": "Seitenleiste ausblenden"
   },
   "editBlacklistedChannels": {
     "message": "Gesperrte Kanäle bearbeiten"

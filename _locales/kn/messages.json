@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "ಶಿಫಾರಸುಗಳನ್ನು ಮರೆಮಾಡಿ"
     },
+    "hideComments": {
+      "message": "ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
+    },
     "hideBlacklistedChannels": {
       "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
     },

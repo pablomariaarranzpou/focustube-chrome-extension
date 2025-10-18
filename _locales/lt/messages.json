@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Slėpti Rekomendacijas"
     },
+    "hideComments": {
+      "message": "Slėpti Komentarus"
+    },
     "hideBlacklistedChannels": {
       "message": "Slėpti Juodajame Sąraše esančius Kanalus"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Išjungti Automatinį Paleidimą"
+    },
+    "hideSidebar": {
+      "message": "Slėpti Šoninę Juostą"
     },
     "editBlacklistedChannels": {
       "message": "Redaguoti Juodajame Sąraše esančius Kanalus"

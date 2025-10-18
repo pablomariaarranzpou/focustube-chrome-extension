@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "پنهان کردن پیشنهادات"
     },
+    "hideComments": {
+      "message": "پنهان کردن نظرات"
+    },
     "hideBlacklistedChannels": {
       "message": "پنهان کردن کانال‌های مسدود شده"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "غیرفعال کردن پخش خودکار"
+    },
+    "hideSidebar": {
+      "message": "پنهان کردن نوار کناری"
     },
     "editBlacklistedChannels": {
       "message": "ویرایش کانال‌های مسدود شده"

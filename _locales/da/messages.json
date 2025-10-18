@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Skjul anbefalinger"
     },
+    "hideComments": {
+      "message": "Skjul kommentarer"
+    },
     "hideBlacklistedChannels": {
       "message": "Skjul sortlistede kanaler"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Deaktiver Autoplay"
+    },
+    "hideSidebar": {
+      "message": "Skjul sidebjælke"
     },
     "editBlacklistedChannels": {
       "message": "Rediger sortlistede kanaler"

@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Скрыть рекомендации"
     },
+    "hideComments": {
+      "message": "Скрыть комментарии"
+    },
     "hideBlacklistedChannels": {
       "message": "Скрыть заблокированные каналы"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Отключить автозапуск"
+    },
+    "hideSidebar": {
+      "message": "Скрыть боковую панель"
     },
     "editBlacklistedChannels": {
       "message": "Редактировать заблокированные каналы"

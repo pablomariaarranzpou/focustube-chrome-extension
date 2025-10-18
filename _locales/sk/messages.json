@@ -11,6 +11,9 @@
     "hideSuggestions": {
       "message": "Skryť Odporúčania"
     },
+    "hideComments": {
+      "message": "Skryť Komentáre"
+    },
     "hideBlacklistedChannels": {
       "message": "Skryť Kanály v Zozname Zakázaných"
     },
@@ -22,6 +25,9 @@
     },
     "disableAutoplay": {
       "message": "Zakázať Automatické Prehrávanie"
+    },
+    "hideSidebar": {
+      "message": "Skryť Bočný Panel"
     },
     "editBlacklistedChannels": {
       "message": "Upraviť Kanály v Zozname Zakázaných"
