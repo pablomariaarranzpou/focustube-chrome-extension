@@ -26,17 +26,13 @@ function injectSidebarCSS() {
   if (sidebarStyleElement) return; // Already injected
   
   const css = `
-    /* Hide YouTube sidebar/guide */
+    /* Hide YouTube sidebar/guide - SOLO desktop, NO tocar elementos móviles */
     #guide,
     #guide-content,
     #guide-inner-content,
     ytd-guide-renderer,
     ytd-mini-guide-renderer,
-    ytd-guide-renderer #sections,
-    #guide #sections,
-    ytd-guide-section-renderer,
-    tp-yt-app-drawer,
-    #contentContainer.tp-yt-app-drawer {
+    ytd-guide-section-renderer {
       display: none !important;
       visibility: hidden !important;
       width: 0 !important;
@@ -45,28 +41,24 @@ function injectSidebarCSS() {
       opacity: 0 !important;
     }
     
-    /* Disable guide button */
+    /* Disable guide button - solo IDs específicos */
     #guide-button,
-    ytd-masthead #guide-button,
-    button#guide-button,
-    yt-icon-button#guide-button {
+    ytd-masthead #guide-button {
       pointer-events: none !important;
       opacity: 0.3 !important;
     }
     
-    /* Adjust layout */
-    ytd-app,
-    ytd-page-manager,
-    #content,
-    #page-manager {
+    /* Adjust layout - solo en páginas principales, no en canales */
+    ytd-app:not(:has(ytd-browse[page-subtype="channels"])),
+    ytd-page-manager:not(:has(ytd-browse[page-subtype="channels"])),
+    #page-manager:not(:has(ytd-browse[page-subtype="channels"])) {
       grid-template-columns: 0px 1fr !important;
     }
     
-    /* Expand main content */
-    ytd-browse,
-    ytd-two-column-browse-results-renderer,
-    #primary,
-    #secondary {
+    /* Expand main content - solo cuando no hay página de canal */
+    body:not(:has(ytd-browse[page-subtype="channels"])) ytd-two-column-browse-results-renderer,
+    body:not(:has(ytd-browse[page-subtype="channels"])) #primary,
+    body:not(:has(ytd-browse[page-subtype="channels"])) #secondary {
       margin-left: 0 !important;
       padding-left: 0 !important;
     }
@@ -635,195 +627,56 @@ function showAutoplayOverlay() {
 
 // New: functions to hide/show the left YouTube guide/sidebar
 function removeYouTubeSidebar() {
-  // Inject CSS for persistent hiding
+  // Inject CSS for persistent hiding - el CSS hace la mayor parte del trabajo
   injectSidebarCSS();
   
   try {
-    // Hide the sidebar itself - comprehensive selectors
+    // Solo marcar elementos DESKTOP como ocultos para accesibilidad
+    // NO tocar tp-yt-app-drawer que es para móvil
     const sidebarSelectors = [
       '#guide',
-      '#guide-content',
-      '#guide-inner-content',
       'ytd-guide-renderer',
-      'ytd-mini-guide-renderer',
-      'ytd-guide-renderer #sections',
-      '#guide #sections',
-      'ytd-guide-section-renderer',
-      'tp-yt-app-drawer',
-      '#contentContainer', // Mobile sidebar
     ];
     
     sidebarSelectors.forEach((sel) => {
       const els = document.querySelectorAll(sel);
       Array.from(els).forEach((el) => {
         try { 
-          el.style.setProperty('display', 'none', 'important'); 
-          el.style.setProperty('visibility', 'hidden', 'important');
-          el.style.setProperty('width', '0', 'important');
-          el.style.setProperty('max-width', '0', 'important');
-          el.style.setProperty('min-width', '0', 'important');
-          el.style.setProperty('opacity', '0', 'important');
           el.setAttribute('hidden', 'true');
+          el.setAttribute('aria-hidden', 'true');
         } catch (e) {}
       });
     });
 
-    // Disable the guide button (make it non-clickable but keep visible)
-    const guideButtonSelectors = [
-      '#guide-button',
-      'ytd-masthead #guide-button',
-      'button#guide-button',
-      'yt-icon-button#guide-button',
-      '[aria-label*="Guide"]',
-      '[aria-label*="Menu"]',
-    ];
-    guideButtonSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try { 
-          el.style.setProperty('pointer-events', 'none', 'important');
-          el.style.setProperty('opacity', '0.3', 'important');
-          el.disabled = true;
-          el.setAttribute('disabled', 'true');
-        } catch (e) {}
-      });
-    });
-
-    // Adjust layout to remove whitespace
-    const layoutSelectors = [
-      'ytd-app',
-      'ytd-page-manager',
-      '#content',
-      '#page-manager',
-    ];
-    
-    layoutSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try {
-          // Force full width layout
-          if (el.style.gridTemplateColumns !== undefined) {
-            el.style.setProperty('grid-template-columns', '0px 1fr', 'important');
-          }
-        } catch (e) {}
-      });
-    });
-
-    // Force the main content to expand
-    const contentSelectors = [
-      'ytd-browse',
-      'ytd-two-column-browse-results-renderer',
-      '#primary',
-      '#secondary',
-    ];
-    
-    contentSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try {
-          el.style.setProperty('margin-left', '0', 'important');
-          el.style.setProperty('padding-left', '0', 'important');
-        } catch (e) {}
-      });
-    });
-
-    console.debug('FocusTube: Sidebar hidden');
+    console.debug('FocusTube: Sidebar hidden (desktop only)');
   } catch (e) {
     console.debug('FocusTube: Error hiding sidebar', e);
   }
 }
 
 function showYouTubeSidebar() {
-  // Remove injected CSS
+  // Remove injected CSS - esto restaura todo automáticamente
   removeSidebarCSS();
   
   try {
-    // Show the sidebar - comprehensive selectors
+    // Solo remover atributos de accesibilidad de elementos desktop
+    // NO tocar tp-yt-app-drawer que es para móvil
     const sidebarSelectors = [
       '#guide',
-      '#guide-content',
-      '#guide-inner-content',
       'ytd-guide-renderer',
-      'ytd-mini-guide-renderer',
-      'ytd-guide-renderer #sections',
-      '#guide #sections',
-      'ytd-guide-section-renderer',
-      'tp-yt-app-drawer',
-      '#contentContainer',
     ];
     
     sidebarSelectors.forEach((sel) => {
       const els = document.querySelectorAll(sel);
       Array.from(els).forEach((el) => {
         try { 
-          el.style.removeProperty('display');
-          el.style.removeProperty('visibility');
-          el.style.removeProperty('width');
-          el.style.removeProperty('max-width');
-          el.style.removeProperty('min-width');
-          el.style.removeProperty('opacity');
           el.removeAttribute('hidden');
+          el.removeAttribute('aria-hidden');
         } catch (e) {}
       });
     });
 
-    // Re-enable the guide button
-    const guideButtonSelectors = [
-      '#guide-button',
-      'ytd-masthead #guide-button',
-      'button#guide-button',
-      'yt-icon-button#guide-button',
-      '[aria-label*="Guide"]',
-      '[aria-label*="Menu"]',
-    ];
-    guideButtonSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try { 
-          el.style.removeProperty('pointer-events');
-          el.style.removeProperty('opacity');
-          el.disabled = false;
-          el.removeAttribute('disabled');
-        } catch (e) {}
-      });
-    });
-
-    // Restore layout
-    const layoutSelectors = [
-      'ytd-app',
-      'ytd-page-manager',
-      '#content',
-      '#page-manager',
-    ];
-    
-    layoutSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try {
-          el.style.removeProperty('grid-template-columns');
-        } catch (e) {}
-      });
-    });
-
-    // Restore content margins
-    const contentSelectors = [
-      'ytd-browse',
-      'ytd-two-column-browse-results-renderer',
-      '#primary',
-      '#secondary',
-    ];
-    
-    contentSelectors.forEach((sel) => {
-      const els = document.querySelectorAll(sel);
-      Array.from(els).forEach((el) => {
-        try {
-          el.style.removeProperty('margin-left');
-          el.style.removeProperty('padding-left');
-        } catch (e) {}
-      });
-    });
-
-    console.debug('FocusTube: Sidebar shown');
+    console.debug('FocusTube: Sidebar shown (desktop only)');
   } catch (e) {
     console.debug('FocusTube: Error showing sidebar', e);
   }
