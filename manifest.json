@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "default_locale": "en",
   "icons": {
     "128": "128.png"
@@ -25,7 +25,22 @@
         "*://www.youtube.com/*",
         "*://m.youtube.com/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "src/core/Feature.js",
+        "src/core/DOMFeature.js",
+        "src/core/FilterFeature.js",
+        "src/core/FeatureManager.js",
+        "src/features/HideShortsFeature.js",
+        "src/features/HideSuggestionsFeature.js",
+        "src/features/HideCommentsFeature.js",
+        "src/features/HideSidebarFeature.js",
+        "src/features/HideAutoplayOverlayFeature.js",
+        "src/features/HideHomePageContentFeature.js",
+        "src/features/HideBlacklistedChannelsFeature.js",
+        "src/features/HideBlacklistedWordsFeature.js",
+        "src/content-main.js"
+      ],
+      "run_at": "document_start",
       "all_frames": true
     }
   ]

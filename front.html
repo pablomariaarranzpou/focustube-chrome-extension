@@ -57,10 +57,24 @@
       background-color: #fddede;
       border: 1px solid #f9737a;
       border-radius: 8px;
+      margin-bottom: 0.5rem;
     }
-    .blacklist-item .channel-id {
+    .blacklist-item .channel-id,
+    .blacklist-item .word {
       flex: 1;
       margin-right: 1rem;
+    }
+    .remove-button {
+      background-color: #ef4444;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .remove-button:hover {
+      background-color: #dc2626;
     }
   </style>
 </head>
@@ -206,6 +220,7 @@
       </label>
     </div>
   </div>
-  <script src="popup.js"></script>
+  <script src="src/utils/ConfigRegistry.js"></script>
+  <script src="src/ui/PopupController.js"></script>
 </body>
 </html>
