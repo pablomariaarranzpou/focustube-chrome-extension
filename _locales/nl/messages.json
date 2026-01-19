@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Verwijder Afleidingen op YouTube"
-    },
-    "extensionDescription": {
-      "message": "Verwijder Shorts-video's en irrelevante aanbevelingen op YouTube voor een ongestoorde kijkervaring."
-    },
-    "hideShorts": {
-      "message": "Verberg Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Verberg Aanbevelingen"
-    },
-    "hideComments": {
-      "message": "Verberg Reacties"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Verberg Geblokkeerde Kanalen"
-    },
-    "hideBlacklistedWords": {
-      "message": "Verberg Geblokkeerde Woorden"
-    },
-    "hideHomePageContent": {
-      "message": "Verberg Inhoud van de Homepage"
-    },
-    "disableAutoplay": {
-      "message": "Schakel Automatisch Afspelen Uit"
-    },
-    "hideSidebar": {
-      "message": "Verberg Zijbalk"
-    },
-    "editBlacklistedChannels": {
-      "message": "Bewerk Geblokkeerde Kanalen"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Blacklist voor Concentratiemodus"
-    },
-    "channelNamePlaceholder": {
-      "message": "Kanaalnaam"
-    },
-    "add": {
-      "message": "Toevoegen"
-    },
-    "editBlacklistedWords": {
-      "message": "Bewerk Geblokkeerde Woorden"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Woorden op Blacklist voor Concentratiemodus"
-    },
-    "wordPlaceholder": {
-      "message": "Bijv.: Gaming"
-    },
-    "remove": {
-      "message": "Verwijderen"
-    }
+  "extensionName": {
+    "message": "FocusTube - Verberg YouTube Shorts, Aanbevelingen, Suggesties & Blokkeer Woorden"
+  },
+  "extensionDescription": {
+    "message": "Verberg YouTube Shorts, aanbevelingen, suggesties en reacties. Blokkeer kanalen en woorden. De ultieme tool zonder afleiding."
+  },
+  "hideShorts": {
+    "message": "Verberg Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Verberg Aanbevelingen"
+  },
+  "hideComments": {
+    "message": "Verberg Reacties"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Verberg Geblokkeerde Kanalen"
+  },
+  "hideBlacklistedWords": {
+    "message": "Verberg Geblokkeerde Woorden"
+  },
+  "hideHomePageContent": {
+    "message": "Verberg Inhoud van de Homepage"
+  },
+  "disableAutoplay": {
+    "message": "Schakel Automatisch Afspelen Uit"
+  },
+  "hideSidebar": {
+    "message": "Verberg Zijbalk"
+  },
+  "editBlacklistedChannels": {
+    "message": "Bewerk Geblokkeerde Kanalen"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Blacklist voor Concentratiemodus"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanaalnaam"
+  },
+  "add": {
+    "message": "Toevoegen"
+  },
+  "editBlacklistedWords": {
+    "message": "Bewerk Geblokkeerde Woorden"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Woorden op Blacklist voor Concentratiemodus"
+  },
+  "wordPlaceholder": {
+    "message": "Bijv.: Gaming"
+  },
+  "remove": {
+    "message": "Verwijderen"
   }
-  
+}

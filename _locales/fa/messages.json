@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - حذف کننده حواس پرتی در YouTube"
-    },
-    "extensionDescription": {
-      "message": "ویدیوهای Shorts و توصیه‌های نامرتبط را در YouTube حذف کنید تا یک تجربه تماشای بدون حواس پرتی داشته باشید."
-    },
-    "hideShorts": {
-      "message": "پنهان کردن Shorts"
-    },
-    "hideSuggestions": {
-      "message": "پنهان کردن پیشنهادات"
-    },
-    "hideComments": {
-      "message": "پنهان کردن نظرات"
-    },
-    "hideBlacklistedChannels": {
-      "message": "پنهان کردن کانال‌های مسدود شده"
-    },
-    "hideBlacklistedWords": {
-      "message": "پنهان کردن کلمات مسدود شده"
-    },
-    "hideHomePageContent": {
-      "message": "پنهان کردن محتوای صفحه اصلی"
-    },
-    "disableAutoplay": {
-      "message": "غیرفعال کردن پخش خودکار"
-    },
-    "hideSidebar": {
-      "message": "پنهان کردن نوار کناری"
-    },
-    "editBlacklistedChannels": {
-      "message": "ویرایش کانال‌های مسدود شده"
-    },
-    "concentrationModeBlacklist": {
-      "message": "لیست سیاه حالت تمرکز"
-    },
-    "channelNamePlaceholder": {
-      "message": "نام کانال"
-    },
-    "add": {
-      "message": "افزودن"
-    },
-    "editBlacklistedWords": {
-      "message": "ویرایش کلمات مسدود شده"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "لیست سیاه کلمات برای حالت تمرکز"
-    },
-    "wordPlaceholder": {
-      "message": "مثال: بازی‌ها"
-    },
-    "remove": {
-      "message": "حذف"
-    }
+  "extensionName": {
+    "message": "FocusTube - مخفی کردن YouTube Shorts، پیشنهادات و مسدود کردن کلمات"
+  },
+  "extensionDescription": {
+    "message": "مخفی کردن YouTube Shorts، توصیه ها، پیشنهادات و نظرات. مسدود کردن کانال ها و کلمات. ابزار نهایی بدون حواس پرتی."
+  },
+  "hideShorts": {
+    "message": "پنهان کردن Shorts"
+  },
+  "hideSuggestions": {
+    "message": "پنهان کردن پیشنهادات"
+  },
+  "hideComments": {
+    "message": "پنهان کردن نظرات"
+  },
+  "hideBlacklistedChannels": {
+    "message": "پنهان کردن کانال‌های مسدود شده"
+  },
+  "hideBlacklistedWords": {
+    "message": "پنهان کردن کلمات مسدود شده"
+  },
+  "hideHomePageContent": {
+    "message": "پنهان کردن محتوای صفحه اصلی"
+  },
+  "disableAutoplay": {
+    "message": "غیرفعال کردن پخش خودکار"
+  },
+  "hideSidebar": {
+    "message": "پنهان کردن نوار کناری"
+  },
+  "editBlacklistedChannels": {
+    "message": "ویرایش کانال‌های مسدود شده"
+  },
+  "concentrationModeBlacklist": {
+    "message": "لیست سیاه حالت تمرکز"
+  },
+  "channelNamePlaceholder": {
+    "message": "نام کانال"
+  },
+  "add": {
+    "message": "افزودن"
+  },
+  "editBlacklistedWords": {
+    "message": "ویرایش کلمات مسدود شده"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "لیست سیاه کلمات برای حالت تمرکز"
+  },
+  "wordPlaceholder": {
+    "message": "مثال: بازی‌ها"
+  },
+  "remove": {
+    "message": "حذف"
   }
-  
+}

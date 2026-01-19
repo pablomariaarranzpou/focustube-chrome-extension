@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Odstranjevanje Motenj na YouTubu"
-    },
-    "extensionDescription": {
-      "message": "Odstranite videoposnetke Shorts in nepomembna priporočila na YouTubu za nemoteno gledanje."
-    },
-    "hideShorts": {
-      "message": "Skrij Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Skrij Priporočila"
-    },
-    "hideComments": {
-      "message": "Skrij Komentarje"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Skrij Kanale na Črnem Seznamu"
-    },
-    "hideBlacklistedWords": {
-      "message": "Skrij Besede na Črnem Seznamu"
-    },
-    "hideHomePageContent": {
-      "message": "Skrij Vsebino na Domači Strani"
-    },
-    "disableAutoplay": {
-      "message": "Onemogoči Samodejno Predvajanje"
-    },
-    "hideSidebar": {
-      "message": "Skrij Stransko Vrstico"
-    },
-    "editBlacklistedChannels": {
-      "message": "Uredi Kanale na Črnem Seznamu"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Črni Seznam za Način Koncentracije"
-    },
-    "channelNamePlaceholder": {
-      "message": "Ime Kanala"
-    },
-    "add": {
-      "message": "Dodaj"
-    },
-    "editBlacklistedWords": {
-      "message": "Uredi Besede na Črnem Seznamu"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Črni Seznam Besed za Način Koncentracije"
-    },
-    "wordPlaceholder": {
-      "message": "Primer: Igre"
-    },
-    "remove": {
-      "message": "Odstrani"
-    }
+  "extensionName": {
+    "message": "FocusTube - Skrij YouTube Shorts, Priporočila, Predloge in Blokiraj Besede"
+  },
+  "extensionDescription": {
+    "message": "Skrijte YouTube Shorts, priporočila, predloge in komentarje. Blokirajte kanale in besede. Odlično orodje brez motenj."
+  },
+  "hideShorts": {
+    "message": "Skrij Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Skrij Priporočila"
+  },
+  "hideComments": {
+    "message": "Skrij Komentarje"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Skrij Kanale na Črnem Seznamu"
+  },
+  "hideBlacklistedWords": {
+    "message": "Skrij Besede na Črnem Seznamu"
+  },
+  "hideHomePageContent": {
+    "message": "Skrij Vsebino na Domači Strani"
+  },
+  "disableAutoplay": {
+    "message": "Onemogoči Samodejno Predvajanje"
+  },
+  "hideSidebar": {
+    "message": "Skrij Stransko Vrstico"
+  },
+  "editBlacklistedChannels": {
+    "message": "Uredi Kanale na Črnem Seznamu"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Črni Seznam za Način Koncentracije"
+  },
+  "channelNamePlaceholder": {
+    "message": "Ime Kanala"
+  },
+  "add": {
+    "message": "Dodaj"
+  },
+  "editBlacklistedWords": {
+    "message": "Uredi Besede na Črnem Seznamu"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Črni Seznam Besed za Način Koncentracije"
+  },
+  "wordPlaceholder": {
+    "message": "Primer: Igre"
+  },
+  "remove": {
+    "message": "Odstrani"
   }
-  
+}

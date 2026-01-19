@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Häiriötekijöiden poistaja YouTubeen"
-    },
-    "extensionDescription": {
-      "message": "Poista Shorts-videot ja merkityksettömät suositukset YouTubesta keskeytyksettömän katselukokemuksen takaamiseksi."
-    },
-    "hideShorts": {
-      "message": "Piilota Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Piilota suositukset"
-    },
-    "hideComments": {
-      "message": "Piilota kommentit"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Piilota mustalla listalla olevat kanavat"
-    },
-    "hideBlacklistedWords": {
-      "message": "Piilota mustalla listalla olevat sanat"
-    },
-    "hideHomePageContent": {
-      "message": "Piilota etusivun sisältö"
-    },
-    "disableAutoplay": {
-      "message": "Poista Autoplay käytöstä"
-    },
-    "hideSidebar": {
-      "message": "Piilota sivupalkki"
-    },
-    "editBlacklistedChannels": {
-      "message": "Muokkaa mustalla listalla olevia kanavia"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Keskittymismoodin musta lista"
-    },
-    "channelNamePlaceholder": {
-      "message": "Kanavan nimi"
-    },
-    "add": {
-      "message": "Lisää"
-    },
-    "editBlacklistedWords": {
-      "message": "Muokkaa mustalla listalla olevia sanoja"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Keskittymismoodin musta lista"
-    },
-    "wordPlaceholder": {
-      "message": "Esim.: Pelit"
-    },
-    "remove": {
-      "message": "Poista"
-    }
+  "extensionName": {
+    "message": "FocusTube - Verberg YouTube Shorts, Aanbevelingen, Suggesties & Blokkeer Woorden"
+  },
+  "extensionDescription": {
+    "message": "Verberg YouTube Shorts, aanbevelingen, suggesties en reacties. Blokkeer kanalen en woorden. De ultieme tool zonder afleiding."
+  },
+  "hideShorts": {
+    "message": "Piilota Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Piilota suositukset"
+  },
+  "hideComments": {
+    "message": "Piilota kommentit"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Piilota mustalla listalla olevat kanavat"
+  },
+  "hideBlacklistedWords": {
+    "message": "Piilota mustalla listalla olevat sanat"
+  },
+  "hideHomePageContent": {
+    "message": "Piilota etusivun sisältö"
+  },
+  "disableAutoplay": {
+    "message": "Poista Autoplay käytöstä"
+  },
+  "hideSidebar": {
+    "message": "Piilota sivupalkki"
+  },
+  "editBlacklistedChannels": {
+    "message": "Muokkaa mustalla listalla olevia kanavia"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Keskittymismoodin musta lista"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanavan nimi"
+  },
+  "add": {
+    "message": "Lisää"
+  },
+  "editBlacklistedWords": {
+    "message": "Muokkaa mustalla listalla olevia sanoja"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Keskittymismoodin musta lista"
+  },
+  "wordPlaceholder": {
+    "message": "Esim.: Pelit"
+  },
+  "remove": {
+    "message": "Poista"
   }
-  
+}

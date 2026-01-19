@@ -1,4 +1,4 @@
-﻿# FocusTube Chrome Extension
+﻿# FocusTube - Hide YouTube Shorts, Recommendations, Suggestions & Block Words
 
 ## 🎯 Overview
 

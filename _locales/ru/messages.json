@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Удаление отвлекающих факторов на YouTube"
-    },
-    "extensionDescription": {
-      "message": "Устраняйте видео Shorts и нерелевантные рекомендации на YouTube для просмотра без отвлечений."
-    },
-    "hideShorts": {
-      "message": "Скрыть Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Скрыть рекомендации"
-    },
-    "hideComments": {
-      "message": "Скрыть комментарии"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Скрыть заблокированные каналы"
-    },
-    "hideBlacklistedWords": {
-      "message": "Скрыть заблокированные слова"
-    },
-    "hideHomePageContent": {
-      "message": "Скрыть содержимое главной страницы"
-    },
-    "disableAutoplay": {
-      "message": "Отключить автозапуск"
-    },
-    "hideSidebar": {
-      "message": "Скрыть боковую панель"
-    },
-    "editBlacklistedChannels": {
-      "message": "Редактировать заблокированные каналы"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Черный список режима концентрации"
-    },
-    "channelNamePlaceholder": {
-      "message": "Название канала"
-    },
-    "add": {
-      "message": "Добавить"
-    },
-    "editBlacklistedWords": {
-      "message": "Редактировать заблокированные слова"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Черный список слов режима концентрации"
-    },
-    "wordPlaceholder": {
-      "message": "Пример: Игры"
-    },
-    "remove": {
-      "message": "Удалить"
-    }
+  "extensionName": {
+    "message": "FocusTube - Скрыть YouTube Shorts, Рекомендации, Предложения и Слова"
+  },
+  "extensionDescription": {
+    "message": "Скройте YouTube Shorts, рекомендации, предложения и комментарии. Блокируйте каналы и слова. Лучший инструмент для фокусировки."
+  },
+  "hideShorts": {
+    "message": "Скрыть Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Скрыть рекомендации"
+  },
+  "hideComments": {
+    "message": "Скрыть комментарии"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Скрыть заблокированные каналы"
+  },
+  "hideBlacklistedWords": {
+    "message": "Скрыть заблокированные слова"
+  },
+  "hideHomePageContent": {
+    "message": "Скрыть содержимое главной страницы"
+  },
+  "disableAutoplay": {
+    "message": "Отключить автозапуск"
+  },
+  "hideSidebar": {
+    "message": "Скрыть боковую панель"
+  },
+  "editBlacklistedChannels": {
+    "message": "Редактировать заблокированные каналы"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Черный список режима концентрации"
+  },
+  "channelNamePlaceholder": {
+    "message": "Название канала"
+  },
+  "add": {
+    "message": "Добавить"
+  },
+  "editBlacklistedWords": {
+    "message": "Редактировать заблокированные слова"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Черный список слов режима концентрации"
+  },
+  "wordPlaceholder": {
+    "message": "Пример: Игры"
+  },
+  "remove": {
+    "message": "Удалить"
   }
-  
+}

@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "FocusTube - Rimuovi Distrazioni da YouTube"
+    "message": "FocusTube - Nascondi YouTube Shorts, Consigli, Suggerimenti e Blocca Parole"
   },
   "extensionDescription": {
-    "message": "Elimina i video Shorts e le raccomandazioni irrilevanti su YouTube per un'esperienza di visione senza distrazioni."
+    "message": "Nascondi YouTube Shorts, consigli, suggerimenti e commenti. Blocca canali e parole. Lo strumento definitivo senza distrazioni."
   },
   "hideShorts": {
     "message": "Nascondi Shorts"

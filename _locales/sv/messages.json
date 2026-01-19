@@ -1,58 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Ta Bort Distraktioner på YouTube"
-    },
-    "extensionDescription": {
-      "message": "Ta bort Shorts-videor och irrelevanta rekommendationer på YouTube för en distraktionsfri tittarupplevelse."
-    },
-    "hideShorts": {
-      "message": "Dölj Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Dölj Rekommendationer"
-    },
-    "hideComments": {
-      "message": "Dölj Kommentarer"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Dölj Svartlistade Kanaler"
-    },
-    "hideBlacklistedWords": {
-      "message": "Dölj Svartlistade Ord"
-    },
-    "hideHomePageContent": {
-      "message": "Dölj Startsida Innehåll"
-    },
-    "disableAutoplay": {
-      "message": "Inaktivera Autoplay"
-    },
-    "hideSidebar": {
-      "message": "Dölj Sidopanel"
-    },
-    "editBlacklistedChannels": {
-      "message": "Redigera Svartlistade Kanaler"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Svartlista för Koncentrationsläge"
-    },
-    "channelNamePlaceholder": {
-      "message": "Kanalnamn"
-    },
-    "add": {
-      "message": "Lägg till"
-    },
-    "editBlacklistedWords": {
-      "message": "Redigera Svartlistade Ord"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Svartlista Ord för Koncentrationsläge"
-    },
-    "wordPlaceholder": {
-      "message": "Exempel: Spel"
-    },
-    "remove": {
-      "message": "Ta bort"
-    }
+  "extensionName": {
+    "message": "FocusTube - Dölj YouTube Shorts, Rekommendationer, Förslag & Blockera Ord"
+  },
+  "extensionDescription": {
+    "message": "Dölj YouTube Shorts, rekommendationer, förslag och kommentarer. Blockera kanaler och ord. Det ultimata verktyget utan distraktioner."
+  },
+  "hideShorts": {
+    "message": "Dölj Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Dölj Rekommendationer"
+  },
+  "hideComments": {
+    "message": "Dölj Kommentarer"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Dölj Svartlistade Kanaler"
+  },
+  "hideBlacklistedWords": {
+    "message": "Dölj Svartlistade Ord"
+  },
+  "hideHomePageContent": {
+    "message": "Dölj Startsida Innehåll"
+  },
+  "disableAutoplay": {
+    "message": "Inaktivera Autoplay"
+  },
+  "hideSidebar": {
+    "message": "Dölj Sidopanel"
+  },
+  "editBlacklistedChannels": {
+    "message": "Redigera Svartlistade Kanaler"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Svartlista för Koncentrationsläge"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanalnamn"
+  },
+  "add": {
+    "message": "Lägg till"
+  },
+  "editBlacklistedWords": {
+    "message": "Redigera Svartlistade Ord"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Svartlista Ord för Koncentrationsläge"
+  },
+  "wordPlaceholder": {
+    "message": "Exempel: Spel"
+  },
+  "remove": {
+    "message": "Ta bort"
   }
-  
-  
+}

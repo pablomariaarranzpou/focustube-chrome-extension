@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - מסיר הסחות דעת מ-YouTube"
-    },
-    "extensionDescription": {
-      "message": "הסרו סרטוני Shorts והמלצות לא רלוונטיות מ-YouTube לצפייה ללא הסחות דעת."
-    },
-    "hideShorts": {
-      "message": "הסתר Shorts"
-    },
-    "hideSuggestions": {
-      "message": "הסתר המלצות"
-    },
-    "hideComments": {
-      "message": "הסתר תגובות"
-    },
-    "hideBlacklistedChannels": {
-      "message": "הסתר ערוצים ברשימה השחורה"
-    },
-    "hideBlacklistedWords": {
-      "message": "הסתר מילים ברשימה השחורה"
-    },
-    "hideHomePageContent": {
-      "message": "הסתר תוכן דף הבית"
-    },
-    "disableAutoplay": {
-      "message": "השבת הפעלה אוטומטית"
-    },
-    "hideSidebar": {
-      "message": "הסתר סרגל צדדי"
-    },
-    "editBlacklistedChannels": {
-      "message": "ערוך ערוצים ברשימה השחורה"
-    },
-    "concentrationModeBlacklist": {
-      "message": "רשימה שחורה למצב ריכוז"
-    },
-    "channelNamePlaceholder": {
-      "message": "שם ערוץ"
-    },
-    "add": {
-      "message": "הוסף"
-    },
-    "editBlacklistedWords": {
-      "message": "ערוך מילים ברשימה השחורה"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "מילים ברשימה שחורה למצב ריכוז"
-    },
-    "wordPlaceholder": {
-      "message": "דוגמה: משחקים"
-    },
-    "remove": {
-      "message": "הסר"
-    }
+  "extensionName": {
+    "message": "FocusTube - הסתרת YouTube Shorts, המלצות, הצעות וחסימת מילים"
+  },
+  "extensionDescription": {
+    "message": "הסתר את YouTube Shorts, המלצות, הצעות ותגובות. חסום ערוצים ומילים. הכלי האולטימטיבי לצפייה ללא הסחות דעת."
+  },
+  "hideShorts": {
+    "message": "הסתר Shorts"
+  },
+  "hideSuggestions": {
+    "message": "הסתר המלצות"
+  },
+  "hideComments": {
+    "message": "הסתר תגובות"
+  },
+  "hideBlacklistedChannels": {
+    "message": "הסתר ערוצים ברשימה השחורה"
+  },
+  "hideBlacklistedWords": {
+    "message": "הסתר מילים ברשימה השחורה"
+  },
+  "hideHomePageContent": {
+    "message": "הסתר תוכן דף הבית"
+  },
+  "disableAutoplay": {
+    "message": "השבת הפעלה אוטומטית"
+  },
+  "hideSidebar": {
+    "message": "הסתר סרגל צדדי"
+  },
+  "editBlacklistedChannels": {
+    "message": "ערוך ערוצים ברשימה השחורה"
+  },
+  "concentrationModeBlacklist": {
+    "message": "רשימה שחורה למצב ריכוז"
+  },
+  "channelNamePlaceholder": {
+    "message": "שם ערוץ"
+  },
+  "add": {
+    "message": "הוסף"
+  },
+  "editBlacklistedWords": {
+    "message": "ערוך מילים ברשימה השחורה"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "מילים ברשימה שחורה למצב ריכוז"
+  },
+  "wordPlaceholder": {
+    "message": "דוגמה: משחקים"
+  },
+  "remove": {
+    "message": "הסר"
   }
-  
+}

@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Penghapus Gangguan di YouTube"
-    },
-    "extensionDescription": {
-      "message": "Hilangkan video Shorts dan rekomendasi yang tidak relevan di YouTube untuk pengalaman menonton yang bebas gangguan."
-    },
-    "hideShorts": {
-      "message": "Sembunyikan Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Sembunyikan Rekomendasi"
-    },
-    "hideComments": {
-      "message": "Sembunyikan Komentar"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Sembunyikan Saluran dalam Daftar Hitam"
-    },
-    "hideBlacklistedWords": {
-      "message": "Sembunyikan Kata dalam Daftar Hitam"
-    },
-    "hideHomePageContent": {
-      "message": "Sembunyikan Konten Halaman Beranda"
-    },
-    "disableAutoplay": {
-      "message": "Nonaktifkan Pemutaran Otomatis"
-    },
-    "hideSidebar": {
-      "message": "Sembunyikan Sidebar"
-    },
-    "editBlacklistedChannels": {
-      "message": "Edit Saluran dalam Daftar Hitam"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Daftar Hitam Mode Konsentrasi"
-    },
-    "channelNamePlaceholder": {
-      "message": "Nama Saluran"
-    },
-    "add": {
-      "message": "Tambah"
-    },
-    "editBlacklistedWords": {
-      "message": "Edit Kata dalam Daftar Hitam"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Kata dalam Daftar Hitam Mode Konsentrasi"
-    },
-    "wordPlaceholder": {
-      "message": "Contoh: Gaming"
-    },
-    "remove": {
-      "message": "Hapus"
-    }
+  "extensionName": {
+    "message": "FocusTube - Sembunyikan YouTube Shorts, Rekomendasi, Saran & Blokir Kata"
+  },
+  "extensionDescription": {
+    "message": "Sembunyikan YouTube Shorts, rekomendasi, saran, dan komentar. Blokir saluran dan kata-kata. Alat bebas gangguan terbaik."
+  },
+  "hideShorts": {
+    "message": "Sembunyikan Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Sembunyikan Rekomendasi"
+  },
+  "hideComments": {
+    "message": "Sembunyikan Komentar"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Sembunyikan Saluran dalam Daftar Hitam"
+  },
+  "hideBlacklistedWords": {
+    "message": "Sembunyikan Kata dalam Daftar Hitam"
+  },
+  "hideHomePageContent": {
+    "message": "Sembunyikan Konten Halaman Beranda"
+  },
+  "disableAutoplay": {
+    "message": "Nonaktifkan Pemutaran Otomatis"
+  },
+  "hideSidebar": {
+    "message": "Sembunyikan Sidebar"
+  },
+  "editBlacklistedChannels": {
+    "message": "Edit Saluran dalam Daftar Hitam"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Daftar Hitam Mode Konsentrasi"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nama Saluran"
+  },
+  "add": {
+    "message": "Tambah"
+  },
+  "editBlacklistedWords": {
+    "message": "Edit Kata dalam Daftar Hitam"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Kata dalam Daftar Hitam Mode Konsentrasi"
+  },
+  "wordPlaceholder": {
+    "message": "Contoh: Gaming"
+  },
+  "remove": {
+    "message": "Hapus"
   }
-  
+}

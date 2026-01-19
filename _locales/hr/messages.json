@@ -1,54 +1,53 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Uklanjanje smetnji na YouTubeu"
-    },
-    "extensionDescription": {
-      "message": "Uklonite Shorts videozapise i nevažne preporuke na YouTubeu za iskustvo gledanja bez ometanja."
-    },
-    "hideShorts": {
-      "message": "Sakrij Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Sakrij Preporuke"
-    },
-    "hideComments": {
-      "message": "Sakrij Komentare"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Sakrij Kanale na Crnoj Listi"
-    },
-    "hideBlacklistedWords": {
-      "message": "Sakrij Riječi na Crnoj Listi"
-    },
-    "hideHomePageContent": {
-      "message": "Sakrij Sadržaj Naslovne Stranice"
-    },
-    "disableAutoplay": {
-      "message": "Onemogući Autoplay"
-    },
-    "editBlacklistedChannels": {
-      "message": "Uredi Kanale na Crnoj Listi"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Crna Lista za Način Koncentracije"
-    },
-    "channelNamePlaceholder": {
-      "message": "Ime Kanala"
-    },
-    "add": {
-      "message": "Dodaj"
-    },
-    "editBlacklistedWords": {
-      "message": "Uredi Riječi na Crnoj Listi"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Riječi na Crnoj Listi za Način Koncentracije"
-    },
-    "wordPlaceholder": {
-      "message": "Primjer: Gaming"
-    },
-    "remove": {
-      "message": "Ukloni"
-    }
+  "extensionName": {
+    "message": "FocusTube - Sakrij YouTube Shorts, Preporuke, Prijedloge i Blokiraj Riječi"
+  },
+  "extensionDescription": {
+    "message": "Sakrij YouTube Shorts, preporuke, prijedloge i komentare. Blokiraj kanale i riječi. Najbolji alat bez ometanja."
+  },
+  "hideShorts": {
+    "message": "Sakrij Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Sakrij Preporuke"
+  },
+  "hideComments": {
+    "message": "Sakrij Komentare"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Sakrij Kanale na Crnoj Listi"
+  },
+  "hideBlacklistedWords": {
+    "message": "Sakrij Riječi na Crnoj Listi"
+  },
+  "hideHomePageContent": {
+    "message": "Sakrij Sadržaj Naslovne Stranice"
+  },
+  "disableAutoplay": {
+    "message": "Onemogući Autoplay"
+  },
+  "editBlacklistedChannels": {
+    "message": "Uredi Kanale na Crnoj Listi"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Crna Lista za Način Koncentracije"
+  },
+  "channelNamePlaceholder": {
+    "message": "Ime Kanala"
+  },
+  "add": {
+    "message": "Dodaj"
+  },
+  "editBlacklistedWords": {
+    "message": "Uredi Riječi na Crnoj Listi"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Riječi na Crnoj Listi za Način Koncentracije"
+  },
+  "wordPlaceholder": {
+    "message": "Primjer: Gaming"
+  },
+  "remove": {
+    "message": "Ukloni"
   }
-  
+}

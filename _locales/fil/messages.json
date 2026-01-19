@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Tanggalin ang Mga Nakaka-distract sa YouTube"
-    },
-    "extensionDescription": {
-      "message": "Alisin ang Shorts na mga video at mga rekomendasyong hindi mahalaga sa YouTube para sa isang distraction-free na karanasan sa panonood."
-    },
-    "hideShorts": {
-      "message": "Itago ang Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Itago ang Mga Rekomendasyon"
-    },
-    "hideComments": {
-      "message": "Itago ang Mga Komento"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Itago ang Mga Channel na Nasa Blacklist"
-    },
-    "hideBlacklistedWords": {
-      "message": "Itago ang Mga Salitang Nasa Blacklist"
-    },
-    "hideHomePageContent": {
-      "message": "Itago ang Nilalaman ng Homepage"
-    },
-    "disableAutoplay": {
-      "message": "I-disable ang Autoplay"
-    },
-    "hideSidebar": {
-      "message": "Itago ang Sidebar"
-    },
-    "editBlacklistedChannels": {
-      "message": "I-edit ang Mga Channel na Nasa Blacklist"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Blacklist para sa Mode ng Konsentrasyon"
-    },
-    "channelNamePlaceholder": {
-      "message": "Pangalan ng Channel"
-    },
-    "add": {
-      "message": "Idagdag"
-    },
-    "editBlacklistedWords": {
-      "message": "I-edit ang Mga Salitang Nasa Blacklist"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Blacklist ng Mga Salita para sa Mode ng Konsentrasyon"
-    },
-    "wordPlaceholder": {
-      "message": "Halimbawa: Gaming"
-    },
-    "remove": {
-      "message": "Alisin"
-    }
+  "extensionName": {
+    "message": "FocusTube - I-tago ang YouTube Shorts, Rekomendasyon, at I-block ang mga Salita"
+  },
+  "extensionDescription": {
+    "message": "I-tago ang YouTube Shorts, mga rekomendasyon, suhestiyon at komento. I-block ang mga channel at salita. Ang pinakamahusay na tool para sa pokus."
+  },
+  "hideShorts": {
+    "message": "Itago ang Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Itago ang Mga Rekomendasyon"
+  },
+  "hideComments": {
+    "message": "Itago ang Mga Komento"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Itago ang Mga Channel na Nasa Blacklist"
+  },
+  "hideBlacklistedWords": {
+    "message": "Itago ang Mga Salitang Nasa Blacklist"
+  },
+  "hideHomePageContent": {
+    "message": "Itago ang Nilalaman ng Homepage"
+  },
+  "disableAutoplay": {
+    "message": "I-disable ang Autoplay"
+  },
+  "hideSidebar": {
+    "message": "Itago ang Sidebar"
+  },
+  "editBlacklistedChannels": {
+    "message": "I-edit ang Mga Channel na Nasa Blacklist"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Blacklist para sa Mode ng Konsentrasyon"
+  },
+  "channelNamePlaceholder": {
+    "message": "Pangalan ng Channel"
+  },
+  "add": {
+    "message": "Idagdag"
+  },
+  "editBlacklistedWords": {
+    "message": "I-edit ang Mga Salitang Nasa Blacklist"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Blacklist ng Mga Salita para sa Mode ng Konsentrasyon"
+  },
+  "wordPlaceholder": {
+    "message": "Halimbawa: Gaming"
+  },
+  "remove": {
+    "message": "Alisin"
   }
-  
+}

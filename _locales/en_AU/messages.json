@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Distraction Remover for YouTube"
-    },
-    "extensionDescription": {
-      "message": "Eliminate Shorts videos and irrelevant recommendations on YouTube for a distraction-free viewing experience."
-    },
-    "hideShorts": {
-      "message": "Hide Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Hide Suggestions"
-    },
-    "hideComments": {
-      "message": "Hide Comments"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Hide Blacklisted Channels"
-    },
-    "hideBlacklistedWords": {
-      "message": "Hide Blacklisted Words"
-    },
-    "hideHomePageContent": {
-      "message": "Hide Home Page Content"
-    },
-    "disableAutoplay": {
-      "message": "Disable Autoplay"
-    },
-    "hideSidebar": {
-      "message": "Hide Sidebar"
-    },
-    "editBlacklistedChannels": {
-      "message": "Edit Blacklisted Channels"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Concentration Mode Blacklist"
-    },
-    "channelNamePlaceholder": {
-      "message": "Channel Name"
-    },
-    "add": {
-      "message": "Add"
-    },
-    "editBlacklistedWords": {
-      "message": "Edit Blacklisted Words"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Concentration Mode Blacklist Words"
-    },
-    "wordPlaceholder": {
-      "message": "E.g.: Gaming"
-    },
-    "remove": {
-      "message": "Remove"
-    }
+  "extensionName": {
+    "message": "FocusTube - Hide YouTube Shorts, Recommendations, Suggestions & Block Words"
+  },
+  "extensionDescription": {
+    "message": "Hide YouTube Shorts, recommendations, suggestions, and comments. Block channels and words. The ultimate distraction-free tool."
+  },
+  "hideShorts": {
+    "message": "Hide Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Hide Suggestions"
+  },
+  "hideComments": {
+    "message": "Hide Comments"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Hide Blacklisted Channels"
+  },
+  "hideBlacklistedWords": {
+    "message": "Hide Blacklisted Words"
+  },
+  "hideHomePageContent": {
+    "message": "Hide Home Page Content"
+  },
+  "disableAutoplay": {
+    "message": "Disable Autoplay"
+  },
+  "hideSidebar": {
+    "message": "Hide Sidebar"
+  },
+  "editBlacklistedChannels": {
+    "message": "Edit Blacklisted Channels"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Concentration Mode Blacklist"
+  },
+  "channelNamePlaceholder": {
+    "message": "Channel Name"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "editBlacklistedWords": {
+    "message": "Edit Blacklisted Words"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Concentration Mode Blacklist Words"
+  },
+  "wordPlaceholder": {
+    "message": "E.g.: Gaming"
+  },
+  "remove": {
+    "message": "Remove"
   }
-  
+}

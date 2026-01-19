@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "FocusTube - YouTubeの気を散らす要素を除去"
+    "message": "FocusTube - YouTubeショート、おすすめ、提案を非表示＆単語をブロック"
   },
   "extensionDescription": {
-    "message": "YouTubeのショート動画や不要なおすすめを排除し、集中できる視聴体験を提供します。"
+    "message": "YouTubeショート、おすすめ、提案、コメントを非表示にします。チャンネルや単語をブロック。究極の集中ツール。"
   },
   "hideShorts": {
     "message": "ショート動画を非表示"

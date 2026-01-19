@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "FocusTube - Ablenkungen auf YouTube entfernen"
+    "message": "FocusTube - YouTube Shorts, Empfehlungen, Vorschläge ausblenden & Wörter blockieren"
   },
   "extensionDescription": {
-    "message": "Eliminieren Sie Shorts-Videos und irrelevante Empfehlungen auf YouTube für ein ablenkungsfreies Seherlebnis."
+    "message": "Blenden Sie YouTube Shorts, Empfehlungen, Vorschläge und Kommentare aus. Blockieren Sie Kanäle und Wörter. Das ultimative ablenkungsfreie Tool."
   },
   "hideShorts": {
     "message": "Shorts ausblenden"

@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - مزيل التشتيت على YouTube"
-    },
-    "extensionDescription": {
-      "message": "قم بإزالة مقاطع فيديو Shorts والتوصيات غير المهمة على YouTube لتجربة مشاهدة خالية من التشتيت."
-    },
-    "hideShorts": {
-      "message": "إخفاء Shorts"
-    },
-    "hideSuggestions": {
-      "message": "إخفاء التوصيات"
-    },
-    "hideComments": {
-      "message": "إخفاء التعليقات"
-    },
-    "hideBlacklistedChannels": {
-      "message": "إخفاء القنوات المحظورة"
-    },
-    "hideBlacklistedWords": {
-      "message": "إخفاء الكلمات المحظورة"
-    },
-    "hideHomePageContent": {
-      "message": "إخفاء محتوى الصفحة الرئيسية"
-    },
-    "disableAutoplay": {
-      "message": "تعطيل التشغيل التلقائي"
-    },
-    "hideSidebar": {
-      "message": "إخفاء الشريط الجانبي"
-    },
-    "editBlacklistedChannels": {
-      "message": "تحرير القنوات المحظورة"
-    },
-    "concentrationModeBlacklist": {
-      "message": "قائمة الحظر لوضع التركيز"
-    },
-    "channelNamePlaceholder": {
-      "message": "اسم القناة"
-    },
-    "add": {
-      "message": "إضافة"
-    },
-    "editBlacklistedWords": {
-      "message": "تحرير الكلمات المحظورة"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "قائمة الكلمات المحظورة لوضع التركيز"
-    },
-    "wordPlaceholder": {
-      "message": "مثال: ألعاب"
-    },
-    "remove": {
-      "message": "إزالة"
-    }
+  "extensionName": {
+    "message": "FocusTube - إخفاء YouTube Shorts والتوصيات والاقتراحات وحظر الكلمات"
+  },
+  "extensionDescription": {
+    "message": "إخفاء YouTube Shorts والتوصيات والاقتراحات والتعليقات. حظر القنوات والكلمات. الأداة المثالية لعدم التشتت."
+  },
+  "hideShorts": {
+    "message": "إخفاء Shorts"
+  },
+  "hideSuggestions": {
+    "message": "إخفاء التوصيات"
+  },
+  "hideComments": {
+    "message": "إخفاء التعليقات"
+  },
+  "hideBlacklistedChannels": {
+    "message": "إخفاء القنوات المحظورة"
+  },
+  "hideBlacklistedWords": {
+    "message": "إخفاء الكلمات المحظورة"
+  },
+  "hideHomePageContent": {
+    "message": "إخفاء محتوى الصفحة الرئيسية"
+  },
+  "disableAutoplay": {
+    "message": "تعطيل التشغيل التلقائي"
+  },
+  "hideSidebar": {
+    "message": "إخفاء الشريط الجانبي"
+  },
+  "editBlacklistedChannels": {
+    "message": "تحرير القنوات المحظورة"
+  },
+  "concentrationModeBlacklist": {
+    "message": "قائمة الحظر لوضع التركيز"
+  },
+  "channelNamePlaceholder": {
+    "message": "اسم القناة"
+  },
+  "add": {
+    "message": "إضافة"
+  },
+  "editBlacklistedWords": {
+    "message": "تحرير الكلمات المحظورة"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "قائمة الكلمات المحظورة لوضع التركيز"
+  },
+  "wordPlaceholder": {
+    "message": "مثال: ألعاب"
+  },
+  "remove": {
+    "message": "إزالة"
   }
-  
+}

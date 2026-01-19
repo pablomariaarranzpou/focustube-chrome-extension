@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Odstraňovač rozptýlení na YouTube"
-    },
-    "extensionDescription": {
-      "message": "Odstraňte videa Shorts a nerelevantní doporučení na YouTube pro nerušený zážitek ze sledování."
-    },
-    "hideShorts": {
-      "message": "Skrýt Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Skrýt doporučení"
-    },
-    "hideComments": {
-      "message": "Skrýt komentáře"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Skrýt kanály na černé listině"
-    },
-    "hideBlacklistedWords": {
-      "message": "Skrýt slova na černé listině"
-    },
-    "hideHomePageContent": {
-      "message": "Skrýt obsah domovské stránky"
-    },
-    "disableAutoplay": {
-      "message": "Zakázat automatické přehrávání"
-    },
-    "hideSidebar": {
-      "message": "Skrýt postranní panel"
-    },
-    "editBlacklistedChannels": {
-      "message": "Upravit kanály na černé listině"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Černá listina režimu soustředění"
-    },
-    "channelNamePlaceholder": {
-      "message": "Název kanálu"
-    },
-    "add": {
-      "message": "Přidat"
-    },
-    "editBlacklistedWords": {
-      "message": "Upravit slova na černé listině"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Černá listina slov v režimu soustředění"
-    },
-    "wordPlaceholder": {
-      "message": "Příklad: Hry"
-    },
-    "remove": {
-      "message": "Odebrat"
-    }
+  "extensionName": {
+    "message": "FocusTube - Skrýt YouTube Shorts, Doporučení, Návrhy a Blokovat Slova"
+  },
+  "extensionDescription": {
+    "message": "Skryjte YouTube Shorts, doporučení, návrhy a komentáře. Blokujte kanály a slova. Dokonalý nástroj pro sledování bez rozptylování."
+  },
+  "hideShorts": {
+    "message": "Skrýt Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Skrýt doporučení"
+  },
+  "hideComments": {
+    "message": "Skrýt komentáře"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Skrýt kanály na černé listině"
+  },
+  "hideBlacklistedWords": {
+    "message": "Skrýt slova na černé listině"
+  },
+  "hideHomePageContent": {
+    "message": "Skrýt obsah domovské stránky"
+  },
+  "disableAutoplay": {
+    "message": "Zakázat automatické přehrávání"
+  },
+  "hideSidebar": {
+    "message": "Skrýt postranní panel"
+  },
+  "editBlacklistedChannels": {
+    "message": "Upravit kanály na černé listině"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Černá listina režimu soustředění"
+  },
+  "channelNamePlaceholder": {
+    "message": "Název kanálu"
+  },
+  "add": {
+    "message": "Přidat"
+  },
+  "editBlacklistedWords": {
+    "message": "Upravit slova na černé listině"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Černá listina slov v režimu soustředění"
+  },
+  "wordPlaceholder": {
+    "message": "Příklad: Hry"
+  },
+  "remove": {
+    "message": "Odebrat"
   }
-  
+}

@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "FocusTube - Suppresseur de Distractions pour YouTube"
+    "message": "FocusTube - Masquer YouTube Shorts, Recommandations, Suggestions & Bloquer les Mots"
   },
   "extensionDescription": {
-    "message": "Éliminez les vidéos Shorts et les recommandations non pertinentes sur YouTube pour une expérience sans distraction."
+    "message": "Masquez YouTube Shorts, les recommandations, les suggestions et les commentaires. Bloquez les chaînes et les mots. L'outil ultime sans distractions."
   },
   "hideShorts": {
     "message": "Masquer les Shorts"

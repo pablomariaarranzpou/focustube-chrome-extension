@@ -1,54 +1,53 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Alat Buang Gangguan di YouTube"
-    },
-    "extensionDescription": {
-      "message": "Singkirkan video Shorts dan cadangan tidak relevan di YouTube untuk pengalaman menonton yang bebas gangguan."
-    },
-    "hideShorts": {
-      "message": "Sembunyikan Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Sembunyikan Cadangan"
-    },
-    "hideComments": {
-      "message": "Sembunyikan Komen"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Sembunyikan Saluran yang Disenarai Hitam"
-    },
-    "hideBlacklistedWords": {
-      "message": "Sembunyikan Kata yang Disenarai Hitam"
-    },
-    "hideHomePageContent": {
-      "message": "Sembunyikan Kandungan Halaman Utama"
-    },
-    "disableAutoplay": {
-      "message": "Nyahaktifkan Main Auto"
-    },
-    "editBlacklistedChannels": {
-      "message": "Sunting Saluran yang Disenarai Hitam"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Senarai Hitam Mod Tumpuan"
-    },
-    "channelNamePlaceholder": {
-      "message": "Nama Saluran"
-    },
-    "add": {
-      "message": "Tambah"
-    },
-    "editBlacklistedWords": {
-      "message": "Sunting Kata yang Disenarai Hitam"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Kata dalam Senarai Hitam untuk Mod Tumpuan"
-    },
-    "wordPlaceholder": {
-      "message": "Contoh: Permainan"
-    },
-    "remove": {
-      "message": "Alih Keluar"
-    }
+  "extensionName": {
+    "message": "FocusTube - Sembunyikan YouTube Shorts, Cadangan & Sekat Perkataan"
+  },
+  "extensionDescription": {
+    "message": "Sembunyikan YouTube Shorts, cadangan, saranan dan komen. Sekat saluran dan perkataan. Alat bebas gangguan terbaik."
+  },
+  "hideShorts": {
+    "message": "Sembunyikan Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Sembunyikan Cadangan"
+  },
+  "hideComments": {
+    "message": "Sembunyikan Komen"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Sembunyikan Saluran yang Disenarai Hitam"
+  },
+  "hideBlacklistedWords": {
+    "message": "Sembunyikan Kata yang Disenarai Hitam"
+  },
+  "hideHomePageContent": {
+    "message": "Sembunyikan Kandungan Halaman Utama"
+  },
+  "disableAutoplay": {
+    "message": "Nyahaktifkan Main Auto"
+  },
+  "editBlacklistedChannels": {
+    "message": "Sunting Saluran yang Disenarai Hitam"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Senarai Hitam Mod Tumpuan"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nama Saluran"
+  },
+  "add": {
+    "message": "Tambah"
+  },
+  "editBlacklistedWords": {
+    "message": "Sunting Kata yang Disenarai Hitam"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Kata dalam Senarai Hitam untuk Mod Tumpuan"
+  },
+  "wordPlaceholder": {
+    "message": "Contoh: Permainan"
+  },
+  "remove": {
+    "message": "Alih Keluar"
   }
-  
+}

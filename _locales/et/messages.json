@@ -1,53 +1,11 @@
-﻿{
+{
   "extensionName": {
-    "message": "FocusTube - Eliminador de Distracciones para YouTube"
+    "message": "FocusTube - Peida YouTube Shorts, Soovitused ja Blokeeri Sõnad"
   },
   "extensionDescription": {
-    "message": "Elimina los Shorts y videos recomendados irrelevantes en YouTube para una experiencia sin distracciones."
+    "message": "Peida YouTube Shorts, soovitused ja kommentaarid. Blokeeri kanalid ja sõnad. Parim tööriist segajate eemaldamiseks."
   },
   "hideShorts": {
-    "message": "Ocultar Shorts"
-  },
-  "hideSuggestions": {
-    "message": "Ocultar Sugerencias"
-  },
-  "hideComments": {
-    "message": "Ocultar Comentarios"
-  },
-  "hideBlacklistedChannels": {
-    "message": "Ocultar Canales en la Lista Negra"
-  },
-  "hideBlacklistedWords": {
-    "message": "Ocultar Palabras en la Lista Negra"
-  },
-  "hideHomePageContent": {
-    "message": "Ocultar Contenido de la PÃ¡gina Principal"
-  },
-  "disableAutoplay": {
-    "message": "Desactivar ReproducciÃ³n AutomÃ¡tica"
-  },
-  "hideSidebar": {
-    "message": "Ocultar Barra Lateral"
-  },
-  "editBlacklistedChannels": {
-    "message": "Editar Canales en la Lista Negra"
-  },
-  "concentrationModeBlacklist": {
-    "message": "Lista Negra del Modo ConcentraciÃ³n"
-  },
-  "channelNamePlaceholder": {
-    "message": "Nombre del Canal"
-  },
-  "add": {
-    "message": "Agregar"
-  },
-  "editBlacklistedWords": {
-    "message": "Editar Palabras en la Lista Negra"
-  },
-  "concentrationModeBlacklistWords": {
-    "message": "Lista Negra de Palabras del Modo ConcentraciÃ³n"
-  },
-  "wordPlaceholder": {
-    "message": "Ej: Call of Duty"
+    "message": "Hide Shorts"
   }
 }

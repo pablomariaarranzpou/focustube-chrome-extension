@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Odstraňovač rozptýlení na YouTube"
-    },
-    "extensionDescription": {
-      "message": "Odstráňte videá Shorts a nerelevantné odporúčania na YouTube pre nerušený zážitok zo sledovania."
-    },
-    "hideShorts": {
-      "message": "Skryť Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Skryť Odporúčania"
-    },
-    "hideComments": {
-      "message": "Skryť Komentáre"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Skryť Kanály v Zozname Zakázaných"
-    },
-    "hideBlacklistedWords": {
-      "message": "Skryť Slová v Zozname Zakázaných"
-    },
-    "hideHomePageContent": {
-      "message": "Skryť Obsah na Domovskej Stránke"
-    },
-    "disableAutoplay": {
-      "message": "Zakázať Automatické Prehrávanie"
-    },
-    "hideSidebar": {
-      "message": "Skryť Bočný Panel"
-    },
-    "editBlacklistedChannels": {
-      "message": "Upraviť Kanály v Zozname Zakázaných"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Čierna Listina Režimu Koncentrácie"
-    },
-    "channelNamePlaceholder": {
-      "message": "Názov Kanálu"
-    },
-    "add": {
-      "message": "Pridať"
-    },
-    "editBlacklistedWords": {
-      "message": "Upraviť Slová v Zozname Zakázaných"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Čierna Listina Slov Režimu Koncentrácie"
-    },
-    "wordPlaceholder": {
-      "message": "Príklad: Hry"
-    },
-    "remove": {
-      "message": "Odstrániť"
-    }
+  "extensionName": {
+    "message": "FocusTube - Skryť YouTube Shorts, Odporúčania, Návrhy a Blokovať Slová"
+  },
+  "extensionDescription": {
+    "message": "Skryte YouTube Shorts, odporúčania, návrhy a komentáre. Blokujte kanály a slová. Najlepší nástroj bez rozptyľovania."
+  },
+  "hideShorts": {
+    "message": "Skryť Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Skryť Odporúčania"
+  },
+  "hideComments": {
+    "message": "Skryť Komentáre"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Skryť Kanály v Zozname Zakázaných"
+  },
+  "hideBlacklistedWords": {
+    "message": "Skryť Slová v Zozname Zakázaných"
+  },
+  "hideHomePageContent": {
+    "message": "Skryť Obsah na Domovskej Stránke"
+  },
+  "disableAutoplay": {
+    "message": "Zakázať Automatické Prehrávanie"
+  },
+  "hideSidebar": {
+    "message": "Skryť Bočný Panel"
+  },
+  "editBlacklistedChannels": {
+    "message": "Upraviť Kanály v Zozname Zakázaných"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Čierna Listina Režimu Koncentrácie"
+  },
+  "channelNamePlaceholder": {
+    "message": "Názov Kanálu"
+  },
+  "add": {
+    "message": "Pridať"
+  },
+  "editBlacklistedWords": {
+    "message": "Upraviť Slová v Zozname Zakázaných"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Čierna Listina Slov Režimu Koncentrácie"
+  },
+  "wordPlaceholder": {
+    "message": "Príklad: Hry"
+  },
+  "remove": {
+    "message": "Odstrániť"
   }
-  
+}

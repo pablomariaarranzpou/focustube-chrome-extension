@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Removedor de Distrações no YouTube"
-    },
-    "extensionDescription": {
-      "message": "Elimine vídeos Shorts e recomendações irrelevantes no YouTube para uma experiência de visualização sem distrações."
-    },
-    "hideShorts": {
-      "message": "Ocultar Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Ocultar Sugestões"
-    },
-    "hideComments": {
-      "message": "Ocultar Comentários"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Ocultar Canais na Lista Negra"
-    },
-    "hideBlacklistedWords": {
-      "message": "Ocultar Palavras na Lista Negra"
-    },
-    "hideHomePageContent": {
-      "message": "Ocultar Conteúdo da Página Inicial"
-    },
-    "disableAutoplay": {
-      "message": "Desativar Reprodução Automática"
-    },
-    "hideSidebar": {
-      "message": "Kenar Çubuğunu Gizle"
-    },
-    "editBlacklistedChannels": {
-      "message": "Editar Canais na Lista Negra"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Lista Negra do Modo de Concentração"
-    },
-    "channelNamePlaceholder": {
-      "message": "Nome do Canal"
-    },
-    "add": {
-      "message": "Adicionar"
-    },
-    "editBlacklistedWords": {
-      "message": "Editar Palavras na Lista Negra"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Lista Negra de Palavras no Modo de Concentração"
-    },
-    "wordPlaceholder": {
-      "message": "Ex: Jogos"
-    },
-    "remove": {
-      "message": "Remover"
-    }
+  "extensionName": {
+    "message": "FocusTube - YouTube Shorts, Öneriler ve Kelime Engelleme"
+  },
+  "extensionDescription": {
+    "message": "YouTube Shorts, öneriler ve yorumları gizleyin. Kanalları ve kelimeleri engelleyin. Dikkatinizi dağıtmayan en iyi araç."
+  },
+  "hideShorts": {
+    "message": "Ocultar Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Ocultar Sugestões"
+  },
+  "hideComments": {
+    "message": "Ocultar Comentários"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Ocultar Canais na Lista Negra"
+  },
+  "hideBlacklistedWords": {
+    "message": "Ocultar Palavras na Lista Negra"
+  },
+  "hideHomePageContent": {
+    "message": "Ocultar Conteúdo da Página Inicial"
+  },
+  "disableAutoplay": {
+    "message": "Desativar Reprodução Automática"
+  },
+  "hideSidebar": {
+    "message": "Kenar Çubuğunu Gizle"
+  },
+  "editBlacklistedChannels": {
+    "message": "Editar Canais na Lista Negra"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Lista Negra do Modo de Concentração"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nome do Canal"
+  },
+  "add": {
+    "message": "Adicionar"
+  },
+  "editBlacklistedWords": {
+    "message": "Editar Palavras na Lista Negra"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Lista Negra de Palavras no Modo de Concentração"
+  },
+  "wordPlaceholder": {
+    "message": "Ex: Jogos"
+  },
+  "remove": {
+    "message": "Remover"
   }
-  
+}

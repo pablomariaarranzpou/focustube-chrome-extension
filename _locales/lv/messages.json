@@ -1,57 +1,56 @@
 {
-    "extensionName": {
-      "message": "FocusTube - Noņem traucējumus YouTube"
-    },
-    "extensionDescription": {
-      "message": "Noņemiet Shorts videoklipus un nevajadzīgus ieteikumus pakalpojumā YouTube, lai skatītos bez traucējumiem."
-    },
-    "hideShorts": {
-      "message": "Paslēpt Shorts"
-    },
-    "hideSuggestions": {
-      "message": "Paslēpt Ieteikumus"
-    },
-    "hideComments": {
-      "message": "Paslēpt Komentārus"
-    },
-    "hideBlacklistedChannels": {
-      "message": "Paslēpt Melnajā Sarakstā Iekļautus Kanālus"
-    },
-    "hideBlacklistedWords": {
-      "message": "Paslēpt Melnajā Sarakstā Iekļautus Vārdus"
-    },
-    "hideHomePageContent": {
-      "message": "Paslēpt Sākumlapas Saturu"
-    },
-    "disableAutoplay": {
-      "message": "Atspējot Automātisko Atskaņošanu"
-    },
-    "hideSidebar": {
-      "message": "Paslēpt Sānjoslu"
-    },
-    "editBlacklistedChannels": {
-      "message": "Rediģēt Melnajā Sarakstā Iekļautus Kanālus"
-    },
-    "concentrationModeBlacklist": {
-      "message": "Koncentrācijas Režīma Melnajā Saraksts"
-    },
-    "channelNamePlaceholder": {
-      "message": "Kanāla Nosaukums"
-    },
-    "add": {
-      "message": "Pievienot"
-    },
-    "editBlacklistedWords": {
-      "message": "Rediģēt Melnajā Sarakstā Iekļautus Vārdus"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "Koncentrācijas Režīma Melnajā Saraksta Vārdi"
-    },
-    "wordPlaceholder": {
-      "message": "Piemērs: Spēles"
-    },
-    "remove": {
-      "message": "Noņemt"
-    }
+  "extensionName": {
+    "message": "FocusTube - Slēpt YouTube Shorts, Ieteikumus un Bloķēt Vārdus"
+  },
+  "extensionDescription": {
+    "message": "Slēpiet YouTube Shorts, ieteikumus, piedāvājumus un komentārus. Bloķējiet kanālus un vārdus. Labākais rīks bez traucēkļiem."
+  },
+  "hideShorts": {
+    "message": "Paslēpt Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Paslēpt Ieteikumus"
+  },
+  "hideComments": {
+    "message": "Paslēpt Komentārus"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Paslēpt Melnajā Sarakstā Iekļautus Kanālus"
+  },
+  "hideBlacklistedWords": {
+    "message": "Paslēpt Melnajā Sarakstā Iekļautus Vārdus"
+  },
+  "hideHomePageContent": {
+    "message": "Paslēpt Sākumlapas Saturu"
+  },
+  "disableAutoplay": {
+    "message": "Atspējot Automātisko Atskaņošanu"
+  },
+  "hideSidebar": {
+    "message": "Paslēpt Sānjoslu"
+  },
+  "editBlacklistedChannels": {
+    "message": "Rediģēt Melnajā Sarakstā Iekļautus Kanālus"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Koncentrācijas Režīma Melnajā Saraksts"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanāla Nosaukums"
+  },
+  "add": {
+    "message": "Pievienot"
+  },
+  "editBlacklistedWords": {
+    "message": "Rediģēt Melnajā Sarakstā Iekļautus Vārdus"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Koncentrācijas Režīma Melnajā Saraksta Vārdi"
+  },
+  "wordPlaceholder": {
+    "message": "Piemērs: Spēles"
+  },
+  "remove": {
+    "message": "Noņemt"
   }
-  
+}

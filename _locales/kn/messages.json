@@ -1,54 +1,53 @@
 {
-    "extensionName": {
-      "message": "FocusTube - YouTubeನಲ್ಲಿನ ವ್ಯಾಕುಲತೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
-    },
-    "extensionDescription": {
-      "message": "YouTubeನಲ್ಲಿ Shorts ವೀಡಿಯೋಗಳು ಮತ್ತು ಅಸಂಬದ್ಧ ಶಿಫಾರಸುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ, ನಿರ್ಬಂಧವಿಲ್ಲದ ವೀಕ್ಷಣಾ ಅನುಭವವನ್ನು ಪಡೆಯಿರಿ."
-    },
-    "hideShorts": {
-      "message": "Shorts ಮರೆಮಾಡಿ"
-    },
-    "hideSuggestions": {
-      "message": "ಶಿಫಾರಸುಗಳನ್ನು ಮರೆಮಾಡಿ"
-    },
-    "hideComments": {
-      "message": "ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
-    },
-    "hideBlacklistedChannels": {
-      "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
-    },
-    "hideBlacklistedWords": {
-      "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಪದಗಳನ್ನು ಮರೆಮಾಡಿ"
-    },
-    "hideHomePageContent": {
-      "message": "ಮುಖ್ಯ ಪುಟದ ವಿಷಯವನ್ನು ಮರೆಮಾಡಿ"
-    },
-    "disableAutoplay": {
-      "message": "ಸ್ವಯಂ ಪ್ರಚಲಿತವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
-    },
-    "editBlacklistedChannels": {
-      "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
-    },
-    "concentrationModeBlacklist": {
-      "message": "ಕೇಂದ್ರಿತ ಮಾಡುವ ವಿಧಾನ ಬ್ಲಾಕ್ ಪಟ್ಟಿ"
-    },
-    "channelNamePlaceholder": {
-      "message": "ಚಾನೆಲ್ ಹೆಸರು"
-    },
-    "add": {
-      "message": "ಸೇರಿಸಿ"
-    },
-    "editBlacklistedWords": {
-      "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಪದಗಳನ್ನು ಸಂಪಾದಿಸಿ"
-    },
-    "concentrationModeBlacklistWords": {
-      "message": "ಕೇಂದ್ರಿತ ಮಾಡುವ ವಿಧಾನ ಬ್ಲಾಕ್ ಪಟ್ಟಿ ಪದಗಳು"
-    },
-    "wordPlaceholder": {
-      "message": "ಉದಾಹರಣೆ: ಗೇಮಿಂಗ್"
-    },
-    "remove": {
-      "message": "ತೆಗೆದುಹಾಕಿ"
-    }
+  "extensionName": {
+    "message": "FocusTube - YouTube Shorts, ಶಿಫಾರಸುಗಳು, ಸಲಹೆಗಳನ್ನು ಮರೆಮಾಡಿ ಮತ್ತು ಪದಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ"
+  },
+  "extensionDescription": {
+    "message": "YouTube Shorts, ಶಿಫಾರಸುಗಳು, ಸಲಹೆಗಳು ಮತ್ತು ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ. ಚಾನಲ್‌ಗಳು ಮತ್ತು ಪದಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ. ಅಂತಿಮ ಗಮನಹರಿಸುವ ಸಾಧನ."
+  },
+  "hideShorts": {
+    "message": "Shorts ಮರೆಮಾಡಿ"
+  },
+  "hideSuggestions": {
+    "message": "ಶಿಫಾರಸುಗಳನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "hideComments": {
+    "message": "ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "hideBlacklistedChannels": {
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "hideBlacklistedWords": {
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಪದಗಳನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "hideHomePageContent": {
+    "message": "ಮುಖ್ಯ ಪುಟದ ವಿಷಯವನ್ನು ಮರೆಮಾಡಿ"
+  },
+  "disableAutoplay": {
+    "message": "ಸ್ವಯಂ ಪ್ರಚಲಿತವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
+  },
+  "editBlacklistedChannels": {
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
+  },
+  "concentrationModeBlacklist": {
+    "message": "ಕೇಂದ್ರಿತ ಮಾಡುವ ವಿಧಾನ ಬ್ಲಾಕ್ ಪಟ್ಟಿ"
+  },
+  "channelNamePlaceholder": {
+    "message": "ಚಾನೆಲ್ ಹೆಸರು"
+  },
+  "add": {
+    "message": "ಸೇರಿಸಿ"
+  },
+  "editBlacklistedWords": {
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಪದಗಳನ್ನು ಸಂಪಾದಿಸಿ"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "ಕೇಂದ್ರಿತ ಮಾಡುವ ವಿಧಾನ ಬ್ಲಾಕ್ ಪಟ್ಟಿ ಪದಗಳು"
+  },
+  "wordPlaceholder": {
+    "message": "ಉದಾಹರಣೆ: ಗೇಮಿಂಗ್"
+  },
+  "remove": {
+    "message": "ತೆಗೆದುಹಾಕಿ"
   }
-  
+}
