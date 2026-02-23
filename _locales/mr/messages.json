@@ -26,6 +26,9 @@
   "disableAutoplay": {
     "message": "स्वयं प्ले निष्क्रिय करा"
   },
+  "hideSidebar": {
+    "message": "साइडबार लपवा"
+  },
   "editBlacklistedChannels": {
     "message": "काळ्या यादीतील चॅनेल संपादित करा"
   },

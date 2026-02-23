@@ -26,6 +26,9 @@
   "disableAutoplay": {
     "message": "ಸ್ವಯಂ ಪ್ರಚಲಿತವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
   },
+  "hideSidebar": {
+    "message": "ಸೈಡ್‌ಬಾರ್ ಮರೆಮಾಡಿ"
+  },
   "editBlacklistedChannels": {
     "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
   },

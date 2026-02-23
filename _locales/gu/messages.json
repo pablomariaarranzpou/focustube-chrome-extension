@@ -26,6 +26,9 @@
   "disableAutoplay": {
     "message": "સ્વચાલિત શરૂ કરવું બંધ કરો"
   },
+  "hideSidebar": {
+    "message": "સાઇડબાર છુપાવો"
+  },
   "editBlacklistedChannels": {
     "message": "કાળા યાદીમાં આવેલી ચેનલો સંપાદિત કરો"
   },

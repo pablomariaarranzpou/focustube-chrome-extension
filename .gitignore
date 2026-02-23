@@ -1,0 +1,8 @@
+# Copilot / AI tooling
+.github/
+
+# Generated / downloaded assets
+tailwind.min.css
+
+# Temp directories
+tmpclaude-*

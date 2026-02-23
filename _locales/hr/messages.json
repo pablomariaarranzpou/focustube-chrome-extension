@@ -26,6 +26,9 @@
   "disableAutoplay": {
     "message": "Onemogući Autoplay"
   },
+  "hideSidebar": {
+    "message": "Sakrij Bočnu Traku"
+  },
   "editBlacklistedChannels": {
     "message": "Uredi Kanale na Crnoj Listi"
   },

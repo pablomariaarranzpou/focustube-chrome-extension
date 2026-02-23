@@ -6,6 +6,12 @@
     "message": "Peida YouTube Shorts, soovitused ja kommentaarid. Blokeeri kanalid ja sõnad. Parim tööriist segajate eemaldamiseks."
   },
   "hideShorts": {
-    "message": "Hide Shorts"
+    "message": "Peida Shorts"
+  },
+  "hideComments": {
+    "message": "Peida Kommentaarid"
+  },
+  "hideSidebar": {
+    "message": "Peida Külgriba"
   }
 }

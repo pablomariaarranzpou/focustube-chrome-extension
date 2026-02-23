@@ -26,6 +26,9 @@
   "disableAutoplay": {
     "message": "Nyahaktifkan Main Auto"
   },
+  "hideSidebar": {
+    "message": "Sembunyikan Bar Sisi"
+  },
   "editBlacklistedChannels": {
     "message": "Sunting Saluran yang Disenarai Hitam"
   },

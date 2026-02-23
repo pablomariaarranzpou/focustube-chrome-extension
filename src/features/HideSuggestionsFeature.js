@@ -15,8 +15,28 @@ class HideSuggestionsFeature extends DOMFeature {
   }
 
   async onActivate() {
+    this.injectBlockingCSS();
     this.hideSuggestions();
     this.observeDOM(() => this.hideSuggestions());
+  }
+
+  /**
+   * Inject CSS to hide known suggestion containers
+   * This is more efficient and robust than JS-only hiding
+   */
+  injectBlockingCSS() {
+    // Hide the main container for sidebar recommendations
+    // AND the #related element which is sometimes used
+    const css = `
+      #related,
+      ytd-watch-next-secondary-results-renderer {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        max-height: 0 !important;
+      }
+    `;
+    this.injectCSS('blocking', css);
   }
 
   /**
