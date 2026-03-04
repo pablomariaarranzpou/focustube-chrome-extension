@@ -16,8 +16,8 @@ class HideShortsFeature extends DOMFeature {
     
     this.shortsSelectors = [
       'ytd-reel-shelf-renderer',
-      'ytd-rich-section-renderer',
-      'ytd-rich-shelf-renderer',
+      'ytd-rich-shelf-renderer[is-shorts]',
+      'ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])',
       'ytd-reel-player-renderer',
       'ytm-reel-player',
       '#shorts-container',
@@ -124,12 +124,26 @@ class HideShortsFeature extends DOMFeature {
    * Hide Shorts shelves/sections
    */
   hideShortsShelves() {
-    // Hide rich shelves with "Shorts" title
+    // Hide ytd-rich-shelf-renderer[is-shorts] and its parent ytd-rich-section-renderer
+    // This covers the current layout (and any A/B test variant) where the shelf
+    // has the is-shorts attribute regardless of title text.
+    const isShortsShelf = this.query('ytd-rich-shelf-renderer[is-shorts]');
+    isShortsShelf.forEach(shelf => {
+      const section = shelf.closest('ytd-rich-section-renderer');
+      if (section) {
+        this.hideElements([section]);
+      }
+      this.hideElements([shelf]);
+    });
+
+    // Hide rich shelves with "Shorts" title (fallback for variants without is-shorts attr)
     const richShelves = this.query('ytd-reel-shelf-renderer, ytd-rich-section-renderer, ytd-rich-shelf-renderer');
     richShelves.forEach(shelf => {
       const title = shelf.querySelector('h2, .yt-shelf-header-layout__title');
       if (title && title.textContent.toLowerCase().includes('shorts')) {
         this.hideElements([shelf]);
+        const section = shelf.closest('ytd-rich-section-renderer');
+        if (section) this.hideElements([section]);
       }
     });
 
