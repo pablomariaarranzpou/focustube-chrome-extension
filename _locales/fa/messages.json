@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "پنهان کردن نوار کناری"
   },
+  "keepHistoryVisible": {
+    "message": "نگه داشتن تاریخچه قابل مشاهده"
+  },
   "editBlacklistedChannels": {
     "message": "ویرایش کانال‌های مسدود شده"
   },

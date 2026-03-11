@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "サイドバーを非表示"
   },
+  "keepHistoryVisible": {
+    "message": "履歴を表示したままにする"
+  },
   "editBlacklistedChannels": {
     "message": "ブラックリストのチャンネルを編集"
   },

@@ -76,12 +76,152 @@
     .remove-button:hover {
       background-color: #dc2626;
     }
+
+    /* ── Rate Us Modal Overlay ── */
+    #rateUsOverlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      animation: overlayFadeIn 0.2s ease;
+    }
+    @keyframes overlayFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    #rateUsCard {
+      position: relative;
+      background: #fff;
+      border: 1.5px solid #f9737a;
+      border-radius: 16px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      width: 82%;
+      max-width: 320px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+      animation: cardScaleIn 0.25s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes cardScaleIn {
+      from { transform: scale(0.82); opacity: 0; }
+      to   { transform: scale(1);    opacity: 1; }
+    }
+    #rateCloseBtn {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      color: #9ca3af;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    #rateCloseBtn:hover { color: #ef4444; background: #fee2e2; }
+    #rateUsCard .rate-stars {
+      font-size: 1.6rem;
+      letter-spacing: 3px;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    #rateUsCard h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin: 0 0 0.25rem;
+    }
+    #rateUsCard p {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin: 0 0 1rem;
+    }
+    .rate-us-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+    #rateNowBtn {
+      flex: 1;
+      background-color: #f9737a;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #rateNowBtn:hover { background-color: #ef4444; }
+    #rateLaterBtn {
+      flex: 1;
+      background-color: #f3f4f6;
+      color: #6b7280;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 8px 0;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #rateLaterBtn:hover { background-color: #e5e7eb; }
+
+    /* ── Permanent logo links row ── */
+    #logoLinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+    #logoLinks a {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      padding: 4px 12px;
+      background-color: #f9737a;
+      border: none;
+      border-radius: 999px;
+      transition: background-color 0.15s;
+    }
+    #logoLinks a:hover {
+      background-color: #ef4444;
+    }
   </style>
 </head>
 <body class="bg-gray-400">
+  <!-- Rate Us Modal Overlay – first in DOM, covers everything -->
+  <div id="rateUsOverlay">
+    <div id="rateUsCard">
+      <button id="rateCloseBtn" title="Dismiss">&times;</button>
+      <span class="rate-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+      <h3>Enjoying FocusTube?</h3>
+      <p>It only takes a second and really helps us grow!</p>
+      <div class="rate-us-actions">
+        <button id="rateNowBtn">&#9733; Rate us</button>
+        <button id="rateLaterBtn">Maybe later</button>
+      </div>
+    </div>
+  </div>
+
   <div class="flex justify-center items-center">
     <div class="p-8 bg-white shadow-md rounded-md extension-container">
       <img src="logo.png" alt="Logo" style="width: 100%; align-items: center;" />
+      <div id="logoLinks">
+        <a id="rateUsPillLink" href="https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank">&#9733; Rate FocusTube</a>
+        <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank">&#128025; GitHub</a>
+      </div>
       <div class="space-y-4">
         <!-- Existing toggles with localization -->
         <label class="toggle-container">
@@ -157,6 +297,18 @@
           <div class="toggle-slider"></div>
           <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSidebar"></span>
         </label>
+        <!-- Sub-option: keep history visible when sidebar is hidden -->
+        <div id="sidebarSubOptions" style="display:none; padding-left: 3rem; padding-top: 4px; padding-bottom: 4px;">
+          <label class="toggle-container" style="padding: 4px 0;">
+            <input
+              type="checkbox"
+              id="keepHistoryVisibleCheckbox"
+              class="toggle-input"
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="keepHistoryVisible"></span>
+          </label>
+        </div>
       </div>
       <hr class="my-4 border-t border-gray-300" />
       <!-- Existing blacklist sections -->
@@ -218,8 +370,11 @@
           <div id="blacklistListWords" class="space-y-2"></div>
         </div>
       </label>
+
+
     </div>
   </div>
+
   <script src="src/utils/ConfigRegistry.js"></script>
   <script src="src/ui/PopupController.js"></script>
 </body>

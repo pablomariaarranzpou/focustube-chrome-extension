@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Skrýt postranní panel"
   },
+  "keepHistoryVisible": {
+    "message": "Ponechat historii viditelnou"
+  },
   "editBlacklistedChannels": {
     "message": "Upravit kanály na černé listině"
   },

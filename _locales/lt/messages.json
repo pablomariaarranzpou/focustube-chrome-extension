@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Slėpti Šoninę Juostą"
   },
+  "keepHistoryVisible": {
+    "message": "Palikti istoriją matomą"
+  },
   "editBlacklistedChannels": {
     "message": "Redaguoti Juodajame Sąraše esančius Kanalus"
   },

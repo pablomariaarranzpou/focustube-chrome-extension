@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "사이드바 숨기기"
   },
+  "keepHistoryVisible": {
+    "message": "기록 표시 유지"
+  },
   "editBlacklistedChannels": {
     "message": "차단된 채널 수정"
   },

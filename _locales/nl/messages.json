@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Verberg Zijbalk"
   },
+  "keepHistoryVisible": {
+    "message": "Geschiedenis zichtbaar houden"
+  },
   "editBlacklistedChannels": {
     "message": "Bewerk Geblokkeerde Kanalen"
   },

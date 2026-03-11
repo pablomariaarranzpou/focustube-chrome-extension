@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Sembunyikan Sidebar"
   },
+  "keepHistoryVisible": {
+    "message": "Jaga Riwayat tetap terlihat"
+  },
   "editBlacklistedChannels": {
     "message": "Edit Saluran dalam Daftar Hitam"
   },

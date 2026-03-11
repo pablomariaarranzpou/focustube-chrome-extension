@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Sakrij Bočnu Traku"
   },
+  "keepHistoryVisible": {
+    "message": "Задржи историју видљивом"
+  },
   "editBlacklistedChannels": {
     "message": "Uredi Kanale na Crnoj Listi"
   },

@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "సైడ్‌బార్ దాచు"
   },
+  "keepHistoryVisible": {
+    "message": "చరిత్రను కనిపించేలా ఉంచండి"
+  },
   "editBlacklistedChannels": {
     "message": "నిషేధిత ఛానెల్లు సవరించు"
   },

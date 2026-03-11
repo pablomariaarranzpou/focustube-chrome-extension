@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Hide Sidebar"
   },
+  "keepHistoryVisible": {
+    "message": "Keep History visible"
+  },
   "editBlacklistedChannels": {
     "message": "Edit Blacklisted Channels"
   },

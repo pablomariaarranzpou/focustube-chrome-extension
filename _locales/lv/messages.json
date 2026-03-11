@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Paslēpt Sānjoslu"
   },
+  "keepHistoryVisible": {
+    "message": "Saglabāt vēsturi redzamu"
+  },
   "editBlacklistedChannels": {
     "message": "Rediģēt Melnajā Sarakstā Iekļautus Kanālus"
   },

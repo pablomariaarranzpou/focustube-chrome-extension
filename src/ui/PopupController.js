@@ -31,6 +31,9 @@ class PopupController {
     // Set up storage change monitoring
     this.setupStorageMonitoring();
 
+    // Track popup opens and show rate-us prompt
+    await this.initRateUsCounter();
+
     this.initialized = true;
     console.debug('FocusTube: PopupController initialized');
   }
@@ -136,6 +139,13 @@ class PopupController {
       }
     });
 
+    // keepHistoryVisible is stored as config on the hideSidebar feature (new format)
+    if (newStates.hideSidebar && newStates.hideSidebar.config) {
+      merged.keepHistoryVisible = newStates.hideSidebar.config.keepHistoryVisible ?? false;
+    } else {
+      merged.keepHistoryVisible = false;
+    }
+
     // Filter lists
     merged.blacklist = legacyStates.blacklist || [];
     merged.blacklistWords = legacyStates.blacklistWords || [];
@@ -156,7 +166,8 @@ class PopupController {
       hideBlacklistedWordsCheckbox: 'hideBlacklistedWords',
       hideHomePageContentCheckbox: 'hideHomePageContent',
       hideAutoplayOverlayCheckbox: 'hideAutoplayOverlay',
-      hideSidebarCheckbox: 'hideSidebar'
+      hideSidebarCheckbox: 'hideSidebar',
+      keepHistoryVisibleCheckbox: 'keepHistoryVisible'
     };
 
     Object.entries(checkboxMap).forEach(([checkboxId, featureName]) => {
@@ -166,9 +177,22 @@ class PopupController {
       }
     });
 
+    // Show/hide sidebar sub-options based on current state
+    this.updateSidebarSubOptions(this.featureStates.hideSidebar ?? false);
+
     // Update blacklists
     this.updateBlacklistUI(this.featureStates.blacklist || []);
     this.updateBlacklistWordsUI(this.featureStates.blacklistWords || []);
+  }
+
+  /**
+   * Show or hide the sidebar sub-options div
+   */
+  updateSidebarSubOptions(sidebarEnabled) {
+    const subOptions = document.getElementById('sidebarSubOptions');
+    if (subOptions) {
+      subOptions.style.display = sidebarEnabled ? 'block' : 'none';
+    }
   }
 
   /**
@@ -222,11 +246,44 @@ class PopupController {
       }
     });
 
+    // Show/hide sidebar sub-options when hideSidebar is toggled
+    const hideSidebarCheckbox = document.getElementById('hideSidebarCheckbox');
+    if (hideSidebarCheckbox) {
+      hideSidebarCheckbox.addEventListener('change', () => {
+        this.updateSidebarSubOptions(hideSidebarCheckbox.checked);
+      });
+    }
+
+    // keepHistoryVisible sub-option: sends updateConfig to hideSidebar feature
+    const keepHistoryVisibleCheckbox = document.getElementById('keepHistoryVisibleCheckbox');
+    if (keepHistoryVisibleCheckbox) {
+      keepHistoryVisibleCheckbox.addEventListener('change', () => {
+        this.handleKeepHistoryVisible(keepHistoryVisibleCheckbox.checked);
+      });
+    }
+
     // Hide collapsible sections initially
     const blacklistContainer = document.getElementById('blacklistContainer');
     const wordsBlacklistContainer = document.getElementById('wordsBlacklistContainer');
     if (blacklistContainer) blacklistContainer.style.display = 'none';
     if (wordsBlacklistContainer) wordsBlacklistContainer.style.display = 'none';
+  }
+
+  /**
+   * Handle keepHistoryVisible toggle - updates hideSidebar feature config
+   */
+  async handleKeepHistoryVisible(enabled) {
+    this.featureStates.keepHistoryVisible = enabled;
+
+    try {
+      await this.sendToActiveTab({
+        type: 'updateConfig',
+        featureName: 'hideSidebar',
+        config: { keepHistoryVisible: enabled }
+      });
+    } catch (error) {
+      console.error('FocusTube: Error updating keepHistoryVisible:', error);
+    }
   }
 
   /**
@@ -483,6 +540,87 @@ class PopupController {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Rate Us – Exposure counter
+  // ---------------------------------------------------------------------------
+  /**
+   * Manages the "Rate us" prompt:
+   *  - increments popupOpenCount on every open
+   *  - shows a full card when count reaches RATE_US_THRESHOLD
+   *  - after the user acts (rated / later), switches to a subtle always-visible pill
+   */
+  async initRateUsCounter() {
+    const STORE_REVIEW_URL =
+      'https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews';
+    // Show modal on these open-counts (3 chances total)
+    const SHOW_AT = [3, 5, 10];
+    const MAX_SHOWN = SHOW_AT.length; // 3
+
+    const overlay  = document.getElementById('rateUsOverlay');
+    const link     = document.getElementById('rateUsPillLink');
+    const rateBtn  = document.getElementById('rateNowBtn');
+    const laterBtn = document.getElementById('rateLaterBtn');
+    const closeBtn = document.getElementById('rateCloseBtn');
+
+    if (!overlay) return;
+    if (link) link.href = STORE_REVIEW_URL;
+
+    // Use chrome.storage.local directly – no quota limits, synchronous-ish reads
+    const local = chrome.storage.local;
+
+    const read = () => new Promise(resolve =>
+      local.get(['ft_opens', 'ft_shown', 'ft_state'], r => resolve(r || {}))
+    );
+    const write = items => new Promise(resolve =>
+      local.set(items, resolve)
+    );
+
+    let data = await read();
+
+    const state = data.ft_state || 'pending'; // 'pending' | 'rated' | 'never'
+    const shown = data.ft_shown || 0;
+    const opens = (data.ft_opens || 0) + 1;
+
+    // Persist incremented opens count first
+    await write({ ft_opens: opens });
+
+    // Already resolved → nothing extra to do
+    if (state === 'rated' || state === 'never') {
+      return;
+    }
+
+    // Show modal if this open-count is in our list AND we haven't exhausted chances
+    if (shown >= MAX_SHOWN || !SHOW_AT.includes(opens)) return;
+
+    // ── Show blocking modal ──
+    overlay.style.display = 'flex';
+
+    const dismiss = async () => {
+      overlay.style.display = 'none';
+      const newShown = shown + 1;
+      await write({ ft_shown: newShown });
+      if (newShown >= MAX_SHOWN) {
+        await write({ ft_state: 'never' });
+      }
+    };
+
+    if (rateBtn) {
+      rateBtn.addEventListener('click', async () => {
+        window.open(STORE_REVIEW_URL, '_blank');
+        overlay.style.display = 'none';
+        await write({ ft_state: 'rated', ft_shown: shown + 1 });
+      });
+    }
+
+    if (laterBtn) laterBtn.addEventListener('click', dismiss);
+    if (closeBtn)  closeBtn.addEventListener('click', dismiss);
+  }
+
+  /** Persist the rate-us state */
+  async _saveRateState(state) {
+    chrome.storage.local.set({ ft_state: state });
   }
 }
 

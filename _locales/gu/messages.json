@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "સાઇડબાર છુપાવો"
   },
+  "keepHistoryVisible": {
+    "message": "ઇતિહાસ દૃશ્યમાન રાખો"
+  },
   "editBlacklistedChannels": {
     "message": "કાળા યાદીમાં આવેલી ચેનલો સંપાદિત કરો"
   },

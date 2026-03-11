@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Seitenleiste ausblenden"
   },
+  "keepHistoryVisible": {
+    "message": "Verlauf sichtbar lassen"
+  },
   "editBlacklistedChannels": {
     "message": "Gesperrte Kanäle bearbeiten"
   },

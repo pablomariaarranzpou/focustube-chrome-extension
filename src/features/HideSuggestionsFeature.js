@@ -25,8 +25,7 @@ class HideSuggestionsFeature extends DOMFeature {
    * This is more efficient and robust than JS-only hiding
    */
   injectBlockingCSS() {
-    // Hide the main container for sidebar recommendations
-    // AND the #related element which is sometimes used
+    // Hide sidebar recommendations AND in-player end-of-video suggestions
     const css = `
       #related,
       ytd-watch-next-secondary-results-renderer {
@@ -34,6 +33,18 @@ class HideSuggestionsFeature extends DOMFeature {
         visibility: hidden !important;
         height: 0 !important;
         max-height: 0 !important;
+      }
+      /* End-screen cards (creator-added) */
+      .ytp-ce-element {
+        display: none !important;
+        visibility: hidden !important;
+      }
+      /* Video wall grid shown when video finishes */
+      .ytp-videowall-still,
+      .ytp-modern-videowall-still,
+      .ytp-fullscreen-grid-stills-container {
+        display: none !important;
+        visibility: hidden !important;
       }
     `;
     this.injectCSS('blocking', css);

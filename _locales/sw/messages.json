@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Ficha Upau wa Kando"
   },
+  "keepHistoryVisible": {
+    "message": "Weka Historia ionekane"
+  },
   "editBlacklistedChannels": {
     "message": "Hariri Mituo Iliyopo kwenye Orodha Nyeusi"
   },

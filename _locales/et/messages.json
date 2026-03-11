@@ -13,5 +13,8 @@
   },
   "hideSidebar": {
     "message": "Peida Külgriba"
+  },
+  "keepHistoryVisible": {
+    "message": "Hoia ajalugu nähtavana"
   }
 }

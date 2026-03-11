@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Skrij Stransko Vrstico"
   },
+  "keepHistoryVisible": {
+    "message": "Ohrani zgodovino vidno"
+  },
   "editBlacklistedChannels": {
     "message": "Uredi Kanale na Črnem Seznamu"
   },

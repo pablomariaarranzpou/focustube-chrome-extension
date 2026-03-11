@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Скриване на страничната лента"
   },
+  "keepHistoryVisible": {
+    "message": "ታሪክን ታይቶ ያቆዩ"
+  },
   "editBlacklistedChannels": {
     "message": "Редактиране на забранени канали"
   },

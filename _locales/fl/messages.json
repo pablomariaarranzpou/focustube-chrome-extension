@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Piilota sivupalkki"
   },
+  "keepHistoryVisible": {
+    "message": "Panatilihing nakikita ang Kasaysayan"
+  },
   "editBlacklistedChannels": {
     "message": "Muokkaa mustalla listalla olevia kanavia"
   },

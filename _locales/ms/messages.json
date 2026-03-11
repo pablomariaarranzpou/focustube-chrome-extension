@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Sembunyikan Bar Sisi"
   },
+  "keepHistoryVisible": {
+    "message": "Pastikan Sejarah kelihatan"
+  },
   "editBlacklistedChannels": {
     "message": "Sunting Saluran yang Disenarai Hitam"
   },

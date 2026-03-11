@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Απόκρυψη Πλαϊνής Μπάρας"
   },
+  "keepHistoryVisible": {
+    "message": "Διατήρηση Ιστορικού ορατού"
+  },
   "editBlacklistedChannels": {
     "message": "Επεξεργασία Μαύρης Λίστας Καναλιών"
   },

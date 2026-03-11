@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Nascondi Barra Laterale"
   },
+  "keepHistoryVisible": {
+    "message": "Mantieni la Cronologia visibile"
+  },
   "editBlacklistedChannels": {
     "message": "Modifica Canali nella Lista Nera"
   },

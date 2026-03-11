@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Скрыть боковую панель"
   },
+  "keepHistoryVisible": {
+    "message": "Сохранить историю видимой"
+  },
   "editBlacklistedChannels": {
     "message": "Редактировать заблокированные каналы"
   },

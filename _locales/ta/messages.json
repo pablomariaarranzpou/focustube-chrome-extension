@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "பக்கப்பட்டையை மறை"
   },
+  "keepHistoryVisible": {
+    "message": "வரலாற்றை தெரியும்படி வைக்கவும்"
+  },
   "editBlacklistedChannels": {
     "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை திருத்து"
   },

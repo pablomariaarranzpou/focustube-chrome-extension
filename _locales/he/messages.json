@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "הסתר סרגל צדדי"
   },
+  "keepHistoryVisible": {
+    "message": "שמור את ההיסטוריה גלויה"
+  },
   "editBlacklistedChannels": {
     "message": "ערוך ערוצים ברשימה השחורה"
   },

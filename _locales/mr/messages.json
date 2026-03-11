@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "साइडबार लपवा"
   },
+  "keepHistoryVisible": {
+    "message": "इतिहास दृश्यमान ठेवा"
+  },
   "editBlacklistedChannels": {
     "message": "काळ्या यादीतील चॅनेल संपादित करा"
   },

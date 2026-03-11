@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Itago ang Sidebar"
   },
+  "keepHistoryVisible": {
+    "message": "Panatilihing nakikita ang Kasaysayan"
+  },
   "editBlacklistedChannels": {
     "message": "I-edit ang Mga Channel na Nasa Blacklist"
   },

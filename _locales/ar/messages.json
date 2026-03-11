@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "إخفاء الشريط الجانبي"
   },
+  "keepHistoryVisible": {
+    "message": "إبقاء السجل مرئياً"
+  },
   "editBlacklistedChannels": {
     "message": "تحرير القنوات المحظورة"
   },

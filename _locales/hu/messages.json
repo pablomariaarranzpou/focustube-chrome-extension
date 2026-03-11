@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Oldalsáv elrejtése"
   },
+  "keepHistoryVisible": {
+    "message": "Előzmények láthatóan tartása"
+  },
   "editBlacklistedChannels": {
     "message": "Tiltott csatornák szerkesztése"
   },

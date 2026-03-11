@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Skjul Sidepanel"
   },
+  "keepHistoryVisible": {
+    "message": "Hold historikk synlig"
+  },
   "editBlacklistedChannels": {
     "message": "Rediger Svartelistede Kanaler"
   },

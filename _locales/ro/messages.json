@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "Ascunde Bara Laterală"
   },
+  "keepHistoryVisible": {
+    "message": "Menține Istoricul vizibil"
+  },
   "editBlacklistedChannels": {
     "message": "Editează Canale pe Lista Neagră"
   },

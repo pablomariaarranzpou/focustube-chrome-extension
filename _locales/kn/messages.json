@@ -29,6 +29,9 @@
   "hideSidebar": {
     "message": "ಸೈಡ್‌ಬಾರ್ ಮರೆಮಾಡಿ"
   },
+  "keepHistoryVisible": {
+    "message": "ಇತಿಹಾಸ ಗೋಚರವಾಗಿರಿಸಿ"
+  },
   "editBlacklistedChannels": {
     "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
   },
