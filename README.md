@@ -9,6 +9,7 @@ FocusTube is a Chrome extension that helps you stay focused on YouTube by hiding
 ## Features
 
 ### Content Hiding
+
 - **Hide Shorts** — Remove YouTube Shorts from all pages (home, search, sidebar)
 - **Hide Suggestions** — Hide recommended videos in the sidebar, end-screen cards, and the video wall grid that appears when a video finishes
 - **Hide Comments** — Remove the comments section entirely
@@ -17,6 +18,7 @@ FocusTube is a Chrome extension that helps you stay focused on YouTube by hiding
 - **Hide Home Page Content** — Clean, distraction-free YouTube homepage
 
 ### Content Filtering
+
 - **Channel Blacklist** — Hide videos from specific channels by name
 - **Word Blacklist** — Hide videos whose title contains specific keywords
 
@@ -27,9 +29,11 @@ Fully translated into **46 languages**: Amharic, Arabic, Catalan, Czech, Danish,
 ## Installation
 
 ### Chrome Web Store
+
 Install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb).
 
 ### Manual (Developer Mode)
+
 1. Clone or download this repository
 2. Open Chrome → `chrome://extensions/`
 3. Enable **Developer mode** (top right toggle)
@@ -101,6 +105,7 @@ Persistence
 ### Debugging
 
 Open the browser console on any YouTube page:
+
 ```js
 window.__focusTubeManager              // Feature manager instance
 window.__focusTubeManager.getStats()   // { total, enabled, disabled, initialized }
@@ -129,4 +134,4 @@ You can freely use, modify, and distribute this software. If you distribute a mo
 
 ---
 
-**Version**: 2.4.5
+**Version**: 2.4.6

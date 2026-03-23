@@ -33,19 +33,28 @@ class HideBlacklistedWordsFeature extends FilterFeature {
   }
 
   /**
-   * Apply word filters to video elements
+   * Apply word filters to video elements.
+   * Checks the entire video element's text content to avoid
+   * fragile title selectors that break across YouTube layout variants.
    */
   applyFilters() {
-    const videoElements = this.query('ytd-rich-item-renderer');
-    
-    videoElements.forEach(video => {
-      const titleElement = video.querySelector('h3 a span');
-      
-      if (!titleElement) return;
+    if (this.filterList.length === 0) return;
 
-      const videoTitle = titleElement.textContent.trim();
-      
-      if (this.matchesFilter(videoTitle)) {
+    const videoElements = this.query([
+      // Desktop
+      'ytd-rich-item-renderer',
+      'ytd-video-renderer',
+      'ytd-compact-video-renderer',
+      'ytd-grid-video-renderer',
+      'ytd-playlist-video-renderer',
+      // Mobile / Tablet
+      'ytm-rich-item-renderer',
+      'ytm-video-with-context-renderer',
+      'ytm-compact-video-renderer',
+    ].join(', '));
+
+    videoElements.forEach(video => {
+      if (this.matchesFilter(video.textContent)) {
         this.hideElements([video]);
       }
     });
