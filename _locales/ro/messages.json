@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Menține Istoricul vizibil"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Editează Canale pe Lista Neagră"
   },

@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Keep History visible"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Edit Blacklisted Channels"
   },

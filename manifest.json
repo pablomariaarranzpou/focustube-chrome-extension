@@ -38,6 +38,7 @@
         "src/features/HideHomePageContentFeature.js",
         "src/features/HideBlacklistedChannelsFeature.js",
         "src/features/HideBlacklistedWordsFeature.js",
+        "src/features/QuickBlacklistButtonFeature.js",
         "src/content-main.js"
       ],
       "run_at": "document_start",

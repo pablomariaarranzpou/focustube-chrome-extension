@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Saglabāt vēsturi redzamu"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Rediģēt Melnajā Sarakstā Iekļautus Kanālus"
   },

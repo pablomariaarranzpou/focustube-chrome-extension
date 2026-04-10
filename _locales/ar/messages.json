@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "إبقاء السجل مرئياً"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "تحرير القنوات المحظورة"
   },

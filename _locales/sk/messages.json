@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Zachovať históriu viditeľnou"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Upraviť Kanály v Zozname Zakázaných"
   },

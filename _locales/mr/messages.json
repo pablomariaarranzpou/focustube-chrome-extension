@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "इतिहास दृश्यमान ठेवा"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "काळ्या यादीतील चॅनेल संपादित करा"
   },

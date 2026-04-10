@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "نگه داشتن تاریخچه قابل مشاهده"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "ویرایش کانال‌های مسدود شده"
   },

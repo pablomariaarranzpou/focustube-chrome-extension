@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Задржи историју видљивом"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Uredi Kanale na Crnoj Listi"
   },

@@ -59,7 +59,8 @@ function initializeFocusTube() {
       new HideAutoplayOverlayFeature(),
       new HideHomePageContentFeature(),
       new HideBlacklistedChannelsFeature(),
-      new HideBlacklistedWordsFeature()
+      new HideBlacklistedWordsFeature(),
+      new QuickBlacklistButtonFeature()
     ]);
 
     // Set up message handling for popup communication

@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "履歴を表示したままにする"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "ブラックリストのチャンネルを編集"
   },

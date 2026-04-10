@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "ಇತಿಹಾಸ ಗೋಚರವಾಗಿರಿಸಿ"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಚಾನೆಲ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
   },

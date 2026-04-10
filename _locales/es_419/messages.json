@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Mantener Historial visible"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Editar Canales en la Lista Negra"
   },

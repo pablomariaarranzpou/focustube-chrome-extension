@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "ታሪክን ታይቶ ያቆዩ"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Редактиране на забранени канали"
   },

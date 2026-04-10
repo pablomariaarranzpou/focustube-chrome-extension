@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Palikti istoriją matomą"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Redaguoti Juodajame Sąraše esančius Kanalus"
   },

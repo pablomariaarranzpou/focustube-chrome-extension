@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "שמור את ההיסטוריה גלויה"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "ערוך ערוצים ברשימה השחורה"
   },

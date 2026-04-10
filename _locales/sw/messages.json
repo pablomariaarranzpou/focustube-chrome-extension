@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Weka Historia ionekane"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Hariri Mituo Iliyopo kwenye Orodha Nyeusi"
   },

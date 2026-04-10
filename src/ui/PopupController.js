@@ -84,6 +84,7 @@ class PopupController {
         'hideHomePageContent',
         'hideAutoplayOverlay',
         'hideSidebar',
+        'quickBlacklistButton',
         'blacklist',
         'blacklistWords'
       ]);
@@ -115,7 +116,8 @@ class PopupController {
       hideBlacklistedWords: 'hideBlacklistedWords',
       hideHomePageContent: 'hideHomePageContent',
       hideAutoplayOverlay: 'hideAutoplayOverlay',
-      hideSidebar: 'hideSidebar'
+      hideSidebar: 'hideSidebar',
+      quickBlacklistButton: 'quickBlacklistButton'
     };
 
     Object.entries(featureMap).forEach(([legacyKey, featureName]) => {
@@ -133,7 +135,8 @@ class PopupController {
           hideBlacklistedWords: true,
           hideHomePageContent: false,
           hideAutoplayOverlay: false,
-          hideSidebar: false
+          hideSidebar: false,
+          quickBlacklistButton: true
         };
         merged[featureName] = defaults[featureName];
       }
@@ -167,7 +170,8 @@ class PopupController {
       hideHomePageContentCheckbox: 'hideHomePageContent',
       hideAutoplayOverlayCheckbox: 'hideAutoplayOverlay',
       hideSidebarCheckbox: 'hideSidebar',
-      keepHistoryVisibleCheckbox: 'keepHistoryVisible'
+      keepHistoryVisibleCheckbox: 'keepHistoryVisible',
+      quickBlacklistButtonCheckbox: 'quickBlacklistButton'
     };
 
     Object.entries(checkboxMap).forEach(([checkboxId, featureName]) => {
@@ -234,7 +238,8 @@ class PopupController {
       hideBlacklistedWordsCheckbox: 'hideBlacklistedWords',
       hideHomePageContentCheckbox: 'hideHomePageContent',
       hideAutoplayOverlayCheckbox: 'hideAutoplayOverlay',
-      hideSidebarCheckbox: 'hideSidebar'
+      hideSidebarCheckbox: 'hideSidebar',
+      quickBlacklistButtonCheckbox: 'quickBlacklistButton'
     };
 
     Object.entries(checkboxMap).forEach(([checkboxId, featureName]) => {

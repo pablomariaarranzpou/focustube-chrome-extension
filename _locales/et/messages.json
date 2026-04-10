@@ -16,5 +16,8 @@
   },
   "keepHistoryVisible": {
     "message": "Hoia ajalugu nähtavana"
+  },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
   }
 }

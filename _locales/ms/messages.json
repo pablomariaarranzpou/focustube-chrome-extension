@@ -32,6 +32,9 @@
   "keepHistoryVisible": {
     "message": "Pastikan Sejarah kelihatan"
   },
+  "quickBlacklistButton": {
+    "message": "Show quick blacklist button in feed"
+  },
   "editBlacklistedChannels": {
     "message": "Sunting Saluran yang Disenarai Hitam"
   },
