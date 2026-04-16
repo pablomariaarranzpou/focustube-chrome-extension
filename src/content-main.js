@@ -35,7 +35,7 @@
 // <script src="src/features/HideBlacklistedChannelsFeature.js"></script>
 // <script src="src/features/HideBlacklistedWordsFeature.js"></script>
 
-console.log('FocusTube content script loaded - Version 2.4.7');
+console.log('FocusTube content script loaded - Version 2.4.8');
 
 // Global feature manager
 let featureManager = null;
