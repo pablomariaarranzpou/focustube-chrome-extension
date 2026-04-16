@@ -33,7 +33,7 @@
     "message": "Verlauf sichtbar lassen"
   },
   "quickBlacklistButton": {
-    "message": "Show quick blacklist button in feed"
+    "message": "Schnell-Sperren-Schaltfläche im Feed anzeigen"
   },
   "editBlacklistedChannels": {
     "message": "Gesperrte Kanäle bearbeiten"

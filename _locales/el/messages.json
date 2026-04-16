@@ -33,7 +33,7 @@
     "message": "Διατήρηση Ιστορικού ορατού"
   },
   "quickBlacklistButton": {
-    "message": "Show quick blacklist button in feed"
+    "message": "Εμφάνιση κουμπιού γρήγορου αποκλεισμού στη ροή"
   },
   "editBlacklistedChannels": {
     "message": "Επεξεργασία Μαύρης Λίστας Καναλιών"

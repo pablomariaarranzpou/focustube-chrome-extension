@@ -33,7 +33,7 @@
     "message": "기록 표시 유지"
   },
   "quickBlacklistButton": {
-    "message": "Show quick blacklist button in feed"
+    "message": "피드에 빠른 차단 버튼 표시"
   },
   "editBlacklistedChannels": {
     "message": "차단된 채널 수정"

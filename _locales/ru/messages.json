@@ -33,7 +33,7 @@
     "message": "Сохранить историю видимой"
   },
   "quickBlacklistButton": {
-    "message": "Show quick blacklist button in feed"
+    "message": "Показывать кнопку быстрой блокировки в ленте"
   },
   "editBlacklistedChannels": {
     "message": "Редактировать заблокированные каналы"

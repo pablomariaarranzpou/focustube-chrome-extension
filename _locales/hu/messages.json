@@ -33,7 +33,7 @@
     "message": "Előzmények láthatóan tartása"
   },
   "quickBlacklistButton": {
-    "message": "Show quick blacklist button in feed"
+    "message": "Gyors blokkolás gomb megjelenítése a hírfolyamban"
   },
   "editBlacklistedChannels": {
     "message": "Tiltott csatornák szerkesztése"

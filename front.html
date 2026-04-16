@@ -12,8 +12,12 @@
   <style>
     .toggle-container {
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
       cursor: pointer;
+    }
+    .toggle-container .toggle-slider {
+      flex-shrink: 0;
+      margin-top: 2px;
     }
     .toggle-input {
       display: none;
@@ -259,7 +263,7 @@
           <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedChannels"></span>
         </label>
         <!-- Sub-option: quick blacklist button in feed -->
-        <div id="blacklistSubOptions" style="padding-left: 3rem; padding-top: 4px; padding-bottom: 4px;">
+        <div id="blacklistSubOptions" style="padding-top: 4px; padding-bottom: 4px;">
           <label class="toggle-container" style="padding: 4px 0;">
             <input
               type="checkbox"
