@@ -8,7 +8,9 @@
     "128": "128.png"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "alarms",
+    "notifications"
   ],
   "host_permissions": [
     "*://*.youtube.com/*",
@@ -17,6 +19,9 @@
   ],
   "action": {
     "default_popup": "front.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
   },
   "content_scripts": [
     {
@@ -29,6 +34,7 @@
         "src/core/Feature.js",
         "src/core/DOMFeature.js",
         "src/core/FilterFeature.js",
+        "src/core/FocusModeStateComputer.js",
         "src/core/FeatureManager.js",
         "src/features/HideShortsFeature.js",
         "src/features/HideSuggestionsFeature.js",
@@ -39,6 +45,7 @@
         "src/features/HideBlacklistedChannelsFeature.js",
         "src/features/HideBlacklistedWordsFeature.js",
         "src/features/QuickBlacklistButtonFeature.js",
+        "src/features/FocusModeFeature.js",
         "src/content-main.js"
       ],
       "run_at": "document_start",

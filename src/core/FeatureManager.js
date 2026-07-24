@@ -106,14 +106,15 @@ class FeatureManager {
       // Load from new format (overrides legacy if present)
       for (const [name, state] of Object.entries(savedStates)) {
         const feature = this.get(name);
-        if (feature && state.enabled !== undefined) {
+        if (!feature) continue;
+        if (state.enabled !== undefined) {
           feature.enabled = state.enabled;
-          if (state.config) {
-            feature.config = { ...feature.config, ...state.config };
-          }
+        }
+        if (state.config) {
+          feature.config = { ...feature.config, ...state.config };
         }
       }
-      
+
       // Load additional storage keys (like filter lists)
       for (const [additionalKey, featureName] of additionalKeysMap.entries()) {
         const feature = this.get(featureName);
@@ -123,9 +124,13 @@ class FeatureManager {
           if (feature.filterList !== undefined) {
             feature.filterList = result[additionalKey] || [];
           }
+          // Generic hook for features with non-filterList additional data (e.g. FocusModeFeature)
+          if (typeof feature.setAdditionalData === 'function') {
+            feature.setAdditionalData(additionalKey, result[additionalKey]);
+          }
         }
       }
-      
+
       // Now initialize features TRULY synchronously like content.js
       // Use initializeSync() which doesn't return promises
       for (const feature of this.features.values()) {
@@ -297,14 +302,15 @@ class FeatureManager {
       // Load from new format (overrides legacy if present)
       for (const [name, state] of Object.entries(savedStates)) {
         const feature = this.get(name);
-        if (feature && state.enabled !== undefined) {
+        if (!feature) continue;
+        if (state.enabled !== undefined) {
           feature.enabled = state.enabled;
-          if (state.config) {
-            feature.config = { ...feature.config, ...state.config };
-          }
+        }
+        if (state.config) {
+          feature.config = { ...feature.config, ...state.config };
         }
       }
-      
+
       // Load additional storage keys (like filter lists)
       for (const [additionalKey, featureName] of additionalKeysMap.entries()) {
         const feature = this.get(featureName);
@@ -313,6 +319,10 @@ class FeatureManager {
           // Set filter lists directly
           if (feature.filterList !== undefined) {
             feature.filterList = result[additionalKey] || [];
+          }
+          // Generic hook for features with non-filterList additional data (e.g. FocusModeFeature)
+          if (typeof feature.setAdditionalData === 'function') {
+            feature.setAdditionalData(additionalKey, result[additionalKey]);
           }
         }
       }
@@ -352,9 +362,14 @@ class FeatureManager {
           .catch(error => sendResponse({ success: false, error: error.message }));
         return true;
 
+      case 'focusModeStateChanged':
+        this.get('focusMode')?.applyState(message);
+        return false;
+
       default:
-        console.warn(`FocusTube: Unknown message type: ${type}`);
-        sendResponse({ success: false, error: 'Unknown message type' });
+        // Not a message type this context owns (e.g. background-only messages like
+        // startFocusSession broadcast via chrome.runtime.sendMessage). Stay silent -
+        // calling sendResponse here would race the actual intended recipient's response.
         return false;
     }
   }

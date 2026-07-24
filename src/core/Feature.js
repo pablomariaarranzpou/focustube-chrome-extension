@@ -22,6 +22,7 @@ class Feature {
     this.config = config;
     this.initialized = false;
     this.styleElements = new Map(); // Track injected CSS for cleanup
+    this.suppressedBy = null; // Orchestrator currently suppressing this feature (e.g. 'focusMode' with the gate closed), or null
   }
 
   /**
@@ -162,15 +163,64 @@ class Feature {
   }
 
   /**
-   * Toggle feature state
+   * Toggle feature state.
+   *
+   * While suppressed (Focus Mode's gate is closed - e.g. mode is Off, or Timer
+   * with no running session), a manual toggle only persists the preference:
+   * nothing hides/shows right now because Settings simply don't apply while
+   * the gate is closed. The new `enabled` value takes visual effect the moment
+   * the gate reopens (releaseSuppressionSync re-syncs isActive to it).
    */
   async toggle(state) {
+    if (this.suppressedBy) {
+      this.enabled = state;
+      return;
+    }
+
     if (state === this.isActive) return;
-    
+
     if (state) {
       await this.activate();
     } else {
       await this.deactivate();
+    }
+  }
+
+  /**
+   * Close the gate on this feature on behalf of an orchestrator: deactivate it
+   * visually WITHOUT mutating the persisted `enabled` preference. Safe to call
+   * repeatedly - it just (re)stamps ownership.
+   */
+  suppressSync(suppressedBy) {
+    if (!this.initialized) return;
+    this.suppressedBy = suppressedBy;
+    if (this.isActive) {
+      this.isActive = false;
+      try {
+        this.onDeactivate();
+      } catch (error) {
+        console.error(`FocusTube: Error suppressing ${this.name}:`, error);
+      }
+    }
+  }
+
+  /**
+   * Reopen the gate: re-sync isActive to whatever `enabled` currently is.
+   * `enabled` stays the single source of truth for the user's preference, so
+   * "apply exactly what the user configured" is automatic - including changes
+   * they made while the gate was closed.
+   */
+  releaseSuppressionSync(suppressedBy) {
+    if (this.suppressedBy !== suppressedBy) return;
+    this.suppressedBy = null;
+    if (this.enabled && !this.isActive) {
+      this.isActive = true;
+      try {
+        this.onActivate();
+      } catch (error) {
+        console.error(`FocusTube: Error unsuppressing ${this.name}:`, error);
+        this.isActive = false;
+      }
     }
   }
 
