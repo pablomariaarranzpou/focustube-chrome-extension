@@ -446,14 +446,14 @@ footer a:hover {
   white-space: nowrap;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
   transform-origin: left center;
-  animation: fadeSidebar 15s ease-in-out infinite;
+  animation: fadeSidebar 16s ease-in-out infinite;
 }
 
 /* Sidebar collapses when the cursor clicks the hamburger menu. */
 @keyframes fadeSidebar {
-  0%, 39% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
-  46%, 90% { width: 0; opacity: 0; padding-left: 0; padding-right: 0; border-right-color: transparent; }
-  96%, 100% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
+  0%, 37% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
+  44%, 90% { width: 0; opacity: 0; padding-left: 0; padding-right: 0; border-right-color: transparent; }
+  95%, 100% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
 }
 
 .yt-nav-item {
@@ -501,8 +501,10 @@ footer a:hover {
 .yt-nav-sub-dot:nth-child(3) { background: linear-gradient(135deg, #f9d423, #ff4e50); }
 
 .yt-main {
+  position: relative;
   flex: 1;
   min-width: 0;
+  min-height: 232px;
   padding: 14px 16px;
 }
 
@@ -546,25 +548,35 @@ footer a:hover {
   position: relative;
 }
 
+.yt-short-a { background: linear-gradient(160deg, #7c3aed, #db2777); }
+.yt-short-b { background: linear-gradient(160deg, #2563eb, #0891b2); }
+.yt-short-c { background: linear-gradient(160deg, #ea580c, #db2777); }
+.yt-short-d { background: linear-gradient(160deg, #059669, #2563eb); }
+.yt-short-e { background: linear-gradient(160deg, #d97706, #dc2626); }
+
 .yt-short::after {
   content: "\25B6";
   position: absolute;
   bottom: 6px;
   left: 6px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.5rem;
-  opacity: 0.85;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .yt-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .yt-card {
+  flex: 1 1 0;
   min-width: 0;
+  margin-right: 12px;
+}
+
+.yt-card:last-child {
+  margin-right: 0;
 }
 
 .yt-thumb {
@@ -576,9 +588,9 @@ footer a:hover {
   overflow: hidden;
 }
 
-.yt-thumb-alt {
-  background: linear-gradient(135deg, #4a3f47, #26232b);
-}
+.yt-thumb-a { background: linear-gradient(135deg, #4f46e5, #9333ea); }
+.yt-thumb-b { background: linear-gradient(135deg, #e11d48, #f97316); }
+.yt-thumb-c { background: linear-gradient(135deg, #0891b2, #059669); }
 
 .yt-thumb-time {
   position: absolute;
@@ -589,6 +601,16 @@ footer a:hover {
   font-size: 0.55rem;
   padding: 1px 4px;
   border-radius: 3px;
+}
+
+/* Red "already watched" progress bar for extra realism. */
+.yt-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 62%;
+  background: #ff0000;
 }
 
 /* Quick "add to blocklist" button that pops up over the target thumbnail */
@@ -612,7 +634,7 @@ footer a:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
   opacity: 0;
   transform: scale(0.8);
-  animation: blockBtn 15s ease-in-out infinite;
+  animation: blockBtn 16s ease-in-out infinite;
 }
 
 .yt-card-meta {
@@ -627,6 +649,10 @@ footer a:hover {
   background: #444;
   flex-shrink: 0;
 }
+
+.av-a { background: linear-gradient(135deg, #a855f7, #6366f1); }
+.av-b { background: linear-gradient(135deg, #fb7185, #f59e0b); }
+.av-c { background: linear-gradient(135deg, #22d3ee, #10b981); }
 
 .yt-card-lines {
   flex: 1;
@@ -655,84 +681,194 @@ footer a:hover {
   transform-origin: top left;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   opacity: 0;
-  animation: cursorMove 15s ease-in-out infinite;
-  z-index: 5;
+  animation: cursorMove 16s ease-in-out infinite;
+  z-index: 6;
 }
 
-/* ---- Coordinated 15s demo timeline (all animations share the duration) ----
-   The cursor is the actor: it clicks the "Add to blocklist" button on a video
-   (that video is removed), then clicks the hamburger menu (the sidebar
-   collapses). Focus Mode then clears the Shorts shelf and the remaining
-   recommendations. Everything resets and the loop repeats. */
+/* Expanding "click" ripples left where the cursor taps each target. */
+.yt-ripple {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--coral);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+  transform: translate(-50%, -50%) scale(0.3);
+}
+
+.yt-ripple-1 { left: 16%; top: 66%; animation: ripple1 16s ease-out infinite; }
+.yt-ripple-2 { left: 4%; top: 19%; animation: ripple2 16s ease-out infinite; }
+
+/* Focus Mode toggle in the top bar - it flips ON right before the page clears. */
+.yt-focus-toggle {
+  position: relative;
+  width: 24px;
+  height: 13px;
+  border-radius: 999px;
+  background: #3a3a3a;
+  flex-shrink: 0;
+  animation: toggleTrack 16s ease-in-out infinite;
+}
+
+.yt-focus-toggle::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #8a8a8a;
+  animation: toggleKnob 16s ease-in-out infinite;
+}
+
+/* The rewarding end state: a clean, focused page. */
+.yt-focused {
+  position: absolute;
+  inset: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  animation: focusedIn 16s ease-in-out infinite;
+}
+
+.yt-focused-check {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--coral);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 20px rgba(249, 115, 122, 0.5);
+}
+
+.yt-focused-label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+/* ---- Coordinated 16s demo timeline (all animations share the duration) ----
+   The cursor is the actor: it clicks "Add to blocklist" on a video (removed),
+   then clicks the hamburger menu (the sidebar collapses). The Focus Mode
+   toggle then flips ON and the Shorts shelf and remaining recommendations
+   clear, leaving a calm, focused page. Everything resets and the loop repeats. */
 
 /* Cursor path: absolute left/top move it between targets; the scale dips are
    the "clicks". Values are tuned against the mock's default layout. */
 @keyframes cursorMove {
   0%   { opacity: 0; left: 42%; top: 96%; transform: scale(1); }
   4%   { opacity: 1; left: 42%; top: 96%; transform: scale(1); }
-  15%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }   /* blocklist button */
-  18%  { opacity: 1; left: 16%; top: 66%; transform: scale(0.8); } /* click */
-  21%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }
-  33%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }   /* hamburger menu */
-  36%  { opacity: 1; left: 4%;  top: 19%; transform: scale(0.8); } /* click */
-  39%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }
-  48%  { opacity: 1; left: 34%; top: 98%; transform: scale(1); }   /* glide out */
-  54%, 100% { opacity: 0; left: 42%; top: 96%; transform: scale(1); }
+  13%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }   /* blocklist button */
+  16%  { opacity: 1; left: 16%; top: 66%; transform: scale(0.8); } /* click */
+  19%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }
+  31%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }   /* hamburger menu */
+  34%  { opacity: 1; left: 4%;  top: 19%; transform: scale(0.8); } /* click */
+  37%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }
+  46%  { opacity: 1; left: 34%; top: 98%; transform: scale(1); }   /* glide out */
+  52%, 100% { opacity: 0; left: 42%; top: 96%; transform: scale(1); }
 }
 
 /* Blocklist button: reveal as the cursor approaches, pulse on click, then go. */
 @keyframes blockBtn {
-  0%, 6% { opacity: 0; transform: scale(0.8); }
-  12%, 17% { opacity: 1; transform: scale(1); }
-  19% { opacity: 1; transform: scale(0.86); }
-  21%, 100% { opacity: 0; transform: scale(0.8); }
+  0%, 5% { opacity: 0; transform: scale(0.8); }
+  11%, 15% { opacity: 1; transform: scale(1); }
+  17% { opacity: 1; transform: scale(0.86); }
+  19%, 100% { opacity: 0; transform: scale(0.8); }
 }
 
-/* Target (blocklisted) card collapses right after the click. */
+@keyframes ripple1 {
+  0%, 15% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  17% { opacity: 0.85; transform: translate(-50%, -50%) scale(0.6); }
+  23% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+  24%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+}
+
+@keyframes ripple2 {
+  0%, 33% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  35% { opacity: 0.85; transform: translate(-50%, -50%) scale(0.6); }
+  41% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+  42%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+}
+
+/* Target (blocklisted) card collapses and its neighbours slide over (flex). */
 .yt-anim-block {
-  transform-origin: top center;
-  animation: blockCard 15s ease-in-out infinite;
+  overflow: hidden;
+  transform-origin: left center;
+  animation: blockCard 16s ease-in-out infinite;
 }
 
 @keyframes blockCard {
-  0%, 21% { opacity: 1; max-width: 100%; transform: scale(1); }
-  28%, 90% { opacity: 0; max-width: 0; transform: scale(0.85); }
-  96%, 100% { opacity: 1; max-width: 100%; transform: scale(1); }
+  0%, 19% { flex-grow: 1; max-width: 100%; margin-right: 12px; opacity: 1; transform: scale(1); }
+  26%, 90% { flex-grow: 0; max-width: 0; margin-right: 0; opacity: 0; transform: scale(0.82); }
+  95%, 100% { flex-grow: 1; max-width: 100%; margin-right: 12px; opacity: 1; transform: scale(1); }
 }
 
-/* Shorts shelf clears after the hamburger click. */
+/* Shorts shelf fades in place (layout kept, so the window never jumps). */
 .yt-anim-shorts {
   transform-origin: top center;
-  animation: fadeShorts 15s ease-in-out infinite;
+  animation: fadeShorts 16s ease-in-out infinite;
 }
 
 @keyframes fadeShorts {
-  0%, 48% { opacity: 1; max-height: 140px; margin-bottom: 16px; transform: scale(1); }
-  56%, 90% { opacity: 0; max-height: 0; margin-bottom: 0; transform: scale(0.94); }
-  96%, 100% { opacity: 1; max-height: 140px; margin-bottom: 16px; transform: scale(1); }
+  0%, 44% { opacity: 1; transform: scale(1); }
+  52%, 88% { opacity: 0; transform: scale(0.96); }
+  95%, 100% { opacity: 1; transform: scale(1); }
 }
 
-/* Remaining recommendations (suggestions) collapse last. */
+/* Remaining recommendations (suggestions) clear last. */
 .yt-anim-recs {
   transform-origin: top center;
-  animation: fadeRecs 15s ease-in-out infinite;
+  animation: fadeRecs 16s ease-in-out infinite;
 }
 
 @keyframes fadeRecs {
-  0%, 56% { opacity: 1; transform: scale(1); }
-  64%, 90% { opacity: 0; transform: scale(0.9); }
-  97%, 100% { opacity: 1; transform: scale(1); }
+  0%, 52% { opacity: 1; transform: scale(1); }
+  60%, 88% { opacity: 0; transform: scale(0.92); }
+  95%, 100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes toggleTrack {
+  0%, 36% { background: #3a3a3a; }
+  40%, 88% { background: rgba(249, 115, 122, 0.55); }
+  94%, 100% { background: #3a3a3a; }
+}
+
+@keyframes toggleKnob {
+  0%, 36% { left: 2px; background: #8a8a8a; }
+  40%, 88% { left: 13px; background: var(--coral); }
+  94%, 100% { left: 2px; background: #8a8a8a; }
+}
+
+@keyframes focusedIn {
+  0%, 58% { opacity: 0; transform: scale(0.85); }
+  66%, 86% { opacity: 1; transform: scale(1); }
+  92%, 100% { opacity: 0; transform: scale(0.85); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .yt-cursor,
+  .yt-ripple,
+  .yt-focus-toggle,
+  .yt-focus-toggle::after,
   .yt-block-btn,
   .yt-anim-block,
   .yt-anim-shorts,
   .yt-anim-recs,
+  .yt-focused,
   .yt-nav { animation: none; }
   .yt-block-btn { opacity: 1; transform: scale(1); }
-  .yt-cursor { opacity: 0; }
+  .yt-cursor,
+  .yt-focused { opacity: 0; }
 }
 
 .mode-row {
@@ -774,8 +910,8 @@ footer a:hover {
     display: none;
   }
 
-  .yt-grid {
-    gap: 8px;
+  .yt-card {
+    margin-right: 8px;
   }
 
   .yt-short {
