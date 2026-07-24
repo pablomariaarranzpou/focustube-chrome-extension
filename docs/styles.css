@@ -298,8 +298,10 @@ footer a:hover {
 }
 
 .yt-window {
+  position: relative;
   width: 100%;
-  max-width: 660px;
+  max-width: 680px;
+  margin: 0 auto;
   background: #0f0f0f;
   border-radius: 12px;
   overflow: hidden;
@@ -440,7 +442,18 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  overflow: hidden;
+  white-space: nowrap;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
+  transform-origin: left center;
+  animation: fadeSidebar 15s ease-in-out infinite;
+}
+
+/* Sidebar collapses when the cursor clicks the hamburger menu. */
+@keyframes fadeSidebar {
+  0%, 39% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
+  46%, 90% { width: 0; opacity: 0; padding-left: 0; padding-right: 0; border-right-color: transparent; }
+  96%, 100% { width: 84px; opacity: 1; padding-left: 8px; padding-right: 8px; }
 }
 
 .yt-nav-item {
@@ -545,9 +558,9 @@ footer a:hover {
 
 .yt-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  overflow: hidden;
+  align-items: start;
 }
 
 .yt-card {
@@ -556,10 +569,11 @@ footer a:hover {
 
 .yt-thumb {
   position: relative;
-  height: 70px;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   background: linear-gradient(135deg, #3a3f47, #23262b);
   margin-bottom: 8px;
+  overflow: hidden;
 }
 
 .yt-thumb-alt {
@@ -575,6 +589,30 @@ footer a:hover {
   font-size: 0.55rem;
   padding: 1px 4px;
   border-radius: 3px;
+}
+
+/* Quick "add to blocklist" button that pops up over the target thumbnail */
+.yt-block-btn {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: calc(100% - 12px);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--coral);
+  color: #fff;
+  font-size: 0.56rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: scale(0.8);
+  animation: blockBtn 15s ease-in-out infinite;
 }
 
 .yt-card-meta {
@@ -608,19 +646,93 @@ footer a:hover {
 .yt-line-1 { width: 90%; }
 .yt-line-2 { width: 55%; }
 
-.demo-fade {
-  animation: demoFade 8s ease-in-out infinite;
-  transform-origin: top center;
+/* Fake mouse cursor that drives every action in the demo. */
+.yt-cursor {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  pointer-events: none;
+  transform-origin: top left;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  animation: cursorMove 15s ease-in-out infinite;
+  z-index: 5;
 }
 
-@keyframes demoFade {
-  0%, 33% { opacity: 1; max-height: 240px; transform: scale(1); }
-  41%, 92% { opacity: 0; max-height: 0; transform: scale(0.94); }
-  100% { opacity: 1; max-height: 240px; transform: scale(1); }
+/* ---- Coordinated 15s demo timeline (all animations share the duration) ----
+   The cursor is the actor: it clicks the "Add to blocklist" button on a video
+   (that video is removed), then clicks the hamburger menu (the sidebar
+   collapses). Focus Mode then clears the Shorts shelf and the remaining
+   recommendations. Everything resets and the loop repeats. */
+
+/* Cursor path: absolute left/top move it between targets; the scale dips are
+   the "clicks". Values are tuned against the mock's default layout. */
+@keyframes cursorMove {
+  0%   { opacity: 0; left: 42%; top: 96%; transform: scale(1); }
+  4%   { opacity: 1; left: 42%; top: 96%; transform: scale(1); }
+  15%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }   /* blocklist button */
+  18%  { opacity: 1; left: 16%; top: 66%; transform: scale(0.8); } /* click */
+  21%  { opacity: 1; left: 16%; top: 66%; transform: scale(1); }
+  33%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }   /* hamburger menu */
+  36%  { opacity: 1; left: 4%;  top: 19%; transform: scale(0.8); } /* click */
+  39%  { opacity: 1; left: 4%;  top: 19%; transform: scale(1); }
+  48%  { opacity: 1; left: 34%; top: 98%; transform: scale(1); }   /* glide out */
+  54%, 100% { opacity: 0; left: 42%; top: 96%; transform: scale(1); }
+}
+
+/* Blocklist button: reveal as the cursor approaches, pulse on click, then go. */
+@keyframes blockBtn {
+  0%, 6% { opacity: 0; transform: scale(0.8); }
+  12%, 17% { opacity: 1; transform: scale(1); }
+  19% { opacity: 1; transform: scale(0.86); }
+  21%, 100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* Target (blocklisted) card collapses right after the click. */
+.yt-anim-block {
+  transform-origin: top center;
+  animation: blockCard 15s ease-in-out infinite;
+}
+
+@keyframes blockCard {
+  0%, 21% { opacity: 1; max-width: 100%; transform: scale(1); }
+  28%, 90% { opacity: 0; max-width: 0; transform: scale(0.85); }
+  96%, 100% { opacity: 1; max-width: 100%; transform: scale(1); }
+}
+
+/* Shorts shelf clears after the hamburger click. */
+.yt-anim-shorts {
+  transform-origin: top center;
+  animation: fadeShorts 15s ease-in-out infinite;
+}
+
+@keyframes fadeShorts {
+  0%, 48% { opacity: 1; max-height: 140px; margin-bottom: 16px; transform: scale(1); }
+  56%, 90% { opacity: 0; max-height: 0; margin-bottom: 0; transform: scale(0.94); }
+  96%, 100% { opacity: 1; max-height: 140px; margin-bottom: 16px; transform: scale(1); }
+}
+
+/* Remaining recommendations (suggestions) collapse last. */
+.yt-anim-recs {
+  transform-origin: top center;
+  animation: fadeRecs 15s ease-in-out infinite;
+}
+
+@keyframes fadeRecs {
+  0%, 56% { opacity: 1; transform: scale(1); }
+  64%, 90% { opacity: 0; transform: scale(0.9); }
+  97%, 100% { opacity: 1; transform: scale(1); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .demo-fade { animation: none; }
+  .yt-cursor,
+  .yt-block-btn,
+  .yt-anim-block,
+  .yt-anim-shorts,
+  .yt-anim-recs,
+  .yt-nav { animation: none; }
+  .yt-block-btn { opacity: 1; transform: scale(1); }
+  .yt-cursor { opacity: 0; }
 }
 
 .mode-row {
