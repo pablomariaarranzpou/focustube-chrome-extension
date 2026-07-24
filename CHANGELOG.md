@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.5.0] - 2026-07-24
+
+### Added
+- **Focus Mode** — a new popup tab with a single active mode that decides *when* FocusTube acts, while Settings keeps deciding *what* gets hidden:
+  - **Off** — paused; everything shows on YouTube regardless of Settings.
+  - **Always** — Settings apply all the time.
+  - **Timer** — Settings apply only during a session's focus phase; breaks let distractions back in on purpose, with a notification at each transition.
+  - **Schedule** — Settings apply only inside recurring day/time blocks you configure.
+  - New installs default to Always mode (distraction-free by default).
+  - Editing a Setting while the gate is closed saves silently and takes effect the moment it reopens - no preference is ever lost.
+  - Fully localised in all 46 supported languages.
+
+### Fixed
+- Settings edited while Focus Mode is active/inactive no longer get silently overridden by the previous force-override mechanism (replaced with a non-destructive suppress/release gate).
+
+---
+
 ## [2.4.8] - 2026-04-16
 
 ### Added
