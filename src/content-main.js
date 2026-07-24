@@ -24,6 +24,7 @@
 // <script src="src/core/Feature.js"></script>
 // <script src="src/core/DOMFeature.js"></script>
 // <script src="src/core/FilterFeature.js"></script>
+// <script src="src/core/FocusModeStateComputer.js"></script>
 // <script src="src/core/FeatureManager.js"></script>
 // Feature implementations
 // <script src="src/features/HideShortsFeature.js"></script>
@@ -34,6 +35,8 @@
 // <script src="src/features/HideHomePageContentFeature.js"></script>
 // <script src="src/features/HideBlacklistedChannelsFeature.js"></script>
 // <script src="src/features/HideBlacklistedWordsFeature.js"></script>
+// <script src="src/features/QuickBlacklistButtonFeature.js"></script>
+// <script src="src/features/FocusModeFeature.js"></script>
 
 console.log('FocusTube content script loaded - Version 2.4.8');
 
@@ -60,7 +63,10 @@ function initializeFocusTube() {
       new HideHomePageContentFeature(),
       new HideBlacklistedChannelsFeature(),
       new HideBlacklistedWordsFeature(),
-      new QuickBlacklistButtonFeature()
+      new QuickBlacklistButtonFeature(),
+      // FocusModeFeature must be registered LAST: it force-activates the features
+      // above during its own onInit(), which requires them to already be initialized.
+      new FocusModeFeature(featureManager)
     ]);
 
     // Set up message handling for popup communication

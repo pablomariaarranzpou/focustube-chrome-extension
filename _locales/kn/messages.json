@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "ತೆಗೆದುಹಾಕಿ"
+  },
+  "tabSettings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "tabFocusMode": {
+    "message": "ಮೋಡ್"
+  },
+  "focusModeOff": {
+    "message": "ಆಫ್"
+  },
+  "focusModeAlways": {
+    "message": "ಯಾವಾಗಲೂ"
+  },
+  "focusModeTimerMode": {
+    "message": "ಟೈಮರ್"
+  },
+  "focusModeScheduleMode": {
+    "message": "ವೇಳಾಪಟ್ಟಿ"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube ವಿರಾಮದಲ್ಲಿದೆ: ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಏನೇ ಇರಲಿ, YouTube ನಲ್ಲಿ ಎಲ್ಲವೂ ಕಾಣಿಸುತ್ತದೆ."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಯಾವಾಗಲೂ ಅನ್ವಯಿಸುತ್ತವೆ."
+  },
+  "focusDurationLabel": {
+    "message": "ಏಕಾಗ್ರತೆ (ನಿಮಿಷಗಳು)"
+  },
+  "breakDurationLabel": {
+    "message": "ವಿರಾಮ (ನಿಮಿಷಗಳು)"
+  },
+  "startFocusSession": {
+    "message": "ಏಕಾಗ್ರತೆ ಸೆಶನ್ ಪ್ರಾರಂಭಿಸಿ"
+  },
+  "stopFocusSession": {
+    "message": "ನಿಲ್ಲಿಸಿ"
+  },
+  "focusPhaseLabel": {
+    "message": "ಏಕಾಗ್ರತೆಯಲ್ಲಿ"
+  },
+  "breakPhaseLabel": {
+    "message": "ವಿರಾಮದಲ್ಲಿ"
+  },
+  "dayMon": {
+    "message": "ಸೋಮ"
+  },
+  "dayTue": {
+    "message": "ಮಂಗಳ"
+  },
+  "dayWed": {
+    "message": "ಬುಧ"
+  },
+  "dayThu": {
+    "message": "ಗುರು"
+  },
+  "dayFri": {
+    "message": "ಶುಕ್ರ"
+  },
+  "daySat": {
+    "message": "ಶನಿ"
+  },
+  "daySun": {
+    "message": "ಭಾನು"
+  },
+  "scheduleRemoveButton": {
+    "message": "ತೆಗೆದುಹಾಕಿ"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "ಇನ್ನೂ ಪುನರಾವರ್ತಿತ ಬ್ಲಾಕ್‌ಗಳಿಲ್ಲ"
+  },
+  "focusEndNotificationTitle": {
+    "message": "ಏಕಾಗ್ರತೆ ಸೆಶನ್ ಮುಗಿದಿದೆ"
+  },
+  "focusEndNotificationBody": {
+    "message": "ನಿಮ್ಮ ಏಕಾಗ್ರತೆ ಸೆಶನ್ ಮುಗಿದಿದೆ."
+  },
+  "breakEndNotificationTitle": {
+    "message": "ವಿರಾಮ ಮುಗಿದಿದೆ"
+  },
+  "breakEndNotificationBody": {
+    "message": "ಮತ್ತೆ ಏಕಾಗ್ರತೆ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ? FocusTube ಪಾಪ್‌ಅಪ್‌ನಿಂದ ಹೊಸ ಸೆಶನ್ ಪ್ರಾರಂಭಿಸಿ."
   }
 }

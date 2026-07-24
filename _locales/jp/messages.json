@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "削除"
+  },
+  "tabSettings": {
+    "message": "設定"
+  },
+  "tabFocusMode": {
+    "message": "モード"
+  },
+  "focusModeOff": {
+    "message": "オフ"
+  },
+  "focusModeAlways": {
+    "message": "常時"
+  },
+  "focusModeTimerMode": {
+    "message": "タイマー"
+  },
+  "focusModeScheduleMode": {
+    "message": "スケジュール"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTubeは一時停止中です。設定にかかわらず、YouTubeのすべてが表示されます。"
+  },
+  "focusModeAlwaysDescription": {
+    "message": "設定が常に適用されます。"
+  },
+  "focusDurationLabel": {
+    "message": "集中時間（分）"
+  },
+  "breakDurationLabel": {
+    "message": "休憩時間（分）"
+  },
+  "startFocusSession": {
+    "message": "集中セッションを開始"
+  },
+  "stopFocusSession": {
+    "message": "停止"
+  },
+  "focusPhaseLabel": {
+    "message": "集中中"
+  },
+  "breakPhaseLabel": {
+    "message": "休憩中"
+  },
+  "dayMon": {
+    "message": "月"
+  },
+  "dayTue": {
+    "message": "火"
+  },
+  "dayWed": {
+    "message": "水"
+  },
+  "dayThu": {
+    "message": "木"
+  },
+  "dayFri": {
+    "message": "金"
+  },
+  "daySat": {
+    "message": "土"
+  },
+  "daySun": {
+    "message": "日"
+  },
+  "scheduleRemoveButton": {
+    "message": "削除"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "繰り返しの時間帯はまだありません"
+  },
+  "focusEndNotificationTitle": {
+    "message": "集中セッションが終了しました"
+  },
+  "focusEndNotificationBody": {
+    "message": "集中セッションが終了しました。"
+  },
+  "breakEndNotificationTitle": {
+    "message": "休憩終了"
+  },
+  "breakEndNotificationBody": {
+    "message": "また集中する準備はできましたか？FocusTubeのポップアップから新しいセッションを開始してください。"
   }
 }

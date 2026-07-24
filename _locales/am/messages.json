@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Премахване"
+  },
+  "tabSettings": {
+    "message": "ቅንብሮች"
+  },
+  "tabFocusMode": {
+    "message": "ሁነታ"
+  },
+  "focusModeOff": {
+    "message": "ጠፍቷል"
+  },
+  "focusModeAlways": {
+    "message": "ሁልጊዜ"
+  },
+  "focusModeTimerMode": {
+    "message": "ሰዓት ቆጣሪ"
+  },
+  "focusModeScheduleMode": {
+    "message": "መርሃግብር"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube ባለበት ቆሟል፦ ቅንብሮች ምንም ይሁኑ፣ በYouTube ላይ ሁሉም ነገር ይታያል።"
+  },
+  "focusModeAlwaysDescription": {
+    "message": "ቅንብሮችዎ ሁልጊዜ ተግባራዊ ይሆናሉ።"
+  },
+  "focusDurationLabel": {
+    "message": "ትኩረት (ደቂቃዎች)"
+  },
+  "breakDurationLabel": {
+    "message": "እረፍት (ደቂቃዎች)"
+  },
+  "startFocusSession": {
+    "message": "የትኩረት ክፍለ ጊዜ ጀምር"
+  },
+  "stopFocusSession": {
+    "message": "አቁም"
+  },
+  "focusPhaseLabel": {
+    "message": "በትኩረት ላይ"
+  },
+  "breakPhaseLabel": {
+    "message": "በእረፍት ላይ"
+  },
+  "dayMon": {
+    "message": "ሰኞ"
+  },
+  "dayTue": {
+    "message": "ማክ"
+  },
+  "dayWed": {
+    "message": "ረቡ"
+  },
+  "dayThu": {
+    "message": "ሐሙ"
+  },
+  "dayFri": {
+    "message": "አርብ"
+  },
+  "daySat": {
+    "message": "ቅዳ"
+  },
+  "daySun": {
+    "message": "እሑ"
+  },
+  "scheduleRemoveButton": {
+    "message": "አስወግድ"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "እስካሁን ተደጋጋሚ ጊዜያት የሉም"
+  },
+  "focusEndNotificationTitle": {
+    "message": "የትኩረት ክፍለ ጊዜ አብቅቷል"
+  },
+  "focusEndNotificationBody": {
+    "message": "የትኩረት ክፍለ ጊዜዎ አብቅቷል።"
+  },
+  "breakEndNotificationTitle": {
+    "message": "እረፍቱ አልቋል"
+  },
+  "breakEndNotificationBody": {
+    "message": "እንደገና ለማተኮር ተዘጋጅተዋል? ከFocusTube ብቅ ባይ አዲስ ክፍለ ጊዜ ይጀምሩ።"
   }
 }

@@ -1,4 +1,9 @@
 /**
+ * Day-of-week message keys, indexed by JS Date.getDay() (0=Sun..6=Sat).
+ */
+const FOCUS_DAY_KEYS = ['daySun', 'dayMon', 'dayTue', 'dayWed', 'dayThu', 'dayFri', 'daySat'];
+
+/**
  * UI Controller for popup interface.
  * Manages the interaction between UI elements and feature states.
  * Uses MVC pattern for clean separation of concerns.
@@ -9,6 +14,12 @@ class PopupController {
     this.storage = storageAdapter;
     this.featureStates = {};
     this.initialized = false;
+
+    // Focus Mode state
+    this.recurringSchedule = [];
+    this.selectedDays = new Set();
+    this.countdownInterval = null;
+    this.focusSession = null; // current session snapshot from the background, or null
   }
 
   /**
@@ -22,6 +33,9 @@ class PopupController {
     // Set up UI localization
     this.localizeUI();
 
+    // Tabs: Settings / Focus Mode
+    this.setupTabs();
+
     // Load feature states
     await this.loadStates();
 
@@ -30,6 +44,9 @@ class PopupController {
 
     // Set up storage change monitoring
     this.setupStorageMonitoring();
+
+    // Focus Mode: duration/schedule UI + live session state
+    await this.initFocusMode();
 
     // Track popup opens and show rate-us prompt
     await this.initRateUsCounter();
@@ -64,6 +81,20 @@ class PopupController {
 
     // Set document title
     document.title = chrome.i18n.getMessage('extensionName') || 'FocusTube';
+  }
+
+  /**
+   * Wire up the Settings / Focus Mode tab switcher
+   */
+  setupTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        document.querySelectorAll('.tab-button').forEach(b => b.classList.toggle('active', b === btn));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.id === target));
+      });
+    });
   }
 
   /**
@@ -545,6 +576,287 @@ class PopupController {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Focus Mode – session timer + recurring schedule
+  // ---------------------------------------------------------------------------
+
+  async initFocusMode() {
+    try {
+      const configResult = await this.storage.get(['focustube_focus_config']);
+      const config = configResult.focustube_focus_config || { focusDurationMin: 25, breakDurationMin: 5 };
+
+      const focusInput = document.getElementById('focusDurationInput');
+      const breakInput = document.getElementById('breakDurationInput');
+      if (focusInput) focusInput.value = config.focusDurationMin;
+      if (breakInput) breakInput.value = config.breakDurationMin;
+
+      const scheduleResult = await this.storage.get(['focustube_recurring_schedule']);
+      this.recurringSchedule = scheduleResult.focustube_recurring_schedule || [];
+      this.updateScheduleUI();
+
+      this.setupFocusModeEventListeners();
+
+      // Ask the background service worker for the live state - never
+      // sendToActiveTab, since Focus Mode must work with no YouTube tab open.
+      // Use the recomputed `computed` snapshot (timestamp-validated) rather than
+      // the raw stored session, which may be momentarily stale right at expiry.
+      const state = await this.sendToBackground({ type: 'getFocusModeState' });
+      if (state && state.success) {
+        this.handleFocusModeStateChanged(state.computed || { mode: 'off', forced: false });
+      }
+
+      // Live-update if a phase transition fires while the popup happens to be open
+      this.messageBus.subscribe('focusModeStateChanged', ({ message }) => {
+        this.handleFocusModeStateChanged(message);
+      });
+    } catch (error) {
+      console.error('FocusTube: Error initializing Focus Mode UI:', error);
+    }
+  }
+
+  setupFocusModeEventListeners() {
+    // Mode selector: exactly one of off/always/timer/schedule is active at a
+    // time. Clicking a button switches the background's single source of
+    // truth - never something the popup can leave in an ambiguous state.
+    document.querySelectorAll('#modeSelector .mode-button').forEach(button => {
+      button.addEventListener('click', () => this.setFocusMode(button.dataset.mode));
+    });
+
+    const startButton = document.getElementById('startFocusSessionButton');
+    if (startButton) startButton.addEventListener('click', () => this.startFocusSession());
+
+    const stopButton = document.getElementById('stopFocusSessionButton');
+    if (stopButton) stopButton.addEventListener('click', () => this.stopFocusSession());
+
+    document.querySelectorAll('#dayChips .day-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const day = Number(chip.dataset.day);
+        if (this.selectedDays.has(day)) {
+          this.selectedDays.delete(day);
+          chip.classList.remove('selected');
+        } else {
+          this.selectedDays.add(day);
+          chip.classList.add('selected');
+        }
+      });
+    });
+
+    const addScheduleButton = document.getElementById('addScheduleButton');
+    if (addScheduleButton) addScheduleButton.addEventListener('click', () => this.addScheduleBlock());
+  }
+
+  async setFocusMode(mode) {
+    const response = await this.sendToBackground({ type: 'setFocusMode', mode });
+    if (response && response.success) {
+      this.updateModeSelectorUI(mode);
+    }
+  }
+
+  /**
+   * Shows the selected mode's button as active and its content panel,
+   * hiding the other three - only one mode's controls are ever visible.
+   */
+  updateModeSelectorUI(mode) {
+    document.querySelectorAll('#modeSelector .mode-button').forEach(button => {
+      button.classList.toggle('active', button.dataset.mode === mode);
+    });
+    ['off', 'always', 'timer', 'schedule'].forEach(m => {
+      const panel = document.getElementById(`modeContent${m.charAt(0).toUpperCase()}${m.slice(1)}`);
+      if (panel) panel.classList.toggle('active', m === mode);
+    });
+  }
+
+  /**
+   * Send a message directly to the background service worker. Unlike
+   * sendToActiveTab(), this does not require any YouTube tab to be open.
+   */
+  async sendToBackground(message) {
+    return new Promise((resolve) => {
+      chrome.runtime.sendMessage(message, (response) => {
+        if (chrome.runtime.lastError) {
+          console.warn('FocusTube: Background message error:', chrome.runtime.lastError);
+          resolve({ success: false });
+        } else {
+          resolve(response);
+        }
+      });
+    });
+  }
+
+  async startFocusSession() {
+    const focusInput = document.getElementById('focusDurationInput');
+    const breakInput = document.getElementById('breakDurationInput');
+
+    const focusDurationMin = Math.max(1, Number(focusInput?.value) || 25);
+    const breakDurationMin = Math.max(0, Number(breakInput?.value) || 0);
+
+    const response = await this.sendToBackground({
+      type: 'startFocusSession',
+      focusDurationMin,
+      breakDurationMin
+    });
+
+    if (response && response.success) {
+      this.focusSession = response.session;
+      this.renderFocusSessionUI();
+      this.updateModeSelectorUI('timer'); // starting a session IS choosing Timer mode
+    }
+  }
+
+  async stopFocusSession() {
+    const response = await this.sendToBackground({ type: 'stopFocusSession' });
+    if (response && response.success) {
+      this.focusSession = null;
+      this.renderFocusSessionUI();
+    }
+  }
+
+  /**
+   * Handle a live 'focusModeStateChanged' broadcast from the background
+   * (e.g. a phase transition firing, or a mode switch from elsewhere while
+   * the popup happens to be open). Keeps the mode selector and the session
+   * countdown in sync with whichever single mode is currently active.
+   */
+  handleFocusModeStateChanged(snapshot) {
+    this.focusSession = snapshot.sessionEndsAt
+      ? { active: true, phase: snapshot.sessionPhase, endsAt: snapshot.sessionEndsAt }
+      : null;
+    this.renderFocusSessionUI();
+
+    if (snapshot.mode) {
+      this.updateModeSelectorUI(snapshot.mode);
+    }
+  }
+
+  /**
+   * Show idle vs. running controls and (re)start the client-side countdown tick.
+   * The countdown is always computed from the absolute endsAt timestamp, never
+   * from counting ticks, so it stays accurate regardless of popup open/close.
+   */
+  renderFocusSessionUI() {
+    const idleControls = document.getElementById('focusIdleControls');
+    const runningControls = document.getElementById('focusRunningControls');
+    const phaseLabel = document.getElementById('focusPhaseLabel');
+
+    if (this.countdownInterval) {
+      clearInterval(this.countdownInterval);
+      this.countdownInterval = null;
+    }
+
+    const running = !!(this.focusSession && this.focusSession.active);
+    if (idleControls) idleControls.style.display = running ? 'none' : 'block';
+    if (runningControls) runningControls.style.display = running ? 'block' : 'none';
+
+    if (!running) return;
+
+    if (phaseLabel) {
+      const key = this.focusSession.phase === 'break' ? 'breakPhaseLabel' : 'focusPhaseLabel';
+      phaseLabel.textContent = chrome.i18n.getMessage(key);
+    }
+
+    this.tickCountdown();
+    this.countdownInterval = setInterval(() => this.tickCountdown(), 1000);
+  }
+
+  tickCountdown() {
+    const countdownEl = document.getElementById('focusSessionCountdown');
+    if (!countdownEl || !this.focusSession) return;
+
+    const remainingMs = this.focusSession.endsAt - Date.now();
+    const remainingSec = Math.max(0, Math.round(remainingMs / 1000));
+    const minutes = Math.floor(remainingSec / 60);
+    const seconds = remainingSec % 60;
+    countdownEl.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  }
+
+  /**
+   * Add a recurring schedule block. Writes straight to chrome.storage.sync
+   * (same pattern as blacklist/blacklistWords) - the background service
+   * worker reacts to the storage change itself, no dedicated message needed.
+   */
+  async addScheduleBlock() {
+    const startInput = document.getElementById('scheduleStartInput');
+    const endInput = document.getElementById('scheduleEndInput');
+    if (!startInput || !endInput || this.selectedDays.size === 0) return;
+
+    const block = {
+      id: crypto.randomUUID(),
+      days: Array.from(this.selectedDays).sort(),
+      startMinutes: this.parseTimeToMinutes(startInput.value),
+      endMinutes: this.parseTimeToMinutes(endInput.value),
+      enabled: true
+    };
+
+    this.recurringSchedule.push(block);
+    await this.storage.set({ focustube_recurring_schedule: this.recurringSchedule });
+    this.updateScheduleUI();
+
+    // Reset selection for the next entry
+    this.selectedDays.clear();
+    document.querySelectorAll('#dayChips .day-chip.selected').forEach(chip => chip.classList.remove('selected'));
+  }
+
+  async removeScheduleBlock(id) {
+    this.recurringSchedule = this.recurringSchedule.filter(b => b.id !== id);
+    await this.storage.set({ focustube_recurring_schedule: this.recurringSchedule });
+    this.updateScheduleUI();
+  }
+
+  updateScheduleUI() {
+    const listElement = document.getElementById('scheduleList');
+    if (!listElement) return;
+
+    listElement.innerHTML = '';
+
+    if (this.recurringSchedule.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'text-sm text-gray-500';
+      empty.textContent = chrome.i18n.getMessage('noScheduleBlocksMessage');
+      listElement.appendChild(empty);
+      return;
+    }
+
+    this.recurringSchedule.forEach(block => {
+      listElement.appendChild(this.createScheduleItem(block));
+    });
+  }
+
+  createScheduleItem(block) {
+    const dayLabels = block.days
+      .slice()
+      .sort()
+      .map(d => chrome.i18n.getMessage(FOCUS_DAY_KEYS[d]))
+      .join(', ');
+    const timeRange = `${this.formatMinutesToTime(block.startMinutes)} - ${this.formatMinutesToTime(block.endMinutes)}`;
+
+    const div = document.createElement('div');
+    div.className = 'blacklist-item schedule-item';
+    div.innerHTML = `
+      <div>
+        <span class="schedule-days">${this.escapeHtml(dayLabels)}</span>
+        <span class="schedule-time">${this.escapeHtml(timeRange)}</span>
+      </div>
+      <button class="remove-button i18n" data-message="scheduleRemoveButton"></button>
+    `;
+
+    const removeButton = div.querySelector('.remove-button');
+    removeButton.textContent = chrome.i18n.getMessage('scheduleRemoveButton');
+    removeButton.addEventListener('click', () => this.removeScheduleBlock(block.id));
+
+    return div;
+  }
+
+  parseTimeToMinutes(value) {
+    const [h, m] = (value || '00:00').split(':').map(Number);
+    return (h || 0) * 60 + (m || 0);
+  }
+
+  formatMinutesToTime(totalMinutes) {
+    const h = Math.floor(totalMinutes / 60) % 24;
+    const m = totalMinutes % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
   }
 
   // ---------------------------------------------------------------------------

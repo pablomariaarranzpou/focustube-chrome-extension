@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "తొలగించు"
+  },
+  "tabSettings": {
+    "message": "సెట్టింగ్‌లు"
+  },
+  "tabFocusMode": {
+    "message": "మోడ్"
+  },
+  "focusModeOff": {
+    "message": "ఆఫ్"
+  },
+  "focusModeAlways": {
+    "message": "ఎల్లప్పుడూ"
+  },
+  "focusModeTimerMode": {
+    "message": "టైమర్"
+  },
+  "focusModeScheduleMode": {
+    "message": "షెడ్యూల్"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube పాజ్ చేయబడింది: సెట్టింగ్‌లు ఏమైనా, YouTubeలో అన్నీ కనిపిస్తాయి."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "మీ సెట్టింగ్‌లు ఎల్లప్పుడూ వర్తిస్తాయి."
+  },
+  "focusDurationLabel": {
+    "message": "ఏకాగ్రత (నిమిషాలు)"
+  },
+  "breakDurationLabel": {
+    "message": "విరామం (నిమిషాలు)"
+  },
+  "startFocusSession": {
+    "message": "ఏకాగ్రత సెషన్ ప్రారంభించండి"
+  },
+  "stopFocusSession": {
+    "message": "ఆపు"
+  },
+  "focusPhaseLabel": {
+    "message": "ఏకాగ్రతతో ఉన్నారు"
+  },
+  "breakPhaseLabel": {
+    "message": "విరామంలో"
+  },
+  "dayMon": {
+    "message": "సోమ"
+  },
+  "dayTue": {
+    "message": "మంగళ"
+  },
+  "dayWed": {
+    "message": "బుధ"
+  },
+  "dayThu": {
+    "message": "గురు"
+  },
+  "dayFri": {
+    "message": "శుక్ర"
+  },
+  "daySat": {
+    "message": "శని"
+  },
+  "daySun": {
+    "message": "ఆది"
+  },
+  "scheduleRemoveButton": {
+    "message": "తీసివేయి"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "ఇంకా పునరావృత బ్లాక్‌లు లేవు"
+  },
+  "focusEndNotificationTitle": {
+    "message": "ఏకాగ్రత సెషన్ ముగిసింది"
+  },
+  "focusEndNotificationBody": {
+    "message": "మీ ఏకాగ్రత సెషన్ ముగిసింది."
+  },
+  "breakEndNotificationTitle": {
+    "message": "విరామం ముగిసింది"
+  },
+  "breakEndNotificationBody": {
+    "message": "మళ్లీ దృష్టి పెట్టడానికి సిద్ధమేనా? FocusTube పాప్అప్ నుండి కొత్త సెషన్ ప్రారంభించండి."
   }
 }

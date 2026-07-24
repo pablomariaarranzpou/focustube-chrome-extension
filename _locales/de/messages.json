@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Entfernen"
+  },
+  "tabSettings": {
+    "message": "Einstellungen"
+  },
+  "tabFocusMode": {
+    "message": "Modus"
+  },
+  "focusModeOff": {
+    "message": "Aus"
+  },
+  "focusModeAlways": {
+    "message": "Immer"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Zeitplan"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube ist pausiert: Auf YouTube wird alles angezeigt, unabhängig von den Einstellungen."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Deine Einstellungen gelten die ganze Zeit."
+  },
+  "focusDurationLabel": {
+    "message": "Konzentration (Minuten)"
+  },
+  "breakDurationLabel": {
+    "message": "Pause (Minuten)"
+  },
+  "startFocusSession": {
+    "message": "Konzentrationssitzung starten"
+  },
+  "stopFocusSession": {
+    "message": "Stopp"
+  },
+  "focusPhaseLabel": {
+    "message": "Konzentriert"
+  },
+  "breakPhaseLabel": {
+    "message": "Pause"
+  },
+  "dayMon": {
+    "message": "Mo"
+  },
+  "dayTue": {
+    "message": "Di"
+  },
+  "dayWed": {
+    "message": "Mi"
+  },
+  "dayThu": {
+    "message": "Do"
+  },
+  "dayFri": {
+    "message": "Fr"
+  },
+  "daySat": {
+    "message": "Sa"
+  },
+  "daySun": {
+    "message": "So"
+  },
+  "scheduleRemoveButton": {
+    "message": "Entfernen"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Noch keine wiederkehrenden Blöcke"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Konzentrationssitzung beendet"
+  },
+  "focusEndNotificationBody": {
+    "message": "Deine Konzentrationssitzung ist beendet."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pause vorbei"
+  },
+  "breakEndNotificationBody": {
+    "message": "Bereit, dich wieder zu konzentrieren? Starte eine neue Sitzung im FocusTube-Popup."
   }
 }

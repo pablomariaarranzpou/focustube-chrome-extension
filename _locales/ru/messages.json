@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Удалить"
+  },
+  "tabSettings": {
+    "message": "Настройки"
+  },
+  "tabFocusMode": {
+    "message": "Режим"
+  },
+  "focusModeOff": {
+    "message": "Выкл"
+  },
+  "focusModeAlways": {
+    "message": "Всегда"
+  },
+  "focusModeTimerMode": {
+    "message": "Таймер"
+  },
+  "focusModeScheduleMode": {
+    "message": "Расписание"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube на паузе: на YouTube показывается всё, независимо от Настроек."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Ваши Настройки применяются постоянно."
+  },
+  "focusDurationLabel": {
+    "message": "Концентрация (минуты)"
+  },
+  "breakDurationLabel": {
+    "message": "Перерыв (минуты)"
+  },
+  "startFocusSession": {
+    "message": "Начать сессию концентрации"
+  },
+  "stopFocusSession": {
+    "message": "Остановить"
+  },
+  "focusPhaseLabel": {
+    "message": "Концентрация"
+  },
+  "breakPhaseLabel": {
+    "message": "Перерыв"
+  },
+  "dayMon": {
+    "message": "Пн"
+  },
+  "dayTue": {
+    "message": "Вт"
+  },
+  "dayWed": {
+    "message": "Ср"
+  },
+  "dayThu": {
+    "message": "Чт"
+  },
+  "dayFri": {
+    "message": "Пт"
+  },
+  "daySat": {
+    "message": "Сб"
+  },
+  "daySun": {
+    "message": "Вс"
+  },
+  "scheduleRemoveButton": {
+    "message": "Удалить"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Повторяющихся блоков пока нет"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Сессия концентрации завершена"
+  },
+  "focusEndNotificationBody": {
+    "message": "Ваша сессия концентрации завершена."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Перерыв закончился"
+  },
+  "breakEndNotificationBody": {
+    "message": "Готовы снова сосредоточиться? Начните новую сессию во всплывающем окне FocusTube."
   }
 }

@@ -55,5 +55,86 @@
   },
   "wordPlaceholder": {
     "message": "Ex : Jeux"
+  },
+  "tabSettings": {
+    "message": "Réglages"
+  },
+  "tabFocusMode": {
+    "message": "Mode"
+  },
+  "focusModeOff": {
+    "message": "Désactivé"
+  },
+  "focusModeAlways": {
+    "message": "Toujours"
+  },
+  "focusModeTimerMode": {
+    "message": "Minuteur"
+  },
+  "focusModeScheduleMode": {
+    "message": "Horaire"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube est en pause : tout s'affiche sur YouTube, quels que soient vos Réglages."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Vos Réglages s'appliquent en permanence."
+  },
+  "focusDurationLabel": {
+    "message": "Concentration (minutes)"
+  },
+  "breakDurationLabel": {
+    "message": "Pause (minutes)"
+  },
+  "startFocusSession": {
+    "message": "Démarrer une session"
+  },
+  "stopFocusSession": {
+    "message": "Arrêter"
+  },
+  "focusPhaseLabel": {
+    "message": "Concentration"
+  },
+  "breakPhaseLabel": {
+    "message": "En pause"
+  },
+  "dayMon": {
+    "message": "Lun"
+  },
+  "dayTue": {
+    "message": "Mar"
+  },
+  "dayWed": {
+    "message": "Mer"
+  },
+  "dayThu": {
+    "message": "Jeu"
+  },
+  "dayFri": {
+    "message": "Ven"
+  },
+  "daySat": {
+    "message": "Sam"
+  },
+  "daySun": {
+    "message": "Dim"
+  },
+  "scheduleRemoveButton": {
+    "message": "Supprimer"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Aucun créneau récurrent pour l'instant"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Session de concentration terminée"
+  },
+  "focusEndNotificationBody": {
+    "message": "Votre session de concentration est terminée."
+  },
+  "breakEndNotificationTitle": {
+    "message": "La pause est terminée"
+  },
+  "breakEndNotificationBody": {
+    "message": "Prêt à vous concentrer ? Démarrez une nouvelle session depuis le popup FocusTube."
   }
 }

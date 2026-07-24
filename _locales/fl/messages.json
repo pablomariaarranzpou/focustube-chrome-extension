@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Poista"
+  },
+  "tabSettings": {
+    "message": "Asetukset"
+  },
+  "tabFocusMode": {
+    "message": "Tila"
+  },
+  "focusModeOff": {
+    "message": "Pois"
+  },
+  "focusModeAlways": {
+    "message": "Aina"
+  },
+  "focusModeTimerMode": {
+    "message": "Ajastin"
+  },
+  "focusModeScheduleMode": {
+    "message": "Aikataulu"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube on tauolla: YouTubessa näkyy kaikki riippumatta Asetuksista."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Asetuksesi ovat voimassa koko ajan."
+  },
+  "focusDurationLabel": {
+    "message": "Keskittyminen (minuuttia)"
+  },
+  "breakDurationLabel": {
+    "message": "Tauko (minuuttia)"
+  },
+  "startFocusSession": {
+    "message": "Aloita keskittymisjakso"
+  },
+  "stopFocusSession": {
+    "message": "Pysäytä"
+  },
+  "focusPhaseLabel": {
+    "message": "Keskittyminen"
+  },
+  "breakPhaseLabel": {
+    "message": "Tauolla"
+  },
+  "dayMon": {
+    "message": "Ma"
+  },
+  "dayTue": {
+    "message": "Ti"
+  },
+  "dayWed": {
+    "message": "Ke"
+  },
+  "dayThu": {
+    "message": "To"
+  },
+  "dayFri": {
+    "message": "Pe"
+  },
+  "daySat": {
+    "message": "La"
+  },
+  "daySun": {
+    "message": "Su"
+  },
+  "scheduleRemoveButton": {
+    "message": "Poista"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Ei vielä toistuvia jaksoja"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Keskittymisjakso päättyi"
+  },
+  "focusEndNotificationBody": {
+    "message": "Keskittymisjaksosi on päättynyt."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Tauko on ohi"
+  },
+  "breakEndNotificationBody": {
+    "message": "Valmis keskittymään uudelleen? Aloita uusi jakso FocusTuben ponnahdusikkunasta."
   }
 }

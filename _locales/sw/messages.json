@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Ondoa"
+  },
+  "tabSettings": {
+    "message": "Mipangilio"
+  },
+  "tabFocusMode": {
+    "message": "Hali"
+  },
+  "focusModeOff": {
+    "message": "Imezimwa"
+  },
+  "focusModeAlways": {
+    "message": "Kila wakati"
+  },
+  "focusModeTimerMode": {
+    "message": "Kipima muda"
+  },
+  "focusModeScheduleMode": {
+    "message": "Ratiba"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube imesimamishwa: kila kitu kinaonekana kwenye YouTube, bila kujali Mipangilio."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Mipangilio yako inatumika wakati wote."
+  },
+  "focusDurationLabel": {
+    "message": "Umakini (dakika)"
+  },
+  "breakDurationLabel": {
+    "message": "Mapumziko (dakika)"
+  },
+  "startFocusSession": {
+    "message": "Anzisha kipindi cha umakini"
+  },
+  "stopFocusSession": {
+    "message": "Simamisha"
+  },
+  "focusPhaseLabel": {
+    "message": "Unajielekeza"
+  },
+  "breakPhaseLabel": {
+    "message": "Kwenye mapumziko"
+  },
+  "dayMon": {
+    "message": "Jtt"
+  },
+  "dayTue": {
+    "message": "Jnn"
+  },
+  "dayWed": {
+    "message": "Jtn"
+  },
+  "dayThu": {
+    "message": "Alh"
+  },
+  "dayFri": {
+    "message": "Ijm"
+  },
+  "daySat": {
+    "message": "Jmo"
+  },
+  "daySun": {
+    "message": "Jpi"
+  },
+  "scheduleRemoveButton": {
+    "message": "Ondoa"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Bado hakuna vipindi vinavyojirudia"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Kipindi cha umakini kimekwisha"
+  },
+  "focusEndNotificationBody": {
+    "message": "Kipindi chako cha umakini kimekwisha."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Mapumziko yamekwisha"
+  },
+  "breakEndNotificationBody": {
+    "message": "Uko tayari kujielekeza tena? Anzisha kipindi kipya kutoka kwenye popup ya FocusTube."
   }
 }

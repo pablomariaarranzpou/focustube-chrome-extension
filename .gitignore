@@ -6,3 +6,10 @@ tailwind.min.css
 
 # Temp directories
 tmpclaude-*
+
+# Test harness (dev-only, not part of the shipped extension, not for upload)
+node_modules/
+test/
+package.json
+package-lock.json
+jest.config.js

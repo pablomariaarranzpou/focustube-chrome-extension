@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Elimină"
+  },
+  "tabSettings": {
+    "message": "Setări"
+  },
+  "tabFocusMode": {
+    "message": "Mod"
+  },
+  "focusModeOff": {
+    "message": "Oprit"
+  },
+  "focusModeAlways": {
+    "message": "Mereu"
+  },
+  "focusModeTimerMode": {
+    "message": "Cronometru"
+  },
+  "focusModeScheduleMode": {
+    "message": "Program"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube este în pauză: totul se afișează pe YouTube, indiferent de Setări."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Setările tale se aplică tot timpul."
+  },
+  "focusDurationLabel": {
+    "message": "Concentrare (minute)"
+  },
+  "breakDurationLabel": {
+    "message": "Pauză (minute)"
+  },
+  "startFocusSession": {
+    "message": "Începe sesiunea de concentrare"
+  },
+  "stopFocusSession": {
+    "message": "Oprește"
+  },
+  "focusPhaseLabel": {
+    "message": "Te concentrezi"
+  },
+  "breakPhaseLabel": {
+    "message": "În pauză"
+  },
+  "dayMon": {
+    "message": "Lun"
+  },
+  "dayTue": {
+    "message": "Mar"
+  },
+  "dayWed": {
+    "message": "Mie"
+  },
+  "dayThu": {
+    "message": "Joi"
+  },
+  "dayFri": {
+    "message": "Vin"
+  },
+  "daySat": {
+    "message": "Sâm"
+  },
+  "daySun": {
+    "message": "Dum"
+  },
+  "scheduleRemoveButton": {
+    "message": "Elimină"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Încă nu există intervale recurente"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sesiunea de concentrare s-a încheiat"
+  },
+  "focusEndNotificationBody": {
+    "message": "Sesiunea ta de concentrare s-a încheiat."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pauza s-a terminat"
+  },
+  "breakEndNotificationBody": {
+    "message": "Gata să te concentrezi din nou? Începe o sesiune nouă din popup-ul FocusTube."
   }
 }

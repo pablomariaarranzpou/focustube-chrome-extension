@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "દૂર કરો"
+  },
+  "tabSettings": {
+    "message": "સેટિંગ્સ"
+  },
+  "tabFocusMode": {
+    "message": "મોડ"
+  },
+  "focusModeOff": {
+    "message": "બંધ"
+  },
+  "focusModeAlways": {
+    "message": "હંમેશા"
+  },
+  "focusModeTimerMode": {
+    "message": "ટાઈમર"
+  },
+  "focusModeScheduleMode": {
+    "message": "શેડ્યૂલ"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube અટકેલું છે: સેટિંગ્સ ગમે તે હોય, YouTube પર બધું જ દેખાશે."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "તમારી સેટિંગ્સ હંમેશા લાગુ રહે છે."
+  },
+  "focusDurationLabel": {
+    "message": "ફોકસ (મિનિટ)"
+  },
+  "breakDurationLabel": {
+    "message": "વિરામ (મિનિટ)"
+  },
+  "startFocusSession": {
+    "message": "ફોકસ સેશન શરૂ કરો"
+  },
+  "stopFocusSession": {
+    "message": "અટકાવો"
+  },
+  "focusPhaseLabel": {
+    "message": "ફોકસ ચાલુ છે"
+  },
+  "breakPhaseLabel": {
+    "message": "વિરામમાં"
+  },
+  "dayMon": {
+    "message": "સોમ"
+  },
+  "dayTue": {
+    "message": "મંગળ"
+  },
+  "dayWed": {
+    "message": "બુધ"
+  },
+  "dayThu": {
+    "message": "ગુરુ"
+  },
+  "dayFri": {
+    "message": "શુક્ર"
+  },
+  "daySat": {
+    "message": "શનિ"
+  },
+  "daySun": {
+    "message": "રવિ"
+  },
+  "scheduleRemoveButton": {
+    "message": "દૂર કરો"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "હજુ સુધી કોઈ પુનરાવર્તિત બ્લોક નથી"
+  },
+  "focusEndNotificationTitle": {
+    "message": "ફોકસ સેશન સમાપ્ત થયું"
+  },
+  "focusEndNotificationBody": {
+    "message": "તમારું ફોકસ સેશન સમાપ્ત થયું છે."
+  },
+  "breakEndNotificationTitle": {
+    "message": "વિરામ પૂરો થયો"
+  },
+  "breakEndNotificationBody": {
+    "message": "ફરીથી ફોકસ કરવા તૈયાર છો? FocusTube પોપઅપમાંથી નવું સેશન શરૂ કરો."
   }
 }

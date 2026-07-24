@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Pašalinti"
+  },
+  "tabSettings": {
+    "message": "Nustatymai"
+  },
+  "tabFocusMode": {
+    "message": "Režimas"
+  },
+  "focusModeOff": {
+    "message": "Išjungta"
+  },
+  "focusModeAlways": {
+    "message": "Visada"
+  },
+  "focusModeTimerMode": {
+    "message": "Laikmatis"
+  },
+  "focusModeScheduleMode": {
+    "message": "Tvarkaraštis"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube pristabdytas: „YouTube“ rodoma viskas, nepriklausomai nuo Nustatymų."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Jūsų Nustatymai galioja visą laiką."
+  },
+  "focusDurationLabel": {
+    "message": "Susikaupimas (minutės)"
+  },
+  "breakDurationLabel": {
+    "message": "Pertrauka (minutės)"
+  },
+  "startFocusSession": {
+    "message": "Pradėti susikaupimo seansą"
+  },
+  "stopFocusSession": {
+    "message": "Sustabdyti"
+  },
+  "focusPhaseLabel": {
+    "message": "Susikaupiama"
+  },
+  "breakPhaseLabel": {
+    "message": "Pertrauka"
+  },
+  "dayMon": {
+    "message": "Pr"
+  },
+  "dayTue": {
+    "message": "An"
+  },
+  "dayWed": {
+    "message": "Tr"
+  },
+  "dayThu": {
+    "message": "Kt"
+  },
+  "dayFri": {
+    "message": "Pn"
+  },
+  "daySat": {
+    "message": "Št"
+  },
+  "daySun": {
+    "message": "Sk"
+  },
+  "scheduleRemoveButton": {
+    "message": "Pašalinti"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Kartotinių blokų dar nėra"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Susikaupimo seansas baigėsi"
+  },
+  "focusEndNotificationBody": {
+    "message": "Jūsų susikaupimo seansas baigėsi."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pertrauka baigėsi"
+  },
+  "breakEndNotificationBody": {
+    "message": "Pasiruošę vėl susikaupti? Pradėkite naują seansą iš FocusTube iškylančiojo lango."
   }
 }

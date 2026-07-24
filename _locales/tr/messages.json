@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Remover"
+  },
+  "tabSettings": {
+    "message": "Ayarlar"
+  },
+  "tabFocusMode": {
+    "message": "Mod"
+  },
+  "focusModeOff": {
+    "message": "Kapalı"
+  },
+  "focusModeAlways": {
+    "message": "Her Zaman"
+  },
+  "focusModeTimerMode": {
+    "message": "Zamanlayıcı"
+  },
+  "focusModeScheduleMode": {
+    "message": "Program"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube duraklatıldı: Ayarlar ne olursa olsun, YouTube'da her şey gösterilir."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Ayarların her zaman geçerlidir."
+  },
+  "focusDurationLabel": {
+    "message": "Odaklanma (dakika)"
+  },
+  "breakDurationLabel": {
+    "message": "Mola (dakika)"
+  },
+  "startFocusSession": {
+    "message": "Odaklanma oturumu başlat"
+  },
+  "stopFocusSession": {
+    "message": "Durdur"
+  },
+  "focusPhaseLabel": {
+    "message": "Odaklanılıyor"
+  },
+  "breakPhaseLabel": {
+    "message": "Molada"
+  },
+  "dayMon": {
+    "message": "Pzt"
+  },
+  "dayTue": {
+    "message": "Sal"
+  },
+  "dayWed": {
+    "message": "Çar"
+  },
+  "dayThu": {
+    "message": "Per"
+  },
+  "dayFri": {
+    "message": "Cum"
+  },
+  "daySat": {
+    "message": "Cmt"
+  },
+  "daySun": {
+    "message": "Paz"
+  },
+  "scheduleRemoveButton": {
+    "message": "Kaldır"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Henüz tekrarlayan blok yok"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Odaklanma oturumu sona erdi"
+  },
+  "focusEndNotificationBody": {
+    "message": "Odaklanma oturumunuz sona erdi."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Mola bitti"
+  },
+  "breakEndNotificationBody": {
+    "message": "Yeniden odaklanmaya hazır mısınız? FocusTube açılır penceresinden yeni bir oturum başlatın."
   }
 }

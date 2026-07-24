@@ -176,6 +176,18 @@
     }
     #rateLaterBtn:hover { background-color: #e5e7eb; }
 
+    /* ── Compact header ── */
+    #appHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    #appHeader img {
+      height: 34px;
+      width: auto;
+    }
+
     /* ── Permanent logo links row ── */
     #logoLinks {
       display: flex;
@@ -202,6 +214,102 @@
     #logoLinks a:hover {
       background-color: #ef4444;
     }
+
+    /* ── Tabs ── */
+    .tab-bar {
+      display: flex;
+      border-bottom: 2px solid #e5e7eb;
+      margin-bottom: 1rem;
+    }
+    .tab-button {
+      flex: 1;
+      padding: 8px 4px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #6b7280;
+      cursor: pointer;
+    }
+    .tab-button.active {
+      color: #f9737a;
+      border-bottom-color: #f9737a;
+    }
+    .tab-pane {
+      display: none;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+
+    /* ── Focus Mode: single mode selector (Off / Always / Timer / Schedule) ── */
+    .mode-selector {
+      display: flex;
+      gap: 4px;
+      background: #f3f4f6;
+      border-radius: 10px;
+      padding: 4px;
+      margin-bottom: 1rem;
+    }
+    .mode-button {
+      flex: 1;
+      padding: 7px 4px;
+      border: none;
+      border-radius: 8px;
+      background: transparent;
+      color: #6b7280;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .mode-button.active {
+      background: #fff;
+      color: #f9737a;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+    .mode-content {
+      display: none;
+    }
+    .mode-content.active {
+      display: block;
+    }
+
+    .day-chip-row {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .day-chip {
+      padding: 4px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .day-chip.selected {
+      background-color: #f9737a;
+      border-color: #f9737a;
+      color: #fff;
+    }
+    #focusSessionCountdown {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1f2937;
+      font-variant-numeric: tabular-nums;
+    }
+    .schedule-item .schedule-days,
+    .schedule-item .schedule-time {
+      display: block;
+      font-size: 0.85rem;
+    }
+    .schedule-item .schedule-time {
+      color: #6b7280;
+    }
   </style>
 </head>
 <body class="bg-gray-400">
@@ -221,173 +329,262 @@
 
   <div class="flex justify-center items-center">
     <div class="p-8 bg-white shadow-md rounded-md extension-container">
-      <img src="logo.png" alt="Logo" style="width: 100%; align-items: center;" />
+      <div id="appHeader">
+        <img src="logo.png" alt="Logo" />
+      </div>
       <div id="logoLinks">
         <a id="rateUsPillLink" href="https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank">&#9733; Rate FocusTube</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank">&#128025; GitHub</a>
       </div>
-      <div class="space-y-4">
-        <!-- Existing toggles with localization -->
-        <label class="toggle-container">
-          <input type="checkbox" id="hideShortsCheckbox" class="toggle-input" checked />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideShorts"></span>
-        </label>
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideSuggestionsCheckbox"
-            class="toggle-input"
-            checked
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSuggestions"></span>
-        </label>
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideCommentsCheckbox"
-            class="toggle-input"
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideComments"></span>
-        </label>
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideBlacklistedCheckbox"
-            class="toggle-input"
-            checked
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedChannels"></span>
-        </label>
-        <!-- Sub-option: quick blacklist button in feed -->
-        <div id="blacklistSubOptions" style="padding-top: 4px; padding-bottom: 4px;">
-          <label class="toggle-container" style="padding: 4px 0;">
+
+      <!-- Tabs: Focus Mode is primary/first - it's the whole point of the extension -->
+      <div class="tab-bar">
+        <button type="button" class="tab-button active" data-tab="focusModeTabPane">
+          <span class="i18n" data-message="tabFocusMode"></span>
+        </button>
+        <button type="button" class="tab-button" data-tab="settingsTabPane">
+          <span class="i18n" data-message="tabSettings"></span>
+        </button>
+      </div>
+
+      <!-- Settings tab: WHAT gets hidden. The Mode tab decides WHEN these apply -
+           while the mode gate is closed (Off / idle Timer / outside Schedule),
+           everything shows regardless of what's toggled here. -->
+      <div id="settingsTabPane" class="tab-pane">
+        <div class="space-y-4">
+          <label class="toggle-container">
+            <input type="checkbox" id="hideShortsCheckbox" class="toggle-input" checked />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideShorts"></span>
+          </label>
+          <label class="toggle-container">
             <input
               type="checkbox"
-              id="quickBlacklistButtonCheckbox"
+              id="hideSuggestionsCheckbox"
               class="toggle-input"
               checked
             />
             <div class="toggle-slider"></div>
-            <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="quickBlacklistButton"></span>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSuggestions"></span>
           </label>
-        </div>
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideBlacklistedWordsCheckbox"
-            class="toggle-input"
-            checked
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedWords"></span>
-        </label>
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideHomePageContentCheckbox"
-            class="toggle-input"
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideHomePageContent"></span>
-        </label>
-        <!-- New toggle -->
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideAutoplayOverlayCheckbox"
-            class="toggle-input"
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="disableAutoplay"></span>
-        </label>
-        <!-- New toggle: hide YouTube sidebar / guide -->
-        <label class="toggle-container">
-          <input
-            type="checkbox"
-            id="hideSidebarCheckbox"
-            class="toggle-input"
-          />
-          <div class="toggle-slider"></div>
-          <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSidebar"></span>
-        </label>
-        <!-- Sub-option: keep history visible when sidebar is hidden -->
-        <div id="sidebarSubOptions" style="display:none; padding-left: 3rem; padding-top: 4px; padding-bottom: 4px;">
-          <label class="toggle-container" style="padding: 4px 0;">
+          <label class="toggle-container">
             <input
               type="checkbox"
-              id="keepHistoryVisibleCheckbox"
+              id="hideCommentsCheckbox"
               class="toggle-input"
             />
             <div class="toggle-slider"></div>
-            <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="keepHistoryVisible"></span>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideComments"></span>
+          </label>
+          <label class="toggle-container">
+            <input
+              type="checkbox"
+              id="hideHomePageContentCheckbox"
+              class="toggle-input"
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideHomePageContent"></span>
+          </label>
+          <label class="toggle-container">
+            <input
+              type="checkbox"
+              id="hideAutoplayOverlayCheckbox"
+              class="toggle-input"
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="disableAutoplay"></span>
+          </label>
+          <label class="toggle-container">
+            <input
+              type="checkbox"
+              id="hideSidebarCheckbox"
+              class="toggle-input"
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideSidebar"></span>
+          </label>
+          <!-- Sub-option: keep history visible when sidebar is hidden -->
+          <div id="sidebarSubOptions" style="display:none; padding-left: 3rem; padding-top: 4px; padding-bottom: 4px;">
+            <label class="toggle-container" style="padding: 4px 0;">
+              <input
+                type="checkbox"
+                id="keepHistoryVisibleCheckbox"
+                class="toggle-input"
+              />
+              <div class="toggle-slider"></div>
+              <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="keepHistoryVisible"></span>
+            </label>
+          </div>
+          <label class="toggle-container">
+            <input
+              type="checkbox"
+              id="hideBlacklistedCheckbox"
+              class="toggle-input"
+              checked
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedChannels"></span>
+          </label>
+          <!-- Sub-option: quick blacklist button in feed -->
+          <div id="blacklistSubOptions" style="padding-top: 4px; padding-bottom: 4px;">
+            <label class="toggle-container" style="padding: 4px 0;">
+              <input
+                type="checkbox"
+                id="quickBlacklistButtonCheckbox"
+                class="toggle-input"
+                checked
+              />
+              <div class="toggle-slider"></div>
+              <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="quickBlacklistButton"></span>
+            </label>
+          </div>
+          <label class="toggle-container">
+            <input
+              type="checkbox"
+              id="hideBlacklistedWordsCheckbox"
+              class="toggle-input"
+              checked
+            />
+            <div class="toggle-slider"></div>
+            <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="hideBlacklistedWords"></span>
           </label>
         </div>
-      </div>
-      <hr class="my-4 border-t border-gray-300" />
-      <!-- Existing blacklist sections -->
-      <label class="toggle-container toggle-blacklist">
-        <button
-          id="toggleBlacklistButton"
-          class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
-          data-message="editBlacklistedChannels"
-        >
-        </button>
-      </label>
-      <label class="toggle-container">
-        <div id="blacklistContainer" class="space-y-4">
-          <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklist"></h2>
-          <div class="flex justify-between items-center">
-            <input
-              type="text"
-              id="blacklistInput"
-              class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
-              placeholder=""
-            />
-            <button
-              id="blacklistButton"
-              class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
-              data-message="add"
-            >
-            </button>
-          </div>
-          <div id="blacklistList" class="space-y-2"></div>
-        </div>
-      </label>
-      <br />
-      <br />
-      <label class="toggle-container toggle-blacklist-words">
-        <button
-          id="toggleBlacklistWordsButton"
-          class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
-          data-message="editBlacklistedWords"
-        >
-        </button>
-      </label>
-      <label class="toggle-container">
-        <div id="wordsBlacklistContainer" class="space-y-4">
-          <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklistWords"></h2>
-          <div class="flex justify-between items-center">
-            <input
-              type="text"
-              id="blacklistWordsInput"
-              class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
-              placeholder=""
-            />
-            <button
-              id="blacklistButtonWords"
-              class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
-              data-message="add"
-            >
-            </button>
-          </div>
-          <div id="blacklistListWords" class="space-y-2"></div>
-        </div>
-      </label>
 
+        <hr class="my-4 border-t border-gray-300" />
+        <!-- Existing blacklist sections -->
+        <label class="toggle-container toggle-blacklist">
+          <button
+            id="toggleBlacklistButton"
+            class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+            data-message="editBlacklistedChannels"
+          >
+          </button>
+        </label>
+        <label class="toggle-container">
+          <div id="blacklistContainer" class="space-y-4">
+            <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklist"></h2>
+            <div class="flex justify-between items-center">
+              <input
+                type="text"
+                id="blacklistInput"
+                class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                placeholder=""
+              />
+              <button
+                id="blacklistButton"
+                class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+                data-message="add"
+              >
+              </button>
+            </div>
+            <div id="blacklistList" class="space-y-2"></div>
+          </div>
+        </label>
+        <br />
+        <br />
+        <label class="toggle-container toggle-blacklist-words">
+          <button
+            id="toggleBlacklistWordsButton"
+            class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+            data-message="editBlacklistedWords"
+          >
+          </button>
+        </label>
+        <label class="toggle-container">
+          <div id="wordsBlacklistContainer" class="space-y-4">
+            <h2 class="text-xl font-medium text-gray-900 i18n" data-message="concentrationModeBlacklistWords"></h2>
+            <div class="flex justify-between items-center">
+              <input
+                type="text"
+                id="blacklistWordsInput"
+                class="w-full px-4 py-2 text-lg font-medium text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                placeholder=""
+              />
+              <button
+                id="blacklistButtonWords"
+                class="px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n"
+                data-message="add"
+              >
+              </button>
+            </div>
+            <div id="blacklistListWords" class="space-y-2"></div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Focus Mode tab -->
+      <div id="focusModeTabPane" class="tab-pane active">
+        <!-- Single mode selector: exactly ONE of these is ever active. Switching
+             modes fully replaces the previous one - never an ambiguous state
+             where more than one mechanism is doing something at once. -->
+        <div class="mode-selector" id="modeSelector">
+          <button type="button" class="mode-button" data-mode="off">
+            <span class="i18n" data-message="focusModeOff"></span>
+          </button>
+          <button type="button" class="mode-button" data-mode="always">
+            <span class="i18n" data-message="focusModeAlways"></span>
+          </button>
+          <button type="button" class="mode-button" data-mode="timer">
+            <span class="i18n" data-message="focusModeTimerMode"></span>
+          </button>
+          <button type="button" class="mode-button" data-mode="schedule">
+            <span class="i18n" data-message="focusModeScheduleMode"></span>
+          </button>
+        </div>
+
+        <!-- Off: nothing to configure -->
+        <div id="modeContentOff" class="mode-content">
+          <p class="text-sm text-gray-500 i18n" data-message="focusModeOffDescription"></p>
+        </div>
+
+        <!-- Always: nothing to configure, just a confirmation -->
+        <div id="modeContentAlways" class="mode-content">
+          <p class="text-sm text-gray-500 i18n" data-message="focusModeAlwaysDescription"></p>
+        </div>
+
+        <!-- Timer: only shown/relevant while Timer mode is selected -->
+        <div id="modeContentTimer" class="mode-content space-y-2">
+          <div id="focusIdleControls" class="space-y-2">
+            <div class="flex justify-between items-center gap-2">
+              <label for="focusDurationInput" class="text-base font-medium text-gray-700 i18n" data-message="focusDurationLabel"></label>
+              <input type="number" id="focusDurationInput" min="1" max="240" value="25" class="w-20 px-2 py-1 text-gray-900 border border-gray-300 rounded-md" />
+            </div>
+            <div class="flex justify-between items-center gap-2">
+              <label for="breakDurationInput" class="text-base font-medium text-gray-700 i18n" data-message="breakDurationLabel"></label>
+              <input type="number" id="breakDurationInput" min="0" max="120" value="5" class="w-20 px-2 py-1 text-gray-900 border border-gray-300 rounded-md" />
+            </div>
+            <button id="startFocusSessionButton" class="w-full px-4 py-2 text-lg font-medium text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n" data-message="startFocusSession"></button>
+          </div>
+
+          <div id="focusRunningControls" class="space-y-2" style="display:none;">
+            <div class="flex justify-between items-center">
+              <span id="focusPhaseLabel" class="text-base font-medium text-gray-700"></span>
+              <span id="focusSessionCountdown">00:00</span>
+            </div>
+            <button id="stopFocusSessionButton" class="w-full px-4 py-2 text-lg font-medium text-white bg-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 i18n" data-message="stopFocusSession"></button>
+          </div>
+        </div>
+
+        <!-- Schedule: only shown/relevant while Schedule mode is selected -->
+        <div id="modeContentSchedule" class="mode-content space-y-2">
+          <div id="dayChips" class="day-chip-row">
+            <button type="button" class="day-chip i18n" data-day="1" data-message="dayMon"></button>
+            <button type="button" class="day-chip i18n" data-day="2" data-message="dayTue"></button>
+            <button type="button" class="day-chip i18n" data-day="3" data-message="dayWed"></button>
+            <button type="button" class="day-chip i18n" data-day="4" data-message="dayThu"></button>
+            <button type="button" class="day-chip i18n" data-day="5" data-message="dayFri"></button>
+            <button type="button" class="day-chip i18n" data-day="6" data-message="daySat"></button>
+            <button type="button" class="day-chip i18n" data-day="0" data-message="daySun"></button>
+          </div>
+          <div class="flex justify-between items-center gap-2">
+            <input type="time" id="scheduleStartInput" value="09:00" class="px-2 py-1 text-gray-900 border border-gray-300 rounded-md" />
+            <span class="text-gray-500">-</span>
+            <input type="time" id="scheduleEndInput" value="17:00" class="px-2 py-1 text-gray-900 border border-gray-300 rounded-md" />
+            <button id="addScheduleButton" class="px-4 py-2 text-white bg-red-500 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300 i18n" data-message="add"></button>
+          </div>
+          <div id="scheduleList" class="space-y-2"></div>
+        </div>
+      </div>
 
     </div>
   </div>

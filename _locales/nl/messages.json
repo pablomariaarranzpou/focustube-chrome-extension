@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Verwijderen"
+  },
+  "tabSettings": {
+    "message": "Instellingen"
+  },
+  "tabFocusMode": {
+    "message": "Modus"
+  },
+  "focusModeOff": {
+    "message": "Uit"
+  },
+  "focusModeAlways": {
+    "message": "Altijd"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Schema"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube is gepauzeerd: alles wordt getoond op YouTube, ongeacht je Instellingen."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Je Instellingen gelden altijd."
+  },
+  "focusDurationLabel": {
+    "message": "Concentratie (minuten)"
+  },
+  "breakDurationLabel": {
+    "message": "Pauze (minuten)"
+  },
+  "startFocusSession": {
+    "message": "Concentratiesessie starten"
+  },
+  "stopFocusSession": {
+    "message": "Stop"
+  },
+  "focusPhaseLabel": {
+    "message": "Bezig met concentreren"
+  },
+  "breakPhaseLabel": {
+    "message": "Pauze"
+  },
+  "dayMon": {
+    "message": "Ma"
+  },
+  "dayTue": {
+    "message": "Di"
+  },
+  "dayWed": {
+    "message": "Wo"
+  },
+  "dayThu": {
+    "message": "Do"
+  },
+  "dayFri": {
+    "message": "Vr"
+  },
+  "daySat": {
+    "message": "Za"
+  },
+  "daySun": {
+    "message": "Zo"
+  },
+  "scheduleRemoveButton": {
+    "message": "Verwijderen"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Nog geen terugkerende blokken"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Concentratiesessie beëindigd"
+  },
+  "focusEndNotificationBody": {
+    "message": "Je concentratiesessie is beëindigd."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pauze is voorbij"
+  },
+  "breakEndNotificationBody": {
+    "message": "Klaar om weer te concentreren? Start een nieuwe sessie vanuit de FocusTube-popup."
   }
 }
