@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}"{{DIR_ATTR}}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}" />
+{{HREFLANG_LINKS}}
+  <link rel="icon" href="{{ROOT}}assets/focustube-icon.png" />
+  <link rel="stylesheet" href="{{ROOT}}styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a href="{{ROOT}}" class="brand">
+        <img src="{{ROOT}}assets/focustube-icon.png" alt="" class="brand-icon" />
+        FocusTube
+      </a>
+      <nav>
+        <a href="#features">{{NAV_FEATURES}}</a>
+        <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">{{NAV_INSTALL}}</a>
+        <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{{KICKER}}</span>
+      <h1>{{H1}}</h1>
+      <p class="lead">{{LEAD}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
+        <a class="btn btn-secondary" href="#features">{{CTA_SECONDARY}}</a>
+      </div>
+      <p class="stat-row"><strong>{{STAT_NUMBER}}</strong> {{STAT_SUFFIX}}</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <h2>{{FEATURES_TITLE}}</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🚫</div>
+          <h3>{{F1_TITLE}}</h3>
+          <p>{{F1_DESC}}</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🧭</div>
+          <h3>{{F2_TITLE}}</h3>
+          <p>{{F2_DESC}}</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💬</div>
+          <h3>{{F3_TITLE}}</h3>
+          <p>{{F3_DESC}}</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔇</div>
+          <h3>{{F4_TITLE}}</h3>
+          <p>{{F4_DESC}}</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⏱️</div>
+          <h3>{{F5_TITLE}}</h3>
+          <p>{{F5_DESC}}</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📅</div>
+          <h3>{{F6_TITLE}}</h3>
+          <p>{{F6_DESC}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-card">
+        <h2>{{CTA2_TITLE}}</h2>
+        <p>{{CTA2_LEAD}}</p>
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> FocusTube</span>
+      <span>
+        <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">{{FOOTER_LINK}}</a>
+      </span>
+      <select id="langSwitch" aria-label="Language">
+{{LANG_OPTIONS}}
+      </select>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('langSwitch').addEventListener('change', function (e) {
+      window.location.href = e.target.value;
+    });
+  </script>
+</body>
+</html>
