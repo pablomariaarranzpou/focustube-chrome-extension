@@ -82,12 +82,19 @@ for (const code of locales) {
     .replace('{{CTA2_TITLE}}', escapeHtml(c.c2t))
     .replace('{{CTA2_LEAD}}', escapeHtml(c.c2l))
     .replace('{{FOOTER_LINK}}', escapeHtml(c.flink))
-    .replace('{{LANG_OPTIONS}}', buildLangOptions(code, !!folder));
+    .replace('{{LANG_OPTIONS}}', buildLangOptions(code, !!folder))
+    .replace('{{SPOTLIGHT_H2}}', escapeHtml(c.sph))
+    .replace('{{MODE_OFF}}', escapeHtml(c.modes.off))
+    .replace('{{MODE_ALWAYS}}', escapeHtml(c.modes.always))
+    .replace('{{MODE_TIMER}}', escapeHtml(c.modes.timer))
+    .replace('{{MODE_SCHEDULE}}', escapeHtml(c.modes.schedule));
 
+  // Global (not just first-match) replace: F5/F6 are reused both in the
+  // regular feature grid's data source and in the Focus Mode spotlight below.
   c.f.forEach(([title, desc], i) => {
     html = html
-      .replace(`{{F${i + 1}_TITLE}}`, escapeHtml(title))
-      .replace(`{{F${i + 1}_DESC}}`, escapeHtml(desc));
+      .replace(new RegExp(`{{F${i + 1}_TITLE}}`, 'g'), escapeHtml(title))
+      .replace(new RegExp(`{{F${i + 1}_DESC}}`, 'g'), escapeHtml(desc));
   });
 
   const outDir = folder ? path.join(ROOT, folder) : ROOT;

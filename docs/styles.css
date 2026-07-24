@@ -256,8 +256,100 @@ footer a:hover {
   max-width: 180px;
 }
 
+/* Focus Mode spotlight */
+.spotlight {
+  background: var(--ink);
+  color: #fff;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.spotlight .kicker-light {
+  color: var(--coral);
+}
+
+.spotlight h2 {
+  font-size: 1.8rem;
+  margin: 0 0 14px;
+}
+
+.spotlight-lead {
+  color: #d1d5db;
+  max-width: 560px;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+}
+
+.spotlight-secondary {
+  margin-top: 28px;
+  font-size: 0.9rem;
+}
+
+.spotlight-secondary strong {
+  color: #fff;
+}
+
+.mode-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.mode-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 10px 22px;
+}
+
+.mode-pill .mode-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .mode-row {
+    gap: 8px;
+  }
+
+  .mode-pill {
+    padding: 8px 16px;
+  }
+}
+
+/* Dark mode (follows the visitor's OS/browser preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #263241;
+    --bg: #0b0f14;
+    --card: #11161c;
+  }
+
+  body {
+    background: var(--bg);
+  }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+  }
+
+  .cta-card .btn-primary {
+    color: var(--coral-dark);
+  }
+
+  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
+  .spotlight {
+    background: #05070a;
   }
 }
