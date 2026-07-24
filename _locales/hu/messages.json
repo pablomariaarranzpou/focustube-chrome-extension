@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Eltávolítás"
+  },
+  "tabSettings": {
+    "message": "Beállítások"
+  },
+  "tabFocusMode": {
+    "message": "Mód"
+  },
+  "focusModeOff": {
+    "message": "Ki"
+  },
+  "focusModeAlways": {
+    "message": "Mindig"
+  },
+  "focusModeTimerMode": {
+    "message": "Időzítő"
+  },
+  "focusModeScheduleMode": {
+    "message": "Ütemezés"
+  },
+  "focusModeOffDescription": {
+    "message": "A FocusTube szüneteltetve van: a YouTube-on minden látszik, a Beállításoktól függetlenül."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "A Beállításaid mindig érvényesek."
+  },
+  "focusDurationLabel": {
+    "message": "Koncentráció (perc)"
+  },
+  "breakDurationLabel": {
+    "message": "Szünet (perc)"
+  },
+  "startFocusSession": {
+    "message": "Koncentrációs munkamenet indítása"
+  },
+  "stopFocusSession": {
+    "message": "Leállítás"
+  },
+  "focusPhaseLabel": {
+    "message": "Koncentrálsz"
+  },
+  "breakPhaseLabel": {
+    "message": "Szünetben"
+  },
+  "dayMon": {
+    "message": "H"
+  },
+  "dayTue": {
+    "message": "K"
+  },
+  "dayWed": {
+    "message": "Sze"
+  },
+  "dayThu": {
+    "message": "Cs"
+  },
+  "dayFri": {
+    "message": "P"
+  },
+  "daySat": {
+    "message": "Szo"
+  },
+  "daySun": {
+    "message": "V"
+  },
+  "scheduleRemoveButton": {
+    "message": "Eltávolítás"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Még nincsenek ismétlődő időszakok"
+  },
+  "focusEndNotificationTitle": {
+    "message": "A koncentrációs munkamenet véget ért"
+  },
+  "focusEndNotificationBody": {
+    "message": "A koncentrációs munkameneted véget ért."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Vége a szünetnek"
+  },
+  "breakEndNotificationBody": {
+    "message": "Készen állsz újra koncentrálni? Indíts új munkamenetet a FocusTube felugró ablakából."
   }
 }

@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "제거"
+  },
+  "tabSettings": {
+    "message": "설정"
+  },
+  "tabFocusMode": {
+    "message": "모드"
+  },
+  "focusModeOff": {
+    "message": "꺼짐"
+  },
+  "focusModeAlways": {
+    "message": "항상"
+  },
+  "focusModeTimerMode": {
+    "message": "타이머"
+  },
+  "focusModeScheduleMode": {
+    "message": "일정"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube가 일시정지되었습니다. 설정과 관계없이 YouTube의 모든 항목이 표시됩니다."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "설정이 항상 적용됩니다."
+  },
+  "focusDurationLabel": {
+    "message": "집중 시간(분)"
+  },
+  "breakDurationLabel": {
+    "message": "휴식 시간(분)"
+  },
+  "startFocusSession": {
+    "message": "집중 세션 시작"
+  },
+  "stopFocusSession": {
+    "message": "중지"
+  },
+  "focusPhaseLabel": {
+    "message": "집중 중"
+  },
+  "breakPhaseLabel": {
+    "message": "휴식 중"
+  },
+  "dayMon": {
+    "message": "월"
+  },
+  "dayTue": {
+    "message": "화"
+  },
+  "dayWed": {
+    "message": "수"
+  },
+  "dayThu": {
+    "message": "목"
+  },
+  "dayFri": {
+    "message": "금"
+  },
+  "daySat": {
+    "message": "토"
+  },
+  "daySun": {
+    "message": "일"
+  },
+  "scheduleRemoveButton": {
+    "message": "삭제"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "아직 반복 일정이 없습니다"
+  },
+  "focusEndNotificationTitle": {
+    "message": "집중 세션이 종료되었습니다"
+  },
+  "focusEndNotificationBody": {
+    "message": "집중 세션이 종료되었습니다."
+  },
+  "breakEndNotificationTitle": {
+    "message": "휴식 시간이 끝났습니다"
+  },
+  "breakEndNotificationBody": {
+    "message": "다시 집중할 준비가 되셨나요? FocusTube 팝업에서 새 세션을 시작하세요."
   }
 }

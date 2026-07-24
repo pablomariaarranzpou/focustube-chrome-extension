@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Αφαίρεση"
+  },
+  "tabSettings": {
+    "message": "Ρυθμίσεις"
+  },
+  "tabFocusMode": {
+    "message": "Λειτουργία"
+  },
+  "focusModeOff": {
+    "message": "Ανενεργό"
+  },
+  "focusModeAlways": {
+    "message": "Πάντα"
+  },
+  "focusModeTimerMode": {
+    "message": "Χρονόμετρο"
+  },
+  "focusModeScheduleMode": {
+    "message": "Πρόγραμμα"
+  },
+  "focusModeOffDescription": {
+    "message": "Το FocusTube είναι σε παύση: όλα εμφανίζονται στο YouTube, ανεξάρτητα από τις Ρυθμίσεις."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Οι Ρυθμίσεις σας ισχύουν συνέχεια."
+  },
+  "focusDurationLabel": {
+    "message": "Συγκέντρωση (λεπτά)"
+  },
+  "breakDurationLabel": {
+    "message": "Διάλειμμα (λεπτά)"
+  },
+  "startFocusSession": {
+    "message": "Έναρξη συνεδρίας συγκέντρωσης"
+  },
+  "stopFocusSession": {
+    "message": "Διακοπή"
+  },
+  "focusPhaseLabel": {
+    "message": "Συγκεντρώνεστε"
+  },
+  "breakPhaseLabel": {
+    "message": "Σε διάλειμμα"
+  },
+  "dayMon": {
+    "message": "Δευ"
+  },
+  "dayTue": {
+    "message": "Τρί"
+  },
+  "dayWed": {
+    "message": "Τετ"
+  },
+  "dayThu": {
+    "message": "Πέμ"
+  },
+  "dayFri": {
+    "message": "Παρ"
+  },
+  "daySat": {
+    "message": "Σάβ"
+  },
+  "daySun": {
+    "message": "Κυρ"
+  },
+  "scheduleRemoveButton": {
+    "message": "Αφαίρεση"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Δεν υπάρχουν ακόμη επαναλαμβανόμενα διαστήματα"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Η συνεδρία συγκέντρωσης έληξε"
+  },
+  "focusEndNotificationBody": {
+    "message": "Η συνεδρία συγκέντρωσής σας έληξε."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Το διάλειμμα τελείωσε"
+  },
+  "breakEndNotificationBody": {
+    "message": "Έτοιμοι να συγκεντρωθείτε ξανά; Ξεκινήστε νέα συνεδρία από το αναδυόμενο παράθυρο του FocusTube."
   }
 }

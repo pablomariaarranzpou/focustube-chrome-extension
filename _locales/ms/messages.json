@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Alih Keluar"
+  },
+  "tabSettings": {
+    "message": "Tetapan"
+  },
+  "tabFocusMode": {
+    "message": "Mod"
+  },
+  "focusModeOff": {
+    "message": "Mati"
+  },
+  "focusModeAlways": {
+    "message": "Sentiasa"
+  },
+  "focusModeTimerMode": {
+    "message": "Pemasa"
+  },
+  "focusModeScheduleMode": {
+    "message": "Jadual"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube dijeda: semuanya dipaparkan di YouTube, tidak kira apa Tetapannya."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Tetapan anda terpakai sepanjang masa."
+  },
+  "focusDurationLabel": {
+    "message": "Tumpuan (minit)"
+  },
+  "breakDurationLabel": {
+    "message": "Rehat (minit)"
+  },
+  "startFocusSession": {
+    "message": "Mulakan sesi tumpuan"
+  },
+  "stopFocusSession": {
+    "message": "Berhenti"
+  },
+  "focusPhaseLabel": {
+    "message": "Sedang menumpukan"
+  },
+  "breakPhaseLabel": {
+    "message": "Sedang berehat"
+  },
+  "dayMon": {
+    "message": "Isn"
+  },
+  "dayTue": {
+    "message": "Sel"
+  },
+  "dayWed": {
+    "message": "Rab"
+  },
+  "dayThu": {
+    "message": "Kha"
+  },
+  "dayFri": {
+    "message": "Jum"
+  },
+  "daySat": {
+    "message": "Sab"
+  },
+  "daySun": {
+    "message": "Ahd"
+  },
+  "scheduleRemoveButton": {
+    "message": "Buang"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Belum ada blok berulang"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sesi tumpuan tamat"
+  },
+  "focusEndNotificationBody": {
+    "message": "Sesi tumpuan anda telah tamat."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Rehat sudah tamat"
+  },
+  "breakEndNotificationBody": {
+    "message": "Sedia untuk menumpukan perhatian semula? Mulakan sesi baharu dari popup FocusTube."
   }
 }

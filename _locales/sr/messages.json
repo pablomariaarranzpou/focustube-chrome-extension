@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Ukloni"
+  },
+  "tabSettings": {
+    "message": "Podešavanja"
+  },
+  "tabFocusMode": {
+    "message": "Režim"
+  },
+  "focusModeOff": {
+    "message": "Isključeno"
+  },
+  "focusModeAlways": {
+    "message": "Uvek"
+  },
+  "focusModeTimerMode": {
+    "message": "Tajmer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Raspored"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube je pauziran: na YouTube-u se prikazuje sve, bez obzira na Podešavanja."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Vaša Podešavanja važe stalno."
+  },
+  "focusDurationLabel": {
+    "message": "Koncentracija (minuti)"
+  },
+  "breakDurationLabel": {
+    "message": "Pauza (minuti)"
+  },
+  "startFocusSession": {
+    "message": "Pokreni sesiju koncentracije"
+  },
+  "stopFocusSession": {
+    "message": "Zaustavi"
+  },
+  "focusPhaseLabel": {
+    "message": "Koncentracija"
+  },
+  "breakPhaseLabel": {
+    "message": "Na pauzi"
+  },
+  "dayMon": {
+    "message": "Pon"
+  },
+  "dayTue": {
+    "message": "Uto"
+  },
+  "dayWed": {
+    "message": "Sre"
+  },
+  "dayThu": {
+    "message": "Čet"
+  },
+  "dayFri": {
+    "message": "Pet"
+  },
+  "daySat": {
+    "message": "Sub"
+  },
+  "daySun": {
+    "message": "Ned"
+  },
+  "scheduleRemoveButton": {
+    "message": "Ukloni"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Još uvek nema ponavljajućih blokova"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sesija koncentracije je završena"
+  },
+  "focusEndNotificationBody": {
+    "message": "Vaša sesija koncentracije je završena."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pauza je gotova"
+  },
+  "breakEndNotificationBody": {
+    "message": "Spremni da se ponovo koncentrišete? Pokrenite novu sesiju iz FocusTube popapa."
   }
 }

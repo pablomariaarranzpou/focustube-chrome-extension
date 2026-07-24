@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "הסר"
+  },
+  "tabSettings": {
+    "message": "הגדרות"
+  },
+  "tabFocusMode": {
+    "message": "מצב"
+  },
+  "focusModeOff": {
+    "message": "כבוי"
+  },
+  "focusModeAlways": {
+    "message": "תמיד"
+  },
+  "focusModeTimerMode": {
+    "message": "טיימר"
+  },
+  "focusModeScheduleMode": {
+    "message": "לוח זמנים"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube בהפסקה: הכול מוצג ביוטיוב, ללא קשר להגדרות."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "ההגדרות שלך חלות כל הזמן."
+  },
+  "focusDurationLabel": {
+    "message": "ריכוז (דקות)"
+  },
+  "breakDurationLabel": {
+    "message": "הפסקה (דקות)"
+  },
+  "startFocusSession": {
+    "message": "התחל מפגש ריכוז"
+  },
+  "stopFocusSession": {
+    "message": "עצור"
+  },
+  "focusPhaseLabel": {
+    "message": "בריכוז"
+  },
+  "breakPhaseLabel": {
+    "message": "בהפסקה"
+  },
+  "dayMon": {
+    "message": "ב׳"
+  },
+  "dayTue": {
+    "message": "ג׳"
+  },
+  "dayWed": {
+    "message": "ד׳"
+  },
+  "dayThu": {
+    "message": "ה׳"
+  },
+  "dayFri": {
+    "message": "ו׳"
+  },
+  "daySat": {
+    "message": "ש׳"
+  },
+  "daySun": {
+    "message": "א׳"
+  },
+  "scheduleRemoveButton": {
+    "message": "הסר"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "אין עדיין בלוקים חוזרים"
+  },
+  "focusEndNotificationTitle": {
+    "message": "מפגש הריכוז הסתיים"
+  },
+  "focusEndNotificationBody": {
+    "message": "מפגש הריכוז שלך הסתיים."
+  },
+  "breakEndNotificationTitle": {
+    "message": "ההפסקה נגמרה"
+  },
+  "breakEndNotificationBody": {
+    "message": "מוכן להתרכז שוב? התחל מפגש חדש מחלון הקופץ של FocusTube."
   }
 }

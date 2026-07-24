@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Odstrániť"
+  },
+  "tabSettings": {
+    "message": "Nastavenia"
+  },
+  "tabFocusMode": {
+    "message": "Režim"
+  },
+  "focusModeOff": {
+    "message": "Vypnuté"
+  },
+  "focusModeAlways": {
+    "message": "Vždy"
+  },
+  "focusModeTimerMode": {
+    "message": "Časovač"
+  },
+  "focusModeScheduleMode": {
+    "message": "Plán"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube je pozastavený: na YouTube sa zobrazuje všetko bez ohľadu na Nastavenia."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Vaše Nastavenia platia neustále."
+  },
+  "focusDurationLabel": {
+    "message": "Koncentrácia (minúty)"
+  },
+  "breakDurationLabel": {
+    "message": "Prestávka (minúty)"
+  },
+  "startFocusSession": {
+    "message": "Spustiť reláciu koncentrácie"
+  },
+  "stopFocusSession": {
+    "message": "Zastaviť"
+  },
+  "focusPhaseLabel": {
+    "message": "Sústredenie"
+  },
+  "breakPhaseLabel": {
+    "message": "Prestávka"
+  },
+  "dayMon": {
+    "message": "Po"
+  },
+  "dayTue": {
+    "message": "Ut"
+  },
+  "dayWed": {
+    "message": "St"
+  },
+  "dayThu": {
+    "message": "Št"
+  },
+  "dayFri": {
+    "message": "Pi"
+  },
+  "daySat": {
+    "message": "So"
+  },
+  "daySun": {
+    "message": "Ne"
+  },
+  "scheduleRemoveButton": {
+    "message": "Odstrániť"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Zatiaľ žiadne opakujúce sa bloky"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Relácia koncentrácie skončila"
+  },
+  "focusEndNotificationBody": {
+    "message": "Vaša relácia koncentrácie sa skončila."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Prestávka skončila"
+  },
+  "breakEndNotificationBody": {
+    "message": "Pripravení sústrediť sa znova? Spustite novú reláciu vo vyskakovacom okne FocusTube."
   }
 }

@@ -55,5 +55,86 @@
   },
   "wordPlaceholder": {
     "message": "Ex: Jocs"
+  },
+  "tabSettings": {
+    "message": "Configuració"
+  },
+  "tabFocusMode": {
+    "message": "Mode"
+  },
+  "focusModeOff": {
+    "message": "Apagat"
+  },
+  "focusModeAlways": {
+    "message": "Sempre"
+  },
+  "focusModeTimerMode": {
+    "message": "Temporitzador"
+  },
+  "focusModeScheduleMode": {
+    "message": "Horari"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube està en pausa: es mostra tot a YouTube, independentment de la Configuració."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "La teva Configuració s'aplica sempre."
+  },
+  "focusDurationLabel": {
+    "message": "Concentració (minuts)"
+  },
+  "breakDurationLabel": {
+    "message": "Descans (minuts)"
+  },
+  "startFocusSession": {
+    "message": "Inicia sessió de concentració"
+  },
+  "stopFocusSession": {
+    "message": "Atura"
+  },
+  "focusPhaseLabel": {
+    "message": "Concentrant-se"
+  },
+  "breakPhaseLabel": {
+    "message": "En descans"
+  },
+  "dayMon": {
+    "message": "Dl"
+  },
+  "dayTue": {
+    "message": "Dt"
+  },
+  "dayWed": {
+    "message": "Dc"
+  },
+  "dayThu": {
+    "message": "Dj"
+  },
+  "dayFri": {
+    "message": "Dv"
+  },
+  "daySat": {
+    "message": "Ds"
+  },
+  "daySun": {
+    "message": "Dg"
+  },
+  "scheduleRemoveButton": {
+    "message": "Elimina"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Encara no hi ha blocs recurrents"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sessió de concentració finalitzada"
+  },
+  "focusEndNotificationBody": {
+    "message": "La teva sessió de concentració ha finalitzat."
+  },
+  "breakEndNotificationTitle": {
+    "message": "S'ha acabat el descans"
+  },
+  "breakEndNotificationBody": {
+    "message": "Preparat per concentrar-te de nou? Inicia una nova sessió des del popup de FocusTube."
   }
 }

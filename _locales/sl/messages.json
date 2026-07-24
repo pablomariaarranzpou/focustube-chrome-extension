@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Odstrani"
+  },
+  "tabSettings": {
+    "message": "Nastavitve"
+  },
+  "tabFocusMode": {
+    "message": "Način"
+  },
+  "focusModeOff": {
+    "message": "Izklopljeno"
+  },
+  "focusModeAlways": {
+    "message": "Vedno"
+  },
+  "focusModeTimerMode": {
+    "message": "Časovnik"
+  },
+  "focusModeScheduleMode": {
+    "message": "Urnik"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube je v premoru: na YouTubu je prikazano vse, ne glede na Nastavitve."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Vaše Nastavitve veljajo ves čas."
+  },
+  "focusDurationLabel": {
+    "message": "Osredotočenost (minute)"
+  },
+  "breakDurationLabel": {
+    "message": "Odmor (minute)"
+  },
+  "startFocusSession": {
+    "message": "Začni sejo osredotočenosti"
+  },
+  "stopFocusSession": {
+    "message": "Ustavi"
+  },
+  "focusPhaseLabel": {
+    "message": "Osredotočanje"
+  },
+  "breakPhaseLabel": {
+    "message": "Na odmoru"
+  },
+  "dayMon": {
+    "message": "Pon"
+  },
+  "dayTue": {
+    "message": "Tor"
+  },
+  "dayWed": {
+    "message": "Sre"
+  },
+  "dayThu": {
+    "message": "Čet"
+  },
+  "dayFri": {
+    "message": "Pet"
+  },
+  "daySat": {
+    "message": "Sob"
+  },
+  "daySun": {
+    "message": "Ned"
+  },
+  "scheduleRemoveButton": {
+    "message": "Odstrani"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Še ni ponavljajočih se blokov"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Seja osredotočenosti se je končala"
+  },
+  "focusEndNotificationBody": {
+    "message": "Vaša seja osredotočenosti se je končala."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Odmor je končan"
+  },
+  "breakEndNotificationBody": {
+    "message": "Pripravljeni na ponovno osredotočanje? Začnite novo sejo iz pojavnega okna FocusTube."
   }
 }

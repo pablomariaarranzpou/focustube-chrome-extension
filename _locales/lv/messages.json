@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Noņemt"
+  },
+  "tabSettings": {
+    "message": "Iestatījumi"
+  },
+  "tabFocusMode": {
+    "message": "Režīms"
+  },
+  "focusModeOff": {
+    "message": "Izslēgts"
+  },
+  "focusModeAlways": {
+    "message": "Vienmēr"
+  },
+  "focusModeTimerMode": {
+    "message": "Taimeris"
+  },
+  "focusModeScheduleMode": {
+    "message": "Grafiks"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube ir pauzēts: YouTube tiek rādīts viss, neatkarīgi no Iestatījumiem."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Jūsu Iestatījumi ir spēkā visu laiku."
+  },
+  "focusDurationLabel": {
+    "message": "Koncentrēšanās (minūtes)"
+  },
+  "breakDurationLabel": {
+    "message": "Pārtraukums (minūtes)"
+  },
+  "startFocusSession": {
+    "message": "Sākt koncentrēšanās sesiju"
+  },
+  "stopFocusSession": {
+    "message": "Apturēt"
+  },
+  "focusPhaseLabel": {
+    "message": "Koncentrēšanās"
+  },
+  "breakPhaseLabel": {
+    "message": "Pārtraukumā"
+  },
+  "dayMon": {
+    "message": "Pr"
+  },
+  "dayTue": {
+    "message": "Ot"
+  },
+  "dayWed": {
+    "message": "Tr"
+  },
+  "dayThu": {
+    "message": "Ce"
+  },
+  "dayFri": {
+    "message": "Pk"
+  },
+  "daySat": {
+    "message": "Se"
+  },
+  "daySun": {
+    "message": "Sv"
+  },
+  "scheduleRemoveButton": {
+    "message": "Noņemt"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Vēl nav atkārtotu bloku"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Koncentrēšanās sesija beigusies"
+  },
+  "focusEndNotificationBody": {
+    "message": "Jūsu koncentrēšanās sesija ir beigusies."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pārtraukums beidzies"
+  },
+  "breakEndNotificationBody": {
+    "message": "Gatavi atkal koncentrēties? Sāciet jaunu sesiju no FocusTube uznirstošā loga."
   }
 }

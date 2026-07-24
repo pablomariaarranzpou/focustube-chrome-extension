@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Eliminar"
+  },
+  "tabSettings": {
+    "message": "Configuración"
+  },
+  "tabFocusMode": {
+    "message": "Modo"
+  },
+  "focusModeOff": {
+    "message": "Apagado"
+  },
+  "focusModeAlways": {
+    "message": "Siempre"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Horario"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube está en pausa: todo se muestra en YouTube, sin importar la Configuración."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Tu Configuración se aplica todo el tiempo."
+  },
+  "focusDurationLabel": {
+    "message": "Concentración (minutos)"
+  },
+  "breakDurationLabel": {
+    "message": "Descanso (minutos)"
+  },
+  "startFocusSession": {
+    "message": "Iniciar sesión de concentración"
+  },
+  "stopFocusSession": {
+    "message": "Detener"
+  },
+  "focusPhaseLabel": {
+    "message": "Concentrado"
+  },
+  "breakPhaseLabel": {
+    "message": "En descanso"
+  },
+  "dayMon": {
+    "message": "Lun"
+  },
+  "dayTue": {
+    "message": "Mar"
+  },
+  "dayWed": {
+    "message": "Mié"
+  },
+  "dayThu": {
+    "message": "Jue"
+  },
+  "dayFri": {
+    "message": "Vie"
+  },
+  "daySat": {
+    "message": "Sáb"
+  },
+  "daySun": {
+    "message": "Dom"
+  },
+  "scheduleRemoveButton": {
+    "message": "Eliminar"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Todavía no hay bloques recurrentes"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sesión de concentración terminada"
+  },
+  "focusEndNotificationBody": {
+    "message": "Tu sesión de concentración ha terminado."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Se acabó el descanso"
+  },
+  "breakEndNotificationBody": {
+    "message": "¿Listo para concentrarte de nuevo? Inicia una nueva sesión desde el popup de FocusTube."
   }
 }

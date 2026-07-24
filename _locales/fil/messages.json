@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Alisin"
+  },
+  "tabSettings": {
+    "message": "Mga Setting"
+  },
+  "tabFocusMode": {
+    "message": "Mode"
+  },
+  "focusModeOff": {
+    "message": "Naka-off"
+  },
+  "focusModeAlways": {
+    "message": "Palagi"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Iskedyul"
+  },
+  "focusModeOffDescription": {
+    "message": "Naka-pause ang FocusTube: makikita ang lahat sa YouTube, kahit ano man ang Mga Setting."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Palaging ipinapatupad ang Mga Setting mo."
+  },
+  "focusDurationLabel": {
+    "message": "Konsentrasyon (minuto)"
+  },
+  "breakDurationLabel": {
+    "message": "Break (minuto)"
+  },
+  "startFocusSession": {
+    "message": "Simulan ang konsentrasyon session"
+  },
+  "stopFocusSession": {
+    "message": "Itigil"
+  },
+  "focusPhaseLabel": {
+    "message": "Nagkokonsentra"
+  },
+  "breakPhaseLabel": {
+    "message": "Nasa break"
+  },
+  "dayMon": {
+    "message": "Lun"
+  },
+  "dayTue": {
+    "message": "Mar"
+  },
+  "dayWed": {
+    "message": "Miy"
+  },
+  "dayThu": {
+    "message": "Huw"
+  },
+  "dayFri": {
+    "message": "Biy"
+  },
+  "daySat": {
+    "message": "Sab"
+  },
+  "daySun": {
+    "message": "Lin"
+  },
+  "scheduleRemoveButton": {
+    "message": "Alisin"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Wala pang paulit-ulit na blocks"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Tapos na ang konsentrasyon session"
+  },
+  "focusEndNotificationBody": {
+    "message": "Tapos na ang konsentrasyon session mo."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Tapos na ang break"
+  },
+  "breakEndNotificationBody": {
+    "message": "Handa nang magkonsentra ulit? Magsimula ng bagong session mula sa FocusTube popup."
   }
 }

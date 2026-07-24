@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "Fjern"
+  },
+  "tabSettings": {
+    "message": "Indstillinger"
+  },
+  "tabFocusMode": {
+    "message": "Tilstand"
+  },
+  "focusModeOff": {
+    "message": "Fra"
+  },
+  "focusModeAlways": {
+    "message": "Altid"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Tidsplan"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube er sat på pause: alt vises på YouTube, uanset dine Indstillinger."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Dine Indstillinger gælder hele tiden."
+  },
+  "focusDurationLabel": {
+    "message": "Koncentration (minutter)"
+  },
+  "breakDurationLabel": {
+    "message": "Pause (minutter)"
+  },
+  "startFocusSession": {
+    "message": "Start koncentrationssession"
+  },
+  "stopFocusSession": {
+    "message": "Stop"
+  },
+  "focusPhaseLabel": {
+    "message": "Koncentrerer"
+  },
+  "breakPhaseLabel": {
+    "message": "På pause"
+  },
+  "dayMon": {
+    "message": "Man"
+  },
+  "dayTue": {
+    "message": "Tir"
+  },
+  "dayWed": {
+    "message": "Ons"
+  },
+  "dayThu": {
+    "message": "Tor"
+  },
+  "dayFri": {
+    "message": "Fre"
+  },
+  "daySat": {
+    "message": "Lør"
+  },
+  "daySun": {
+    "message": "Søn"
+  },
+  "scheduleRemoveButton": {
+    "message": "Fjern"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Ingen gentagne blokke endnu"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Koncentrationssessionen er slut"
+  },
+  "focusEndNotificationBody": {
+    "message": "Din koncentrationssession er slut."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Pausen er slut"
+  },
+  "breakEndNotificationBody": {
+    "message": "Klar til at koncentrere dig igen? Start en ny session fra FocusTube-popup'en."
   }
 }

@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "حذف"
+  },
+  "tabSettings": {
+    "message": "تنظیمات"
+  },
+  "tabFocusMode": {
+    "message": "حالت"
+  },
+  "focusModeOff": {
+    "message": "خاموش"
+  },
+  "focusModeAlways": {
+    "message": "همیشه"
+  },
+  "focusModeTimerMode": {
+    "message": "تایمر"
+  },
+  "focusModeScheduleMode": {
+    "message": "برنامه"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube متوقف شده است: در YouTube همه چیز نمایش داده می‌شود، صرف‌نظر از تنظیمات."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "تنظیمات شما همیشه اعمال می‌شود."
+  },
+  "focusDurationLabel": {
+    "message": "تمرکز (دقیقه)"
+  },
+  "breakDurationLabel": {
+    "message": "استراحت (دقیقه)"
+  },
+  "startFocusSession": {
+    "message": "شروع جلسه تمرکز"
+  },
+  "stopFocusSession": {
+    "message": "توقف"
+  },
+  "focusPhaseLabel": {
+    "message": "در حال تمرکز"
+  },
+  "breakPhaseLabel": {
+    "message": "در استراحت"
+  },
+  "dayMon": {
+    "message": "دوش"
+  },
+  "dayTue": {
+    "message": "سه‌ش"
+  },
+  "dayWed": {
+    "message": "چهار"
+  },
+  "dayThu": {
+    "message": "پنج"
+  },
+  "dayFri": {
+    "message": "جمعه"
+  },
+  "daySat": {
+    "message": "شنبه"
+  },
+  "daySun": {
+    "message": "یک‌ش"
+  },
+  "scheduleRemoveButton": {
+    "message": "حذف"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "هنوز بازه‌ی تکرارشونده‌ای وجود ندارد"
+  },
+  "focusEndNotificationTitle": {
+    "message": "جلسه تمرکز پایان یافت"
+  },
+  "focusEndNotificationBody": {
+    "message": "جلسه تمرکز شما پایان یافته است."
+  },
+  "breakEndNotificationTitle": {
+    "message": "استراحت تمام شد"
+  },
+  "breakEndNotificationBody": {
+    "message": "آماده‌اید دوباره تمرکز کنید؟ یک جلسه جدید از پاپ‌آپ FocusTube شروع کنید."
   }
 }

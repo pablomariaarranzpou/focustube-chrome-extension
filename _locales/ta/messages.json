@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "நீக்கவும்"
+  },
+  "tabSettings": {
+    "message": "அமைப்புகள்"
+  },
+  "tabFocusMode": {
+    "message": "பயன்முறை"
+  },
+  "focusModeOff": {
+    "message": "ஆஃப்"
+  },
+  "focusModeAlways": {
+    "message": "எப்போதும்"
+  },
+  "focusModeTimerMode": {
+    "message": "டைமர்"
+  },
+  "focusModeScheduleMode": {
+    "message": "அட்டவணை"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube இடைநிறுத்தப்பட்டுள்ளது: அமைப்புகள் என்னவாக இருந்தாலும், YouTube-இல் எல்லாம் காட்டப்படும்."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "உங்கள் அமைப்புகள் எப்போதும் பொருந்தும்."
+  },
+  "focusDurationLabel": {
+    "message": "கவனம் (நிமிடங்கள்)"
+  },
+  "breakDurationLabel": {
+    "message": "இடைவேளை (நிமிடங்கள்)"
+  },
+  "startFocusSession": {
+    "message": "கவனச் செயற்பாட்டைத் தொடங்கு"
+  },
+  "stopFocusSession": {
+    "message": "நிறுத்து"
+  },
+  "focusPhaseLabel": {
+    "message": "கவனம் செலுத்துகிறது"
+  },
+  "breakPhaseLabel": {
+    "message": "இடைவேளையில்"
+  },
+  "dayMon": {
+    "message": "தி"
+  },
+  "dayTue": {
+    "message": "செ"
+  },
+  "dayWed": {
+    "message": "பு"
+  },
+  "dayThu": {
+    "message": "வி"
+  },
+  "dayFri": {
+    "message": "வெ"
+  },
+  "daySat": {
+    "message": "ச"
+  },
+  "daySun": {
+    "message": "ஞா"
+  },
+  "scheduleRemoveButton": {
+    "message": "அகற்று"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "இன்னும் மீண்டும் நிகழும் தொகுதிகள் இல்லை"
+  },
+  "focusEndNotificationTitle": {
+    "message": "கவனச் செயற்பாடு முடிந்தது"
+  },
+  "focusEndNotificationBody": {
+    "message": "உங்கள் கவனச் செயற்பாடு முடிந்துவிட்டது."
+  },
+  "breakEndNotificationTitle": {
+    "message": "இடைவேளை முடிந்தது"
+  },
+  "breakEndNotificationBody": {
+    "message": "மீண்டும் கவனம் செலுத்த தயாரா? FocusTube பாப்அப்பில் இருந்து புதிய செயற்பாட்டைத் தொடங்கு."
   }
 }

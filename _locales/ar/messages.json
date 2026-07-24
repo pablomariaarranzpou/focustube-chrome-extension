@@ -58,5 +58,86 @@
   },
   "remove": {
     "message": "إزالة"
+  },
+  "tabSettings": {
+    "message": "الإعدادات"
+  },
+  "tabFocusMode": {
+    "message": "الوضع"
+  },
+  "focusModeOff": {
+    "message": "متوقف"
+  },
+  "focusModeAlways": {
+    "message": "دائمًا"
+  },
+  "focusModeTimerMode": {
+    "message": "مؤقت"
+  },
+  "focusModeScheduleMode": {
+    "message": "جدول"
+  },
+  "focusModeOffDescription": {
+    "message": "تم إيقاف FocusTube مؤقتًا: يظهر كل شيء في YouTube بغض النظر عن الإعدادات."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "تُطبَّق إعداداتك طوال الوقت."
+  },
+  "focusDurationLabel": {
+    "message": "التركيز (دقائق)"
+  },
+  "breakDurationLabel": {
+    "message": "الاستراحة (دقائق)"
+  },
+  "startFocusSession": {
+    "message": "بدء جلسة تركيز"
+  },
+  "stopFocusSession": {
+    "message": "إيقاف"
+  },
+  "focusPhaseLabel": {
+    "message": "التركيز جارٍ"
+  },
+  "breakPhaseLabel": {
+    "message": "في استراحة"
+  },
+  "dayMon": {
+    "message": "إثن"
+  },
+  "dayTue": {
+    "message": "ثلا"
+  },
+  "dayWed": {
+    "message": "أرب"
+  },
+  "dayThu": {
+    "message": "خمي"
+  },
+  "dayFri": {
+    "message": "جمعة"
+  },
+  "daySat": {
+    "message": "سبت"
+  },
+  "daySun": {
+    "message": "أحد"
+  },
+  "scheduleRemoveButton": {
+    "message": "إزالة"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "لا توجد فترات متكررة بعد"
+  },
+  "focusEndNotificationTitle": {
+    "message": "انتهت جلسة التركيز"
+  },
+  "focusEndNotificationBody": {
+    "message": "انتهت جلسة التركيز الخاصة بك."
+  },
+  "breakEndNotificationTitle": {
+    "message": "انتهت الاستراحة"
+  },
+  "breakEndNotificationBody": {
+    "message": "مستعد للتركيز مجددًا؟ ابدأ جلسة جديدة من نافذة FocusTube."
   }
 }

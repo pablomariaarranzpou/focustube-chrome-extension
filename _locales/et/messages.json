@@ -19,5 +19,86 @@
   },
   "quickBlacklistButton": {
     "message": "Kuva kiire blokeerimise nupp voos"
+  },
+  "tabSettings": {
+    "message": "Seaded"
+  },
+  "tabFocusMode": {
+    "message": "Režiim"
+  },
+  "focusModeOff": {
+    "message": "Väljas"
+  },
+  "focusModeAlways": {
+    "message": "Alati"
+  },
+  "focusModeTimerMode": {
+    "message": "Taimer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Ajakava"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube on peatatud: YouTube'is on kõik nähtav, olenemata Seadetest."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Sinu Seaded kehtivad kogu aeg."
+  },
+  "focusDurationLabel": {
+    "message": "Keskendumine (minutid)"
+  },
+  "breakDurationLabel": {
+    "message": "Paus (minutid)"
+  },
+  "startFocusSession": {
+    "message": "Alusta keskendumisseanssi"
+  },
+  "stopFocusSession": {
+    "message": "Peata"
+  },
+  "focusPhaseLabel": {
+    "message": "Keskendumine"
+  },
+  "breakPhaseLabel": {
+    "message": "Pausil"
+  },
+  "dayMon": {
+    "message": "E"
+  },
+  "dayTue": {
+    "message": "T"
+  },
+  "dayWed": {
+    "message": "K"
+  },
+  "dayThu": {
+    "message": "N"
+  },
+  "dayFri": {
+    "message": "R"
+  },
+  "daySat": {
+    "message": "L"
+  },
+  "daySun": {
+    "message": "P"
+  },
+  "scheduleRemoveButton": {
+    "message": "Eemalda"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Korduvaid ajaplokke pole veel"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Keskendumisseanss lõppes"
+  },
+  "focusEndNotificationBody": {
+    "message": "Sinu keskendumisseanss on lõppenud."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Paus on läbi"
+  },
+  "breakEndNotificationBody": {
+    "message": "Valmis uuesti keskenduma? Alusta uut seanssi FocusTube hüpikaknast."
   }
 }
