@@ -136,5 +136,8 @@
   },
   "breakEndNotificationBody": {
     "message": "¿Listo para concentrarte de nuevo? Inicia una nueva sesión desde el popup de FocusTube."
+  },
+  "refreshHintNote": {
+    "message": "¿No ves los cambios enseguida? Prueba a recargar la pestaña de YouTube."
   }
 }

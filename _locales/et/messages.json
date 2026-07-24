@@ -100,5 +100,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Valmis uuesti keskenduma? Alusta uut seanssi FocusTube hüpikaknast."
+  },
+  "refreshHintNote": {
+    "message": "Kas muudatusi ei näe kohe? Proovi YouTube'i vahekaarti värskendada."
   }
 }

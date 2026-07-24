@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Klaar om weer te concentreren? Start een nieuwe sessie vanuit de FocusTube-popup."
+  },
+  "refreshHintNote": {
+    "message": "Zie je de wijzigingen niet meteen? Probeer het YouTube-tabblad te vernieuwen."
   }
 }

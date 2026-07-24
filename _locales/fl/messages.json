@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Valmis keskittymään uudelleen? Aloita uusi jakso FocusTuben ponnahdusikkunasta."
+  },
+  "refreshHintNote": {
+    "message": "Etkö näe muutoksia heti? Kokeile päivittää YouTube-välilehti."
   }
 }

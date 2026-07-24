@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Pasiruošę vėl susikaupti? Pradėkite naują seansą iš FocusTube iškylančiojo lango."
+  },
+  "refreshHintNote": {
+    "message": "Nematote pakeitimų iš karto? Pabandykite atnaujinti „YouTube“ skirtuką."
   }
 }

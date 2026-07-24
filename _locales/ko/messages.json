@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "다시 집중할 준비가 되셨나요? FocusTube 팝업에서 새 세션을 시작하세요."
+  },
+  "refreshHintNote": {
+    "message": "변경 사항이 바로 보이지 않나요? YouTube 탭을 새로고침해 보세요."
   }
 }

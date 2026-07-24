@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Készen állsz újra koncentrálni? Indíts új munkamenetet a FocusTube felugró ablakából."
+  },
+  "refreshHintNote": {
+    "message": "Nem látod azonnal a változásokat? Próbáld frissíteni a YouTube lapot."
   }
 }

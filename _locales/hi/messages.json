@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "फिर से फोकस करने के लिए तैयार हैं? FocusTube पॉपअप से नया सेशन शुरू करें।"
+  },
+  "refreshHintNote": {
+    "message": "बदलाव तुरंत नहीं दिख रहे? YouTube टैब को रीफ़्रेश करके देखें।"
   }
 }

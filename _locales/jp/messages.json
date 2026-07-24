@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "また集中する準備はできましたか？FocusTubeのポップアップから新しいセッションを開始してください。"
+  },
+  "refreshHintNote": {
+    "message": "変更がすぐに反映されない場合は、YouTubeのタブを更新してみてください。"
   }
 }

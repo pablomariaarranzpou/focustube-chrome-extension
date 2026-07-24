@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Připraveni se znovu soustředit? Spusťte novou relaci z vyskakovacího okna FocusTube."
+  },
+  "refreshHintNote": {
+    "message": "Nevidíte změny hned? Zkuste obnovit kartu YouTube."
   }
 }

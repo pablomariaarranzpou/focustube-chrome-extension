@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Uko tayari kujielekeza tena? Anzisha kipindi kipya kutoka kwenye popup ya FocusTube."
+  },
+  "refreshHintNote": {
+    "message": "Hauoni mabadiliko mara moja? Jaribu kuonyesha upya kichupo cha YouTube."
   }
 }

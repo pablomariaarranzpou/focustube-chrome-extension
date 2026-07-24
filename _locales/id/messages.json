@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Siap fokus lagi? Mulai sesi baru dari popup FocusTube."
+  },
+  "refreshHintNote": {
+    "message": "Tidak langsung melihat perubahan? Coba muat ulang tab YouTube."
   }
 }

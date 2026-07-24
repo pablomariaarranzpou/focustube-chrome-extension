@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Spremni da se ponovo koncentrišete? Pokrenite novu sesiju iz FocusTube popapa."
+  },
+  "refreshHintNote": {
+    "message": "Ne vidite promene odmah? Pokušajte da osvežite YouTube karticu."
   }
 }

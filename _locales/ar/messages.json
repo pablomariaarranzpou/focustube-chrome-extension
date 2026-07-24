@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "مستعد للتركيز مجددًا؟ ابدأ جلسة جديدة من نافذة FocusTube."
+  },
+  "refreshHintNote": {
+    "message": "ألا ترى التغييرات فورًا؟ جرّب تحديث علامة تبويب YouTube."
   }
 }
