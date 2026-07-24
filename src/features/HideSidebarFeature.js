@@ -31,25 +31,12 @@ class HideSidebarFeature extends DOMFeature {
     let css;
 
     if (this.config.keepHistoryVisible) {
-      // Minimal CSS - JS handles the entry filtering. The guide button must
-      // also be disabled here, exactly like the full-hide branch below:
-      // clicking it normally asks YouTube to toggle between the full guide
-      // and the mini (icon-only) guide, but since ytd-mini-guide-renderer is
-      // force-hidden, that toggle has no visible effect either way - from
-      // the user's perspective the button looks broken/stuck ("can't close
-      // the menu"). Disabling it avoids offering a control that appears to
-      // do nothing.
+      // Minimal CSS - JS handles the entry filtering
       css = `
         ytd-mini-guide-renderer,
         #guide-content #header,
         ytd-guide-renderer #footer {
           display: none !important;
-        }
-
-        #guide-button,
-        ytd-masthead #guide-button {
-          pointer-events: none !important;
-          opacity: 0.3 !important;
         }
       `;
     } else {
