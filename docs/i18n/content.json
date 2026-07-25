@@ -1,0 +1,2198 @@
+{
+  "en": {
+    "name": "English",
+    "t": "FocusTube — Remove YouTube distractions",
+    "d": "FocusTube hides Shorts, recommendations, suggestions and comments on YouTube. Block channels and words, and turn on a timed Focus Mode. Trusted by 4,000+ users.",
+    "nf": "Features",
+    "ni": "Install",
+    "k": "Chrome extension for YouTube",
+    "h1": "Stop wasting time on YouTube",
+    "lead": "FocusTube hides Shorts, recommendations, suggestions and comments. Block specific channels and words, and turn on a timed Focus Mode whenever you need to actually concentrate.",
+    "cp": "Add to Chrome — it's free",
+    "cs": "See what it does",
+    "sn": "4,000+",
+    "ss": "active users",
+    "ft": "Everything you can turn off",
+    "f": [
+      [
+        "Hide Shorts",
+        "Removes Shorts from the home page, sidebar and search results."
+      ],
+      [
+        "No recommendations",
+        "Strips suggestions and home page content to stop the infinite scroll."
+      ],
+      [
+        "No comments",
+        "Hides the comments section when you just want to watch the video."
+      ],
+      [
+        "Blocklists",
+        "Block specific channels or words, with a quick button to add them right from the feed."
+      ],
+      [
+        "Focus Mode",
+        "Timed sessions with breaks, or a quick mode with no timer."
+      ],
+      [
+        "Recurring schedule",
+        "Schedule Focus Mode to turn on only on the days and times you choose."
+      ]
+    ],
+    "c2t": "Take back control in seconds",
+    "c2l": "Free, no account, no weird permissions. Just switch off what distracts you.",
+    "flink": "Code on GitHub",
+    "modes": {
+      "off": "Off",
+      "always": "Always",
+      "timer": "Timer",
+      "schedule": "Schedule"
+    },
+    "sph": "One mode. Zero exceptions."
+  },
+  "es": {
+    "name": "Español",
+    "t": "FocusTube — Elimina distracciones de YouTube",
+    "d": "FocusTube oculta Shorts, recomendaciones, sugerencias y comentarios en YouTube. Bloquea canales y palabras, y activa un Modo Foco con temporizador. Más de 4.000 usuarios.",
+    "nf": "Funciones",
+    "ni": "Instalar",
+    "k": "Extensión de Chrome para YouTube",
+    "h1": "Deja de perder el tiempo en YouTube",
+    "lead": "FocusTube oculta Shorts, recomendaciones, sugerencias y comentarios. Bloquea canales y palabras concretas, y activa un Modo Foco con temporizador cuando necesites concentrarte de verdad.",
+    "cp": "Añadir a Chrome — gratis",
+    "cs": "Ver qué hace",
+    "sn": "4.000+",
+    "ss": "usuarios activos",
+    "ft": "Todo lo que puedes desactivar",
+    "f": [
+      [
+        "Oculta Shorts",
+        "Elimina los Shorts de la home, la barra lateral y los resultados de búsqueda."
+      ],
+      [
+        "Sin recomendaciones",
+        "Quita sugerencias y contenido de la página de inicio para evitar el scroll infinito."
+      ],
+      [
+        "Sin comentarios",
+        "Oculta la sección de comentarios cuando solo quieres ver el vídeo."
+      ],
+      [
+        "Listas negras",
+        "Bloquea canales o palabras concretas, con un botón rápido para añadirlos desde el propio feed."
+      ],
+      [
+        "Modo Foco",
+        "Sesiones con temporizador y descansos, o un modo rápido sin temporizador."
+      ],
+      [
+        "Horario recurrente",
+        "Programa el Modo Foco para que se active solo en los días y horas que elijas."
+      ]
+    ],
+    "c2t": "Recupera el control en segundos",
+    "c2l": "Gratis, sin cuenta, sin permisos raros. Solo apaga lo que te distrae.",
+    "flink": "Código en GitHub",
+    "modes": {
+      "off": "Apagado",
+      "always": "Siempre",
+      "timer": "Timer",
+      "schedule": "Horario"
+    },
+    "sph": "Un modo. Cero excepciones."
+  },
+  "es_419": {
+    "name": "Español (Latinoamérica)",
+    "t": "FocusTube — Elimina distracciones de YouTube",
+    "d": "FocusTube oculta Shorts, recomendaciones, sugerencias y comentarios en YouTube. Bloquea canales y palabras, y activa un Modo Foco con temporizador. Más de 4.000 usuarios.",
+    "nf": "Funciones",
+    "ni": "Instalar",
+    "k": "Extensión de Chrome para YouTube",
+    "h1": "Deja de perder el tiempo en YouTube",
+    "lead": "FocusTube oculta Shorts, recomendaciones, sugerencias y comentarios. Bloquea canales y palabras concretas, y activa un Modo Foco con temporizador cuando necesites concentrarte de verdad.",
+    "cp": "Añadir a Chrome — gratis",
+    "cs": "Ver qué hace",
+    "sn": "4.000+",
+    "ss": "usuarios activos",
+    "ft": "Todo lo que puedes desactivar",
+    "f": [
+      [
+        "Oculta Shorts",
+        "Elimina los Shorts de la home, la barra lateral y los resultados de búsqueda."
+      ],
+      [
+        "Sin recomendaciones",
+        "Quita sugerencias y contenido de la página de inicio para evitar el scroll infinito."
+      ],
+      [
+        "Sin comentarios",
+        "Oculta la sección de comentarios cuando solo quieres ver el video."
+      ],
+      [
+        "Listas negras",
+        "Bloquea canales o palabras concretas, con un botón rápido para añadirlos desde el propio feed."
+      ],
+      [
+        "Modo Foco",
+        "Sesiones con temporizador y descansos, o un modo rápido sin temporizador."
+      ],
+      [
+        "Horario recurrente",
+        "Programa el Modo Foco para que se active solo en los días y horas que elijas."
+      ]
+    ],
+    "c2t": "Recupera el control en segundos",
+    "c2l": "Gratis, sin cuenta, sin permisos raros. Solo apaga lo que te distrae.",
+    "flink": "Código en GitHub",
+    "modes": {
+      "off": "Apagado",
+      "always": "Siempre",
+      "timer": "Timer",
+      "schedule": "Horario"
+    },
+    "sph": "Un modo. Cero excepciones."
+  },
+  "fr": {
+    "name": "Français",
+    "t": "FocusTube — Supprimez les distractions YouTube",
+    "d": "FocusTube masque les Shorts, les recommandations, les suggestions et les commentaires sur YouTube. Bloquez des chaînes et des mots, et activez un Mode Concentration chronométré. Plus de 4 000 utilisateurs.",
+    "nf": "Fonctionnalités",
+    "ni": "Installer",
+    "k": "Extension Chrome pour YouTube",
+    "h1": "Arrêtez de perdre du temps sur YouTube",
+    "lead": "FocusTube masque les Shorts, les recommandations, les suggestions et les commentaires. Bloquez des chaînes et des mots précis, et activez un Mode Concentration chronométré quand vous devez vraiment vous concentrer.",
+    "cp": "Ajouter à Chrome — gratuit",
+    "cs": "Voir ce que ça fait",
+    "sn": "4 000+",
+    "ss": "utilisateurs actifs",
+    "ft": "Tout ce que vous pouvez désactiver",
+    "f": [
+      [
+        "Masquer les Shorts",
+        "Supprime les Shorts de la page d'accueil, de la barre latérale et des résultats de recherche."
+      ],
+      [
+        "Sans recommandations",
+        "Retire les suggestions et le contenu de la page d'accueil pour éviter le défilement infini."
+      ],
+      [
+        "Sans commentaires",
+        "Masque la section commentaires quand vous voulez juste regarder la vidéo."
+      ],
+      [
+        "Listes noires",
+        "Bloquez des chaînes ou des mots précis, avec un bouton rapide pour les ajouter directement depuis le fil."
+      ],
+      [
+        "Mode Concentration",
+        "Sessions chronométrées avec pauses, ou un mode rapide sans minuteur."
+      ],
+      [
+        "Planning récurrent",
+        "Programmez le Mode Concentration pour qu'il s'active seulement les jours et heures choisis."
+      ]
+    ],
+    "c2t": "Reprenez le contrôle en quelques secondes",
+    "c2l": "Gratuit, sans compte, sans permissions bizarres. Désactivez juste ce qui vous distrait.",
+    "flink": "Code sur GitHub",
+    "modes": {
+      "off": "Désactivé",
+      "always": "Toujours",
+      "timer": "Minuteur",
+      "schedule": "Horaire"
+    },
+    "sph": "Un seul mode. Aucune exception."
+  },
+  "de": {
+    "name": "Deutsch",
+    "t": "FocusTube — YouTube-Ablenkungen entfernen",
+    "d": "FocusTube blendet Shorts, Empfehlungen, Vorschläge und Kommentare auf YouTube aus. Blockiere Kanäle und Wörter und aktiviere einen zeitgesteuerten Fokus-Modus. Über 4.000 Nutzer.",
+    "nf": "Funktionen",
+    "ni": "Installieren",
+    "k": "Chrome-Erweiterung für YouTube",
+    "h1": "Verschwende keine Zeit mehr auf YouTube",
+    "lead": "FocusTube blendet Shorts, Empfehlungen, Vorschläge und Kommentare aus. Blockiere bestimmte Kanäle und Wörter und aktiviere einen zeitgesteuerten Fokus-Modus, wenn du dich wirklich konzentrieren musst.",
+    "cp": "Zu Chrome hinzufügen — kostenlos",
+    "cs": "Zeig mir, was es kann",
+    "sn": "4.000+",
+    "ss": "aktive Nutzer",
+    "ft": "Alles, was du abschalten kannst",
+    "f": [
+      [
+        "Shorts ausblenden",
+        "Entfernt Shorts von der Startseite, der Seitenleiste und den Suchergebnissen."
+      ],
+      [
+        "Keine Empfehlungen",
+        "Entfernt Vorschläge und Inhalte der Startseite, um endloses Scrollen zu verhindern."
+      ],
+      [
+        "Keine Kommentare",
+        "Blendet den Kommentarbereich aus, wenn du nur das Video sehen willst."
+      ],
+      [
+        "Sperrlisten",
+        "Blockiere bestimmte Kanäle oder Wörter, mit einem Schnellbutton direkt im Feed."
+      ],
+      [
+        "Fokus-Modus",
+        "Zeitgesteuerte Sitzungen mit Pausen oder ein Schnellmodus ohne Timer."
+      ],
+      [
+        "Wiederkehrender Zeitplan",
+        "Plane den Fokus-Modus so, dass er nur an bestimmten Tagen und Uhrzeiten aktiv ist."
+      ]
+    ],
+    "c2t": "Übernimm in Sekunden die Kontrolle",
+    "c2l": "Kostenlos, ohne Konto, ohne seltsame Berechtigungen. Schalte einfach ab, was dich ablenkt.",
+    "flink": "Code auf GitHub",
+    "modes": {
+      "off": "Aus",
+      "always": "Immer",
+      "timer": "Timer",
+      "schedule": "Zeitplan"
+    },
+    "sph": "Ein Modus. Keine Ausnahmen."
+  },
+  "it": {
+    "name": "Italiano",
+    "t": "FocusTube — Elimina le distrazioni di YouTube",
+    "d": "FocusTube nasconde Shorts, consigliati, suggerimenti e commenti su YouTube. Blocca canali e parole e attiva una Modalità Focus a tempo. Oltre 4.000 utenti.",
+    "nf": "Funzioni",
+    "ni": "Installa",
+    "k": "Estensione Chrome per YouTube",
+    "h1": "Smetti di perdere tempo su YouTube",
+    "lead": "FocusTube nasconde Shorts, consigliati, suggerimenti e commenti. Blocca canali e parole specifiche, e attiva una Modalità Focus a tempo quando devi davvero concentrarti.",
+    "cp": "Aggiungi a Chrome — gratis",
+    "cs": "Guarda cosa fa",
+    "sn": "4.000+",
+    "ss": "utenti attivi",
+    "ft": "Tutto quello che puoi disattivare",
+    "f": [
+      [
+        "Nasconde gli Shorts",
+        "Rimuove gli Shorts dalla home, dalla barra laterale e dai risultati di ricerca."
+      ],
+      [
+        "Senza consigliati",
+        "Rimuove suggerimenti e contenuti dalla home per evitare lo scroll infinito."
+      ],
+      [
+        "Senza commenti",
+        "Nasconde la sezione commenti quando vuoi solo guardare il video."
+      ],
+      [
+        "Liste nere",
+        "Blocca canali o parole specifiche, con un pulsante rapido per aggiungerli direttamente dal feed."
+      ],
+      [
+        "Modalità Focus",
+        "Sessioni a tempo con pause, o una modalità rapida senza timer."
+      ],
+      [
+        "Pianificazione ricorrente",
+        "Programma la Modalità Focus perché si attivi solo nei giorni e orari che scegli."
+      ]
+    ],
+    "c2t": "Riprendi il controllo in pochi secondi",
+    "c2l": "Gratis, senza account, senza permessi strani. Disattiva solo ciò che ti distrae.",
+    "flink": "Codice su GitHub",
+    "modes": {
+      "off": "Disattivo",
+      "always": "Sempre",
+      "timer": "Timer",
+      "schedule": "Orario"
+    },
+    "sph": "Una modalità. Zero eccezioni."
+  },
+  "pt_PT": {
+    "name": "Português (Portugal)",
+    "t": "FocusTube — Elimina as distrações do YouTube",
+    "d": "O FocusTube oculta Shorts, recomendações, sugestões e comentários no YouTube. Bloqueia canais e palavras, e ativa um Modo Foco cronometrado. Mais de 4.000 utilizadores.",
+    "nf": "Funcionalidades",
+    "ni": "Instalar",
+    "k": "Extensão Chrome para o YouTube",
+    "h1": "Para de perder tempo no YouTube",
+    "lead": "O FocusTube oculta Shorts, recomendações, sugestões e comentários. Bloqueia canais e palavras específicas, e ativa um Modo Foco cronometrado sempre que precisares de te concentrar de verdade.",
+    "cp": "Adicionar ao Chrome — gratuito",
+    "cs": "Ver o que faz",
+    "sn": "4.000+",
+    "ss": "utilizadores ativos",
+    "ft": "Tudo o que podes desativar",
+    "f": [
+      [
+        "Oculta os Shorts",
+        "Remove os Shorts da página inicial, da barra lateral e dos resultados de pesquisa."
+      ],
+      [
+        "Sem recomendações",
+        "Remove sugestões e conteúdo da página inicial para evitar o scroll infinito."
+      ],
+      [
+        "Sem comentários",
+        "Oculta a secção de comentários quando só queres ver o vídeo."
+      ],
+      [
+        "Listas negras",
+        "Bloqueia canais ou palavras específicas, com um botão rápido para os adicionar diretamente do feed."
+      ],
+      [
+        "Modo Foco",
+        "Sessões cronometradas com pausas, ou um modo rápido sem temporizador."
+      ],
+      [
+        "Horário recorrente",
+        "Agenda o Modo Foco para se ativar apenas nos dias e horas que escolheres."
+      ]
+    ],
+    "c2t": "Recupera o controlo em segundos",
+    "c2l": "Gratuito, sem conta, sem permissões estranhas. Desativa só o que te distrai.",
+    "flink": "Código no GitHub",
+    "modes": {
+      "off": "Desligado",
+      "always": "Sempre",
+      "timer": "Temporizador",
+      "schedule": "Horário"
+    },
+    "sph": "Um modo. Zero exceções."
+  },
+  "pt_BR": {
+    "name": "Português (Brasil)",
+    "t": "FocusTube — Elimine as distrações do YouTube",
+    "d": "O FocusTube oculta Shorts, recomendações, sugestões e comentários no YouTube. Bloqueie canais e palavras, e ative um Modo Foco com temporizador. Mais de 4.000 usuários.",
+    "nf": "Funcionalidades",
+    "ni": "Instalar",
+    "k": "Extensão do Chrome para o YouTube",
+    "h1": "Pare de perder tempo no YouTube",
+    "lead": "O FocusTube oculta Shorts, recomendações, sugestões e comentários. Bloqueie canais e palavras específicas, e ative um Modo Foco com temporizador sempre que precisar se concentrar de verdade.",
+    "cp": "Adicionar ao Chrome — grátis",
+    "cs": "Veja o que ele faz",
+    "sn": "4.000+",
+    "ss": "usuários ativos",
+    "ft": "Tudo que você pode desativar",
+    "f": [
+      [
+        "Oculta os Shorts",
+        "Remove os Shorts da página inicial, da barra lateral e dos resultados de busca."
+      ],
+      [
+        "Sem recomendações",
+        "Remove sugestões e conteúdo da página inicial para evitar o scroll infinito."
+      ],
+      [
+        "Sem comentários",
+        "Oculta a seção de comentários quando você só quer ver o vídeo."
+      ],
+      [
+        "Listas negras",
+        "Bloqueie canais ou palavras específicas, com um botão rápido para adicioná-los direto do feed."
+      ],
+      [
+        "Modo Foco",
+        "Sessões com temporizador e pausas, ou um modo rápido sem temporizador."
+      ],
+      [
+        "Agenda recorrente",
+        "Programe o Modo Foco para ativar apenas nos dias e horários que você escolher."
+      ]
+    ],
+    "c2t": "Recupere o controle em segundos",
+    "c2l": "Grátis, sem conta, sem permissões estranhas. Só desative o que te distrai.",
+    "flink": "Código no GitHub",
+    "modes": {
+      "off": "Desligado",
+      "always": "Sempre",
+      "timer": "Timer",
+      "schedule": "Horário"
+    },
+    "sph": "Um modo. Zero exceções."
+  },
+  "nl": {
+    "name": "Nederlands",
+    "t": "FocusTube — Verwijder YouTube-afleidingen",
+    "d": "FocusTube verbergt Shorts, aanbevelingen, suggesties en reacties op YouTube. Blokkeer kanalen en woorden en activeer een getimede Focusmodus. Meer dan 4.000 gebruikers.",
+    "nf": "Functies",
+    "ni": "Installeren",
+    "k": "Chrome-extensie voor YouTube",
+    "h1": "Stop met tijd verliezen op YouTube",
+    "lead": "FocusTube verbergt Shorts, aanbevelingen, suggesties en reacties. Blokkeer specifieke kanalen en woorden en activeer een getimede Focusmodus wanneer je je echt moet concentreren.",
+    "cp": "Toevoegen aan Chrome — gratis",
+    "cs": "Bekijk wat het doet",
+    "sn": "4.000+",
+    "ss": "actieve gebruikers",
+    "ft": "Alles wat je kunt uitschakelen",
+    "f": [
+      [
+        "Verberg Shorts",
+        "Verwijdert Shorts van de startpagina, zijbalk en zoekresultaten."
+      ],
+      [
+        "Geen aanbevelingen",
+        "Verwijdert suggesties en inhoud van de startpagina om eindeloos scrollen te voorkomen."
+      ],
+      [
+        "Geen reacties",
+        "Verbergt de reactiesectie als je alleen de video wilt bekijken."
+      ],
+      [
+        "Blokkeerlijsten",
+        "Blokkeer specifieke kanalen of woorden, met een snelle knop om ze direct vanuit de feed toe te voegen."
+      ],
+      [
+        "Focusmodus",
+        "Getimede sessies met pauzes, of een snelle modus zonder timer."
+      ],
+      [
+        "Terugkerend schema",
+        "Plan de Focusmodus zodat deze alleen op gekozen dagen en tijden actief is."
+      ]
+    ],
+    "c2t": "Herwin binnen seconden de controle",
+    "c2l": "Gratis, zonder account, zonder vreemde rechten. Schakel gewoon uit wat je afleidt.",
+    "flink": "Code op GitHub",
+    "modes": {
+      "off": "Uit",
+      "always": "Altijd",
+      "timer": "Timer",
+      "schedule": "Schema"
+    },
+    "sph": "Eén modus. Geen uitzonderingen."
+  },
+  "ca": {
+    "name": "Català",
+    "t": "FocusTube — Elimina les distraccions de YouTube",
+    "d": "FocusTube amaga Shorts, recomanacions, suggeriments i comentaris a YouTube. Bloqueja canals i paraules, i activa un Mode Focus amb temporitzador. Més de 4.000 usuaris.",
+    "nf": "Funcions",
+    "ni": "Instal·la",
+    "k": "Extensió de Chrome per a YouTube",
+    "h1": "Deixa de perdre el temps a YouTube",
+    "lead": "FocusTube amaga Shorts, recomanacions, suggeriments i comentaris. Bloqueja canals i paraules concretes, i activa un Mode Focus amb temporitzador quan necessitis concentrar-te de veritat.",
+    "cp": "Afegeix a Chrome — gratis",
+    "cs": "Mira què fa",
+    "sn": "4.000+",
+    "ss": "usuaris actius",
+    "ft": "Tot el que pots desactivar",
+    "f": [
+      [
+        "Amaga els Shorts",
+        "Elimina els Shorts de la pàgina d'inici, la barra lateral i els resultats de cerca."
+      ],
+      [
+        "Sense recomanacions",
+        "Treu suggeriments i contingut de la pàgina d'inici per evitar el desplaçament infinit."
+      ],
+      [
+        "Sense comentaris",
+        "Amaga la secció de comentaris quan només vols veure el vídeo."
+      ],
+      [
+        "Llistes negres",
+        "Bloqueja canals o paraules concretes, amb un botó ràpid per afegir-los des del mateix feed."
+      ],
+      [
+        "Mode Focus",
+        "Sessions amb temporitzador i descansos, o un mode ràpid sense temporitzador."
+      ],
+      [
+        "Horari recurrent",
+        "Programa el Mode Focus perquè s'activi només els dies i hores que triïs."
+      ]
+    ],
+    "c2t": "Recupera el control en segons",
+    "c2l": "Gratis, sense compte, sense permisos estranys. Només desactiva allò que et distreu.",
+    "flink": "Codi a GitHub",
+    "modes": {
+      "off": "Apagat",
+      "always": "Sempre",
+      "timer": "Temporitzador",
+      "schedule": "Horari"
+    },
+    "sph": "Un mode. Zero excepcions."
+  },
+  "ro": {
+    "name": "Română",
+    "t": "FocusTube — Elimină distragerile de pe YouTube",
+    "d": "FocusTube ascunde Shorts, recomandările, sugestiile și comentariile pe YouTube. Blochează canale și cuvinte și activează un Mod Focus cronometrat. Peste 4.000 de utilizatori.",
+    "nf": "Funcții",
+    "ni": "Instalează",
+    "k": "Extensie Chrome pentru YouTube",
+    "h1": "Nu mai pierde timp pe YouTube",
+    "lead": "FocusTube ascunde Shorts, recomandările, sugestiile și comentariile. Blochează canale și cuvinte anume și activează un Mod Focus cronometrat atunci când ai nevoie să te concentrezi cu adevărat.",
+    "cp": "Adaugă la Chrome — gratuit",
+    "cs": "Vezi ce face",
+    "sn": "4.000+",
+    "ss": "utilizatori activi",
+    "ft": "Tot ce poți dezactiva",
+    "f": [
+      [
+        "Ascunde Shorts",
+        "Elimină Shorts de pe pagina principală, bara laterală și rezultatele căutării."
+      ],
+      [
+        "Fără recomandări",
+        "Elimină sugestiile și conținutul de pe pagina principală pentru a evita scroll-ul infinit."
+      ],
+      [
+        "Fără comentarii",
+        "Ascunde secțiunea de comentarii când vrei doar să vezi videoclipul."
+      ],
+      [
+        "Liste negre",
+        "Blochează canale sau cuvinte anume, cu un buton rapid pentru a le adăuga direct din feed."
+      ],
+      [
+        "Mod Focus",
+        "Sesiuni cronometrate cu pauze, sau un mod rapid fără cronometru."
+      ],
+      [
+        "Program recurent",
+        "Programează Modul Focus să se activeze doar în zilele și la orele pe care le alegi."
+      ]
+    ],
+    "c2t": "Recuperează controlul în câteva secunde",
+    "c2l": "Gratuit, fără cont, fără permisiuni ciudate. Dezactivează doar ce te distrage.",
+    "flink": "Cod pe GitHub",
+    "modes": {
+      "off": "Oprit",
+      "always": "Mereu",
+      "timer": "Cronometru",
+      "schedule": "Program"
+    },
+    "sph": "Un singur mod. Zero excepții."
+  },
+  "pl": {
+    "name": "Polski",
+    "t": "FocusTube — Usuń rozpraszacze z YouTube",
+    "d": "FocusTube ukrywa Shorts, rekomendacje, sugestie i komentarze na YouTube. Blokuj kanały i słowa oraz włącz Tryb Skupienia z minutnikiem. Ponad 4000 użytkowników.",
+    "nf": "Funkcje",
+    "ni": "Zainstaluj",
+    "k": "Rozszerzenie Chrome dla YouTube",
+    "h1": "Przestań tracić czas na YouTube",
+    "lead": "FocusTube ukrywa Shorts, rekomendacje, sugestie i komentarze. Blokuj konkretne kanały i słowa, i włącz Tryb Skupienia z minutnikiem, gdy naprawdę musisz się skoncentrować.",
+    "cp": "Dodaj do Chrome — bezpłatnie",
+    "cs": "Zobacz, co robi",
+    "sn": "4000+",
+    "ss": "aktywnych użytkowników",
+    "ft": "Wszystko, co możesz wyłączyć",
+    "f": [
+      [
+        "Ukryj Shorts",
+        "Usuwa Shorts ze strony głównej, panelu bocznego i wyników wyszukiwania."
+      ],
+      [
+        "Bez rekomendacji",
+        "Usuwa sugestie i treści ze strony głównej, by uniknąć nieskończonego przewijania."
+      ],
+      [
+        "Bez komentarzy",
+        "Ukrywa sekcję komentarzy, gdy chcesz tylko obejrzeć wideo."
+      ],
+      [
+        "Czarne listy",
+        "Blokuj konkretne kanały lub słowa, z szybkim przyciskiem dodawania prosto z kanału."
+      ],
+      [
+        "Tryb Skupienia",
+        "Sesje z minutnikiem i przerwami lub szybki tryb bez minutnika."
+      ],
+      [
+        "Harmonogram cykliczny",
+        "Zaplanuj Tryb Skupienia tak, by włączał się tylko w wybrane dni i godziny."
+      ]
+    ],
+    "c2t": "Odzyskaj kontrolę w kilka sekund",
+    "c2l": "Bezpłatnie, bez konta, bez podejrzanych uprawnień. Wyłącz tylko to, co Cię rozprasza.",
+    "flink": "Kod na GitHub",
+    "modes": {
+      "off": "Wyłączony",
+      "always": "Zawsze",
+      "timer": "Minutnik",
+      "schedule": "Harmonogram"
+    },
+    "sph": "Jeden tryb. Zero wyjątków."
+  },
+  "cs": {
+    "name": "Čeština",
+    "t": "FocusTube — Zbavte se rušivých prvků na YouTube",
+    "d": "FocusTube skrývá Shorts, doporučení, návrhy a komentáře na YouTube. Blokujte kanály a slova a zapněte časovaný Režim soustředění. Více než 4 000 uživatelů.",
+    "nf": "Funkce",
+    "ni": "Instalovat",
+    "k": "Rozšíření Chrome pro YouTube",
+    "h1": "Přestaňte ztrácet čas na YouTube",
+    "lead": "FocusTube skrývá Shorts, doporučení, návrhy a komentáře. Blokujte konkrétní kanály a slova a zapněte časovaný Režim soustředění, kdykoli se potřebujete opravdu soustředit.",
+    "cp": "Přidat do Chromu — zdarma",
+    "cs": "Ukázat, co umí",
+    "sn": "4 000+",
+    "ss": "aktivních uživatelů",
+    "ft": "Vše, co můžete vypnout",
+    "f": [
+      [
+        "Skryje Shorts",
+        "Odstraní Shorts z domovské stránky, postranního panelu a výsledků vyhledávání."
+      ],
+      [
+        "Bez doporučení",
+        "Odstraní návrhy a obsah domovské stránky, aby se zabránilo nekonečnému scrollování."
+      ],
+      [
+        "Bez komentářů",
+        "Skryje sekci komentářů, když chcete jen sledovat video."
+      ],
+      [
+        "Černé listiny",
+        "Blokujte konkrétní kanály nebo slova pomocí rychlého tlačítka přímo ve feedu."
+      ],
+      [
+        "Režim soustředění",
+        "Časované relace s přestávkami nebo rychlý režim bez časovače."
+      ],
+      [
+        "Opakovaný plán",
+        "Naplánujte Režim soustředění tak, aby se aktivoval jen ve vybrané dny a hodiny."
+      ]
+    ],
+    "c2t": "Získejte kontrolu zpět během vteřin",
+    "c2l": "Zdarma, bez účtu, bez podivných oprávnění. Jen vypněte, co vás rozptyluje.",
+    "flink": "Kód na GitHubu",
+    "modes": {
+      "off": "Vypnuto",
+      "always": "Vždy",
+      "timer": "Časovač",
+      "schedule": "Rozvrh"
+    },
+    "sph": "Jeden režim. Žádné výjimky."
+  },
+  "sk": {
+    "name": "Slovenčina",
+    "t": "FocusTube — Zbavte sa rušivých prvkov na YouTube",
+    "d": "FocusTube skrýva Shorts, odporúčania, návrhy a komentáre na YouTube. Blokujte kanály a slová a zapnite časovaný Režim sústredenia. Viac ako 4 000 používateľov.",
+    "nf": "Funkcie",
+    "ni": "Nainštalovať",
+    "k": "Rozšírenie Chrome pre YouTube",
+    "h1": "Prestaňte strácať čas na YouTube",
+    "lead": "FocusTube skrýva Shorts, odporúčania, návrhy a komentáre. Blokujte konkrétne kanály a slová a zapnite časovaný Režim sústredenia, keď sa naozaj potrebujete sústrediť.",
+    "cp": "Pridať do Chrome — zdarma",
+    "cs": "Pozrite, čo dokáže",
+    "sn": "4 000+",
+    "ss": "aktívnych používateľov",
+    "ft": "Všetko, čo môžete vypnúť",
+    "f": [
+      [
+        "Skryje Shorts",
+        "Odstráni Shorts z domovskej stránky, postranného panela a výsledkov vyhľadávania."
+      ],
+      [
+        "Bez odporúčaní",
+        "Odstráni návrhy a obsah domovskej stránky, aby sa predišlo nekonečnému scrollovaniu."
+      ],
+      [
+        "Bez komentárov",
+        "Skryje sekciu komentárov, keď chcete len sledovať video."
+      ],
+      [
+        "Čierne listiny",
+        "Blokujte konkrétne kanály alebo slová pomocou rýchleho tlačidla priamo vo feede."
+      ],
+      [
+        "Režim sústredenia",
+        "Časované relácie s prestávkami alebo rýchly režim bez časovača."
+      ],
+      [
+        "Opakovaný plán",
+        "Naplánujte Režim sústredenia tak, aby sa aktivoval len vo vybrané dni a hodiny."
+      ]
+    ],
+    "c2t": "Získajte kontrolu späť v priebehu sekúnd",
+    "c2l": "Zdarma, bez účtu, bez čudných oprávnení. Len vypnite, čo vás rozptyľuje.",
+    "flink": "Kód na GitHube",
+    "modes": {
+      "off": "Vypnuté",
+      "always": "Vždy",
+      "timer": "Časovač",
+      "schedule": "Plán"
+    },
+    "sph": "Jeden režim. Žiadne výnimky."
+  },
+  "sl": {
+    "name": "Slovenščina",
+    "t": "FocusTube — Odstranite motnje na YouTubu",
+    "d": "FocusTube skrije Shorts, priporočila, predloge in komentarje na YouTubu. Blokirajte kanale in besede ter vklopite časovni Način osredotočenosti. Več kot 4.000 uporabnikov.",
+    "nf": "Funkcije",
+    "ni": "Namesti",
+    "k": "Razširitev za Chrome za YouTube",
+    "h1": "Nehajte izgubljati čas na YouTubu",
+    "lead": "FocusTube skrije Shorts, priporočila, predloge in komentarje. Blokirajte določene kanale in besede ter vklopite časovni Način osredotočenosti, kadar se morate res osredotočiti.",
+    "cp": "Dodaj v Chrome — brezplačno",
+    "cs": "Poglej, kaj naredi",
+    "sn": "4.000+",
+    "ss": "aktivnih uporabnikov",
+    "ft": "Vse, kar lahko izklopite",
+    "f": [
+      [
+        "Skrije Shorts",
+        "Odstrani Shorts z domače strani, stranske vrstice in rezultatov iskanja."
+      ],
+      [
+        "Brez priporočil",
+        "Odstrani predloge in vsebino domače strani, da preprečite neskončno drsenje."
+      ],
+      [
+        "Brez komentarjev",
+        "Skrije razdelek s komentarji, kadar želite le pogledati video."
+      ],
+      [
+        "Črne liste",
+        "Blokirajte določene kanale ali besede s hitrim gumbom neposredno iz vira."
+      ],
+      [
+        "Način osredotočenosti",
+        "Časovno omejene seje s premori ali hiter način brez časovnika."
+      ],
+      [
+        "Ponavljajoči urnik",
+        "Načrtujte Način osredotočenosti, da se vklopi le ob izbranih dnevih in urah."
+      ]
+    ],
+    "c2t": "Nadzor nazaj v nekaj sekundah",
+    "c2l": "Brezplačno, brez računa, brez čudnih dovoljenj. Samo izklopite, kar vas moti.",
+    "flink": "Koda na GitHubu",
+    "modes": {
+      "off": "Izklopljeno",
+      "always": "Vedno",
+      "timer": "Časovnik",
+      "schedule": "Urnik"
+    },
+    "sph": "En način. Nič izjem."
+  },
+  "hr": {
+    "name": "Hrvatski",
+    "t": "FocusTube — Uklonite YouTube ometanja",
+    "d": "FocusTube skriva Shorts, preporuke, prijedloge i komentare na YouTubeu. Blokirajte kanale i riječi te uključite vremenski Način fokusa. Više od 4.000 korisnika.",
+    "nf": "Značajke",
+    "ni": "Instaliraj",
+    "k": "Chrome ekstenzija za YouTube",
+    "h1": "Prestanite gubiti vrijeme na YouTubeu",
+    "lead": "FocusTube skriva Shorts, preporuke, prijedloge i komentare. Blokirajte određene kanale i riječi te uključite vremenski Način fokusa kad se stvarno morate koncentrirati.",
+    "cp": "Dodaj u Chrome — besplatno",
+    "cs": "Pogledaj što radi",
+    "sn": "4.000+",
+    "ss": "aktivnih korisnika",
+    "ft": "Sve što možete isključiti",
+    "f": [
+      [
+        "Skriva Shorts",
+        "Uklanja Shorts s početne stranice, bočne trake i rezultata pretrage."
+      ],
+      [
+        "Bez preporuka",
+        "Uklanja prijedloge i sadržaj početne stranice radi izbjegavanja beskonačnog skrolanja."
+      ],
+      [
+        "Bez komentara",
+        "Skriva odjeljak komentara kad samo želite pogledati video."
+      ],
+      [
+        "Crne liste",
+        "Blokirajte određene kanale ili riječi, s brzim gumbom za dodavanje izravno iz feeda."
+      ],
+      [
+        "Način fokusa",
+        "Vremenske sesije s pauzama ili brzi način bez mjerača vremena."
+      ],
+      [
+        "Ponavljajući raspored",
+        "Zakažite Način fokusa da se uključi samo na odabrane dane i sate."
+      ]
+    ],
+    "c2t": "Vratite kontrolu u nekoliko sekundi",
+    "c2l": "Besplatno, bez računa, bez čudnih dozvola. Samo isključite ono što vas ometa.",
+    "flink": "Kod na GitHubu",
+    "modes": {
+      "off": "Isključeno",
+      "always": "Uvijek",
+      "timer": "Tajmer",
+      "schedule": "Raspored"
+    },
+    "sph": "Jedan način. Nula iznimaka."
+  },
+  "sr": {
+    "name": "Српски",
+    "t": "FocusTube — Уклоните YouTube ометања",
+    "d": "FocusTube сакрива Shorts, препоруке, предлоге и коментаре на YouTube-у. Блокирајте канале и речи и укључите тајмером ограничен Режим фокуса. Више од 4.000 корисника.",
+    "nf": "Функције",
+    "ni": "Инсталирај",
+    "k": "Chrome екстензија за YouTube",
+    "h1": "Престаните да губите време на YouTube-у",
+    "lead": "FocusTube сакрива Shorts, препоруке, предлоге и коментаре. Блокирајте одређене канале и речи и укључите тајмером ограничен Режим фокуса када стварно морате да се концентришете.",
+    "cp": "Додај у Chrome — бесплатно",
+    "cs": "Погледај шта ради",
+    "sn": "4.000+",
+    "ss": "активних корисника",
+    "ft": "Све што можете да искључите",
+    "f": [
+      [
+        "Сакрива Shorts",
+        "Уклања Shorts са почетне странице, бочне траке и резултата претраге."
+      ],
+      [
+        "Без препорука",
+        "Уклања предлоге и садржај почетне странице да би се спречило бесконачно скроловање."
+      ],
+      [
+        "Без коментара",
+        "Сакрива секцију коментара када само желите да гледате видео."
+      ],
+      [
+        "Црне листе",
+        "Блокирајте одређене канале или речи, са брзим дугметом за додавање директно из фида."
+      ],
+      [
+        "Режим фокуса",
+        "Тајмерске сесије са паузама, или брзи режим без тајмера."
+      ],
+      [
+        "Понављајући распоред",
+        "Закажите Режим фокуса да се укључује само у одабране дане и сате."
+      ]
+    ],
+    "c2t": "Вратите контролу за неколико секунди",
+    "c2l": "Бесплатно, без налога, без чудних дозвола. Само искључите оно што вас омета.",
+    "flink": "Кôд на GitHub-у",
+    "modes": {
+      "off": "Isključeno",
+      "always": "Uvek",
+      "timer": "Tajmer",
+      "schedule": "Raspored"
+    },
+    "sph": "Jedan režim. Nula izuzetaka."
+  },
+  "ru": {
+    "name": "Русский",
+    "t": "FocusTube — Убираем отвлечения на YouTube",
+    "d": "FocusTube скрывает Shorts, рекомендации, предложения и комментарии на YouTube. Блокируйте каналы и слова, включайте Режим фокусировки с таймером. Более 4000 пользователей.",
+    "nf": "Функции",
+    "ni": "Установить",
+    "k": "Расширение Chrome для YouTube",
+    "h1": "Хватит терять время на YouTube",
+    "lead": "FocusTube скрывает Shorts, рекомендации, предложения и комментарии. Блокируйте конкретные каналы и слова, включайте Режим фокусировки с таймером, когда нужно по-настоящему сосредоточиться.",
+    "cp": "Добавить в Chrome — бесплатно",
+    "cs": "Посмотреть, что умеет",
+    "sn": "4000+",
+    "ss": "активных пользователей",
+    "ft": "Всё, что можно отключить",
+    "f": [
+      [
+        "Скрывает Shorts",
+        "Убирает Shorts с главной страницы, боковой панели и результатов поиска."
+      ],
+      [
+        "Без рекомендаций",
+        "Убирает предложения и контент главной страницы, чтобы избежать бесконечного скролла."
+      ],
+      [
+        "Без комментариев",
+        "Скрывает раздел комментариев, когда вы просто хотите посмотреть видео."
+      ],
+      [
+        "Чёрные списки",
+        "Блокируйте конкретные каналы или слова с помощью кнопки быстрого добавления прямо из ленты."
+      ],
+      [
+        "Режим фокусировки",
+        "Сессии с таймером и перерывами или быстрый режим без таймера."
+      ],
+      [
+        "Повторяющееся расписание",
+        "Настройте Режим фокусировки так, чтобы он включался только в выбранные дни и часы."
+      ]
+    ],
+    "c2t": "Вернуть контроль за секунды",
+    "c2l": "Бесплатно, без аккаунта, без странных разрешений. Просто отключите то, что вас отвлекает.",
+    "flink": "Код на GitHub",
+    "modes": {
+      "off": "Выкл",
+      "always": "Всегда",
+      "timer": "Таймер",
+      "schedule": "Расписание"
+    },
+    "sph": "Один режим. Никаких исключений."
+  },
+  "el": {
+    "name": "Ελληνικά",
+    "t": "FocusTube — Εξαλείψτε τους περισπασμούς του YouTube",
+    "d": "Το FocusTube αποκρύπτει Shorts, προτάσεις, εισηγήσεις και σχόλια στο YouTube. Αποκλείστε κανάλια και λέξεις και ενεργοποιήστε μια χρονομετρημένη Λειτουργία Συγκέντρωσης. Πάνω από 4.000 χρήστες.",
+    "nf": "Λειτουργίες",
+    "ni": "Εγκατάσταση",
+    "k": "Επέκταση Chrome για το YouTube",
+    "h1": "Σταματήστε να χάνετε χρόνο στο YouTube",
+    "lead": "Το FocusTube αποκρύπτει Shorts, προτάσεις, εισηγήσεις και σχόλια. Αποκλείστε συγκεκριμένα κανάλια και λέξεις και ενεργοποιήστε μια χρονομετρημένη Λειτουργία Συγκέντρωσης όποτε πρέπει πραγματικά να συγκεντρωθείτε.",
+    "cp": "Προσθήκη στο Chrome — δωρεάν",
+    "cs": "Δείτε τι κάνει",
+    "sn": "4.000+",
+    "ss": "ενεργοί χρήστες",
+    "ft": "Όλα όσα μπορείτε να απενεργοποιήσετε",
+    "f": [
+      [
+        "Απόκρυψη Shorts",
+        "Αφαιρεί τα Shorts από την αρχική σελίδα, την πλαϊνή μπάρα και τα αποτελέσματα αναζήτησης."
+      ],
+      [
+        "Χωρίς προτάσεις",
+        "Αφαιρεί τις εισηγήσεις και το περιεχόμενο της αρχικής σελίδας για να αποφευχθεί η ατέρμονη κύλιση."
+      ],
+      [
+        "Χωρίς σχόλια",
+        "Αποκρύπτει την ενότητα σχολίων όταν θέλετε απλώς να δείτε το βίντεο."
+      ],
+      [
+        "Μαύρες λίστες",
+        "Αποκλείστε συγκεκριμένα κανάλια ή λέξεις, με ένα γρήγορο κουμπί για προσθήκη απευθείας από τη ροή."
+      ],
+      [
+        "Λειτουργία Συγκέντρωσης",
+        "Χρονομετρημένες συνεδρίες με διαλείμματα ή γρήγορη λειτουργία χωρίς χρονόμετρο."
+      ],
+      [
+        "Επαναλαμβανόμενο πρόγραμμα",
+        "Προγραμματίστε τη Λειτουργία Συγκέντρωσης να ενεργοποιείται μόνο τις ημέρες και ώρες που επιλέγετε."
+      ]
+    ],
+    "c2t": "Πάρτε τον έλεγχο πίσω σε δευτερόλεπτα",
+    "c2l": "Δωρεάν, χωρίς λογαριασμό, χωρίς περίεργα δικαιώματα. Απενεργοποιήστε απλά ό,τι σας αποσπά.",
+    "flink": "Κώδικας στο GitHub",
+    "modes": {
+      "off": "Ανενεργό",
+      "always": "Πάντα",
+      "timer": "Χρονόμετρο",
+      "schedule": "Πρόγραμμα"
+    },
+    "sph": "Μία λειτουργία. Καμία εξαίρεση."
+  },
+  "tr": {
+    "name": "Türkçe",
+    "t": "FocusTube — YouTube dikkat dağıtıcılarını kaldırın",
+    "d": "FocusTube, YouTube'da Shorts, önerileri, tavsiyeleri ve yorumları gizler. Kanalları ve kelimeleri engelleyin, zamanlayıcılı Odak Modu'nu açın. 4.000'den fazla kullanıcı.",
+    "nf": "Özellikler",
+    "ni": "Yükle",
+    "k": "YouTube için Chrome uzantısı",
+    "h1": "YouTube'da zaman kaybetmeyi bırakın",
+    "lead": "FocusTube; Shorts, önerileri, tavsiyeleri ve yorumları gizler. Belirli kanalları ve kelimeleri engelleyin, gerçekten odaklanmanız gerektiğinde zamanlayıcılı Odak Modu'nu açın.",
+    "cp": "Chrome'a ekle — ücretsiz",
+    "cs": "Ne yaptığını gör",
+    "sn": "4.000+",
+    "ss": "aktif kullanıcı",
+    "ft": "Kapatabileceğin her şey",
+    "f": [
+      [
+        "Shorts'u gizle",
+        "Shorts'u ana sayfadan, kenar çubuğundan ve arama sonuçlarından kaldırır."
+      ],
+      [
+        "Önerisiz",
+        "Sonsuz kaydırmayı önlemek için ana sayfadaki önerileri ve içerikleri kaldırır."
+      ],
+      [
+        "Yorumsuz",
+        "Sadece videoyu izlemek istediğinizde yorumlar bölümünü gizler."
+      ],
+      [
+        "Kara listeler",
+        "Belirli kanalları veya kelimeleri, akıştan doğrudan eklemek için hızlı bir düğmeyle engelleyin."
+      ],
+      [
+        "Odak Modu",
+        "Molalarla zamanlanmış oturumlar veya zamanlayıcısız hızlı mod."
+      ],
+      [
+        "Tekrarlanan zamanlama",
+        "Odak Modu'nu sadece seçtiğiniz gün ve saatlerde etkinleşecek şekilde planlayın."
+      ]
+    ],
+    "c2t": "Kontrolü saniyeler içinde geri alın",
+    "c2l": "Ücretsiz, hesap yok, tuhaf izinler yok. Sadece sizi dağıtan şeyi kapatın.",
+    "flink": "GitHub'daki kod",
+    "modes": {
+      "off": "Kapalı",
+      "always": "Her Zaman",
+      "timer": "Zamanlayıcı",
+      "schedule": "Program"
+    },
+    "sph": "Tek bir mod. Sıfır istisna."
+  },
+  "hu": {
+    "name": "Magyar",
+    "t": "FocusTube — Szüntesd meg a YouTube-figyelemelvonást",
+    "d": "A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat a YouTube-on. Blokkolj csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot. Több mint 4000 felhasználó.",
+    "nf": "Funkciók",
+    "ni": "Telepítés",
+    "k": "Chrome-bővítmény a YouTube-hoz",
+    "h1": "Ne vesztegess több időt a YouTube-on",
+    "lead": "A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat. Blokkolj konkrét csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot, amikor igazán koncentrálnod kell.",
+    "cp": "Hozzáadás a Chrome-hoz — ingyenes",
+    "cs": "Nézd meg, mit csinál",
+    "sn": "4000+",
+    "ss": "aktív felhasználó",
+    "ft": "Minden, amit kikapcsolhatsz",
+    "f": [
+      [
+        "Shorts elrejtése",
+        "Eltávolítja a Shorts videókat a kezdőlapról, az oldalsávból és a keresési eredményekből."
+      ],
+      [
+        "Ajánlások nélkül",
+        "Eltávolítja a javaslatokat és a kezdőlap tartalmát a végtelen görgetés elkerülésére."
+      ],
+      [
+        "Hozzászólások nélkül",
+        "Elrejti a hozzászólás szekciót, ha csak a videót akarod nézni."
+      ],
+      [
+        "Feketelisták",
+        "Blokkolj konkrét csatornákat vagy szavakat egy gyors gombbal, közvetlenül a feedből."
+      ],
+      [
+        "Fókusz mód",
+        "Időzített szakaszok szünetekkel, vagy gyors mód időzítő nélkül."
+      ],
+      [
+        "Ismétlődő ütemezés",
+        "Ütemezd a Fókusz módot, hogy csak a kiválasztott napokon és időpontokban aktiválódjon."
+      ]
+    ],
+    "c2t": "Szerezd vissza az irányítást másodpercek alatt",
+    "c2l": "Ingyenes, fiók nélkül, furcsa engedélyek nélkül. Csak kapcsold ki, ami elvonja a figyelmedet.",
+    "flink": "Kód a GitHubon",
+    "modes": {
+      "off": "Ki",
+      "always": "Mindig",
+      "timer": "Időzítő",
+      "schedule": "Ütemezés"
+    },
+    "sph": "Egy mód. Nulla kivétel."
+  },
+  "et": {
+    "name": "Eesti",
+    "t": "FocusTube — Eemalda YouTube'i häirivad tegurid",
+    "d": "FocusTube peidab Shorts'id, soovitused ja kommentaarid YouTube'is. Blokeeri kanaleid ja sõnu ning lülita sisse taimeriga Fookusrežiim. Üle 4000 kasutaja.",
+    "nf": "Funktsioonid",
+    "ni": "Installi",
+    "k": "Chrome'i laiendus YouTube'ile",
+    "h1": "Lõpeta aja raiskamine YouTube'is",
+    "lead": "FocusTube peidab Shorts'id, soovitused ja kommentaarid. Blokeeri konkreetseid kanaleid ja sõnu ning lülita sisse taimeriga Fookusrežiim, kui pead tõesti keskenduma.",
+    "cp": "Lisa Chrome'i — tasuta",
+    "cs": "Vaata, mida see teeb",
+    "sn": "4000+",
+    "ss": "aktiivset kasutajat",
+    "ft": "Kõik, mida saad välja lülitada",
+    "f": [
+      [
+        "Peidab Shorts'id",
+        "Eemaldab Shorts'id avalehelt, kõrvalribalt ja otsingutulemustest."
+      ],
+      [
+        "Soovitusteta",
+        "Eemaldab avalehe soovitused ja sisu, et vältida lõputut kerimist."
+      ],
+      [
+        "Kommentaarideta",
+        "Peidab kommentaaride jaotise, kui soovid vaadata ainult videot."
+      ],
+      [
+        "Mustad nimekirjad",
+        "Blokeeri konkreetseid kanaleid või sõnu kiire nupuga otse voost."
+      ],
+      [
+        "Fookusrežiim",
+        "Taimeriga seansid pausidega või kiire režiim ilma taimerita."
+      ],
+      [
+        "Korduv ajakava",
+        "Planeeri Fookusrežiim aktiveeruma ainult valitud päevadel ja kellaaegadel."
+      ]
+    ],
+    "c2t": "Võta kontroll tagasi sekunditega",
+    "c2l": "Tasuta, kontot ei vaja, kummalisi õigusi ei vaja. Lülita välja vaid see, mis segab.",
+    "flink": "Kood GitHubis",
+    "modes": {
+      "off": "Väljas",
+      "always": "Alati",
+      "timer": "Taimer",
+      "schedule": "Ajakava"
+    },
+    "sph": "Üks režiim. Null erandit."
+  },
+  "lv": {
+    "name": "Latviešu",
+    "t": "FocusTube — Novērsiet YouTube uzmanības novēršanu",
+    "d": "FocusTube paslēpj Shorts, ieteikumus, priekšlikumus un komentārus YouTube. Blokējiet kanālus un vārdus, un ieslēdziet taimerim pakļautu Fokusa režīmu. Vairāk nekā 4000 lietotāju.",
+    "nf": "Funkcijas",
+    "ni": "Instalēt",
+    "k": "Chrome paplašinājums YouTube",
+    "h1": "Beidziet tērēt laiku YouTube",
+    "lead": "FocusTube paslēpj Shorts, ieteikumus, priekšlikumus un komentārus. Blokējiet konkrētus kanālus un vārdus, un ieslēdziet taimerim pakļautu Fokusa režīmu, kad tiešām jākoncentrējas.",
+    "cp": "Pievienot Chrome — bezmaksas",
+    "cs": "Apskatiet, ko tas dara",
+    "sn": "4000+",
+    "ss": "aktīvo lietotāju",
+    "ft": "Viss, ko varat izslēgt",
+    "f": [
+      [
+        "Paslēpj Shorts",
+        "Noņem Shorts no sākumlapas, sānjoslas un meklēšanas rezultātiem."
+      ],
+      [
+        "Bez ieteikumiem",
+        "Noņem sākumlapas priekšlikumus un saturu, lai izvairītos no bezgalīgas ritināšanas."
+      ],
+      [
+        "Bez komentāriem",
+        "Paslēpj komentāru sadaļu, kad vēlaties tikai noskatīties video."
+      ],
+      [
+        "Melnie saraksti",
+        "Blokējiet konkrētus kanālus vai vārdus ar ātru pogu tieši no plūsmas."
+      ],
+      [
+        "Fokusa režīms",
+        "Taimerim pakļautas sesijas ar pārtraukumiem vai ātrs režīms bez taimera."
+      ],
+      [
+        "Atkārtots grafiks",
+        "Ieplānojiet Fokusa režīmu tā, lai tas aktivizētos tikai izvēlētajās dienās un laikos."
+      ]
+    ],
+    "c2t": "Atgūstiet kontroli sekundēs",
+    "c2l": "Bezmaksas, bez konta, bez dīvainām atļaujām. Vienkārši izslēdziet to, kas novērš uzmanību.",
+    "flink": "Kods GitHub",
+    "modes": {
+      "off": "Izslēgts",
+      "always": "Vienmēr",
+      "timer": "Taimeris",
+      "schedule": "Grafiks"
+    },
+    "sph": "Viens režīms. Nulle izņēmumu."
+  },
+  "lt": {
+    "name": "Lietuvių",
+    "t": "FocusTube — Pašalinkite YouTube blaškiklius",
+    "d": "FocusTube paslepia Shorts, rekomendacijas, pasiūlymus ir komentarus YouTube. Blokuokite kanalus ir žodžius, įjunkite laikmačiu valdomą Fokuso režimą. Daugiau nei 4000 vartotojų.",
+    "nf": "Funkcijos",
+    "ni": "Įdiegti",
+    "k": "Chrome plėtinys YouTube",
+    "h1": "Nebedelskite laiko YouTube",
+    "lead": "FocusTube paslepia Shorts, rekomendacijas, pasiūlymus ir komentarus. Blokuokite konkrečius kanalus ir žodžius, įjunkite laikmačiu valdomą Fokuso režimą, kai tikrai reikia susikaupti.",
+    "cp": "Pridėti į Chrome — nemokamai",
+    "cs": "Pažiūrėkite, ką jis daro",
+    "sn": "4000+",
+    "ss": "aktyvių vartotojų",
+    "ft": "Visa, ką galite išjungti",
+    "f": [
+      [
+        "Paslepia Shorts",
+        "Pašalina Shorts iš pradinio puslapio, šoninės juostos ir paieškos rezultatų."
+      ],
+      [
+        "Be rekomendacijų",
+        "Pašalina pasiūlymus ir turinį iš pradinio puslapio, kad išvengtumėte begalinio slinkimo."
+      ],
+      [
+        "Be komentarų",
+        "Paslepia komentarų skiltį, kai norite tik pažiūrėti vaizdo įrašą."
+      ],
+      [
+        "Juodieji sąrašai",
+        "Blokuokite konkrečius kanalus ar žodžius greitu mygtuku tiesiai iš srauto."
+      ],
+      [
+        "Fokuso režimas",
+        "Laikmačiu valdomos sesijos su pertraukomis arba greitas režimas be laikmačio."
+      ],
+      [
+        "Pasikartojantis grafikas",
+        "Suplanuokite Fokuso režimą, kad jis įsijungtų tik pasirinktomis dienomis ir valandomis."
+      ]
+    ],
+    "c2t": "Atgaukite kontrolę per kelias sekundes",
+    "c2l": "Nemokamai, be paskyros, be keistų leidimų. Tiesiog išjunkite tai, kas blaško.",
+    "flink": "Kodas GitHub",
+    "modes": {
+      "off": "Išjungta",
+      "always": "Visada",
+      "timer": "Laikmatis",
+      "schedule": "Tvarkaraštis"
+    },
+    "sph": "Vienas režimas. Jokių išimčių."
+  },
+  "sv": {
+    "name": "Svenska",
+    "t": "FocusTube — Ta bort YouTube-distraktioner",
+    "d": "FocusTube döljer Shorts, rekommendationer, förslag och kommentarer på YouTube. Blockera kanaler och ord, och aktivera ett tidsinställt Fokusläge. Över 4 000 användare.",
+    "nf": "Funktioner",
+    "ni": "Installera",
+    "k": "Chrome-tillägg för YouTube",
+    "h1": "Sluta slösa tid på YouTube",
+    "lead": "FocusTube döljer Shorts, rekommendationer, förslag och kommentarer. Blockera specifika kanaler och ord, och aktivera ett tidsinställt Fokusläge när du verkligen behöver koncentrera dig.",
+    "cp": "Lägg till i Chrome — gratis",
+    "cs": "Se vad det gör",
+    "sn": "4 000+",
+    "ss": "aktiva användare",
+    "ft": "Allt du kan stänga av",
+    "f": [
+      [
+        "Dölj Shorts",
+        "Tar bort Shorts från startsidan, sidofältet och sökresultaten."
+      ],
+      [
+        "Inga rekommendationer",
+        "Tar bort förslag och innehåll från startsidan för att undvika oändlig scrollning."
+      ],
+      [
+        "Inga kommentarer",
+        "Döljer kommentarsfältet när du bara vill titta på videon."
+      ],
+      [
+        "Svarta listor",
+        "Blockera specifika kanaler eller ord, med en snabbknapp för att lägga till dem direkt från flödet."
+      ],
+      [
+        "Fokusläge",
+        "Tidsinställda sessioner med pauser, eller ett snabbt läge utan timer."
+      ],
+      [
+        "Återkommande schema",
+        "Schemalägg Fokusläget så att det bara aktiveras de dagar och tider du väljer."
+      ]
+    ],
+    "c2t": "Ta tillbaka kontrollen på några sekunder",
+    "c2l": "Gratis, inget konto, inga konstiga behörigheter. Stäng bara av det som distraherar dig.",
+    "flink": "Kod på GitHub",
+    "modes": {
+      "off": "Av",
+      "always": "Alltid",
+      "timer": "Timer",
+      "schedule": "Schema"
+    },
+    "sph": "Ett läge. Inga undantag."
+  },
+  "no": {
+    "name": "Norsk",
+    "t": "FocusTube — Fjern YouTube-distraksjoner",
+    "d": "FocusTube skjuler Shorts, anbefalinger, forslag og kommentarer på YouTube. Blokker kanaler og ord, og aktiver en tidsinnstilt Fokusmodus. Over 4 000 brukere.",
+    "nf": "Funksjoner",
+    "ni": "Installer",
+    "k": "Chrome-utvidelse for YouTube",
+    "h1": "Slutt å kaste bort tid på YouTube",
+    "lead": "FocusTube skjuler Shorts, anbefalinger, forslag og kommentarer. Blokker spesifikke kanaler og ord, og aktiver en tidsinnstilt Fokusmodus når du virkelig må konsentrere deg.",
+    "cp": "Legg til i Chrome — gratis",
+    "cs": "Se hva den gjør",
+    "sn": "4 000+",
+    "ss": "aktive brukere",
+    "ft": "Alt du kan slå av",
+    "f": [
+      [
+        "Skjuler Shorts",
+        "Fjerner Shorts fra hjemmesiden, sidepanelet og søkeresultatene."
+      ],
+      [
+        "Ingen anbefalinger",
+        "Fjerner forslag og innhold fra hjemmesiden for å unngå uendelig scrolling."
+      ],
+      [
+        "Ingen kommentarer",
+        "Skjuler kommentarfeltet når du bare vil se videoen."
+      ],
+      [
+        "Svartelister",
+        "Blokker spesifikke kanaler eller ord, med en rask knapp for å legge dem til direkte fra feeden."
+      ],
+      [
+        "Fokusmodus",
+        "Tidsinnstilte sesjoner med pauser, eller en rask modus uten tidtaker."
+      ],
+      [
+        "Gjentakende tidsplan",
+        "Planlegg Fokusmodus slik at den bare aktiveres de dagene og tidene du velger."
+      ]
+    ],
+    "c2t": "Ta tilbake kontrollen på sekunder",
+    "c2l": "Gratis, ingen konto, ingen rare tillatelser. Bare slå av det som distraherer deg.",
+    "flink": "Kode på GitHub",
+    "modes": {
+      "off": "Av",
+      "always": "Alltid",
+      "timer": "Tidtaker",
+      "schedule": "Tidsplan"
+    },
+    "sph": "Én modus. Ingen unntak."
+  },
+  "da": {
+    "name": "Dansk",
+    "t": "FocusTube — Fjern YouTube-distraktioner",
+    "d": "FocusTube skjuler Shorts, anbefalinger, forslag og kommentarer på YouTube. Bloker kanaler og ord, og aktiver en tidsindstillet Fokustilstand. Over 4.000 brugere.",
+    "nf": "Funktioner",
+    "ni": "Installer",
+    "k": "Chrome-udvidelse til YouTube",
+    "h1": "Stop med at spilde tid på YouTube",
+    "lead": "FocusTube skjuler Shorts, anbefalinger, forslag og kommentarer. Bloker specifikke kanaler og ord, og aktiver en tidsindstillet Fokustilstand, når du virkelig skal koncentrere dig.",
+    "cp": "Tilføj til Chrome — gratis",
+    "cs": "Se hvad den gør",
+    "sn": "4.000+",
+    "ss": "aktive brugere",
+    "ft": "Alt du kan slå fra",
+    "f": [
+      [
+        "Skjuler Shorts",
+        "Fjerner Shorts fra forsiden, sidepanelet og søgeresultaterne."
+      ],
+      [
+        "Ingen anbefalinger",
+        "Fjerner forslag og indhold fra forsiden for at undgå uendelig scrolling."
+      ],
+      [
+        "Ingen kommentarer",
+        "Skjuler kommentarsektionen, når du bare vil se videoen."
+      ],
+      [
+        "Sortlister",
+        "Bloker specifikke kanaler eller ord med en hurtig knap til at tilføje dem direkte fra feedet."
+      ],
+      [
+        "Fokustilstand",
+        "Tidsindstillede sessioner med pauser, eller en hurtig tilstand uden timer."
+      ],
+      [
+        "Tilbagevendende skema",
+        "Planlæg Fokustilstand, så den kun aktiveres de dage og tidspunkter, du vælger."
+      ]
+    ],
+    "c2t": "Få kontrollen tilbage på få sekunder",
+    "c2l": "Gratis, ingen konto, ingen underlige tilladelser. Slå bare det fra, der distraherer dig.",
+    "flink": "Kode på GitHub",
+    "modes": {
+      "off": "Fra",
+      "always": "Altid",
+      "timer": "Timer",
+      "schedule": "Tidsplan"
+    },
+    "sph": "Én tilstand. Ingen undtagelser."
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "t": "FocusTube — Hilangkan gangguan YouTube",
+    "d": "FocusTube menyembunyikan Shorts, rekomendasi, saran, dan komentar di YouTube. Blokir channel dan kata, serta aktifkan Mode Fokus bertimer. Lebih dari 4.000 pengguna.",
+    "nf": "Fitur",
+    "ni": "Instal",
+    "k": "Ekstensi Chrome untuk YouTube",
+    "h1": "Berhenti buang waktu di YouTube",
+    "lead": "FocusTube menyembunyikan Shorts, rekomendasi, saran, dan komentar. Blokir channel dan kata tertentu, serta aktifkan Mode Fokus bertimer saat kamu benar-benar perlu berkonsentrasi.",
+    "cp": "Tambahkan ke Chrome — gratis",
+    "cs": "Lihat cara kerjanya",
+    "sn": "4.000+",
+    "ss": "pengguna aktif",
+    "ft": "Semua yang bisa kamu matikan",
+    "f": [
+      [
+        "Sembunyikan Shorts",
+        "Menghapus Shorts dari halaman utama, sidebar, dan hasil pencarian."
+      ],
+      [
+        "Tanpa rekomendasi",
+        "Menghapus saran dan konten halaman utama untuk menghindari scroll tanpa henti."
+      ],
+      [
+        "Tanpa komentar",
+        "Menyembunyikan bagian komentar saat kamu hanya ingin menonton video."
+      ],
+      [
+        "Daftar hitam",
+        "Blokir channel atau kata tertentu, dengan tombol cepat untuk menambahkannya langsung dari feed."
+      ],
+      [
+        "Mode Fokus",
+        "Sesi bertimer dengan istirahat, atau mode cepat tanpa timer."
+      ],
+      [
+        "Jadwal berulang",
+        "Jadwalkan Mode Fokus agar aktif hanya pada hari dan jam yang kamu pilih."
+      ]
+    ],
+    "c2t": "Ambil kembali kendali dalam hitungan detik",
+    "c2l": "Gratis, tanpa akun, tanpa izin aneh. Matikan saja yang mengganggumu.",
+    "flink": "Kode di GitHub",
+    "modes": {
+      "off": "Nonaktif",
+      "always": "Selalu",
+      "timer": "Timer",
+      "schedule": "Jadwal"
+    },
+    "sph": "Satu mode. Tanpa pengecualian."
+  },
+  "ms": {
+    "name": "Bahasa Melayu",
+    "t": "FocusTube — Hapuskan gangguan YouTube",
+    "d": "FocusTube menyembunyikan Shorts, cadangan, saranan dan komen di YouTube. Sekat saluran dan perkataan, serta aktifkan Mod Fokus bermasa. Lebih 4,000 pengguna.",
+    "nf": "Ciri-ciri",
+    "ni": "Pasang",
+    "k": "Sambungan Chrome untuk YouTube",
+    "h1": "Berhenti membuang masa di YouTube",
+    "lead": "FocusTube menyembunyikan Shorts, cadangan, saranan dan komen. Sekat saluran dan perkataan tertentu, serta aktifkan Mod Fokus bermasa apabila anda benar-benar perlu memberi tumpuan.",
+    "cp": "Tambah ke Chrome — percuma",
+    "cs": "Lihat apa yang ia lakukan",
+    "sn": "4,000+",
+    "ss": "pengguna aktif",
+    "ft": "Semua yang boleh anda matikan",
+    "f": [
+      [
+        "Sembunyikan Shorts",
+        "Mengalih keluar Shorts daripada halaman utama, bar sisi dan keputusan carian."
+      ],
+      [
+        "Tanpa cadangan",
+        "Mengalih keluar saranan dan kandungan halaman utama untuk mengelakkan skrol tanpa henti."
+      ],
+      [
+        "Tanpa komen",
+        "Menyembunyikan bahagian komen apabila anda cuma mahu menonton video."
+      ],
+      [
+        "Senarai hitam",
+        "Sekat saluran atau perkataan tertentu, dengan butang pantas untuk menambahnya terus daripada suapan."
+      ],
+      [
+        "Mod Fokus",
+        "Sesi bermasa dengan rehat, atau mod pantas tanpa pemasa."
+      ],
+      [
+        "Jadual berulang",
+        "Jadualkan Mod Fokus supaya aktif hanya pada hari dan waktu yang anda pilih."
+      ]
+    ],
+    "c2t": "Dapatkan semula kawalan dalam beberapa saat",
+    "c2l": "Percuma, tanpa akaun, tanpa kebenaran pelik. Matikan saja apa yang mengganggu anda.",
+    "flink": "Kod di GitHub",
+    "modes": {
+      "off": "Mati",
+      "always": "Sentiasa",
+      "timer": "Pemasa",
+      "schedule": "Jadual"
+    },
+    "sph": "Satu mod. Tiada pengecualian."
+  },
+  "fil": {
+    "name": "Filipino",
+    "t": "FocusTube — Alisin ang mga distraction sa YouTube",
+    "d": "Itinatago ng FocusTube ang Shorts, rekomendasyon, suhestiyon, at komento sa YouTube. I-block ang mga channel at salita, at i-activate ang time-based Focus Mode. Mahigit 4,000 user.",
+    "nf": "Mga Feature",
+    "ni": "I-install",
+    "k": "Chrome extension para sa YouTube",
+    "h1": "Tigilan na ang pag-aaksaya ng oras sa YouTube",
+    "lead": "Itinatago ng FocusTube ang Shorts, rekomendasyon, suhestiyon, at komento. I-block ang mga partikular na channel at salita, at i-activate ang time-based Focus Mode kapag kailangan mo talagang mag-concentrate.",
+    "cp": "Idagdag sa Chrome — libre",
+    "cs": "Tingnan ang gawain nito",
+    "sn": "4,000+",
+    "ss": "aktibong user",
+    "ft": "Lahat ng puwede mong i-off",
+    "f": [
+      [
+        "Itago ang Shorts",
+        "Aalisin ang Shorts sa home page, sidebar, at search results."
+      ],
+      [
+        "Walang rekomendasyon",
+        "Aalisin ang mga suhestiyon at content ng home page para maiwasan ang walang-hanggang scroll."
+      ],
+      [
+        "Walang komento",
+        "Itatago ang comments section kung gusto mo lang panoorin ang video."
+      ],
+      [
+        "Mga blacklist",
+        "I-block ang partikular na channel o salita, may quick button para idagdag mula sa feed mismo."
+      ],
+      [
+        "Focus Mode",
+        "May time na session na may break, o quick mode na walang timer."
+      ],
+      [
+        "Recurring schedule",
+        "I-schedule ang Focus Mode para mag-activate lang sa mga araw at oras na pinili mo."
+      ]
+    ],
+    "c2t": "Bawiin ang kontrol sa ilang segundo",
+    "c2l": "Libre, walang account, walang kakaibang permission. I-off lang ang nakaka-distract sa'yo.",
+    "flink": "Code sa GitHub",
+    "modes": {
+      "off": "Naka-off",
+      "always": "Palagi",
+      "timer": "Timer",
+      "schedule": "Iskedyul"
+    },
+    "sph": "Isang mode. Walang exception."
+  },
+  "ja": {
+    "name": "日本語",
+    "t": "FocusTube — YouTubeの気を散らす要素を排除",
+    "d": "FocusTubeはYouTubeのShorts、おすすめ、提案、コメントを非表示にします。チャンネルや単語をブロックし、タイマー付きフォーカスモードを有効にできます。4,000人以上が利用中。",
+    "nf": "機能",
+    "ni": "インストール",
+    "k": "YouTube用Chrome拡張機能",
+    "h1": "YouTubeで時間を無駄にするのはやめよう",
+    "lead": "FocusTubeはShorts、おすすめ、提案、コメントを非表示にします。特定のチャンネルや単語をブロックし、本当に集中したいときはタイマー付きフォーカスモードを使いましょう。",
+    "cp": "Chromeに追加 — 無料",
+    "cs": "機能を見る",
+    "sn": "4,000+",
+    "ss": "アクティブユーザー",
+    "ft": "オフにできること",
+    "f": [
+      [
+        "Shortsを非表示",
+        "ホーム画面、サイドバー、検索結果からShortsを削除します。"
+      ],
+      [
+        "おすすめなし",
+        "無限スクロールを防ぐため、ホーム画面の提案とコンテンツを削除します。"
+      ],
+      [
+        "コメントなし",
+        "動画だけを見たいときにコメント欄を非表示にします。"
+      ],
+      [
+        "ブロックリスト",
+        "特定のチャンネルや単語をブロックし、フィードから直接追加できるクイックボタンも利用できます。"
+      ],
+      [
+        "フォーカスモード",
+        "休憩付きのタイマーセッション、またはタイマーなしのクイックモード。"
+      ],
+      [
+        "繰り返しスケジュール",
+        "選んだ曜日と時間だけフォーカスモードが有効になるよう設定できます。"
+      ]
+    ],
+    "c2t": "数秒でコントロールを取り戻そう",
+    "c2l": "無料、アカウント不要、怪しい権限なし。気を散らすものをオフにするだけです。",
+    "flink": "GitHubのコード",
+    "modes": {
+      "off": "オフ",
+      "always": "常時",
+      "timer": "タイマー",
+      "schedule": "スケジュール"
+    },
+    "sph": "1つのモードだけ。例外なし。"
+  },
+  "ko": {
+    "name": "한국어",
+    "t": "FocusTube — YouTube의 방해 요소 제거",
+    "d": "FocusTube는 YouTube의 Shorts, 추천, 제안, 댓글을 숨깁니다. 채널과 단어를 차단하고 타이머 기반 포커스 모드를 활성화하세요. 4,000명 이상이 사용 중입니다.",
+    "nf": "기능",
+    "ni": "설치",
+    "k": "YouTube용 Chrome 확장 프로그램",
+    "h1": "YouTube에서 시간 낭비 그만하기",
+    "lead": "FocusTube는 Shorts, 추천, 제안, 댓글을 숨깁니다. 특정 채널과 단어를 차단하고, 정말 집중해야 할 때는 타이머 기반 포커스 모드를 켜세요.",
+    "cp": "Chrome에 추가 — 무료",
+    "cs": "기능 보기",
+    "sn": "4,000+",
+    "ss": "활성 사용자",
+    "ft": "끌 수 있는 모든 기능",
+    "f": [
+      [
+        "Shorts 숨기기",
+        "홈 화면, 사이드바, 검색 결과에서 Shorts를 제거합니다."
+      ],
+      [
+        "추천 없음",
+        "무한 스크롤을 막기 위해 홈 화면의 제안과 콘텐츠를 제거합니다."
+      ],
+      [
+        "댓글 없음",
+        "영상만 보고 싶을 때 댓글 섹션을 숨깁니다."
+      ],
+      [
+        "차단 목록",
+        "특정 채널이나 단어를 차단하고, 피드에서 바로 추가할 수 있는 빠른 버튼도 제공합니다."
+      ],
+      [
+        "포커스 모드",
+        "휴식이 포함된 타이머 세션 또는 타이머 없는 빠른 모드."
+      ],
+      [
+        "반복 일정",
+        "선택한 요일과 시간에만 포커스 모드가 활성화되도록 예약하세요."
+      ]
+    ],
+    "c2t": "몇 초 만에 통제권을 되찾으세요",
+    "c2l": "무료, 계정 불필요, 이상한 권한 없음. 방해되는 것만 끄면 됩니다.",
+    "flink": "GitHub의 코드",
+    "modes": {
+      "off": "꺼짐",
+      "always": "항상",
+      "timer": "타이머",
+      "schedule": "일정"
+    },
+    "sph": "하나의 모드. 예외 없음."
+  },
+  "he": {
+    "name": "עברית",
+    "dir": "rtl",
+    "t": "FocusTube — הסירו הסחות דעת מיוטיוב",
+    "d": "FocusTube מסתיר Shorts, הצעות, המלצות ותגובות ביוטיוב. חוסמים ערוצים ומילים, ומפעילים מצב ריכוז עם טיימר. יותר מ-4,000 משתמשים.",
+    "nf": "תכונות",
+    "ni": "התקנה",
+    "k": "תוסף כרום ליוטיוב",
+    "h1": "תפסיקו לבזבז זמן ביוטיוב",
+    "lead": "FocusTube מסתיר Shorts, הצעות, המלצות ותגובות. חוסמים ערוצים ומילים ספציפיים, ומפעילים מצב ריכוז עם טיימר בכל פעם שצריך להתרכז באמת.",
+    "cp": "הוספה לכרום — בחינם",
+    "cs": "ראו מה זה עושה",
+    "sn": "+4,000",
+    "ss": "משתמשים פעילים",
+    "ft": "כל מה שאפשר לכבות",
+    "f": [
+      [
+        "הסתרת Shorts",
+        "מסיר את ה-Shorts מהדף הבית, סרגל הצד ותוצאות החיפוש."
+      ],
+      [
+        "בלי המלצות",
+        "מסיר הצעות ותוכן מדף הבית כדי למנוע גלילה אינסופית."
+      ],
+      [
+        "בלי תגובות",
+        "מסתיר את אזור התגובות כשרוצים רק לראות את הסרטון."
+      ],
+      [
+        "רשימות חסימה",
+        "חוסמים ערוצים או מילים ספציפיים, עם כפתור מהיר להוספה ישירות מהפיד."
+      ],
+      [
+        "מצב ריכוז",
+        "מפגשים מתוזמנים עם הפסקות, או מצב מהיר בלי טיימר."
+      ],
+      [
+        "לוח זמנים חוזר",
+        "קבעו שהמצב ריכוז יופעל רק בימים ובשעות שתבחרו."
+      ]
+    ],
+    "c2t": "קבלו את השליטה בחזרה בתוך שניות",
+    "c2l": "בחינם, בלי חשבון, בלי הרשאות מוזרות. פשוט כבו את מה שמסיח את דעתכם.",
+    "flink": "קוד ב-GitHub",
+    "modes": {
+      "off": "כבוי",
+      "always": "תמיד",
+      "timer": "טיימר",
+      "schedule": "לוח זמנים"
+    },
+    "sph": "מצב אחד. בלי יוצאים מן הכלל."
+  },
+  "ar": {
+    "name": "العربية",
+    "dir": "rtl",
+    "t": "FocusTube — أزل مصادر التشتيت من يوتيوب",
+    "d": "يخفي FocusTube مقاطع Shorts والتوصيات والاقتراحات والتعليقات على يوتيوب. احظر القنوات والكلمات، وفعّل وضع التركيز بمؤقت. أكثر من 4000 مستخدم.",
+    "nf": "الميزات",
+    "ni": "تثبيت",
+    "k": "امتداد كروم ليوتيوب",
+    "h1": "لا تُضيّع وقتك بعد الآن على يوتيوب",
+    "lead": "يخفي FocusTube مقاطع Shorts والتوصيات والاقتراحات والتعليقات. احظر قنوات وكلمات محددة، وفعّل وضع التركيز بمؤقت عندما تحتاج إلى التركيز حقًا.",
+    "cp": "أضف إلى كروم — مجانًا",
+    "cs": "شاهد ما يفعله",
+    "sn": "+4000",
+    "ss": "مستخدم نشط",
+    "ft": "كل ما يمكنك إيقافه",
+    "f": [
+      [
+        "إخفاء Shorts",
+        "يزيل مقاطع Shorts من الصفحة الرئيسية والشريط الجانبي ونتائج البحث."
+      ],
+      [
+        "بلا توصيات",
+        "يزيل الاقتراحات ومحتوى الصفحة الرئيسية لتجنب التمرير اللا نهائي."
+      ],
+      [
+        "بلا تعليقات",
+        "يخفي قسم التعليقات عندما تريد فقط مشاهدة الفيديو."
+      ],
+      [
+        "القوائم السوداء",
+        "احظر قنوات أو كلمات محددة، مع زر سريع لإضافتها مباشرة من القائمة."
+      ],
+      [
+        "وضع التركيز",
+        "جلسات بمؤقت مع فترات راحة، أو وضع سريع بلا مؤقت."
+      ],
+      [
+        "جدول متكرر",
+        "برمج وضع التركيز ليُفعَّل فقط في الأيام والساعات التي تختارها."
+      ]
+    ],
+    "c2t": "استعد السيطرة في ثوانٍ",
+    "c2l": "مجاني، بلا حساب، بلا أذونات غريبة. فقط أوقف ما يشتت انتباهك.",
+    "flink": "الكود على GitHub",
+    "modes": {
+      "off": "متوقف",
+      "always": "دائمًا",
+      "timer": "مؤقت",
+      "schedule": "جدول"
+    },
+    "sph": "وضع واحد فقط. بلا استثناءات."
+  },
+  "fa": {
+    "name": "فارسی",
+    "dir": "rtl",
+    "t": "FocusTube — حواس‌پرتی‌های یوتیوب را حذف کنید",
+    "d": "FocusTube، Shorts، پیشنهادها، توصیه‌ها و نظرات یوتیوب را پنهان می‌کند. کانال‌ها و کلمات را مسدود کنید و حالت تمرکز زمان‌دار را فعال کنید. بیش از ۴۰۰۰ کاربر.",
+    "nf": "ویژگی‌ها",
+    "ni": "نصب",
+    "k": "افزونه کروم برای یوتیوب",
+    "h1": "دیگر وقت خود را در یوتیوب هدر ندهید",
+    "lead": "FocusTube، Shorts، پیشنهادها، توصیه‌ها و نظرات را پنهان می‌کند. کانال‌ها و کلمات خاصی را مسدود کنید و هر وقت واقعاً باید تمرکز کنید، حالت تمرکز زمان‌دار را روشن کنید.",
+    "cp": "افزودن به کروم — رایگان",
+    "cs": "ببینید چه کاری انجام می‌دهد",
+    "sn": "+۴۰۰۰",
+    "ss": "کاربر فعال",
+    "ft": "هر چیزی که می‌توانید خاموش کنید",
+    "f": [
+      [
+        "پنهان‌سازی Shorts",
+        "Shorts را از صفحه اصلی، نوار کناری و نتایج جستجو حذف می‌کند."
+      ],
+      [
+        "بدون پیشنهاد",
+        "پیشنهادها و محتوای صفحه اصلی را حذف می‌کند تا اسکرول بی‌پایان جلوگیری شود."
+      ],
+      [
+        "بدون نظر",
+        "بخش نظرات را زمانی که فقط می‌خواهید ویدیو را ببینید پنهان می‌کند."
+      ],
+      [
+        "فهرست‌های سیاه",
+        "کانال‌ها یا کلمات خاصی را با یک دکمه سریع مستقیماً از فید مسدود کنید."
+      ],
+      [
+        "حالت تمرکز",
+        "جلسات زمان‌دار با استراحت، یا حالت سریع بدون تایمر."
+      ],
+      [
+        "زمان‌بندی تکرارشونده",
+        "حالت تمرکز را برنامه‌ریزی کنید تا فقط در روزها و ساعت‌های انتخابی شما فعال شود."
+      ]
+    ],
+    "c2t": "کنترل را در چند ثانیه پس بگیرید",
+    "c2l": "رایگان، بدون حساب کاربری، بدون مجوزهای عجیب. فقط چیزی که حواس شما را پرت می‌کند را خاموش کنید.",
+    "flink": "کد در GitHub",
+    "modes": {
+      "off": "خاموش",
+      "always": "همیشه",
+      "timer": "تایمر",
+      "schedule": "برنامه"
+    },
+    "sph": "یک حالت. بدون استثنا."
+  },
+  "hi": {
+    "name": "हिन्दी",
+    "t": "FocusTube — YouTube की distractions हटाएं",
+    "d": "FocusTube YouTube पर Shorts, सुझाव, recommendations और comments छिपाता है। चैनल और शब्दों को ब्लॉक करें, और टाइमर वाला Focus Mode चालू करें। 4,000+ users।",
+    "nf": "फ़ीचर्स",
+    "ni": "इंस्टॉल करें",
+    "k": "YouTube के लिए Chrome extension",
+    "h1": "YouTube पर समय बर्बाद करना बंद करें",
+    "lead": "FocusTube Shorts, सुझाव, recommendations और comments छिपाता है। खास चैनल और शब्दों को ब्लॉक करें, और जब सच में ध्यान लगाना हो तो टाइमर वाला Focus Mode चालू करें।",
+    "cp": "Chrome में जोड़ें — फ्री",
+    "cs": "देखें यह क्या करता है",
+    "sn": "4,000+",
+    "ss": "एक्टिव यूज़र्स",
+    "ft": "जो कुछ भी आप बंद कर सकते हैं",
+    "f": [
+      [
+        "Shorts छिपाएं",
+        "होम पेज, साइडबार और सर्च रिज़ल्ट्स से Shorts हटा देता है।"
+      ],
+      [
+        "बिना recommendations",
+        "बेवजह स्क्रॉल से बचने के लिए होम पेज के सुझाव और content हटाता है।"
+      ],
+      [
+        "बिना comments",
+        "जब सिर्फ वीडियो देखना हो तो comments section छिपा देता है।"
+      ],
+      [
+        "ब्लैकलिस्ट",
+        "खास चैनल या शब्द ब्लॉक करें, feed से सीधे जोड़ने के लिए एक quick button भी।"
+      ],
+      [
+        "Focus Mode",
+        "ब्रेक के साथ टाइमर सेशन, या बिना टाइमर के quick mode।"
+      ],
+      [
+        "रिकरिंग शेड्यूल",
+        "Focus Mode को सिर्फ चुने हुए दिनों और समय पर चालू होने के लिए शेड्यूल करें।"
+      ]
+    ],
+    "c2t": "सेकंडों में कंट्रोल वापस लें",
+    "c2l": "फ्री, कोई अकाउंट नहीं, कोई अजीब permission नहीं। बस वो बंद करें जो distract करता है।",
+    "flink": "GitHub पर code",
+    "modes": {
+      "off": "बंद",
+      "always": "हमेशा",
+      "timer": "टाइमर",
+      "schedule": "शेड्यूल"
+    },
+    "sph": "एक मोड। कोई अपवाद नहीं।"
+  },
+  "gu": {
+    "name": "ગુજરાતી",
+    "t": "FocusTube — YouTube ના ધ્યાનભંગ દૂર કરો",
+    "d": "FocusTube YouTube પર Shorts, ભલામણો, સૂચનો અને ટિપ્પણીઓ છુપાવે છે. ચેનલો અને શબ્દોને બ્લોક કરો, અને ટાઈમર સાથે Focus Mode ચાલુ કરો. 4,000+ યુઝર્સ.",
+    "nf": "ફીચર્સ",
+    "ni": "ઇન્સ્ટોલ કરો",
+    "k": "YouTube માટે Chrome એક્સટેન્શન",
+    "h1": "YouTube પર સમય બગાડવાનું બંધ કરો",
+    "lead": "FocusTube Shorts, ભલામણો, સૂચનો અને ટિપ્પણીઓ છુપાવે છે. ખાસ ચેનલો અને શબ્દોને બ્લોક કરો, અને જ્યારે સાચે ધ્યાન કેન્દ્રિત કરવાની જરૂર હોય ત્યારે ટાઈમર સાથે Focus Mode ચાલુ કરો.",
+    "cp": "Chrome માં ઉમેરો — ફ્રી",
+    "cs": "તે શું કરે છે તે જુઓ",
+    "sn": "4,000+",
+    "ss": "એક્ટિવ યુઝર્સ",
+    "ft": "તમે જે બધું બંધ કરી શકો",
+    "f": [
+      [
+        "Shorts છુપાવો",
+        "હોમ પેજ, સાઇડબાર અને સર્ચ રિઝલ્ટ્સમાંથી Shorts દૂર કરે છે."
+      ],
+      [
+        "ભલામણો વગર",
+        "અનંત સ્ક્રોલ ટાળવા માટે હોમ પેજની સૂચનો અને કન્ટેન્ટ દૂર કરે છે."
+      ],
+      [
+        "ટિપ્પણીઓ વગર",
+        "જ્યારે તમે માત્ર વિડિયો જોવા માંગતા હો ત્યારે ટિપ્પણી સેક્શન છુપાવે છે."
+      ],
+      [
+        "બ્લેકલિસ્ટ",
+        "ખાસ ચેનલો કે શબ્દોને બ્લોક કરો, ફીડમાંથી સીધા ઉમેરવા માટે ક્વિક બટન સાથે."
+      ],
+      [
+        "Focus Mode",
+        "બ્રેક સાથે ટાઈમર સેશન, અથવા ટાઈમર વગર ક્વિક મોડ."
+      ],
+      [
+        "રિકરિંગ શેડ્યુલ",
+        "Focus Mode ને માત્ર તમે પસંદ કરેલા દિવસો અને સમયે ચાલુ થવા માટે શેડ્યુલ કરો."
+      ]
+    ],
+    "c2t": "સેકંડોમાં કંટ્રોલ પાછો મેળવો",
+    "c2l": "ફ્રી, કોઈ એકાઉન્ટ નહીં, કોઈ અજીબ પરમિશન નહીં. જે ધ્યાનભંગ કરે તેને જ બંધ કરો.",
+    "flink": "GitHub પર કોડ",
+    "modes": {
+      "off": "બંધ",
+      "always": "હંમેશા",
+      "timer": "ટાઈમર",
+      "schedule": "શેડ્યૂલ"
+    },
+    "sph": "એક મોડ. કોઈ અપવાદ નહીં."
+  },
+  "mr": {
+    "name": "मराठी",
+    "t": "FocusTube — YouTube वरील लक्षविचलन दूर करा",
+    "d": "FocusTube YouTube वर Shorts, शिफारसी, सूचना आणि टिप्पण्या लपवते. चॅनेल्स आणि शब्द ब्लॉक करा, आणि टायमरसह Focus Mode सुरू करा. 4,000+ वापरकर्ते.",
+    "nf": "वैशिष्ट्ये",
+    "ni": "इन्स्टॉल करा",
+    "k": "YouTube साठी Chrome एक्स्टेंशन",
+    "h1": "YouTube वर वेळ वाया घालवणे थांबवा",
+    "lead": "FocusTube Shorts, शिफारसी, सूचना आणि टिप्पण्या लपवते. विशिष्ट चॅनेल्स आणि शब्द ब्लॉक करा, आणि खरोखर लक्ष केंद्रित करायचे असेल तेव्हा टायमरसह Focus Mode सुरू करा.",
+    "cp": "Chrome मध्ये जोडा — मोफत",
+    "cs": "हे काय करते ते पहा",
+    "sn": "4,000+",
+    "ss": "सक्रिय वापरकर्ते",
+    "ft": "तुम्ही जे काही बंद करू शकता",
+    "f": [
+      [
+        "Shorts लपवा",
+        "होम पेज, साइडबार आणि सर्च निकालांमधून Shorts काढून टाकते."
+      ],
+      [
+        "शिफारसींशिवाय",
+        "अखंड स्क्रॉल टाळण्यासाठी होम पेजच्या सूचना आणि कंटेंट काढून टाकते."
+      ],
+      [
+        "टिप्पण्यांशिवाय",
+        "फक्त व्हिडिओ पाहायचा असेल तेव्हा टिप्पणी विभाग लपवते."
+      ],
+      [
+        "ब्लॅकलिस्ट",
+        "विशिष्ट चॅनेल्स किंवा शब्द ब्लॉक करा, फीडमधून थेट जोडण्यासाठी क्विक बटणसह."
+      ],
+      [
+        "Focus Mode",
+        "ब्रेकसह टायमर सत्रे, किंवा टायमर शिवाय क्विक मोड."
+      ],
+      [
+        "पुनरावृत्ती वेळापत्रक",
+        "Focus Mode फक्त तुम्ही निवडलेल्या दिवशी आणि वेळी सक्रिय होण्यासाठी शेड्यूल करा."
+      ]
+    ],
+    "c2t": "काही सेकंदांत नियंत्रण परत मिळवा",
+    "c2l": "मोफत, खाते नाही, विचित्र परवानग्या नाहीत. फक्त जे लक्ष विचलित करते ते बंद करा.",
+    "flink": "GitHub वरील कोड",
+    "modes": {
+      "off": "बंद",
+      "always": "नेहमी",
+      "timer": "टायमर",
+      "schedule": "वेळापत्रक"
+    },
+    "sph": "एक मोड. अपवाद नाही."
+  },
+  "kn": {
+    "name": "ಕನ್ನಡ",
+    "t": "FocusTube — YouTube ಗಮನ ಬೇರೆಡೆ ಸೆಳೆಯುವಿಕೆ ತೆಗೆದುಹಾಕಿ",
+    "d": "FocusTube YouTube ನಲ್ಲಿ Shorts, ಶಿಫಾರಸುಗಳು, ಸೂಚನೆಗಳು ಮತ್ತು ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡುತ್ತದೆ. ಚಾನೆಲ್‌ಗಳು ಮತ್ತು ಪದಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ, ಟೈಮರ್‌ ಸಹಿತ Focus Mode ಆನ್ ಮಾಡಿ. 4,000+ ಬಳಕೆದಾರರು.",
+    "nf": "ವೈಶಿಷ್ಟ್ಯಗಳು",
+    "ni": "ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ",
+    "k": "YouTube ಗಾಗಿ Chrome extension",
+    "h1": "YouTube ನಲ್ಲಿ ಸಮಯ ವ್ಯರ್ಥ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಿ",
+    "lead": "FocusTube Shorts, ಶಿಫಾರಸುಗಳು, ಸೂಚನೆಗಳು ಮತ್ತು ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡುತ್ತದೆ. ನಿರ್ದಿಷ್ಟ ಚಾನೆಲ್‌ಗಳು ಮತ್ತು ಪದಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ, ನಿಜವಾಗಿಯೂ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಬೇಕಾದಾಗ ಟೈಮರ್ ಸಹಿತ Focus Mode ಆನ್ ಮಾಡಿ.",
+    "cp": "Chrome ಗೆ ಸೇರಿಸಿ — ಉಚಿತ",
+    "cs": "ಇದು ಏನು ಮಾಡುತ್ತದೆ ಎಂದು ನೋಡಿ",
+    "sn": "4,000+",
+    "ss": "ಸಕ್ರಿಯ ಬಳಕೆದಾರರು",
+    "ft": "ನೀವು ಆಫ್ ಮಾಡಬಹುದಾದ ಎಲ್ಲವೂ",
+    "f": [
+      [
+        "Shorts ಮರೆಮಾಡಿ",
+        "ಹೋಮ್ ಪುಟ, ಸೈಡ್‌ಬಾರ್ ಮತ್ತು ಸರ್ಚ್ ಫಲಿತಾಂಶಗಳಿಂದ Shorts ಅನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+      ],
+      [
+        "ಶಿಫಾರಸುಗಳಿಲ್ಲ",
+        "ಅನಂತ ಸ್ಕ್ರೋಲ್ ತಪ್ಪಿಸಲು ಹೋಮ್ ಪುಟದ ಸೂಚನೆಗಳು ಮತ್ತು ವಿಷಯವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+      ],
+      [
+        "ಕಾಮೆಂಟ್‌ಗಳಿಲ್ಲ",
+        "ನೀವು ಕೇವಲ ವಿಡಿಯೋ ನೋಡಲು ಬಯಸಿದಾಗ ಕಾಮೆಂಟ್ ವಿಭಾಗವನ್ನು ಮರೆಮಾಡುತ್ತದೆ."
+      ],
+      [
+        "ಬ್ಲಾಕ್‌ಲಿಸ್ಟ್‌ಗಳು",
+        "ನಿರ್ದಿಷ್ಟ ಚಾನೆಲ್‌ಗಳು ಅಥವಾ ಪದಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ, ಫೀಡ್‌ನಿಂದ ನೇರವಾಗಿ ಸೇರಿಸಲು ಕ್ವಿಕ್ ಬಟನ್‌ನೊಂದಿಗೆ."
+      ],
+      [
+        "Focus Mode",
+        "ಬ್ರೇಕ್‌ಗಳೊಂದಿಗೆ ಟೈಮರ್ ಸೆಷನ್‌ಗಳು, ಅಥವಾ ಟೈಮರ್ ಇಲ್ಲದ ಕ್ವಿಕ್ ಮೋಡ್."
+      ],
+      [
+        "ಪುನರಾವರ್ತಿತ ವೇಳಾಪಟ್ಟಿ",
+        "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ದಿನಗಳು ಮತ್ತು ಸಮಯಗಳಲ್ಲಿ ಮಾತ್ರ Focus Mode ಸಕ್ರಿಯಗೊಳ್ಳಲು ಶೆಡ್ಯೂಲ್ ಮಾಡಿ."
+      ]
+    ],
+    "c2t": "ಕೆಲವೇ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ನಿಯಂತ್ರಣ ಮರಳಿ ಪಡೆಯಿರಿ",
+    "c2l": "ಉಚಿತ, ಖಾತೆ ಬೇಕಿಲ್ಲ, ಅಪರಿಚಿತ ಅನುಮತಿಗಳಿಲ್ಲ. ಗಮನ ಬೇರೆಡೆ ಸೆಳೆಯುವುದನ್ನು ಮಾತ್ರ ಆಫ್ ಮಾಡಿ.",
+    "flink": "GitHub ನಲ್ಲಿ ಕೋಡ್",
+    "modes": {
+      "off": "ಆಫ್",
+      "always": "ಯಾವಾಗಲೂ",
+      "timer": "ಟೈಮರ್",
+      "schedule": "ವೇಳಾಪಟ್ಟಿ"
+    },
+    "sph": "ಒಂದೇ ಮೋಡ್. ಯಾವುದೇ ವಿನಾಯಿತಿ ಇಲ್ಲ."
+  },
+  "ta": {
+    "name": "தமிழ்",
+    "t": "FocusTube — YouTube கவனச்சிதறல்களை நீக்குங்கள்",
+    "d": "FocusTube YouTube-இல் Shorts, பரிந்துரைகள், ஆலோசனைகள் மற்றும் கருத்துகளை மறைக்கிறது. சேனல்கள் மற்றும் சொற்களைத் தடு, மற்றும் டைமருடன் Focus Mode ஐ இயக்குங்கள். 4,000+ பயனர்கள்.",
+    "nf": "அம்சங்கள்",
+    "ni": "நிறுவு",
+    "k": "YouTube-க்கான Chrome நீட்டிப்பு",
+    "h1": "YouTube-இல் நேரத்தை வீணாக்குவதை நிறுத்துங்கள்",
+    "lead": "FocusTube Shorts, பரிந்துரைகள், ஆலோசனைகள் மற்றும் கருத்துகளை மறைக்கிறது. குறிப்பிட்ட சேனல்கள் மற்றும் சொற்களைத் தடுக்கவும், உண்மையிலேயே கவனம் செலுத்த வேண்டியிருக்கும் போது டைமருடன் Focus Mode ஐ இயக்கவும்.",
+    "cp": "Chrome-இல் சேர் — இலவசம்",
+    "cs": "இது என்ன செய்கிறது எனப் பாருங்கள்",
+    "sn": "4,000+",
+    "ss": "செயலில் உள்ள பயனர்கள்",
+    "ft": "நீங்கள் அணைக்கக்கூடிய அனைத்தும்",
+    "f": [
+      [
+        "Shorts ஐ மறை",
+        "முகப்புப் பக்கம், பக்கப்பட்டி மற்றும் தேடல் முடிவுகளிலிருந்து Shorts ஐ அகற்றுகிறது."
+      ],
+      [
+        "பரிந்துரைகள் இல்லை",
+        "முடிவற்ற ஸ்க்ரோலைத் தவிர்க்க முகப்புப் பக்க ஆலோசனைகள் மற்றும் உள்ளடக்கத்தை அகற்றுகிறது."
+      ],
+      [
+        "கருத்துகள் இல்லை",
+        "வீடியோவை மட்டும் பார்க்க விரும்பும்போது கருத்துப் பிரிவை மறைக்கிறது."
+      ],
+      [
+        "கருப்புப் பட்டியல்கள்",
+        "குறிப்பிட்ட சேனல்கள் அல்லது சொற்களைத் தடு, ஊட்டத்திலிருந்தே நேரடியாக சேர்க்க விரைவு பொத்தானுடன்."
+      ],
+      [
+        "Focus Mode",
+        "இடைவேளைகளுடன் டைமர் அமர்வுகள், அல்லது டைமர் இல்லாத விரைவு பயன்முறை."
+      ],
+      [
+        "மீண்டும் நடக்கும் அட்டவணை",
+        "நீங்கள் தேர்ந்தெடுக்கும் நாட்கள் மற்றும் நேரங்களில் மட்டும் Focus Mode இயங்க திட்டமிடுங்கள்."
+      ]
+    ],
+    "c2t": "சில நொடிகளில் கட்டுப்பாட்டை மீட்டுங்கள்",
+    "c2l": "இலவசம், கணக்கு தேவையில்லை, விசித்திரமான அனுமதிகள் இல்லை. உங்கள் கவனத்தைச் சிதறடிப்பதை மட்டும் அணைக்கவும்.",
+    "flink": "GitHub-இல் குறியீடு",
+    "modes": {
+      "off": "ஆஃப்",
+      "always": "எப்போதும்",
+      "timer": "டைமர்",
+      "schedule": "அட்டவணை"
+    },
+    "sph": "ஒரே ஒரு பயன்முறை. விதிவிலக்கு இல்லை."
+  },
+  "te": {
+    "name": "తెలుగు",
+    "t": "FocusTube — YouTube దృష్టి మరల్పులను తీసివేయండి",
+    "d": "FocusTube YouTube లో Shorts, సిఫార్సులు, సూచనలు మరియు వ్యాఖ్యలను దాచిపెడుతుంది. ఛానెల్‌లు మరియు పదాలను బ్లాక్ చేయండి, టైమర్‌తో Focus Mode ఆన్ చేయండి. 4,000+ యూజర్లు.",
+    "nf": "ఫీచర్లు",
+    "ni": "ఇన్‌స్టాల్ చేయండి",
+    "k": "YouTube కోసం Chrome పొడిగింపు",
+    "h1": "YouTube లో సమయం వృథా చేయడం ఆపండి",
+    "lead": "FocusTube Shorts, సిఫార్సులు, సూచనలు మరియు వ్యాఖ్యలను దాచిపెడుతుంది. నిర్దిష్ట ఛానెల్‌లు మరియు పదాలను బ్లాక్ చేయండి, నిజంగా దృష్టి కేంద్రీకరించాల్సినప్పుడు టైమర్‌తో Focus Mode ఆన్ చేయండి.",
+    "cp": "Chrome కు జోడించండి — ఉచితం",
+    "cs": "ఇది ఏం చేస్తుందో చూడండి",
+    "sn": "4,000+",
+    "ss": "యాక్టివ్ యూజర్లు",
+    "ft": "మీరు ఆఫ్ చేయగలిగే ప్రతిదీ",
+    "f": [
+      [
+        "Shorts ను దాచండి",
+        "హోమ్ పేజీ, సైడ్‌బార్ మరియు సెర్చ్ ఫలితాల నుండి Shorts ను తీసివేస్తుంది."
+      ],
+      [
+        "సిఫార్సులు లేవు",
+        "అనంతమైన స్క్రోల్‌ను నివారించడానికి హోమ్ పేజీ సూచనలు మరియు కంటెంట్‌ను తీసివేస్తుంది."
+      ],
+      [
+        "వ్యాఖ్యలు లేవు",
+        "మీరు కేవలం వీడియో చూడాలనుకున్నప్పుడు వ్యాఖ్యల విభాగాన్ని దాచిపెడుతుంది."
+      ],
+      [
+        "బ్లాక్‌లిస్ట్‌లు",
+        "నిర్దిష్ట ఛానెల్‌లు లేదా పదాలను బ్లాక్ చేయండి, ఫీడ్ నుండి నేరుగా జోడించడానికి క్విక్ బటన్‌తో."
+      ],
+      [
+        "Focus Mode",
+        "బ్రేక్‌లతో టైమర్ సెషన్‌లు, లేదా టైమర్ లేని క్విక్ మోడ్."
+      ],
+      [
+        "పునరావృత షెడ్యూల్",
+        "మీరు ఎంచుకున్న రోజులు మరియు సమయాల్లో మాత్రమే Focus Mode యాక్టివేట్ అవ్వడానికి షెడ్యూల్ చేయండి."
+      ]
+    ],
+    "c2t": "కొన్ని సెకన్లలో నియంత్రణను తిరిగి పొందండి",
+    "c2l": "ఉచితం, ఖాతా అవసరం లేదు, వింత అనుమతులు లేవు. మీ దృష్టిని మరల్చే దాన్ని మాత్రమే ఆఫ్ చేయండి.",
+    "flink": "GitHub లో కోడ్",
+    "modes": {
+      "off": "ఆఫ్",
+      "always": "ఎల్లప్పుడూ",
+      "timer": "టైమర్",
+      "schedule": "షెడ్యూల్"
+    },
+    "sph": "ఒకే మోడ్. మినహాయింపులు లేవు."
+  },
+  "sw": {
+    "name": "Kiswahili",
+    "t": "FocusTube — Ondoa vikengeushi vya YouTube",
+    "d": "FocusTube inafisha Shorts, mapendekezo, madokezo na maoni kwenye YouTube. Zuia chaneli na maneno, na washa Hali ya Kuzingatia yenye kipima muda. Watumiaji zaidi ya 4,000.",
+    "nf": "Vipengele",
+    "ni": "Sakinisha",
+    "k": "Kiendelezi cha Chrome kwa YouTube",
+    "h1": "Acha kupoteza muda kwenye YouTube",
+    "lead": "FocusTube inafisha Shorts, mapendekezo, madokezo na maoni. Zuia chaneli na maneno maalum, na washa Hali ya Kuzingatia yenye kipima muda pale unapohitaji kuzingatia kwa dhati.",
+    "cp": "Ongeza kwenye Chrome — bila malipo",
+    "cs": "Tazama inavyofanya kazi",
+    "sn": "4,000+",
+    "ss": "watumiaji hai",
+    "ft": "Kila kitu unachoweza kuzima",
+    "f": [
+      [
+        "Ficha Shorts",
+        "Inaondoa Shorts kutoka ukurasa wa nyumbani, upau wa kando na matokeo ya utafutaji."
+      ],
+      [
+        "Bila mapendekezo",
+        "Inaondoa madokezo na maudhui ya ukurasa wa nyumbani kuepuka kusogeza bila kikomo."
+      ],
+      [
+        "Bila maoni",
+        "Inaficha sehemu ya maoni unapotaka kutazama video pekee."
+      ],
+      [
+        "Orodha za kuzuia",
+        "Zuia chaneli au maneno maalum, na kitufe cha haraka cha kuziongeza moja kwa moja kutoka mtiririko."
+      ],
+      [
+        "Hali ya Kuzingatia",
+        "Vipindi vyenye kipima muda na mapumziko, au hali ya haraka bila kipima muda."
+      ],
+      [
+        "Ratiba inayojirudia",
+        "Panga Hali ya Kuzingatia iwashwe tu siku na saa unazochagua."
+      ]
+    ],
+    "c2t": "Rejesha udhibiti kwa sekunde",
+    "c2l": "Bila malipo, bila akaunti, bila ruhusa za ajabu. Zima tu kinachokukengeusha.",
+    "flink": "Msimbo kwenye GitHub",
+    "modes": {
+      "off": "Imezimwa",
+      "always": "Kila wakati",
+      "timer": "Kipima muda",
+      "schedule": "Ratiba"
+    },
+    "sph": "Hali moja. Bila ubaguzi."
+  },
+  "am": {
+    "name": "አማርኛ",
+    "t": "FocusTube — የYouTube ትኩረት መከፋፍያዎችን ያስወግዱ",
+    "d": "FocusTube በYouTube ላይ Shorts፣ ምክሮች፣ አስተያየቶች እና አስተያየቶችን ይደብቃል። ቻናሎችን እና ቃላትን ያግዱ፣ በጊዜ ቆጣሪ የትኩረት ሁነታን ያንቁ። ከ4,000 በላይ ተጠቃሚዎች።",
+    "nf": "ባህሪዎች",
+    "ni": "ጫን",
+    "k": "ለYouTube የChrome ቅጥያ",
+    "h1": "በYouTube ላይ ጊዜ ማጥፋትን ያቁሙ",
+    "lead": "FocusTube Shorts፣ ምክሮች፣ አስተያየቶች እና አስተያየቶችን ይደብቃል። የተወሰኑ ቻናሎችን እና ቃላትን ያግዱ፣ በእውነት ማተኮር ሲፈልጉ በጊዜ ቆጣሪ የትኩረት ሁነታን ያንቁ።",
+    "cp": "ወደ Chrome ያክሉ — ነፃ",
+    "cs": "የሚያደርገውን ይመልከቱ",
+    "sn": "ከ4,000+",
+    "ss": "ገባር ተጠቃሚዎች",
+    "ft": "ማጥፋት የሚችሉት ሁሉ",
+    "f": [
+      [
+        "Shorts ደብቅ",
+        "Shorts ን ከመነሻ ገጽ፣ ከጎን አሞሌ እና ከፍለጋ ውጤቶች ያስወግዳል።"
+      ],
+      [
+        "ምክሮች የለም",
+        "ማለቂያ የለሽ ጥቅልልን ለማስቀረት የመነሻ ገጽ አስተያየቶችን እና ይዘትን ያስወግዳል።"
+      ],
+      [
+        "አስተያየቶች የለም",
+        "ቪዲዮውን ብቻ ማየት ሲፈልጉ የአስተያየት ክፍልን ይደብቃል።"
+      ],
+      [
+        "የተከለከሉ ዝርዝሮች",
+        "የተወሰኑ ቻናሎችን ወይም ቃላትን ያግዱ፣ ከምንጩ በቀጥታ ለመጨመር ፈጣን ቁልፍ ጋር።"
+      ],
+      [
+        "የትኩረት ሁነታ",
+        "እረፍት ያላቸው በጊዜ ቆጣሪ ክፍለ ጊዜዎች፣ ወይም ጊዜ ቆጣሪ የሌለው ፈጣን ሁነታ።"
+      ],
+      [
+        "ተደጋጋሚ መርሃ ግብር",
+        "የትኩረት ሁነታ እርስዎ በሚመርጡት ቀናት እና ጊዜያት ብቻ እንዲነቃ ያቅዱ።"
+      ]
+    ],
+    "c2t": "ቁጥጥርን በሰከንዶች ውስጥ ይመልሱ",
+    "c2l": "ነፃ፣ መለያ አያስፈልግም፣ እንግዳ ፈቃዶች የለም። ትኩረትዎን የሚከፋፍለውን ብቻ ያጥፉ።",
+    "flink": "በGitHub ላይ ኮድ",
+    "modes": {
+      "off": "ጠፍቷል",
+      "always": "ሁልጊዜ",
+      "timer": "ሰዓት ቆጣሪ",
+      "schedule": "መርሃግብር"
+    },
+    "sph": "አንድ ሁነታ ብቻ። ምንም ልዩነት የለም።"
+  }
+}

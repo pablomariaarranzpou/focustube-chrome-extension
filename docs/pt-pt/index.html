@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusTube — Elimina as distrações do YouTube</title>
+  <meta name="description" content="O FocusTube oculta Shorts, recomendações, sugestões e comentários no YouTube. Bloqueia canais e palavras, e ativa um Modo Foco cronometrado. Mais de 4.000 utilizadores." />
+  <link rel="alternate" hreflang="en" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/" />
+  <link rel="alternate" hreflang="es" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/es/" />
+  <link rel="alternate" hreflang="es-419" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/es-419/" />
+  <link rel="alternate" hreflang="fr" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/fr/" />
+  <link rel="alternate" hreflang="de" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/de/" />
+  <link rel="alternate" hreflang="it" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/it/" />
+  <link rel="alternate" hreflang="pt-pt" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/pt-pt/" />
+  <link rel="alternate" hreflang="pt-br" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/pt-br/" />
+  <link rel="alternate" hreflang="nl" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/nl/" />
+  <link rel="alternate" hreflang="ca" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ca/" />
+  <link rel="alternate" hreflang="ro" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ro/" />
+  <link rel="alternate" hreflang="pl" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/pl/" />
+  <link rel="alternate" hreflang="cs" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/cs/" />
+  <link rel="alternate" hreflang="sk" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/sk/" />
+  <link rel="alternate" hreflang="sl" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/sl/" />
+  <link rel="alternate" hreflang="hr" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/hr/" />
+  <link rel="alternate" hreflang="sr" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/sr/" />
+  <link rel="alternate" hreflang="ru" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ru/" />
+  <link rel="alternate" hreflang="el" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/el/" />
+  <link rel="alternate" hreflang="tr" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/tr/" />
+  <link rel="alternate" hreflang="hu" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/hu/" />
+  <link rel="alternate" hreflang="et" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/et/" />
+  <link rel="alternate" hreflang="lv" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/lv/" />
+  <link rel="alternate" hreflang="lt" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/lt/" />
+  <link rel="alternate" hreflang="sv" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/sv/" />
+  <link rel="alternate" hreflang="no" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/no/" />
+  <link rel="alternate" hreflang="da" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/da/" />
+  <link rel="alternate" hreflang="id" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/id/" />
+  <link rel="alternate" hreflang="ms" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ms/" />
+  <link rel="alternate" hreflang="fil" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/fil/" />
+  <link rel="alternate" hreflang="ja" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ja/" />
+  <link rel="alternate" hreflang="ko" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ko/" />
+  <link rel="alternate" hreflang="he" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/he/" />
+  <link rel="alternate" hreflang="ar" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ar/" />
+  <link rel="alternate" hreflang="fa" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/fa/" />
+  <link rel="alternate" hreflang="hi" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/hi/" />
+  <link rel="alternate" hreflang="gu" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/gu/" />
+  <link rel="alternate" hreflang="mr" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/mr/" />
+  <link rel="alternate" hreflang="kn" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/kn/" />
+  <link rel="alternate" hreflang="ta" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/ta/" />
+  <link rel="alternate" hreflang="te" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/te/" />
+  <link rel="alternate" hreflang="sw" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/sw/" />
+  <link rel="alternate" hreflang="am" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/am/" />
+  <link rel="alternate" hreflang="x-default" href="https://pablomariaarranzpou.github.io/focustube-chrome-extension/" />
+  <link rel="icon" href="../assets/focustube-icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a href="../" class="brand">
+        <img src="../assets/focustube-icon.png" alt="" class="brand-icon" />
+        FocusTube
+      </a>
+      <nav>
+        <a href="#features">Funcionalidades</a>
+        <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Instalar</a>
+        <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">Extensão Chrome para o YouTube</span>
+      <h1>Para de perder tempo no YouTube</h1>
+      <p class="lead">O FocusTube oculta Shorts, recomendações, sugestões e comentários. Bloqueia canais e palavras específicas, e ativa um Modo Foco cronometrado sempre que precisares de te concentrar de verdade.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Adicionar ao Chrome — gratuito</a>
+        <a class="btn btn-secondary" href="#features">Ver o que faz</a>
+      </div>
+      <p class="stat-row"><strong>4.000+</strong> utilizadores ativos</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <h2>Tudo o que podes desativar</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🚫</div>
+          <h3>Oculta os Shorts</h3>
+          <p>Remove os Shorts da página inicial, da barra lateral e dos resultados de pesquisa.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🧭</div>
+          <h3>Sem recomendações</h3>
+          <p>Remove sugestões e conteúdo da página inicial para evitar o scroll infinito.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💬</div>
+          <h3>Sem comentários</h3>
+          <p>Oculta a secção de comentários quando só queres ver o vídeo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔇</div>
+          <h3>Listas negras</h3>
+          <p>Bloqueia canais ou palavras específicas, com um botão rápido para os adicionar diretamente do feed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spotlight">
+    <div class="wrap">
+      <span class="kicker kicker-light">⏱️ Modo Foco</span>
+      <h2>Um modo. Zero exceções.</h2>
+      <p class="spotlight-lead">Sessões cronometradas com pausas, ou um modo rápido sem temporizador.</p>
+
+      <div class="demo-carousel" dir="ltr">
+       <div class="demo-viewport">
+        <div class="demo-track" id="demoTrack">
+
+         <!-- Slide 1: enter a video -> Focus Mode clears suggestions + comments -->
+         <div class="demo-slide" aria-hidden="true">
+          <div class="yt-window">
+          <div class="yt-titlebar">
+            <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
+            <span class="yt-url">youtube.com/watch</span>
+            <span class="yt-toolbar">
+              <span class="ext-icon"><img src="../assets/focustube-icon.png" alt="" /></span>
+              <span class="yt-puzzle">&#9635;</span>
+            </span>
+          </div>
+          <div class="yt-topbar">
+            <span class="yt-hamburger">&#9776;</span>
+            <span class="yt-logo"><span class="yt-logo-icon">&#9654;</span>YouTube</span>
+            <span class="yt-search">
+              <span class="yt-search-input"></span>
+              <span class="yt-search-btn"></span>
+            </span>
+            <span class="yt-avatar"></span>
+          </div>
+
+          <div class="yt-stage">
+            <!-- Scene 1: the home feed of recommendations -->
+            <div class="yt-scene yt-scene-home">
+              <div class="yt-pills">
+                <span class="yt-pill yt-pill-active"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+              </div>
+              <div class="yt-home-grid">
+                <div class="yt-hcard yt-open-target">
+                  <div class="yt-thumb yt-thumb-a"><span class="yt-thumb-time">12:04</span><span class="yt-progress"></span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-b"><span class="yt-thumb-time">6:47</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-c"><span class="yt-thumb-time">3:15</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-d"><span class="yt-thumb-time">9:22</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-e"><span class="yt-thumb-time">18:31</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-f"><span class="yt-thumb-time">4:08</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scene 2: the watch page, where Focus Mode clears the distractions -->
+            <div class="yt-scene yt-scene-watch">
+              <div class="yt-watch">
+                <div class="yt-primary">
+                  <div class="yt-player"></div>
+                  <div class="yt-vtitle"><span class="yt-line yt-vtitle-1"></span><span class="yt-line yt-vtitle-2"></span></div>
+                  <div class="yt-channel">
+                    <span class="yt-card-avatar av-a"></span>
+                    <div class="yt-card-lines"><span class="yt-line yt-ch-1"></span><span class="yt-line yt-ch-2"></span></div>
+                    <span class="yt-subscribe"></span>
+                  </div>
+                  <div class="yt-comments">
+                    <div class="yt-comments-head"></div>
+                    <div class="yt-comment"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                    <div class="yt-comment"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  </div>
+                </div>
+                <div class="yt-secondary">
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-b"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-c"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-d"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-e"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-f"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ext-popup">
+            <div class="ext-head">
+              <img class="ext-logo" src="../assets/focustube-icon.png" alt="" />
+              <span class="ext-name">FocusTube</span>
+            </div>
+            <div class="ext-tabs"><span class="ext-tab is-active"></span><span class="ext-tab"></span></div>
+            <div class="ext-modes">
+              <span class="ext-mode">Desligado</span>
+              <span class="ext-mode ext-mode-on">Sempre</span>
+              <span class="ext-mode">Temporizador</span>
+              <span class="ext-mode">Horário</span>
+            </div>
+          </div>
+          <span class="yt-ripple yt-ripple-1"></span>
+          <span class="yt-ripple yt-ripple-2"></span>
+          <span class="yt-ripple yt-ripple-3"></span>
+          <div class="yt-cursor">
+            <svg viewBox="0 0 16 20" width="20" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1.2 L1.5 16.2 L5.4 12.4 L8.2 18.4 L10.6 17.2 L7.7 11.5 L13.2 11.5 Z"
+                    fill="#fff" stroke="#141414" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          </div>
+         </div><!-- /slide 1 -->
+
+         <!-- Slide 2: Focus Mode clears the Shorts shelf -->
+         <div class="demo-slide" aria-hidden="true">
+          <div class="yt-window">
+           <div class="yt-titlebar">
+             <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
+             <span class="yt-url">youtube.com</span>
+             <span class="yt-toolbar">
+               <span class="ext-icon"><img src="../assets/focustube-icon.png" alt="" /></span>
+               <span class="yt-puzzle">&#9635;</span>
+             </span>
+           </div>
+           <div class="yt-topbar">
+             <span class="yt-hamburger">&#9776;</span>
+             <span class="yt-logo"><span class="yt-logo-icon">&#9654;</span>YouTube</span>
+             <span class="yt-search"><span class="yt-search-input"></span><span class="yt-search-btn"></span></span>
+             <span class="yt-avatar"></span>
+           </div>
+           <div class="yt-stage sh-stage">
+             <div class="yt-pills">
+               <span class="yt-pill yt-pill-active"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+             </div>
+             <div class="sh-shelf">
+               <div class="sh-head"><span class="yt-shorts-icon">&#9889;</span><span class="sh-head-bar"></span></div>
+               <div class="sh-row">
+                 <div class="sh-short yt-thumb-a"></div>
+                 <div class="sh-short yt-thumb-b"></div>
+                 <div class="sh-short yt-thumb-c"></div>
+                 <div class="sh-short yt-thumb-d"></div>
+                 <div class="sh-short yt-thumb-e"></div>
+                 <div class="sh-short yt-thumb-f"></div>
+               </div>
+             </div>
+             <div class="sh-videos">
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-b"><span class="yt-thumb-time">10:32</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-c"><span class="yt-thumb-time">7:58</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-e"><span class="yt-thumb-time">21:14</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+             </div>
+           </div>
+           <div class="ext-popup">
+             <div class="ext-head">
+               <img class="ext-logo" src="../assets/focustube-icon.png" alt="" />
+               <span class="ext-name">FocusTube</span>
+             </div>
+             <div class="ext-tabs"><span class="ext-tab is-active"></span><span class="ext-tab"></span></div>
+             <div class="ext-modes">
+               <span class="ext-mode">Desligado</span>
+               <span class="ext-mode ext-mode-on">Sempre</span>
+               <span class="ext-mode">Temporizador</span>
+               <span class="ext-mode">Horário</span>
+             </div>
+           </div>
+           <span class="yt-ripple sh-ripple"></span>
+           <span class="yt-ripple sh-ripple2"></span>
+           <div class="yt-cursor sh-cursor">
+             <svg viewBox="0 0 16 20" width="20" height="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1.5 1.2 L1.5 16.2 L5.4 12.4 L8.2 18.4 L10.6 17.2 L7.7 11.5 L13.2 11.5 Z"
+                     fill="#fff" stroke="#141414" stroke-width="1.1" stroke-linejoin="round"/>
+             </svg>
+           </div>
+          </div>
+         </div><!-- /slide 2 -->
+
+         <!-- Slide 3: block a keyword and the matching videos disappear -->
+         <div class="demo-slide" aria-hidden="true">
+          <div class="yt-window">
+           <div class="yt-titlebar">
+             <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
+             <span class="yt-url">youtube.com/results</span>
+             <span class="yt-toolbar">
+               <span class="ext-icon"><img src="../assets/focustube-icon.png" alt="" /></span>
+               <span class="yt-puzzle">&#9635;</span>
+             </span>
+           </div>
+           <div class="yt-topbar">
+             <span class="yt-hamburger">&#9776;</span>
+             <span class="yt-logo"><span class="yt-logo-icon">&#9654;</span>YouTube</span>
+             <span class="yt-search"><span class="yt-search-input"><span class="yt-search-query"></span></span><span class="yt-search-btn"></span></span>
+             <span class="yt-avatar"></span>
+           </div>
+           <div class="yt-stage bk-stage">
+             <div class="bk-list">
+               <div class="bk-row">
+                 <div class="bk-thumb yt-thumb-c"><span class="yt-thumb-time">8:12</span></div>
+                 <div class="bk-info"><span class="bk-line" style="width:82%"></span><span class="bk-line" style="width:52%"></span><span class="bk-sub"></span></div>
+               </div>
+               <div class="bk-row bk-blocked">
+                 <div class="bk-thumb yt-thumb-a"><span class="yt-thumb-time">10:45</span></div>
+                 <div class="bk-info"><span class="bk-titlerow"><span class="bk-line" style="width:36%"></span><span class="bk-key"></span><span class="bk-line" style="width:20%"></span></span><span class="bk-sub"></span></div>
+               </div>
+               <div class="bk-row">
+                 <div class="bk-thumb yt-thumb-e"><span class="yt-thumb-time">4:30</span></div>
+                 <div class="bk-info"><span class="bk-line" style="width:74%"></span><span class="bk-line" style="width:46%"></span><span class="bk-sub"></span></div>
+               </div>
+               <div class="bk-row bk-blocked">
+                 <div class="bk-thumb yt-thumb-f"><span class="yt-thumb-time">15:08</span></div>
+                 <div class="bk-info"><span class="bk-titlerow"><span class="bk-line" style="width:28%"></span><span class="bk-key"></span><span class="bk-line" style="width:30%"></span></span><span class="bk-sub"></span></div>
+               </div>
+             </div>
+           </div>
+           <div class="ext-popup bk-popup">
+             <div class="ext-head">
+               <img class="ext-logo" src="../assets/focustube-icon.png" alt="" />
+               <span class="ext-name">FocusTube</span>
+             </div>
+             <div class="ext-tabs"><span class="ext-tab"></span><span class="ext-tab is-active"></span></div>
+             <div class="bk-field">
+               <span class="bk-input"><span class="bk-typed"></span></span>
+               <span class="bk-add">+</span>
+             </div>
+             <div class="bk-chips"><span class="bk-chip"><span class="bk-chip-x">&times;</span></span></div>
+           </div>
+           <span class="yt-ripple bk-ripple"></span>
+           <span class="yt-ripple bk-ripple2"></span>
+           <div class="yt-cursor bk-cursor">
+             <svg viewBox="0 0 16 20" width="20" height="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1.5 1.2 L1.5 16.2 L5.4 12.4 L8.2 18.4 L10.6 17.2 L7.7 11.5 L13.2 11.5 Z"
+                     fill="#fff" stroke="#141414" stroke-width="1.1" stroke-linejoin="round"/>
+             </svg>
+           </div>
+          </div>
+         </div><!-- /slide 3 -->
+
+        </div><!-- /track -->
+       </div><!-- /viewport -->
+       <button class="demo-arrow demo-arrow-prev" id="demoPrev" type="button" aria-label="Previous">&#8249;</button>
+       <button class="demo-arrow demo-arrow-next" id="demoNext" type="button" aria-label="Next">&#8250;</button>
+       <div class="demo-dots" id="demoDots">
+         <button class="demo-dot is-active" type="button" data-i="0" aria-label="1"></button>
+         <button class="demo-dot" type="button" data-i="1" aria-label="2"></button>
+         <button class="demo-dot" type="button" data-i="2" aria-label="3"></button>
+       </div>
+      </div><!-- /carousel -->
+
+      <div class="mode-row">
+        <div class="mode-pill"><span class="mode-name">Desligado</span></div>
+        <div class="mode-pill"><span class="mode-name">Sempre</span></div>
+        <div class="mode-pill"><span class="mode-name">Temporizador</span></div>
+        <div class="mode-pill"><span class="mode-name">Horário</span></div>
+      </div>
+      <p class="spotlight-lead spotlight-secondary">📅 <strong>Horário recorrente:</strong> Agenda o Modo Foco para se ativar apenas nos dias e horas que escolheres.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-card">
+        <h2>Recupera o controlo em segundos</h2>
+        <p>Gratuito, sem conta, sem permissões estranhas. Desativa só o que te distrai.</p>
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Adicionar ao Chrome — gratuito</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> FocusTube</span>
+      <span>
+        <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Código no GitHub</a>
+      </span>
+      <select id="langSwitch" aria-label="Language">
+        <option value="../">English</option>
+        <option value="../es/">Español</option>
+        <option value="../es-419/">Español (Latinoamérica)</option>
+        <option value="../fr/">Français</option>
+        <option value="../de/">Deutsch</option>
+        <option value="../it/">Italiano</option>
+        <option value="../pt-pt/" selected>Português (Portugal)</option>
+        <option value="../pt-br/">Português (Brasil)</option>
+        <option value="../nl/">Nederlands</option>
+        <option value="../ca/">Català</option>
+        <option value="../ro/">Română</option>
+        <option value="../pl/">Polski</option>
+        <option value="../cs/">Čeština</option>
+        <option value="../sk/">Slovenčina</option>
+        <option value="../sl/">Slovenščina</option>
+        <option value="../hr/">Hrvatski</option>
+        <option value="../sr/">Српски</option>
+        <option value="../ru/">Русский</option>
+        <option value="../el/">Ελληνικά</option>
+        <option value="../tr/">Türkçe</option>
+        <option value="../hu/">Magyar</option>
+        <option value="../et/">Eesti</option>
+        <option value="../lv/">Latviešu</option>
+        <option value="../lt/">Lietuvių</option>
+        <option value="../sv/">Svenska</option>
+        <option value="../no/">Norsk</option>
+        <option value="../da/">Dansk</option>
+        <option value="../id/">Bahasa Indonesia</option>
+        <option value="../ms/">Bahasa Melayu</option>
+        <option value="../fil/">Filipino</option>
+        <option value="../ja/">日本語</option>
+        <option value="../ko/">한국어</option>
+        <option value="../he/">עברית</option>
+        <option value="../ar/">العربية</option>
+        <option value="../fa/">فارسی</option>
+        <option value="../hi/">हिन्दी</option>
+        <option value="../gu/">ગુજરાતી</option>
+        <option value="../mr/">मराठी</option>
+        <option value="../kn/">ಕನ್ನಡ</option>
+        <option value="../ta/">தமிழ்</option>
+        <option value="../te/">తెలుగు</option>
+        <option value="../sw/">Kiswahili</option>
+        <option value="../am/">አማርኛ</option>
+      </select>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('langSwitch').addEventListener('change', function (e) {
+      window.location.href = e.target.value;
+    });
+
+    // Demo carousel: slide between the watch-page and Shorts animations.
+    (function () {
+      var track = document.getElementById('demoTrack');
+      if (!track) return;
+      var slides = track.children.length;
+      var dots = [].slice.call(document.querySelectorAll('#demoDots .demo-dot'));
+      var slideEls = [].slice.call(track.children);
+      var i = 0, timer;
+      var ANIM = '.yt-scene-home,.yt-scene-watch,.yt-cursor,.yt-ripple,.ext-popup,.ext-mode-on,.yt-comments,.yt-secondary,.sh-shelf,.bk-blocked,.bk-typed,.bk-chip';
+      // Replay a slide's animation from the top whenever it becomes visible.
+      function restart(idx) {
+        var els = slideEls[idx].querySelectorAll(ANIM);
+        els.forEach(function (el) { el.style.animation = 'none'; });
+        void slideEls[idx].offsetWidth;
+        els.forEach(function (el) { el.style.animation = ''; });
+      }
+      function go(n) {
+        i = (n + slides) % slides;
+        track.style.transform = 'translateX(-' + (i * 100) + '%)';
+        dots.forEach(function (d, k) { d.classList.toggle('is-active', k === i); });
+        restart(i);
+      }
+      function schedule() { clearInterval(timer); timer = setInterval(function () { go(i + 1); }, 11500); }
+      var next = document.getElementById('demoNext'), prev = document.getElementById('demoPrev');
+      if (next) next.addEventListener('click', function () { go(i + 1); schedule(); });
+      if (prev) prev.addEventListener('click', function () { go(i - 1); schedule(); });
+      dots.forEach(function (d) {
+        d.addEventListener('click', function () { go(parseInt(d.getAttribute('data-i'), 10)); schedule(); });
+      });
+      // Pause the auto-advance while the pointer is over the demo.
+      var carousel = track.closest('.demo-carousel');
+      if (carousel) {
+        carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+        carousel.addEventListener('mouseleave', schedule);
+      }
+      var x0 = null;
+      track.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        if (x0 === null) return;
+        var dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 40) { go(dx < 0 ? i + 1 : i - 1); schedule(); }
+        x0 = null;
+      });
+      schedule();
+    })();
+  </script>
+</body>
+</html>

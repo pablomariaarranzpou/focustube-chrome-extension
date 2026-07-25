@@ -1,0 +1,1408 @@
+:root {
+  --coral: #f9737a;
+  --coral-dark: #ef4444;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #fafafa;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+
+header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-left: 24px;
+}
+
+nav a:hover {
+  color: var(--ink);
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.hero .kicker {
+  display: inline-block;
+  color: var(--coral-dark);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.hero p.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.btn-primary {
+  background: var(--coral);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--coral-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-row {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.stat-row strong {
+  color: var(--ink);
+}
+
+/* Features */
+.features {
+  padding: 20px 0 80px;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.feature-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  margin: 0 0 6px;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* CTA */
+.cta {
+  padding: 60px 0 90px;
+  text-align: center;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+  border-radius: 20px;
+  padding: 56px 24px;
+  color: #fff;
+}
+
+.cta-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+}
+
+.cta-card p {
+  margin: 0 0 28px;
+  opacity: 0.92;
+}
+
+.cta-card .btn-primary {
+  background: #fff;
+  color: var(--coral-dark);
+}
+
+.cta-card .btn-primary:hover {
+  background: #fff5f5;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0;
+}
+
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--ink);
+}
+
+#langSwitch {
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px 8px;
+  max-width: 180px;
+}
+
+/* Focus Mode spotlight */
+.spotlight {
+  background: var(--ink);
+  color: #fff;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.spotlight .kicker-light {
+  color: var(--coral);
+}
+
+.spotlight h2 {
+  font-size: 1.8rem;
+  margin: 0 0 14px;
+}
+
+.spotlight-lead {
+  color: #d1d5db;
+  max-width: 560px;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+}
+
+.spotlight-secondary {
+  margin-top: 28px;
+  font-size: 0.9rem;
+}
+
+.spotlight-secondary strong {
+  color: #fff;
+}
+
+/* Animated "before -> after" mock demo: a small clone of YouTube's own dark
+   UI (pure CSS, no real recording needed) so the effect reads as YouTube. */
+.demo-mock {
+  margin: 8px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.yt-window {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #0f0f0f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  text-align: left;
+}
+
+.yt-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #181818;
+}
+
+.yt-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4d4d4d;
+}
+
+.yt-dot:nth-child(1) { background: #ff5f57; }
+.yt-dot:nth-child(2) { background: #febc2e; }
+.yt-dot:nth-child(3) { background: #28c840; }
+
+.yt-url {
+  margin-left: 8px;
+  font-size: 0.68rem;
+  color: #9a9a9a;
+  background: #0f0f0f;
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+.yt-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: #0f0f0f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.yt-hamburger {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.yt-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+.yt-logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 13px;
+  background: #ff0000;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+.yt-search {
+  flex: 1;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  background: #121212;
+  border: 1px solid #303030;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.yt-search-input {
+  flex: 1;
+}
+
+.yt-search-btn {
+  width: 30px;
+  height: 22px;
+  background: #222222;
+  border-left: 1px solid #303030;
+  flex-shrink: 0;
+}
+
+.yt-avatar {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c5cff, #ff6b6b);
+  flex-shrink: 0;
+}
+
+.yt-pills {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.yt-pill {
+  width: 46px;
+  height: 16px;
+  border-radius: 999px;
+  background: #272727;
+}
+
+.yt-pill-active {
+  width: 32px;
+  background: #fff;
+}
+
+/* Stage that holds the two cross-fading scenes (home feed -> watch page). */
+.yt-stage {
+  position: relative;
+  height: 404px;
+  overflow: hidden;
+  background: #0f0f0f;
+}
+
+.yt-scene {
+  position: absolute;
+  inset: 0;
+  padding: 12px 16px;
+  pointer-events: none;
+}
+
+.yt-scene-home {
+  animation: sceneHome 13s ease-in-out infinite;
+}
+
+.yt-scene-watch {
+  opacity: 0;
+  animation: sceneWatch 13s ease-in-out infinite;
+}
+
+/* Scene 1 - the home feed grid of recommended videos. */
+.yt-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 12px;
+}
+
+.yt-hcard {
+  min-width: 0;
+}
+
+/* Shared thumbnail styling (used by home cards, up-next and the player). */
+.yt-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3a3f47, #23262b);
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.yt-thumb-a { background: linear-gradient(135deg, #4f46e5, #9333ea); }
+.yt-thumb-b { background: linear-gradient(135deg, #e11d48, #f97316); }
+.yt-thumb-c { background: linear-gradient(135deg, #0891b2, #059669); }
+.yt-thumb-d { background: linear-gradient(135deg, #7c3aed, #db2777); }
+.yt-thumb-e { background: linear-gradient(135deg, #2563eb, #06b6d4); }
+.yt-thumb-f { background: linear-gradient(135deg, #d97706, #dc2626); }
+
+.yt-thumb-time {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.55rem;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.yt-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 62%;
+  background: #ff0000;
+}
+
+.yt-card-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.yt-card-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #444;
+  flex-shrink: 0;
+}
+
+.av-a { background: linear-gradient(135deg, #a855f7, #6366f1); }
+.av-b { background: linear-gradient(135deg, #fb7185, #f59e0b); }
+.av-c { background: linear-gradient(135deg, #22d3ee, #10b981); }
+
+.yt-card-lines {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.yt-line {
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: #3a3a3a;
+}
+
+.yt-line-1 { width: 90%; }
+.yt-line-2 { width: 55%; }
+
+/* Scene 2 - the watch page: player + comments on the left, up-next on the right. */
+.yt-watch {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.yt-primary {
+  flex: 0 1 440px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.yt-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #312e81, #7c3aed 55%, #db2777);
+  flex-shrink: 0;
+}
+
+.yt-player::after {
+  content: "\25B6";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yt-player::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 45%;
+  background: #ff0000;
+  z-index: 1;
+}
+
+.yt-vtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.yt-vtitle-1 { height: 9px; width: 82%; border-radius: 4px; }
+.yt-vtitle-2 { height: 9px; width: 50%; border-radius: 4px; }
+
+.yt-channel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.yt-ch-1 { width: 40%; }
+.yt-ch-2 { width: 24%; }
+
+.yt-subscribe {
+  margin-left: auto;
+  width: 68px;
+  height: 22px;
+  border-radius: 999px;
+  background: #f1f1f1;
+  flex-shrink: 0;
+}
+
+.yt-comments {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  animation: comOut 13s ease-in-out infinite;
+}
+
+.yt-comments-head {
+  width: 130px;
+  height: 8px;
+  border-radius: 4px;
+  background: #333;
+}
+
+.yt-comment {
+  display: flex;
+  gap: 8px;
+}
+
+.yt-secondary {
+  flex: 0 0 262px;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  animation: secOut 13s ease-in-out infinite;
+}
+
+.yt-up {
+  display: flex;
+  gap: 8px;
+}
+
+.yt-up-thumb {
+  width: 96px;
+  height: 54px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* Browser toolbar area on the right of the address bar (Chrome chrome). */
+.yt-toolbar {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.yt-puzzle {
+  color: #9a9a9a;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* FocusTube extension icon pinned in the browser toolbar (cursor clicks it). */
+.ext-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.ext-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Mock of the FocusTube popup that drops down from the toolbar icon. */
+.ext-popup {
+  position: absolute;
+  top: 40px;
+  right: 12px;
+  width: 188px;
+  padding: 12px;
+  background: #212121;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  z-index: 7;
+  opacity: 0;
+  transform-origin: top right;
+  transform: scale(0.9) translateY(-6px);
+  animation: extPopup 13s ease-in-out infinite;
+}
+
+.ext-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ext-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+}
+
+.ext-name {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #fff;
+}
+
+.ext-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.ext-tab {
+  height: 6px;
+  width: 40px;
+  border-radius: 3px;
+  background: #3a3a3a;
+}
+
+.ext-tab.is-active {
+  width: 34px;
+  background: var(--coral);
+}
+
+.ext-modes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.ext-mode {
+  padding: 7px 4px;
+  border-radius: 8px;
+  background: #383838;
+  color: #e5e5e5;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ext-mode-on {
+  animation: extPick 13s ease-in-out infinite;
+}
+
+/* Fake mouse cursor that drives the demo. */
+.yt-cursor {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  pointer-events: none;
+  transform-origin: top left;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  animation: cursorMove 13s ease-in-out infinite;
+  z-index: 6;
+}
+
+/* Expanding "click" ripples left where the cursor taps each target. */
+.yt-ripple {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--coral);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+  transform: translate(-50%, -50%) scale(0.3);
+}
+
+.yt-ripple-1 { left: 18%; top: 40%; animation: ripple1 13s ease-out infinite; }
+.yt-ripple-2 { left: 90%; top: 5%; animation: ripple2 13s ease-out infinite; }
+.yt-ripple-3 { left: 88%; top: 22%; animation: ripple3 13s ease-out infinite; }
+
+/* ---- Coordinated demo timeline (all animations share the duration) ----
+   1. On the home feed the cursor clicks a recommended video.
+   2. The page cross-fades into the watch page (player + up-next + comments).
+   3. The cursor clicks the FocusTube icon; the extension popup opens.
+   4. It clicks the "Always" mode; the "Up next" suggestions and comments
+      collapse, leaving a clean video. Everything resets and the loop repeats. */
+
+@keyframes sceneHome {
+  0%, 20% { opacity: 1; transform: scale(1); }
+  27%, 86% { opacity: 0; transform: scale(1.06); }
+  93%, 100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes sceneWatch {
+  0%, 20% { opacity: 0; transform: scale(0.96); }
+  28%, 86% { opacity: 1; transform: scale(1); }
+  92%, 100% { opacity: 0; transform: scale(0.96); }
+}
+
+/* Cursor path: absolute left/top move it between targets; scale dips are clicks. */
+@keyframes cursorMove {
+  0%   { opacity: 0; left: 42%; top: 102%; transform: scale(1); }
+  4%   { opacity: 1; left: 42%; top: 102%; transform: scale(1); }
+  14%  { opacity: 1; left: 18%; top: 40%; transform: scale(1); }   /* a recommended video */
+  17%  { opacity: 1; left: 18%; top: 40%; transform: scale(0.8); } /* click */
+  20%  { opacity: 1; left: 18%; top: 40%; transform: scale(1); }
+  33%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }    /* FocusTube icon */
+  35%  { opacity: 1; left: 90%; top: 5%; transform: scale(0.8); }  /* click - popup opens */
+  38%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }
+  44%  { opacity: 1; left: 88%; top: 22%; transform: scale(1); }   /* "Always" in the popup */
+  46%  { opacity: 1; left: 88%; top: 22%; transform: scale(0.8); } /* click */
+  49%  { opacity: 1; left: 88%; top: 22%; transform: scale(1); }
+  57%  { opacity: 1; left: 70%; top: 104%; transform: scale(1); }  /* glide out */
+  63%, 100% { opacity: 0; left: 42%; top: 102%; transform: scale(1); }
+}
+
+@keyframes ripple1 {
+  0%, 15% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  17% { opacity: 0.85; transform: translate(-50%, -50%) scale(0.6); }
+  23% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+  24%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+}
+
+@keyframes ripple2 {
+  0%, 33% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  35% { opacity: 0.85; transform: translate(-50%, -50%) scale(0.6); }
+  41% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+  42%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+}
+
+/* Click ripple for the mode button inside the popup. */
+@keyframes ripple3 {
+  0%, 45% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  47% { opacity: 0.85; transform: translate(-50%, -50%) scale(0.6); }
+  53% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+  54%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+}
+
+/* "Up next" suggestions slide out and collapse after the mode is chosen. */
+@keyframes secOut {
+  0%, 48% { opacity: 1; max-width: 262px; margin-left: 18px; transform: translateX(0); }
+  58%, 86% { opacity: 0; max-width: 0; margin-left: 0; transform: translateX(24px); }
+  93%, 100% { opacity: 1; max-width: 262px; margin-left: 18px; transform: translateX(0); }
+}
+
+/* Comments collapse too. */
+@keyframes comOut {
+  0%, 50% { opacity: 1; max-height: 120px; margin-top: 14px; }
+  60%, 86% { opacity: 0; max-height: 0; margin-top: 0; }
+  93%, 100% { opacity: 1; max-height: 120px; margin-top: 14px; }
+}
+
+/* Popup opens when the extension icon is clicked, closes after the choice. */
+@keyframes extPopup {
+  0%, 34% { opacity: 0; transform: scale(0.9) translateY(-6px); }
+  38%, 66% { opacity: 1; transform: scale(1) translateY(0); }
+  72%, 100% { opacity: 0; transform: scale(0.9) translateY(-6px); }
+}
+
+/* The chosen mode ("Always") lights up when clicked. */
+@keyframes extPick {
+  0%, 45% { background: #383838; color: #e5e5e5; }
+  49%, 66% { background: var(--coral); color: #fff; }
+  72%, 100% { background: #383838; color: #e5e5e5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yt-scene-home,
+  .yt-scene-watch,
+  .yt-cursor,
+  .yt-ripple,
+  .ext-popup,
+  .ext-mode-on,
+  .yt-comments,
+  .yt-secondary { animation: none; }
+  .yt-scene-home { opacity: 0; }
+  .yt-scene-watch { opacity: 1; }
+  .yt-cursor { opacity: 0; }
+  .ext-popup { opacity: 1; }
+}
+/* ---- Demo carousel: slide between the two animations ---- */
+.demo-carousel {
+  position: relative;
+  max-width: 760px;
+  margin: 8px auto 40px;
+}
+
+.demo-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.demo-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.demo-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.demo-arrow {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: background-color 0.15s, transform 0.15s;
+}
+
+.demo-arrow:hover {
+  background: var(--coral);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.demo-arrow-prev { left: -60px; }
+.demo-arrow-next { right: -60px; }
+
+.demo-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.demo-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+  transition: width 0.2s, background-color 0.2s;
+}
+
+.demo-dot.is-active {
+  width: 22px;
+  background: var(--coral);
+}
+
+/* ---- Slide 2: the Shorts shelf gets cleared ---- */
+.sh-stage {
+  padding: 12px 16px;
+}
+
+.yt-shorts-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #ff0000, #ff5e5e);
+  color: #fff;
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
+
+.sh-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sh-head-bar {
+  width: 92px;
+  height: 9px;
+  border-radius: 4px;
+  background: #3a3a3a;
+}
+
+.sh-shelf {
+  overflow: hidden;
+  transform-origin: top center;
+  animation: shShelf 13s ease-in-out infinite;
+}
+
+.sh-row {
+  display: flex;
+  gap: 10px;
+}
+
+.sh-short {
+  flex: 1 1 0;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.sh-short::after {
+  content: "\25B6";
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.55rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.sh-videos {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.sh-videos .yt-hcard { flex: 1 1 0; }
+
+.sh-cursor { animation-name: shCursor; }
+.sh-ripple { left: 90%; top: 5%; animation: ripple2 13s ease-out infinite; }
+.sh-ripple2 { left: 88%; top: 22%; animation: ripple3 13s ease-out infinite; }
+
+/* Shorts shelf collapses after the "Always" mode is chosen. */
+@keyframes shShelf {
+  0%, 50% { opacity: 1; max-height: 230px; margin-bottom: 16px; transform: translateY(0) scale(1); }
+  60%, 88% { opacity: 0; max-height: 0; margin-bottom: 0; transform: translateY(-12px) scale(0.97); }
+  95%, 100% { opacity: 1; max-height: 230px; margin-bottom: 16px; transform: translateY(0) scale(1); }
+}
+
+@keyframes shCursor {
+  0%   { opacity: 0; left: 58%; top: 104%; transform: scale(1); }
+  6%   { opacity: 1; left: 58%; top: 104%; transform: scale(1); }
+  32%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }    /* FocusTube icon */
+  35%  { opacity: 1; left: 90%; top: 5%; transform: scale(0.8); }  /* click - popup opens */
+  38%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }
+  44%  { opacity: 1; left: 88%; top: 22%; transform: scale(1); }   /* "Always" in the popup */
+  46%  { opacity: 1; left: 88%; top: 22%; transform: scale(0.8); } /* click */
+  49%  { opacity: 1; left: 88%; top: 22%; transform: scale(1); }
+  57%  { opacity: 1; left: 72%; top: 106%; transform: scale(1); }
+  63%, 100% { opacity: 0; left: 58%; top: 104%; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-track,
+  .sh-shelf,
+  .sh-cursor,
+  .sh-ripple,
+  .sh-ripple2,
+  .ext-popup,
+  .ext-mode-on { animation: none; }
+  .sh-cursor { opacity: 0; }
+  .ext-popup { opacity: 1; }
+}
+
+/* ---- Slide 3: block a keyword and matching search results disappear ---- */
+.bk-stage {
+  padding: 14px 16px;
+}
+
+.yt-search-input {
+  display: flex;
+  align-items: center;
+}
+
+.yt-search-query {
+  width: 55%;
+  height: 6px;
+  border-radius: 3px;
+  background: #6a6a6a;
+  margin-left: 10px;
+}
+
+.bk-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bk-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.bk-blocked {
+  transform-origin: top center;
+  animation: bkOut 13s ease-in-out infinite;
+}
+
+.bk-thumb {
+  position: relative;
+  width: 132px;
+  height: 74px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.bk-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 3px;
+}
+
+.bk-line {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: #3a3a3a;
+}
+
+.bk-sub {
+  display: block;
+  height: 6px;
+  width: 34%;
+  border-radius: 3px;
+  background: #2c2c2c;
+  margin-top: 2px;
+}
+
+.bk-titlerow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bk-key {
+  height: 10px;
+  width: 52px;
+  border-radius: 4px;
+  background: var(--coral);
+  flex-shrink: 0;
+}
+
+/* Blocklist field + chip inside the popup */
+.bk-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.bk-input {
+  flex: 1;
+  height: 22px;
+  border-radius: 6px;
+  background: #121212;
+  border: 1px solid #3a3a3a;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.bk-typed {
+  height: 8px;
+  width: 0;
+  border-radius: 4px;
+  background: var(--coral);
+  animation: bkTyped 13s ease-in-out infinite;
+}
+
+.bk-add {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--coral);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bk-chips {
+  display: flex;
+  gap: 6px;
+}
+
+.bk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(249, 115, 122, 0.18);
+  border: 1px solid var(--coral);
+  height: 18px;
+  opacity: 0;
+  transform: scale(0.6);
+  transform-origin: left center;
+  animation: bkChip 13s ease-in-out infinite;
+}
+
+.bk-chip::before {
+  content: "";
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--coral);
+}
+
+.bk-chip-x {
+  color: var(--coral);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.bk-cursor { animation-name: bkCursor; }
+.bk-ripple { left: 90%; top: 5%; animation: ripple2 13s ease-out infinite; }
+.bk-ripple2 { left: 82%; top: 20%; animation: ripple3 13s ease-out infinite; }
+
+@keyframes bkCursor {
+  0%   { opacity: 0; left: 55%; top: 104%; transform: scale(1); }
+  6%   { opacity: 1; left: 55%; top: 104%; transform: scale(1); }
+  32%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }    /* FocusTube icon */
+  35%  { opacity: 1; left: 90%; top: 5%; transform: scale(0.8); }  /* click - popup opens */
+  38%  { opacity: 1; left: 90%; top: 5%; transform: scale(1); }
+  44%  { opacity: 1; left: 82%; top: 20%; transform: scale(1); }   /* keyword field */
+  46%  { opacity: 1; left: 82%; top: 20%; transform: scale(0.8); } /* click - add word */
+  49%  { opacity: 1; left: 82%; top: 20%; transform: scale(1); }
+  57%  { opacity: 1; left: 68%; top: 106%; transform: scale(1); }
+  63%, 100% { opacity: 0; left: 55%; top: 104%; transform: scale(1); }
+}
+
+/* Blocked rows collapse once the keyword is added. */
+@keyframes bkOut {
+  0%, 50% { opacity: 1; max-height: 84px; margin-bottom: 14px; transform: translateX(0); }
+  60%, 88% { opacity: 0; max-height: 0; margin-bottom: 0; transform: translateX(18px); }
+  95%, 100% { opacity: 1; max-height: 84px; margin-bottom: 14px; transform: translateX(0); }
+}
+
+/* The keyword "types" into the input. */
+@keyframes bkTyped {
+  0%, 41% { width: 0; }
+  47%, 66% { width: 66%; }
+  72%, 100% { width: 0; }
+}
+
+/* The added-keyword chip pops in. */
+@keyframes bkChip {
+  0%, 47% { opacity: 0; transform: scale(0.6); }
+  51%, 66% { opacity: 1; transform: scale(1); }
+  72%, 100% { opacity: 0; transform: scale(0.6); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bk-blocked,
+  .bk-typed,
+  .bk-chip,
+  .bk-cursor,
+  .bk-ripple,
+  .bk-ripple2 { animation: none; }
+  .bk-cursor { opacity: 0; }
+  .bk-chip { opacity: 1; transform: scale(1); }
+  .bk-typed { width: 66%; }
+}
+
+.mode-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.mode-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 10px 22px;
+}
+
+.mode-pill .mode-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Not enough room outside the box for the arrows - tuck them just inside. */
+@media (max-width: 900px) {
+  .demo-arrow-prev { left: 6px; }
+  .demo-arrow-next { right: 6px; }
+  .demo-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .mode-row {
+    gap: 8px;
+  }
+
+  .mode-pill {
+    padding: 8px 16px;
+  }
+
+  /* Demo mock: shorter stage, 2-column home grid, narrower up-next column. */
+  .yt-stage {
+    height: 320px;
+  }
+
+  .yt-home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yt-home-grid .yt-hcard:nth-child(n + 5) {
+    display: none;
+  }
+
+  .yt-primary {
+    flex-basis: 320px;
+  }
+
+  .yt-secondary {
+    flex-basis: 150px;
+  }
+
+  /* Block-keywords slide: smaller result thumbnails on narrow screens. */
+  .bk-thumb {
+    width: 104px;
+    height: 58px;
+  }
+
+  /* Shorts slide: fewer, shorter shorts and one less video row so it fits. */
+  .sh-short {
+    height: 118px;
+  }
+
+  .sh-row .sh-short:nth-child(n + 5) {
+    display: none;
+  }
+
+  .sh-videos .yt-hcard:nth-child(3) {
+    display: none;
+  }
+
+  .yt-url {
+    display: none;
+  }
+}
+
+/* Dark mode (follows the visitor's OS/browser preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #263241;
+    --bg: #0b0f14;
+    --card: #11161c;
+  }
+
+  body {
+    background: var(--bg);
+  }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+  }
+
+  .cta-card .btn-primary {
+    color: var(--coral-dark);
+  }
+
+  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
+  .spotlight {
+    background: #05070a;
+  }
+}
