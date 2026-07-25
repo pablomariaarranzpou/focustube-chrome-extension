@@ -115,11 +115,16 @@
       <h2>एक मोड। कोई अपवाद नहीं।</h2>
       <p class="spotlight-lead">ब्रेक के साथ टाइमर सेशन, या बिना टाइमर के quick mode।</p>
 
-      <div class="demo-mock" aria-hidden="true" dir="ltr">
-        <div class="yt-window">
+      <div class="demo-carousel" dir="ltr">
+       <div class="demo-viewport">
+        <div class="demo-track" id="demoTrack">
+
+         <!-- Slide 1: enter a video -> Focus Mode clears suggestions + comments -->
+         <div class="demo-slide" aria-hidden="true">
+          <div class="yt-window">
           <div class="yt-titlebar">
             <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
-            <span class="yt-url">youtube.com</span>
+            <span class="yt-url">youtube.com/watch</span>
           </div>
           <div class="yt-topbar">
             <span class="yt-hamburger">&#9776;</span>
@@ -128,58 +133,77 @@
               <span class="yt-search-input"></span>
               <span class="yt-search-btn"></span>
             </span>
-            <span class="yt-focus-toggle"></span>
+            <span class="yt-focus-toggle"><span class="yt-focus-knob"></span></span>
             <span class="yt-avatar"></span>
           </div>
-          <div class="yt-pills">
-            <span class="yt-pill yt-pill-active"></span>
-            <span class="yt-pill"></span>
-            <span class="yt-pill"></span>
-            <span class="yt-pill"></span>
-            <span class="yt-pill"></span>
-          </div>
-          <div class="yt-body">
-            <div class="yt-nav">
-              <div class="yt-nav-item yt-nav-active"><span class="yt-nav-icon"></span>Home</div>
-              <div class="yt-nav-item"><span class="yt-nav-icon"></span>Shorts</div>
-              <div class="yt-nav-item"><span class="yt-nav-icon"></span>Subs</div>
-              <div class="yt-nav-subs">
-                <span class="yt-nav-sub-dot"></span>
-                <span class="yt-nav-sub-dot"></span>
-                <span class="yt-nav-sub-dot"></span>
+
+          <div class="yt-stage">
+            <!-- Scene 1: the home feed of recommendations -->
+            <div class="yt-scene yt-scene-home">
+              <div class="yt-pills">
+                <span class="yt-pill yt-pill-active"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
+                <span class="yt-pill"></span>
               </div>
-            </div>
-            <div class="yt-main">
-              <div class="yt-shorts-shelf yt-anim-shorts">
-                <div class="yt-shorts-heading"><span class="yt-shorts-icon">&#9889;</span>Shorts छिपाएं</div>
-                <div class="yt-shorts-row">
-                  <div class="yt-short yt-short-a"></div><div class="yt-short yt-short-b"></div><div class="yt-short yt-short-c"></div><div class="yt-short yt-short-d"></div><div class="yt-short yt-short-e"></div>
-                </div>
-              </div>
-              <div class="yt-grid">
-                <div class="yt-card yt-anim-block">
-                  <div class="yt-thumb yt-thumb-a">
-                    <span class="yt-thumb-time">12:04</span>
-                    <span class="yt-progress"></span>
-                    <span class="yt-block-btn">&#8856; ब्लैकलिस्ट</span>
-                  </div>
+              <div class="yt-home-grid">
+                <div class="yt-hcard yt-open-target">
+                  <div class="yt-thumb yt-thumb-a"><span class="yt-thumb-time">12:04</span><span class="yt-progress"></span></div>
                   <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
                 </div>
-                <div class="yt-card yt-anim-recs">
+                <div class="yt-hcard">
                   <div class="yt-thumb yt-thumb-b"><span class="yt-thumb-time">6:47</span></div>
                   <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
                 </div>
-                <div class="yt-card yt-anim-recs">
+                <div class="yt-hcard">
                   <div class="yt-thumb yt-thumb-c"><span class="yt-thumb-time">3:15</span></div>
                   <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
                 </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-d"><span class="yt-thumb-time">9:22</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-e"><span class="yt-thumb-time">18:31</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
+                <div class="yt-hcard">
+                  <div class="yt-thumb yt-thumb-f"><span class="yt-thumb-time">4:08</span></div>
+                  <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
               </div>
-              <div class="yt-focused">
-                <span class="yt-focused-check">&#10003;</span>
-                <span class="yt-focused-label">Focus Mode</span>
+            </div>
+
+            <!-- Scene 2: the watch page, where Focus Mode clears the distractions -->
+            <div class="yt-scene yt-scene-watch">
+              <div class="yt-watch">
+                <div class="yt-primary">
+                  <div class="yt-player"></div>
+                  <div class="yt-vtitle"><span class="yt-line yt-vtitle-1"></span><span class="yt-line yt-vtitle-2"></span></div>
+                  <div class="yt-channel">
+                    <span class="yt-card-avatar av-a"></span>
+                    <div class="yt-card-lines"><span class="yt-line yt-ch-1"></span><span class="yt-line yt-ch-2"></span></div>
+                    <span class="yt-subscribe"></span>
+                  </div>
+                  <div class="yt-comments">
+                    <div class="yt-comments-head"></div>
+                    <div class="yt-comment"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                    <div class="yt-comment"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  </div>
+                </div>
+                <div class="yt-secondary">
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-b"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-c"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-d"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-e"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                  <div class="yt-up"><div class="yt-up-thumb yt-thumb-f"></div><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+                </div>
               </div>
             </div>
           </div>
+
           <span class="yt-ripple yt-ripple-1"></span>
           <span class="yt-ripple yt-ripple-2"></span>
           <div class="yt-cursor">
@@ -188,8 +212,77 @@
                     fill="#fff" stroke="#141414" stroke-width="1.1" stroke-linejoin="round"/>
             </svg>
           </div>
-        </div>
-      </div>
+          </div>
+         </div><!-- /slide 1 -->
+
+         <!-- Slide 2: Focus Mode clears the Shorts shelf -->
+         <div class="demo-slide" aria-hidden="true">
+          <div class="yt-window">
+           <div class="yt-titlebar">
+             <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
+             <span class="yt-url">youtube.com</span>
+           </div>
+           <div class="yt-topbar">
+             <span class="yt-hamburger">&#9776;</span>
+             <span class="yt-logo"><span class="yt-logo-icon">&#9654;</span>YouTube</span>
+             <span class="yt-search"><span class="yt-search-input"></span><span class="yt-search-btn"></span></span>
+             <span class="yt-focus-toggle"><span class="yt-focus-knob"></span></span>
+             <span class="yt-avatar"></span>
+           </div>
+           <div class="yt-stage sh-stage">
+             <div class="yt-pills">
+               <span class="yt-pill yt-pill-active"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+               <span class="yt-pill"></span>
+             </div>
+             <div class="sh-shelf">
+               <div class="sh-head"><span class="yt-shorts-icon">&#9889;</span><span class="sh-head-bar"></span></div>
+               <div class="sh-row">
+                 <div class="sh-short yt-thumb-a"></div>
+                 <div class="sh-short yt-thumb-b"></div>
+                 <div class="sh-short yt-thumb-c"></div>
+                 <div class="sh-short yt-thumb-d"></div>
+                 <div class="sh-short yt-thumb-e"></div>
+                 <div class="sh-short yt-thumb-f"></div>
+               </div>
+             </div>
+             <div class="sh-videos">
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-b"><span class="yt-thumb-time">10:32</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-b"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-c"><span class="yt-thumb-time">7:58</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-c"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+               <div class="yt-hcard">
+                 <div class="yt-thumb yt-thumb-e"><span class="yt-thumb-time">21:14</span></div>
+                 <div class="yt-card-meta"><span class="yt-card-avatar av-a"></span><div class="yt-card-lines"><span class="yt-line yt-line-1"></span><span class="yt-line yt-line-2"></span></div></div>
+               </div>
+             </div>
+           </div>
+           <span class="yt-ripple sh-ripple"></span>
+           <div class="yt-cursor sh-cursor">
+             <svg viewBox="0 0 16 20" width="20" height="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1.5 1.2 L1.5 16.2 L5.4 12.4 L8.2 18.4 L10.6 17.2 L7.7 11.5 L13.2 11.5 Z"
+                     fill="#fff" stroke="#141414" stroke-width="1.1" stroke-linejoin="round"/>
+             </svg>
+           </div>
+          </div>
+         </div><!-- /slide 2 -->
+
+        </div><!-- /track -->
+       </div><!-- /viewport -->
+       <button class="demo-arrow demo-arrow-prev" id="demoPrev" type="button" aria-label="Previous">&#8249;</button>
+       <button class="demo-arrow demo-arrow-next" id="demoNext" type="button" aria-label="Next">&#8250;</button>
+       <div class="demo-dots" id="demoDots">
+         <button class="demo-dot is-active" type="button" data-i="0" aria-label="1"></button>
+         <button class="demo-dot" type="button" data-i="1" aria-label="2"></button>
+       </div>
+      </div><!-- /carousel -->
 
       <div class="mode-row">
         <div class="mode-pill"><span class="mode-name">बंद</span></div>
@@ -270,6 +363,52 @@
     document.getElementById('langSwitch').addEventListener('change', function (e) {
       window.location.href = e.target.value;
     });
+
+    // Demo carousel: slide between the watch-page and Shorts animations.
+    (function () {
+      var track = document.getElementById('demoTrack');
+      if (!track) return;
+      var slides = track.children.length;
+      var dots = [].slice.call(document.querySelectorAll('#demoDots .demo-dot'));
+      var slideEls = [].slice.call(track.children);
+      var i = 0, timer;
+      var ANIM = '.yt-scene-home,.yt-scene-watch,.yt-cursor,.yt-ripple,.yt-focus-toggle,.yt-focus-knob,.yt-comments,.yt-secondary,.sh-shelf';
+      // Replay a slide's animation from the top whenever it becomes visible.
+      function restart(idx) {
+        var els = slideEls[idx].querySelectorAll(ANIM);
+        els.forEach(function (el) { el.style.animation = 'none'; });
+        void slideEls[idx].offsetWidth;
+        els.forEach(function (el) { el.style.animation = ''; });
+      }
+      function go(n) {
+        i = (n + slides) % slides;
+        track.style.transform = 'translateX(-' + (i * 100) + '%)';
+        dots.forEach(function (d, k) { d.classList.toggle('is-active', k === i); });
+        restart(i);
+      }
+      function schedule() { clearInterval(timer); timer = setInterval(function () { go(i + 1); }, 10000); }
+      var next = document.getElementById('demoNext'), prev = document.getElementById('demoPrev');
+      if (next) next.addEventListener('click', function () { go(i + 1); schedule(); });
+      if (prev) prev.addEventListener('click', function () { go(i - 1); schedule(); });
+      dots.forEach(function (d) {
+        d.addEventListener('click', function () { go(parseInt(d.getAttribute('data-i'), 10)); schedule(); });
+      });
+      // Pause the auto-advance while the pointer is over the demo.
+      var carousel = track.closest('.demo-carousel');
+      if (carousel) {
+        carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+        carousel.addEventListener('mouseleave', schedule);
+      }
+      var x0 = null;
+      track.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        if (x0 === null) return;
+        var dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 40) { go(dx < 0 ? i + 1 : i - 1); schedule(); }
+        x0 = null;
+      });
+      schedule();
+    })();
   </script>
 </body>
 </html>
