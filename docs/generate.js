@@ -84,10 +84,10 @@ for (const code of locales) {
     .replace('{{FOOTER_LINK}}', escapeHtml(c.flink))
     .replace('{{LANG_OPTIONS}}', buildLangOptions(code, !!folder))
     .replace('{{SPOTLIGHT_H2}}', escapeHtml(c.sph))
-    .replace('{{MODE_OFF}}', escapeHtml(c.modes.off))
-    .replace('{{MODE_ALWAYS}}', escapeHtml(c.modes.always))
-    .replace('{{MODE_TIMER}}', escapeHtml(c.modes.timer))
-    .replace('{{MODE_SCHEDULE}}', escapeHtml(c.modes.schedule));
+    .replace(/{{MODE_OFF}}/g, escapeHtml(c.modes.off))
+    .replace(/{{MODE_ALWAYS}}/g, escapeHtml(c.modes.always))
+    .replace(/{{MODE_TIMER}}/g, escapeHtml(c.modes.timer))
+    .replace(/{{MODE_SCHEDULE}}/g, escapeHtml(c.modes.schedule));
 
   // Global (not just first-match) replace: F5/F6 are reused both in the
   // regular feature grid's data source and in the Focus Mode spotlight below.
