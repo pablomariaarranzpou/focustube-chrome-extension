@@ -142,11 +142,17 @@ async function broadcastState() {
 }
 
 function notify(titleKey, bodyKey) {
-  chrome.notifications.create({
-    type: 'basic',
-    iconUrl: chrome.runtime.getURL('128.png'),
-    title: chrome.i18n.getMessage(titleKey),
-    message: chrome.i18n.getMessage(bodyKey)
+  // `notifications` is an optional permission (requested on demand from the
+  // popup). If the user hasn't granted it, skip silently - the session logic
+  // is unaffected, they just don't get the OS alert.
+  chrome.permissions.contains({ permissions: ['notifications'] }, (granted) => {
+    if (chrome.runtime.lastError || !granted) return;
+    chrome.notifications.create({
+      type: 'basic',
+      iconUrl: chrome.runtime.getURL('128.png'),
+      title: chrome.i18n.getMessage(titleKey),
+      message: chrome.i18n.getMessage(bodyKey)
+    });
   });
 }
 

@@ -13,7 +13,8 @@
 - Small localized hint at the bottom of the popup: refresh the tab if you don't see changes right away.
 
 ### Changed
-- Added the `alarms` and `notifications` permissions to power Timer sessions, recurring schedules and their end-of-session reminders.
+- Added the `alarms` permission to power Timer sessions and recurring schedules.
+- End-of-session reminders use the `notifications` permission, requested **on demand** the first time you start a timed/scheduled session (it's an optional permission, so updating the extension never disables it or forces existing users to re-accept anything). Sessions work fine without it — you just don't get the OS alert.
 
 ### Notes
 - Fully localised across all supported languages.
