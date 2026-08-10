@@ -18,7 +18,7 @@ jest.config.js
 .claude
 .gitignore
 .pkgignore
-package.ps1
+*.ps1
 
 # --- Store-listing assets (uploaded separately, not inside the extension) ---
 store_presence
