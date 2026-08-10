@@ -1,0 +1,34 @@
+# Top-level files/folders that must NOT go into the Chrome Web Store .zip.
+# Works like .gitignore: anything here is excluded, everything else is packaged.
+# One pattern per line. '*' wildcards are allowed. Lines starting with # are comments.
+
+# --- Marketing website (GitHub Pages) - not part of the extension ---
+docs
+
+# --- Dev-only test harness ---
+test
+node_modules
+package.json
+package-lock.json
+jest.config.js
+
+# --- Repo / tooling / meta ---
+.git
+.github
+.claude
+.gitignore
+.pkgignore
+package.ps1
+
+# --- Store-listing assets (uploaded separately, not inside the extension) ---
+store_presence
+
+# --- Docs the store package doesn't need ---
+README.md
+CHANGELOG.md
+LICENSE
+
+# --- Build outputs / temp ---
+dist
+focustube-*.zip
+tmpclaude-*

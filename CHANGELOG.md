@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.5.0] - 2026-08-10
+
+### Added
+- **Focus Mode** — a single "Mode" that decides *when* your FocusTube Settings apply, without ever changing what you have configured:
+  - **Off** — everything on YouTube shows, no matter what is in Settings.
+  - **Always** — your Settings apply all the time (default on a fresh install).
+  - **Timer** — a countdown focus session with optional breaks; breaks intentionally let distractions back in.
+  - **Schedule** — turn Focus Mode on only on the days and times you choose (recurring windows).
+- Reorganised popup: a compact header with a **Mode** tab and a **Settings** tab. Settings still control *what* gets hidden; Mode controls *when* those settings are enforced.
+- Non-destructive gate: switching modes suppresses/releases features live and never overwrites your saved preferences.
+- Small localized hint at the bottom of the popup: refresh the tab if you don't see changes right away.
+
+### Changed
+- Added the `alarms` and `notifications` permissions to power Timer sessions, recurring schedules and their end-of-session reminders.
+
+### Notes
+- Fully localised across all supported languages.
+
+---
+
 ## [2.4.8] - 2026-04-16
 
 ### Added

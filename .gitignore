@@ -7,6 +7,10 @@ tailwind.min.css
 # Temp directories
 tmpclaude-*
 
+# Extension package build output (created by package.ps1)
+focustube-*.zip
+dist/
+
 # Test harness (dev-only, not part of the shipped extension, not for upload)
 node_modules/
 test/
