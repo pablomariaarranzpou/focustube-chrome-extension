@@ -648,9 +648,33 @@ class PopupController {
   }
 
   async setFocusMode(mode) {
+    // Timer/Schedule can fire an end-of-session alert, which needs the
+    // (optional) notifications permission. Ask for it here, inside the click
+    // gesture, before any await - it's a no-op if already granted.
+    if (mode === 'timer' || mode === 'schedule') this.requestNotificationsPermission();
     const response = await this.sendToBackground({ type: 'setFocusMode', mode });
     if (response && response.success) {
       this.updateModeSelectorUI(mode);
+    }
+  }
+
+  /**
+   * Requests the optional `notifications` permission. It is kept out of the
+   * install-time permission list so publishing updates never disables the
+   * extension for existing users; instead it is requested on demand the first
+   * time the user starts a timed/scheduled focus session. Sessions still work
+   * without it - the user just won't get the OS alert when one ends.
+   */
+  requestNotificationsPermission() {
+    try {
+      if (chrome.permissions && chrome.permissions.request) {
+        chrome.permissions.request(
+          { permissions: ['notifications'] },
+          () => void chrome.runtime.lastError
+        );
+      }
+    } catch (error) {
+      /* not supported / dismissed - notifications just stay off */
     }
   }
 
@@ -686,6 +710,10 @@ class PopupController {
   }
 
   async startFocusSession() {
+    // Inside the click gesture: ask for the optional notifications permission
+    // so we can alert the user when the session ends (no-op if already granted).
+    this.requestNotificationsPermission();
+
     const focusInput = document.getElementById('focusDurationInput');
     const breakInput = document.getElementById('breakDurationInput');
 
