@@ -116,20 +116,46 @@ class DOMFeature extends Feature {
     };
 
     const observerOptions = { ...defaultOptions, ...options };
-    
-    // Safety check for document.body
+
+    // Content scripts run at document_start, so <body> usually does not exist
+    // yet on the first call. Bridge on <html> until it appears, then observe
+    // <body> as normal.
+    //
+    // This used to defer to DOMContentLoaded, which left the pending
+    // registration outside the feature's lifecycle: deactivating during page
+    // load found this.observers still empty, and the listener then attached a
+    // live observer to a feature that was already off. Registering the bridge
+    // in this.observers means disconnectObservers() can cancel it.
     if (!document.body) {
-      console.warn(`FocusTube: document.body not ready for ${this.name} observer, waiting for DOMContentLoaded`);
-      document.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      if (!root) {
+        console.warn(`FocusTube: no document root for ${this.name} observer`);
+        return null;
+      }
+
+      const bridge = new MutationObserver(() => {
+        if (!document.body) return;
+
+        bridge.disconnect();
+        this.observers = this.observers.filter((o) => o !== bridge);
+
+        // Deactivated while we were waiting - stay off.
+        if (!this.isActive) return;
+
         this.observeDOM(callback, options);
-        // Force an initial check once DOM is ready, as we missed the initial load
+        // Catch up on everything that rendered before <body> existed.
         try {
-          callback([]); 
+          callback([]);
         } catch (e) {
           console.error(`FocusTube: Error in deferred callback for ${this.name}:`, e);
         }
       });
-      return null;
+
+      // Only watches for <body> appearing; feature callbacks never run against
+      // <head> churn, so the observed scope in steady state is unchanged.
+      bridge.observe(root, { childList: true, subtree: true });
+      this.observers.push(bridge);
+      return bridge;
     }
 
     const observer = new MutationObserver((mutations) => {
@@ -142,7 +168,7 @@ class DOMFeature extends Feature {
 
     observer.observe(document.body, observerOptions);
     this.observers.push(observer);
-    
+
     return observer;
   }
 
