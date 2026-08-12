@@ -5,6 +5,10 @@
  * This class provides reusable methods for hiding/showing elements,
  * query selectors, and MutationObserver management.
  */
+// Upper bound on mutation records buffered between animation frames. Only
+// reached in a background tab, where rAF is paused and nothing is flushing.
+const MAX_PENDING_RECORDS = 2000;
+
 class DOMFeature extends Feature {
   constructor(name, config = {}) {
     super(name, config);
@@ -158,13 +162,55 @@ class DOMFeature extends Feature {
       return bridge;
     }
 
-    const observer = new MutationObserver((mutations) => {
+    // YouTube emits many small mutation batches per frame, and each one used to
+    // cost every active feature a full querySelectorAll sweep of the document.
+    // Coalescing them into one call per frame collapses that burst into a
+    // single sweep.
+    //
+    // requestAnimationFrame, not a timer: rAF callbacks run before the browser
+    // paints, so elements are still hidden in the same frame they appear in and
+    // nothing flashes on screen.
+    let pending = [];
+    let frame = null;
+
+    const flush = () => {
+      frame = null;
+      const records = pending;
+      pending = [];
+      // Deactivated between scheduling and this frame - stay off.
+      if (!this.isActive) return;
       try {
-        callback(mutations);
+        callback(records);
       } catch (error) {
         console.error(`FocusTube: Error in ${this.name} observer:`, error);
       }
+    };
+
+    const observer = new MutationObserver((mutations) => {
+      // Records are kept, not discarded: HideAutoplayOverlayFeature reads
+      // addedNodes off them to spot the countdown overlay.
+      for (let i = 0; i < mutations.length; i++) {
+        pending.push(mutations[i]);
+      }
+      // rAF is paused in background tabs, so cap the buffer rather than let a
+      // tab left playing in the background grow it without bound. Newest
+      // records are the ones worth keeping.
+      if (pending.length > MAX_PENDING_RECORDS) {
+        pending = pending.slice(-MAX_PENDING_RECORDS);
+      }
+      if (frame !== null) return;
+      frame = requestAnimationFrame(flush);
     });
+
+    // disconnect() stops new records but cannot cancel a frame already
+    // scheduled, so expose a canceller for disconnectObservers().
+    observer.__focusTubeCancel = () => {
+      if (frame !== null) {
+        cancelAnimationFrame(frame);
+        frame = null;
+      }
+      pending = [];
+    };
 
     observer.observe(document.body, observerOptions);
     this.observers.push(observer);
@@ -178,6 +224,11 @@ class DOMFeature extends Feature {
   disconnectObservers() {
     this.observers.forEach(observer => {
       try {
+        // Drop any frame already scheduled, so a switched-off feature cannot
+        // still run one more sweep on the next frame.
+        if (observer.__focusTubeCancel) {
+          observer.__focusTubeCancel();
+        }
         observer.disconnect();
       } catch (error) {
         console.error(`FocusTube: Error disconnecting observer:`, error);
