@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.5.2] - 2026-08-12
+
+### Fixed
+- **A switched-off feature could keep hiding content until you reloaded.** Turning a toggle off while YouTube was still loading left its DOM watcher running for the rest of the page. The watcher was registered outside the feature's lifecycle, so switching the feature off had nothing to cancel, and it then attached itself to a feature that was already off.
+  - Watchers now start as soon as the page body exists instead of waiting for the whole document, so features apply a little earlier too.
+  - Removes the `document.body not ready` warnings that every feature logged on each page load.
+
+---
+
 ## [2.5.1] - 2026-08-12
 
 ### Changed
