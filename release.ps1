@@ -61,7 +61,7 @@ if ($DryRun) {
   exit 0
 }
 
-$notesFile = Join-Path $env:TEMP "ft-notes-$version.md"
+$notesFile = Join-Path ([System.IO.Path]::GetTempPath()) "ft-notes-$version.md"
 Set-Content -Path $notesFile -Value $notes -Encoding utf8
 try {
   Write-Host "Creating GitHub release $tag ..."

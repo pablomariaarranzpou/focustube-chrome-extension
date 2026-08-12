@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Amaga Paraules a la Llista Negra"
   },
-  "hideHomePageContent": {
-    "message": "Amaga Contingut de la Pàgina Principal"
+  "minimalistHome": {
+    "message": "Pàgina d'Inici Minimalista"
   },
   "disableAutoplay": {
     "message": "Desactiva la Reproducció Automàtica"

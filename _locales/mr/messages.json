@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "काळ्या यादीतील शब्द लपवा"
   },
-  "hideHomePageContent": {
-    "message": "मुख्य पृष्ठावरील सामग्री लपवा"
+  "minimalistHome": {
+    "message": "मिनिमलिस्ट मुख्यपृष्ठ"
   },
   "disableAutoplay": {
     "message": "स्वयं प्ले निष्क्रिय करा"

@@ -6,28 +6,28 @@
     "message": "YouTube Shorts፣ ምክሮችን፣ ጥቆማዎችን እና አስተያየቶችን ደብቅ። ጣቢያዎችን እና ቃላትን አግድ። ከረብሻ ነጻ የሆነ ምርጥ መሳሪያ።"
   },
   "hideShorts": {
-    "message": "Скриване на Shorts"
+    "message": "Shorts ደብቅ"
   },
   "hideSuggestions": {
-    "message": "Скриване на препоръки"
+    "message": "ምክሮችን ደብቅ"
   },
   "hideComments": {
-    "message": "Скриване на коментари"
+    "message": "አስተያየቶችን ደብቅ"
   },
   "hideBlacklistedChannels": {
-    "message": "Скриване на забранени канали"
+    "message": "የተከለከሉ ጣቢያዎችን ደብቅ"
   },
   "hideBlacklistedWords": {
-    "message": "Скриване на забранени думи"
+    "message": "የተከለከሉ ቃላትን ደብቅ"
   },
-  "hideHomePageContent": {
-    "message": "Скриване на съдържанието на началната страница"
+  "minimalistHome": {
+    "message": "ቀላል የመነሻ ገጽ"
   },
   "disableAutoplay": {
-    "message": "Деактивиране на автоматичното възпроизвеждане"
+    "message": "ራስ-ሰር ማጫወትን አሰናክል"
   },
   "hideSidebar": {
-    "message": "Скриване на страничната лента"
+    "message": "የጎን አሞሌን ደብቅ"
   },
   "keepHistoryVisible": {
     "message": "ታሪክን ታይቶ ያቆዩ"
@@ -36,28 +36,28 @@
     "message": "በዋናው ቅጽ ፈጣን ማገጃ ቁልፍ አሳይ"
   },
   "editBlacklistedChannels": {
-    "message": "Редактиране на забранени канали"
+    "message": "የተከለከሉ ጣቢያዎችን አርትዕ"
   },
   "concentrationModeBlacklist": {
-    "message": "Черен списък на режим концентрация"
+    "message": "የትኩረት ሁነታ የተከለከሉ ዝርዝር"
   },
   "channelNamePlaceholder": {
-    "message": "Име на канал"
+    "message": "የጣቢያ ስም"
   },
   "add": {
-    "message": "Добави"
+    "message": "ጨምር"
   },
   "editBlacklistedWords": {
-    "message": "Редактиране на забранени думи"
+    "message": "የተከለከሉ ቃላትን አርትዕ"
   },
   "concentrationModeBlacklistWords": {
-    "message": "Черен списък на думи за режим концентрация"
+    "message": "የትኩረት ሁነታ የተከለከሉ ቃላት ዝርዝር"
   },
   "wordPlaceholder": {
-    "message": "Пример: Игри"
+    "message": "ምሳሌ: ጨዋታዎች"
   },
   "remove": {
-    "message": "Премахване"
+    "message": "አስወግድ"
   },
   "tabSettings": {
     "message": "ቅንብሮች"

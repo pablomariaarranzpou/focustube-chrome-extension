@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "ブラックリストの単語を非表示"
   },
-  "hideHomePageContent": {
-    "message": "ホームページのコンテンツを非表示"
+  "minimalistHome": {
+    "message": "ミニマルなホームページ"
   },
   "disableAutoplay": {
     "message": "自動再生を無効化"

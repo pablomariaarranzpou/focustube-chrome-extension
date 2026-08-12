@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "הסתר מילים ברשימה השחורה"
   },
-  "hideHomePageContent": {
-    "message": "הסתר תוכן דף הבית"
+  "minimalistHome": {
+    "message": "דף בית מינימליסטי"
   },
   "disableAutoplay": {
     "message": "השבת הפעלה אוטומטית"

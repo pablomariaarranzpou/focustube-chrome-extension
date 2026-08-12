@@ -82,12 +82,14 @@ Navigate to youtube.com for testing.
 - [ ] Toggle "Hide Autoplay Overlay" OFF
 - [ ] Overlay reappears
 
-#### 6. Hide Home Page Content
+#### 6. Minimalist Home Page
 - [ ] Navigate to youtube.com homepage
-- [ ] Toggle "Hide Home Page Content" ON
-- [ ] Homepage content disappears
+- [ ] Toggle "Minimalist Home Page" ON
+- [ ] Feed/masthead disappear; logo + native search box are centered on a themed background
+- [ ] Search still works (submits to /results); voice button still works
+- [ ] Navigate to a video/search page — hero disappears, header/search restored
 - [ ] Toggle OFF
-- [ ] Content reappears
+- [ ] Homepage feed reappears
 
 #### 7. Channel Blacklist
 - [ ] Click "Channel Blacklist ▼" to expand

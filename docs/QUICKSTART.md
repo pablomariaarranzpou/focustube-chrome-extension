@@ -31,7 +31,7 @@ Your FocusTube extension has been completely refactored with a modern, scalable 
 3. **Hide Comments** - Removes comment sections
 4. **Hide Sidebar** - Hides left navigation panel (desktop only)
 5. **Hide Autoplay Overlay** - Removes end-of-video autoplay
-6. **Hide Home Page Content** - Clean homepage
+6. **Minimalist Home Page** - Centered logo + search, no feed
 7. **Channel Blacklist** - Hide specific channels
 8. **Word Blacklist** - Hide videos with specific keywords
 

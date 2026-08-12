@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Slėpti Juodajame Sąraše esančius Žodžius"
   },
-  "hideHomePageContent": {
-    "message": "Slėpti Pradžios Puslapio Turinį"
+  "minimalistHome": {
+    "message": "Minimalistinis Pradžios Puslapis"
   },
   "disableAutoplay": {
     "message": "Išjungti Automatinį Paleidimą"

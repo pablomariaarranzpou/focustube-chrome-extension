@@ -1,8 +1,13 @@
-# Copilot / AI tooling
-.github/
+# Copilot / AI tooling.
+# Scoped to the Copilot files only: ignoring all of .github/ also made it
+# impossible to commit CI workflows, which have to be versioned to run.
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
 
-# Generated / downloaded assets
-tailwind.min.css
+# NOTE: tailwind.min.css is deliberately NOT ignored. front.html loads it at
+# runtime and package.ps1 ships it, so a clean checkout (a CI runner, or a new
+# clone) must have it or the popup renders unstyled.
 
 # Temp directories
 tmpclaude-*

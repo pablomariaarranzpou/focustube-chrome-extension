@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Verberg Geblokkeerde Woorden"
   },
-  "hideHomePageContent": {
-    "message": "Verberg Inhoud van de Homepage"
+  "minimalistHome": {
+    "message": "Minimalistische Homepage"
   },
   "disableAutoplay": {
     "message": "Schakel Automatisch Afspelen Uit"

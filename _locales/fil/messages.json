@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Itago ang Mga Salitang Nasa Blacklist"
   },
-  "hideHomePageContent": {
-    "message": "Itago ang Nilalaman ng Homepage"
+  "minimalistHome": {
+    "message": "Minimalist na Home Page"
   },
   "disableAutoplay": {
     "message": "I-disable ang Autoplay"
