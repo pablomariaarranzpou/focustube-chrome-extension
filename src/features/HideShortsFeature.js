@@ -14,6 +14,21 @@ class HideShortsFeature extends DOMFeature {
       aggressiveBlocking: true
     });
     
+    // Card containers that can hold a Short. A Short served into the ordinary
+    // feed is an ytd-rich-item-renderer like any other video, told apart only
+    // by its /shorts link, so the whole card has to go. Hiding just the anchor
+    // leaves a gutted card: no thumbnail, nothing to click, but the title,
+    // channel and metadata still there, and hovering it still spawns the
+    // inline ytd-video-preview player.
+    this.shortsCardContainers = [
+      'ytd-rich-item-renderer',
+      'ytd-video-renderer',
+      'ytd-grid-video-renderer',
+      'ytd-compact-video-renderer',
+      'ytd-playlist-video-renderer',
+      'ytd-reel-item-renderer'
+    ];
+
     this.shortsSelectors = [
       'ytd-reel-shelf-renderer',
       'ytd-rich-shelf-renderer[is-shorts]',
@@ -26,7 +41,11 @@ class HideShortsFeature extends DOMFeature {
       'ytm-shorts-lockup-view-model',
       'ytm-shorts-lockup-view-model-v2',
       '.shortsLockupViewModelHost',
-      'a[href^="/shorts"]'
+      // Whole cards, never the bare anchor.
+      ...this.shortsCardContainers.map((sel) => `${sel}:has(a[href^="/shorts"])`),
+      // Sidebar and mini-guide entries, which are links rather than cards.
+      'ytd-guide-entry-renderer:has(a[href^="/shorts"])',
+      'ytd-mini-guide-entry-renderer:has(a[href^="/shorts"])'
     ];
   }
 
@@ -190,10 +209,16 @@ class HideShortsFeature extends DOMFeature {
    * Hide video cards that link to Shorts
    */
   hideShortsVideoCards() {
-    const videoCards = this.query('ytd-video-renderer, ytd-grid-video-renderer');
-    videoCards.forEach(card => {
-      const shortsLink = card.querySelector('a[href^="/shorts"]');
-      if (shortsLink) {
+    // Walk up from the link to whatever card holds it, rather than listing the
+    // card types to look inside. YouTube keeps adding renderer types - this
+    // previously only checked ytd-video-renderer and ytd-grid-video-renderer,
+    // so Shorts served into the home feed as ytd-rich-item-renderer were never
+    // hidden. This also covers browsers without :has(), where the CSS above
+    // does nothing.
+    const containers = this.shortsCardContainers.join(',');
+    this.query('a[href^="/shorts"]').forEach((link) => {
+      const card = link.closest(containers);
+      if (card) {
         this.hideElements([card]);
       }
     });
