@@ -48,7 +48,12 @@
       "timer": "Timer",
       "schedule": "Schedule"
     },
-    "sph": "One mode. Zero exceptions."
+    "sph": "One mode. Zero exceptions.",
+    "mh": {
+      "badge": "NEW",
+      "title": "Minimalist Home Page",
+      "body": "Turn your YouTube homepage into a clean, centered search screen: the real YouTube logo and the genuine search bar, nothing else. No feed, no rabbit holes—just search for what you came for and go."
+    }
   },
   "es": {
     "name": "Español",
@@ -99,7 +104,12 @@
       "timer": "Timer",
       "schedule": "Horario"
     },
-    "sph": "Un modo. Cero excepciones."
+    "sph": "Un modo. Cero excepciones.",
+    "mh": {
+      "badge": "NUEVO",
+      "title": "Página de Inicio Minimalista",
+      "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
+    }
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -150,7 +160,12 @@
       "timer": "Timer",
       "schedule": "Horario"
     },
-    "sph": "Un modo. Cero excepciones."
+    "sph": "Un modo. Cero excepciones.",
+    "mh": {
+      "badge": "NUEVO",
+      "title": "Página de Inicio Minimalista",
+      "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
+    }
   },
   "fr": {
     "name": "Français",
@@ -201,7 +216,12 @@
       "timer": "Minuteur",
       "schedule": "Horaire"
     },
-    "sph": "Un seul mode. Aucune exception."
+    "sph": "Un seul mode. Aucune exception.",
+    "mh": {
+      "badge": "NOUVEAU",
+      "title": "Page d'Accueil Minimaliste",
+      "body": "Transformez votre page d'accueil YouTube en un écran de recherche épuré et centré : le vrai logo YouTube et la barre de recherche authentique, rien d'autre. Pas de flux, pas de distractions : cherchez ce que vous êtes venu voir, puis partez."
+    }
   },
   "de": {
     "name": "Deutsch",
@@ -252,7 +272,12 @@
       "timer": "Timer",
       "schedule": "Zeitplan"
     },
-    "sph": "Ein Modus. Keine Ausnahmen."
+    "sph": "Ein Modus. Keine Ausnahmen.",
+    "mh": {
+      "badge": "NEU",
+      "title": "Minimalistische Startseite",
+      "body": "Verwandeln Sie Ihre YouTube-Startseite in einen klaren, zentrierten Suchbildschirm: das echte YouTube-Logo und die echte Suchleiste, sonst nichts. Kein Feed, keine Ablenkungen — einfach suchen und loslegen."
+    }
   },
   "it": {
     "name": "Italiano",
@@ -303,7 +328,12 @@
       "timer": "Timer",
       "schedule": "Orario"
     },
-    "sph": "Una modalità. Zero eccezioni."
+    "sph": "Una modalità. Zero eccezioni.",
+    "mh": {
+      "badge": "NUOVO",
+      "title": "Home Page Minimalista",
+      "body": "Trasforma la tua home page di YouTube in una schermata di ricerca pulita e centrata: il vero logo di YouTube e la barra di ricerca autentica, nient'altro. Niente feed, niente distrazioni: cerca quello che ti serve e vai."
+    }
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -354,7 +384,12 @@
       "timer": "Temporizador",
       "schedule": "Horário"
     },
-    "sph": "Um modo. Zero exceções."
+    "sph": "Um modo. Zero exceções.",
+    "mh": {
+      "badge": "NOVO",
+      "title": "Página Inicial Minimalista",
+      "body": "Transforme a sua página inicial do YouTube num ecrã de pesquisa limpo e centrado: o logo real do YouTube e a barra de pesquisa genuína, e mais nada. Sem feed, sem distrações — pesquise o que veio procurar e pronto."
+    }
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -405,7 +440,12 @@
       "timer": "Timer",
       "schedule": "Horário"
     },
-    "sph": "Um modo. Zero exceções."
+    "sph": "Um modo. Zero exceções.",
+    "mh": {
+      "badge": "NOVO",
+      "title": "Página Inicial Minimalista",
+      "body": "Transforme sua página inicial do YouTube em uma tela de busca limpa e centralizada: o logo real do YouTube e a barra de pesquisa genuína, e nada mais. Sem feed, sem distrações — pesquise o que você veio buscar e pronto."
+    }
   },
   "nl": {
     "name": "Nederlands",
@@ -456,7 +496,12 @@
       "timer": "Timer",
       "schedule": "Schema"
     },
-    "sph": "Eén modus. Geen uitzonderingen."
+    "sph": "Eén modus. Geen uitzonderingen.",
+    "mh": {
+      "badge": "NIEUW",
+      "title": "Minimalistische Startpagina",
+      "body": "Verander je YouTube-startpagina in een strak, gecentreerd zoekscherm: het echte YouTube-logo en de echte zoekbalk, verder niets. Geen feed, geen afleiding — zoek wat je zoekt en ga verder."
+    }
   },
   "ca": {
     "name": "Català",
@@ -507,7 +552,12 @@
       "timer": "Temporitzador",
       "schedule": "Horari"
     },
-    "sph": "Un mode. Zero excepcions."
+    "sph": "Un mode. Zero excepcions.",
+    "mh": {
+      "badge": "NOU",
+      "title": "Pàgina d'Inici Minimalista",
+      "body": "Transforma la teva pàgina d'inici de YouTube en una pantalla de cerca neta i centrada: el logotip real de YouTube i la barra de cerca autèntica, res més. Sense feed, sense distraccions: cerca el que has vingut a buscar i vés-te'n."
+    }
   },
   "ro": {
     "name": "Română",
@@ -558,7 +608,12 @@
       "timer": "Cronometru",
       "schedule": "Program"
     },
-    "sph": "Un singur mod. Zero excepții."
+    "sph": "Un singur mod. Zero excepții.",
+    "mh": {
+      "badge": "NOU",
+      "title": "Pagină Principală Minimalistă",
+      "body": "Transformă pagina principală YouTube într-un ecran de căutare curat și centrat: logo-ul real YouTube și bara de căutare autentică, nimic altceva. Fără feed, fără distrageri—caută ce ai venit să găsești și pleacă."
+    }
   },
   "pl": {
     "name": "Polski",
@@ -609,7 +664,12 @@
       "timer": "Minutnik",
       "schedule": "Harmonogram"
     },
-    "sph": "Jeden tryb. Zero wyjątków."
+    "sph": "Jeden tryb. Zero wyjątków.",
+    "mh": {
+      "badge": "NOWOŚĆ",
+      "title": "Minimalistyczna Strona Główna",
+      "body": "Zamień swoją stronę główną YouTube w czysty, wyśrodkowany ekran wyszukiwania: prawdziwe logo YouTube i prawdziwy pasek wyszukiwania, nic więcej. Bez kanału, bez rozpraszania uwagi—wyszukaj to, po co przyszedłeś, i idź dalej."
+    }
   },
   "cs": {
     "name": "Čeština",
@@ -660,7 +720,12 @@
       "timer": "Časovač",
       "schedule": "Rozvrh"
     },
-    "sph": "Jeden režim. Žádné výjimky."
+    "sph": "Jeden režim. Žádné výjimky.",
+    "mh": {
+      "badge": "NOVÉ",
+      "title": "Minimalistická domovská stránka",
+      "body": "Proměňte svou domovskou stránku YouTube v čistou, vystředěnou vyhledávací obrazovku: skutečné logo YouTube a skutečný vyhledávací panel, nic víc. Žádný feed, žádné rozptylování — vyhledejte, co potřebujete, a jděte dál."
+    }
   },
   "sk": {
     "name": "Slovenčina",
@@ -711,7 +776,12 @@
       "timer": "Časovač",
       "schedule": "Plán"
     },
-    "sph": "Jeden režim. Žiadne výnimky."
+    "sph": "Jeden režim. Žiadne výnimky.",
+    "mh": {
+      "badge": "NOVÉ",
+      "title": "Minimalistická Domovská Stránka",
+      "body": "Premeňte svoju domovskú stránku YouTube na čistú, vycentrovanú vyhľadávaciu obrazovku: skutočné logo YouTube a skutočný vyhľadávací panel, nič iné. Žiadny feed, žiadne rozptyľovanie—vyhľadajte, čo potrebujete, a pokračujte."
+    }
   },
   "sl": {
     "name": "Slovenščina",
@@ -762,7 +832,12 @@
       "timer": "Časovnik",
       "schedule": "Urnik"
     },
-    "sph": "En način. Nič izjem."
+    "sph": "En način. Nič izjem.",
+    "mh": {
+      "badge": "NOVO",
+      "title": "Minimalistična Domača Stran",
+      "body": "Spremenite svojo domačo stran YouTube v čist, sredinsko postavljen iskalni zaslon: pravi logotip YouTube in pristno iskalno vrstico, nič drugega. Brez vira, brez motenj—poiščite, kar iščete, in nadaljujte."
+    }
   },
   "hr": {
     "name": "Hrvatski",
@@ -813,7 +888,12 @@
       "timer": "Tajmer",
       "schedule": "Raspored"
     },
-    "sph": "Jedan način. Nula iznimaka."
+    "sph": "Jedan način. Nula iznimaka.",
+    "mh": {
+      "badge": "NOVO",
+      "title": "Minimalistička Naslovna Stranica",
+      "body": "Pretvorite svoju YouTube naslovnu stranicu u čist, centriran zaslon za pretraživanje: pravi YouTube logotip i stvarnu tražilicu, ništa drugo. Bez feeda, bez ometanja—pretražite ono što ste tražili i idite dalje."
+    }
   },
   "sr": {
     "name": "Српски",
@@ -864,7 +944,12 @@
       "timer": "Tajmer",
       "schedule": "Raspored"
     },
-    "sph": "Jedan režim. Nula izuzetaka."
+    "sph": "Jedan režim. Nula izuzetaka.",
+    "mh": {
+      "badge": "NOVO",
+      "title": "Minimalistička Početna Strana",
+      "body": "Pretvorite svoju YouTube početnu stranu u čist, centriran ekran za pretragu: pravi YouTube logotip i pravu traku za pretragu, ništa drugo. Bez feed-a, bez ometanja—pretražite ono što ste tražili i idite dalje."
+    }
   },
   "ru": {
     "name": "Русский",
@@ -915,7 +1000,12 @@
       "timer": "Таймер",
       "schedule": "Расписание"
     },
-    "sph": "Один режим. Никаких исключений."
+    "sph": "Один режим. Никаких исключений.",
+    "mh": {
+      "badge": "НОВОЕ",
+      "title": "Минималистичная главная страница",
+      "body": "Превратите главную страницу YouTube в чистый, центрированный экран поиска: настоящий логотип YouTube и подлинная строка поиска — и больше ничего. Никакой ленты, никаких отвлечений — ищите то, за чем пришли, и уходите."
+    }
   },
   "el": {
     "name": "Ελληνικά",
@@ -966,7 +1056,12 @@
       "timer": "Χρονόμετρο",
       "schedule": "Πρόγραμμα"
     },
-    "sph": "Μία λειτουργία. Καμία εξαίρεση."
+    "sph": "Μία λειτουργία. Καμία εξαίρεση.",
+    "mh": {
+      "badge": "ΝΕΟ",
+      "title": "Μινιμαλιστική Αρχική Σελίδα",
+      "body": "Μετατρέψτε την αρχική σελίδα του YouTube σε μια καθαρή, κεντραρισμένη οθόνη αναζήτησης: το πραγματικό λογότυπο του YouTube και η γνήσια μπάρα αναζήτησης, τίποτα άλλο. Χωρίς feed, χωρίς περισπασμούς—αναζητήστε αυτό που ήρθατε να βρείτε και συνεχίστε."
+    }
   },
   "tr": {
     "name": "Türkçe",
@@ -1017,7 +1112,12 @@
       "timer": "Zamanlayıcı",
       "schedule": "Program"
     },
-    "sph": "Tek bir mod. Sıfır istisna."
+    "sph": "Tek bir mod. Sıfır istisna.",
+    "mh": {
+      "badge": "YENİ",
+      "title": "Minimalist Ana Sayfa",
+      "body": "YouTube ana sayfanızı sade, ortalanmış bir arama ekranına dönüştürün: gerçek YouTube logosu ve gerçek arama çubuğu, başka hiçbir şey yok. Akış yok, dikkat dağıtıcı şey yok—aradığınızı arayın ve gidin."
+    }
   },
   "hu": {
     "name": "Magyar",
@@ -1068,7 +1168,12 @@
       "timer": "Időzítő",
       "schedule": "Ütemezés"
     },
-    "sph": "Egy mód. Nulla kivétel."
+    "sph": "Egy mód. Nulla kivétel.",
+    "mh": {
+      "badge": "ÚJ",
+      "title": "Minimalista kezdőlap",
+      "body": "Alakítsd át a YouTube kezdőlapját egy letisztult, középre igazított keresőképernyővé: az igazi YouTube logó és a valódi keresősáv, semmi más. Nincs hírfolyam, nincs elterelés—keresd meg, amit akarsz, és indulj tovább."
+    }
   },
   "et": {
     "name": "Eesti",
@@ -1119,7 +1224,12 @@
       "timer": "Taimer",
       "schedule": "Ajakava"
     },
-    "sph": "Üks režiim. Null erandit."
+    "sph": "Üks režiim. Null erandit.",
+    "mh": {
+      "badge": "UUS",
+      "title": "Minimalistlik Avaleht",
+      "body": "Muuda oma YouTube'i avaleht puhtaks, keskele paigutatud otsinguekraaniks: päris YouTube'i logo ja tõeline otsinguriba, mitte midagi muud. Ei mingit voogu, ei mingit hajutamist — otsi, mida vajad, ja liigu edasi."
+    }
   },
   "lv": {
     "name": "Latviešu",
@@ -1170,7 +1280,12 @@
       "timer": "Taimeris",
       "schedule": "Grafiks"
     },
-    "sph": "Viens režīms. Nulle izņēmumu."
+    "sph": "Viens režīms. Nulle izņēmumu.",
+    "mh": {
+      "badge": "JAUNS",
+      "title": "Minimālistiska Sākumlapa",
+      "body": "Pārveidojiet savu YouTube sākumlapu par tīru, centrētu meklēšanas ekrānu: īsto YouTube logotipu un patieso meklēšanas joslu, neko citu. Bez plūsmas, bez novēršanas—meklējiet to, pēc kā atnācāt, un dodieties tālāk."
+    }
   },
   "lt": {
     "name": "Lietuvių",
@@ -1221,7 +1336,12 @@
       "timer": "Laikmatis",
       "schedule": "Tvarkaraštis"
     },
-    "sph": "Vienas režimas. Jokių išimčių."
+    "sph": "Vienas režimas. Jokių išimčių.",
+    "mh": {
+      "badge": "NAUJA",
+      "title": "Minimalistinis Pradžios Puslapis",
+      "body": "Paverskite savo YouTube pradžios puslapį švariu, centruotu paieškos ekranu: tikrą YouTube logotipą ir tikrą paieškos juostą, nieko daugiau. Jokio srauto, jokių blaškymosi—susiraskite, ko atėjote, ir eikite toliau."
+    }
   },
   "sv": {
     "name": "Svenska",
@@ -1272,7 +1392,12 @@
       "timer": "Timer",
       "schedule": "Schema"
     },
-    "sph": "Ett läge. Inga undantag."
+    "sph": "Ett läge. Inga undantag.",
+    "mh": {
+      "badge": "NYTT",
+      "title": "Minimalistisk Startsida",
+      "body": "Gör din YouTube-startsida till en ren, centrerad sökskärm: den riktiga YouTube-logotypen och det äkta sökfältet, inget annat. Inget flöde, inga distraktioner—sök efter det du kom för och gå vidare."
+    }
   },
   "no": {
     "name": "Norsk",
@@ -1323,7 +1448,12 @@
       "timer": "Tidtaker",
       "schedule": "Tidsplan"
     },
-    "sph": "Én modus. Ingen unntak."
+    "sph": "Én modus. Ingen unntak.",
+    "mh": {
+      "badge": "NYTT",
+      "title": "Minimalistisk Hjemmeside",
+      "body": "Gjør YouTube-hjemmesiden din om til en ren, sentrert søkeskjerm: den ekte YouTube-logoen og den ekte søkelinjen, ingenting annet. Ingen feed, ingen distraksjoner—søk etter det du kom for, og gå videre."
+    }
   },
   "da": {
     "name": "Dansk",
@@ -1374,7 +1504,12 @@
       "timer": "Timer",
       "schedule": "Tidsplan"
     },
-    "sph": "Én tilstand. Ingen undtagelser."
+    "sph": "Én tilstand. Ingen undtagelser.",
+    "mh": {
+      "badge": "NYT",
+      "title": "Minimalistisk Startside",
+      "body": "Forvandl din YouTube-startside til en ren, centreret søgeskærm: det rigtige YouTube-logo og den ægte søgelinje, intet andet. Ingen feed, ingen distraktioner — søg efter det, du kom for, og gå videre."
+    }
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1425,7 +1560,12 @@
       "timer": "Timer",
       "schedule": "Jadwal"
     },
-    "sph": "Satu mode. Tanpa pengecualian."
+    "sph": "Satu mode. Tanpa pengecualian.",
+    "mh": {
+      "badge": "BARU",
+      "title": "Beranda Minimalis",
+      "body": "Ubah beranda YouTube Anda menjadi layar pencarian yang bersih dan terpusat: logo YouTube asli dan kolom pencarian asli, tanpa yang lain. Tanpa feed, tanpa distraksi—cari yang Anda butuhkan lalu pergi."
+    }
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1476,7 +1616,12 @@
       "timer": "Pemasa",
       "schedule": "Jadual"
     },
-    "sph": "Satu mod. Tiada pengecualian."
+    "sph": "Satu mod. Tiada pengecualian.",
+    "mh": {
+      "badge": "BAHARU",
+      "title": "Halaman Utama Minimalis",
+      "body": "Ubah halaman utama YouTube anda kepada skrin carian yang bersih dan berpusat: logo YouTube sebenar dan bar carian sebenar, tiada apa-apa lagi. Tiada suapan, tiada gangguan—cari apa yang anda perlukan dan teruskan."
+    }
   },
   "fil": {
     "name": "Filipino",
@@ -1527,7 +1672,12 @@
       "timer": "Timer",
       "schedule": "Iskedyul"
     },
-    "sph": "Isang mode. Walang exception."
+    "sph": "Isang mode. Walang exception.",
+    "mh": {
+      "badge": "BAGO",
+      "title": "Minimalist na Home Page",
+      "body": "Gawing malinis at nakasentrong search screen ang iyong YouTube homepage: ang totoong logo ng YouTube at tunay na search bar, wala nang iba pa. Walang feed, walang pagka-distract—i-search ang hinahanap mo at umalis na."
+    }
   },
   "ja": {
     "name": "日本語",
@@ -1578,7 +1728,12 @@
       "timer": "タイマー",
       "schedule": "スケジュール"
     },
-    "sph": "1つのモードだけ。例外なし。"
+    "sph": "1つのモードだけ。例外なし。",
+    "mh": {
+      "badge": "新機能",
+      "title": "ミニマルなホームページ",
+      "body": "YouTubeのホームページを、すっきりと中央に配置された検索画面に変えます。本物のYouTubeロゴと本物の検索バーだけ、それ以外は何もありません。フィードなし、寄り道なし——検索して、すぐに立ち去りましょう。"
+    }
   },
   "ko": {
     "name": "한국어",
@@ -1629,7 +1784,12 @@
       "timer": "타이머",
       "schedule": "일정"
     },
-    "sph": "하나의 모드. 예외 없음."
+    "sph": "하나의 모드. 예외 없음.",
+    "mh": {
+      "badge": "새로운 기능",
+      "title": "미니멀 홈페이지",
+      "body": "YouTube 홈페이지를 깔끔하고 중앙에 배치된 검색 화면으로 바꿔보세요. 진짜 YouTube 로고와 진짜 검색창, 그게 전부예요. 피드도 없고 다른 길로 새지도 않아요—찾던 것을 검색하고 바로 떠나세요."
+    }
   },
   "he": {
     "name": "עברית",
@@ -1681,7 +1841,12 @@
       "timer": "טיימר",
       "schedule": "לוח זמנים"
     },
-    "sph": "מצב אחד. בלי יוצאים מן הכלל."
+    "sph": "מצב אחד. בלי יוצאים מן הכלל.",
+    "mh": {
+      "badge": "חדש",
+      "title": "דף בית מינימליסטי",
+      "body": "הפכו את דף הבית של YouTube למסך חיפוש נקי וממורכז: הלוגו האמיתי של YouTube ושורת החיפוש האמיתית, שום דבר אחר. בלי פיד, בלי הסחות דעת—חפשו את מה שבאתם למצוא ותמשיכו הלאה."
+    }
   },
   "ar": {
     "name": "العربية",
@@ -1733,7 +1898,12 @@
       "timer": "مؤقت",
       "schedule": "جدول"
     },
-    "sph": "وضع واحد فقط. بلا استثناءات."
+    "sph": "وضع واحد فقط. بلا استثناءات.",
+    "mh": {
+      "badge": "جديد",
+      "title": "الصفحة الرئيسية البسيطة",
+      "body": "حوّل صفحتك الرئيسية على يوتيوب إلى شاشة بحث نظيفة وفي المنتصف: شعار يوتيوب الحقيقي وشريط البحث الأصلي، لا شيء آخر. بلا خلاصة، بلا تشتت—ابحث عمّا أتيت من أجله وارحل."
+    }
   },
   "fa": {
     "name": "فارسی",
@@ -1785,7 +1955,12 @@
       "timer": "تایمر",
       "schedule": "برنامه"
     },
-    "sph": "یک حالت. بدون استثنا."
+    "sph": "یک حالت. بدون استثنا.",
+    "mh": {
+      "badge": "جدید",
+      "title": "صفحه اصلی مینیمال",
+      "body": "صفحه اصلی یوتیوب خود را به یک صفحه جستجوی تمیز و مرکزی تبدیل کنید: لوگوی واقعی یوتیوب و نوار جستجوی اصلی، و بس. بدون فید، بدون حواس‌پرتی—آنچه را که به دنبالش آمده‌اید جستجو کنید و بروید."
+    }
   },
   "hi": {
     "name": "हिन्दी",
@@ -1836,7 +2011,12 @@
       "timer": "टाइमर",
       "schedule": "शेड्यूल"
     },
-    "sph": "एक मोड। कोई अपवाद नहीं।"
+    "sph": "एक मोड। कोई अपवाद नहीं।",
+    "mh": {
+      "badge": "नया",
+      "title": "मिनिमलिस्ट होम पेज",
+      "body": "अपने YouTube होम पेज को एक साफ़, केंद्रित सर्च स्क्रीन में बदलें: असली YouTube लोगो और असली सर्च बार, बस इतना ही। कोई फीड नहीं, कोई भटकाव नहीं—जो खोजना है वो खोजें और आगे बढ़ें।"
+    }
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -1887,7 +2067,12 @@
       "timer": "ટાઈમર",
       "schedule": "શેડ્યૂલ"
     },
-    "sph": "એક મોડ. કોઈ અપવાદ નહીં."
+    "sph": "એક મોડ. કોઈ અપવાદ નહીં.",
+    "mh": {
+      "badge": "નવું",
+      "title": "મિનિમલિસ્ટ હોમ પેજ",
+      "body": "તમારું YouTube હોમ પેજ હવે સરળ છે: ફક્ત લોગો અને સર્ચ બાર."
+    }
   },
   "mr": {
     "name": "मराठी",
@@ -1938,7 +2123,12 @@
       "timer": "टायमर",
       "schedule": "वेळापत्रक"
     },
-    "sph": "एक मोड. अपवाद नाही."
+    "sph": "एक मोड. अपवाद नाही.",
+    "mh": {
+      "badge": "नवीन",
+      "title": "मिनिमलिस्ट मुख्यपृष्ठ",
+      "body": "तुमचे YouTube मुख्यपृष्ठ स्वच्छ, केंद्रित शोध स्क्रीनमध्ये बदला: खरा YouTube लोगो आणि खरी शोध पट्टी, दुसरे काहीही नाही. फीड नाही, विचलन नाही."
+    }
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -1989,7 +2179,12 @@
       "timer": "ಟೈಮರ್",
       "schedule": "ವೇಳಾಪಟ್ಟಿ"
     },
-    "sph": "ಒಂದೇ ಮೋಡ್. ಯಾವುದೇ ವಿನಾಯಿತಿ ಇಲ್ಲ."
+    "sph": "ಒಂದೇ ಮೋಡ್. ಯಾವುದೇ ವಿನಾಯಿತಿ ಇಲ್ಲ.",
+    "mh": {
+      "badge": "ಹೊಸದು",
+      "title": "ಮಿನಿಮಲಿಸ್ಟ್ ಮುಖ್ಯ ಪುಟ",
+      "body": "ನಿಮ್ಮ YouTube ಮುಖ್ಯ ಪುಟ ಈಗ ಸರಳವಾಗಿದೆ: ಲೋಗೋ ಮತ್ತು ಹುಡುಕಾಟ ಪಟ್ಟಿ ಮಾತ್ರ."
+    }
   },
   "ta": {
     "name": "தமிழ்",
@@ -2040,7 +2235,12 @@
       "timer": "டைமர்",
       "schedule": "அட்டவணை"
     },
-    "sph": "ஒரே ஒரு பயன்முறை. விதிவிலக்கு இல்லை."
+    "sph": "ஒரே ஒரு பயன்முறை. விதிவிலக்கு இல்லை.",
+    "mh": {
+      "badge": "புதியது",
+      "title": "எளிமையான முகப்புப் பக்கம்",
+      "body": "உங்கள் YouTube முகப்புப் பக்கம் இப்போது எளிமையானது: லோகோ மற்றும் தேடல் பட்டை மட்டும்."
+    }
   },
   "te": {
     "name": "తెలుగు",
@@ -2091,7 +2291,12 @@
       "timer": "టైమర్",
       "schedule": "షెడ్యూల్"
     },
-    "sph": "ఒకే మోడ్. మినహాయింపులు లేవు."
+    "sph": "ఒకే మోడ్. మినహాయింపులు లేవు.",
+    "mh": {
+      "badge": "కొత్తది",
+      "title": "మినిమలిస్ట్ హోమ్ పేజీ",
+      "body": "మీ YouTube హోమ్ పేజీ ఇప్పుడు సరళంగా ఉంది: లోగో మరియు సెర్చ్ బార్ మాత్రమే."
+    }
   },
   "sw": {
     "name": "Kiswahili",
@@ -2142,7 +2347,12 @@
       "timer": "Kipima muda",
       "schedule": "Ratiba"
     },
-    "sph": "Hali moja. Bila ubaguzi."
+    "sph": "Hali moja. Bila ubaguzi.",
+    "mh": {
+      "badge": "MPYA",
+      "title": "Ukurasa wa Nyumbani wa Minimalisti",
+      "body": "Geuza ukurasa wako wa nyumbani wa YouTube kuwa skrini safi, iliyo katikati ya utafutaji: nembo halisi ya YouTube na upau halisi wa utafutaji, hakuna kingine. Hakuna mpasho, hakuna vikengeushi—tafuta ulichokuja kutafuta kisha uondoke."
+    }
   },
   "am": {
     "name": "አማርኛ",
@@ -2193,6 +2403,11 @@
       "timer": "ሰዓት ቆጣሪ",
       "schedule": "መርሃግብር"
     },
-    "sph": "አንድ ሁነታ ብቻ። ምንም ልዩነት የለም።"
+    "sph": "አንድ ሁነታ ብቻ። ምንም ልዩነት የለም።",
+    "mh": {
+      "badge": "አዲስ",
+      "title": "ቀላል የመነሻ ገጽ",
+      "body": "የYouTube መነሻ ገጽ ቀላል ሆነ፦ አርማ እና አሞሌ ብቻ ይታያሉ፣ ሌላ ምንም የለም።"
+    }
   }
 }
