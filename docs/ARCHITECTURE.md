@@ -54,7 +54,7 @@ Specialized base class for DOM manipulation features.
 **Capabilities:**
 - Element querying with error handling
 - Hide/show elements with comprehensive CSS properties
-- MutationObserver management
+- MutationObserver management, including before `<body>` exists
 - Shadow DOM text search
 - Automatic cleanup on deactivation
 
@@ -63,7 +63,10 @@ Specialized base class for DOM manipulation features.
 query(selector)                    // Query with error handling
 hideElements(elements)             // Hide with all CSS properties
 showElements(elements)             // Show by removing properties
-observeDOM(callback, options)      // Set up mutation observer
+observeDOM(callback, options)      // Watch the DOM. Safe to call before <body>
+                                   // exists. The callback runs on delivery and
+                                   // must NOT be deferred to a frame - see
+                                   // "Why observer callbacks are not batched".
 elementContainsText(el, text)      // Search including shadow DOM
 ```
 
@@ -392,13 +395,65 @@ class DependentFeature extends Feature {
 
 ### Optimizations Implemented
 1. **Lazy Initialization** - Features initialize only when needed
-2. **Debounced DOM Observers** - Prevent excessive calls
-3. **CSS-First Hiding** - Faster than JavaScript
-4. **Parallel Initialization** - Features init concurrently
-5. **Element Tracking** - Fast cleanup on deactivation
+2. **CSS-First Hiding** - Faster than JavaScript, and applies before paint
+3. **Parallel Initialization** - Features init concurrently
+4. **Element Tracking** - Fast cleanup on deactivation
+
+> An earlier version of this list claimed "Debounced DOM Observers". That was
+> never true, and when it was actually implemented it had to be reverted. See
+> "Why observer callbacks are not batched" below before adding it.
+
+### How `observeDOM()` starts before `<body>` exists
+
+Content scripts run at `run_at: document_start`, where only `<html>` is
+present. Rather than wait for `DOMContentLoaded`, a short-lived *bridge*
+observer watches `documentElement` purely to detect `<body>` appearing, then
+disconnects and re-points at `<body>`.
+
+The bridge is registered in `this.observers` like any other, which matters: it
+means `disconnectObservers()` can cancel it. An earlier version deferred via a
+`DOMContentLoaded` listener that lived outside the feature's lifecycle, so
+switching a feature off during page load had nothing to cancel, and the
+listener then attached a live observer to an already-deactivated feature. That
+observer stayed live for the rest of the page and kept hiding content until a
+reload.
+
+Feature callbacks never run against `<head>` churn: the bridge only checks for
+`<body>`, and steady-state observation is scoped to `<body>`.
+
+### Why observer callbacks are not batched
+
+Batching these callbacks onto the next animation frame is an obvious-looking
+optimisation. It was implemented, measured, and reverted. Do not reintroduce it
+without reading this.
+
+**Most hiding is CSS, but not all of it.** The injected stylesheets do the bulk
+of the work and apply before paint, which is why the observers look harmless to
+defer. The exception is the part that CSS cannot express: text matching and
+structural filtering. `HideSidebarFeature` with "keep History visible" is the
+clearest case — its CSS deliberately does almost nothing and the JS callback
+does the filtering. Measured on a real YouTube page, **27 of 28 guide entries
+were hidden by JS, none by CSS alone**. Deferring that callback by one frame
+made the entire sidebar, every channel name, render visible before being
+hidden, on every guide render. The blacklist features hide the same way.
+
+**And the saving was small.** On real YouTube, mutation deliveries averaged
+**1.44 per animation frame** (33% of active frames had more than one, peaking
+at three). Coalescing therefore removed roughly 30% of sweeps of an operation
+already measured in fractions of a millisecond — nothing like the 90% a
+synthetic benchmark had suggested, because that benchmark generated a burst
+pattern YouTube does not actually produce.
+
+A visible flash on every navigation is not worth that. The benefit and the
+flash are also the *same* mechanism: the only way to coalesce across tasks is
+to defer to the frame boundary, which is exactly what lets content paint first.
+If batching is ever revisited, batch on a microtask, never on a frame.
+
+`test/domFeatureObserver.test.js` has a regression guard asserting the callback
+runs on delivery rather than on a later frame.
 
 ### Memory Management
-- MutationObservers disconnected on deactivation
+- MutationObservers disconnected on deactivation, including the pre-`<body>` bridge
 - CSS elements removed on deactivation
 - Element references cleared
 - Event listeners properly removed
