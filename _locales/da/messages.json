@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Skjul sortlistede ord"
   },
-  "hideHomePageContent": {
-    "message": "Skjul startsideindhold"
+  "minimalistHome": {
+    "message": "Minimalistisk startside"
   },
   "disableAutoplay": {
     "message": "Deaktiver Autoplay"

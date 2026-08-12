@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Piilota mustalla listalla olevat sanat"
   },
-  "hideHomePageContent": {
-    "message": "Piilota etusivun sisältö"
+  "minimalistHome": {
+    "message": "Minimalistinen etusivu"
   },
   "disableAutoplay": {
     "message": "Poista Autoplay käytöstä"

@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "پنهان کردن کلمات مسدود شده"
   },
-  "hideHomePageContent": {
-    "message": "پنهان کردن محتوای صفحه اصلی"
+  "minimalistHome": {
+    "message": "صفحه اصلی مینیمال"
   },
   "disableAutoplay": {
     "message": "غیرفعال کردن پخش خودکار"

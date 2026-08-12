@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Απόκρυψη Μαύρης Λίστας Λέξεων"
   },
-  "hideHomePageContent": {
-    "message": "Απόκρυψη Περιεχομένου Αρχικής Σελίδας"
+  "minimalistHome": {
+    "message": "Μινιμαλιστική Αρχική Σελίδα"
   },
   "disableAutoplay": {
     "message": "Απενεργοποίηση Αυτόματης Αναπαραγωγής"

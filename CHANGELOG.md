@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.5.1] - 2026-08-12
+
+### Changed
+- **"Hide Home Page Content" is now "Minimalist Home Page"** — instead of just blanking the feed, it rearranges YouTube's own homepage into a centered, distraction-free hero: the real YouTube logo and the genuine search box (with its native search and voice buttons), on a plain background. Search still works exactly as YouTube built it — nothing is rebuilt by hand.
+  - Matches YouTube's current light/dark theme automatically.
+  - Desktop only; on the mobile web app (`m.youtube.com`) the toggle is a no-op and the page is left untouched.
+  - Users who had the old toggle enabled keep it enabled after the rename — no re-configuration needed.
+
+### Fixed
+- The Amharic (`am`) locale had several strings mistakenly left in Bulgarian; they're now properly translated.
+
+### Notes
+- Fully localised across all 46 supported languages.
+
+### Website
+- New "Minimalist Home Page" section on the landing page, with a before/after animation, in all 43 site languages.
+- Fixed the Focus Mode demo: the pointer now actually lands on the FocusTube toolbar icon and on the popup controls it clicks. The targets were positioned in percentages while the icon sits at a fixed pixel offset, so the click missed by ~35px and the popup appeared to open on its own.
+- Each carousel slide now names and explains the feature it demonstrates, next to the animation.
+- SEO: canonical URLs, Open Graph/Twitter cards, `SoftwareApplication` structured data, `sitemap.xml` and `robots.txt`.
+
+---
+
 ## [2.5.0] - 2026-08-10
 
 ### Added

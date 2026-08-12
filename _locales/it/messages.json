@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Nascondi Parole nella Lista Nera"
   },
-  "hideHomePageContent": {
-    "message": "Nascondi Contenuto della Home Page"
+  "minimalistHome": {
+    "message": "Home Page Minimalista"
   },
   "disableAutoplay": {
     "message": "Disabilita Riproduzione Automatica"

@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "إخفاء الكلمات المحظورة"
   },
-  "hideHomePageContent": {
-    "message": "إخفاء محتوى الصفحة الرئيسية"
+  "minimalistHome": {
+    "message": "الصفحة الرئيسية البسيطة"
   },
   "disableAutoplay": {
     "message": "تعطيل التشغيل التلقائي"

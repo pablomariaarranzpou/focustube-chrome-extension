@@ -20,7 +20,7 @@ const FOCUS_MODE_GATED_FEATURES = [
   'hideShorts',
   'hideSuggestions',
   'hideComments',
-  'hideHomePageContent',
+  'minimalistHome',
   'hideSidebar',
   'hideAutoplayOverlay',
   'hideBlacklistedChannels',

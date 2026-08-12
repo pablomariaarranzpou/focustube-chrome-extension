@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "default_locale": "en",
   "icons": {
     "128": "128.png"
@@ -43,7 +43,7 @@
         "src/features/HideCommentsFeature.js",
         "src/features/HideSidebarFeature.js",
         "src/features/HideAutoplayOverlayFeature.js",
-        "src/features/HideHomePageContentFeature.js",
+        "src/features/MinimalistHomeFeature.js",
         "src/features/HideBlacklistedChannelsFeature.js",
         "src/features/HideBlacklistedWordsFeature.js",
         "src/features/QuickBlacklistButtonFeature.js",

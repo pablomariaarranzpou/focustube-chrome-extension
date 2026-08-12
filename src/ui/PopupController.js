@@ -145,7 +145,7 @@ class PopupController {
       hideComments: 'hideComments',
       hideBlacklistedChannels: 'hideBlacklistedChannels',
       hideBlacklistedWords: 'hideBlacklistedWords',
-      hideHomePageContent: 'hideHomePageContent',
+      hideHomePageContent: 'minimalistHome',
       hideAutoplayOverlay: 'hideAutoplayOverlay',
       hideSidebar: 'hideSidebar',
       quickBlacklistButton: 'quickBlacklistButton'
@@ -164,7 +164,7 @@ class PopupController {
           hideComments: false,
           hideBlacklistedChannels: true,
           hideBlacklistedWords: true,
-          hideHomePageContent: false,
+          minimalistHome: false,
           hideAutoplayOverlay: false,
           hideSidebar: false,
           quickBlacklistButton: true
@@ -198,7 +198,7 @@ class PopupController {
       hideCommentsCheckbox: 'hideComments',
       hideBlacklistedCheckbox: 'hideBlacklistedChannels',
       hideBlacklistedWordsCheckbox: 'hideBlacklistedWords',
-      hideHomePageContentCheckbox: 'hideHomePageContent',
+      minimalistHomeCheckbox: 'minimalistHome',
       hideAutoplayOverlayCheckbox: 'hideAutoplayOverlay',
       hideSidebarCheckbox: 'hideSidebar',
       keepHistoryVisibleCheckbox: 'keepHistoryVisible',
@@ -267,7 +267,7 @@ class PopupController {
       hideCommentsCheckbox: 'hideComments',
       hideBlacklistedCheckbox: 'hideBlacklistedChannels',
       hideBlacklistedWordsCheckbox: 'hideBlacklistedWords',
-      hideHomePageContentCheckbox: 'hideHomePageContent',
+      minimalistHomeCheckbox: 'minimalistHome',
       hideAutoplayOverlayCheckbox: 'hideAutoplayOverlay',
       hideSidebarCheckbox: 'hideSidebar',
       quickBlacklistButtonCheckbox: 'quickBlacklistButton'

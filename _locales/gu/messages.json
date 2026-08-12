@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "કાળા યાદીમાં આવેલા શબ્દો છુપાવો"
   },
-  "hideHomePageContent": {
-    "message": "મુખ્ય પૃષ્ઠની સામગ્રી છુપાવો"
+  "minimalistHome": {
+    "message": "મિનિમલિસ્ટ હોમ પેજ"
   },
   "disableAutoplay": {
     "message": "સ્વચાલિત શરૂ કરવું બંધ કરો"

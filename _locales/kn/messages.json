@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "ಬ್ಲಾಕ್ ಮಾಡಲಾದ ಪದಗಳನ್ನು ಮರೆಮಾಡಿ"
   },
-  "hideHomePageContent": {
-    "message": "ಮುಖ್ಯ ಪುಟದ ವಿಷಯವನ್ನು ಮರೆಮಾಡಿ"
+  "minimalistHome": {
+    "message": "ಮಿನಿಮಲಿಸ್ಟ್ ಮುಖ್ಯ ಪುಟ"
   },
   "disableAutoplay": {
     "message": "ಸ್ವಯಂ ಪ್ರಚಲಿತವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"

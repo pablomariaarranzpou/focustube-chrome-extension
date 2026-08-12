@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "நிறைவுபடுத்தப்பட்ட சொற்களை மறை"
   },
-  "hideHomePageContent": {
-    "message": "முகப்பு பக்க உள்ளடக்கத்தை மறை"
+  "minimalistHome": {
+    "message": "எளிமையான முகப்புப் பக்கம்"
   },
   "disableAutoplay": {
     "message": "தானியங்கியாக இயங்குவதை முடக்கு"

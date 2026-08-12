@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Paslēpt Melnajā Sarakstā Iekļautus Vārdus"
   },
-  "hideHomePageContent": {
-    "message": "Paslēpt Sākumlapas Saturu"
+  "minimalistHome": {
+    "message": "Minimālistiska Sākumlapa"
   },
   "disableAutoplay": {
     "message": "Atspējot Automātisko Atskaņošanu"

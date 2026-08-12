@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Tiltott szavak elrejtése"
   },
-  "hideHomePageContent": {
-    "message": "Kezdőlap tartalom elrejtése"
+  "minimalistHome": {
+    "message": "Minimalista kezdőlap"
   },
   "disableAutoplay": {
     "message": "Automatikus lejátszás letiltása"

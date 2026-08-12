@@ -15,7 +15,7 @@ FocusTube is a Chrome extension that helps you stay focused on YouTube by hiding
 - **Hide Comments** — Remove the comments section entirely
 - **Hide Sidebar** — Hide the left navigation panel (guide). Includes a sub-option to **keep History visible** while hiding everything else
 - **Hide Autoplay Overlay** — Prevent the "Up next" countdown overlay and block automatic navigation to the next video
-- **Hide Home Page Content** — Clean, distraction-free YouTube homepage
+- **Minimalist Home Page** — Rearranges YouTube's own homepage into a centered, distraction-free hero (real logo + native search box, no feed)
 
 ### Content Filtering
 

@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Skrýt slova na černé listině"
   },
-  "hideHomePageContent": {
-    "message": "Skrýt obsah domovské stránky"
+  "minimalistHome": {
+    "message": "Minimalistická domovská stránka"
   },
   "disableAutoplay": {
     "message": "Zakázat automatické přehrávání"

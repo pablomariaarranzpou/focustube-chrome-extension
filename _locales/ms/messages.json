@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Sembunyikan Kata yang Disenarai Hitam"
   },
-  "hideHomePageContent": {
-    "message": "Sembunyikan Kandungan Halaman Utama"
+  "minimalistHome": {
+    "message": "Halaman Utama Minimalis"
   },
   "disableAutoplay": {
     "message": "Nyahaktifkan Main Auto"

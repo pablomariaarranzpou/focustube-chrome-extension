@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Ascunde Cuvinte pe Lista Neagră"
   },
-  "hideHomePageContent": {
-    "message": "Ascunde Conținutul de pe Pagina Principală"
+  "minimalistHome": {
+    "message": "Pagină Principală Minimalistă"
   },
   "disableAutoplay": {
     "message": "Dezactivează Autoplay"

@@ -32,7 +32,7 @@
 // <script src="src/features/HideCommentsFeature.js"></script>
 // <script src="src/features/HideSidebarFeature.js"></script>
 // <script src="src/features/HideAutoplayOverlayFeature.js"></script>
-// <script src="src/features/HideHomePageContentFeature.js"></script>
+// <script src="src/features/MinimalistHomeFeature.js"></script>
 // <script src="src/features/HideBlacklistedChannelsFeature.js"></script>
 // <script src="src/features/HideBlacklistedWordsFeature.js"></script>
 // <script src="src/features/QuickBlacklistButtonFeature.js"></script>
@@ -60,7 +60,7 @@ function initializeFocusTube() {
       new HideCommentsFeature(),
       new HideSidebarFeature(),
       new HideAutoplayOverlayFeature(),
-      new HideHomePageContentFeature(),
+      new MinimalistHomeFeature(),
       new HideBlacklistedChannelsFeature(),
       new HideBlacklistedWordsFeature(),
       new QuickBlacklistButtonFeature(),

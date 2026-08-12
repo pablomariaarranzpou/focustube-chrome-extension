@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Скрыть заблокированные слова"
   },
-  "hideHomePageContent": {
-    "message": "Скрыть содержимое главной страницы"
+  "minimalistHome": {
+    "message": "Минималистичная главная страница"
   },
   "disableAutoplay": {
     "message": "Отключить автозапуск"

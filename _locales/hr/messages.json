@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "Sakrij Riječi na Crnoj Listi"
   },
-  "hideHomePageContent": {
-    "message": "Sakrij Sadržaj Naslovne Stranice"
+  "minimalistHome": {
+    "message": "Minimalistička Naslovna Stranica"
   },
   "disableAutoplay": {
     "message": "Onemogući Autoplay"

@@ -20,8 +20,8 @@
   "hideBlacklistedWords": {
     "message": "నిషేధిత పదాలు దాచు"
   },
-  "hideHomePageContent": {
-    "message": "హోమ్ పేజీ కంటెంట్ దాచు"
+  "minimalistHome": {
+    "message": "మినిమలిస్ట్ హోమ్ పేజీ"
   },
   "disableAutoplay": {
     "message": "ఆటోప్లే డిసేబుల్ చేయి"
