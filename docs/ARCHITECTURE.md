@@ -54,16 +54,19 @@ Specialized base class for DOM manipulation features.
 **Capabilities:**
 - Element querying with error handling
 - Hide/show elements with comprehensive CSS properties
-- MutationObserver management
+- MutationObserver management, coalesced to one callback per animation frame
 - Shadow DOM text search
-- Automatic cleanup on deactivation
+- Automatic cleanup on deactivation, including any frame already scheduled
 
 **Common Methods:**
 ```javascript
 query(selector)                    // Query with error handling
 hideElements(elements)             // Hide with all CSS properties
 showElements(elements)             // Show by removing properties
-observeDOM(callback, options)      // Set up mutation observer
+observeDOM(callback, options)      // Watch the DOM; callback runs at most
+                                   // once per frame. Safe to call before
+                                   // <body> exists. See "How observeDOM()
+                                   // behaves, and why" under Performance.
 elementContainsText(el, text)      // Search including shadow DOM
 ```
 
@@ -392,13 +395,85 @@ class DependentFeature extends Feature {
 
 ### Optimizations Implemented
 1. **Lazy Initialization** - Features initialize only when needed
-2. **Debounced DOM Observers** - Prevent excessive calls
+2. **Frame-coalesced DOM observers** - one sweep per frame, not one per mutation (see below)
 3. **CSS-First Hiding** - Faster than JavaScript
 4. **Parallel Initialization** - Features init concurrently
 5. **Element Tracking** - Fast cleanup on deactivation
 
+### How `observeDOM()` behaves, and why
+
+`DOMFeature.observeDOM()` is the single place every content-hiding feature
+watches the page from, so its cost is multiplied by the number of active
+features. Three things about it are deliberate.
+
+**1. It starts before `<body>` exists.**
+
+Content scripts run at `run_at: document_start`, where only `<html>` is
+present. Rather than wait for `DOMContentLoaded`, a short-lived *bridge*
+observer watches `documentElement` purely to detect `<body>` appearing, then
+disconnects and re-points at `<body>`.
+
+The bridge is registered in `this.observers` like any other, which matters:
+it means `disconnectObservers()` can cancel it. An earlier version deferred
+via a `DOMContentLoaded` listener that lived outside the feature's lifecycle,
+so switching a feature off during page load had nothing to cancel, and the
+listener then attached a live observer to an already-deactivated feature. The
+observer stayed live for the rest of the page and kept hiding content until a
+reload.
+
+Feature callbacks never run against `<head>` churn: the bridge only ever
+checks for `<body>`, and steady-state observation is scoped to `<body>` exactly
+as before.
+
+**2. Sweeps are coalesced into one per animation frame.**
+
+Most callbacks respond to a mutation by running a full `querySelectorAll`
+sweep of the document — `HideShortsFeature` alone runs ten. YouTube mutates
+from many separate tasks, several of which can land inside one frame, so an
+uncoalesced observer could cost half a dozen full sweeps per frame of a
+document that keeps growing all session.
+
+Deliveries are buffered and flushed once per frame. Measured on a
+12,700-node YouTube-shaped DOM running the real feature code:
+
+| Traffic pattern | Sweeps | Main-thread time |
+|---|---|---|
+| Bursts (mutations from separate tasks) | 1800 → **168** | 550.6ms → **62.7ms** (−88.6%) |
+| One mutation per frame (nothing to coalesce) | 150 → 150 | 40.4ms → 43.8ms (+8.4%) |
+
+The win is conditional: it only materialises when mutations arrive in bursts.
+When they do not, the scheduling overhead makes it marginally slower. The
+payoff is asymmetric enough to be worth taking.
+
+**`requestAnimationFrame`, not a timer.** rAF callbacks run *before* the
+browser paints, so an element is still hidden in the same frame it appears in
+and nothing flashes on screen. A `setTimeout` would land after paint and
+reintroduce exactly that flicker.
+
+**Mutation records are accumulated, not discarded.**
+`HideAutoplayOverlayFeature` reads `addedNodes` off them to spot the autoplay
+countdown overlay. The buffer is capped (`MAX_PENDING_RECORDS`) because rAF is
+paused in a background tab, where nothing would otherwise bound its growth.
+
+**3. Scheduled work is cancelled on deactivation.**
+
+`disconnectObservers()` cancels any frame already scheduled as well as
+disconnecting the observer. Without that, a feature switched off in the gap
+between scheduling and the frame would still run one final sweep — the same
+lifecycle hazard described in point 1.
+
+### The observers are a fallback, not the main mechanism
+
+Worth keeping in mind when reasoning about any of the above: most hiding is
+done by the CSS injected at activation, which applies instantly by selector
+and costs nothing per mutation. The observers exist for what CSS cannot
+express. This is why frame-coalescing is safe — the common case never depended
+on observer timing to begin with.
+
 ### Memory Management
 - MutationObservers disconnected on deactivation
+- Pending animation frames cancelled on deactivation
+- Buffered mutation records bounded and cleared
 - CSS elements removed on deactivation
 - Element references cleared
 - Event listeners properly removed

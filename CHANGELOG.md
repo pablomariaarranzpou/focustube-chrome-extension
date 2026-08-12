@@ -2,6 +2,11 @@
 
 ## [2.5.2] - 2026-08-12
 
+### Performance
+- **Lighter on busy YouTube pages.** Each feature used to re-scan the whole page every time YouTube changed anything, and YouTube changes things constantly. Those scans are now grouped and run once per frame instead. On a large page this cut the work by about 89% in the bursts of activity where it piled up most.
+  - Nothing appears and then disappears: the grouping is timed to run before the browser draws, so hidden things are still hidden in the frame they would have shown up in.
+  - The saving depends on how the page behaves. When changes arrive spread out rather than in bursts there is nothing to group, and it is marginally slower.
+
 ### Fixed
 - **A switched-off feature could keep hiding content until you reloaded.** Turning a toggle off while YouTube was still loading left its DOM watcher running for the rest of the page. The watcher was registered outside the feature's lifecycle, so switching the feature off had nothing to cancel, and it then attached itself to a feature that was already off.
   - Watchers now start as soon as the page body exists instead of waiting for the whole document, so features apply a little earlier too.
