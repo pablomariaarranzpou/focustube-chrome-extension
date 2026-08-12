@@ -8,6 +8,7 @@
   - The saving depends on how the page behaves. When changes arrive spread out rather than in bursts there is nothing to group, and it is marginally slower.
 
 ### Fixed
+- **Shorts in the normal feed left a broken card behind.** When YouTube serves a Short as an ordinary video in the home feed, only its thumbnail was being removed. The card stayed, so you were left with a title, channel name and view count with nothing to click and nothing to watch, and hovering it still started the little preview player. The whole card is now hidden, like the ones in the Shorts shelf always were.
 - **A switched-off feature could keep hiding content until you reloaded.** Turning a toggle off while YouTube was still loading left its DOM watcher running for the rest of the page. The watcher was registered outside the feature's lifecycle, so switching the feature off had nothing to cancel, and it then attached itself to a feature that was already off.
   - Watchers now start as soon as the page body exists instead of waiting for the whole document, so features apply a little earlier too.
   - Removes the `document.body not ready` warnings that every feature logged on each page load.
