@@ -1,0 +1,109 @@
+# Builds the Chrome Web Store package on every merge to main, and cuts a
+# GitHub Release only when manifest.json carries a version that has not been
+# released yet. Merging without touching the version just rebuilds the
+# artifact, so ordinary merges stay quiet instead of failing on a duplicate tag.
+#
+# Packaging and release notes are NOT reimplemented here: this runs the same
+# package.ps1 / release.ps1 used locally, so a CI build and a desk build can
+# never drift apart.
+name: Package and release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read version from manifest.json
+        id: meta
+        shell: bash
+        run: |
+          version=$(node -p "require('./manifest.json').version")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+          echo "Manifest version: $version"
+
+      # front.html loads this at runtime and package.ps1 ships it. It used to be
+      # gitignored, which would have produced a silently unstyled popup here.
+      - name: Verify runtime assets are present
+        shell: bash
+        run: |
+          test -f tailwind.min.css \
+            || { echo "::error::tailwind.min.css missing - the popup would ship unstyled."; exit 1; }
+
+      - name: Build package
+        shell: pwsh
+        run: ./package.ps1
+
+      - name: Verify package contents
+        shell: bash
+        run: |
+          zip="focustube-${{ steps.meta.outputs.version }}.zip"
+          test -f "$zip" || { echo "::error::$zip was not produced."; exit 1; }
+          # Nothing from the marketing site, test harness or store assets may ship.
+          if unzip -Z1 "$zip" | grep -Eq '^(docs|test|store_presence|node_modules)/'; then
+            echo "::error::Package contains files that must not ship:"
+            unzip -Z1 "$zip" | grep -E '^(docs|test|store_presence|node_modules)/'
+            exit 1
+          fi
+          for required in manifest.json front.html tailwind.min.css; do
+            unzip -Z1 "$zip" | grep -qx "$required" \
+              || { echo "::error::$required missing from package."; exit 1; }
+          done
+          echo "Package OK: $(unzip -Z1 "$zip" | wc -l) entries, $(du -h "$zip" | cut -f1)"
+
+      - name: Upload package as build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: focustube-${{ steps.meta.outputs.version }}
+          path: focustube-${{ steps.meta.outputs.version }}.zip
+          if-no-files-found: error
+
+      # Decide before publishing, so an unchanged version is a no-op rather
+      # than a failed run. release.ps1 has its own duplicate guard as a backstop.
+      - name: Has this version been released already?
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh release view "${{ steps.meta.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "${{ steps.meta.outputs.tag }} already released - skipping publish."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "${{ steps.meta.outputs.tag }} is new - will publish."
+          fi
+
+      - name: Create GitHub release
+        if: steps.check.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: ./release.ps1
+
+      - name: Summary
+        shell: bash
+        run: |
+          {
+            echo "### FocusTube ${{ steps.meta.outputs.version }}"
+            if [ "${{ steps.check.outputs.exists }}" = "false" ]; then
+              echo "Published release **${{ steps.meta.outputs.tag }}** with the packaged zip attached."
+            else
+              echo "Version unchanged (**${{ steps.meta.outputs.tag }}** already exists). Built the artifact only."
+            fi
+            echo ""
+            echo "The Chrome Web Store upload is still manual - this workflow does not have store credentials."
+          } >> "$GITHUB_STEP_SUMMARY"

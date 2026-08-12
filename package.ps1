@@ -12,7 +12,9 @@ $root = $PSScriptRoot
 $manifest = Get-Content (Join-Path $root 'manifest.json') -Raw | ConvertFrom-Json
 $version  = $manifest.version
 $zipPath  = Join-Path $root "focustube-$version.zip"
-$stage    = Join-Path $env:TEMP ("focustube-pkg-" + [System.Guid]::NewGuid().ToString('N'))
+# GetTempPath() rather than $env:TEMP: TEMP is undefined on the Linux CI
+# runners, and Join-Path against an empty base throws there.
+$stage    = Join-Path ([System.IO.Path]::GetTempPath()) ("focustube-pkg-" + [System.Guid]::NewGuid().ToString('N'))
 
 # --- load exclude patterns from .pkgignore ---
 $patterns = @()
@@ -40,8 +42,11 @@ Get-ChildItem -Path $root -Force | ForEach-Object {
 }
 
 # --- safety checks: the two easy mistakes ---
+# Hard failure, not a warning: front.html loads this at runtime, so a package
+# without it ships a popup with no styling. A warning scrolls past unnoticed in
+# a CI log and the broken zip would still be published.
 if (-not (Test-Path (Join-Path $stage 'tailwind.min.css'))) {
-  Write-Warning "tailwind.min.css is MISSING - the popup will look broken. (It is .gitignored; make sure the file exists in the repo root before packaging.)"
+  throw "tailwind.min.css is MISSING - the popup would ship unstyled. It must exist in the repo root before packaging."
 }
 if (Test-Path (Join-Path $stage 'docs')) {
   throw "docs/ ended up in the package - check .pkgignore."
