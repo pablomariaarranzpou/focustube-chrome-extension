@@ -31,24 +31,11 @@ class HideSidebarFeature extends DOMFeature {
     let css;
 
     if (this.config.keepHistoryVisible) {
-      // Entries start hidden and the JS filter marks the one to keep, rather
-      // than starting visible and being hidden afterwards.
-      //
-      // Features activate inside the async chrome.storage callback, so on a
-      // fresh load YouTube has already painted the whole guide by the time the
-      // filter first runs. Leaving the entries to JS alone meant every channel
-      // in the sidebar flashed on screen on every page load before vanishing.
-      // Defaulting to hidden means the worst case is an empty sidebar for a
-      // moment, which matches what the feature is for.
+      // Minimal CSS - JS handles the entry filtering
       css = `
         ytd-mini-guide-renderer,
         #guide-content #header,
         ytd-guide-renderer #footer {
-          display: none !important;
-        }
-
-        ytd-guide-renderer ytd-guide-section-renderer:not([data-ft-keep]),
-        ytd-guide-renderer ytd-guide-entry-renderer:not([data-ft-keep]) {
           display: none !important;
         }
       `;
@@ -119,26 +106,22 @@ class HideSidebarFeature extends DOMFeature {
       return;
     }
 
-    // --- Sections: mark the one holding history, unmark the rest ---
-    // The CSS above hides anything without data-ft-keep, so marking is all the
-    // filtering that is needed and nothing is ever visible-then-hidden.
+    // --- Sections ---
     guide.querySelectorAll('ytd-guide-section-renderer').forEach(section => {
       if (section.contains(historyEntry)) {
-        section.setAttribute('data-ft-keep', '');
         section.style.removeProperty('display');
         section.style.removeProperty('visibility');
       } else {
-        section.removeAttribute('data-ft-keep');
+        section.style.setProperty('display', 'none', 'important');
       }
     });
 
-    // --- Entries: keep history only ---
+    // --- Entries: hide all except history ---
     allEntries.forEach(entry => {
       if (entry === historyEntry) {
-        entry.setAttribute('data-ft-keep', '');
         entry.style.removeProperty('display');
       } else {
-        entry.removeAttribute('data-ft-keep');
+        entry.style.setProperty('display', 'none', 'important');
       }
     });
 
@@ -186,16 +169,13 @@ class HideSidebarFeature extends DOMFeature {
    * Restore sidebar
    */
   async onDeactivate() {
-    // Remove any inline styles applied by filterToHistoryOnly. The entries
-    // themselves are hidden by the injected CSS, which super.onDeactivate()
-    // removes, so clearing the markers is enough to leave the guide as found.
+    // Remove any inline styles applied by filterToHistoryOnly
     const guide = document.querySelector('ytd-guide-renderer');
     if (guide) {
       guide.querySelectorAll('ytd-guide-section-renderer, ytd-guide-entry-renderer, h3, #header, #section-items').forEach(el => {
         el.style.removeProperty('display');
         el.style.removeProperty('visibility');
       });
-      guide.querySelectorAll('[data-ft-keep]').forEach(el => el.removeAttribute('data-ft-keep'));
     }
 
     // Restore aria attributes
