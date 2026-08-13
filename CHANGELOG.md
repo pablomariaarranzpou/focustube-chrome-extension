@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.3] - 2026-08-13
+
+### Fixed
+- **"Hide Sidebar" did nothing after a page load.** With "keep History visible" on, the sidebar was left showing Home, Subscriptions and every channel you are subscribed to, and it stayed that way. YouTube builds the sidebar in pieces and the part holding History is not there at first, and the extension was waiting to find History before hiding anything, so on a normal load it never got started. The sidebar is now cleared as soon as it appears and History shows up on its own once YouTube adds it.
+
+---
+
 ## [2.5.2] - 2026-08-12
 
 ### Fixed
