@@ -31,11 +31,31 @@ class HideSidebarFeature extends DOMFeature {
     let css;
 
     if (this.config.keepHistoryVisible) {
-      // Minimal CSS - JS handles the entry filtering
+      // The CSS keeps the History entry and hides the rest, identifying History
+      // by its own href rather than waiting to be told which one it is.
+      //
+      // This cannot be left to filterToHistoryOnly() alone. YouTube renders the
+      // guide in pieces: on a fresh load only the first couple of sections
+      // exist and the one holding History is not in the DOM at all, so the
+      // filter bails out and hides nothing. Measured on a real page, that state
+      // persisted indefinitely - Home, Subscriptions and every subscribed
+      // channel stayed on screen until something made YouTube build the rest of
+      // the guide. Matching History in the selector means the entries are hidden
+      // from the moment they render and History appears the moment it does,
+      // with no window in between and no dependency on JS having run.
+      //
+      // data-ft-keep is a secondary escape hatch for layouts where the href
+      // differs and only the localized title matches; the href rule is what
+      // carries the common case, so a missing marker can never blank the guide.
       css = `
         ytd-mini-guide-renderer,
         #guide-content #header,
         ytd-guide-renderer #footer {
+          display: none !important;
+        }
+
+        ytd-guide-renderer ytd-guide-section-renderer:not(:has(a[href="/feed/history"])):not([data-ft-keep]),
+        ytd-guide-renderer ytd-guide-entry-renderer:not(:has(a[href="/feed/history"])):not([data-ft-keep]) {
           display: none !important;
         }
       `;
@@ -107,11 +127,15 @@ class HideSidebarFeature extends DOMFeature {
     }
 
     // --- Sections ---
+    // data-ft-keep covers the case the CSS selector cannot see: an entry found
+    // by its localized title rather than by the /feed/history href.
     guide.querySelectorAll('ytd-guide-section-renderer').forEach(section => {
       if (section.contains(historyEntry)) {
+        section.setAttribute('data-ft-keep', '');
         section.style.removeProperty('display');
         section.style.removeProperty('visibility');
       } else {
+        section.removeAttribute('data-ft-keep');
         section.style.setProperty('display', 'none', 'important');
       }
     });
@@ -119,8 +143,10 @@ class HideSidebarFeature extends DOMFeature {
     // --- Entries: hide all except history ---
     allEntries.forEach(entry => {
       if (entry === historyEntry) {
+        entry.setAttribute('data-ft-keep', '');
         entry.style.removeProperty('display');
       } else {
+        entry.removeAttribute('data-ft-keep');
         entry.style.setProperty('display', 'none', 'important');
       }
     });
@@ -176,6 +202,9 @@ class HideSidebarFeature extends DOMFeature {
         el.style.removeProperty('display');
         el.style.removeProperty('visibility');
       });
+      // The entries are hidden by the injected CSS, which super.onDeactivate()
+      // removes; clearing the markers leaves the guide exactly as found.
+      guide.querySelectorAll('[data-ft-keep]').forEach(el => el.removeAttribute('data-ft-keep'));
     }
 
     // Restore aria attributes
