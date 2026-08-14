@@ -79,6 +79,70 @@ function buildHreflangLinks() {
   return lines.join('\n');
 }
 
+// Builds the language-suggestion banner's client script, embedded ONLY on the
+// default (English) page. Data is the site's own hreflang tag and endonym
+// name per locale - nothing new to translate or get wrong.
+function buildLangSuggestScript() {
+  const data = locales
+    .filter((code) => code !== DEFAULT_LOCALE)
+    .map((code) => ({ href: urlFor(code), tag: hreflangFor(code), name: content[code].name }));
+
+  // </script> inside the embedded JSON would end the tag early.
+  const json = JSON.stringify(data).replace(/</g, '\\u003c');
+
+  return `    (function () {
+      try {
+        if (localStorage.getItem('ft_lang_choice')) return;
+        var languages = (navigator.languages && navigator.languages.length)
+          ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+        var DATA = ${json};
+        var match = null;
+        for (var i = 0; i < languages.length && !match; i++) {
+          var tag = String(languages[i]).toLowerCase();
+          if (!tag || tag.indexOf('en') === 0) return; // English preferred - nothing to suggest
+          var primary = tag.split('-')[0];
+          var exact = null, byPrimaryGeneric = null, byPrimaryAny = null;
+          for (var j = 0; j < DATA.length; j++) {
+            var d = DATA[j];
+            if (d.tag === tag) { exact = d; break; }
+            if (d.tag === primary) byPrimaryGeneric = byPrimaryGeneric || d;
+            else if (d.tag.split('-')[0] === primary) byPrimaryAny = byPrimaryAny || d;
+          }
+          match = exact || byPrimaryGeneric || byPrimaryAny;
+        }
+        if (!match) return;
+
+        var bar = document.createElement('div');
+        bar.className = 'lang-suggest';
+        bar.setAttribute('role', 'note');
+        var text = document.createElement('span');
+        text.className = 'lang-suggest-text';
+        text.textContent = 'This page is also available in ' + match.name + '.';
+        var go = document.createElement('button');
+        go.type = 'button';
+        go.className = 'lang-suggest-switch';
+        go.textContent = match.name;
+        go.addEventListener('click', function () {
+          try { localStorage.setItem('ft_lang_choice', '1'); } catch (e) {}
+          window.location.href = match.href;
+        });
+        var dismiss = document.createElement('button');
+        dismiss.type = 'button';
+        dismiss.className = 'lang-suggest-dismiss';
+        dismiss.setAttribute('aria-label', 'Dismiss');
+        dismiss.textContent = '\\u00d7';
+        dismiss.addEventListener('click', function () {
+          try { localStorage.setItem('ft_lang_choice', '1'); } catch (e) {}
+          bar.remove();
+        });
+        bar.appendChild(text);
+        bar.appendChild(go);
+        bar.appendChild(dismiss);
+        document.body.appendChild(bar);
+      } catch (e) {}
+    })();`;
+}
+
 function buildLangOptions(currentCode, depth) {
   const prefix = depth ? '../' : '';
   return locales
@@ -174,6 +238,7 @@ for (const code of locales) {
     '{{CTA2_LEAD}}': escapeHtml(c.c2l),
     '{{FOOTER_LINK}}': escapeHtml(c.flink),
     '{{LANG_OPTIONS}}': buildLangOptions(code, !!folder),
+    '{{LANG_SUGGEST_SCRIPT}}': isDefault ? buildLangSuggestScript() : '',
     '{{SPOTLIGHT_H2}}': escapeHtml(c.sph),
     '{{MH_BADGE}}': escapeHtml(c.mh.badge),
     '{{MH_TITLE}}': escapeHtml(c.mh.title),
