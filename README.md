@@ -112,6 +112,14 @@ window.__focusTubeManager.getStats()   // { total, enabled, disabled, initialize
 window.__focusTubeManager.getAllStates() // Full state of every feature
 ```
 
+### Releasing a New Version
+
+```
+node scripts/bump-version.js 2.5.5
+```
+
+Updates `manifest.json` (the real, shipped version) and your local `package.json`/`package-lock.json`, and warns if anything else in the repo still quotes the old number. Still manual afterward: write the `CHANGELOG.md` entry, then commit and open a PR — merging to `main` triggers the release build.
+
 ## Tech Stack
 
 - **Manifest V3** — Chrome Extension platform
