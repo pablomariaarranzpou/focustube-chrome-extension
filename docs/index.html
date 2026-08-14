@@ -663,8 +663,71 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('langSwitch').addEventListener('change', function (e) {
+      // A manual pick is a strong signal: never show the language suggestion
+      // again on this browser, on any page of the site.
+      try { localStorage.setItem('ft_lang_choice', '1'); } catch (err) {}
       window.location.href = e.target.value;
     });
+
+    // Suggest a translation when the browser's language differs from this
+    // page's, instead of auto-redirecting. Google explicitly warns against
+    // redirecting on perceived language: it can hide a page from crawlers
+    // entirely and sends people who wanted the English link straight past it.
+    // A dismissible, opt-in suggestion gets a visitor to their language in one
+    // click without either downside. Only runs on this (the default) locale,
+    // since anyone already on a translated page either chose it or arrived via
+    // hreflang - suggesting again there would be noise, not help.
+    (function () {
+      try {
+        if (localStorage.getItem('ft_lang_choice')) return;
+        var languages = (navigator.languages && navigator.languages.length)
+          ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+        var DATA = [{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/es/","tag":"es","name":"Español"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/es-419/","tag":"es-419","name":"Español (Latinoamérica)"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/fr/","tag":"fr","name":"Français"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/de/","tag":"de","name":"Deutsch"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/it/","tag":"it","name":"Italiano"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/pt-pt/","tag":"pt-pt","name":"Português (Portugal)"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/pt-br/","tag":"pt-br","name":"Português (Brasil)"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/nl/","tag":"nl","name":"Nederlands"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ca/","tag":"ca","name":"Català"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ro/","tag":"ro","name":"Română"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/pl/","tag":"pl","name":"Polski"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/cs/","tag":"cs","name":"Čeština"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/sk/","tag":"sk","name":"Slovenčina"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/sl/","tag":"sl","name":"Slovenščina"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/hr/","tag":"hr","name":"Hrvatski"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/sr/","tag":"sr","name":"Српски"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ru/","tag":"ru","name":"Русский"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/el/","tag":"el","name":"Ελληνικά"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/tr/","tag":"tr","name":"Türkçe"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/hu/","tag":"hu","name":"Magyar"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/et/","tag":"et","name":"Eesti"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/lv/","tag":"lv","name":"Latviešu"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/lt/","tag":"lt","name":"Lietuvių"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/sv/","tag":"sv","name":"Svenska"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/no/","tag":"no","name":"Norsk"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/da/","tag":"da","name":"Dansk"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/id/","tag":"id","name":"Bahasa Indonesia"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ms/","tag":"ms","name":"Bahasa Melayu"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/fil/","tag":"fil","name":"Filipino"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ja/","tag":"ja","name":"日本語"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ko/","tag":"ko","name":"한국어"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/he/","tag":"he","name":"עברית"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ar/","tag":"ar","name":"العربية"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/fa/","tag":"fa","name":"فارسی"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/hi/","tag":"hi","name":"हिन्दी"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/gu/","tag":"gu","name":"ગુજરાતી"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/mr/","tag":"mr","name":"मराठी"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/kn/","tag":"kn","name":"ಕನ್ನಡ"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/ta/","tag":"ta","name":"தமிழ்"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/te/","tag":"te","name":"తెలుగు"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/sw/","tag":"sw","name":"Kiswahili"},{"href":"https://pablomariaarranzpou.github.io/focustube-chrome-extension/am/","tag":"am","name":"አማርኛ"}];
+        var match = null;
+        for (var i = 0; i < languages.length && !match; i++) {
+          var tag = String(languages[i]).toLowerCase();
+          if (!tag || tag.indexOf('en') === 0) return; // English preferred - nothing to suggest
+          var primary = tag.split('-')[0];
+          var exact = null, byPrimaryGeneric = null, byPrimaryAny = null;
+          for (var j = 0; j < DATA.length; j++) {
+            var d = DATA[j];
+            if (d.tag === tag) { exact = d; break; }
+            if (d.tag === primary) byPrimaryGeneric = byPrimaryGeneric || d;
+            else if (d.tag.split('-')[0] === primary) byPrimaryAny = byPrimaryAny || d;
+          }
+          match = exact || byPrimaryGeneric || byPrimaryAny;
+        }
+        if (!match) return;
+
+        var bar = document.createElement('div');
+        bar.className = 'lang-suggest';
+        bar.setAttribute('role', 'note');
+        var text = document.createElement('span');
+        text.className = 'lang-suggest-text';
+        text.textContent = 'This page is also available in ' + match.name + '.';
+        var go = document.createElement('button');
+        go.type = 'button';
+        go.className = 'lang-suggest-switch';
+        go.textContent = match.name;
+        go.addEventListener('click', function () {
+          try { localStorage.setItem('ft_lang_choice', '1'); } catch (e) {}
+          window.location.href = match.href;
+        });
+        var dismiss = document.createElement('button');
+        dismiss.type = 'button';
+        dismiss.className = 'lang-suggest-dismiss';
+        dismiss.setAttribute('aria-label', 'Dismiss');
+        dismiss.textContent = '\u00d7';
+        dismiss.addEventListener('click', function () {
+          try { localStorage.setItem('ft_lang_choice', '1'); } catch (e) {}
+          bar.remove();
+        });
+        bar.appendChild(text);
+        bar.appendChild(go);
+        bar.appendChild(dismiss);
+        document.body.appendChild(bar);
+      } catch (e) {}
+    })();
 
     // Demo carousel: slide between the three Focus Mode animations, keeping the
     // written caption below it in step.
