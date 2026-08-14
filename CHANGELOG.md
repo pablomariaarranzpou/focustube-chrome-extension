@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.5.4] - 2026-08-14
+
+### Fixed
+- **Japanese users never got the translated extension.** The locale folder was named `_locales/jp`, but `jp` is a country code, not a language code — Chrome only recognizes `ja` for Japanese, so it silently ignored the folder and fell back everyone on `ja` to the default English strings. Renamed `_locales/jp` → `_locales/ja`.
+- Removed `_locales/fl` — not a real Chrome locale (Dutch is `nl`, which already exists), so it was dead weight nobody could ever reach.
+
+### Store Listing
+- Rewrote the Chrome Web Store description in all 45 supported languages to cover what was missing: Focus Mode, the Quick Blacklist Button, and the "keep History visible" sidebar option. Applied manually via the Developer Dashboard — this doesn't ship inside the extension package.
+
+---
+
 ## [2.5.3] - 2026-08-13
 
 ### Fixed
