@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.5] - 2026-08-14
+
+### Fixed
+- **Settings toggles could render side by side instead of stacked.** `.toggle-container` has been `display: inline-flex` since the first commit — a `<label>` is inline by default, and `inline-flex` doesn't change that, so nothing actually forced each row onto its own line. It always looked fine on a normal dev screen because every row happens to be wide enough to fill a line on its own; on a narrower render (reported on macOS Chrome), two short rows fit side by side instead. Changed to `display: flex` with `width: 100%`, so every row always spans the full popup width regardless of content, viewport, or platform.
+
+---
+
 ## [2.5.4] - 2026-08-14
 
 ### Fixed
