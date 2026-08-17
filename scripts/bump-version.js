@@ -10,6 +10,7 @@
  *   - package.json       local dev file, gitignored, never shared — kept in
  *                         sync anyway so `npm test` reports the right version
  *   - package-lock.json  same as above
+ *   - README.md          the "**Version**: X.Y.Z" footer line
  *
  * Then prints a warning for any other file still mentioning the old version
  * number, so nothing gets missed silently (this is how the package.json/
@@ -76,11 +77,25 @@ if (fs.existsSync(lockPath)) {
   }
 }
 
+// README.md — the "**Version**: X.Y.Z" footer. This is what got missed the
+// first time around: a case-sensitive search for "version" doesn't match
+// "**Version**", so check for this pattern explicitly instead of relying on
+// the generic safety net below.
+const readmePath = path.join(ROOT, 'README.md');
+if (fs.existsSync(readmePath)) {
+  const raw = fs.readFileSync(readmePath, 'utf8');
+  const updated = raw.replace(/\*\*Version\*\*:\s*[\d.]+/i, `**Version**: ${newVersion}`);
+  if (updated !== raw) {
+    fs.writeFileSync(readmePath, updated, 'utf8');
+    console.log(`✓ README.md           ${oldVersion} -> ${newVersion}`);
+  }
+}
+
 // Safety net: catch anything else still quoting the old number so it never
 // gets missed silently again.
 try {
   const hits = execSync(
-    `git grep -l "${oldVersion}" -- . ":(exclude)node_modules" ":(exclude)package-lock.json" ":(exclude)dist" ":(exclude)docs" ":(exclude)CHANGELOG.md"`,
+    `git grep -il "${oldVersion}" -- . ":(exclude)node_modules" ":(exclude)package-lock.json" ":(exclude)dist" ":(exclude)docs" ":(exclude)CHANGELOG.md"`,
     { cwd: ROOT }
   ).toString().trim();
   if (hits) {
