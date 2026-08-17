@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8099", "--directory", "docs"],
       "port": 8099
+    },
+    {
+      "name": "extension-popup",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8098"],
+      "port": 8098
     }
   ]
 }
