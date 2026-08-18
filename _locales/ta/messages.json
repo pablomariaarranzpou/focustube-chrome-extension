@@ -33,13 +33,13 @@
     "message": "வரலாற்றை தெரியும்படி வைக்கவும்"
   },
   "quickBlacklistButton": {
-    "message": "ஊட்டத்தில் விரைவான தடை பொத்தானைக் காட்டு"
+    "message": "விரைவு தடை பொத்தானைக் காட்டு"
   },
   "editBlacklistedChannels": {
     "message": "நிறைவுபடுத்தப்பட்ட சேனல்களை திருத்து"
   },
   "concentrationModeBlacklist": {
-    "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல்"
+    "message": "நிறைவுபடுத்தப்பட்ட சேனல்கள்"
   },
   "channelNamePlaceholder": {
     "message": "சேனல் பெயர்"
@@ -51,7 +51,7 @@
     "message": "நிறைவுபடுத்தப்பட்ட சொற்களை திருத்து"
   },
   "concentrationModeBlacklistWords": {
-    "message": "தியானமாக உள்ள நிலைபாட்டில் நிறைவுபடுத்தப்பட்ட பட்டியல் சொற்கள்"
+    "message": "நிறைவுபடுத்தப்பட்ட சொற்கள்"
   },
   "wordPlaceholder": {
     "message": "உதாரணம்: கேமிங்"

@@ -49,10 +49,26 @@
     .toggle-input:checked + .toggle-slider:before {
       transform: translateX(20px);
     }
+    /* Chrome sizes an extension popup with shrink-to-fit: it measures the
+       content's intrinsic width and opens the window at that size. So an
+       emergent width (min-width/max-width + whatever the content happens to
+       measure) is not the same on every machine — it moves with the platform's
+       font metrics and, far more, with how long the translated labels are.
+       In English the content fit inside 400px so the popup landed on the
+       min-width; in locales with longer labels (Tamil, Swahili, Filipino...)
+       it grew towards the 600px max-width, leaving the 400px-wide card
+       stranded in the middle of an oversized window.
+       Pinning the width makes the popup identical everywhere, and long labels
+       wrap instead of stretching the window. */
+    html,
+    body {
+      width: 400px;
+      overflow-x: hidden;
+    }
     .extension-container {
-      max-width: 600px;
-      min-width: 400px;
+      width: 100%;
       margin: 0 auto;
+      overflow-wrap: break-word;
     }
     .blacklist-item {
       display: flex;
