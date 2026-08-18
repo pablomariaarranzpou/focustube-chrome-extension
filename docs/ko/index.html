@@ -143,7 +143,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">기능</a>
+        <a href="#minimalist-home">기능</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">설치</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -153,12 +153,15 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">YouTube용 Chrome 확장 프로그램</span>
-      <h1>YouTube에서 시간 낭비 그만하기</h1>
-      <p class="lead">FocusTube는 Shorts, 추천, 제안, 댓글을 숨깁니다. 특정 채널과 단어를 차단하고, 정말 집중해야 할 때는 타이머 기반 포커스 모드를 켜세요.</p>
-      <div class="hero-actions">
-        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">YouTube용 Chrome 확장 프로그램</span>
+        <h1>YouTube에서 시간 낭비 그만하기</h1>
+        <p class="lead">FocusTube는 Shorts, 추천, 제안, 댓글을 숨깁니다. 특정 채널과 단어를 차단하고, 정말 집중해야 할 때는 타이머 기반 포커스 모드를 켜세요.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
             <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
               <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
               <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
@@ -168,17 +171,53 @@
             </svg>
             <span>Chrome에 추가 — 무료</span>
           </a>
-        <a class="btn btn-secondary" href="#features">기능 보기</a>
+          <a class="btn btn-secondary" href="#minimalist-home">기능 보기</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="기본으로 비공개">
+          <li>계정 불필요</li>
+          <li>추적 없음</li>
+          <li>오픈 소스</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4.8</strong>
+            <span class="proof-muted">29 개의 리뷰</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>4,000+</strong> <span class="proof-muted">활성 사용자</span></span>
+        </p>
       </div>
-      <p class="proof">
-        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <strong>4.8</strong>
-          <span class="proof-muted">29 개의 리뷰</span>
-        </a>
-        <span class="proof-sep" aria-hidden="true"></span>
-        <span><strong>4,000+</strong> <span class="proof-muted">활성 사용자</span></span>
-      </p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="../assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">항상</span>
+            <span class="pop-tab is-active">기능</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>Shorts 숨기기</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>추천 없음</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>댓글 없음</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>차단 목록</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>포커스 모드</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>반복 일정</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -285,69 +324,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>끌 수 있는 모든 기능</h2>
-      <div class="feature-stack">
-        <article class="fcard fcard-a">
-          <div class="fcard-text">
-            <h3>Shorts 숨기기</h3>
-            <p>홈 화면, 사이드바, 검색 결과에서 Shorts를 제거합니다.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="3" width="8" height="18" rx="2.5"/><path d="M4 4l16 16"/></svg></div>
-        </article>
-        <article class="fcard fcard-b">
-          <div class="fcard-text">
-            <h3>추천 없음</h3>
-            <p>무한 스크롤을 막기 위해 홈 화면의 제안과 콘텐츠를 제거합니다.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="4" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="6" rx="1.5"/><path d="M14 17h7M17.5 20l3.5-3-3.5-3"/></svg></div>
-        </article>
-        <article class="fcard fcard-c">
-          <div class="fcard-text">
-            <h3>댓글 없음</h3>
-            <p>영상만 보고 싶을 때 댓글 섹션을 숨깁니다.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a7 7 0 0 1-7 7H8l-4 3v-4.5A7 7 0 0 1 11 5h2"/><path d="M5 4l14 14"/></svg></div>
-        </article>
-        <article class="fcard fcard-a">
-          <div class="fcard-text">
-            <h3>차단 목록</h3>
-            <p>특정 채널이나 단어를 차단하고, 피드에서 바로 추가할 수 있는 빠른 버튼도 제공합니다.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h5M4 18h5"/><circle cx="16.5" cy="15.5" r="4.5"/><path d="M13.3 18.7l6.4-6.4"/></svg></div>
-        </article>
-        <article class="fcard fcard-b">
-          <div class="fcard-text">
-            <h3>포커스 모드</h3>
-            <p>휴식이 포함된 타이머 세션 또는 타이머 없는 빠른 모드.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5"/></svg></div>
-        </article>
-        <article class="fcard fcard-c">
-          <div class="fcard-text">
-            <h3>반복 일정</h3>
-            <p>선택한 요일과 시간에만 포커스 모드가 활성화되도록 예약하세요.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8 14h2M14 14h2M8 17.5h2"/></svg></div>
-        </article>
-      </div>
-    </div>
-  </section>
 
   <!-- Privacy: the permissions are shown verbatim because they are the proof,
        and because a permission name is the same string in every language. -->
-  <section class="privacy">
-    <div class="wrap">
-      <h2>기본으로 비공개</h2>
-      <ul class="pv-grid">
-        <li>계정 불필요</li>
-        <li>추적 없음</li>
-        <li>오픈 소스</li>
-      </ul>
-      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
-    </div>
-  </section>
 
   <section class="spotlight">
     <div class="wrap">
@@ -652,7 +631,6 @@
         <div class="mode-pill"><span class="mode-name">타이머</span></div>
         <div class="mode-pill"><span class="mode-name">일정</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>반복 일정:</strong> 선택한 요일과 시간에만 포커스 모드가 활성화되도록 예약하세요.</p>
     </div>
   </section>
 

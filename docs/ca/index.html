@@ -143,7 +143,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">Funcions</a>
+        <a href="#minimalist-home">Funcions</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Instal·la</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -153,12 +153,15 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">Extensió de Chrome per a YouTube</span>
-      <h1>Deixa de perdre el temps a YouTube</h1>
-      <p class="lead">FocusTube amaga Shorts, recomanacions, suggeriments i comentaris. Bloqueja canals i paraules concretes, i activa un Mode Focus amb temporitzador quan necessitis concentrar-te de veritat.</p>
-      <div class="hero-actions">
-        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">Extensió de Chrome per a YouTube</span>
+        <h1>Deixa de perdre el temps a YouTube</h1>
+        <p class="lead">FocusTube amaga Shorts, recomanacions, suggeriments i comentaris. Bloqueja canals i paraules concretes, i activa un Mode Focus amb temporitzador quan necessitis concentrar-te de veritat.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
             <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
               <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
               <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
@@ -168,17 +171,53 @@
             </svg>
             <span>Afegeix a Chrome — gratis</span>
           </a>
-        <a class="btn btn-secondary" href="#features">Mira què fa</a>
+          <a class="btn btn-secondary" href="#minimalist-home">Mira què fa</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="Privat per defecte">
+          <li>Sense compte</li>
+          <li>Sense rastreig</li>
+          <li>Codi obert</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4.8</strong>
+            <span class="proof-muted">29 ressenyes</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>4.000+</strong> <span class="proof-muted">usuaris actius</span></span>
+        </p>
       </div>
-      <p class="proof">
-        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <strong>4.8</strong>
-          <span class="proof-muted">29 ressenyes</span>
-        </a>
-        <span class="proof-sep" aria-hidden="true"></span>
-        <span><strong>4.000+</strong> <span class="proof-muted">usuaris actius</span></span>
-      </p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="../assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">Sempre</span>
+            <span class="pop-tab is-active">Funcions</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>Amaga els Shorts</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Sense recomanacions</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>Sense comentaris</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Llistes negres</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Mode Focus</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>Horari recurrent</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -285,69 +324,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>Tot el que pots desactivar</h2>
-      <div class="feature-stack">
-        <article class="fcard fcard-a">
-          <div class="fcard-text">
-            <h3>Amaga els Shorts</h3>
-            <p>Elimina els Shorts de la pàgina d'inici, la barra lateral i els resultats de cerca.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="3" width="8" height="18" rx="2.5"/><path d="M4 4l16 16"/></svg></div>
-        </article>
-        <article class="fcard fcard-b">
-          <div class="fcard-text">
-            <h3>Sense recomanacions</h3>
-            <p>Treu suggeriments i contingut de la pàgina d'inici per evitar el desplaçament infinit.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="4" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="6" rx="1.5"/><path d="M14 17h7M17.5 20l3.5-3-3.5-3"/></svg></div>
-        </article>
-        <article class="fcard fcard-c">
-          <div class="fcard-text">
-            <h3>Sense comentaris</h3>
-            <p>Amaga la secció de comentaris quan només vols veure el vídeo.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a7 7 0 0 1-7 7H8l-4 3v-4.5A7 7 0 0 1 11 5h2"/><path d="M5 4l14 14"/></svg></div>
-        </article>
-        <article class="fcard fcard-a">
-          <div class="fcard-text">
-            <h3>Llistes negres</h3>
-            <p>Bloqueja canals o paraules concretes, amb un botó ràpid per afegir-los des del mateix feed.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h5M4 18h5"/><circle cx="16.5" cy="15.5" r="4.5"/><path d="M13.3 18.7l6.4-6.4"/></svg></div>
-        </article>
-        <article class="fcard fcard-b">
-          <div class="fcard-text">
-            <h3>Mode Focus</h3>
-            <p>Sessions amb temporitzador i descansos, o un mode ràpid sense temporitzador.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5"/></svg></div>
-        </article>
-        <article class="fcard fcard-c">
-          <div class="fcard-text">
-            <h3>Horari recurrent</h3>
-            <p>Programa el Mode Focus perquè s'activi només els dies i hores que triïs.</p>
-          </div>
-          <div class="fcard-art" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8 14h2M14 14h2M8 17.5h2"/></svg></div>
-        </article>
-      </div>
-    </div>
-  </section>
 
   <!-- Privacy: the permissions are shown verbatim because they are the proof,
        and because a permission name is the same string in every language. -->
-  <section class="privacy">
-    <div class="wrap">
-      <h2>Privat per defecte</h2>
-      <ul class="pv-grid">
-        <li>Sense compte</li>
-        <li>Sense rastreig</li>
-        <li>Codi obert</li>
-      </ul>
-      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
-    </div>
-  </section>
 
   <section class="spotlight">
     <div class="wrap">
@@ -652,7 +631,6 @@
         <div class="mode-pill"><span class="mode-name">Temporitzador</span></div>
         <div class="mode-pill"><span class="mode-name">Horari</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>Horari recurrent:</strong> Programa el Mode Focus perquè s'activi només els dies i hores que triïs.</p>
     </div>
   </section>
 
