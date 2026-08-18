@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.5.6] - 2026-08-17
+
+### Fixed
+- **The popup opened far too wide in some languages, leaving the settings card stranded inside an oversized window.** Chrome sizes an extension popup by measuring its content and opening the window at that width, and the popup never declared a width of its own — it only said "no narrower than 400px, no wider than 600px" and let the content decide. In English the content fits inside 400px, so the popup landed on the lower bound and looked right. In languages with longer labels it did not: the "Blacklisted Words" heading alone measures 502px in Filipino, which dragged the whole window out to 566px in Filipino and to the full 600px in Tamil and Swahili, while the card itself stayed 400px wide — hence the empty grey margins either side. Only the Settings tab was affected, because that is where those long labels live.
+  - The popup now declares a fixed 400px width, so the window is the same on every machine and in every language, and long labels wrap onto a second line instead of stretching the window.
+  - Verified across English, German, Russian, Filipino, Swahili and Tamil — including Tamil, whose longest label is nearly twice the length of the English one — and on both tabs, with no horizontal overflow in any of them.
+
+---
+
 ## [2.5.5] - 2026-08-14
 
 ### Fixed
