@@ -2144,3 +2144,66 @@ footer a:hover {
   background: #fff;
   box-shadow: 0 0 0 2px #fff;
 }
+
+/* ==========================================================================
+   Consistency pass.
+   The page grew section by section, so it had five different heading sizes
+   (37/35/29/26/26px), three card radii (0/20/24px) and six different vertical
+   paddings. Everything below only normalises those three things — no layout
+   is moved.
+   ========================================================================== */
+:root {
+  --r-card: 20px;
+  --section-y: 64px;
+}
+
+/* One rhythm for every section. Class selectors are needed here: the original
+   rules are class-based, so `main > section` alone loses on specificity. */
+main > section.newfeat,
+main > section.features,
+main > section.privacy,
+main > section.spotlight,
+main > section.cta {
+  padding-block: var(--section-y);
+}
+
+/* The hero opens the page: more air above, less below. */
+main > section.hero {
+  padding-block: 72px 44px;
+}
+
+/* One heading scale, one weight, one optical spacing. */
+main > section > .wrap > h2,
+.newfeat-copy h3,
+.spotlight > .wrap > h2,
+.cta-card h2 {
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+/* The headline feature keeps a touch more presence than a plain section title,
+   but on the same scale rather than its own. */
+.newfeat-copy h3 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+/* One radius for anything card-shaped. */
+.fcard,
+.privacy .wrap,
+.cta-card,
+.newfeat-demo {
+  border-radius: var(--r-card);
+}
+
+/* Feature icons: one stroke weight, inheriting the card's text colour, so the
+   same markup reads correctly on the coral, dark and light tones. Replaces the
+   emoji, which rendered differently per platform and never matched the type. */
+.fcard-art svg {
+  width: clamp(40px, 6vw, 56px);
+  height: clamp(40px, 6vw, 56px);
+  opacity: 0.9;
+  display: block;
+}
