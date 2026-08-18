@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/hr/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube skriva Shorts, preporuke, prijedloge i komentare na YouTubeu. Blokirajte kanale i riječi te uključite vremenski Način fokusa. Više od 4.000 korisnika.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "hr",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Dodaj u Chrome — besplatno</a>
         <a class="btn btn-secondary" href="#features">Pogledaj što radi</a>
       </div>
-      <p class="stat-row"><strong>4.000+</strong> aktivnih korisnika</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 recenzija</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4.000+</strong> <span class="proof-muted">aktivnih korisnika</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">NOVO</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimalistička Naslovna Stranica</h2>
           <p class="newfeat-lead">Pretvorite svoju YouTube naslovnu stranicu u čist, centriran zaslon za pretraživanje: pravi YouTube logotip i stvarnu tražilicu, ništa drugo. Bez feeda, bez ometanja—pretražite ono što ste tražili i idite dalje.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Sve što možete isključiti</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Skriva Shorts</h3>
-          <p>Uklanja Shorts s početne stranice, bočne trake i rezultata pretrage.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Bez preporuka</h3>
-          <p>Uklanja prijedloge i sadržaj početne stranice radi izbjegavanja beskonačnog skrolanja.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Bez komentara</h3>
-          <p>Skriva odjeljak komentara kad samo želite pogledati video.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Crne liste</h3>
-          <p>Blokirajte određene kanale ili riječi, s brzim gumbom za dodavanje izravno iz feeda.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Skriva Shorts</h3>
+            <p>Uklanja Shorts s početne stranice, bočne trake i rezultata pretrage.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Bez preporuka</h3>
+            <p>Uklanja prijedloge i sadržaj početne stranice radi izbjegavanja beskonačnog skrolanja.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Bez komentara</h3>
+            <p>Skriva odjeljak komentara kad samo želite pogledati video.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Crne liste</h3>
+            <p>Blokirajte određene kanale ili riječi, s brzim gumbom za dodavanje izravno iz feeda.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Način fokusa</h3>
+            <p>Vremenske sesije s pauzama ili brzi način bez mjerača vremena.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Ponavljajući raspored</h3>
+            <p>Zakažite Način fokusa da se uključi samo na odabrane dane i sate.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Zadano privatno</h2>
+      <ul class="pv-grid">
+        <li>Bez računa</li>
+        <li>Bez praćenja</li>
+        <li>Otvoreni kod</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kod na GitHubu</a>
       </span>
       <select id="langSwitch" aria-label="Language">

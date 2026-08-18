@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/te/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube YouTube లో Shorts, సిఫార్సులు, సూచనలు మరియు వ్యాఖ్యలను దాచిపెడుతుంది. ఛానెల్‌లు మరియు పదాలను బ్లాక్ చేయండి, టైమర్‌తో Focus Mode ఆన్ చేయండి. 4,000+ యూజర్లు.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "te",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome కు జోడించండి — ఉచితం</a>
         <a class="btn btn-secondary" href="#features">ఇది ఏం చేస్తుందో చూడండి</a>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> యాక్టివ్ యూజర్లు</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 సమీక్షలు</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4,000+</strong> <span class="proof-muted">యాక్టివ్ యూజర్లు</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">కొత్తది</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>మినిమలిస్ట్ హోమ్ పేజీ</h2>
           <p class="newfeat-lead">మీ YouTube హోమ్ పేజీ ఇప్పుడు సరళంగా ఉంది: లోగో మరియు సెర్చ్ బార్ మాత్రమే.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>మీరు ఆఫ్ చేయగలిగే ప్రతిదీ</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts ను దాచండి</h3>
-          <p>హోమ్ పేజీ, సైడ్‌బార్ మరియు సెర్చ్ ఫలితాల నుండి Shorts ను తీసివేస్తుంది.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>సిఫార్సులు లేవు</h3>
-          <p>అనంతమైన స్క్రోల్‌ను నివారించడానికి హోమ్ పేజీ సూచనలు మరియు కంటెంట్‌ను తీసివేస్తుంది.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>వ్యాఖ్యలు లేవు</h3>
-          <p>మీరు కేవలం వీడియో చూడాలనుకున్నప్పుడు వ్యాఖ్యల విభాగాన్ని దాచిపెడుతుంది.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>బ్లాక్‌లిస్ట్‌లు</h3>
-          <p>నిర్దిష్ట ఛానెల్‌లు లేదా పదాలను బ్లాక్ చేయండి, ఫీడ్ నుండి నేరుగా జోడించడానికి క్విక్ బటన్‌తో.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts ను దాచండి</h3>
+            <p>హోమ్ పేజీ, సైడ్‌బార్ మరియు సెర్చ్ ఫలితాల నుండి Shorts ను తీసివేస్తుంది.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>సిఫార్సులు లేవు</h3>
+            <p>అనంతమైన స్క్రోల్‌ను నివారించడానికి హోమ్ పేజీ సూచనలు మరియు కంటెంట్‌ను తీసివేస్తుంది.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>వ్యాఖ్యలు లేవు</h3>
+            <p>మీరు కేవలం వీడియో చూడాలనుకున్నప్పుడు వ్యాఖ్యల విభాగాన్ని దాచిపెడుతుంది.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>బ్లాక్‌లిస్ట్‌లు</h3>
+            <p>నిర్దిష్ట ఛానెల్‌లు లేదా పదాలను బ్లాక్ చేయండి, ఫీడ్ నుండి నేరుగా జోడించడానికి క్విక్ బటన్‌తో.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Focus Mode</h3>
+            <p>బ్రేక్‌లతో టైమర్ సెషన్‌లు, లేదా టైమర్ లేని క్విక్ మోడ్.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>పునరావృత షెడ్యూల్</h3>
+            <p>మీరు ఎంచుకున్న రోజులు మరియు సమయాల్లో మాత్రమే Focus Mode యాక్టివేట్ అవ్వడానికి షెడ్యూల్ చేయండి.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>డిఫాల్ట్‌గా ప్రైవేట్</h2>
+      <ul class="pv-grid">
+        <li>ఖాతా అవసరం లేదు</li>
+        <li>ట్రాకింగ్ లేదు</li>
+        <li>ఓపెన్ సోర్స్</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub లో కోడ్</a>
       </span>
       <select id="langSwitch" aria-label="Language">

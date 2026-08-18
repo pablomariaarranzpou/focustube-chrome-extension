@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/mr/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube YouTube वर Shorts, शिफारसी, सूचना आणि टिप्पण्या लपवते. चॅनेल्स आणि शब्द ब्लॉक करा, आणि टायमरसह Focus Mode सुरू करा. 4,000+ वापरकर्ते.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "mr",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome मध्ये जोडा — मोफत</a>
         <a class="btn btn-secondary" href="#features">हे काय करते ते पहा</a>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> सक्रिय वापरकर्ते</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 पुनरावलोकने</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4,000+</strong> <span class="proof-muted">सक्रिय वापरकर्ते</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">नवीन</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>मिनिमलिस्ट मुख्यपृष्ठ</h2>
           <p class="newfeat-lead">तुमचे YouTube मुख्यपृष्ठ स्वच्छ, केंद्रित शोध स्क्रीनमध्ये बदला: खरा YouTube लोगो आणि खरी शोध पट्टी, दुसरे काहीही नाही. फीड नाही, विचलन नाही.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>तुम्ही जे काही बंद करू शकता</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts लपवा</h3>
-          <p>होम पेज, साइडबार आणि सर्च निकालांमधून Shorts काढून टाकते.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>शिफारसींशिवाय</h3>
-          <p>अखंड स्क्रॉल टाळण्यासाठी होम पेजच्या सूचना आणि कंटेंट काढून टाकते.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>टिप्पण्यांशिवाय</h3>
-          <p>फक्त व्हिडिओ पाहायचा असेल तेव्हा टिप्पणी विभाग लपवते.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>ब्लॅकलिस्ट</h3>
-          <p>विशिष्ट चॅनेल्स किंवा शब्द ब्लॉक करा, फीडमधून थेट जोडण्यासाठी क्विक बटणसह.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts लपवा</h3>
+            <p>होम पेज, साइडबार आणि सर्च निकालांमधून Shorts काढून टाकते.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>शिफारसींशिवाय</h3>
+            <p>अखंड स्क्रॉल टाळण्यासाठी होम पेजच्या सूचना आणि कंटेंट काढून टाकते.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>टिप्पण्यांशिवाय</h3>
+            <p>फक्त व्हिडिओ पाहायचा असेल तेव्हा टिप्पणी विभाग लपवते.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>ब्लॅकलिस्ट</h3>
+            <p>विशिष्ट चॅनेल्स किंवा शब्द ब्लॉक करा, फीडमधून थेट जोडण्यासाठी क्विक बटणसह.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Focus Mode</h3>
+            <p>ब्रेकसह टायमर सत्रे, किंवा टायमर शिवाय क्विक मोड.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>पुनरावृत्ती वेळापत्रक</h3>
+            <p>Focus Mode फक्त तुम्ही निवडलेल्या दिवशी आणि वेळी सक्रिय होण्यासाठी शेड्यूल करा.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>डीफॉल्टनुसार खाजगी</h2>
+      <ul class="pv-grid">
+        <li>खात्याची गरज नाही</li>
+        <li>ट्रॅकिंग नाही</li>
+        <li>ओपन सोर्स</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub वरील कोड</a>
       </span>
       <select id="langSwitch" aria-label="Language">

@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/am/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube በYouTube ላይ Shorts፣ ምክሮች፣ አስተያየቶች እና አስተያየቶችን ይደብቃል። ቻናሎችን እና ቃላትን ያግዱ፣ በጊዜ ቆጣሪ የትኩረት ሁነታን ያንቁ። ከ4,000 በላይ ተጠቃሚዎች።",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "am",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">ወደ Chrome ያክሉ — ነፃ</a>
         <a class="btn btn-secondary" href="#features">የሚያደርገውን ይመልከቱ</a>
       </div>
-      <p class="stat-row"><strong>ከ4,000+</strong> ገባር ተጠቃሚዎች</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 ግምገማዎች</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>ከ4,000+</strong> <span class="proof-muted">ገባር ተጠቃሚዎች</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">አዲስ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>ቀላል የመነሻ ገጽ</h2>
           <p class="newfeat-lead">የYouTube መነሻ ገጽ ቀላል ሆነ፦ አርማ እና አሞሌ ብቻ ይታያሉ፣ ሌላ ምንም የለም።</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>ማጥፋት የሚችሉት ሁሉ</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts ደብቅ</h3>
-          <p>Shorts ን ከመነሻ ገጽ፣ ከጎን አሞሌ እና ከፍለጋ ውጤቶች ያስወግዳል።</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>ምክሮች የለም</h3>
-          <p>ማለቂያ የለሽ ጥቅልልን ለማስቀረት የመነሻ ገጽ አስተያየቶችን እና ይዘትን ያስወግዳል።</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>አስተያየቶች የለም</h3>
-          <p>ቪዲዮውን ብቻ ማየት ሲፈልጉ የአስተያየት ክፍልን ይደብቃል።</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>የተከለከሉ ዝርዝሮች</h3>
-          <p>የተወሰኑ ቻናሎችን ወይም ቃላትን ያግዱ፣ ከምንጩ በቀጥታ ለመጨመር ፈጣን ቁልፍ ጋር።</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts ደብቅ</h3>
+            <p>Shorts ን ከመነሻ ገጽ፣ ከጎን አሞሌ እና ከፍለጋ ውጤቶች ያስወግዳል።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>ምክሮች የለም</h3>
+            <p>ማለቂያ የለሽ ጥቅልልን ለማስቀረት የመነሻ ገጽ አስተያየቶችን እና ይዘትን ያስወግዳል።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>አስተያየቶች የለም</h3>
+            <p>ቪዲዮውን ብቻ ማየት ሲፈልጉ የአስተያየት ክፍልን ይደብቃል።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>የተከለከሉ ዝርዝሮች</h3>
+            <p>የተወሰኑ ቻናሎችን ወይም ቃላትን ያግዱ፣ ከምንጩ በቀጥታ ለመጨመር ፈጣን ቁልፍ ጋር።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>የትኩረት ሁነታ</h3>
+            <p>እረፍት ያላቸው በጊዜ ቆጣሪ ክፍለ ጊዜዎች፣ ወይም ጊዜ ቆጣሪ የሌለው ፈጣን ሁነታ።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>ተደጋጋሚ መርሃ ግብር</h3>
+            <p>የትኩረት ሁነታ እርስዎ በሚመርጡት ቀናት እና ጊዜያት ብቻ እንዲነቃ ያቅዱ።</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>በነባሪ የግል</h2>
+      <ul class="pv-grid">
+        <li>መለያ አያስፈልግም</li>
+        <li>ክትትል የለም</li>
+        <li>ክፍት ምንጭ</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">በGitHub ላይ ኮድ</a>
       </span>
       <select id="langSwitch" aria-label="Language">

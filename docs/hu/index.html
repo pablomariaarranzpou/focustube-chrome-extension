@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/hu/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat a YouTube-on. Blokkolj csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot. Több mint 4000 felhasználó.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "hu",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Hozzáadás a Chrome-hoz — ingyenes</a>
         <a class="btn btn-secondary" href="#features">Nézd meg, mit csinál</a>
       </div>
-      <p class="stat-row"><strong>4000+</strong> aktív felhasználó</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 értékelés</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4000+</strong> <span class="proof-muted">aktív felhasználó</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">ÚJ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimalista kezdőlap</h2>
           <p class="newfeat-lead">Alakítsd át a YouTube kezdőlapját egy letisztult, középre igazított keresőképernyővé: az igazi YouTube logó és a valódi keresősáv, semmi más. Nincs hírfolyam, nincs elterelés—keresd meg, amit akarsz, és indulj tovább.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Minden, amit kikapcsolhatsz</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts elrejtése</h3>
-          <p>Eltávolítja a Shorts videókat a kezdőlapról, az oldalsávból és a keresési eredményekből.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Ajánlások nélkül</h3>
-          <p>Eltávolítja a javaslatokat és a kezdőlap tartalmát a végtelen görgetés elkerülésére.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Hozzászólások nélkül</h3>
-          <p>Elrejti a hozzászólás szekciót, ha csak a videót akarod nézni.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Feketelisták</h3>
-          <p>Blokkolj konkrét csatornákat vagy szavakat egy gyors gombbal, közvetlenül a feedből.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts elrejtése</h3>
+            <p>Eltávolítja a Shorts videókat a kezdőlapról, az oldalsávból és a keresési eredményekből.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Ajánlások nélkül</h3>
+            <p>Eltávolítja a javaslatokat és a kezdőlap tartalmát a végtelen görgetés elkerülésére.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Hozzászólások nélkül</h3>
+            <p>Elrejti a hozzászólás szekciót, ha csak a videót akarod nézni.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Feketelisták</h3>
+            <p>Blokkolj konkrét csatornákat vagy szavakat egy gyors gombbal, közvetlenül a feedből.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Fókusz mód</h3>
+            <p>Időzített szakaszok szünetekkel, vagy gyors mód időzítő nélkül.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Ismétlődő ütemezés</h3>
+            <p>Ütemezd a Fókusz módot, hogy csak a kiválasztott napokon és időpontokban aktiválódjon.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Alapból privát</h2>
+      <ul class="pv-grid">
+        <li>Nincs fiók</li>
+        <li>Nincs követés</li>
+        <li>Nyílt forráskód</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kód a GitHubon</a>
       </span>
       <select id="langSwitch" aria-label="Language">

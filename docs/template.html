@@ -63,7 +63,15 @@
         <a class="btn btn-primary" href="{{STORE_URL}}" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
         <a class="btn btn-secondary" href="#features">{{CTA_SECONDARY}}</a>
       </div>
-      <p class="stat-row"><strong>{{STAT_NUMBER}}</strong> {{STAT_SUFFIX}}</p>
+      <p class="proof">
+        <a class="proof-rating" href="{{STORE_REVIEWS_URL}}" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>{{STORE_RATING}}</strong>
+          <span class="proof-muted">{{STORE_REVIEW_COUNT}} {{RV_LABEL}}</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>{{STAT_NUMBER}}</strong> <span class="proof-muted">{{STAT_SUFFIX}}</span></span>
+      </p>
     </div>
   </section>
 
@@ -164,28 +172,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>{{FEATURES_TITLE}}</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>{{F1_TITLE}}</h3>
-          <p>{{F1_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>{{F2_TITLE}}</h3>
-          <p>{{F2_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>{{F3_TITLE}}</h3>
-          <p>{{F3_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>{{F4_TITLE}}</h3>
-          <p>{{F4_DESC}}</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>{{F1_TITLE}}</h3>
+            <p>{{F1_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>{{F2_TITLE}}</h3>
+            <p>{{F2_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>{{F3_TITLE}}</h3>
+            <p>{{F3_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>{{F4_TITLE}}</h3>
+            <p>{{F4_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>{{F5_TITLE}}</h3>
+            <p>{{F5_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>{{F6_TITLE}}</h3>
+            <p>{{F6_DESC}}</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>{{PV_TITLE}}</h2>
+      <ul class="pv-grid">
+        <li>{{PV_A}}</li>
+        <li>{{PV_B}}</li>
+        <li>{{PV_C}}</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -512,6 +556,8 @@
     <div class="wrap">
       <span>© <span id="year">2026</span> FocusTube · v{{VERSION}}</span>
       <span>
+        <a href="{{ROOT}}support/">Support</a>
+        &middot;
         <a href="{{REPO_URL}}" target="_blank" rel="noopener">{{FOOTER_LINK}}</a>
       </span>
       <select id="langSwitch" aria-label="Language">

@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/de/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube blendet Shorts, Empfehlungen, Vorschläge und Kommentare auf YouTube aus. Blockiere Kanäle und Wörter und aktiviere einen zeitgesteuerten Fokus-Modus. Über 4.000 Nutzer.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "de",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Zu Chrome hinzufügen — kostenlos</a>
         <a class="btn btn-secondary" href="#features">Zeig mir, was es kann</a>
       </div>
-      <p class="stat-row"><strong>4.000+</strong> aktive Nutzer</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 Bewertungen</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4.000+</strong> <span class="proof-muted">aktive Nutzer</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">NEU</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimalistische Startseite</h2>
           <p class="newfeat-lead">Verwandeln Sie Ihre YouTube-Startseite in einen klaren, zentrierten Suchbildschirm: das echte YouTube-Logo und die echte Suchleiste, sonst nichts. Kein Feed, keine Ablenkungen — einfach suchen und loslegen.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Alles, was du abschalten kannst</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts ausblenden</h3>
-          <p>Entfernt Shorts von der Startseite, der Seitenleiste und den Suchergebnissen.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Keine Empfehlungen</h3>
-          <p>Entfernt Vorschläge und Inhalte der Startseite, um endloses Scrollen zu verhindern.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Keine Kommentare</h3>
-          <p>Blendet den Kommentarbereich aus, wenn du nur das Video sehen willst.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Sperrlisten</h3>
-          <p>Blockiere bestimmte Kanäle oder Wörter, mit einem Schnellbutton direkt im Feed.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts ausblenden</h3>
+            <p>Entfernt Shorts von der Startseite, der Seitenleiste und den Suchergebnissen.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Keine Empfehlungen</h3>
+            <p>Entfernt Vorschläge und Inhalte der Startseite, um endloses Scrollen zu verhindern.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Keine Kommentare</h3>
+            <p>Blendet den Kommentarbereich aus, wenn du nur das Video sehen willst.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Sperrlisten</h3>
+            <p>Blockiere bestimmte Kanäle oder Wörter, mit einem Schnellbutton direkt im Feed.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Fokus-Modus</h3>
+            <p>Zeitgesteuerte Sitzungen mit Pausen oder ein Schnellmodus ohne Timer.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Wiederkehrender Zeitplan</h3>
+            <p>Plane den Fokus-Modus so, dass er nur an bestimmten Tagen und Uhrzeiten aktiv ist.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Standardmäßig privat</h2>
+      <ul class="pv-grid">
+        <li>Kein Konto</li>
+        <li>Kein Tracking</li>
+        <li>Open Source</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Code auf GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

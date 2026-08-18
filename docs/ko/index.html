@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/ko/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube는 YouTube의 Shorts, 추천, 제안, 댓글을 숨깁니다. 채널과 단어를 차단하고 타이머 기반 포커스 모드를 활성화하세요. 4,000명 이상이 사용 중입니다.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "ko",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome에 추가 — 무료</a>
         <a class="btn btn-secondary" href="#features">기능 보기</a>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> 활성 사용자</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 개의 리뷰</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4,000+</strong> <span class="proof-muted">활성 사용자</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">새로운 기능</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>미니멀 홈페이지</h2>
           <p class="newfeat-lead">YouTube 홈페이지를 깔끔하고 중앙에 배치된 검색 화면으로 바꿔보세요. 진짜 YouTube 로고와 진짜 검색창, 그게 전부예요. 피드도 없고 다른 길로 새지도 않아요—찾던 것을 검색하고 바로 떠나세요.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>끌 수 있는 모든 기능</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts 숨기기</h3>
-          <p>홈 화면, 사이드바, 검색 결과에서 Shorts를 제거합니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>추천 없음</h3>
-          <p>무한 스크롤을 막기 위해 홈 화면의 제안과 콘텐츠를 제거합니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>댓글 없음</h3>
-          <p>영상만 보고 싶을 때 댓글 섹션을 숨깁니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>차단 목록</h3>
-          <p>특정 채널이나 단어를 차단하고, 피드에서 바로 추가할 수 있는 빠른 버튼도 제공합니다.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Shorts 숨기기</h3>
+            <p>홈 화면, 사이드바, 검색 결과에서 Shorts를 제거합니다.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>추천 없음</h3>
+            <p>무한 스크롤을 막기 위해 홈 화면의 제안과 콘텐츠를 제거합니다.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>댓글 없음</h3>
+            <p>영상만 보고 싶을 때 댓글 섹션을 숨깁니다.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>차단 목록</h3>
+            <p>특정 채널이나 단어를 차단하고, 피드에서 바로 추가할 수 있는 빠른 버튼도 제공합니다.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>포커스 모드</h3>
+            <p>휴식이 포함된 타이머 세션 또는 타이머 없는 빠른 모드.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>반복 일정</h3>
+            <p>선택한 요일과 시간에만 포커스 모드가 활성화되도록 예약하세요.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>기본으로 비공개</h2>
+      <ul class="pv-grid">
+        <li>계정 불필요</li>
+        <li>추적 없음</li>
+        <li>오픈 소스</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub의 코드</a>
       </span>
       <select id="langSwitch" aria-label="Language">

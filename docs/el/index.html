@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/el/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "Το FocusTube αποκρύπτει Shorts, προτάσεις, εισηγήσεις και σχόλια στο YouTube. Αποκλείστε κανάλια και λέξεις και ενεργοποιήστε μια χρονομετρημένη Λειτουργία Συγκέντρωσης. Πάνω από 4.000 χρήστες.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "el",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Προσθήκη στο Chrome — δωρεάν</a>
         <a class="btn btn-secondary" href="#features">Δείτε τι κάνει</a>
       </div>
-      <p class="stat-row"><strong>4.000+</strong> ενεργοί χρήστες</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 κριτικές</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4.000+</strong> <span class="proof-muted">ενεργοί χρήστες</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">ΝΕΟ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Μινιμαλιστική Αρχική Σελίδα</h2>
           <p class="newfeat-lead">Μετατρέψτε την αρχική σελίδα του YouTube σε μια καθαρή, κεντραρισμένη οθόνη αναζήτησης: το πραγματικό λογότυπο του YouTube και η γνήσια μπάρα αναζήτησης, τίποτα άλλο. Χωρίς feed, χωρίς περισπασμούς—αναζητήστε αυτό που ήρθατε να βρείτε και συνεχίστε.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Όλα όσα μπορείτε να απενεργοποιήσετε</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Απόκρυψη Shorts</h3>
-          <p>Αφαιρεί τα Shorts από την αρχική σελίδα, την πλαϊνή μπάρα και τα αποτελέσματα αναζήτησης.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Χωρίς προτάσεις</h3>
-          <p>Αφαιρεί τις εισηγήσεις και το περιεχόμενο της αρχικής σελίδας για να αποφευχθεί η ατέρμονη κύλιση.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Χωρίς σχόλια</h3>
-          <p>Αποκρύπτει την ενότητα σχολίων όταν θέλετε απλώς να δείτε το βίντεο.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Μαύρες λίστες</h3>
-          <p>Αποκλείστε συγκεκριμένα κανάλια ή λέξεις, με ένα γρήγορο κουμπί για προσθήκη απευθείας από τη ροή.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Απόκρυψη Shorts</h3>
+            <p>Αφαιρεί τα Shorts από την αρχική σελίδα, την πλαϊνή μπάρα και τα αποτελέσματα αναζήτησης.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Χωρίς προτάσεις</h3>
+            <p>Αφαιρεί τις εισηγήσεις και το περιεχόμενο της αρχικής σελίδας για να αποφευχθεί η ατέρμονη κύλιση.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Χωρίς σχόλια</h3>
+            <p>Αποκρύπτει την ενότητα σχολίων όταν θέλετε απλώς να δείτε το βίντεο.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Μαύρες λίστες</h3>
+            <p>Αποκλείστε συγκεκριμένα κανάλια ή λέξεις, με ένα γρήγορο κουμπί για προσθήκη απευθείας από τη ροή.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Λειτουργία Συγκέντρωσης</h3>
+            <p>Χρονομετρημένες συνεδρίες με διαλείμματα ή γρήγορη λειτουργία χωρίς χρονόμετρο.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Επαναλαμβανόμενο πρόγραμμα</h3>
+            <p>Προγραμματίστε τη Λειτουργία Συγκέντρωσης να ενεργοποιείται μόνο τις ημέρες και ώρες που επιλέγετε.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Ιδιωτικό εξ ορισμού</h2>
+      <ul class="pv-grid">
+        <li>Χωρίς λογαριασμό</li>
+        <li>Καμία παρακολούθηση</li>
+        <li>Ανοιχτός κώδικας</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Κώδικας στο GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

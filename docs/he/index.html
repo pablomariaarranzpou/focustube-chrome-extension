@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/he/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube מסתיר Shorts, הצעות, המלצות ותגובות ביוטיוב. חוסמים ערוצים ומילים, ומפעילים מצב ריכוז עם טיימר. יותר מ-4,000 משתמשים.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "he",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">הוספה לכרום — בחינם</a>
         <a class="btn btn-secondary" href="#features">ראו מה זה עושה</a>
       </div>
-      <p class="stat-row"><strong>+4,000</strong> משתמשים פעילים</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 ביקורות</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>+4,000</strong> <span class="proof-muted">משתמשים פעילים</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">חדש</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>דף בית מינימליסטי</h2>
           <p class="newfeat-lead">הפכו את דף הבית של YouTube למסך חיפוש נקי וממורכז: הלוגו האמיתי של YouTube ושורת החיפוש האמיתית, שום דבר אחר. בלי פיד, בלי הסחות דעת—חפשו את מה שבאתם למצוא ותמשיכו הלאה.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>כל מה שאפשר לכבות</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>הסתרת Shorts</h3>
-          <p>מסיר את ה-Shorts מהדף הבית, סרגל הצד ותוצאות החיפוש.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>בלי המלצות</h3>
-          <p>מסיר הצעות ותוכן מדף הבית כדי למנוע גלילה אינסופית.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>בלי תגובות</h3>
-          <p>מסתיר את אזור התגובות כשרוצים רק לראות את הסרטון.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>רשימות חסימה</h3>
-          <p>חוסמים ערוצים או מילים ספציפיים, עם כפתור מהיר להוספה ישירות מהפיד.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>הסתרת Shorts</h3>
+            <p>מסיר את ה-Shorts מהדף הבית, סרגל הצד ותוצאות החיפוש.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>בלי המלצות</h3>
+            <p>מסיר הצעות ותוכן מדף הבית כדי למנוע גלילה אינסופית.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>בלי תגובות</h3>
+            <p>מסתיר את אזור התגובות כשרוצים רק לראות את הסרטון.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>רשימות חסימה</h3>
+            <p>חוסמים ערוצים או מילים ספציפיים, עם כפתור מהיר להוספה ישירות מהפיד.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>מצב ריכוז</h3>
+            <p>מפגשים מתוזמנים עם הפסקות, או מצב מהיר בלי טיימר.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>לוח זמנים חוזר</h3>
+            <p>קבעו שהמצב ריכוז יופעל רק בימים ובשעות שתבחרו.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>פרטי כברירת מחדל</h2>
+      <ul class="pv-grid">
+        <li>ללא חשבון</li>
+        <li>ללא מעקב</li>
+        <li>קוד פתוח</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">קוד ב-GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

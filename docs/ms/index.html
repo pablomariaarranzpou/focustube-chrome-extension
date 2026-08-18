@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/ms/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube menyembunyikan Shorts, cadangan, saranan dan komen di YouTube. Sekat saluran dan perkataan, serta aktifkan Mod Fokus bermasa. Lebih 4,000 pengguna.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "ms",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Tambah ke Chrome — percuma</a>
         <a class="btn btn-secondary" href="#features">Lihat apa yang ia lakukan</a>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> pengguna aktif</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 ulasan</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4,000+</strong> <span class="proof-muted">pengguna aktif</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">BAHARU</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Halaman Utama Minimalis</h2>
           <p class="newfeat-lead">Ubah halaman utama YouTube anda kepada skrin carian yang bersih dan berpusat: logo YouTube sebenar dan bar carian sebenar, tiada apa-apa lagi. Tiada suapan, tiada gangguan—cari apa yang anda perlukan dan teruskan.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Semua yang boleh anda matikan</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Sembunyikan Shorts</h3>
-          <p>Mengalih keluar Shorts daripada halaman utama, bar sisi dan keputusan carian.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Tanpa cadangan</h3>
-          <p>Mengalih keluar saranan dan kandungan halaman utama untuk mengelakkan skrol tanpa henti.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Tanpa komen</h3>
-          <p>Menyembunyikan bahagian komen apabila anda cuma mahu menonton video.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Senarai hitam</h3>
-          <p>Sekat saluran atau perkataan tertentu, dengan butang pantas untuk menambahnya terus daripada suapan.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Sembunyikan Shorts</h3>
+            <p>Mengalih keluar Shorts daripada halaman utama, bar sisi dan keputusan carian.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Tanpa cadangan</h3>
+            <p>Mengalih keluar saranan dan kandungan halaman utama untuk mengelakkan skrol tanpa henti.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Tanpa komen</h3>
+            <p>Menyembunyikan bahagian komen apabila anda cuma mahu menonton video.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Senarai hitam</h3>
+            <p>Sekat saluran atau perkataan tertentu, dengan butang pantas untuk menambahnya terus daripada suapan.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Mod Fokus</h3>
+            <p>Sesi bermasa dengan rehat, atau mod pantas tanpa pemasa.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Jadual berulang</h3>
+            <p>Jadualkan Mod Fokus supaya aktif hanya pada hari dan waktu yang anda pilih.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Peribadi secara lalai</h2>
+      <ul class="pv-grid">
+        <li>Tiada akaun</li>
+        <li>Tiada penjejakan</li>
+        <li>Sumber terbuka</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kod di GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

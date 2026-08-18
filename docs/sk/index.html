@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/sk/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube skrýva Shorts, odporúčania, návrhy a komentáre na YouTube. Blokujte kanály a slová a zapnite časovaný Režim sústredenia. Viac ako 4 000 používateľov.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "sk",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Pridať do Chrome — zdarma</a>
         <a class="btn btn-secondary" href="#features">Pozrite, čo dokáže</a>
       </div>
-      <p class="stat-row"><strong>4 000+</strong> aktívnych používateľov</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 hodnotení</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4 000+</strong> <span class="proof-muted">aktívnych používateľov</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">NOVÉ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimalistická Domovská Stránka</h2>
           <p class="newfeat-lead">Premeňte svoju domovskú stránku YouTube na čistú, vycentrovanú vyhľadávaciu obrazovku: skutočné logo YouTube a skutočný vyhľadávací panel, nič iné. Žiadny feed, žiadne rozptyľovanie—vyhľadajte, čo potrebujete, a pokračujte.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Všetko, čo môžete vypnúť</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Skryje Shorts</h3>
-          <p>Odstráni Shorts z domovskej stránky, postranného panela a výsledkov vyhľadávania.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Bez odporúčaní</h3>
-          <p>Odstráni návrhy a obsah domovskej stránky, aby sa predišlo nekonečnému scrollovaniu.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Bez komentárov</h3>
-          <p>Skryje sekciu komentárov, keď chcete len sledovať video.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Čierne listiny</h3>
-          <p>Blokujte konkrétne kanály alebo slová pomocou rýchleho tlačidla priamo vo feede.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Skryje Shorts</h3>
+            <p>Odstráni Shorts z domovskej stránky, postranného panela a výsledkov vyhľadávania.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Bez odporúčaní</h3>
+            <p>Odstráni návrhy a obsah domovskej stránky, aby sa predišlo nekonečnému scrollovaniu.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Bez komentárov</h3>
+            <p>Skryje sekciu komentárov, keď chcete len sledovať video.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Čierne listiny</h3>
+            <p>Blokujte konkrétne kanály alebo slová pomocou rýchleho tlačidla priamo vo feede.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Režim sústredenia</h3>
+            <p>Časované relácie s prestávkami alebo rýchly režim bez časovača.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Opakovaný plán</h3>
+            <p>Naplánujte Režim sústredenia tak, aby sa aktivoval len vo vybrané dni a hodiny.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Predvolene súkromné</h2>
+      <ul class="pv-grid">
+        <li>Bez účtu</li>
+        <li>Žiadne sledovanie</li>
+        <li>Otvorený kód</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kód na GitHube</a>
       </span>
       <select id="langSwitch" aria-label="Language">

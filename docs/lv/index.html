@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/lv/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube paslēpj Shorts, ieteikumus, priekšlikumus un komentārus YouTube. Blokējiet kanālus un vārdus, un ieslēdziet taimerim pakļautu Fokusa režīmu. Vairāk nekā 4000 lietotāju.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "lv",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Pievienot Chrome — bezmaksas</a>
         <a class="btn btn-secondary" href="#features">Apskatiet, ko tas dara</a>
       </div>
-      <p class="stat-row"><strong>4000+</strong> aktīvo lietotāju</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 atsauksmes</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4000+</strong> <span class="proof-muted">aktīvo lietotāju</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">JAUNS</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimālistiska Sākumlapa</h2>
           <p class="newfeat-lead">Pārveidojiet savu YouTube sākumlapu par tīru, centrētu meklēšanas ekrānu: īsto YouTube logotipu un patieso meklēšanas joslu, neko citu. Bez plūsmas, bez novēršanas—meklējiet to, pēc kā atnācāt, un dodieties tālāk.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Viss, ko varat izslēgt</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Paslēpj Shorts</h3>
-          <p>Noņem Shorts no sākumlapas, sānjoslas un meklēšanas rezultātiem.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Bez ieteikumiem</h3>
-          <p>Noņem sākumlapas priekšlikumus un saturu, lai izvairītos no bezgalīgas ritināšanas.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Bez komentāriem</h3>
-          <p>Paslēpj komentāru sadaļu, kad vēlaties tikai noskatīties video.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Melnie saraksti</h3>
-          <p>Blokējiet konkrētus kanālus vai vārdus ar ātru pogu tieši no plūsmas.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Paslēpj Shorts</h3>
+            <p>Noņem Shorts no sākumlapas, sānjoslas un meklēšanas rezultātiem.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Bez ieteikumiem</h3>
+            <p>Noņem sākumlapas priekšlikumus un saturu, lai izvairītos no bezgalīgas ritināšanas.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Bez komentāriem</h3>
+            <p>Paslēpj komentāru sadaļu, kad vēlaties tikai noskatīties video.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Melnie saraksti</h3>
+            <p>Blokējiet konkrētus kanālus vai vārdus ar ātru pogu tieši no plūsmas.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Fokusa režīms</h3>
+            <p>Taimerim pakļautas sesijas ar pārtraukumiem vai ātrs režīms bez taimera.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Atkārtots grafiks</h3>
+            <p>Ieplānojiet Fokusa režīmu tā, lai tas aktivizētos tikai izvēlētajās dienās un laikos.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Privāts pēc noklusējuma</h2>
+      <ul class="pv-grid">
+        <li>Bez konta</li>
+        <li>Bez izsekošanas</li>
+        <li>Atvērtais kods</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kods GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

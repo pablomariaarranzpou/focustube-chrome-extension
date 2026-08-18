@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/ro/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube ascunde Shorts, recomandările, sugestiile și comentariile pe YouTube. Blochează canale și cuvinte și activează un Mod Focus cronometrat. Peste 4.000 de utilizatori.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "ro",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Adaugă la Chrome — gratuit</a>
         <a class="btn btn-secondary" href="#features">Vezi ce face</a>
       </div>
-      <p class="stat-row"><strong>4.000+</strong> utilizatori activi</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 recenzii</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4.000+</strong> <span class="proof-muted">utilizatori activi</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">NOU</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Pagină Principală Minimalistă</h2>
           <p class="newfeat-lead">Transformă pagina principală YouTube într-un ecran de căutare curat și centrat: logo-ul real YouTube și bara de căutare autentică, nimic altceva. Fără feed, fără distrageri—caută ce ai venit să găsești și pleacă.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Tot ce poți dezactiva</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Ascunde Shorts</h3>
-          <p>Elimină Shorts de pe pagina principală, bara laterală și rezultatele căutării.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Fără recomandări</h3>
-          <p>Elimină sugestiile și conținutul de pe pagina principală pentru a evita scroll-ul infinit.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Fără comentarii</h3>
-          <p>Ascunde secțiunea de comentarii când vrei doar să vezi videoclipul.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Liste negre</h3>
-          <p>Blochează canale sau cuvinte anume, cu un buton rapid pentru a le adăuga direct din feed.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Ascunde Shorts</h3>
+            <p>Elimină Shorts de pe pagina principală, bara laterală și rezultatele căutării.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Fără recomandări</h3>
+            <p>Elimină sugestiile și conținutul de pe pagina principală pentru a evita scroll-ul infinit.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Fără comentarii</h3>
+            <p>Ascunde secțiunea de comentarii când vrei doar să vezi videoclipul.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Liste negre</h3>
+            <p>Blochează canale sau cuvinte anume, cu un buton rapid pentru a le adăuga direct din feed.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Mod Focus</h3>
+            <p>Sesiuni cronometrate cu pauze, sau un mod rapid fără cronometru.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Program recurent</h3>
+            <p>Programează Modul Focus să se activeze doar în zilele și la orele pe care le alegi.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Privat implicit</h2>
+      <ul class="pv-grid">
+        <li>Fără cont</li>
+        <li>Fără urmărire</li>
+        <li>Sursă deschisă</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Cod pe GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">

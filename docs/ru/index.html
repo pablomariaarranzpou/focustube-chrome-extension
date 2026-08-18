@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/ru/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube скрывает Shorts, рекомендации, предложения и комментарии на YouTube. Блокируйте каналы и слова, включайте Режим фокусировки с таймером. Более 4000 пользователей.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "ru",
@@ -161,7 +161,15 @@
         <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Добавить в Chrome — бесплатно</a>
         <a class="btn btn-secondary" href="#features">Посмотреть, что умеет</a>
       </div>
-      <p class="stat-row"><strong>4000+</strong> активных пользователей</p>
+      <p class="proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 отзывов</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>4000+</strong> <span class="proof-muted">активных пользователей</span></span>
+      </p>
     </div>
   </section>
 
@@ -172,7 +180,7 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">НОВОЕ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Минималистичная главная страница</h2>
           <p class="newfeat-lead">Превратите главную страницу YouTube в чистый, центрированный экран поиска: настоящий логотип YouTube и подлинная строка поиска — и больше ничего. Никакой ленты, никаких отвлечений — ищите то, за чем пришли, и уходите.</p>
@@ -262,28 +270,64 @@
   <section class="features" id="features">
     <div class="wrap">
       <h2>Всё, что можно отключить</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Скрывает Shorts</h3>
-          <p>Убирает Shorts с главной страницы, боковой панели и результатов поиска.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Без рекомендаций</h3>
-          <p>Убирает предложения и контент главной страницы, чтобы избежать бесконечного скролла.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Без комментариев</h3>
-          <p>Скрывает раздел комментариев, когда вы просто хотите посмотреть видео.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Чёрные списки</h3>
-          <p>Блокируйте конкретные каналы или слова с помощью кнопки быстрого добавления прямо из ленты.</p>
-        </div>
+      <div class="feature-stack">
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Скрывает Shorts</h3>
+            <p>Убирает Shorts с главной страницы, боковой панели и результатов поиска.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🚫</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Без рекомендаций</h3>
+            <p>Убирает предложения и контент главной страницы, чтобы избежать бесконечного скролла.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🧭</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Без комментариев</h3>
+            <p>Скрывает раздел комментариев, когда вы просто хотите посмотреть видео.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">💬</div>
+        </article>
+        <article class="fcard fcard-a">
+          <div class="fcard-text">
+            <h3>Чёрные списки</h3>
+            <p>Блокируйте конкретные каналы или слова с помощью кнопки быстрого добавления прямо из ленты.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">🔇</div>
+        </article>
+        <article class="fcard fcard-b">
+          <div class="fcard-text">
+            <h3>Режим фокусировки</h3>
+            <p>Сессии с таймером и перерывами или быстрый режим без таймера.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">⏱️</div>
+        </article>
+        <article class="fcard fcard-c">
+          <div class="fcard-text">
+            <h3>Повторяющееся расписание</h3>
+            <p>Настройте Режим фокусировки так, чтобы он включался только в выбранные дни и часы.</p>
+          </div>
+          <div class="fcard-art" aria-hidden="true">📅</div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Приватно по умолчанию</h2>
+      <ul class="pv-grid">
+        <li>Без аккаунта</li>
+        <li>Без слежки</li>
+        <li>Открытый код</li>
+      </ul>
+      <p class="pv-perms"><code>storage</code><code>alarms</code></p>
     </div>
   </section>
 
@@ -608,8 +652,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Код на GitHub</a>
       </span>
       <select id="langSwitch" aria-label="Language">
