@@ -7,6 +7,12 @@
   - The popup now declares a fixed 400px width, so the window is the same on every machine and in every language, and long labels wrap onto a second line instead of stretching the window.
   - Verified across English, German, Russian, Filipino, Swahili and Tamil — including Tamil, whose longest label is nearly twice the length of the English one — and on both tabs, with no horizontal overflow in any of them.
 
+### Added
+- **A limit on how long UI text may be, and a check that enforces it.** Pinning the popup width stops the window moving, but nothing stopped a translation from wrapping onto a fourth line and looking broken anyway. A label may now wrap onto a second line and never a third; the budgets live in `scripts/ui-text-budgets.js` and `node scripts/check-ui-text.js` checks all 45 locales against them, so an over-long translation is caught instead of shipping. A plain character limit would not have worked — Swahili's heading is 55 characters and fits, Tamil's was 54 characters and did not — so the check estimates rendered width from per-language character measurements taken in Chrome.
+
+### Changed
+- Shortened three Tamil labels that were over the new limit: the two blacklist headings (which ran to three lines) and the quick-block sub-option. They now use the same wording for "blacklisted" as the rest of that file, without the "Concentration Mode" prefix that made them overflow. Worth a native speaker's eye — the existing Tamil term for "blacklisted" reads oddly and was kept only for consistency.
+
 ---
 
 ## [2.5.5] - 2026-08-14

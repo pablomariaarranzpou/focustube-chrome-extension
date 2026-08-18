@@ -24,7 +24,23 @@ FocusTube is a Chrome extension that helps you stay focused on YouTube by hiding
 
 ### Localization
 
-Fully translated into **46 languages**: Amharic, Arabic, Catalan, Czech, Danish, Dutch, English, English (AU), English (GB), Estonian, Farsi, Filipino, Finnish, French, German, Greek, Gujarati, Hebrew, Hindi, Croatian, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Latvian, Lithuanian, Malay, Marathi, Norwegian, Polish, Portuguese (BR), Portuguese (PT), Romanian, Russian, Slovak, Slovenian, Serbian, Spanish, Spanish (LatAm), Swahili, Swedish, Tamil, Telugu, Turkish.
+Fully translated into **45 languages**: Amharic, Arabic, Catalan, Czech, Danish, Dutch, English, English (AU), English (GB), Estonian, Farsi, Filipino, French, German, Greek, Gujarati, Hebrew, Hindi, Croatian, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Latvian, Lithuanian, Malay, Marathi, Norwegian, Polish, Portuguese (BR), Portuguese (PT), Romanian, Russian, Slovak, Slovenian, Serbian, Spanish, Spanish (LatAm), Swahili, Swedish, Tamil, Telugu, Turkish.
+
+#### How long a label may be
+
+The popup is 400px wide, so a translation that runs long wraps onto more lines — and past a point it stops looking like a settings panel. **A label may wrap onto a second line; it may never reach a third.**
+
+The limits live in one place, [`scripts/ui-text-budgets.js`](scripts/ui-text-budgets.js): how much room each kind of text has (toggle, sub-option, heading, button, tab) and how wide a character renders in each language.
+
+```bash
+node scripts/check-ui-text.js
+```
+
+Checks every string in every locale and exits non-zero if one is over budget, naming it. Run it after editing `_locales/`, and before publishing.
+
+Note that a character limit alone would not work: Swahili's heading is 55 characters and fits, while Tamil's was 54 characters and did not — a Tamil character renders far wider. The check estimates rendered width, not length.
+
+Run `node scripts/measure-ui-text.js` if the popup's font or layout changes, or when adding a language the table doesn't cover yet.
 
 ## Installation
 
