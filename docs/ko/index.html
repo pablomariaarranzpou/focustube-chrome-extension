@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/ko/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube는 YouTube의 Shorts, 추천, 제안, 댓글을 숨깁니다. 채널과 단어를 차단하고 타이머 기반 포커스 모드를 활성화하세요. 4,000명 이상이 사용 중입니다.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "ko",
@@ -143,7 +143,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">기능</a>
+        <a href="#minimalist-home">기능</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">설치</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -153,15 +153,71 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">YouTube용 Chrome 확장 프로그램</span>
-      <h1>YouTube에서 시간 낭비 그만하기</h1>
-      <p class="lead">FocusTube는 Shorts, 추천, 제안, 댓글을 숨깁니다. 특정 채널과 단어를 차단하고, 정말 집중해야 할 때는 타이머 기반 포커스 모드를 켜세요.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome에 추가 — 무료</a>
-        <a class="btn btn-secondary" href="#features">기능 보기</a>
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">YouTube용 Chrome 확장 프로그램</span>
+        <h1>YouTube에서 시간 낭비 그만하기</h1>
+        <p class="lead">FocusTube는 Shorts, 추천, 제안, 댓글을 숨깁니다. 특정 채널과 단어를 차단하고, 정말 집중해야 할 때는 타이머 기반 포커스 모드를 켜세요.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome에 추가 — 무료</span>
+          </a>
+          <a class="btn btn-secondary" href="#minimalist-home">기능 보기</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="기본으로 비공개">
+          <li>계정 불필요</li>
+          <li>추적 없음</li>
+          <li>오픈 소스</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4.8</strong>
+            <span class="proof-muted">29 개의 리뷰</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>4,000+</strong> <span class="proof-muted">활성 사용자</span></span>
+        </p>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> 활성 사용자</p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="../assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">항상</span>
+            <span class="pop-tab is-active">기능</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>Shorts 숨기기</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>추천 없음</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>댓글 없음</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>차단 목록</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>포커스 모드</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>반복 일정</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -172,11 +228,20 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">새로운 기능</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>미니멀 홈페이지</h2>
           <p class="newfeat-lead">YouTube 홈페이지를 깔끔하고 중앙에 배치된 검색 화면으로 바꿔보세요. 진짜 YouTube 로고와 진짜 검색창, 그게 전부예요. 피드도 없고 다른 길로 새지도 않아요—찾던 것을 검색하고 바로 떠나세요.</p>
-          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome에 추가 — 무료</a>
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome에 추가 — 무료</span>
+          </a>
         </div>
 
         <figure class="newfeat-demo">
@@ -259,33 +324,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>끌 수 있는 모든 기능</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts 숨기기</h3>
-          <p>홈 화면, 사이드바, 검색 결과에서 Shorts를 제거합니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>추천 없음</h3>
-          <p>무한 스크롤을 막기 위해 홈 화면의 제안과 콘텐츠를 제거합니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>댓글 없음</h3>
-          <p>영상만 보고 싶을 때 댓글 섹션을 숨깁니다.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>차단 목록</h3>
-          <p>특정 채널이나 단어를 차단하고, 피드에서 바로 추가할 수 있는 빠른 버튼도 제공합니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
 
   <section class="spotlight">
     <div class="wrap">
@@ -590,7 +631,6 @@
         <div class="mode-pill"><span class="mode-name">타이머</span></div>
         <div class="mode-pill"><span class="mode-name">일정</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>반복 일정:</strong> 선택한 요일과 시간에만 포커스 모드가 활성화되도록 예약하세요.</p>
     </div>
   </section>
 
@@ -599,7 +639,16 @@
       <div class="cta-card">
         <h2>몇 초 만에 통제권을 되찾으세요</h2>
         <p>무료, 계정 불필요, 이상한 권한 없음. 방해되는 것만 끄면 됩니다.</p>
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome에 추가 — 무료</a>
+        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome에 추가 — 무료</span>
+          </a>
       </div>
     </div>
   </section>
@@ -608,8 +657,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub의 코드</a>
       </span>
       <select id="langSwitch" aria-label="Language">

@@ -45,7 +45,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">{{NAV_FEATURES}}</a>
+        <a href="#minimalist-home">{{NAV_FEATURES}}</a>
         <a href="{{STORE_URL}}" target="_blank" rel="noopener">{{NAV_INSTALL}}</a>
         <a href="{{REPO_URL}}" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -55,15 +55,71 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">{{KICKER}}</span>
-      <h1>{{H1}}</h1>
-      <p class="lead">{{LEAD}}</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="{{STORE_URL}}" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
-        <a class="btn btn-secondary" href="#features">{{CTA_SECONDARY}}</a>
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">{{KICKER}}</span>
+        <h1>{{H1}}</h1>
+        <p class="lead">{{LEAD}}</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="{{STORE_URL}}" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>{{CTA_PRIMARY}}</span>
+          </a>
+          <a class="btn btn-secondary" href="#minimalist-home">{{CTA_SECONDARY}}</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="{{PV_TITLE}}">
+          <li>{{PV_A}}</li>
+          <li>{{PV_B}}</li>
+          <li>{{PV_C}}</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="{{STORE_REVIEWS_URL}}" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>{{STORE_RATING}}</strong>
+            <span class="proof-muted">{{STORE_REVIEW_COUNT}} {{RV_LABEL}}</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>{{STAT_NUMBER}}</strong> <span class="proof-muted">{{STAT_SUFFIX}}</span></span>
+        </p>
       </div>
-      <p class="stat-row"><strong>{{STAT_NUMBER}}</strong> {{STAT_SUFFIX}}</p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="{{ROOT}}assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">{{MODE_ALWAYS}}</span>
+            <span class="pop-tab is-active">{{NAV_FEATURES}}</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>{{F1_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>{{F2_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>{{F3_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>{{F4_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>{{F5_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>{{F6_TITLE}}</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -78,7 +134,16 @@
           </p>
           <h2>{{MH_TITLE}}</h2>
           <p class="newfeat-lead">{{MH_BODY}}</p>
-          <a class="btn btn-primary" href="{{STORE_URL}}" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
+          <a class="btn btn-install" href="{{STORE_URL}}" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>{{CTA_PRIMARY}}</span>
+          </a>
         </div>
 
         <figure class="newfeat-demo">
@@ -161,33 +226,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>{{FEATURES_TITLE}}</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>{{F1_TITLE}}</h3>
-          <p>{{F1_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>{{F2_TITLE}}</h3>
-          <p>{{F2_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>{{F3_TITLE}}</h3>
-          <p>{{F3_DESC}}</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>{{F4_TITLE}}</h3>
-          <p>{{F4_DESC}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
 
   <section class="spotlight">
     <div class="wrap">
@@ -492,7 +533,6 @@
         <div class="mode-pill"><span class="mode-name">{{MODE_TIMER}}</span></div>
         <div class="mode-pill"><span class="mode-name">{{MODE_SCHEDULE}}</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>{{F6_TITLE}}:</strong> {{F6_DESC}}</p>
     </div>
   </section>
 
@@ -501,7 +541,16 @@
       <div class="cta-card">
         <h2>{{CTA2_TITLE}}</h2>
         <p>{{CTA2_LEAD}}</p>
-        <a class="btn btn-primary" href="{{STORE_URL}}" target="_blank" rel="noopener">{{CTA_PRIMARY}}</a>
+        <a class="btn btn-install" href="{{STORE_URL}}" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>{{CTA_PRIMARY}}</span>
+          </a>
       </div>
     </div>
   </section>
@@ -512,6 +561,8 @@
     <div class="wrap">
       <span>© <span id="year">2026</span> FocusTube · v{{VERSION}}</span>
       <span>
+        <a href="{{ROOT}}support/">Support</a>
+        &middot;
         <a href="{{REPO_URL}}" target="_blank" rel="noopener">{{FOOTER_LINK}}</a>
       </span>
       <select id="langSwitch" aria-label="Language">

@@ -17,6 +17,10 @@ const SITE_ORIGIN = 'https://pablomariaarranzpou.github.io/focustube-chrome-exte
 const STORE_URL =
   'https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb';
 const REPO_URL = 'https://github.com/pablomariaarranzpou/focustube-chrome-extension';
+const STORE_REVIEWS_URL = STORE_URL + '/reviews';
+// Real Chrome Web Store figures. Bump when they move — never inflate them.
+const STORE_RATING = '4.8';
+const STORE_REVIEW_COUNT = '29';
 const OG_IMAGE = `${SITE_ORIGIN}/assets/focustube-logo.png`;
 const OG_IMAGE_W = 1120;
 const OG_IMAGE_H = 470;
@@ -248,6 +252,14 @@ for (const code of locales) {
     '{{MODE_ALWAYS}}': escapeHtml(c.modes.always),
     '{{MODE_TIMER}}': escapeHtml(c.modes.timer),
     '{{MODE_SCHEDULE}}': escapeHtml(c.modes.schedule),
+    '{{PV_TITLE}}': escapeHtml(c.pv.t),
+    '{{PV_A}}': escapeHtml(c.pv.a),
+    '{{PV_B}}': escapeHtml(c.pv.b),
+    '{{PV_C}}': escapeHtml(c.pv.c),
+    '{{RV_LABEL}}': escapeHtml(c.rv),
+    '{{STORE_REVIEWS_URL}}': STORE_REVIEWS_URL,
+    '{{STORE_RATING}}': escapeHtml(STORE_RATING),
+    '{{STORE_REVIEW_COUNT}}': escapeHtml(STORE_REVIEW_COUNT),
   };
 
   for (const [token, value] of Object.entries(simple)) {

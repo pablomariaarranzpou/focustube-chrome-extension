@@ -53,7 +53,14 @@
       "badge": "NEW",
       "title": "Minimalist Home Page",
       "body": "Turn your YouTube homepage into a clean, centered search screen: the real YouTube logo and the genuine search bar, nothing else. No feed, no rabbit holes—just search for what you came for and go."
-    }
+    },
+    "pv": {
+      "t": "Private by default",
+      "a": "No account",
+      "b": "Nothing tracked",
+      "c": "Open source"
+    },
+    "rv": "reviews"
   },
   "es": {
     "name": "Español",
@@ -109,7 +116,14 @@
       "badge": "NUEVO",
       "title": "Página de Inicio Minimalista",
       "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
-    }
+    },
+    "pv": {
+      "t": "Privado por defecto",
+      "a": "Sin cuenta",
+      "b": "Sin rastreo",
+      "c": "Código abierto"
+    },
+    "rv": "reseñas"
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -165,7 +179,14 @@
       "badge": "NUEVO",
       "title": "Página de Inicio Minimalista",
       "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
-    }
+    },
+    "pv": {
+      "t": "Privado por defecto",
+      "a": "Sin cuenta",
+      "b": "Sin rastreo",
+      "c": "Código abierto"
+    },
+    "rv": "reseñas"
   },
   "fr": {
     "name": "Français",
@@ -221,7 +242,14 @@
       "badge": "NOUVEAU",
       "title": "Page d'Accueil Minimaliste",
       "body": "Transformez votre page d'accueil YouTube en un écran de recherche épuré et centré : le vrai logo YouTube et la barre de recherche authentique, rien d'autre. Pas de flux, pas de distractions : cherchez ce que vous êtes venu voir, puis partez."
-    }
+    },
+    "pv": {
+      "t": "Privé par défaut",
+      "a": "Sans compte",
+      "b": "Aucun suivi",
+      "c": "Open source"
+    },
+    "rv": "avis"
   },
   "de": {
     "name": "Deutsch",
@@ -277,7 +305,14 @@
       "badge": "NEU",
       "title": "Minimalistische Startseite",
       "body": "Verwandeln Sie Ihre YouTube-Startseite in einen klaren, zentrierten Suchbildschirm: das echte YouTube-Logo und die echte Suchleiste, sonst nichts. Kein Feed, keine Ablenkungen — einfach suchen und loslegen."
-    }
+    },
+    "pv": {
+      "t": "Standardmäßig privat",
+      "a": "Kein Konto",
+      "b": "Kein Tracking",
+      "c": "Open Source"
+    },
+    "rv": "Bewertungen"
   },
   "it": {
     "name": "Italiano",
@@ -333,7 +368,14 @@
       "badge": "NUOVO",
       "title": "Home Page Minimalista",
       "body": "Trasforma la tua home page di YouTube in una schermata di ricerca pulita e centrata: il vero logo di YouTube e la barra di ricerca autentica, nient'altro. Niente feed, niente distrazioni: cerca quello che ti serve e vai."
-    }
+    },
+    "pv": {
+      "t": "Privato per impostazione",
+      "a": "Nessun account",
+      "b": "Nessun tracciamento",
+      "c": "Open source"
+    },
+    "rv": "recensioni"
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -389,7 +431,14 @@
       "badge": "NOVO",
       "title": "Página Inicial Minimalista",
       "body": "Transforme a sua página inicial do YouTube num ecrã de pesquisa limpo e centrado: o logo real do YouTube e a barra de pesquisa genuína, e mais nada. Sem feed, sem distrações — pesquise o que veio procurar e pronto."
-    }
+    },
+    "pv": {
+      "t": "Privado por omissão",
+      "a": "Sem conta",
+      "b": "Sem rastreio",
+      "c": "Código aberto"
+    },
+    "rv": "avaliações"
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -445,7 +494,14 @@
       "badge": "NOVO",
       "title": "Página Inicial Minimalista",
       "body": "Transforme sua página inicial do YouTube em uma tela de busca limpa e centralizada: o logo real do YouTube e a barra de pesquisa genuína, e nada mais. Sem feed, sem distrações — pesquise o que você veio buscar e pronto."
-    }
+    },
+    "pv": {
+      "t": "Privado por padrão",
+      "a": "Sem conta",
+      "b": "Sem rastreamento",
+      "c": "Código aberto"
+    },
+    "rv": "avaliações"
   },
   "nl": {
     "name": "Nederlands",
@@ -501,7 +557,14 @@
       "badge": "NIEUW",
       "title": "Minimalistische Startpagina",
       "body": "Verander je YouTube-startpagina in een strak, gecentreerd zoekscherm: het echte YouTube-logo en de echte zoekbalk, verder niets. Geen feed, geen afleiding — zoek wat je zoekt en ga verder."
-    }
+    },
+    "pv": {
+      "t": "Standaard privé",
+      "a": "Geen account",
+      "b": "Geen tracking",
+      "c": "Open source"
+    },
+    "rv": "beoordelingen"
   },
   "ca": {
     "name": "Català",
@@ -557,7 +620,14 @@
       "badge": "NOU",
       "title": "Pàgina d'Inici Minimalista",
       "body": "Transforma la teva pàgina d'inici de YouTube en una pantalla de cerca neta i centrada: el logotip real de YouTube i la barra de cerca autèntica, res més. Sense feed, sense distraccions: cerca el que has vingut a buscar i vés-te'n."
-    }
+    },
+    "pv": {
+      "t": "Privat per defecte",
+      "a": "Sense compte",
+      "b": "Sense rastreig",
+      "c": "Codi obert"
+    },
+    "rv": "ressenyes"
   },
   "ro": {
     "name": "Română",
@@ -613,7 +683,14 @@
       "badge": "NOU",
       "title": "Pagină Principală Minimalistă",
       "body": "Transformă pagina principală YouTube într-un ecran de căutare curat și centrat: logo-ul real YouTube și bara de căutare autentică, nimic altceva. Fără feed, fără distrageri—caută ce ai venit să găsești și pleacă."
-    }
+    },
+    "pv": {
+      "t": "Privat implicit",
+      "a": "Fără cont",
+      "b": "Fără urmărire",
+      "c": "Sursă deschisă"
+    },
+    "rv": "recenzii"
   },
   "pl": {
     "name": "Polski",
@@ -669,7 +746,14 @@
       "badge": "NOWOŚĆ",
       "title": "Minimalistyczna Strona Główna",
       "body": "Zamień swoją stronę główną YouTube w czysty, wyśrodkowany ekran wyszukiwania: prawdziwe logo YouTube i prawdziwy pasek wyszukiwania, nic więcej. Bez kanału, bez rozpraszania uwagi—wyszukaj to, po co przyszedłeś, i idź dalej."
-    }
+    },
+    "pv": {
+      "t": "Prywatne domyślnie",
+      "a": "Bez konta",
+      "b": "Bez śledzenia",
+      "c": "Otwarty kod"
+    },
+    "rv": "opinii"
   },
   "cs": {
     "name": "Čeština",
@@ -725,7 +809,14 @@
       "badge": "NOVÉ",
       "title": "Minimalistická domovská stránka",
       "body": "Proměňte svou domovskou stránku YouTube v čistou, vystředěnou vyhledávací obrazovku: skutečné logo YouTube a skutečný vyhledávací panel, nic víc. Žádný feed, žádné rozptylování — vyhledejte, co potřebujete, a jděte dál."
-    }
+    },
+    "pv": {
+      "t": "Ve výchozím stavu soukromé",
+      "a": "Bez účtu",
+      "b": "Žádné sledování",
+      "c": "Otevřený kód"
+    },
+    "rv": "hodnocení"
   },
   "sk": {
     "name": "Slovenčina",
@@ -781,7 +872,14 @@
       "badge": "NOVÉ",
       "title": "Minimalistická Domovská Stránka",
       "body": "Premeňte svoju domovskú stránku YouTube na čistú, vycentrovanú vyhľadávaciu obrazovku: skutočné logo YouTube a skutočný vyhľadávací panel, nič iné. Žiadny feed, žiadne rozptyľovanie—vyhľadajte, čo potrebujete, a pokračujte."
-    }
+    },
+    "pv": {
+      "t": "Predvolene súkromné",
+      "a": "Bez účtu",
+      "b": "Žiadne sledovanie",
+      "c": "Otvorený kód"
+    },
+    "rv": "hodnotení"
   },
   "sl": {
     "name": "Slovenščina",
@@ -837,7 +935,14 @@
       "badge": "NOVO",
       "title": "Minimalistična Domača Stran",
       "body": "Spremenite svojo domačo stran YouTube v čist, sredinsko postavljen iskalni zaslon: pravi logotip YouTube in pristno iskalno vrstico, nič drugega. Brez vira, brez motenj—poiščite, kar iščete, in nadaljujte."
-    }
+    },
+    "pv": {
+      "t": "Privzeto zasebno",
+      "a": "Brez računa",
+      "b": "Brez sledenja",
+      "c": "Odprta koda"
+    },
+    "rv": "ocen"
   },
   "hr": {
     "name": "Hrvatski",
@@ -893,7 +998,14 @@
       "badge": "NOVO",
       "title": "Minimalistička Naslovna Stranica",
       "body": "Pretvorite svoju YouTube naslovnu stranicu u čist, centriran zaslon za pretraživanje: pravi YouTube logotip i stvarnu tražilicu, ništa drugo. Bez feeda, bez ometanja—pretražite ono što ste tražili i idite dalje."
-    }
+    },
+    "pv": {
+      "t": "Zadano privatno",
+      "a": "Bez računa",
+      "b": "Bez praćenja",
+      "c": "Otvoreni kod"
+    },
+    "rv": "recenzija"
   },
   "sr": {
     "name": "Српски",
@@ -949,7 +1061,14 @@
       "badge": "NOVO",
       "title": "Minimalistička Početna Strana",
       "body": "Pretvorite svoju YouTube početnu stranu u čist, centriran ekran za pretragu: pravi YouTube logotip i pravu traku za pretragu, ništa drugo. Bez feed-a, bez ometanja—pretražite ono što ste tražili i idite dalje."
-    }
+    },
+    "pv": {
+      "t": "Podrazumevano privatno",
+      "a": "Bez naloga",
+      "b": "Bez praćenja",
+      "c": "Otvoreni kod"
+    },
+    "rv": "recenzija"
   },
   "ru": {
     "name": "Русский",
@@ -1005,7 +1124,14 @@
       "badge": "НОВОЕ",
       "title": "Минималистичная главная страница",
       "body": "Превратите главную страницу YouTube в чистый, центрированный экран поиска: настоящий логотип YouTube и подлинная строка поиска — и больше ничего. Никакой ленты, никаких отвлечений — ищите то, за чем пришли, и уходите."
-    }
+    },
+    "pv": {
+      "t": "Приватно по умолчанию",
+      "a": "Без аккаунта",
+      "b": "Без слежки",
+      "c": "Открытый код"
+    },
+    "rv": "отзывов"
   },
   "el": {
     "name": "Ελληνικά",
@@ -1061,7 +1187,14 @@
       "badge": "ΝΕΟ",
       "title": "Μινιμαλιστική Αρχική Σελίδα",
       "body": "Μετατρέψτε την αρχική σελίδα του YouTube σε μια καθαρή, κεντραρισμένη οθόνη αναζήτησης: το πραγματικό λογότυπο του YouTube και η γνήσια μπάρα αναζήτησης, τίποτα άλλο. Χωρίς feed, χωρίς περισπασμούς—αναζητήστε αυτό που ήρθατε να βρείτε και συνεχίστε."
-    }
+    },
+    "pv": {
+      "t": "Ιδιωτικό εξ ορισμού",
+      "a": "Χωρίς λογαριασμό",
+      "b": "Καμία παρακολούθηση",
+      "c": "Ανοιχτός κώδικας"
+    },
+    "rv": "κριτικές"
   },
   "tr": {
     "name": "Türkçe",
@@ -1117,7 +1250,14 @@
       "badge": "YENİ",
       "title": "Minimalist Ana Sayfa",
       "body": "YouTube ana sayfanızı sade, ortalanmış bir arama ekranına dönüştürün: gerçek YouTube logosu ve gerçek arama çubuğu, başka hiçbir şey yok. Akış yok, dikkat dağıtıcı şey yok—aradığınızı arayın ve gidin."
-    }
+    },
+    "pv": {
+      "t": "Varsayılan olarak gizli",
+      "a": "Hesap gerekmez",
+      "b": "Takip yok",
+      "c": "Açık kaynak"
+    },
+    "rv": "değerlendirme"
   },
   "hu": {
     "name": "Magyar",
@@ -1173,7 +1313,14 @@
       "badge": "ÚJ",
       "title": "Minimalista kezdőlap",
       "body": "Alakítsd át a YouTube kezdőlapját egy letisztult, középre igazított keresőképernyővé: az igazi YouTube logó és a valódi keresősáv, semmi más. Nincs hírfolyam, nincs elterelés—keresd meg, amit akarsz, és indulj tovább."
-    }
+    },
+    "pv": {
+      "t": "Alapból privát",
+      "a": "Nincs fiók",
+      "b": "Nincs követés",
+      "c": "Nyílt forráskód"
+    },
+    "rv": "értékelés"
   },
   "et": {
     "name": "Eesti",
@@ -1229,7 +1376,14 @@
       "badge": "UUS",
       "title": "Minimalistlik Avaleht",
       "body": "Muuda oma YouTube'i avaleht puhtaks, keskele paigutatud otsinguekraaniks: päris YouTube'i logo ja tõeline otsinguriba, mitte midagi muud. Ei mingit voogu, ei mingit hajutamist — otsi, mida vajad, ja liigu edasi."
-    }
+    },
+    "pv": {
+      "t": "Vaikimisi privaatne",
+      "a": "Kontot pole vaja",
+      "b": "Jälgimist pole",
+      "c": "Avatud lähtekood"
+    },
+    "rv": "arvustust"
   },
   "lv": {
     "name": "Latviešu",
@@ -1285,7 +1439,14 @@
       "badge": "JAUNS",
       "title": "Minimālistiska Sākumlapa",
       "body": "Pārveidojiet savu YouTube sākumlapu par tīru, centrētu meklēšanas ekrānu: īsto YouTube logotipu un patieso meklēšanas joslu, neko citu. Bez plūsmas, bez novēršanas—meklējiet to, pēc kā atnācāt, un dodieties tālāk."
-    }
+    },
+    "pv": {
+      "t": "Privāts pēc noklusējuma",
+      "a": "Bez konta",
+      "b": "Bez izsekošanas",
+      "c": "Atvērtais kods"
+    },
+    "rv": "atsauksmes"
   },
   "lt": {
     "name": "Lietuvių",
@@ -1341,7 +1502,14 @@
       "badge": "NAUJA",
       "title": "Minimalistinis Pradžios Puslapis",
       "body": "Paverskite savo YouTube pradžios puslapį švariu, centruotu paieškos ekranu: tikrą YouTube logotipą ir tikrą paieškos juostą, nieko daugiau. Jokio srauto, jokių blaškymosi—susiraskite, ko atėjote, ir eikite toliau."
-    }
+    },
+    "pv": {
+      "t": "Privatu pagal numatytuosius",
+      "a": "Be paskyros",
+      "b": "Jokio sekimo",
+      "c": "Atviras kodas"
+    },
+    "rv": "atsiliepimų"
   },
   "sv": {
     "name": "Svenska",
@@ -1397,7 +1565,14 @@
       "badge": "NYTT",
       "title": "Minimalistisk Startsida",
       "body": "Gör din YouTube-startsida till en ren, centrerad sökskärm: den riktiga YouTube-logotypen och det äkta sökfältet, inget annat. Inget flöde, inga distraktioner—sök efter det du kom för och gå vidare."
-    }
+    },
+    "pv": {
+      "t": "Privat som standard",
+      "a": "Inget konto",
+      "b": "Ingen spårning",
+      "c": "Öppen källkod"
+    },
+    "rv": "recensioner"
   },
   "no": {
     "name": "Norsk",
@@ -1453,7 +1628,14 @@
       "badge": "NYTT",
       "title": "Minimalistisk Hjemmeside",
       "body": "Gjør YouTube-hjemmesiden din om til en ren, sentrert søkeskjerm: den ekte YouTube-logoen og den ekte søkelinjen, ingenting annet. Ingen feed, ingen distraksjoner—søk etter det du kom for, og gå videre."
-    }
+    },
+    "pv": {
+      "t": "Privat som standard",
+      "a": "Ingen konto",
+      "b": "Ingen sporing",
+      "c": "Åpen kildekode"
+    },
+    "rv": "anmeldelser"
   },
   "da": {
     "name": "Dansk",
@@ -1509,7 +1691,14 @@
       "badge": "NYT",
       "title": "Minimalistisk Startside",
       "body": "Forvandl din YouTube-startside til en ren, centreret søgeskærm: det rigtige YouTube-logo og den ægte søgelinje, intet andet. Ingen feed, ingen distraktioner — søg efter det, du kom for, og gå videre."
-    }
+    },
+    "pv": {
+      "t": "Privat som standard",
+      "a": "Ingen konto",
+      "b": "Ingen sporing",
+      "c": "Open source"
+    },
+    "rv": "anmeldelser"
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1565,7 +1754,14 @@
       "badge": "BARU",
       "title": "Beranda Minimalis",
       "body": "Ubah beranda YouTube Anda menjadi layar pencarian yang bersih dan terpusat: logo YouTube asli dan kolom pencarian asli, tanpa yang lain. Tanpa feed, tanpa distraksi—cari yang Anda butuhkan lalu pergi."
-    }
+    },
+    "pv": {
+      "t": "Privat secara bawaan",
+      "a": "Tanpa akun",
+      "b": "Tanpa pelacakan",
+      "c": "Sumber terbuka"
+    },
+    "rv": "ulasan"
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1621,7 +1817,14 @@
       "badge": "BAHARU",
       "title": "Halaman Utama Minimalis",
       "body": "Ubah halaman utama YouTube anda kepada skrin carian yang bersih dan berpusat: logo YouTube sebenar dan bar carian sebenar, tiada apa-apa lagi. Tiada suapan, tiada gangguan—cari apa yang anda perlukan dan teruskan."
-    }
+    },
+    "pv": {
+      "t": "Peribadi secara lalai",
+      "a": "Tiada akaun",
+      "b": "Tiada penjejakan",
+      "c": "Sumber terbuka"
+    },
+    "rv": "ulasan"
   },
   "fil": {
     "name": "Filipino",
@@ -1677,7 +1880,14 @@
       "badge": "BAGO",
       "title": "Minimalist na Home Page",
       "body": "Gawing malinis at nakasentrong search screen ang iyong YouTube homepage: ang totoong logo ng YouTube at tunay na search bar, wala nang iba pa. Walang feed, walang pagka-distract—i-search ang hinahanap mo at umalis na."
-    }
+    },
+    "pv": {
+      "t": "Pribado bilang default",
+      "a": "Walang account",
+      "b": "Walang pagsubaybay",
+      "c": "Open source"
+    },
+    "rv": "review"
   },
   "ja": {
     "name": "日本語",
@@ -1733,7 +1943,14 @@
       "badge": "新機能",
       "title": "ミニマルなホームページ",
       "body": "YouTubeのホームページを、すっきりと中央に配置された検索画面に変えます。本物のYouTubeロゴと本物の検索バーだけ、それ以外は何もありません。フィードなし、寄り道なし——検索して、すぐに立ち去りましょう。"
-    }
+    },
+    "pv": {
+      "t": "初期設定でプライベート",
+      "a": "アカウント不要",
+      "b": "追跡なし",
+      "c": "オープンソース"
+    },
+    "rv": "件のレビュー"
   },
   "ko": {
     "name": "한국어",
@@ -1789,7 +2006,14 @@
       "badge": "새로운 기능",
       "title": "미니멀 홈페이지",
       "body": "YouTube 홈페이지를 깔끔하고 중앙에 배치된 검색 화면으로 바꿔보세요. 진짜 YouTube 로고와 진짜 검색창, 그게 전부예요. 피드도 없고 다른 길로 새지도 않아요—찾던 것을 검색하고 바로 떠나세요."
-    }
+    },
+    "pv": {
+      "t": "기본으로 비공개",
+      "a": "계정 불필요",
+      "b": "추적 없음",
+      "c": "오픈 소스"
+    },
+    "rv": "개의 리뷰"
   },
   "he": {
     "name": "עברית",
@@ -1846,7 +2070,14 @@
       "badge": "חדש",
       "title": "דף בית מינימליסטי",
       "body": "הפכו את דף הבית של YouTube למסך חיפוש נקי וממורכז: הלוגו האמיתי של YouTube ושורת החיפוש האמיתית, שום דבר אחר. בלי פיד, בלי הסחות דעת—חפשו את מה שבאתם למצוא ותמשיכו הלאה."
-    }
+    },
+    "pv": {
+      "t": "פרטי כברירת מחדל",
+      "a": "ללא חשבון",
+      "b": "ללא מעקב",
+      "c": "קוד פתוח"
+    },
+    "rv": "ביקורות"
   },
   "ar": {
     "name": "العربية",
@@ -1903,7 +2134,14 @@
       "badge": "جديد",
       "title": "الصفحة الرئيسية البسيطة",
       "body": "حوّل صفحتك الرئيسية على يوتيوب إلى شاشة بحث نظيفة وفي المنتصف: شعار يوتيوب الحقيقي وشريط البحث الأصلي، لا شيء آخر. بلا خلاصة، بلا تشتت—ابحث عمّا أتيت من أجله وارحل."
-    }
+    },
+    "pv": {
+      "t": "خاص افتراضيًا",
+      "a": "بدون حساب",
+      "b": "بدون تتبع",
+      "c": "مفتوح المصدر"
+    },
+    "rv": "مراجعة"
   },
   "fa": {
     "name": "فارسی",
@@ -1960,7 +2198,14 @@
       "badge": "جدید",
       "title": "صفحه اصلی مینیمال",
       "body": "صفحه اصلی یوتیوب خود را به یک صفحه جستجوی تمیز و مرکزی تبدیل کنید: لوگوی واقعی یوتیوب و نوار جستجوی اصلی، و بس. بدون فید، بدون حواس‌پرتی—آنچه را که به دنبالش آمده‌اید جستجو کنید و بروید."
-    }
+    },
+    "pv": {
+      "t": "به‌طور پیش‌فرض خصوصی",
+      "a": "بدون حساب",
+      "b": "بدون ردیابی",
+      "c": "متن‌باز"
+    },
+    "rv": "نظر"
   },
   "hi": {
     "name": "हिन्दी",
@@ -2016,7 +2261,14 @@
       "badge": "नया",
       "title": "मिनिमलिस्ट होम पेज",
       "body": "अपने YouTube होम पेज को एक साफ़, केंद्रित सर्च स्क्रीन में बदलें: असली YouTube लोगो और असली सर्च बार, बस इतना ही। कोई फीड नहीं, कोई भटकाव नहीं—जो खोजना है वो खोजें और आगे बढ़ें।"
-    }
+    },
+    "pv": {
+      "t": "डिफ़ॉल्ट रूप से निजी",
+      "a": "खाते की ज़रूरत नहीं",
+      "b": "कोई ट्रैकिंग नहीं",
+      "c": "ओपन सोर्स"
+    },
+    "rv": "समीक्षाएँ"
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2072,7 +2324,14 @@
       "badge": "નવું",
       "title": "મિનિમલિસ્ટ હોમ પેજ",
       "body": "તમારું YouTube હોમ પેજ હવે સરળ છે: ફક્ત લોગો અને સર્ચ બાર."
-    }
+    },
+    "pv": {
+      "t": "ડિફૉલ્ટ રૂપે ખાનગી",
+      "a": "ખાતાની જરૂર નથી",
+      "b": "કોઈ ટ્રેકિંગ નથી",
+      "c": "ઓપન સોર્સ"
+    },
+    "rv": "સમીક્ષાઓ"
   },
   "mr": {
     "name": "मराठी",
@@ -2128,7 +2387,14 @@
       "badge": "नवीन",
       "title": "मिनिमलिस्ट मुख्यपृष्ठ",
       "body": "तुमचे YouTube मुख्यपृष्ठ स्वच्छ, केंद्रित शोध स्क्रीनमध्ये बदला: खरा YouTube लोगो आणि खरी शोध पट्टी, दुसरे काहीही नाही. फीड नाही, विचलन नाही."
-    }
+    },
+    "pv": {
+      "t": "डीफॉल्टनुसार खाजगी",
+      "a": "खात्याची गरज नाही",
+      "b": "ट्रॅकिंग नाही",
+      "c": "ओपन सोर्स"
+    },
+    "rv": "पुनरावलोकने"
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2184,7 +2450,14 @@
       "badge": "ಹೊಸದು",
       "title": "ಮಿನಿಮಲಿಸ್ಟ್ ಮುಖ್ಯ ಪುಟ",
       "body": "ನಿಮ್ಮ YouTube ಮುಖ್ಯ ಪುಟ ಈಗ ಸರಳವಾಗಿದೆ: ಲೋಗೋ ಮತ್ತು ಹುಡುಕಾಟ ಪಟ್ಟಿ ಮಾತ್ರ."
-    }
+    },
+    "pv": {
+      "t": "ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಖಾಸಗಿ",
+      "a": "ಖಾತೆ ಅಗತ್ಯವಿಲ್ಲ",
+      "b": "ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ",
+      "c": "ಓಪನ್ ಸೋರ್ಸ್"
+    },
+    "rv": "ವಿಮರ್ಶೆಗಳು"
   },
   "ta": {
     "name": "தமிழ்",
@@ -2240,7 +2513,14 @@
       "badge": "புதியது",
       "title": "எளிமையான முகப்புப் பக்கம்",
       "body": "உங்கள் YouTube முகப்புப் பக்கம் இப்போது எளிமையானது: லோகோ மற்றும் தேடல் பட்டை மட்டும்."
-    }
+    },
+    "pv": {
+      "t": "இயல்பாகவே தனிப்பட்டது",
+      "a": "கணக்கு தேவையில்லை",
+      "b": "கண்காணிப்பு இல்லை",
+      "c": "ஓபன் சோர்ஸ்"
+    },
+    "rv": "மதிப்புரைகள்"
   },
   "te": {
     "name": "తెలుగు",
@@ -2296,7 +2576,14 @@
       "badge": "కొత్తది",
       "title": "మినిమలిస్ట్ హోమ్ పేజీ",
       "body": "మీ YouTube హోమ్ పేజీ ఇప్పుడు సరళంగా ఉంది: లోగో మరియు సెర్చ్ బార్ మాత్రమే."
-    }
+    },
+    "pv": {
+      "t": "డిఫాల్ట్‌గా ప్రైవేట్",
+      "a": "ఖాతా అవసరం లేదు",
+      "b": "ట్రాకింగ్ లేదు",
+      "c": "ఓపెన్ సోర్స్"
+    },
+    "rv": "సమీక్షలు"
   },
   "sw": {
     "name": "Kiswahili",
@@ -2352,7 +2639,14 @@
       "badge": "MPYA",
       "title": "Ukurasa wa Nyumbani wa Minimalisti",
       "body": "Geuza ukurasa wako wa nyumbani wa YouTube kuwa skrini safi, iliyo katikati ya utafutaji: nembo halisi ya YouTube na upau halisi wa utafutaji, hakuna kingine. Hakuna mpasho, hakuna vikengeushi—tafuta ulichokuja kutafuta kisha uondoke."
-    }
+    },
+    "pv": {
+      "t": "Faragha kwa chaguo-msingi",
+      "a": "Hakuna akaunti",
+      "b": "Hakuna ufuatiliaji",
+      "c": "Chanzo huria"
+    },
+    "rv": "maoni"
   },
   "am": {
     "name": "አማርኛ",
@@ -2408,6 +2702,13 @@
       "badge": "አዲስ",
       "title": "ቀላል የመነሻ ገጽ",
       "body": "የYouTube መነሻ ገጽ ቀላል ሆነ፦ አርማ እና አሞሌ ብቻ ይታያሉ፣ ሌላ ምንም የለም።"
-    }
+    },
+    "pv": {
+      "t": "በነባሪ የግል",
+      "a": "መለያ አያስፈልግም",
+      "b": "ክትትል የለም",
+      "c": "ክፍት ምንጭ"
+    },
+    "rv": "ግምገማዎች"
   }
 }

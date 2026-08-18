@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FocusTube — Support</title>
+<meta name="description" content="Help with FocusTube: what to do when nothing seems to change, how to pause it without uninstalling, and where to report a bug." />
+<link rel="canonical" href="https://focustube.io/support/" />
+<meta name="robots" content="index,follow" />
+<link rel="icon" href="../assets/focustube-icon.png" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="../" class="brand">
+      <img src="../assets/focustube-icon.png" alt="" width="28" height="28" class="brand-icon" />
+      FocusTube
+    </a>
+    <nav aria-label="Main">
+      <a href="../#features">Features</a>
+      <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Install</a>
+      <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero support-hero">
+    <div class="wrap">
+      <span class="kicker">Support</span>
+      <h1>Something not working?</h1>
+      <p class="lead">Start with the first one — it is by far the most common, and it takes a second to check.</p>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="wrap">
+
+      <article class="qa">
+        <h2>You turned something on and YouTube looks the same</h2>
+        <p><strong>Refresh the YouTube tab.</strong> FocusTube applies your settings to pages as they load, so a tab that was already open when you changed a setting keeps showing the old state until it reloads.</p>
+        <p>If it still looks the same after a refresh, check the <strong>Mode</strong> tab in the popup: if the mode is <em>Off</em>, or a <em>Timer</em> session is not running, or you are outside a <em>Schedule</em> you set, then everything on YouTube shows on purpose, whatever the Settings tab says.</p>
+      </article>
+
+      <article class="qa">
+        <h2>A setting used to work and suddenly stopped</h2>
+        <p>YouTube changes its own page structure fairly often, and a change on their side can stop one of the toggles from finding what it is meant to hide. This is the most likely cause when a single feature breaks while the rest keep working.</p>
+        <p>It is worth reporting rather than waiting — these are usually quick to fix once someone knows which part of YouTube changed. Include what you were looking at and which toggle stopped working.</p>
+        <p><a class="btn btn-primary" href="https://github.com/pablomariaarranzpou/focustube-chrome-extension/issues/new" target="_blank" rel="noopener">Report it on GitHub</a></p>
+      </article>
+
+      <article class="qa">
+        <h2>You want the normal YouTube back for a bit</h2>
+        <p>You do not have to uninstall or switch anything off one by one. Open the popup, go to <strong>Mode</strong>, and choose <strong>Off</strong>. Everything on YouTube shows again, and all your settings and blocklists stay exactly as you left them for when you switch back.</p>
+      </article>
+
+      <article class="qa">
+        <h2>What FocusTube can see</h2>
+        <p>It runs only on YouTube pages, and asks for two permissions: <code>storage</code>, to remember your settings, and <code>alarms</code>, for Focus Mode timers and schedules. There is no account, nothing is sent anywhere, and nothing about your browsing is collected.</p>
+        <p>The whole extension is open source, so this is checkable rather than a promise — <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">read the code</a>.</p>
+      </article>
+
+      <article class="qa">
+        <h2>Still stuck</h2>
+        <p>Open an issue on GitHub and describe what you expected and what happened instead. Mentioning your browser version and whether you are on Windows, macOS or Linux usually saves a round trip.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/pablomariaarranzpou/focustube-chrome-extension/issues" target="_blank" rel="noopener">Open an issue</a></p>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> FocusTube</span>
+    <span><a href="../">Back to the site</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

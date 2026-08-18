@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/hu/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat a YouTube-on. Blokkolj csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot. Több mint 4000 felhasználó.",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "hu",
@@ -143,7 +143,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">Funkciók</a>
+        <a href="#minimalist-home">Funkciók</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Telepítés</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -153,15 +153,71 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">Chrome-bővítmény a YouTube-hoz</span>
-      <h1>Ne vesztegess több időt a YouTube-on</h1>
-      <p class="lead">A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat. Blokkolj konkrét csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot, amikor igazán koncentrálnod kell.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Hozzáadás a Chrome-hoz — ingyenes</a>
-        <a class="btn btn-secondary" href="#features">Nézd meg, mit csinál</a>
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">Chrome-bővítmény a YouTube-hoz</span>
+        <h1>Ne vesztegess több időt a YouTube-on</h1>
+        <p class="lead">A FocusTube elrejti a Shorts videókat, az ajánlásokat, javaslatokat és hozzászólásokat. Blokkolj konkrét csatornákat és szavakat, és kapcsolj be egy időzített Fókusz módot, amikor igazán koncentrálnod kell.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Hozzáadás a Chrome-hoz — ingyenes</span>
+          </a>
+          <a class="btn btn-secondary" href="#minimalist-home">Nézd meg, mit csinál</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="Alapból privát">
+          <li>Nincs fiók</li>
+          <li>Nincs követés</li>
+          <li>Nyílt forráskód</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4.8</strong>
+            <span class="proof-muted">29 értékelés</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>4000+</strong> <span class="proof-muted">aktív felhasználó</span></span>
+        </p>
       </div>
-      <p class="stat-row"><strong>4000+</strong> aktív felhasználó</p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="../assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">Mindig</span>
+            <span class="pop-tab is-active">Funkciók</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>Shorts elrejtése</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Ajánlások nélkül</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>Hozzászólások nélkül</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Feketelisták</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Fókusz mód</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>Ismétlődő ütemezés</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -172,11 +228,20 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">ÚJ</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>Minimalista kezdőlap</h2>
           <p class="newfeat-lead">Alakítsd át a YouTube kezdőlapját egy letisztult, középre igazított keresőképernyővé: az igazi YouTube logó és a valódi keresősáv, semmi más. Nincs hírfolyam, nincs elterelés—keresd meg, amit akarsz, és indulj tovább.</p>
-          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Hozzáadás a Chrome-hoz — ingyenes</a>
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Hozzáadás a Chrome-hoz — ingyenes</span>
+          </a>
         </div>
 
         <figure class="newfeat-demo">
@@ -259,33 +324,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>Minden, amit kikapcsolhatsz</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts elrejtése</h3>
-          <p>Eltávolítja a Shorts videókat a kezdőlapról, az oldalsávból és a keresési eredményekből.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>Ajánlások nélkül</h3>
-          <p>Eltávolítja a javaslatokat és a kezdőlap tartalmát a végtelen görgetés elkerülésére.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>Hozzászólások nélkül</h3>
-          <p>Elrejti a hozzászólás szekciót, ha csak a videót akarod nézni.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>Feketelisták</h3>
-          <p>Blokkolj konkrét csatornákat vagy szavakat egy gyors gombbal, közvetlenül a feedből.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
 
   <section class="spotlight">
     <div class="wrap">
@@ -590,7 +631,6 @@
         <div class="mode-pill"><span class="mode-name">Időzítő</span></div>
         <div class="mode-pill"><span class="mode-name">Ütemezés</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>Ismétlődő ütemezés:</strong> Ütemezd a Fókusz módot, hogy csak a kiválasztott napokon és időpontokban aktiválódjon.</p>
     </div>
   </section>
 
@@ -599,7 +639,16 @@
       <div class="cta-card">
         <h2>Szerezd vissza az irányítást másodpercek alatt</h2>
         <p>Ingyenes, fiók nélkül, furcsa engedélyek nélkül. Csak kapcsold ki, ami elvonja a figyelmedet.</p>
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Hozzáadás a Chrome-hoz — ingyenes</a>
+        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Hozzáadás a Chrome-hoz — ingyenes</span>
+          </a>
       </div>
     </div>
   </section>
@@ -608,8 +657,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">Kód a GitHubon</a>
       </span>
       <select id="langSwitch" aria-label="Language">

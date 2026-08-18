@@ -74,7 +74,7 @@
   <link rel="apple-touch-icon" href="../assets/focustube-icon.png" />
   <!-- ?v= busts the CDN/browser cache on every release, so a returning visitor
        never gets new markup paired with the previous stylesheet. -->
-  <link rel="stylesheet" href="../styles.css?v=2.5.3" />
+  <link rel="stylesheet" href="../styles.css?v=2.5.6" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +89,7 @@
       "url": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/hi/",
       "installUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
       "downloadUrl": "https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb",
-      "softwareVersion": "2.5.3",
+      "softwareVersion": "2.5.6",
       "description": "FocusTube YouTube पर Shorts, सुझाव, recommendations और comments छिपाता है। चैनल और शब्दों को ब्लॉक करें, और टाइमर वाला Focus Mode चालू करें। 4,000+ users।",
       "image": "https://pablomariaarranzpou.github.io/focustube-chrome-extension/assets/focustube-logo.png",
       "inLanguage": "hi",
@@ -143,7 +143,7 @@
         FocusTube
       </a>
       <nav aria-label="Main">
-        <a href="#features">फ़ीचर्स</a>
+        <a href="#minimalist-home">फ़ीचर्स</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">इंस्टॉल करें</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -153,15 +153,71 @@
   <main>
 
   <section class="hero">
-    <div class="wrap">
-      <span class="kicker">YouTube के लिए Chrome extension</span>
-      <h1>YouTube पर समय बर्बाद करना बंद करें</h1>
-      <p class="lead">FocusTube Shorts, सुझाव, recommendations और comments छिपाता है। खास चैनल और शब्दों को ब्लॉक करें, और जब सच में ध्यान लगाना हो तो टाइमर वाला Focus Mode चालू करें।</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome में जोड़ें — फ्री</a>
-        <a class="btn btn-secondary" href="#features">देखें यह क्या करता है</a>
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="kicker">YouTube के लिए Chrome extension</span>
+        <h1>YouTube पर समय बर्बाद करना बंद करें</h1>
+        <p class="lead">FocusTube Shorts, सुझाव, recommendations और comments छिपाता है। खास चैनल और शब्दों को ब्लॉक करें, और जब सच में ध्यान लगाना हो तो टाइमर वाला Focus Mode चालू करें।</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome में जोड़ें — फ्री</span>
+          </a>
+          <a class="btn btn-secondary" href="#minimalist-home">देखें यह क्या करता है</a>
+        </div>
+
+        <!-- Trust sits with the install decision rather than in a section of its
+             own further down, where nobody deciding had reached it. -->
+        <ul class="trust" aria-label="डिफ़ॉल्ट रूप से निजी">
+          <li>खाते की ज़रूरत नहीं</li>
+          <li>कोई ट्रैकिंग नहीं</li>
+          <li>ओपन सोर्स</li>
+        </ul>
+
+        <p class="proof">
+          <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4.8</strong>
+            <span class="proof-muted">29 समीक्षाएँ</span>
+          </a>
+          <span class="proof-sep" aria-hidden="true"></span>
+          <span><strong>4,000+</strong> <span class="proof-muted">एक्टिव यूज़र्स</span></span>
+        </p>
       </div>
-      <p class="stat-row"><strong>4,000+</strong> एक्टिव यूज़र्स</p>
+
+      <!-- The popup, drawn in HTML rather than shipped as a screenshot: it stays
+           sharp on any display, translates with the rest of the page, and costs
+           nothing to download. It is also the feature list, which is why there
+           is no longer a separate one further down. -->
+      <div class="hero-shot" aria-hidden="true">
+        <div class="pop">
+          <div class="pop-head">
+            <img src="../assets/focustube-icon.png" alt="" width="18" height="18" />
+            <span class="pop-name">FocusTube</span>
+          </div>
+          <div class="pop-tabs">
+            <span class="pop-tab">हमेशा</span>
+            <span class="pop-tab is-active">फ़ीचर्स</span>
+          </div>
+          <ul class="pop-list">
+          <li class="pop-row is-on"><span>Shorts छिपाएं</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>बिना recommendations</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>बिना comments</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>ब्लैकलिस्ट</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row is-on"><span>Focus Mode</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          <li class="pop-row"><span>रिकरिंग शेड्यूल</span><i class="pop-toggle" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -172,11 +228,20 @@
         <div class="newfeat-copy">
           <p class="newfeat-badge">
             <span class="newfeat-tag">नया</span>
-            <span class="newfeat-ver">v2.5.3</span>
+            <span class="newfeat-ver">v2.5.6</span>
           </p>
           <h2>मिनिमलिस्ट होम पेज</h2>
           <p class="newfeat-lead">अपने YouTube होम पेज को एक साफ़, केंद्रित सर्च स्क्रीन में बदलें: असली YouTube लोगो और असली सर्च बार, बस इतना ही। कोई फीड नहीं, कोई भटकाव नहीं—जो खोजना है वो खोजें और आगे बढ़ें।</p>
-          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome में जोड़ें — फ्री</a>
+          <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome में जोड़ें — फ्री</span>
+          </a>
         </div>
 
         <figure class="newfeat-demo">
@@ -259,33 +324,9 @@
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2>जो कुछ भी आप बंद कर सकते हैं</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🚫</div>
-          <h3>Shorts छिपाएं</h3>
-          <p>होम पेज, साइडबार और सर्च रिज़ल्ट्स से Shorts हटा देता है।</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3>बिना recommendations</h3>
-          <p>बेवजह स्क्रॉल से बचने के लिए होम पेज के सुझाव और content हटाता है।</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">💬</div>
-          <h3>बिना comments</h3>
-          <p>जब सिर्फ वीडियो देखना हो तो comments section छिपा देता है।</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon" aria-hidden="true">🔇</div>
-          <h3>ब्लैकलिस्ट</h3>
-          <p>खास चैनल या शब्द ब्लॉक करें, feed से सीधे जोड़ने के लिए एक quick button भी।</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  <!-- Privacy: the permissions are shown verbatim because they are the proof,
+       and because a permission name is the same string in every language. -->
 
   <section class="spotlight">
     <div class="wrap">
@@ -590,7 +631,6 @@
         <div class="mode-pill"><span class="mode-name">टाइमर</span></div>
         <div class="mode-pill"><span class="mode-name">शेड्यूल</span></div>
       </div>
-      <p class="spotlight-lead spotlight-secondary">📅 <strong>रिकरिंग शेड्यूल:</strong> Focus Mode को सिर्फ चुने हुए दिनों और समय पर चालू होने के लिए शेड्यूल करें।</p>
     </div>
   </section>
 
@@ -599,7 +639,16 @@
       <div class="cta-card">
         <h2>सेकंडों में कंट्रोल वापस लें</h2>
         <p>फ्री, कोई अकाउंट नहीं, कोई अजीब permission नहीं। बस वो बंद करें जो distract करता है।</p>
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">Chrome में जोड़ें — फ्री</a>
+        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+            <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
+              <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
+              <path fill="#34A853" d="M24 48A24 24 0 0 1 3.22 12L24 24Z"/>
+              <circle cx="24" cy="24" r="11" fill="#fff"/>
+              <circle cx="24" cy="24" r="8.5" fill="#4285F4"/>
+            </svg>
+            <span>Chrome में जोड़ें — फ्री</span>
+          </a>
       </div>
     </div>
   </section>
@@ -608,8 +657,10 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> FocusTube · v2.5.3</span>
+      <span>© <span id="year">2026</span> FocusTube · v2.5.6</span>
       <span>
+        <a href="../support/">Support</a>
+        &middot;
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub पर code</a>
       </span>
       <select id="langSwitch" aria-label="Language">

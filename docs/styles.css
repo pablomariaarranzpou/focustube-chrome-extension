@@ -87,9 +87,14 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin: 0 0 16px;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-wrap: balance;
+  margin: 0 0 18px;
+  max-width: 14ch;
+  margin-inline: auto;
 }
 
 .hero p.lead {
@@ -114,7 +119,11 @@ nav a:hover {
 
 .btn-primary {
   background: var(--coral);
-  color: #fff;
+  /* White on this coral is only 2.7:1 — below the accessible minimum, on the
+     one control the whole page is built around. Dark text takes it to 6.6:1
+     and matches the coral feature cards. */
+  color: #2b0f12;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -139,14 +148,37 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.stat-row {
-  margin-top: 28px;
-  color: var(--muted);
-  font-size: 0.9rem;
+.proof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.92rem;
+  color: var(--ink);
 }
 
-.stat-row strong {
-  color: var(--ink);
+.proof-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 4px 6px;
+}
+
+.proof-rating:hover { background: color-mix(in srgb, var(--coral) 12%, transparent); }
+
+.proof .stars { color: var(--coral); letter-spacing: 1px; }
+.proof strong { font-weight: 700; }
+.proof-muted { color: var(--muted); }
+
+.proof-sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--border);
 }
 
 /* Features */
@@ -160,33 +192,70 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
-.feature-grid {
+.feature-stack {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
-.feature-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 22px;
+.fcard {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 30px 32px;
+  border-radius: 20px;
+  border: 1px solid transparent;
 }
 
-.feature-card .icon {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.fcard h3 {
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  text-wrap: balance;
 }
 
-.feature-card h3 {
-  font-size: 1rem;
-  margin: 0 0 6px;
-}
-
-.feature-card p {
-  font-size: 0.88rem;
-  color: var(--muted);
+.fcard p {
+  font-size: 0.95rem;
   margin: 0;
+  max-width: 46ch;
+  opacity: 0.82;
+}
+
+.fcard-art {
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  line-height: 1;
+}
+
+/* Three tones, cycled, so the stack reads as a rhythm rather than a list. */
+.fcard-a {
+  background: var(--coral);
+  /* --coral is the same in both themes, so the text on it is a fixed colour
+     rather than a token. White only reaches 2.7:1 here; this dark plum clears
+     WCAG AA comfortably and keeps the card warm. */
+  background: var(--coral);
+  color: #2b0f12;
+}
+
+.fcard-b {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.fcard-c {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+@media (max-width: 620px) {
+  .fcard {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 24px;
+  }
+  .fcard-art { order: -1; }
 }
 
 /* CTA */
@@ -1917,3 +1986,357 @@ footer a:hover {
     background: #05070a;
   }
 }
+
+
+/* ---- Privacy ------------------------------------------------------------
+   The strongest thing FocusTube can say is what it does not do, so it gets
+   its own block rather than a bullet in the feature list. */
+.privacy {
+  padding: 20px 0 80px;
+}
+
+.privacy .wrap {
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 24px;
+  padding: 46px 32px;
+  text-align: center;
+}
+
+.privacy h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 26px;
+  text-wrap: balance;
+}
+
+.pv-grid {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pv-grid li {
+  border: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.pv-perms {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.pv-perms code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+  border-radius: 7px;
+  padding: 4px 10px;
+}
+
+/* ---- Support page -------------------------------------------------------
+   Reuses the site shell; only the Q&A rhythm is new. */
+.support-hero {
+  padding: 60px 0 20px;
+}
+
+.support-hero h1 {
+  max-width: 20ch;
+}
+
+.support {
+  padding: 10px 0 80px;
+}
+
+.support .wrap {
+  max-width: 760px;
+}
+
+.qa {
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+}
+
+.qa:first-child {
+  border-top: none;
+}
+
+.qa h2 {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  margin: 0 0 12px;
+  text-wrap: balance;
+}
+
+.qa p {
+  margin: 0 0 12px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.qa p:last-child {
+  margin-bottom: 0;
+}
+
+.qa code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+.qa .btn {
+  margin-top: 6px;
+}
+
+/* ---- Install button -----------------------------------------------------
+   Google only ships two official Web Store badges and both look dated next to
+   this page, so this is a real button carrying Chrome's mark. Google's rule
+   that matters is honoured either way: it always links straight to the
+   listing. */
+.btn-install {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 13px 24px 13px 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+}
+
+.btn-install:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn-install:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+}
+
+.btn-install:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
+}
+
+/* The mark keeps its own colours, so it needs a light disc behind it on the
+   dark pill to stay legible in both themes. */
+.chrome-mark {
+  flex: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* ==========================================================================
+   Consistency pass.
+   The page grew section by section, so it had five different heading sizes
+   (37/35/29/26/26px), three card radii (0/20/24px) and six different vertical
+   paddings. Everything below only normalises those three things — no layout
+   is moved.
+   ========================================================================== */
+:root {
+  --r-card: 20px;
+  --section-y: 64px;
+}
+
+/* One rhythm for every section. Class selectors are needed here: the original
+   rules are class-based, so `main > section` alone loses on specificity. */
+main > section.newfeat,
+main > section.features,
+main > section.privacy,
+main > section.spotlight,
+main > section.cta {
+  padding-block: var(--section-y);
+}
+
+/* The hero opens the page: more air above, less below. */
+main > section.hero {
+  padding-block: 72px 44px;
+}
+
+/* One heading scale, one weight, one optical spacing. */
+main > section > .wrap > h2,
+.newfeat-copy h3,
+.spotlight > .wrap > h2,
+.cta-card h2 {
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+/* The headline feature keeps a touch more presence than a plain section title,
+   but on the same scale rather than its own. */
+.newfeat-copy h3 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+/* One radius for anything card-shaped. */
+.fcard,
+.privacy .wrap,
+.cta-card,
+.newfeat-demo {
+  border-radius: var(--r-card);
+}
+
+/* Feature icons: one stroke weight, inheriting the card's text colour, so the
+   same markup reads correctly on the coral, dark and light tones. Replaces the
+   emoji, which rendered differently per platform and never matched the type. */
+.fcard-art svg {
+  width: clamp(40px, 6vw, 56px);
+  height: clamp(40px, 6vw, 56px);
+  opacity: 0.9;
+  display: block;
+}
+
+/* ==========================================================================
+   Hero: pitch on one side, the popup itself on the other.
+   The popup is drawn in HTML instead of shipped as a screenshot — sharp at any
+   density, translated by the same generator as the rest of the page, and it
+   adds nothing to the page weight.
+   ========================================================================== */
+.hero { text-align: start; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy h1 { max-width: 15ch; margin-inline: 0; }
+.hero-copy .lead { margin: 0 0 26px; max-width: 48ch; }
+.hero .hero-actions { justify-content: flex-start; }
+.hero .proof { justify-content: flex-start; margin: 0; }
+
+/* Trust, next to the install decision. */
+.trust {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 18px;
+  padding: 0;
+}
+
+.trust li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+
+/* ---- The popup ---------------------------------------------------------- */
+.hero-shot { display: flex; justify-content: center; }
+
+.pop {
+  width: min(100%, 340px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 16px 10px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.13), 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.pop-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding-bottom: 12px;
+}
+
+.pop-name { font-weight: 800; letter-spacing: -0.01em; font-size: 0.95rem; }
+
+.pop-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.pop-tab {
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  padding: 8px 4px;
+  margin-bottom: -2px;
+  border-bottom: 2px solid transparent;
+}
+
+.pop-tab.is-active { color: var(--coral); border-bottom-color: var(--coral); }
+
+.pop-list { list-style: none; margin: 0; padding: 0; }
+
+.pop-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 11px 2px;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.pop-row + .pop-row { border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent); }
+
+.pop-toggle {
+  flex: none;
+  width: 38px;
+  height: 21px;
+  border-radius: 999px;
+  background: var(--border);
+  position: relative;
+  transition: background 0.2s;
+}
+
+.pop-toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  inset-inline-start: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s;
+}
+
+.pop-row.is-on .pop-toggle { background: var(--coral); }
+.pop-row.is-on .pop-toggle::after { transform: translateX(17px); }
+
+[dir="rtl"] .pop-row.is-on .pop-toggle::after { transform: translateX(-17px); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero-copy h1 { max-width: none; }
+  .pop { width: min(100%, 380px); }
+}
+
+/* The demo is dense by nature — a whole browser window and a popup — so it gets
+   room around it rather than sitting tight against the copy. */
+.spotlight .demo-carousel { margin-top: 34px; }
+.spotlight-lead { margin-bottom: 0; }
