@@ -2100,3 +2100,47 @@ footer a:hover {
 .qa .btn {
   margin-top: 6px;
 }
+
+/* ---- Install button -----------------------------------------------------
+   Google only ships two official Web Store badges and both look dated next to
+   this page, so this is a real button carrying Chrome's mark. Google's rule
+   that matters is honoured either way: it always links straight to the
+   listing. */
+.btn-install {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 13px 24px 13px 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+}
+
+.btn-install:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn-install:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+}
+
+.btn-install:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
+}
+
+/* The mark keeps its own colours, so it needs a light disc behind it on the
+   dark pill to stay legible in both themes. */
+.chrome-mark {
+  flex: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 2px #fff;
+}
