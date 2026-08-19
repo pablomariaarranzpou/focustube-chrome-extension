@@ -1,4 +1,6 @@
 :root {
+  /* The dark stage both demo sections sit on, in either theme. */
+  --panel: #05070a;
   --coral: #f9737a;
   --coral-dark: #ef4444;
   --ink: #1f2937;
@@ -407,7 +409,7 @@ footer a:hover {
 
 /* Focus Mode spotlight */
 .spotlight {
-  background: var(--ink);
+  background: var(--panel);
   color: #fff;
   padding: 64px 0;
   text-align: center;
@@ -1243,7 +1245,11 @@ footer a:hover {
   .sh-ripple,
   .sh-ripple2,
   .ext-popup,
-  .ext-mode-on { animation: none; }
+  .ext-mode-on,
+  .ext-row.is-target .ext-tg,
+  .ext-row.is-target .ext-tg::after { animation: none; }
+  .ext-row.is-target .ext-tg { background: var(--coral); }
+  .ext-row.is-target .ext-tg::after { transform: translateX(10px); }
   .sh-cursor { opacity: 0; }
   .ext-popup { opacity: 1; }
 }
@@ -1544,7 +1550,9 @@ footer a:hover {
 .newfeat {
   position: relative;
   padding: 84px 0;
-  background: #0b0b0c;
+  /* Same panel colour as .spotlight — they sit next to each other and two
+     near blacks read as a seam rather than as two sections. */
+  background: var(--panel);
   overflow: hidden;
 }
 
@@ -1983,10 +1991,6 @@ footer a:hover {
     color: var(--coral-dark);
   }
 
-  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
-  .spotlight {
-    background: #05070a;
-  }
 
 
   :root:not([data-theme="light"]) .hero h1 {
@@ -2018,10 +2022,6 @@ footer a:hover {
     color: var(--coral-dark);
   }
 
-  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
-  .spotlight {
-    background: #05070a;
-  }
 
 
   :root[data-theme="dark"] .hero h1 {
@@ -2761,3 +2761,37 @@ main > section > .wrap > h2,
 
 .cta-trust { justify-content: center; margin: 26px 0 16px; }
 .cta-proof { justify-content: center; }
+
+
+/* The demo's pointer clicks at 47% of the loop, so the switch it lands on
+   flips just after, and resets when the popup closes at 72%. Without this the
+   switch was already on and nobody saw the cause of anything. */
+.ext-row.is-target .ext-tg {
+  animation: extTgTrack 13s ease-in-out infinite;
+}
+
+.ext-row.is-target .ext-tg::after {
+  animation: extTgKnob 13s ease-in-out infinite;
+}
+
+@keyframes extTgTrack {
+  0%, 48% { background: rgba(255, 255, 255, 0.22); }
+  49%, 66% { background: var(--coral); }
+  72%, 100% { background: rgba(255, 255, 255, 0.22); }
+}
+
+@keyframes extTgKnob {
+  0%, 48% { transform: translateX(0); }
+  49%, 66% { transform: translateX(10px); }
+  72%, 100% { transform: translateX(0); }
+}
+
+[dir="rtl"] .ext-row.is-target .ext-tg::after {
+  animation-name: extTgKnobRtl;
+}
+
+@keyframes extTgKnobRtl {
+  0%, 48% { transform: translateX(0); }
+  49%, 66% { transform: translateX(-10px); }
+  72%, 100% { transform: translateX(0); }
+}
