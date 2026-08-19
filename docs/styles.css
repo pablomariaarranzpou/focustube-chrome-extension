@@ -862,7 +862,7 @@ footer a:hover {
   position: absolute;
   top: 40px;
   right: 12px;
-  width: 188px;
+  width: 214px;
   padding: 12px;
   background: #212121;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2340,3 +2340,76 @@ main > section > .wrap > h2,
    room around it rather than sitting tight against the copy. */
 .spotlight .demo-carousel { margin-top: 34px; }
 .spotlight-lead { margin-bottom: 0; }
+
+/* ---- Focus Mode section -------------------------------------------------
+   The kicker carried a stopwatch emoji, which rendered differently on every
+   platform and was the only emoji left on the site. A pill does the same job
+   and matches the trust chips in the hero. */
+.kicker-pill {
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-radius: 999px;
+  padding: 5px 14px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.78rem;
+}
+
+/* ---- The toggle that causes what the demo shows -------------------------
+   The popup used to show the four modes, which are not what makes the page
+   change. Showing the switch itself puts the cause next to the effect. */
+.ext-list {
+  display: grid;
+  gap: 5px;
+  padding: 7px 8px 8px;
+}
+
+.ext-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10.5px;
+  font-weight: 600;
+  /* The mock popup is always dark, in both themes, so this is a fixed colour.
+     A theme token here renders dark-on-dark and disappears in light mode. */
+  color: rgba(255, 255, 255, 0.94);
+  padding: 4px 6px;
+  border-radius: 6px;
+  line-height: 1.25;
+}
+
+.ext-row i { font-style: normal; }
+
+/* The row being demonstrated is called out; the other is there for context. */
+.ext-row.is-target {
+  background: color-mix(in srgb, var(--coral) 16%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--coral) 55%, transparent);
+}
+
+.ext-row:not(.is-target) { opacity: 0.5; }
+
+.ext-tg {
+  flex: none;
+  width: 22px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  position: relative;
+}
+
+.ext-tg::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.ext-tg.is-on { background: var(--coral); }
+.ext-tg.is-on::after { transform: translateX(10px); }
+
+[dir="rtl"] .ext-tg.is-on::after { transform: translateX(-10px); }
