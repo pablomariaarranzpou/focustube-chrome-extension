@@ -2382,6 +2382,10 @@ main > section > .wrap > h2,
    platform and was the only emoji left on the site. A pill does the same job
    and matches the trust chips in the hero. */
 .kicker-pill {
+  /* inline-block, because a vertical margin does nothing on an inline box —
+     which is why the heading was sitting 3px on top of this. */
+  display: inline-block;
+  margin-bottom: 16px;
   border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
   border-radius: 999px;
   padding: 5px 14px;
