@@ -51,7 +51,7 @@
     "sph": "One mode. Zero exceptions.",
     "mh": {
       "badge": "NEW",
-      "title": "Minimalist Home Page",
+      "title": "A minimalist YouTube home page",
       "body": "Turn your YouTube homepage into a clean, centered search screen: the real YouTube logo and the genuine search bar, nothing else. No feed, no rabbit holes—just search for what you came for and go."
     },
     "pv": {
@@ -60,7 +60,19 @@
       "b": "Nothing tracked",
       "c": "Open source"
     },
-    "rv": "reviews"
+    "rv": "reviews",
+    "rvh": "What people say",
+    "tag": {
+      "a": "You came for one video.",
+      "b": "Now you leave after one video."
+    },
+    "skip": "Skip to content",
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
   },
   "es": {
     "name": "Español",
@@ -114,7 +126,7 @@
     "sph": "Un modo. Cero excepciones.",
     "mh": {
       "badge": "NUEVO",
-      "title": "Página de Inicio Minimalista",
+      "title": "Una página de inicio de YouTube minimalista",
       "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
     },
     "pv": {
@@ -123,7 +135,19 @@
       "b": "Sin rastreo",
       "c": "Código abierto"
     },
-    "rv": "reseñas"
+    "rv": "reseñas",
+    "rvh": "Lo que dice la gente",
+    "tag": {
+      "a": "Viniste a ver un vídeo.",
+      "b": "Ahora te vas después de uno."
+    },
+    "skip": "Ir al contenido",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -177,7 +201,7 @@
     "sph": "Un modo. Cero excepciones.",
     "mh": {
       "badge": "NUEVO",
-      "title": "Página de Inicio Minimalista",
+      "title": "Una página de inicio de YouTube minimalista",
       "body": "Convierte tu página de inicio de YouTube en una pantalla de búsqueda limpia y centrada: el logo real de YouTube y la barra de búsqueda genuina, nada más. Sin feed, sin distracciones: busca lo que necesitas y listo."
     },
     "pv": {
@@ -186,7 +210,19 @@
       "b": "Sin rastreo",
       "c": "Código abierto"
     },
-    "rv": "reseñas"
+    "rv": "reseñas",
+    "rvh": "Lo que dice la gente",
+    "tag": {
+      "a": "Viniste a ver un video.",
+      "b": "Ahora te vas después de uno."
+    },
+    "skip": "Ir al contenido",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
   },
   "fr": {
     "name": "Français",
@@ -240,7 +276,7 @@
     "sph": "Un seul mode. Aucune exception.",
     "mh": {
       "badge": "NOUVEAU",
-      "title": "Page d'Accueil Minimaliste",
+      "title": "Une page d'accueil YouTube minimaliste",
       "body": "Transformez votre page d'accueil YouTube en un écran de recherche épuré et centré : le vrai logo YouTube et la barre de recherche authentique, rien d'autre. Pas de flux, pas de distractions : cherchez ce que vous êtes venu voir, puis partez."
     },
     "pv": {
@@ -249,7 +285,19 @@
       "b": "Aucun suivi",
       "c": "Open source"
     },
-    "rv": "avis"
+    "rv": "avis",
+    "rvh": "Ce qu'en disent les gens",
+    "tag": {
+      "a": "Vous veniez pour une vidéo.",
+      "b": "Vous repartez après une vidéo."
+    },
+    "skip": "Aller au contenu",
+    "theme": {
+      "label": "Thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    }
   },
   "de": {
     "name": "Deutsch",
@@ -303,7 +351,7 @@
     "sph": "Ein Modus. Keine Ausnahmen.",
     "mh": {
       "badge": "NEU",
-      "title": "Minimalistische Startseite",
+      "title": "Eine minimalistische YouTube-Startseite",
       "body": "Verwandeln Sie Ihre YouTube-Startseite in einen klaren, zentrierten Suchbildschirm: das echte YouTube-Logo und die echte Suchleiste, sonst nichts. Kein Feed, keine Ablenkungen — einfach suchen und loslegen."
     },
     "pv": {
@@ -312,7 +360,19 @@
       "b": "Kein Tracking",
       "c": "Open Source"
     },
-    "rv": "Bewertungen"
+    "rv": "Bewertungen",
+    "rvh": "Was Nutzer sagen",
+    "tag": {
+      "a": "Du kamst für ein Video.",
+      "b": "Jetzt gehst du nach einem Video."
+    },
+    "skip": "Zum Inhalt springen",
+    "theme": {
+      "label": "Design",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    }
   },
   "it": {
     "name": "Italiano",
@@ -366,7 +426,7 @@
     "sph": "Una modalità. Zero eccezioni.",
     "mh": {
       "badge": "NUOVO",
-      "title": "Home Page Minimalista",
+      "title": "Una home page di YouTube minimalista",
       "body": "Trasforma la tua home page di YouTube in una schermata di ricerca pulita e centrata: il vero logo di YouTube e la barra di ricerca autentica, nient'altro. Niente feed, niente distrazioni: cerca quello che ti serve e vai."
     },
     "pv": {
@@ -375,7 +435,19 @@
       "b": "Nessun tracciamento",
       "c": "Open source"
     },
-    "rv": "recensioni"
+    "rv": "recensioni",
+    "rvh": "Cosa dicono gli utenti",
+    "tag": {
+      "a": "Sei venuto per un video.",
+      "b": "Ora esci dopo un video."
+    },
+    "skip": "Vai al contenuto",
+    "theme": {
+      "label": "Tema",
+      "light": "Chiaro",
+      "dark": "Scuro",
+      "system": "Sistema"
+    }
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -429,7 +501,7 @@
     "sph": "Um modo. Zero exceções.",
     "mh": {
       "badge": "NOVO",
-      "title": "Página Inicial Minimalista",
+      "title": "Uma página inicial do YouTube minimalista",
       "body": "Transforme a sua página inicial do YouTube num ecrã de pesquisa limpo e centrado: o logo real do YouTube e a barra de pesquisa genuína, e mais nada. Sem feed, sem distrações — pesquise o que veio procurar e pronto."
     },
     "pv": {
@@ -438,7 +510,19 @@
       "b": "Sem rastreio",
       "c": "Código aberto"
     },
-    "rv": "avaliações"
+    "rv": "avaliações",
+    "rvh": "O que dizem os utilizadores",
+    "tag": {
+      "a": "Vieste para ver um vídeo.",
+      "b": "Agora sais depois de um vídeo."
+    },
+    "skip": "Ir para o conteúdo",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    }
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -492,7 +576,7 @@
     "sph": "Um modo. Zero exceções.",
     "mh": {
       "badge": "NOVO",
-      "title": "Página Inicial Minimalista",
+      "title": "Uma página inicial do YouTube minimalista",
       "body": "Transforme sua página inicial do YouTube em uma tela de busca limpa e centralizada: o logo real do YouTube e a barra de pesquisa genuína, e nada mais. Sem feed, sem distrações — pesquise o que você veio buscar e pronto."
     },
     "pv": {
@@ -501,7 +585,19 @@
       "b": "Sem rastreamento",
       "c": "Código aberto"
     },
-    "rv": "avaliações"
+    "rv": "avaliações",
+    "rvh": "O que as pessoas dizem",
+    "tag": {
+      "a": "Você veio para ver um vídeo.",
+      "b": "Agora você sai depois de um vídeo."
+    },
+    "skip": "Ir para o conteúdo",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    }
   },
   "nl": {
     "name": "Nederlands",
@@ -555,7 +651,7 @@
     "sph": "Eén modus. Geen uitzonderingen.",
     "mh": {
       "badge": "NIEUW",
-      "title": "Minimalistische Startpagina",
+      "title": "Een minimalistische YouTube-startpagina",
       "body": "Verander je YouTube-startpagina in een strak, gecentreerd zoekscherm: het echte YouTube-logo en de echte zoekbalk, verder niets. Geen feed, geen afleiding — zoek wat je zoekt en ga verder."
     },
     "pv": {
@@ -564,7 +660,19 @@
       "b": "Geen tracking",
       "c": "Open source"
     },
-    "rv": "beoordelingen"
+    "rv": "beoordelingen",
+    "rvh": "Wat gebruikers zeggen",
+    "tag": {
+      "a": "Je kwam voor één video.",
+      "b": "Nu vertrek je na één video."
+    },
+    "skip": "Naar inhoud",
+    "theme": {
+      "label": "Thema",
+      "light": "Licht",
+      "dark": "Donker",
+      "system": "Systeem"
+    }
   },
   "ca": {
     "name": "Català",
@@ -618,7 +726,7 @@
     "sph": "Un mode. Zero excepcions.",
     "mh": {
       "badge": "NOU",
-      "title": "Pàgina d'Inici Minimalista",
+      "title": "Una pàgina d'inici de YouTube minimalista",
       "body": "Transforma la teva pàgina d'inici de YouTube en una pantalla de cerca neta i centrada: el logotip real de YouTube i la barra de cerca autèntica, res més. Sense feed, sense distraccions: cerca el que has vingut a buscar i vés-te'n."
     },
     "pv": {
@@ -627,7 +735,19 @@
       "b": "Sense rastreig",
       "c": "Codi obert"
     },
-    "rv": "ressenyes"
+    "rv": "ressenyes",
+    "rvh": "Què diu la gent",
+    "tag": {
+      "a": "Vas venir per un vídeo.",
+      "b": "Ara te'n vas després d'un vídeo."
+    },
+    "skip": "Vés al contingut",
+    "theme": {
+      "label": "Tema",
+      "light": "Clar",
+      "dark": "Fosc",
+      "system": "Sistema"
+    }
   },
   "ro": {
     "name": "Română",
@@ -681,7 +801,7 @@
     "sph": "Un singur mod. Zero excepții.",
     "mh": {
       "badge": "NOU",
-      "title": "Pagină Principală Minimalistă",
+      "title": "O pagină principală YouTube minimalistă",
       "body": "Transformă pagina principală YouTube într-un ecran de căutare curat și centrat: logo-ul real YouTube și bara de căutare autentică, nimic altceva. Fără feed, fără distrageri—caută ce ai venit să găsești și pleacă."
     },
     "pv": {
@@ -690,7 +810,19 @@
       "b": "Fără urmărire",
       "c": "Sursă deschisă"
     },
-    "rv": "recenzii"
+    "rv": "recenzii",
+    "rvh": "Ce spun oamenii",
+    "tag": {
+      "a": "Ai venit pentru un videoclip.",
+      "b": "Acum pleci după un videoclip."
+    },
+    "skip": "Sari la conținut",
+    "theme": {
+      "label": "Temă",
+      "light": "Luminos",
+      "dark": "Întunecat",
+      "system": "Sistem"
+    }
   },
   "pl": {
     "name": "Polski",
@@ -744,7 +876,7 @@
     "sph": "Jeden tryb. Zero wyjątków.",
     "mh": {
       "badge": "NOWOŚĆ",
-      "title": "Minimalistyczna Strona Główna",
+      "title": "Minimalistyczna strona główna YouTube",
       "body": "Zamień swoją stronę główną YouTube w czysty, wyśrodkowany ekran wyszukiwania: prawdziwe logo YouTube i prawdziwy pasek wyszukiwania, nic więcej. Bez kanału, bez rozpraszania uwagi—wyszukaj to, po co przyszedłeś, i idź dalej."
     },
     "pv": {
@@ -753,7 +885,19 @@
       "b": "Bez śledzenia",
       "c": "Otwarty kod"
     },
-    "rv": "opinii"
+    "rv": "opinii",
+    "rvh": "Co mówią użytkownicy",
+    "tag": {
+      "a": "Przyszedłeś po jeden film.",
+      "b": "Teraz wychodzisz po jednym filmie."
+    },
+    "skip": "Przejdź do treści",
+    "theme": {
+      "label": "Motyw",
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    }
   },
   "cs": {
     "name": "Čeština",
@@ -807,7 +951,7 @@
     "sph": "Jeden režim. Žádné výjimky.",
     "mh": {
       "badge": "NOVÉ",
-      "title": "Minimalistická domovská stránka",
+      "title": "Minimalistická domovská stránka YouTube",
       "body": "Proměňte svou domovskou stránku YouTube v čistou, vystředěnou vyhledávací obrazovku: skutečné logo YouTube a skutečný vyhledávací panel, nic víc. Žádný feed, žádné rozptylování — vyhledejte, co potřebujete, a jděte dál."
     },
     "pv": {
@@ -816,7 +960,19 @@
       "b": "Žádné sledování",
       "c": "Otevřený kód"
     },
-    "rv": "hodnocení"
+    "rv": "hodnocení",
+    "rvh": "Co říkají uživatelé",
+    "tag": {
+      "a": "Přišel jsi kvůli jednomu videu.",
+      "b": "Teď odcházíš po jednom videu."
+    },
+    "skip": "Přejít na obsah",
+    "theme": {
+      "label": "Motiv",
+      "light": "Světlý",
+      "dark": "Tmavý",
+      "system": "Systém"
+    }
   },
   "sk": {
     "name": "Slovenčina",
@@ -870,7 +1026,7 @@
     "sph": "Jeden režim. Žiadne výnimky.",
     "mh": {
       "badge": "NOVÉ",
-      "title": "Minimalistická Domovská Stránka",
+      "title": "Minimalistická domovská stránka YouTube",
       "body": "Premeňte svoju domovskú stránku YouTube na čistú, vycentrovanú vyhľadávaciu obrazovku: skutočné logo YouTube a skutočný vyhľadávací panel, nič iné. Žiadny feed, žiadne rozptyľovanie—vyhľadajte, čo potrebujete, a pokračujte."
     },
     "pv": {
@@ -879,7 +1035,19 @@
       "b": "Žiadne sledovanie",
       "c": "Otvorený kód"
     },
-    "rv": "hodnotení"
+    "rv": "hodnotení",
+    "rvh": "Čo hovoria používatelia",
+    "tag": {
+      "a": "Prišiel si kvôli jednému videu.",
+      "b": "Teraz odchádzaš po jednom videu."
+    },
+    "skip": "Prejsť na obsah",
+    "theme": {
+      "label": "Motív",
+      "light": "Svetlý",
+      "dark": "Tmavý",
+      "system": "Systém"
+    }
   },
   "sl": {
     "name": "Slovenščina",
@@ -933,7 +1101,7 @@
     "sph": "En način. Nič izjem.",
     "mh": {
       "badge": "NOVO",
-      "title": "Minimalistična Domača Stran",
+      "title": "Minimalistična domača stran YouTube",
       "body": "Spremenite svojo domačo stran YouTube v čist, sredinsko postavljen iskalni zaslon: pravi logotip YouTube in pristno iskalno vrstico, nič drugega. Brez vira, brez motenj—poiščite, kar iščete, in nadaljujte."
     },
     "pv": {
@@ -942,7 +1110,19 @@
       "b": "Brez sledenja",
       "c": "Odprta koda"
     },
-    "rv": "ocen"
+    "rv": "ocen",
+    "rvh": "Kaj pravijo uporabniki",
+    "tag": {
+      "a": "Prišel si zaradi enega videa.",
+      "b": "Zdaj odideš po enem videu."
+    },
+    "skip": "Preskoči na vsebino",
+    "theme": {
+      "label": "Tema",
+      "light": "Svetla",
+      "dark": "Temna",
+      "system": "Sistem"
+    }
   },
   "hr": {
     "name": "Hrvatski",
@@ -996,7 +1176,7 @@
     "sph": "Jedan način. Nula iznimaka.",
     "mh": {
       "badge": "NOVO",
-      "title": "Minimalistička Naslovna Stranica",
+      "title": "Minimalistička YouTube naslovnica",
       "body": "Pretvorite svoju YouTube naslovnu stranicu u čist, centriran zaslon za pretraživanje: pravi YouTube logotip i stvarnu tražilicu, ništa drugo. Bez feeda, bez ometanja—pretražite ono što ste tražili i idite dalje."
     },
     "pv": {
@@ -1005,7 +1185,19 @@
       "b": "Bez praćenja",
       "c": "Otvoreni kod"
     },
-    "rv": "recenzija"
+    "rv": "recenzija",
+    "rvh": "Što kažu korisnici",
+    "tag": {
+      "a": "Došao si zbog jednog videa.",
+      "b": "Sada odlaziš nakon jednog videa."
+    },
+    "skip": "Prijeđi na sadržaj",
+    "theme": {
+      "label": "Tema",
+      "light": "Svijetla",
+      "dark": "Tamna",
+      "system": "Sustav"
+    }
   },
   "sr": {
     "name": "Српски",
@@ -1059,7 +1251,7 @@
     "sph": "Jedan režim. Nula izuzetaka.",
     "mh": {
       "badge": "NOVO",
-      "title": "Minimalistička Početna Strana",
+      "title": "Minimalistička YouTube početna strana",
       "body": "Pretvorite svoju YouTube početnu stranu u čist, centriran ekran za pretragu: pravi YouTube logotip i pravu traku za pretragu, ništa drugo. Bez feed-a, bez ometanja—pretražite ono što ste tražili i idite dalje."
     },
     "pv": {
@@ -1068,7 +1260,19 @@
       "b": "Bez praćenja",
       "c": "Otvoreni kod"
     },
-    "rv": "recenzija"
+    "rv": "recenzija",
+    "rvh": "Šta kažu korisnici",
+    "tag": {
+      "a": "Došao si zbog jednog videa.",
+      "b": "Sada odlaziš posle jednog videa."
+    },
+    "skip": "Pređi na sadržaj",
+    "theme": {
+      "label": "Tema",
+      "light": "Svetla",
+      "dark": "Tamna",
+      "system": "Sistem"
+    }
   },
   "ru": {
     "name": "Русский",
@@ -1122,7 +1326,7 @@
     "sph": "Один режим. Никаких исключений.",
     "mh": {
       "badge": "НОВОЕ",
-      "title": "Минималистичная главная страница",
+      "title": "Минималистичная главная страница YouTube",
       "body": "Превратите главную страницу YouTube в чистый, центрированный экран поиска: настоящий логотип YouTube и подлинная строка поиска — и больше ничего. Никакой ленты, никаких отвлечений — ищите то, за чем пришли, и уходите."
     },
     "pv": {
@@ -1131,7 +1335,19 @@
       "b": "Без слежки",
       "c": "Открытый код"
     },
-    "rv": "отзывов"
+    "rv": "отзывов",
+    "rvh": "Что говорят пользователи",
+    "tag": {
+      "a": "Вы пришли за одним видео.",
+      "b": "Теперь вы уходите после одного."
+    },
+    "skip": "Перейти к содержимому",
+    "theme": {
+      "label": "Тема",
+      "light": "Светлая",
+      "dark": "Тёмная",
+      "system": "Системная"
+    }
   },
   "el": {
     "name": "Ελληνικά",
@@ -1185,7 +1401,7 @@
     "sph": "Μία λειτουργία. Καμία εξαίρεση.",
     "mh": {
       "badge": "ΝΕΟ",
-      "title": "Μινιμαλιστική Αρχική Σελίδα",
+      "title": "Μια μινιμαλιστική αρχική σελίδα YouTube",
       "body": "Μετατρέψτε την αρχική σελίδα του YouTube σε μια καθαρή, κεντραρισμένη οθόνη αναζήτησης: το πραγματικό λογότυπο του YouTube και η γνήσια μπάρα αναζήτησης, τίποτα άλλο. Χωρίς feed, χωρίς περισπασμούς—αναζητήστε αυτό που ήρθατε να βρείτε και συνεχίστε."
     },
     "pv": {
@@ -1194,7 +1410,19 @@
       "b": "Καμία παρακολούθηση",
       "c": "Ανοιχτός κώδικας"
     },
-    "rv": "κριτικές"
+    "rv": "κριτικές",
+    "rvh": "Τι λένε οι χρήστες",
+    "tag": {
+      "a": "Ήρθες για ένα βίντεο.",
+      "b": "Τώρα φεύγεις μετά από ένα βίντεο."
+    },
+    "skip": "Μετάβαση στο περιεχόμενο",
+    "theme": {
+      "label": "Θέμα",
+      "light": "Φωτεινό",
+      "dark": "Σκούρο",
+      "system": "Σύστημα"
+    }
   },
   "tr": {
     "name": "Türkçe",
@@ -1248,7 +1476,7 @@
     "sph": "Tek bir mod. Sıfır istisna.",
     "mh": {
       "badge": "YENİ",
-      "title": "Minimalist Ana Sayfa",
+      "title": "Minimalist bir YouTube ana sayfası",
       "body": "YouTube ana sayfanızı sade, ortalanmış bir arama ekranına dönüştürün: gerçek YouTube logosu ve gerçek arama çubuğu, başka hiçbir şey yok. Akış yok, dikkat dağıtıcı şey yok—aradığınızı arayın ve gidin."
     },
     "pv": {
@@ -1257,7 +1485,19 @@
       "b": "Takip yok",
       "c": "Açık kaynak"
     },
-    "rv": "değerlendirme"
+    "rv": "değerlendirme",
+    "rvh": "Kullanıcılar ne diyor",
+    "tag": {
+      "a": "Tek bir video için geldin.",
+      "b": "Artık bir videodan sonra çıkıyorsun."
+    },
+    "skip": "İçeriğe geç",
+    "theme": {
+      "label": "Tema",
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    }
   },
   "hu": {
     "name": "Magyar",
@@ -1311,7 +1551,7 @@
     "sph": "Egy mód. Nulla kivétel.",
     "mh": {
       "badge": "ÚJ",
-      "title": "Minimalista kezdőlap",
+      "title": "Minimalista YouTube kezdőlap",
       "body": "Alakítsd át a YouTube kezdőlapját egy letisztult, középre igazított keresőképernyővé: az igazi YouTube logó és a valódi keresősáv, semmi más. Nincs hírfolyam, nincs elterelés—keresd meg, amit akarsz, és indulj tovább."
     },
     "pv": {
@@ -1320,7 +1560,19 @@
       "b": "Nincs követés",
       "c": "Nyílt forráskód"
     },
-    "rv": "értékelés"
+    "rv": "értékelés",
+    "rvh": "Mit mondanak a felhasználók",
+    "tag": {
+      "a": "Egy videóért jöttél.",
+      "b": "Most egy videó után távozol."
+    },
+    "skip": "Ugrás a tartalomra",
+    "theme": {
+      "label": "Téma",
+      "light": "Világos",
+      "dark": "Sötét",
+      "system": "Rendszer"
+    }
   },
   "et": {
     "name": "Eesti",
@@ -1374,7 +1626,7 @@
     "sph": "Üks režiim. Null erandit.",
     "mh": {
       "badge": "UUS",
-      "title": "Minimalistlik Avaleht",
+      "title": "Minimalistlik YouTube'i avaleht",
       "body": "Muuda oma YouTube'i avaleht puhtaks, keskele paigutatud otsinguekraaniks: päris YouTube'i logo ja tõeline otsinguriba, mitte midagi muud. Ei mingit voogu, ei mingit hajutamist — otsi, mida vajad, ja liigu edasi."
     },
     "pv": {
@@ -1383,7 +1635,19 @@
       "b": "Jälgimist pole",
       "c": "Avatud lähtekood"
     },
-    "rv": "arvustust"
+    "rv": "arvustust",
+    "rvh": "Mida kasutajad ütlevad",
+    "tag": {
+      "a": "Tulid ühe video pärast.",
+      "b": "Nüüd lahkud pärast üht videot."
+    },
+    "skip": "Liigu sisu juurde",
+    "theme": {
+      "label": "Teema",
+      "light": "Hele",
+      "dark": "Tume",
+      "system": "Süsteem"
+    }
   },
   "lv": {
     "name": "Latviešu",
@@ -1437,7 +1701,7 @@
     "sph": "Viens režīms. Nulle izņēmumu.",
     "mh": {
       "badge": "JAUNS",
-      "title": "Minimālistiska Sākumlapa",
+      "title": "Minimālistiska YouTube sākumlapa",
       "body": "Pārveidojiet savu YouTube sākumlapu par tīru, centrētu meklēšanas ekrānu: īsto YouTube logotipu un patieso meklēšanas joslu, neko citu. Bez plūsmas, bez novēršanas—meklējiet to, pēc kā atnācāt, un dodieties tālāk."
     },
     "pv": {
@@ -1446,7 +1710,19 @@
       "b": "Bez izsekošanas",
       "c": "Atvērtais kods"
     },
-    "rv": "atsauksmes"
+    "rv": "atsauksmes",
+    "rvh": "Ko saka lietotāji",
+    "tag": {
+      "a": "Tu atnāci uz vienu video.",
+      "b": "Tagad tu aizej pēc viena video."
+    },
+    "skip": "Pāriet uz saturu",
+    "theme": {
+      "label": "Motīvs",
+      "light": "Gaišs",
+      "dark": "Tumšs",
+      "system": "Sistēmas"
+    }
   },
   "lt": {
     "name": "Lietuvių",
@@ -1500,7 +1776,7 @@
     "sph": "Vienas režimas. Jokių išimčių.",
     "mh": {
       "badge": "NAUJA",
-      "title": "Minimalistinis Pradžios Puslapis",
+      "title": "Minimalistinis YouTube pradžios puslapis",
       "body": "Paverskite savo YouTube pradžios puslapį švariu, centruotu paieškos ekranu: tikrą YouTube logotipą ir tikrą paieškos juostą, nieko daugiau. Jokio srauto, jokių blaškymosi—susiraskite, ko atėjote, ir eikite toliau."
     },
     "pv": {
@@ -1509,7 +1785,19 @@
       "b": "Jokio sekimo",
       "c": "Atviras kodas"
     },
-    "rv": "atsiliepimų"
+    "rv": "atsiliepimų",
+    "rvh": "Ką sako naudotojai",
+    "tag": {
+      "a": "Atėjai dėl vieno vaizdo įrašo.",
+      "b": "Dabar išeini po vieno."
+    },
+    "skip": "Pereiti prie turinio",
+    "theme": {
+      "label": "Tema",
+      "light": "Šviesi",
+      "dark": "Tamsi",
+      "system": "Sistemos"
+    }
   },
   "sv": {
     "name": "Svenska",
@@ -1563,7 +1851,7 @@
     "sph": "Ett läge. Inga undantag.",
     "mh": {
       "badge": "NYTT",
-      "title": "Minimalistisk Startsida",
+      "title": "En minimalistisk YouTube-startsida",
       "body": "Gör din YouTube-startsida till en ren, centrerad sökskärm: den riktiga YouTube-logotypen och det äkta sökfältet, inget annat. Inget flöde, inga distraktioner—sök efter det du kom för och gå vidare."
     },
     "pv": {
@@ -1572,7 +1860,19 @@
       "b": "Ingen spårning",
       "c": "Öppen källkod"
     },
-    "rv": "recensioner"
+    "rv": "recensioner",
+    "rvh": "Vad användarna säger",
+    "tag": {
+      "a": "Du kom för en video.",
+      "b": "Nu går du efter en video."
+    },
+    "skip": "Hoppa till innehåll",
+    "theme": {
+      "label": "Tema",
+      "light": "Ljust",
+      "dark": "Mörkt",
+      "system": "System"
+    }
   },
   "no": {
     "name": "Norsk",
@@ -1626,7 +1926,7 @@
     "sph": "Én modus. Ingen unntak.",
     "mh": {
       "badge": "NYTT",
-      "title": "Minimalistisk Hjemmeside",
+      "title": "En minimalistisk YouTube-hjemmeside",
       "body": "Gjør YouTube-hjemmesiden din om til en ren, sentrert søkeskjerm: den ekte YouTube-logoen og den ekte søkelinjen, ingenting annet. Ingen feed, ingen distraksjoner—søk etter det du kom for, og gå videre."
     },
     "pv": {
@@ -1635,7 +1935,19 @@
       "b": "Ingen sporing",
       "c": "Åpen kildekode"
     },
-    "rv": "anmeldelser"
+    "rv": "anmeldelser",
+    "rvh": "Hva brukerne sier",
+    "tag": {
+      "a": "Du kom for én video.",
+      "b": "Nå går du etter én video."
+    },
+    "skip": "Hopp til innhold",
+    "theme": {
+      "label": "Tema",
+      "light": "Lyst",
+      "dark": "Mørkt",
+      "system": "System"
+    }
   },
   "da": {
     "name": "Dansk",
@@ -1689,7 +2001,7 @@
     "sph": "Én tilstand. Ingen undtagelser.",
     "mh": {
       "badge": "NYT",
-      "title": "Minimalistisk Startside",
+      "title": "En minimalistisk YouTube-startside",
       "body": "Forvandl din YouTube-startside til en ren, centreret søgeskærm: det rigtige YouTube-logo og den ægte søgelinje, intet andet. Ingen feed, ingen distraktioner — søg efter det, du kom for, og gå videre."
     },
     "pv": {
@@ -1698,7 +2010,19 @@
       "b": "Ingen sporing",
       "c": "Open source"
     },
-    "rv": "anmeldelser"
+    "rv": "anmeldelser",
+    "rvh": "Hvad brugerne siger",
+    "tag": {
+      "a": "Du kom for én video.",
+      "b": "Nu går du efter én video."
+    },
+    "skip": "Spring til indhold",
+    "theme": {
+      "label": "Tema",
+      "light": "Lyst",
+      "dark": "Mørkt",
+      "system": "System"
+    }
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1752,7 +2076,7 @@
     "sph": "Satu mode. Tanpa pengecualian.",
     "mh": {
       "badge": "BARU",
-      "title": "Beranda Minimalis",
+      "title": "Beranda YouTube yang minimalis",
       "body": "Ubah beranda YouTube Anda menjadi layar pencarian yang bersih dan terpusat: logo YouTube asli dan kolom pencarian asli, tanpa yang lain. Tanpa feed, tanpa distraksi—cari yang Anda butuhkan lalu pergi."
     },
     "pv": {
@@ -1761,7 +2085,19 @@
       "b": "Tanpa pelacakan",
       "c": "Sumber terbuka"
     },
-    "rv": "ulasan"
+    "rv": "ulasan",
+    "rvh": "Kata pengguna",
+    "tag": {
+      "a": "Kamu datang untuk satu video.",
+      "b": "Sekarang kamu pergi setelah satu video."
+    },
+    "skip": "Lewati ke konten",
+    "theme": {
+      "label": "Tema",
+      "light": "Terang",
+      "dark": "Gelap",
+      "system": "Sistem"
+    }
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1815,7 +2151,7 @@
     "sph": "Satu mod. Tiada pengecualian.",
     "mh": {
       "badge": "BAHARU",
-      "title": "Halaman Utama Minimalis",
+      "title": "Halaman utama YouTube yang minimalis",
       "body": "Ubah halaman utama YouTube anda kepada skrin carian yang bersih dan berpusat: logo YouTube sebenar dan bar carian sebenar, tiada apa-apa lagi. Tiada suapan, tiada gangguan—cari apa yang anda perlukan dan teruskan."
     },
     "pv": {
@@ -1824,7 +2160,19 @@
       "b": "Tiada penjejakan",
       "c": "Sumber terbuka"
     },
-    "rv": "ulasan"
+    "rv": "ulasan",
+    "rvh": "Apa kata pengguna",
+    "tag": {
+      "a": "Anda datang untuk satu video.",
+      "b": "Kini anda pergi selepas satu video."
+    },
+    "skip": "Langkau ke kandungan",
+    "theme": {
+      "label": "Tema",
+      "light": "Cerah",
+      "dark": "Gelap",
+      "system": "Sistem"
+    }
   },
   "fil": {
     "name": "Filipino",
@@ -1878,7 +2226,7 @@
     "sph": "Isang mode. Walang exception.",
     "mh": {
       "badge": "BAGO",
-      "title": "Minimalist na Home Page",
+      "title": "Isang minimalist na home page ng YouTube",
       "body": "Gawing malinis at nakasentrong search screen ang iyong YouTube homepage: ang totoong logo ng YouTube at tunay na search bar, wala nang iba pa. Walang feed, walang pagka-distract—i-search ang hinahanap mo at umalis na."
     },
     "pv": {
@@ -1887,7 +2235,19 @@
       "b": "Walang pagsubaybay",
       "c": "Open source"
     },
-    "rv": "review"
+    "rv": "review",
+    "rvh": "Ang sinasabi ng mga gumagamit",
+    "tag": {
+      "a": "Pumunta ka para sa isang video.",
+      "b": "Ngayon umaalis ka pagkatapos ng isa."
+    },
+    "skip": "Lumaktaw sa nilalaman",
+    "theme": {
+      "label": "Tema",
+      "light": "Maliwanag",
+      "dark": "Madilim",
+      "system": "Sistema"
+    }
   },
   "ja": {
     "name": "日本語",
@@ -1941,7 +2301,7 @@
     "sph": "1つのモードだけ。例外なし。",
     "mh": {
       "badge": "新機能",
-      "title": "ミニマルなホームページ",
+      "title": "ミニマルなYouTubeホーム画面",
       "body": "YouTubeのホームページを、すっきりと中央に配置された検索画面に変えます。本物のYouTubeロゴと本物の検索バーだけ、それ以外は何もありません。フィードなし、寄り道なし——検索して、すぐに立ち去りましょう。"
     },
     "pv": {
@@ -1950,7 +2310,19 @@
       "b": "追跡なし",
       "c": "オープンソース"
     },
-    "rv": "件のレビュー"
+    "rv": "件のレビュー",
+    "rvh": "利用者の声",
+    "tag": {
+      "a": "1本の動画のために来た。",
+      "b": "1本見たら、もう帰れる。"
+    },
+    "skip": "本文へスキップ",
+    "theme": {
+      "label": "テーマ",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    }
   },
   "ko": {
     "name": "한국어",
@@ -2004,7 +2376,7 @@
     "sph": "하나의 모드. 예외 없음.",
     "mh": {
       "badge": "새로운 기능",
-      "title": "미니멀 홈페이지",
+      "title": "미니멀한 YouTube 홈 화면",
       "body": "YouTube 홈페이지를 깔끔하고 중앙에 배치된 검색 화면으로 바꿔보세요. 진짜 YouTube 로고와 진짜 검색창, 그게 전부예요. 피드도 없고 다른 길로 새지도 않아요—찾던 것을 검색하고 바로 떠나세요."
     },
     "pv": {
@@ -2013,7 +2385,19 @@
       "b": "추적 없음",
       "c": "오픈 소스"
     },
-    "rv": "개의 리뷰"
+    "rv": "개의 리뷰",
+    "rvh": "사용자 후기",
+    "tag": {
+      "a": "영상 하나를 보러 왔습니다.",
+      "b": "이제 하나만 보고 나갑니다."
+    },
+    "skip": "본문으로 건너뛰기",
+    "theme": {
+      "label": "테마",
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    }
   },
   "he": {
     "name": "עברית",
@@ -2068,7 +2452,7 @@
     "sph": "מצב אחד. בלי יוצאים מן הכלל.",
     "mh": {
       "badge": "חדש",
-      "title": "דף בית מינימליסטי",
+      "title": "דף בית מינימליסטי של YouTube",
       "body": "הפכו את דף הבית של YouTube למסך חיפוש נקי וממורכז: הלוגו האמיתי של YouTube ושורת החיפוש האמיתית, שום דבר אחר. בלי פיד, בלי הסחות דעת—חפשו את מה שבאתם למצוא ותמשיכו הלאה."
     },
     "pv": {
@@ -2077,7 +2461,19 @@
       "b": "ללא מעקב",
       "c": "קוד פתוח"
     },
-    "rv": "ביקורות"
+    "rv": "ביקורות",
+    "rvh": "מה אומרים המשתמשים",
+    "tag": {
+      "a": "באת בשביל סרטון אחד.",
+      "b": "עכשיו אתה יוצא אחרי אחד."
+    },
+    "skip": "דלג לתוכן",
+    "theme": {
+      "label": "ערכת נושא",
+      "light": "בהיר",
+      "dark": "כהה",
+      "system": "מערכת"
+    }
   },
   "ar": {
     "name": "العربية",
@@ -2132,7 +2528,7 @@
     "sph": "وضع واحد فقط. بلا استثناءات.",
     "mh": {
       "badge": "جديد",
-      "title": "الصفحة الرئيسية البسيطة",
+      "title": "صفحة يوتيوب رئيسية بسيطة",
       "body": "حوّل صفحتك الرئيسية على يوتيوب إلى شاشة بحث نظيفة وفي المنتصف: شعار يوتيوب الحقيقي وشريط البحث الأصلي، لا شيء آخر. بلا خلاصة، بلا تشتت—ابحث عمّا أتيت من أجله وارحل."
     },
     "pv": {
@@ -2141,7 +2537,19 @@
       "b": "بدون تتبع",
       "c": "مفتوح المصدر"
     },
-    "rv": "مراجعة"
+    "rv": "مراجعة",
+    "rvh": "ماذا يقول المستخدمون",
+    "tag": {
+      "a": "جئت لمشاهدة مقطع واحد.",
+      "b": "الآن تغادر بعد مقطع واحد."
+    },
+    "skip": "تخطَّ إلى المحتوى",
+    "theme": {
+      "label": "المظهر",
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    }
   },
   "fa": {
     "name": "فارسی",
@@ -2196,7 +2604,7 @@
     "sph": "یک حالت. بدون استثنا.",
     "mh": {
       "badge": "جدید",
-      "title": "صفحه اصلی مینیمال",
+      "title": "یک صفحه اصلی مینیمال یوتیوب",
       "body": "صفحه اصلی یوتیوب خود را به یک صفحه جستجوی تمیز و مرکزی تبدیل کنید: لوگوی واقعی یوتیوب و نوار جستجوی اصلی، و بس. بدون فید، بدون حواس‌پرتی—آنچه را که به دنبالش آمده‌اید جستجو کنید و بروید."
     },
     "pv": {
@@ -2205,7 +2613,19 @@
       "b": "بدون ردیابی",
       "c": "متن‌باز"
     },
-    "rv": "نظر"
+    "rv": "نظر",
+    "rvh": "کاربران چه می‌گویند",
+    "tag": {
+      "a": "برای یک ویدیو آمدی.",
+      "b": "حالا بعد از یک ویدیو می‌روی."
+    },
+    "skip": "پرش به محتوا",
+    "theme": {
+      "label": "پوسته",
+      "light": "روشن",
+      "dark": "تیره",
+      "system": "سیستم"
+    }
   },
   "hi": {
     "name": "हिन्दी",
@@ -2259,7 +2679,7 @@
     "sph": "एक मोड। कोई अपवाद नहीं।",
     "mh": {
       "badge": "नया",
-      "title": "मिनिमलिस्ट होम पेज",
+      "title": "एक मिनिमलिस्ट YouTube होम पेज",
       "body": "अपने YouTube होम पेज को एक साफ़, केंद्रित सर्च स्क्रीन में बदलें: असली YouTube लोगो और असली सर्च बार, बस इतना ही। कोई फीड नहीं, कोई भटकाव नहीं—जो खोजना है वो खोजें और आगे बढ़ें।"
     },
     "pv": {
@@ -2268,7 +2688,19 @@
       "b": "कोई ट्रैकिंग नहीं",
       "c": "ओपन सोर्स"
     },
-    "rv": "समीक्षाएँ"
+    "rv": "समीक्षाएँ",
+    "rvh": "लोग क्या कहते हैं",
+    "tag": {
+      "a": "आप एक वीडियो के लिए आए थे।",
+      "b": "अब आप एक के बाद चले जाते हैं।"
+    },
+    "skip": "सामग्री पर जाएं",
+    "theme": {
+      "label": "थीम",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम"
+    }
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2322,7 +2754,7 @@
     "sph": "એક મોડ. કોઈ અપવાદ નહીં.",
     "mh": {
       "badge": "નવું",
-      "title": "મિનિમલિસ્ટ હોમ પેજ",
+      "title": "એક મિનિમલિસ્ટ YouTube હોમ પેજ",
       "body": "તમારું YouTube હોમ પેજ હવે સરળ છે: ફક્ત લોગો અને સર્ચ બાર."
     },
     "pv": {
@@ -2331,7 +2763,19 @@
       "b": "કોઈ ટ્રેકિંગ નથી",
       "c": "ઓપન સોર્સ"
     },
-    "rv": "સમીક્ષાઓ"
+    "rv": "સમીક્ષાઓ",
+    "rvh": "લોકો શું કહે છે",
+    "tag": {
+      "a": "તમે એક વીડિયો માટે આવ્યા હતા.",
+      "b": "હવે તમે એક પછી નીકળી જાઓ છો."
+    },
+    "skip": "સામગ્રી પર જાઓ",
+    "theme": {
+      "label": "થીમ",
+      "light": "લાઇટ",
+      "dark": "ડાર્ક",
+      "system": "સિસ્ટમ"
+    }
   },
   "mr": {
     "name": "मराठी",
@@ -2385,7 +2829,7 @@
     "sph": "एक मोड. अपवाद नाही.",
     "mh": {
       "badge": "नवीन",
-      "title": "मिनिमलिस्ट मुख्यपृष्ठ",
+      "title": "एक मिनिमलिस्ट YouTube होम पेज",
       "body": "तुमचे YouTube मुख्यपृष्ठ स्वच्छ, केंद्रित शोध स्क्रीनमध्ये बदला: खरा YouTube लोगो आणि खरी शोध पट्टी, दुसरे काहीही नाही. फीड नाही, विचलन नाही."
     },
     "pv": {
@@ -2394,7 +2838,19 @@
       "b": "ट्रॅकिंग नाही",
       "c": "ओपन सोर्स"
     },
-    "rv": "पुनरावलोकने"
+    "rv": "पुनरावलोकने",
+    "rvh": "लोक काय म्हणतात",
+    "tag": {
+      "a": "तुम्ही एका व्हिडिओसाठी आलात.",
+      "b": "आता तुम्ही एकानंतर निघता."
+    },
+    "skip": "मजकुरावर जा",
+    "theme": {
+      "label": "थीम",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम"
+    }
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2448,7 +2904,7 @@
     "sph": "ಒಂದೇ ಮೋಡ್. ಯಾವುದೇ ವಿನಾಯಿತಿ ಇಲ್ಲ.",
     "mh": {
       "badge": "ಹೊಸದು",
-      "title": "ಮಿನಿಮಲಿಸ್ಟ್ ಮುಖ್ಯ ಪುಟ",
+      "title": "ಸರಳ YouTube ಮುಖಪುಟ",
       "body": "ನಿಮ್ಮ YouTube ಮುಖ್ಯ ಪುಟ ಈಗ ಸರಳವಾಗಿದೆ: ಲೋಗೋ ಮತ್ತು ಹುಡುಕಾಟ ಪಟ್ಟಿ ಮಾತ್ರ."
     },
     "pv": {
@@ -2457,7 +2913,19 @@
       "b": "ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ",
       "c": "ಓಪನ್ ಸೋರ್ಸ್"
     },
-    "rv": "ವಿಮರ್ಶೆಗಳು"
+    "rv": "ವಿಮರ್ಶೆಗಳು",
+    "rvh": "ಜನರು ಏನು ಹೇಳುತ್ತಾರೆ",
+    "tag": {
+      "a": "ನೀವು ಒಂದು ವೀಡಿಯೊಗಾಗಿ ಬಂದಿರಿ.",
+      "b": "ಈಗ ಒಂದಾದ ನಂತರ ಹೊರಡುತ್ತೀರಿ."
+    },
+    "skip": "ವಿಷಯಕ್ಕೆ ಹೋಗಿ",
+    "theme": {
+      "label": "ಥೀಮ್",
+      "light": "ಲೈಟ್",
+      "dark": "ಡಾರ್ಕ್",
+      "system": "ಸಿಸ್ಟಂ"
+    }
   },
   "ta": {
     "name": "தமிழ்",
@@ -2511,7 +2979,7 @@
     "sph": "ஒரே ஒரு பயன்முறை. விதிவிலக்கு இல்லை.",
     "mh": {
       "badge": "புதியது",
-      "title": "எளிமையான முகப்புப் பக்கம்",
+      "title": "எளிமையான YouTube முகப்புப் பக்கம்",
       "body": "உங்கள் YouTube முகப்புப் பக்கம் இப்போது எளிமையானது: லோகோ மற்றும் தேடல் பட்டை மட்டும்."
     },
     "pv": {
@@ -2520,7 +2988,19 @@
       "b": "கண்காணிப்பு இல்லை",
       "c": "ஓபன் சோர்ஸ்"
     },
-    "rv": "மதிப்புரைகள்"
+    "rv": "மதிப்புரைகள்",
+    "rvh": "பயனர்கள் என்ன சொல்கிறார்கள்",
+    "tag": {
+      "a": "ஒரு வீடியோவுக்காக வந்தீர்கள்.",
+      "b": "இப்போது ஒன்றுக்குப் பிறகு செல்கிறீர்கள்."
+    },
+    "skip": "உள்ளடக்கத்திற்குச் செல்",
+    "theme": {
+      "label": "தீம்",
+      "light": "ஒளி",
+      "dark": "இருள்",
+      "system": "கணினி"
+    }
   },
   "te": {
     "name": "తెలుగు",
@@ -2574,7 +3054,7 @@
     "sph": "ఒకే మోడ్. మినహాయింపులు లేవు.",
     "mh": {
       "badge": "కొత్తది",
-      "title": "మినిమలిస్ట్ హోమ్ పేజీ",
+      "title": "సరళమైన YouTube హోమ్ పేజీ",
       "body": "మీ YouTube హోమ్ పేజీ ఇప్పుడు సరళంగా ఉంది: లోగో మరియు సెర్చ్ బార్ మాత్రమే."
     },
     "pv": {
@@ -2583,7 +3063,19 @@
       "b": "ట్రాకింగ్ లేదు",
       "c": "ఓపెన్ సోర్స్"
     },
-    "rv": "సమీక్షలు"
+    "rv": "సమీక్షలు",
+    "rvh": "వినియోగదారులు ఏమంటున్నారు",
+    "tag": {
+      "a": "మీరు ఒక వీడియో కోసం వచ్చారు.",
+      "b": "ఇప్పుడు ఒకటి చూసి వెళ్లిపోతారు."
+    },
+    "skip": "కంటెంట్‌కు వెళ్లండి",
+    "theme": {
+      "label": "థీమ్",
+      "light": "లైట్",
+      "dark": "డార్క్",
+      "system": "సిస్టమ్"
+    }
   },
   "sw": {
     "name": "Kiswahili",
@@ -2637,7 +3129,7 @@
     "sph": "Hali moja. Bila ubaguzi.",
     "mh": {
       "badge": "MPYA",
-      "title": "Ukurasa wa Nyumbani wa Minimalisti",
+      "title": "Ukurasa wa nyumbani wa YouTube ulio rahisi",
       "body": "Geuza ukurasa wako wa nyumbani wa YouTube kuwa skrini safi, iliyo katikati ya utafutaji: nembo halisi ya YouTube na upau halisi wa utafutaji, hakuna kingine. Hakuna mpasho, hakuna vikengeushi—tafuta ulichokuja kutafuta kisha uondoke."
     },
     "pv": {
@@ -2646,7 +3138,19 @@
       "b": "Hakuna ufuatiliaji",
       "c": "Chanzo huria"
     },
-    "rv": "maoni"
+    "rv": "maoni",
+    "rvh": "Watumiaji wanasema nini",
+    "tag": {
+      "a": "Ulikuja kwa video moja.",
+      "b": "Sasa unaondoka baada ya moja."
+    },
+    "skip": "Rukia maudhui",
+    "theme": {
+      "label": "Mandhari",
+      "light": "Nuru",
+      "dark": "Giza",
+      "system": "Mfumo"
+    }
   },
   "am": {
     "name": "አማርኛ",
@@ -2700,7 +3204,7 @@
     "sph": "አንድ ሁነታ ብቻ። ምንም ልዩነት የለም።",
     "mh": {
       "badge": "አዲስ",
-      "title": "ቀላል የመነሻ ገጽ",
+      "title": "ቀላል የYouTube መነሻ ገጽ",
       "body": "የYouTube መነሻ ገጽ ቀላል ሆነ፦ አርማ እና አሞሌ ብቻ ይታያሉ፣ ሌላ ምንም የለም።"
     },
     "pv": {
@@ -2709,6 +3213,18 @@
       "b": "ክትትል የለም",
       "c": "ክፍት ምንጭ"
     },
-    "rv": "ግምገማዎች"
+    "rv": "ግምገማዎች",
+    "rvh": "ተጠቃሚዎች ምን ይላሉ",
+    "tag": {
+      "a": "ለአንድ ቪዲዮ መጣህ።",
+      "b": "አሁን ከአንድ በኋላ ትወጣለህ።"
+    },
+    "skip": "ወደ ይዘቱ ዝለል",
+    "theme": {
+      "label": "ገጽታ",
+      "light": "ብሩህ",
+      "dark": "ጨለማ",
+      "system": "ሲስተም"
+    }
   }
 }

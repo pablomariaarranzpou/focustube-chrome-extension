@@ -133,9 +133,21 @@
   ]
 }
   </script>
+  <script>
+    /* Runs before paint: a stored choice must not flash the other theme. */
+    (function () {
+      try {
+        var t = localStorage.getItem('ft-theme');
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
   <header>
     <div class="wrap">
       <a href="../" class="brand">
@@ -146,11 +158,28 @@
         <a href="#minimalist-home">الميزات</a>
         <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">تثبيت</a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">GitHub</a>
+        <div class="theme-switch" role="group" aria-label="المظهر">
+          <button type="button" data-theme-set="light" aria-label="فاتح" title="فاتح">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+            </svg>
+          </button>
+          <button type="button" data-theme-set="dark" aria-label="داكن" title="داكن">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 13.5A8.2 8.2 0 0 1 10.5 4a8.5 8.5 0 1 0 9.5 9.5Z"/>
+            </svg>
+          </button>
+          <button type="button" data-theme-set="system" aria-label="النظام" title="النظام">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/>
+            </svg>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <section class="hero">
     <div class="wrap hero-grid">
@@ -222,7 +251,7 @@
   </section>
 
   <!-- ---- Headline new feature, shipped in the version the manifest advertises ---- -->
-  <section class="newfeat" id="minimalist-home">
+  <section class="newfeat" data-reveal id="minimalist-home">
     <div class="wrap">
       <div class="newfeat-grid">
         <div class="newfeat-copy">
@@ -230,7 +259,7 @@
             <span class="newfeat-tag">جديد</span>
             <span class="newfeat-ver">v2.5.6</span>
           </p>
-          <h2>الصفحة الرئيسية البسيطة</h2>
+          <h2>صفحة يوتيوب رئيسية بسيطة</h2>
           <p class="newfeat-lead">حوّل صفحتك الرئيسية على يوتيوب إلى شاشة بحث نظيفة وفي المنتصف: شعار يوتيوب الحقيقي وشريط البحث الأصلي، لا شيء آخر. بلا خلاصة، بلا تشتت—ابحث عمّا أتيت من أجله وارحل.</p>
           <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
             <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
@@ -245,7 +274,7 @@
         </div>
 
         <figure class="newfeat-demo">
-          <div class="mh-window" dir="ltr" role="img" aria-label="الصفحة الرئيسية البسيطة">
+          <div class="mh-window" dir="ltr" role="img" aria-label="صفحة يوتيوب رئيسية بسيطة">
             <div class="yt-titlebar">
               <span class="yt-dot"></span><span class="yt-dot"></span><span class="yt-dot"></span>
               <span class="yt-url">youtube.com</span>
@@ -314,7 +343,7 @@
                 <span class="ext-name">FocusTube</span>
               </div>
               <div class="mh-row">
-                <span class="mh-row-label">الصفحة الرئيسية البسيطة</span>
+                <span class="mh-row-label">صفحة يوتيوب رئيسية بسيطة</span>
                 <span class="mh-switch"><span class="mh-knob"></span></span>
               </div>
             </div>
@@ -328,9 +357,9 @@
   <!-- Privacy: the permissions are shown verbatim because they are the proof,
        and because a permission name is the same string in every language. -->
 
-  <section class="spotlight">
+  <section class="spotlight" data-reveal>
     <div class="wrap">
-      <span class="kicker kicker-light">⏱️ وضع التركيز</span>
+      <span class="kicker kicker-light kicker-pill">وضع التركيز</span>
       <h2>وضع واحد فقط. بلا استثناءات.</h2>
       <p class="spotlight-lead">جلسات بمؤقت مع فترات راحة، أو وضع سريع بلا مؤقت.</p>
 
@@ -432,11 +461,9 @@
               <span class="ext-name">FocusTube</span>
             </div>
             <div class="ext-tabs"><span class="ext-tab is-active"></span><span class="ext-tab"></span></div>
-            <div class="ext-modes">
-              <span class="ext-mode">متوقف</span>
-              <span class="ext-mode ext-mode-on">دائمًا</span>
-              <span class="ext-mode">مؤقت</span>
-              <span class="ext-mode">جدول</span>
+            <div class="ext-list">
+              <span class="ext-row is-target"><i>بلا توصيات</i><b class="ext-tg"></b></span>
+              <span class="ext-row"><i>بلا تعليقات</i><b class="ext-tg"></b></span>
             </div>
           </div>
           <span class="yt-ripple yt-ripple-1"></span>
@@ -509,12 +536,10 @@
                <span class="ext-name">FocusTube</span>
              </div>
              <div class="ext-tabs"><span class="ext-tab is-active"></span><span class="ext-tab"></span></div>
-             <div class="ext-modes">
-               <span class="ext-mode">متوقف</span>
-               <span class="ext-mode ext-mode-on">دائمًا</span>
-               <span class="ext-mode">مؤقت</span>
-               <span class="ext-mode">جدول</span>
-             </div>
+             <div class="ext-list">
+              <span class="ext-row is-target"><i>إخفاء Shorts</i><b class="ext-tg"></b></span>
+              <span class="ext-row"><i>بلا تعليقات</i><b class="ext-tg"></b></span>
+            </div>
            </div>
            <span class="yt-ripple sh-ripple"></span>
            <span class="yt-ripple sh-ripple2"></span>
@@ -605,41 +630,81 @@
         <article class="demo-cap is-active">
           <span class="demo-cap-step"><b>1</b>/3</span>
           <div class="demo-cap-text">
-            <h3>بلا توصيات</h3>
             <p>يزيل الاقتراحات ومحتوى الصفحة الرئيسية لتجنب التمرير اللا نهائي.</p>
           </div>
         </article>
         <article class="demo-cap">
           <span class="demo-cap-step"><b>2</b>/3</span>
           <div class="demo-cap-text">
-            <h3>إخفاء Shorts</h3>
             <p>يزيل مقاطع Shorts من الصفحة الرئيسية والشريط الجانبي ونتائج البحث.</p>
           </div>
         </article>
         <article class="demo-cap">
           <span class="demo-cap-step"><b>3</b>/3</span>
           <div class="demo-cap-text">
-            <h3>القوائم السوداء</h3>
             <p>احظر قنوات أو كلمات محددة، مع زر سريع لإضافتها مباشرة من القائمة.</p>
           </div>
         </article>
       </div>
 
-      <div class="mode-row">
-        <div class="mode-pill"><span class="mode-name">متوقف</span></div>
-        <div class="mode-pill"><span class="mode-name">دائمًا</span></div>
-        <div class="mode-pill"><span class="mode-name">مؤقت</span></div>
-        <div class="mode-pill"><span class="mode-name">جدول</span></div>
+    </div>
+  </section>
+
+
+
+
+  <section class="reviews" data-reveal>
+    <div class="wrap">
+      <h2>ماذا يقول المستخدمون</h2>
+      <p class="reviews-lead">
+        <a href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <strong>4.8</strong> &middot; 29 مراجعة
+        </a>
+      </p>
+      <div class="rv-grid">
+        <figure class="rv-card">
+          <blockquote>Life changing</blockquote>
+          <figcaption><img class="rv-face" src="https://lh3.googleusercontent.com/a-/ALV-UjXgCftORp2drfQZmSjHFTlRRZvS31bJ0g_UZuk-C1jVfYjnQLDV=s48-w48-h48" alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-face rv-initials',textContent:'SG'}))" /><span>salvador gervilla</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>An amazing tool that definetly improves the youtube experience. Really good design and very useful. Congratulations!!!</blockquote>
+          <figcaption><span class="rv-face rv-initials" aria-hidden="true">RP</span><span>Rub&eacute;n Perales G&oacute;mez</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>Lifesaver!</blockquote>
+          <figcaption><img class="rv-face" src="https://lh3.googleusercontent.com/a-/ALV-UjVbu0UWe5NWv9br2Czq-z2E9HgZaFS4ZY2v0zoTIIKMLQxJVNA=s48-w48-h48" alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-face rv-initials',textContent:'ES'}))" /><span>Emir S.</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>Very usefull extension if you want to avoid unnecesary short videos from your youtube. Good job!</blockquote>
+          <figcaption><span class="rv-face rv-initials" aria-hidden="true">MZ</span><span>Mohsin Zaman</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>Such a productive extension</blockquote>
+          <figcaption><img class="rv-face" src="https://lh3.googleusercontent.com/a/ACg8ocLQHInDN49kXBJw34BnxZ4dBgeh_eSZBzU86O0cpq-wUdqqLg=s48-w48-h48" alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-face rv-initials',textContent:'V'}))" /><span>Vedhikha</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>Me ha ayudado a enfocarme mucho mejor en los cursos que estaba viendo en youtube, y ha evitado que me aparezcan videos enga&ntilde;osos de publicidad.</blockquote>
+          <figcaption><span class="rv-face rv-initials" aria-hidden="true">MP</span><span>Miguel Palos Pou</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>its amazing though to have to select every channel and word seperately is a bit hard IT TOTALLY WORKS THO</blockquote>
+          <figcaption><img class="rv-face" src="https://lh3.googleusercontent.com/a-/ALV-UjVFjGv-nXLUsTVS1Zi7gYYeb9pKiQXl5CL28QkBnnNZ13FDytfa=s48-w48-h48" alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-face rv-initials',textContent:'YR'}))" /><span>Yumi (Rose)</span></figcaption>
+        </figure>
+        <figure class="rv-card">
+          <blockquote>has a few quirks, but it&rsquo;s 5 stars extension. highly recommend!</blockquote>
+          <figcaption><span class="rv-face rv-initials" aria-hidden="true">CA</span><span>Corintio Ante</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="cta">
+  <section class="cta" data-reveal>
     <div class="wrap">
-      <div class="cta-card">
-        <h2>استعد السيطرة في ثوانٍ</h2>
-        <p>مجاني، بلا حساب، بلا أذونات غريبة. فقط أوقف ما يشتت انتباهك.</p>
-        <a class="btn btn-install" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
+      <p class="cta-tagline" data-reveal-words>جئت لمشاهدة مقطع واحد. الآن تغادر بعد مقطع واحد.</p>
+      <p class="cta-lead">مجاني، بلا حساب، بلا أذونات غريبة. فقط أوقف ما يشتت انتباهك.</p>
+
+      <a class="btn btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb" target="_blank" rel="noopener">
             <svg class="chrome-mark" viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false">
               <path fill="#EA4335" d="M3.22 12A24 24 0 0 1 44.78 12L24 24Z"/>
               <path fill="#FBBC05" d="M44.78 12A24 24 0 0 1 24 48L24 24Z"/>
@@ -649,7 +714,22 @@
             </svg>
             <span>أضف إلى كروم — مجانًا</span>
           </a>
-      </div>
+
+      <ul class="trust cta-trust">
+        <li>بدون حساب</li>
+        <li>بدون تتبع</li>
+        <li>مفتوح المصدر</li>
+      </ul>
+
+      <p class="proof cta-proof">
+        <a class="proof-rating" href="https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <strong>4.8</strong>
+          <span class="proof-muted">29 مراجعة</span>
+        </a>
+        <span class="proof-sep" aria-hidden="true"></span>
+        <span><strong>+4000</strong> <span class="proof-muted">مستخدم نشط</span></span>
+      </p>
     </div>
   </section>
 
@@ -779,5 +859,86 @@
       schedule();
     })();
   </script>
+
+<script>
+/* Motion: elements arrive rather than appear. IntersectionObserver only —
+   a scroll listener here would reflow on every frame on mobile. */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  // Split the tagline into words so each can activate on its own.
+  document.querySelectorAll('[data-reveal-words]').forEach(function (el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.textContent = '';
+    words.forEach(function (w, i) {
+      var span = document.createElement('span');
+      span.className = 'word';
+      span.textContent = w;
+      span.style.transitionDelay = (i * 55) + 'ms';
+      el.appendChild(span);
+      el.appendChild(document.createTextNode(' '));
+    });
+  });
+
+  if (reduce.matches) {
+    document.querySelectorAll('.word, [data-reveal]').forEach(function (el) {
+      el.classList.add('is-in');
+    });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      if (el.hasAttribute('data-reveal-words')) {
+        el.querySelectorAll('.word').forEach(function (w) { w.classList.add('is-in'); });
+      } else {
+        el.classList.add('is-in');
+      }
+      io.unobserve(el);
+    });
+  }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
+
+  document.querySelectorAll('[data-reveal], [data-reveal-words]').forEach(function (el) {
+    io.observe(el);
+  });
+})();
+</script>
+
+<script>
+/* Theme: light, dark, or follow the system. The choice is remembered; "system"
+   clears it so the OS setting takes over again. */
+(function () {
+  var root = document.documentElement;
+  var buttons = [].slice.call(document.querySelectorAll('[data-theme-set]'));
+  if (!buttons.length) return;
+
+  function current() {
+    try { return localStorage.getItem('ft-theme') || 'system'; } catch (e) { return 'system'; }
+  }
+
+  function paint(choice) {
+    if (choice === 'system') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', choice);
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-theme-set') === choice));
+    });
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var choice = b.getAttribute('data-theme-set');
+      try {
+        if (choice === 'system') localStorage.removeItem('ft-theme');
+        else localStorage.setItem('ft-theme', choice);
+      } catch (e) {}
+      paint(choice);
+    });
+  });
+
+  paint(current());
+})();
+</script>
 </body>
 </html>

@@ -1,4 +1,24 @@
 :root {
+  /* Elevation for the mock windows. Two layers: a tight one for the edge, a
+     wide one for the lift. */
+  --m-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 18px 44px rgba(0, 0, 0, 0.16);
+  --m-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08), 0 10px 26px rgba(0, 0, 0, 0.14);
+  --m-edge: rgba(0, 0, 0, 0.10);
+
+  /* The mock browser and popup in the demos. These are the light values;
+     the dark ones are further down. Without them the demo showed a dark
+     YouTube on a light page, which is not what the visitor would get. */
+  --m-page: #ffffff;
+  --m-chrome: #f1f3f4;
+  --m-surface: #ffffff;
+  --m-line: #e5e5e5;
+  --m-skeleton: #e3e3e3;
+  --m-skeleton-2: #d4d4d4;
+  --m-dim: #606060;
+  --m-text: #0f0f0f;
+
+  /* The dark stage both demo sections sit on, in either theme. */
+  --panel: #05070a;
   --coral: #f9737a;
   --coral-dark: #ef4444;
   --ink: #1f2937;
@@ -407,14 +427,17 @@ footer a:hover {
 
 /* Focus Mode spotlight */
 .spotlight {
-  background: var(--ink);
-  color: #fff;
+  background: transparent;
+  color: var(--ink);
   padding: 64px 0;
   text-align: center;
 }
 
 .spotlight .kicker-light {
-  color: var(--coral);
+  /* Coral text on the page surface tops out at 3.6:1, under the minimum for a
+     label this size. The accent moves to the border; the word stays readable. */
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--coral) 55%, transparent);
 }
 
 .spotlight h2 {
@@ -423,7 +446,7 @@ footer a:hover {
 }
 
 .spotlight-lead {
-  color: #d1d5db;
+  color: var(--muted);
   max-width: 560px;
   margin: 0 auto 28px;
   font-size: 1rem;
@@ -435,7 +458,7 @@ footer a:hover {
 }
 
 .spotlight-secondary strong {
-  color: #fff;
+  color: var(--ink);
 }
 
 /* Animated "before -> after" mock demo: a small clone of YouTube's own dark
@@ -451,10 +474,11 @@ footer a:hover {
   width: 100%;
   max-width: 760px;
   margin: 0 auto;
-  background: #0f0f0f;
+  background: var(--m-page);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--m-edge);
+  box-shadow: var(--m-shadow);
   font-family: Roboto, Arial, sans-serif;
   text-align: left;
 
@@ -481,14 +505,14 @@ footer a:hover {
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  background: #181818;
+  background: var(--m-chrome);
 }
 
 .yt-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4d4d4d;
+  background: var(--m-skeleton-2);
 }
 
 .yt-dot:nth-child(1) { background: #ff5f57; }
@@ -498,8 +522,8 @@ footer a:hover {
 .yt-url {
   margin-left: 8px;
   font-size: 0.68rem;
-  color: #9a9a9a;
-  background: #0f0f0f;
+  color: var(--m-dim);
+  background: var(--m-page);
   border-radius: 999px;
   padding: 3px 12px;
 }
@@ -509,12 +533,12 @@ footer a:hover {
   align-items: center;
   gap: 14px;
   padding: 10px 16px;
-  background: #0f0f0f;
+  background: var(--m-page);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .yt-hamburger {
-  color: #fff;
+  color: var(--m-text);
   font-size: 1rem;
   line-height: 1;
   flex-shrink: 0;
@@ -526,7 +550,7 @@ footer a:hover {
   gap: 4px;
   font-weight: 700;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--m-text);
   flex-shrink: 0;
   letter-spacing: -0.02em;
 }
@@ -539,6 +563,8 @@ footer a:hover {
   height: 13px;
   background: #ff0000;
   border-radius: 4px;
+  /* On the red box, not on the theme surface — white in both themes, the way
+     YouTube's own mark is drawn. */
   color: #fff;
   font-size: 0.5rem;
 }
@@ -549,8 +575,8 @@ footer a:hover {
   display: flex;
   align-items: center;
   height: 22px;
-  background: #121212;
-  border: 1px solid #303030;
+  background: var(--m-page);
+  border: 1px solid var(--m-line);
   border-radius: 999px;
   overflow: hidden;
 }
@@ -562,8 +588,8 @@ footer a:hover {
 .yt-search-btn {
   width: 30px;
   height: 22px;
-  background: #222222;
-  border-left: 1px solid #303030;
+  background: var(--m-surface);
+  border-left: 1px solid var(--m-line);
   flex-shrink: 0;
 }
 
@@ -586,12 +612,13 @@ footer a:hover {
   width: 46px;
   height: 16px;
   border-radius: 999px;
-  background: #272727;
+  background: var(--m-skeleton);
 }
 
 .yt-pill-active {
   width: 32px;
-  background: #fff;
+  background: var(--m-text);
+  color: var(--m-page);
 }
 
 /* Stage that holds the two cross-fading scenes (home feed -> watch page). */
@@ -599,7 +626,7 @@ footer a:hover {
   position: relative;
   height: 404px;
   overflow: hidden;
-  background: #0f0f0f;
+  background: var(--m-page);
 }
 
 .yt-scene {
@@ -675,7 +702,7 @@ footer a:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #444;
+  background: var(--m-skeleton-2);
   flex-shrink: 0;
 }
 
@@ -696,7 +723,7 @@ footer a:hover {
   display: block;
   height: 6px;
   border-radius: 3px;
-  background: #3a3a3a;
+  background: var(--m-skeleton);
 }
 
 .yt-line-1 { width: 90%; }
@@ -778,7 +805,7 @@ footer a:hover {
   width: 68px;
   height: 22px;
   border-radius: 999px;
-  background: #f1f1f1;
+  background: var(--m-text);
   flex-shrink: 0;
 }
 
@@ -795,7 +822,7 @@ footer a:hover {
   width: 130px;
   height: 8px;
   border-radius: 4px;
-  background: #333;
+  background: var(--m-skeleton);
 }
 
 .yt-comment {
@@ -835,7 +862,7 @@ footer a:hover {
 }
 
 .yt-puzzle {
-  color: #9a9a9a;
+  color: var(--m-dim);
   font-size: 0.8rem;
   line-height: 1;
 }
@@ -862,12 +889,12 @@ footer a:hover {
   position: absolute;
   top: 40px;
   right: 12px;
-  width: 188px;
+  width: 214px;
   padding: 12px;
-  background: #212121;
+  background: var(--m-surface);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--m-shadow-sm);
   z-index: 7;
   opacity: 0;
   transform-origin: top right;
@@ -891,7 +918,7 @@ footer a:hover {
 .ext-name {
   font-weight: 700;
   font-size: 0.82rem;
-  color: #fff;
+  color: var(--m-text);
 }
 
 .ext-tabs {
@@ -904,7 +931,7 @@ footer a:hover {
   height: 6px;
   width: 40px;
   border-radius: 3px;
-  background: #3a3a3a;
+  background: var(--m-skeleton);
 }
 
 .ext-tab.is-active {
@@ -921,8 +948,8 @@ footer a:hover {
 .ext-mode {
   padding: 7px 4px;
   border-radius: 8px;
-  background: #383838;
-  color: #e5e5e5;
+  background: var(--m-skeleton);
+  color: var(--m-dim);
   font-size: 0.62rem;
   font-weight: 700;
   text-align: center;
@@ -949,7 +976,7 @@ footer a:hover {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   opacity: 0;
   animation: cursorMove 13s ease-in-out infinite;
-  z-index: 6;
+  z-index: 20;
 }
 
 /* Expanding "click" ripples left where the cursor taps each target. */
@@ -961,7 +988,7 @@ footer a:hover {
   border: 2px solid var(--coral);
   opacity: 0;
   pointer-events: none;
-  z-index: 5;
+  z-index: 19;
   transform: translate(-50%, -50%) scale(0.3);
 }
 
@@ -1050,9 +1077,9 @@ footer a:hover {
 
 /* The chosen mode ("Always") lights up when clicked. */
 @keyframes extPick {
-  0%, 45% { background: #383838; color: #e5e5e5; }
+  0%, 45% { background: var(--m-skeleton); color: #e5e5e5; }
   49%, 66% { background: var(--coral); color: #fff; }
-  72%, 100% { background: #383838; color: #e5e5e5; }
+  72%, 100% { background: var(--m-skeleton); color: #e5e5e5; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1100,9 +1127,9 @@ footer a:hover {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  border: 1px solid var(--m-line);
+  background: var(--card);
+  color: var(--ink);
   font-size: 1.7rem;
   line-height: 1;
   cursor: pointer;
@@ -1111,6 +1138,7 @@ footer a:hover {
   justify-content: center;
   z-index: 3;
   transition: background-color 0.15s, transform 0.15s;
+  border: 1px solid var(--border);
 }
 
 .demo-arrow:hover {
@@ -1157,7 +1185,7 @@ footer a:hover {
   height: 16px;
   border-radius: 4px;
   background: linear-gradient(135deg, #ff0000, #ff5e5e);
-  color: #fff;
+  color: var(--m-text);
   font-size: 0.6rem;
   flex-shrink: 0;
 }
@@ -1173,7 +1201,7 @@ footer a:hover {
   width: 92px;
   height: 9px;
   border-radius: 4px;
-  background: #3a3a3a;
+  background: var(--m-skeleton);
 }
 
 .sh-shelf {
@@ -1243,7 +1271,11 @@ footer a:hover {
   .sh-ripple,
   .sh-ripple2,
   .ext-popup,
-  .ext-mode-on { animation: none; }
+  .ext-mode-on,
+  .ext-row.is-target .ext-tg,
+  .ext-row.is-target .ext-tg::after { animation: none; }
+  .ext-row.is-target .ext-tg { background: var(--coral); }
+  .ext-row.is-target .ext-tg::after { transform: translateX(10px); }
   .sh-cursor { opacity: 0; }
   .ext-popup { opacity: 1; }
 }
@@ -1262,7 +1294,7 @@ footer a:hover {
   width: 55%;
   height: 6px;
   border-radius: 3px;
-  background: #6a6a6a;
+  background: var(--m-dim);
   margin-left: 10px;
 }
 
@@ -1305,7 +1337,7 @@ footer a:hover {
   display: block;
   height: 8px;
   border-radius: 4px;
-  background: #3a3a3a;
+  background: var(--m-skeleton);
 }
 
 .bk-sub {
@@ -1313,7 +1345,7 @@ footer a:hover {
   height: 6px;
   width: 34%;
   border-radius: 3px;
-  background: #2c2c2c;
+  background: var(--m-skeleton);
   margin-top: 2px;
 }
 
@@ -1343,8 +1375,8 @@ footer a:hover {
   flex: 1;
   height: 22px;
   border-radius: 6px;
-  background: #121212;
-  border: 1px solid #3a3a3a;
+  background: var(--m-page);
+  border: 1px solid var(--m-skeleton);
   display: flex;
   align-items: center;
   padding: 0 8px;
@@ -1476,7 +1508,7 @@ footer a:hover {
 .mode-pill .mode-name {
   font-weight: 700;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--ink);
 }
 
 /* ---- Written caption under the carousel ----
@@ -1529,7 +1561,7 @@ footer a:hover {
   margin: 0 0 8px;
   font-size: 1.6rem;
   line-height: 1.25;
-  color: #fff;
+  color: var(--ink);
   letter-spacing: -0.01em;
 }
 
@@ -1537,27 +1569,19 @@ footer a:hover {
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 /* ---- "New in this version" feature section ---- */
 .newfeat {
   position: relative;
   padding: 84px 0;
-  background: #0b0b0c;
+  /* No background of its own: the page runs through, and the dark belongs to
+     the mock browser window inside, the way a screenshot would. */
+  background: transparent;
   overflow: hidden;
 }
 
-/* Soft coral wash so the section reads as a highlight, not just another band. */
-.newfeat::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(60% 70% at 82% 10%, rgba(249, 115, 122, 0.22), transparent 70%),
-    radial-gradient(50% 60% at 8% 96%, rgba(239, 68, 68, 0.14), transparent 70%);
-  pointer-events: none;
-}
 
 .newfeat .wrap {
   position: relative;
@@ -1592,7 +1616,7 @@ footer a:hover {
   padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.24);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--muted);
   font-size: 0.76rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -1602,7 +1626,7 @@ footer a:hover {
   margin: 0 0 16px;
   font-size: 2.3rem;
   line-height: 1.15;
-  color: #fff;
+  color: var(--ink);
   letter-spacing: -0.02em;
 }
 
@@ -1610,7 +1634,7 @@ footer a:hover {
   margin: 0 0 28px;
   font-size: 1.1rem;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.74);
+  color: var(--muted);
 }
 
 .newfeat-demo {
@@ -1621,10 +1645,11 @@ footer a:hover {
 .mh-window {
   position: relative;
   width: 100%;
-  background: #0f0f0f;
+  background: var(--m-page);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--m-edge);
+  box-shadow: var(--m-shadow);
   font-family: Roboto, Arial, sans-serif;
   text-align: left;
 }
@@ -1667,7 +1692,7 @@ footer a:hover {
 .mh-card-line {
   height: 6px;
   border-radius: 3px;
-  background: #2e2e2e;
+  background: var(--m-skeleton);
   width: 78%;
 }
 
@@ -1699,7 +1724,7 @@ footer a:hover {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  color: #fff;
+  color: var(--m-text);
 }
 
 .mh-logo-icon {
@@ -1726,10 +1751,10 @@ footer a:hover {
   position: relative;
   flex: 1 1 auto;
   height: 34px;
-  border: 1px solid #303030;
+  border: 1px solid var(--m-line);
   border-right: none;
   border-radius: 18px 0 0 18px;
-  background: #121212;
+  background: var(--m-page);
 }
 
 .mh-caret {
@@ -1738,7 +1763,7 @@ footer a:hover {
   top: 9px;
   width: 1px;
   height: 16px;
-  background: #909090;
+  background: var(--m-dim);
   animation: mhCaret 1.1s step-end infinite;
 }
 
@@ -1749,10 +1774,10 @@ footer a:hover {
   width: 58px;
   height: 34px;
   margin-left: -9px;
-  border: 1px solid #303030;
+  border: 1px solid var(--m-line);
   border-radius: 0 18px 18px 0;
-  background: #222222;
-  color: #d0d0d0;
+  background: var(--m-surface);
+  color: var(--m-dim);
 }
 
 .mh-mic {
@@ -1762,14 +1787,14 @@ footer a:hover {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #222222;
-  color: #d0d0d0;
+  background: var(--m-surface);
+  color: var(--m-dim);
   flex-shrink: 0;
 }
 
 .mh-credit {
   margin-top: 22px;
-  color: #7a7a7a;
+  color: var(--m-dim);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1795,7 +1820,7 @@ footer a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #e5e5e5;
+  color: var(--m-dim);
   font-size: 0.68rem;
   font-weight: 600;
 }
@@ -1806,7 +1831,7 @@ footer a:hover {
   width: 34px;
   height: 18px;
   border-radius: 999px;
-  background: #4a4a4a;
+  background: var(--m-skeleton-2);
   animation: mhTrack 11s ease-in-out infinite;
 }
 
@@ -1840,9 +1865,9 @@ footer a:hover {
 }
 
 @keyframes mhTrack {
-  0%, 25% { background: #4a4a4a; }
+  0%, 25% { background: var(--m-skeleton-2); }
   29%, 92% { background: var(--coral); }
-  96%, 100% { background: #4a4a4a; }
+  96%, 100% { background: var(--m-skeleton-2); }
 }
 
 @keyframes mhKnob {
@@ -1960,7 +1985,22 @@ footer a:hover {
 
 /* Dark mode (follows the visitor's OS/browser preference) */
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* System dark. Skipped when the visitor has explicitly chosen light. */
+
+  :root:not([data-theme="light"]) {
+  --m-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 25px 60px rgba(0, 0, 0, 0.55);
+  --m-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.55);
+  --m-edge: rgba(255, 255, 255, 0.10);
+
+  --m-page: #0f0f0f;
+  --m-chrome: #181818;
+  --m-surface: #212121;
+  --m-line: #303030;
+  --m-skeleton: #3a3a3a;
+  --m-skeleton-2: #4d4d4d;
+  --m-dim: #9a9a9a;
+  --m-text: #ffffff;
+
     --ink: #e5e7eb;
     --muted: #9ca3af;
     --border: #263241;
@@ -1968,24 +2008,70 @@ footer a:hover {
     --card: #11161c;
   }
 
-  body {
+  :root:not([data-theme="light"]) body {
     background: var(--bg);
   }
 
-  .btn-secondary {
+  :root:not([data-theme="light"]) .btn-secondary {
     background: var(--card);
     color: var(--ink);
   }
 
-  .cta-card .btn-primary {
+  :root:not([data-theme="light"]) .cta-card .btn-primary {
     color: var(--coral-dark);
   }
 
-  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
-  .spotlight {
-    background: #05070a;
+
+
+  :root:not([data-theme="light"]) .hero h1 {
+    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
   }
+
 }
+
+/* Explicit dark, chosen with the toggle. Wins over the system setting. */
+
+  :root[data-theme="dark"] {
+  --m-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 25px 60px rgba(0, 0, 0, 0.55);
+  --m-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.55);
+  --m-edge: rgba(255, 255, 255, 0.10);
+
+  --m-page: #0f0f0f;
+  --m-chrome: #181818;
+  --m-surface: #212121;
+  --m-line: #303030;
+  --m-skeleton: #3a3a3a;
+  --m-skeleton-2: #4d4d4d;
+  --m-dim: #9a9a9a;
+  --m-text: #ffffff;
+
+    --ink: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #263241;
+    --bg: #0b0f14;
+    --card: #11161c;
+  }
+
+  :root[data-theme="dark"] body {
+    background: var(--bg);
+  }
+
+  :root[data-theme="dark"] .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+  }
+
+  :root[data-theme="dark"] .cta-card .btn-primary {
+    color: var(--coral-dark);
+  }
+
+
+
+  :root[data-theme="dark"] .hero h1 {
+    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  }
+
+
 
 
 /* ---- Privacy ------------------------------------------------------------
@@ -2340,3 +2426,419 @@ main > section > .wrap > h2,
    room around it rather than sitting tight against the copy. */
 .spotlight .demo-carousel { margin-top: 34px; }
 .spotlight-lead { margin-bottom: 0; }
+
+/* ---- Focus Mode section -------------------------------------------------
+   The kicker carried a stopwatch emoji, which rendered differently on every
+   platform and was the only emoji left on the site. A pill does the same job
+   and matches the trust chips in the hero. */
+.kicker-pill {
+  /* inline-block, because a vertical margin does nothing on an inline box —
+     which is why the heading was sitting 3px on top of this. */
+  display: inline-block;
+  margin-bottom: 16px;
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-radius: 999px;
+  padding: 5px 14px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.78rem;
+}
+
+/* ---- The toggle that causes what the demo shows -------------------------
+   The popup used to show the four modes, which are not what makes the page
+   change. Showing the switch itself puts the cause next to the effect. */
+.ext-list {
+  display: grid;
+  gap: 5px;
+  padding: 7px 8px 8px;
+}
+
+.ext-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10.5px;
+  font-weight: 600;
+  /* The mock popup is always dark, in both themes, so this is a fixed colour.
+     A theme token here renders dark-on-dark and disappears in light mode. */
+  color: var(--m-text);
+  padding: 4px 6px;
+  border-radius: 6px;
+  line-height: 1.25;
+}
+
+.ext-row i { font-style: normal; }
+
+/* The row being demonstrated is called out; the other is there for context. */
+.ext-row.is-target {
+  background: color-mix(in srgb, var(--coral) 16%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--coral) 55%, transparent);
+}
+
+.ext-row:not(.is-target) { opacity: 0.5; }
+
+.ext-tg {
+  flex: none;
+  width: 22px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--m-line);
+  position: relative;
+}
+
+.ext-tg::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.ext-tg.is-on { background: var(--coral); }
+.ext-tg.is-on::after { transform: translateX(10px); }
+
+[dir="rtl"] .ext-tg.is-on::after { transform: translateX(-10px); }
+
+/* ---- Support: the ordered diagnostic --------------------------------------
+   Most "it does nothing" reports are one of four states, and the order matters
+   — so it is a numbered list rather than more prose. */
+.qa-lead .steps {
+  list-style: none;
+  counter-reset: step;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.qa-lead .steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-inline-start: 46px;
+}
+
+.qa-lead .steps > li::before {
+  content: counter(step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--coral);
+  color: #2b0f12;
+  font-weight: 800;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.qa-lead .steps h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 4px 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.qa-lead .steps p {
+  font-size: 0.92rem;
+  margin: 0 0 8px;
+}
+
+.qa-lead .steps p:last-child { margin-bottom: 0; }
+
+.qa-note {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-inline-start: 3px solid var(--coral);
+  background: color-mix(in srgb, var(--coral) 8%, transparent);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.92rem;
+}
+
+/* ---- Reviews -------------------------------------------------------------
+   Real Chrome Web Store reviews, quoted verbatim and left in the language they
+   were written in. */
+.reviews .wrap > h2 { text-align: center; }
+
+.reviews-lead {
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 0.95rem;
+}
+
+.reviews-lead a {
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.reviews-lead a:hover { background: color-mix(in srgb, var(--coral) 12%, transparent); }
+.reviews-lead .stars { color: var(--coral); letter-spacing: 1px; }
+
+.rv-grid {
+  columns: 3;
+  column-gap: 14px;
+}
+
+.rv-card {
+  break-inside: avoid;
+  margin: 0 0 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  padding: 20px 22px;
+}
+
+.rv-card blockquote {
+  margin: 0 0 12px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.rv-card figcaption {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.rv-card figcaption::before { content: "— "; }
+
+@media (max-width: 900px) { .rv-grid { columns: 2; } }
+@media (max-width: 600px) { .rv-grid { columns: 1; } }
+
+/* ==========================================================================
+   Motion. One easing curve everywhere, so movement on this page feels like it
+   has mass rather than like a default transition.
+   ========================================================================== */
+:root {
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Sections arrive as you reach them instead of being there already. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(48px);
+  filter: blur(6px);
+  transition: opacity 800ms var(--ease), transform 800ms var(--ease),
+    filter 800ms var(--ease);
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* ---- Tagline: its own moment, words lighting up in reading order --------- */
+.tagline {
+  padding-block: var(--section-y);
+}
+
+.tagline-text {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: clamp(2.25rem, 5vw, 3.75rem); /* text-4xl -> text-6xl */
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.tagline-text .word {
+  /* Starts as a ghost of the real colour, then resolves. */
+  color: color-mix(in srgb, var(--ink) 28%, transparent);
+  transition: color 700ms var(--ease);
+}
+
+.tagline-text .word.is-in {
+  color: var(--ink);
+}
+
+/* ---- Hero heading ------------------------------------------------------- */
+.hero h1 {
+  background-image: linear-gradient(90deg, #000000, #666666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* ---- Skip link ---------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 8px;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  inset-inline-start: 8px;
+}
+
+/* The page's own transitions inherit the curve too. */
+.btn-install,
+.pop-toggle,
+.pop-toggle::after,
+.fcard,
+.rv-card,
+.proof-rating {
+  transition-timing-function: var(--ease);
+}
+
+/* ---- Theme switch -------------------------------------------------------- */
+.theme-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  margin-inline-start: 4px;
+}
+
+.theme-switch button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 200ms var(--ease), color 200ms var(--ease);
+}
+
+.theme-switch button:hover { color: var(--ink); }
+
+.theme-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.theme-switch button:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* ---- Reviewer faces ------------------------------------------------------ */
+.rv-card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rv-card figcaption::before { content: none; }
+
+.rv-face {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--border);
+}
+
+/* Shown when someone has no public photo, and when a hotlinked one fails. */
+.rv-initials {
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--coral) 22%, transparent);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Closing CTA ---------------------------------------------------------
+   The page now ends on the promise rather than on a button in a box. */
+.cta .wrap {
+  max-width: 720px;
+  text-align: center;
+}
+
+.cta-tagline {
+  max-width: 680px;
+  margin: 0 auto 20px;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.cta-tagline .word {
+  color: color-mix(in srgb, var(--ink) 28%, transparent);
+  transition: color 700ms var(--ease);
+}
+
+.cta-tagline .word.is-in { color: var(--ink); }
+
+.cta-lead {
+  margin: 0 auto 32px;
+  max-width: 46ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.btn-install-lg {
+  padding: 16px 28px 16px 22px;
+  font-size: 1.05rem;
+}
+
+.cta-trust { justify-content: center; margin: 26px 0 16px; }
+.cta-proof { justify-content: center; }
+
+
+/* The demo's pointer clicks at 47% of the loop, so the switch it lands on
+   flips just after, and resets when the popup closes at 72%. Without this the
+   switch was already on and nobody saw the cause of anything. */
+.ext-row.is-target .ext-tg {
+  animation: extTgTrack 13s ease-in-out infinite;
+}
+
+.ext-row.is-target .ext-tg::after {
+  animation: extTgKnob 13s ease-in-out infinite;
+}
+
+@keyframes extTgTrack {
+  0%, 48% { background: rgba(255, 255, 255, 0.22); }
+  49%, 66% { background: var(--coral); }
+  72%, 100% { background: rgba(255, 255, 255, 0.22); }
+}
+
+@keyframes extTgKnob {
+  0%, 48% { transform: translateX(0); }
+  49%, 66% { transform: translateX(10px); }
+  72%, 100% { transform: translateX(0); }
+}
+
+[dir="rtl"] .ext-row.is-target .ext-tg::after {
+  animation-name: extTgKnobRtl;
+}
+
+@keyframes extTgKnobRtl {
+  0%, 48% { transform: translateX(0); }
+  49%, 66% { transform: translateX(-10px); }
+  72%, 100% { transform: translateX(0); }
+}
