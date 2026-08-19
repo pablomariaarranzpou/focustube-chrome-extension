@@ -976,7 +976,7 @@ footer a:hover {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   opacity: 0;
   animation: cursorMove 13s ease-in-out infinite;
-  z-index: 6;
+  z-index: 20;
 }
 
 /* Expanding "click" ripples left where the cursor taps each target. */
@@ -988,7 +988,7 @@ footer a:hover {
   border: 2px solid var(--coral);
   opacity: 0;
   pointer-events: none;
-  z-index: 5;
+  z-index: 19;
   transform: translate(-50%, -50%) scale(0.3);
 }
 
