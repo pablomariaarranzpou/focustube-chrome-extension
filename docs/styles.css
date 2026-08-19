@@ -1,4 +1,10 @@
 :root {
+  /* Elevation for the mock windows. Two layers: a tight one for the edge, a
+     wide one for the lift. */
+  --m-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 18px 44px rgba(0, 0, 0, 0.16);
+  --m-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08), 0 10px 26px rgba(0, 0, 0, 0.14);
+  --m-edge: rgba(0, 0, 0, 0.10);
+
   /* The mock browser and popup in the demos. These are the light values;
      the dark ones are further down. Without them the demo showed a dark
      YouTube on a light page, which is not what the visitor would get. */
@@ -471,7 +477,8 @@ footer a:hover {
   background: var(--m-page);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--m-edge);
+  box-shadow: var(--m-shadow);
   font-family: Roboto, Arial, sans-serif;
   text-align: left;
 
@@ -556,7 +563,9 @@ footer a:hover {
   height: 13px;
   background: #ff0000;
   border-radius: 4px;
-  color: var(--m-text);
+  /* On the red box, not on the theme surface — white in both themes, the way
+     YouTube's own mark is drawn. */
+  color: #fff;
   font-size: 0.5rem;
 }
 
@@ -885,7 +894,7 @@ footer a:hover {
   background: var(--m-surface);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--m-shadow-sm);
   z-index: 7;
   opacity: 0;
   transform-origin: top right;
@@ -1639,7 +1648,8 @@ footer a:hover {
   background: var(--m-page);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--m-edge);
+  box-shadow: var(--m-shadow);
   font-family: Roboto, Arial, sans-serif;
   text-align: left;
 }
@@ -1725,7 +1735,7 @@ footer a:hover {
   height: 24px;
   border-radius: 7px;
   background: #ff0000;
-  color: var(--m-text);
+  color: #fff;
   font-size: 0.8rem;
 }
 
@@ -1978,6 +1988,10 @@ footer a:hover {
   /* System dark. Skipped when the visitor has explicitly chosen light. */
 
   :root:not([data-theme="light"]) {
+  --m-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 25px 60px rgba(0, 0, 0, 0.55);
+  --m-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.55);
+  --m-edge: rgba(255, 255, 255, 0.10);
+
   --m-page: #0f0f0f;
   --m-chrome: #181818;
   --m-surface: #212121;
@@ -2018,6 +2032,10 @@ footer a:hover {
 /* Explicit dark, chosen with the toggle. Wins over the system setting. */
 
   :root[data-theme="dark"] {
+  --m-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 25px 60px rgba(0, 0, 0, 0.55);
+  --m-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.55);
+  --m-edge: rgba(255, 255, 255, 0.10);
+
   --m-page: #0f0f0f;
   --m-chrome: #181818;
   --m-surface: #212121;
