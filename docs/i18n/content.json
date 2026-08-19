@@ -66,7 +66,13 @@
       "a": "You came for one video.",
       "b": "Now you leave after one video."
     },
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
   },
   "es": {
     "name": "Español",
@@ -135,7 +141,13 @@
       "a": "Viniste a ver un vídeo.",
       "b": "Ahora te vas después de uno."
     },
-    "skip": "Ir al contenido"
+    "skip": "Ir al contenido",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -204,7 +216,13 @@
       "a": "Viniste a ver un video.",
       "b": "Ahora te vas después de uno."
     },
-    "skip": "Ir al contenido"
+    "skip": "Ir al contenido",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
   },
   "fr": {
     "name": "Français",
@@ -273,7 +291,13 @@
       "a": "Vous veniez pour une vidéo.",
       "b": "Vous repartez après une vidéo."
     },
-    "skip": "Aller au contenu"
+    "skip": "Aller au contenu",
+    "theme": {
+      "label": "Thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    }
   },
   "de": {
     "name": "Deutsch",
@@ -342,7 +366,13 @@
       "a": "Du kamst für ein Video.",
       "b": "Jetzt gehst du nach einem Video."
     },
-    "skip": "Zum Inhalt springen"
+    "skip": "Zum Inhalt springen",
+    "theme": {
+      "label": "Design",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    }
   },
   "it": {
     "name": "Italiano",
@@ -411,7 +441,13 @@
       "a": "Sei venuto per un video.",
       "b": "Ora esci dopo un video."
     },
-    "skip": "Vai al contenuto"
+    "skip": "Vai al contenuto",
+    "theme": {
+      "label": "Tema",
+      "light": "Chiaro",
+      "dark": "Scuro",
+      "system": "Sistema"
+    }
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -480,7 +516,13 @@
       "a": "Vieste para ver um vídeo.",
       "b": "Agora sais depois de um vídeo."
     },
-    "skip": "Ir para o conteúdo"
+    "skip": "Ir para o conteúdo",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    }
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -549,7 +591,13 @@
       "a": "Você veio para ver um vídeo.",
       "b": "Agora você sai depois de um vídeo."
     },
-    "skip": "Ir para o conteúdo"
+    "skip": "Ir para o conteúdo",
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    }
   },
   "nl": {
     "name": "Nederlands",
@@ -618,7 +666,13 @@
       "a": "Je kwam voor één video.",
       "b": "Nu vertrek je na één video."
     },
-    "skip": "Naar inhoud"
+    "skip": "Naar inhoud",
+    "theme": {
+      "label": "Thema",
+      "light": "Licht",
+      "dark": "Donker",
+      "system": "Systeem"
+    }
   },
   "ca": {
     "name": "Català",
@@ -687,7 +741,13 @@
       "a": "Vas venir per un vídeo.",
       "b": "Ara te'n vas després d'un vídeo."
     },
-    "skip": "Vés al contingut"
+    "skip": "Vés al contingut",
+    "theme": {
+      "label": "Tema",
+      "light": "Clar",
+      "dark": "Fosc",
+      "system": "Sistema"
+    }
   },
   "ro": {
     "name": "Română",
@@ -756,7 +816,13 @@
       "a": "Ai venit pentru un videoclip.",
       "b": "Acum pleci după un videoclip."
     },
-    "skip": "Sari la conținut"
+    "skip": "Sari la conținut",
+    "theme": {
+      "label": "Temă",
+      "light": "Luminos",
+      "dark": "Întunecat",
+      "system": "Sistem"
+    }
   },
   "pl": {
     "name": "Polski",
@@ -825,7 +891,13 @@
       "a": "Przyszedłeś po jeden film.",
       "b": "Teraz wychodzisz po jednym filmie."
     },
-    "skip": "Przejdź do treści"
+    "skip": "Przejdź do treści",
+    "theme": {
+      "label": "Motyw",
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    }
   },
   "cs": {
     "name": "Čeština",
@@ -894,7 +966,13 @@
       "a": "Přišel jsi kvůli jednomu videu.",
       "b": "Teď odcházíš po jednom videu."
     },
-    "skip": "Přejít na obsah"
+    "skip": "Přejít na obsah",
+    "theme": {
+      "label": "Motiv",
+      "light": "Světlý",
+      "dark": "Tmavý",
+      "system": "Systém"
+    }
   },
   "sk": {
     "name": "Slovenčina",
@@ -963,7 +1041,13 @@
       "a": "Prišiel si kvôli jednému videu.",
       "b": "Teraz odchádzaš po jednom videu."
     },
-    "skip": "Prejsť na obsah"
+    "skip": "Prejsť na obsah",
+    "theme": {
+      "label": "Motív",
+      "light": "Svetlý",
+      "dark": "Tmavý",
+      "system": "Systém"
+    }
   },
   "sl": {
     "name": "Slovenščina",
@@ -1032,7 +1116,13 @@
       "a": "Prišel si zaradi enega videa.",
       "b": "Zdaj odideš po enem videu."
     },
-    "skip": "Preskoči na vsebino"
+    "skip": "Preskoči na vsebino",
+    "theme": {
+      "label": "Tema",
+      "light": "Svetla",
+      "dark": "Temna",
+      "system": "Sistem"
+    }
   },
   "hr": {
     "name": "Hrvatski",
@@ -1101,7 +1191,13 @@
       "a": "Došao si zbog jednog videa.",
       "b": "Sada odlaziš nakon jednog videa."
     },
-    "skip": "Prijeđi na sadržaj"
+    "skip": "Prijeđi na sadržaj",
+    "theme": {
+      "label": "Tema",
+      "light": "Svijetla",
+      "dark": "Tamna",
+      "system": "Sustav"
+    }
   },
   "sr": {
     "name": "Српски",
@@ -1170,7 +1266,13 @@
       "a": "Došao si zbog jednog videa.",
       "b": "Sada odlaziš posle jednog videa."
     },
-    "skip": "Pređi na sadržaj"
+    "skip": "Pređi na sadržaj",
+    "theme": {
+      "label": "Tema",
+      "light": "Svetla",
+      "dark": "Tamna",
+      "system": "Sistem"
+    }
   },
   "ru": {
     "name": "Русский",
@@ -1239,7 +1341,13 @@
       "a": "Вы пришли за одним видео.",
       "b": "Теперь вы уходите после одного."
     },
-    "skip": "Перейти к содержимому"
+    "skip": "Перейти к содержимому",
+    "theme": {
+      "label": "Тема",
+      "light": "Светлая",
+      "dark": "Тёмная",
+      "system": "Системная"
+    }
   },
   "el": {
     "name": "Ελληνικά",
@@ -1308,7 +1416,13 @@
       "a": "Ήρθες για ένα βίντεο.",
       "b": "Τώρα φεύγεις μετά από ένα βίντεο."
     },
-    "skip": "Μετάβαση στο περιεχόμενο"
+    "skip": "Μετάβαση στο περιεχόμενο",
+    "theme": {
+      "label": "Θέμα",
+      "light": "Φωτεινό",
+      "dark": "Σκούρο",
+      "system": "Σύστημα"
+    }
   },
   "tr": {
     "name": "Türkçe",
@@ -1377,7 +1491,13 @@
       "a": "Tek bir video için geldin.",
       "b": "Artık bir videodan sonra çıkıyorsun."
     },
-    "skip": "İçeriğe geç"
+    "skip": "İçeriğe geç",
+    "theme": {
+      "label": "Tema",
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    }
   },
   "hu": {
     "name": "Magyar",
@@ -1446,7 +1566,13 @@
       "a": "Egy videóért jöttél.",
       "b": "Most egy videó után távozol."
     },
-    "skip": "Ugrás a tartalomra"
+    "skip": "Ugrás a tartalomra",
+    "theme": {
+      "label": "Téma",
+      "light": "Világos",
+      "dark": "Sötét",
+      "system": "Rendszer"
+    }
   },
   "et": {
     "name": "Eesti",
@@ -1515,7 +1641,13 @@
       "a": "Tulid ühe video pärast.",
       "b": "Nüüd lahkud pärast üht videot."
     },
-    "skip": "Liigu sisu juurde"
+    "skip": "Liigu sisu juurde",
+    "theme": {
+      "label": "Teema",
+      "light": "Hele",
+      "dark": "Tume",
+      "system": "Süsteem"
+    }
   },
   "lv": {
     "name": "Latviešu",
@@ -1584,7 +1716,13 @@
       "a": "Tu atnāci uz vienu video.",
       "b": "Tagad tu aizej pēc viena video."
     },
-    "skip": "Pāriet uz saturu"
+    "skip": "Pāriet uz saturu",
+    "theme": {
+      "label": "Motīvs",
+      "light": "Gaišs",
+      "dark": "Tumšs",
+      "system": "Sistēmas"
+    }
   },
   "lt": {
     "name": "Lietuvių",
@@ -1653,7 +1791,13 @@
       "a": "Atėjai dėl vieno vaizdo įrašo.",
       "b": "Dabar išeini po vieno."
     },
-    "skip": "Pereiti prie turinio"
+    "skip": "Pereiti prie turinio",
+    "theme": {
+      "label": "Tema",
+      "light": "Šviesi",
+      "dark": "Tamsi",
+      "system": "Sistemos"
+    }
   },
   "sv": {
     "name": "Svenska",
@@ -1722,7 +1866,13 @@
       "a": "Du kom för en video.",
       "b": "Nu går du efter en video."
     },
-    "skip": "Hoppa till innehåll"
+    "skip": "Hoppa till innehåll",
+    "theme": {
+      "label": "Tema",
+      "light": "Ljust",
+      "dark": "Mörkt",
+      "system": "System"
+    }
   },
   "no": {
     "name": "Norsk",
@@ -1791,7 +1941,13 @@
       "a": "Du kom for én video.",
       "b": "Nå går du etter én video."
     },
-    "skip": "Hopp til innhold"
+    "skip": "Hopp til innhold",
+    "theme": {
+      "label": "Tema",
+      "light": "Lyst",
+      "dark": "Mørkt",
+      "system": "System"
+    }
   },
   "da": {
     "name": "Dansk",
@@ -1860,7 +2016,13 @@
       "a": "Du kom for én video.",
       "b": "Nu går du efter én video."
     },
-    "skip": "Spring til indhold"
+    "skip": "Spring til indhold",
+    "theme": {
+      "label": "Tema",
+      "light": "Lyst",
+      "dark": "Mørkt",
+      "system": "System"
+    }
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1929,7 +2091,13 @@
       "a": "Kamu datang untuk satu video.",
       "b": "Sekarang kamu pergi setelah satu video."
     },
-    "skip": "Lewati ke konten"
+    "skip": "Lewati ke konten",
+    "theme": {
+      "label": "Tema",
+      "light": "Terang",
+      "dark": "Gelap",
+      "system": "Sistem"
+    }
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1998,7 +2166,13 @@
       "a": "Anda datang untuk satu video.",
       "b": "Kini anda pergi selepas satu video."
     },
-    "skip": "Langkau ke kandungan"
+    "skip": "Langkau ke kandungan",
+    "theme": {
+      "label": "Tema",
+      "light": "Cerah",
+      "dark": "Gelap",
+      "system": "Sistem"
+    }
   },
   "fil": {
     "name": "Filipino",
@@ -2067,7 +2241,13 @@
       "a": "Pumunta ka para sa isang video.",
       "b": "Ngayon umaalis ka pagkatapos ng isa."
     },
-    "skip": "Lumaktaw sa nilalaman"
+    "skip": "Lumaktaw sa nilalaman",
+    "theme": {
+      "label": "Tema",
+      "light": "Maliwanag",
+      "dark": "Madilim",
+      "system": "Sistema"
+    }
   },
   "ja": {
     "name": "日本語",
@@ -2136,7 +2316,13 @@
       "a": "1本の動画のために来た。",
       "b": "1本見たら、もう帰れる。"
     },
-    "skip": "本文へスキップ"
+    "skip": "本文へスキップ",
+    "theme": {
+      "label": "テーマ",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    }
   },
   "ko": {
     "name": "한국어",
@@ -2205,7 +2391,13 @@
       "a": "영상 하나를 보러 왔습니다.",
       "b": "이제 하나만 보고 나갑니다."
     },
-    "skip": "본문으로 건너뛰기"
+    "skip": "본문으로 건너뛰기",
+    "theme": {
+      "label": "테마",
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    }
   },
   "he": {
     "name": "עברית",
@@ -2275,7 +2467,13 @@
       "a": "באת בשביל סרטון אחד.",
       "b": "עכשיו אתה יוצא אחרי אחד."
     },
-    "skip": "דלג לתוכן"
+    "skip": "דלג לתוכן",
+    "theme": {
+      "label": "ערכת נושא",
+      "light": "בהיר",
+      "dark": "כהה",
+      "system": "מערכת"
+    }
   },
   "ar": {
     "name": "العربية",
@@ -2345,7 +2543,13 @@
       "a": "جئت لمشاهدة مقطع واحد.",
       "b": "الآن تغادر بعد مقطع واحد."
     },
-    "skip": "تخطَّ إلى المحتوى"
+    "skip": "تخطَّ إلى المحتوى",
+    "theme": {
+      "label": "المظهر",
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    }
   },
   "fa": {
     "name": "فارسی",
@@ -2415,7 +2619,13 @@
       "a": "برای یک ویدیو آمدی.",
       "b": "حالا بعد از یک ویدیو می‌روی."
     },
-    "skip": "پرش به محتوا"
+    "skip": "پرش به محتوا",
+    "theme": {
+      "label": "پوسته",
+      "light": "روشن",
+      "dark": "تیره",
+      "system": "سیستم"
+    }
   },
   "hi": {
     "name": "हिन्दी",
@@ -2484,7 +2694,13 @@
       "a": "आप एक वीडियो के लिए आए थे।",
       "b": "अब आप एक के बाद चले जाते हैं।"
     },
-    "skip": "सामग्री पर जाएं"
+    "skip": "सामग्री पर जाएं",
+    "theme": {
+      "label": "थीम",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम"
+    }
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2553,7 +2769,13 @@
       "a": "તમે એક વીડિયો માટે આવ્યા હતા.",
       "b": "હવે તમે એક પછી નીકળી જાઓ છો."
     },
-    "skip": "સામગ્રી પર જાઓ"
+    "skip": "સામગ્રી પર જાઓ",
+    "theme": {
+      "label": "થીમ",
+      "light": "લાઇટ",
+      "dark": "ડાર્ક",
+      "system": "સિસ્ટમ"
+    }
   },
   "mr": {
     "name": "मराठी",
@@ -2622,7 +2844,13 @@
       "a": "तुम्ही एका व्हिडिओसाठी आलात.",
       "b": "आता तुम्ही एकानंतर निघता."
     },
-    "skip": "मजकुरावर जा"
+    "skip": "मजकुरावर जा",
+    "theme": {
+      "label": "थीम",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम"
+    }
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2691,7 +2919,13 @@
       "a": "ನೀವು ಒಂದು ವೀಡಿಯೊಗಾಗಿ ಬಂದಿರಿ.",
       "b": "ಈಗ ಒಂದಾದ ನಂತರ ಹೊರಡುತ್ತೀರಿ."
     },
-    "skip": "ವಿಷಯಕ್ಕೆ ಹೋಗಿ"
+    "skip": "ವಿಷಯಕ್ಕೆ ಹೋಗಿ",
+    "theme": {
+      "label": "ಥೀಮ್",
+      "light": "ಲೈಟ್",
+      "dark": "ಡಾರ್ಕ್",
+      "system": "ಸಿಸ್ಟಂ"
+    }
   },
   "ta": {
     "name": "தமிழ்",
@@ -2760,7 +2994,13 @@
       "a": "ஒரு வீடியோவுக்காக வந்தீர்கள்.",
       "b": "இப்போது ஒன்றுக்குப் பிறகு செல்கிறீர்கள்."
     },
-    "skip": "உள்ளடக்கத்திற்குச் செல்"
+    "skip": "உள்ளடக்கத்திற்குச் செல்",
+    "theme": {
+      "label": "தீம்",
+      "light": "ஒளி",
+      "dark": "இருள்",
+      "system": "கணினி"
+    }
   },
   "te": {
     "name": "తెలుగు",
@@ -2829,7 +3069,13 @@
       "a": "మీరు ఒక వీడియో కోసం వచ్చారు.",
       "b": "ఇప్పుడు ఒకటి చూసి వెళ్లిపోతారు."
     },
-    "skip": "కంటెంట్‌కు వెళ్లండి"
+    "skip": "కంటెంట్‌కు వెళ్లండి",
+    "theme": {
+      "label": "థీమ్",
+      "light": "లైట్",
+      "dark": "డార్క్",
+      "system": "సిస్టమ్"
+    }
   },
   "sw": {
     "name": "Kiswahili",
@@ -2898,7 +3144,13 @@
       "a": "Ulikuja kwa video moja.",
       "b": "Sasa unaondoka baada ya moja."
     },
-    "skip": "Rukia maudhui"
+    "skip": "Rukia maudhui",
+    "theme": {
+      "label": "Mandhari",
+      "light": "Nuru",
+      "dark": "Giza",
+      "system": "Mfumo"
+    }
   },
   "am": {
     "name": "አማርኛ",
@@ -2967,6 +3219,12 @@
       "a": "ለአንድ ቪዲዮ መጣህ።",
       "b": "አሁን ከአንድ በኋላ ትወጣለህ።"
     },
-    "skip": "ወደ ይዘቱ ዝለል"
+    "skip": "ወደ ይዘቱ ዝለል",
+    "theme": {
+      "label": "ገጽታ",
+      "light": "ብሩህ",
+      "dark": "ጨለማ",
+      "system": "ሲስተም"
+    }
   }
 }

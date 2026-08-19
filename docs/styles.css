@@ -1960,7 +1960,9 @@ footer a:hover {
 
 /* Dark mode (follows the visitor's OS/browser preference) */
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* System dark. Skipped when the visitor has explicitly chosen light. */
+
+  :root:not([data-theme="light"]) {
     --ink: #e5e7eb;
     --muted: #9ca3af;
     --border: #263241;
@@ -1968,16 +1970,16 @@ footer a:hover {
     --card: #11161c;
   }
 
-  body {
+  :root:not([data-theme="light"]) body {
     background: var(--bg);
   }
 
-  .btn-secondary {
+  :root:not([data-theme="light"]) .btn-secondary {
     background: var(--card);
     color: var(--ink);
   }
 
-  .cta-card .btn-primary {
+  :root:not([data-theme="light"]) .cta-card .btn-primary {
     color: var(--coral-dark);
   }
 
@@ -1985,7 +1987,48 @@ footer a:hover {
   .spotlight {
     background: #05070a;
   }
+
+
+  :root:not([data-theme="light"]) .hero h1 {
+    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  }
+
 }
+
+/* Explicit dark, chosen with the toggle. Wins over the system setting. */
+
+  :root[data-theme="dark"] {
+    --ink: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #263241;
+    --bg: #0b0f14;
+    --card: #11161c;
+  }
+
+  :root[data-theme="dark"] body {
+    background: var(--bg);
+  }
+
+  :root[data-theme="dark"] .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+  }
+
+  :root[data-theme="dark"] .cta-card .btn-primary {
+    color: var(--coral-dark);
+  }
+
+  /* .spotlight is already dark-themed on purpose - keep it as-is in both schemes */
+  .spotlight {
+    background: #05070a;
+  }
+
+
+  :root[data-theme="dark"] .hero h1 {
+    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  }
+
+
 
 
 /* ---- Privacy ------------------------------------------------------------
@@ -2586,11 +2629,7 @@ main > section > .wrap > h2,
   color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero h1 {
-    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
-  }
-}
+
 
 /* ---- Skip link ---------------------------------------------------------- */
 .skip-link {
@@ -2619,3 +2658,106 @@ main > section > .wrap > h2,
 .proof-rating {
   transition-timing-function: var(--ease);
 }
+
+/* ---- Theme switch -------------------------------------------------------- */
+.theme-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  margin-inline-start: 4px;
+}
+
+.theme-switch button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 200ms var(--ease), color 200ms var(--ease);
+}
+
+.theme-switch button:hover { color: var(--ink); }
+
+.theme-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.theme-switch button:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* ---- Reviewer faces ------------------------------------------------------ */
+.rv-card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rv-card figcaption::before { content: none; }
+
+.rv-face {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--border);
+}
+
+/* Shown when someone has no public photo, and when a hotlinked one fails. */
+.rv-initials {
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--coral) 22%, transparent);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Closing CTA ---------------------------------------------------------
+   The page now ends on the promise rather than on a button in a box. */
+.cta .wrap {
+  max-width: 720px;
+  text-align: center;
+}
+
+.cta-tagline {
+  max-width: 680px;
+  margin: 0 auto 20px;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.cta-tagline .word {
+  color: color-mix(in srgb, var(--ink) 28%, transparent);
+  transition: color 700ms var(--ease);
+}
+
+.cta-tagline .word.is-in { color: var(--ink); }
+
+.cta-lead {
+  margin: 0 auto 32px;
+  max-width: 46ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.btn-install-lg {
+  padding: 16px 28px 16px 22px;
+  font-size: 1.05rem;
+}
+
+.cta-trust { justify-content: center; margin: 26px 0 16px; }
+.cta-proof { justify-content: center; }
