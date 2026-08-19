@@ -136,6 +136,7 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Lumaktaw sa nilalaman</a>
   <header>
     <div class="wrap">
       <a href="../" class="brand">
@@ -150,7 +151,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <section class="hero">
     <div class="wrap hero-grid">
@@ -222,7 +223,7 @@
   </section>
 
   <!-- ---- Headline new feature, shipped in the version the manifest advertises ---- -->
-  <section class="newfeat" id="minimalist-home">
+  <section class="newfeat" data-reveal id="minimalist-home">
     <div class="wrap">
       <div class="newfeat-grid">
         <div class="newfeat-copy">
@@ -328,7 +329,7 @@
   <!-- Privacy: the permissions are shown verbatim because they are the proof,
        and because a permission name is the same string in every language. -->
 
-  <section class="spotlight">
+  <section class="spotlight" data-reveal>
     <div class="wrap">
       <span class="kicker kicker-light kicker-pill">Focus Mode</span>
       <h2>Isang mode. Walang exception.</h2>
@@ -625,7 +626,14 @@
   </section>
 
 
-  <section class="reviews">
+
+  <section class="tagline">
+    <div class="wrap">
+      <p class="tagline-text" data-reveal-words>Pumunta ka para sa isang video. Ngayon umaalis ka pagkatapos ng isa.</p>
+    </div>
+  </section>
+
+  <section class="reviews" data-reveal>
     <div class="wrap">
       <h2>Ang sinasabi ng mga gumagamit</h2>
       <p class="reviews-lead">
@@ -663,7 +671,7 @@
     </div>
   </section>
 
-  <section class="cta">
+  <section class="cta" data-reveal>
     <div class="wrap">
       <div class="cta-card">
         <h2>Bawiin ang kontrol sa ilang segundo</h2>
@@ -808,5 +816,51 @@
       schedule();
     })();
   </script>
+
+<script>
+/* Motion: elements arrive rather than appear. IntersectionObserver only —
+   a scroll listener here would reflow on every frame on mobile. */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  // Split the tagline into words so each can activate on its own.
+  document.querySelectorAll('[data-reveal-words]').forEach(function (el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.textContent = '';
+    words.forEach(function (w, i) {
+      var span = document.createElement('span');
+      span.className = 'word';
+      span.textContent = w;
+      span.style.transitionDelay = (i * 55) + 'ms';
+      el.appendChild(span);
+      el.appendChild(document.createTextNode(' '));
+    });
+  });
+
+  if (reduce.matches) {
+    document.querySelectorAll('.word, [data-reveal]').forEach(function (el) {
+      el.classList.add('is-in');
+    });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      if (el.hasAttribute('data-reveal-words')) {
+        el.querySelectorAll('.word').forEach(function (w) { w.classList.add('is-in'); });
+      } else {
+        el.classList.add('is-in');
+      }
+      io.unobserve(el);
+    });
+  }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
+
+  document.querySelectorAll('[data-reveal], [data-reveal-words]').forEach(function (el) {
+    io.observe(el);
+  });
+})();
+</script>
 </body>
 </html>

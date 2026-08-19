@@ -2528,3 +2528,94 @@ main > section > .wrap > h2,
 
 @media (max-width: 900px) { .rv-grid { columns: 2; } }
 @media (max-width: 600px) { .rv-grid { columns: 1; } }
+
+/* ==========================================================================
+   Motion. One easing curve everywhere, so movement on this page feels like it
+   has mass rather than like a default transition.
+   ========================================================================== */
+:root {
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Sections arrive as you reach them instead of being there already. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(48px);
+  filter: blur(6px);
+  transition: opacity 800ms var(--ease), transform 800ms var(--ease),
+    filter 800ms var(--ease);
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* ---- Tagline: its own moment, words lighting up in reading order --------- */
+.tagline {
+  padding-block: var(--section-y);
+}
+
+.tagline-text {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: clamp(2.25rem, 5vw, 3.75rem); /* text-4xl -> text-6xl */
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.tagline-text .word {
+  /* Starts as a ghost of the real colour, then resolves. */
+  color: color-mix(in srgb, var(--ink) 28%, transparent);
+  transition: color 700ms var(--ease);
+}
+
+.tagline-text .word.is-in {
+  color: var(--ink);
+}
+
+/* ---- Hero heading ------------------------------------------------------- */
+.hero h1 {
+  background-image: linear-gradient(90deg, #000000, #666666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero h1 {
+    background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  }
+}
+
+/* ---- Skip link ---------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 8px;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  inset-inline-start: 8px;
+}
+
+/* The page's own transitions inherit the curve too. */
+.btn-install,
+.pop-toggle,
+.pop-toggle::after,
+.fcard,
+.rv-card,
+.proof-rating {
+  transition-timing-function: var(--ease);
+}

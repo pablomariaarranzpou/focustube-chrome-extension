@@ -61,7 +61,12 @@
       "c": "Open source"
     },
     "rv": "reviews",
-    "rvh": "What people say"
+    "rvh": "What people say",
+    "tag": {
+      "a": "You came for one video.",
+      "b": "Now you leave after one video."
+    },
+    "skip": "Skip to content"
   },
   "es": {
     "name": "Español",
@@ -125,7 +130,12 @@
       "c": "Código abierto"
     },
     "rv": "reseñas",
-    "rvh": "Lo que dice la gente"
+    "rvh": "Lo que dice la gente",
+    "tag": {
+      "a": "Viniste a ver un vídeo.",
+      "b": "Ahora te vas después de uno."
+    },
+    "skip": "Ir al contenido"
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -189,7 +199,12 @@
       "c": "Código abierto"
     },
     "rv": "reseñas",
-    "rvh": "Lo que dice la gente"
+    "rvh": "Lo que dice la gente",
+    "tag": {
+      "a": "Viniste a ver un video.",
+      "b": "Ahora te vas después de uno."
+    },
+    "skip": "Ir al contenido"
   },
   "fr": {
     "name": "Français",
@@ -253,7 +268,12 @@
       "c": "Open source"
     },
     "rv": "avis",
-    "rvh": "Ce qu'en disent les gens"
+    "rvh": "Ce qu'en disent les gens",
+    "tag": {
+      "a": "Vous veniez pour une vidéo.",
+      "b": "Vous repartez après une vidéo."
+    },
+    "skip": "Aller au contenu"
   },
   "de": {
     "name": "Deutsch",
@@ -317,7 +337,12 @@
       "c": "Open Source"
     },
     "rv": "Bewertungen",
-    "rvh": "Was Nutzer sagen"
+    "rvh": "Was Nutzer sagen",
+    "tag": {
+      "a": "Du kamst für ein Video.",
+      "b": "Jetzt gehst du nach einem Video."
+    },
+    "skip": "Zum Inhalt springen"
   },
   "it": {
     "name": "Italiano",
@@ -381,7 +406,12 @@
       "c": "Open source"
     },
     "rv": "recensioni",
-    "rvh": "Cosa dicono gli utenti"
+    "rvh": "Cosa dicono gli utenti",
+    "tag": {
+      "a": "Sei venuto per un video.",
+      "b": "Ora esci dopo un video."
+    },
+    "skip": "Vai al contenuto"
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -445,7 +475,12 @@
       "c": "Código aberto"
     },
     "rv": "avaliações",
-    "rvh": "O que dizem os utilizadores"
+    "rvh": "O que dizem os utilizadores",
+    "tag": {
+      "a": "Vieste para ver um vídeo.",
+      "b": "Agora sais depois de um vídeo."
+    },
+    "skip": "Ir para o conteúdo"
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -509,7 +544,12 @@
       "c": "Código aberto"
     },
     "rv": "avaliações",
-    "rvh": "O que as pessoas dizem"
+    "rvh": "O que as pessoas dizem",
+    "tag": {
+      "a": "Você veio para ver um vídeo.",
+      "b": "Agora você sai depois de um vídeo."
+    },
+    "skip": "Ir para o conteúdo"
   },
   "nl": {
     "name": "Nederlands",
@@ -573,7 +613,12 @@
       "c": "Open source"
     },
     "rv": "beoordelingen",
-    "rvh": "Wat gebruikers zeggen"
+    "rvh": "Wat gebruikers zeggen",
+    "tag": {
+      "a": "Je kwam voor één video.",
+      "b": "Nu vertrek je na één video."
+    },
+    "skip": "Naar inhoud"
   },
   "ca": {
     "name": "Català",
@@ -637,7 +682,12 @@
       "c": "Codi obert"
     },
     "rv": "ressenyes",
-    "rvh": "Què diu la gent"
+    "rvh": "Què diu la gent",
+    "tag": {
+      "a": "Vas venir per un vídeo.",
+      "b": "Ara te'n vas després d'un vídeo."
+    },
+    "skip": "Vés al contingut"
   },
   "ro": {
     "name": "Română",
@@ -701,7 +751,12 @@
       "c": "Sursă deschisă"
     },
     "rv": "recenzii",
-    "rvh": "Ce spun oamenii"
+    "rvh": "Ce spun oamenii",
+    "tag": {
+      "a": "Ai venit pentru un videoclip.",
+      "b": "Acum pleci după un videoclip."
+    },
+    "skip": "Sari la conținut"
   },
   "pl": {
     "name": "Polski",
@@ -765,7 +820,12 @@
       "c": "Otwarty kod"
     },
     "rv": "opinii",
-    "rvh": "Co mówią użytkownicy"
+    "rvh": "Co mówią użytkownicy",
+    "tag": {
+      "a": "Przyszedłeś po jeden film.",
+      "b": "Teraz wychodzisz po jednym filmie."
+    },
+    "skip": "Przejdź do treści"
   },
   "cs": {
     "name": "Čeština",
@@ -829,7 +889,12 @@
       "c": "Otevřený kód"
     },
     "rv": "hodnocení",
-    "rvh": "Co říkají uživatelé"
+    "rvh": "Co říkají uživatelé",
+    "tag": {
+      "a": "Přišel jsi kvůli jednomu videu.",
+      "b": "Teď odcházíš po jednom videu."
+    },
+    "skip": "Přejít na obsah"
   },
   "sk": {
     "name": "Slovenčina",
@@ -893,7 +958,12 @@
       "c": "Otvorený kód"
     },
     "rv": "hodnotení",
-    "rvh": "Čo hovoria používatelia"
+    "rvh": "Čo hovoria používatelia",
+    "tag": {
+      "a": "Prišiel si kvôli jednému videu.",
+      "b": "Teraz odchádzaš po jednom videu."
+    },
+    "skip": "Prejsť na obsah"
   },
   "sl": {
     "name": "Slovenščina",
@@ -957,7 +1027,12 @@
       "c": "Odprta koda"
     },
     "rv": "ocen",
-    "rvh": "Kaj pravijo uporabniki"
+    "rvh": "Kaj pravijo uporabniki",
+    "tag": {
+      "a": "Prišel si zaradi enega videa.",
+      "b": "Zdaj odideš po enem videu."
+    },
+    "skip": "Preskoči na vsebino"
   },
   "hr": {
     "name": "Hrvatski",
@@ -1021,7 +1096,12 @@
       "c": "Otvoreni kod"
     },
     "rv": "recenzija",
-    "rvh": "Što kažu korisnici"
+    "rvh": "Što kažu korisnici",
+    "tag": {
+      "a": "Došao si zbog jednog videa.",
+      "b": "Sada odlaziš nakon jednog videa."
+    },
+    "skip": "Prijeđi na sadržaj"
   },
   "sr": {
     "name": "Српски",
@@ -1085,7 +1165,12 @@
       "c": "Otvoreni kod"
     },
     "rv": "recenzija",
-    "rvh": "Šta kažu korisnici"
+    "rvh": "Šta kažu korisnici",
+    "tag": {
+      "a": "Došao si zbog jednog videa.",
+      "b": "Sada odlaziš posle jednog videa."
+    },
+    "skip": "Pređi na sadržaj"
   },
   "ru": {
     "name": "Русский",
@@ -1149,7 +1234,12 @@
       "c": "Открытый код"
     },
     "rv": "отзывов",
-    "rvh": "Что говорят пользователи"
+    "rvh": "Что говорят пользователи",
+    "tag": {
+      "a": "Вы пришли за одним видео.",
+      "b": "Теперь вы уходите после одного."
+    },
+    "skip": "Перейти к содержимому"
   },
   "el": {
     "name": "Ελληνικά",
@@ -1213,7 +1303,12 @@
       "c": "Ανοιχτός κώδικας"
     },
     "rv": "κριτικές",
-    "rvh": "Τι λένε οι χρήστες"
+    "rvh": "Τι λένε οι χρήστες",
+    "tag": {
+      "a": "Ήρθες για ένα βίντεο.",
+      "b": "Τώρα φεύγεις μετά από ένα βίντεο."
+    },
+    "skip": "Μετάβαση στο περιεχόμενο"
   },
   "tr": {
     "name": "Türkçe",
@@ -1277,7 +1372,12 @@
       "c": "Açık kaynak"
     },
     "rv": "değerlendirme",
-    "rvh": "Kullanıcılar ne diyor"
+    "rvh": "Kullanıcılar ne diyor",
+    "tag": {
+      "a": "Tek bir video için geldin.",
+      "b": "Artık bir videodan sonra çıkıyorsun."
+    },
+    "skip": "İçeriğe geç"
   },
   "hu": {
     "name": "Magyar",
@@ -1341,7 +1441,12 @@
       "c": "Nyílt forráskód"
     },
     "rv": "értékelés",
-    "rvh": "Mit mondanak a felhasználók"
+    "rvh": "Mit mondanak a felhasználók",
+    "tag": {
+      "a": "Egy videóért jöttél.",
+      "b": "Most egy videó után távozol."
+    },
+    "skip": "Ugrás a tartalomra"
   },
   "et": {
     "name": "Eesti",
@@ -1405,7 +1510,12 @@
       "c": "Avatud lähtekood"
     },
     "rv": "arvustust",
-    "rvh": "Mida kasutajad ütlevad"
+    "rvh": "Mida kasutajad ütlevad",
+    "tag": {
+      "a": "Tulid ühe video pärast.",
+      "b": "Nüüd lahkud pärast üht videot."
+    },
+    "skip": "Liigu sisu juurde"
   },
   "lv": {
     "name": "Latviešu",
@@ -1469,7 +1579,12 @@
       "c": "Atvērtais kods"
     },
     "rv": "atsauksmes",
-    "rvh": "Ko saka lietotāji"
+    "rvh": "Ko saka lietotāji",
+    "tag": {
+      "a": "Tu atnāci uz vienu video.",
+      "b": "Tagad tu aizej pēc viena video."
+    },
+    "skip": "Pāriet uz saturu"
   },
   "lt": {
     "name": "Lietuvių",
@@ -1533,7 +1648,12 @@
       "c": "Atviras kodas"
     },
     "rv": "atsiliepimų",
-    "rvh": "Ką sako naudotojai"
+    "rvh": "Ką sako naudotojai",
+    "tag": {
+      "a": "Atėjai dėl vieno vaizdo įrašo.",
+      "b": "Dabar išeini po vieno."
+    },
+    "skip": "Pereiti prie turinio"
   },
   "sv": {
     "name": "Svenska",
@@ -1597,7 +1717,12 @@
       "c": "Öppen källkod"
     },
     "rv": "recensioner",
-    "rvh": "Vad användarna säger"
+    "rvh": "Vad användarna säger",
+    "tag": {
+      "a": "Du kom för en video.",
+      "b": "Nu går du efter en video."
+    },
+    "skip": "Hoppa till innehåll"
   },
   "no": {
     "name": "Norsk",
@@ -1661,7 +1786,12 @@
       "c": "Åpen kildekode"
     },
     "rv": "anmeldelser",
-    "rvh": "Hva brukerne sier"
+    "rvh": "Hva brukerne sier",
+    "tag": {
+      "a": "Du kom for én video.",
+      "b": "Nå går du etter én video."
+    },
+    "skip": "Hopp til innhold"
   },
   "da": {
     "name": "Dansk",
@@ -1725,7 +1855,12 @@
       "c": "Open source"
     },
     "rv": "anmeldelser",
-    "rvh": "Hvad brugerne siger"
+    "rvh": "Hvad brugerne siger",
+    "tag": {
+      "a": "Du kom for én video.",
+      "b": "Nu går du efter én video."
+    },
+    "skip": "Spring til indhold"
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1789,7 +1924,12 @@
       "c": "Sumber terbuka"
     },
     "rv": "ulasan",
-    "rvh": "Kata pengguna"
+    "rvh": "Kata pengguna",
+    "tag": {
+      "a": "Kamu datang untuk satu video.",
+      "b": "Sekarang kamu pergi setelah satu video."
+    },
+    "skip": "Lewati ke konten"
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1853,7 +1993,12 @@
       "c": "Sumber terbuka"
     },
     "rv": "ulasan",
-    "rvh": "Apa kata pengguna"
+    "rvh": "Apa kata pengguna",
+    "tag": {
+      "a": "Anda datang untuk satu video.",
+      "b": "Kini anda pergi selepas satu video."
+    },
+    "skip": "Langkau ke kandungan"
   },
   "fil": {
     "name": "Filipino",
@@ -1917,7 +2062,12 @@
       "c": "Open source"
     },
     "rv": "review",
-    "rvh": "Ang sinasabi ng mga gumagamit"
+    "rvh": "Ang sinasabi ng mga gumagamit",
+    "tag": {
+      "a": "Pumunta ka para sa isang video.",
+      "b": "Ngayon umaalis ka pagkatapos ng isa."
+    },
+    "skip": "Lumaktaw sa nilalaman"
   },
   "ja": {
     "name": "日本語",
@@ -1981,7 +2131,12 @@
       "c": "オープンソース"
     },
     "rv": "件のレビュー",
-    "rvh": "利用者の声"
+    "rvh": "利用者の声",
+    "tag": {
+      "a": "1本の動画のために来た。",
+      "b": "1本見たら、もう帰れる。"
+    },
+    "skip": "本文へスキップ"
   },
   "ko": {
     "name": "한국어",
@@ -2045,7 +2200,12 @@
       "c": "오픈 소스"
     },
     "rv": "개의 리뷰",
-    "rvh": "사용자 후기"
+    "rvh": "사용자 후기",
+    "tag": {
+      "a": "영상 하나를 보러 왔습니다.",
+      "b": "이제 하나만 보고 나갑니다."
+    },
+    "skip": "본문으로 건너뛰기"
   },
   "he": {
     "name": "עברית",
@@ -2110,7 +2270,12 @@
       "c": "קוד פתוח"
     },
     "rv": "ביקורות",
-    "rvh": "מה אומרים המשתמשים"
+    "rvh": "מה אומרים המשתמשים",
+    "tag": {
+      "a": "באת בשביל סרטון אחד.",
+      "b": "עכשיו אתה יוצא אחרי אחד."
+    },
+    "skip": "דלג לתוכן"
   },
   "ar": {
     "name": "العربية",
@@ -2175,7 +2340,12 @@
       "c": "مفتوح المصدر"
     },
     "rv": "مراجعة",
-    "rvh": "ماذا يقول المستخدمون"
+    "rvh": "ماذا يقول المستخدمون",
+    "tag": {
+      "a": "جئت لمشاهدة مقطع واحد.",
+      "b": "الآن تغادر بعد مقطع واحد."
+    },
+    "skip": "تخطَّ إلى المحتوى"
   },
   "fa": {
     "name": "فارسی",
@@ -2240,7 +2410,12 @@
       "c": "متن‌باز"
     },
     "rv": "نظر",
-    "rvh": "کاربران چه می‌گویند"
+    "rvh": "کاربران چه می‌گویند",
+    "tag": {
+      "a": "برای یک ویدیو آمدی.",
+      "b": "حالا بعد از یک ویدیو می‌روی."
+    },
+    "skip": "پرش به محتوا"
   },
   "hi": {
     "name": "हिन्दी",
@@ -2304,7 +2479,12 @@
       "c": "ओपन सोर्स"
     },
     "rv": "समीक्षाएँ",
-    "rvh": "लोग क्या कहते हैं"
+    "rvh": "लोग क्या कहते हैं",
+    "tag": {
+      "a": "आप एक वीडियो के लिए आए थे।",
+      "b": "अब आप एक के बाद चले जाते हैं।"
+    },
+    "skip": "सामग्री पर जाएं"
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2368,7 +2548,12 @@
       "c": "ઓપન સોર્સ"
     },
     "rv": "સમીક્ષાઓ",
-    "rvh": "લોકો શું કહે છે"
+    "rvh": "લોકો શું કહે છે",
+    "tag": {
+      "a": "તમે એક વીડિયો માટે આવ્યા હતા.",
+      "b": "હવે તમે એક પછી નીકળી જાઓ છો."
+    },
+    "skip": "સામગ્રી પર જાઓ"
   },
   "mr": {
     "name": "मराठी",
@@ -2432,7 +2617,12 @@
       "c": "ओपन सोर्स"
     },
     "rv": "पुनरावलोकने",
-    "rvh": "लोक काय म्हणतात"
+    "rvh": "लोक काय म्हणतात",
+    "tag": {
+      "a": "तुम्ही एका व्हिडिओसाठी आलात.",
+      "b": "आता तुम्ही एकानंतर निघता."
+    },
+    "skip": "मजकुरावर जा"
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2496,7 +2686,12 @@
       "c": "ಓಪನ್ ಸೋರ್ಸ್"
     },
     "rv": "ವಿಮರ್ಶೆಗಳು",
-    "rvh": "ಜನರು ಏನು ಹೇಳುತ್ತಾರೆ"
+    "rvh": "ಜನರು ಏನು ಹೇಳುತ್ತಾರೆ",
+    "tag": {
+      "a": "ನೀವು ಒಂದು ವೀಡಿಯೊಗಾಗಿ ಬಂದಿರಿ.",
+      "b": "ಈಗ ಒಂದಾದ ನಂತರ ಹೊರಡುತ್ತೀರಿ."
+    },
+    "skip": "ವಿಷಯಕ್ಕೆ ಹೋಗಿ"
   },
   "ta": {
     "name": "தமிழ்",
@@ -2560,7 +2755,12 @@
       "c": "ஓபன் சோர்ஸ்"
     },
     "rv": "மதிப்புரைகள்",
-    "rvh": "பயனர்கள் என்ன சொல்கிறார்கள்"
+    "rvh": "பயனர்கள் என்ன சொல்கிறார்கள்",
+    "tag": {
+      "a": "ஒரு வீடியோவுக்காக வந்தீர்கள்.",
+      "b": "இப்போது ஒன்றுக்குப் பிறகு செல்கிறீர்கள்."
+    },
+    "skip": "உள்ளடக்கத்திற்குச் செல்"
   },
   "te": {
     "name": "తెలుగు",
@@ -2624,7 +2824,12 @@
       "c": "ఓపెన్ సోర్స్"
     },
     "rv": "సమీక్షలు",
-    "rvh": "వినియోగదారులు ఏమంటున్నారు"
+    "rvh": "వినియోగదారులు ఏమంటున్నారు",
+    "tag": {
+      "a": "మీరు ఒక వీడియో కోసం వచ్చారు.",
+      "b": "ఇప్పుడు ఒకటి చూసి వెళ్లిపోతారు."
+    },
+    "skip": "కంటెంట్‌కు వెళ్లండి"
   },
   "sw": {
     "name": "Kiswahili",
@@ -2688,7 +2893,12 @@
       "c": "Chanzo huria"
     },
     "rv": "maoni",
-    "rvh": "Watumiaji wanasema nini"
+    "rvh": "Watumiaji wanasema nini",
+    "tag": {
+      "a": "Ulikuja kwa video moja.",
+      "b": "Sasa unaondoka baada ya moja."
+    },
+    "skip": "Rukia maudhui"
   },
   "am": {
     "name": "አማርኛ",
@@ -2752,6 +2962,11 @@
       "c": "ክፍት ምንጭ"
     },
     "rv": "ግምገማዎች",
-    "rvh": "ተጠቃሚዎች ምን ይላሉ"
+    "rvh": "ተጠቃሚዎች ምን ይላሉ",
+    "tag": {
+      "a": "ለአንድ ቪዲዮ መጣህ።",
+      "b": "አሁን ከአንድ በኋላ ትወጣለህ።"
+    },
+    "skip": "ወደ ይዘቱ ዝለል"
   }
 }
