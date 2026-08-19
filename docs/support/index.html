@@ -38,10 +38,34 @@
   <section class="support">
     <div class="wrap">
 
-      <article class="qa">
-        <h2>You turned something on and YouTube looks the same</h2>
-        <p><strong>Refresh the YouTube tab.</strong> FocusTube applies your settings to pages as they load, so a tab that was already open when you changed a setting keeps showing the old state until it reloads.</p>
-        <p>If it still looks the same after a refresh, check the <strong>Mode</strong> tab in the popup: if the mode is <em>Off</em>, or a <em>Timer</em> session is not running, or you are outside a <em>Schedule</em> you set, then everything on YouTube shows on purpose, whatever the Settings tab says.</p>
+      <article class="qa qa-lead">
+        <h2>Nothing is being hidden</h2>
+        <p>Almost always one of four things, in this order. The first takes a second to check and fixes most cases.</p>
+
+        <ol class="steps">
+          <li>
+            <h3>Refresh the YouTube tab</h3>
+            <p>FocusTube applies your settings to a page as it loads. A tab that was already open when you changed a setting — or when you installed the extension — keeps showing the old state until it reloads.</p>
+          </li>
+
+          <li>
+            <h3>Check the mode is not <em>Off</em></h3>
+            <p>Open the popup and look at the <strong>Mode</strong> tab. On <em>Off</em>, everything on YouTube shows on purpose, no matter what is switched on in Settings. Settings decide <em>what</em> gets hidden; Mode decides <em>when</em> that applies.</p>
+          </li>
+
+          <li>
+            <h3>On <em>Timer</em>, check a session is actually running</h3>
+            <p>This one catches people out. Choosing <em>Timer</em> does not start anything by itself — it only means "hide things while a focus session is running". Until you press start, no session is running, so nothing is hidden and the extension looks broken.</p>
+            <p>Either start a session, or switch the mode to <strong>Always</strong> if you want your settings to apply all the time.</p>
+          </li>
+
+          <li>
+            <h3>On <em>Schedule</em>, check you are inside one of your windows</h3>
+            <p>Same idea. A schedule only applies on the days and times you set, so outside those windows YouTube is deliberately left alone. If it is Saturday and your schedule covers weekdays, nothing will be hidden — that is it working as configured.</p>
+          </li>
+        </ol>
+
+        <p class="qa-note">If you just want it on permanently and never want to think about this again, set the mode to <strong>Always</strong>.</p>
       </article>
 
       <article class="qa">

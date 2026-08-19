@@ -257,6 +257,7 @@ for (const code of locales) {
     '{{PV_B}}': escapeHtml(c.pv.b),
     '{{PV_C}}': escapeHtml(c.pv.c),
     '{{RV_LABEL}}': escapeHtml(c.rv),
+    '{{RV_HEADING}}': escapeHtml(c.rvh),
     '{{STORE_REVIEWS_URL}}': STORE_REVIEWS_URL,
     '{{STORE_RATING}}': escapeHtml(STORE_RATING),
     '{{STORE_REVIEW_COUNT}}': escapeHtml(STORE_REVIEW_COUNT),

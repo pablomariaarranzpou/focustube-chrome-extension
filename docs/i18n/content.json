@@ -60,7 +60,8 @@
       "b": "Nothing tracked",
       "c": "Open source"
     },
-    "rv": "reviews"
+    "rv": "reviews",
+    "rvh": "What people say"
   },
   "es": {
     "name": "Español",
@@ -123,7 +124,8 @@
       "b": "Sin rastreo",
       "c": "Código abierto"
     },
-    "rv": "reseñas"
+    "rv": "reseñas",
+    "rvh": "Lo que dice la gente"
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -186,7 +188,8 @@
       "b": "Sin rastreo",
       "c": "Código abierto"
     },
-    "rv": "reseñas"
+    "rv": "reseñas",
+    "rvh": "Lo que dice la gente"
   },
   "fr": {
     "name": "Français",
@@ -249,7 +252,8 @@
       "b": "Aucun suivi",
       "c": "Open source"
     },
-    "rv": "avis"
+    "rv": "avis",
+    "rvh": "Ce qu'en disent les gens"
   },
   "de": {
     "name": "Deutsch",
@@ -312,7 +316,8 @@
       "b": "Kein Tracking",
       "c": "Open Source"
     },
-    "rv": "Bewertungen"
+    "rv": "Bewertungen",
+    "rvh": "Was Nutzer sagen"
   },
   "it": {
     "name": "Italiano",
@@ -375,7 +380,8 @@
       "b": "Nessun tracciamento",
       "c": "Open source"
     },
-    "rv": "recensioni"
+    "rv": "recensioni",
+    "rvh": "Cosa dicono gli utenti"
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -438,7 +444,8 @@
       "b": "Sem rastreio",
       "c": "Código aberto"
     },
-    "rv": "avaliações"
+    "rv": "avaliações",
+    "rvh": "O que dizem os utilizadores"
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -501,7 +508,8 @@
       "b": "Sem rastreamento",
       "c": "Código aberto"
     },
-    "rv": "avaliações"
+    "rv": "avaliações",
+    "rvh": "O que as pessoas dizem"
   },
   "nl": {
     "name": "Nederlands",
@@ -564,7 +572,8 @@
       "b": "Geen tracking",
       "c": "Open source"
     },
-    "rv": "beoordelingen"
+    "rv": "beoordelingen",
+    "rvh": "Wat gebruikers zeggen"
   },
   "ca": {
     "name": "Català",
@@ -627,7 +636,8 @@
       "b": "Sense rastreig",
       "c": "Codi obert"
     },
-    "rv": "ressenyes"
+    "rv": "ressenyes",
+    "rvh": "Què diu la gent"
   },
   "ro": {
     "name": "Română",
@@ -690,7 +700,8 @@
       "b": "Fără urmărire",
       "c": "Sursă deschisă"
     },
-    "rv": "recenzii"
+    "rv": "recenzii",
+    "rvh": "Ce spun oamenii"
   },
   "pl": {
     "name": "Polski",
@@ -753,7 +764,8 @@
       "b": "Bez śledzenia",
       "c": "Otwarty kod"
     },
-    "rv": "opinii"
+    "rv": "opinii",
+    "rvh": "Co mówią użytkownicy"
   },
   "cs": {
     "name": "Čeština",
@@ -816,7 +828,8 @@
       "b": "Žádné sledování",
       "c": "Otevřený kód"
     },
-    "rv": "hodnocení"
+    "rv": "hodnocení",
+    "rvh": "Co říkají uživatelé"
   },
   "sk": {
     "name": "Slovenčina",
@@ -879,7 +892,8 @@
       "b": "Žiadne sledovanie",
       "c": "Otvorený kód"
     },
-    "rv": "hodnotení"
+    "rv": "hodnotení",
+    "rvh": "Čo hovoria používatelia"
   },
   "sl": {
     "name": "Slovenščina",
@@ -942,7 +956,8 @@
       "b": "Brez sledenja",
       "c": "Odprta koda"
     },
-    "rv": "ocen"
+    "rv": "ocen",
+    "rvh": "Kaj pravijo uporabniki"
   },
   "hr": {
     "name": "Hrvatski",
@@ -1005,7 +1020,8 @@
       "b": "Bez praćenja",
       "c": "Otvoreni kod"
     },
-    "rv": "recenzija"
+    "rv": "recenzija",
+    "rvh": "Što kažu korisnici"
   },
   "sr": {
     "name": "Српски",
@@ -1068,7 +1084,8 @@
       "b": "Bez praćenja",
       "c": "Otvoreni kod"
     },
-    "rv": "recenzija"
+    "rv": "recenzija",
+    "rvh": "Šta kažu korisnici"
   },
   "ru": {
     "name": "Русский",
@@ -1131,7 +1148,8 @@
       "b": "Без слежки",
       "c": "Открытый код"
     },
-    "rv": "отзывов"
+    "rv": "отзывов",
+    "rvh": "Что говорят пользователи"
   },
   "el": {
     "name": "Ελληνικά",
@@ -1194,7 +1212,8 @@
       "b": "Καμία παρακολούθηση",
       "c": "Ανοιχτός κώδικας"
     },
-    "rv": "κριτικές"
+    "rv": "κριτικές",
+    "rvh": "Τι λένε οι χρήστες"
   },
   "tr": {
     "name": "Türkçe",
@@ -1257,7 +1276,8 @@
       "b": "Takip yok",
       "c": "Açık kaynak"
     },
-    "rv": "değerlendirme"
+    "rv": "değerlendirme",
+    "rvh": "Kullanıcılar ne diyor"
   },
   "hu": {
     "name": "Magyar",
@@ -1320,7 +1340,8 @@
       "b": "Nincs követés",
       "c": "Nyílt forráskód"
     },
-    "rv": "értékelés"
+    "rv": "értékelés",
+    "rvh": "Mit mondanak a felhasználók"
   },
   "et": {
     "name": "Eesti",
@@ -1383,7 +1404,8 @@
       "b": "Jälgimist pole",
       "c": "Avatud lähtekood"
     },
-    "rv": "arvustust"
+    "rv": "arvustust",
+    "rvh": "Mida kasutajad ütlevad"
   },
   "lv": {
     "name": "Latviešu",
@@ -1446,7 +1468,8 @@
       "b": "Bez izsekošanas",
       "c": "Atvērtais kods"
     },
-    "rv": "atsauksmes"
+    "rv": "atsauksmes",
+    "rvh": "Ko saka lietotāji"
   },
   "lt": {
     "name": "Lietuvių",
@@ -1509,7 +1532,8 @@
       "b": "Jokio sekimo",
       "c": "Atviras kodas"
     },
-    "rv": "atsiliepimų"
+    "rv": "atsiliepimų",
+    "rvh": "Ką sako naudotojai"
   },
   "sv": {
     "name": "Svenska",
@@ -1572,7 +1596,8 @@
       "b": "Ingen spårning",
       "c": "Öppen källkod"
     },
-    "rv": "recensioner"
+    "rv": "recensioner",
+    "rvh": "Vad användarna säger"
   },
   "no": {
     "name": "Norsk",
@@ -1635,7 +1660,8 @@
       "b": "Ingen sporing",
       "c": "Åpen kildekode"
     },
-    "rv": "anmeldelser"
+    "rv": "anmeldelser",
+    "rvh": "Hva brukerne sier"
   },
   "da": {
     "name": "Dansk",
@@ -1698,7 +1724,8 @@
       "b": "Ingen sporing",
       "c": "Open source"
     },
-    "rv": "anmeldelser"
+    "rv": "anmeldelser",
+    "rvh": "Hvad brugerne siger"
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -1761,7 +1788,8 @@
       "b": "Tanpa pelacakan",
       "c": "Sumber terbuka"
     },
-    "rv": "ulasan"
+    "rv": "ulasan",
+    "rvh": "Kata pengguna"
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -1824,7 +1852,8 @@
       "b": "Tiada penjejakan",
       "c": "Sumber terbuka"
     },
-    "rv": "ulasan"
+    "rv": "ulasan",
+    "rvh": "Apa kata pengguna"
   },
   "fil": {
     "name": "Filipino",
@@ -1887,7 +1916,8 @@
       "b": "Walang pagsubaybay",
       "c": "Open source"
     },
-    "rv": "review"
+    "rv": "review",
+    "rvh": "Ang sinasabi ng mga gumagamit"
   },
   "ja": {
     "name": "日本語",
@@ -1950,7 +1980,8 @@
       "b": "追跡なし",
       "c": "オープンソース"
     },
-    "rv": "件のレビュー"
+    "rv": "件のレビュー",
+    "rvh": "利用者の声"
   },
   "ko": {
     "name": "한국어",
@@ -2013,7 +2044,8 @@
       "b": "추적 없음",
       "c": "오픈 소스"
     },
-    "rv": "개의 리뷰"
+    "rv": "개의 리뷰",
+    "rvh": "사용자 후기"
   },
   "he": {
     "name": "עברית",
@@ -2077,7 +2109,8 @@
       "b": "ללא מעקב",
       "c": "קוד פתוח"
     },
-    "rv": "ביקורות"
+    "rv": "ביקורות",
+    "rvh": "מה אומרים המשתמשים"
   },
   "ar": {
     "name": "العربية",
@@ -2141,7 +2174,8 @@
       "b": "بدون تتبع",
       "c": "مفتوح المصدر"
     },
-    "rv": "مراجعة"
+    "rv": "مراجعة",
+    "rvh": "ماذا يقول المستخدمون"
   },
   "fa": {
     "name": "فارسی",
@@ -2205,7 +2239,8 @@
       "b": "بدون ردیابی",
       "c": "متن‌باز"
     },
-    "rv": "نظر"
+    "rv": "نظر",
+    "rvh": "کاربران چه می‌گویند"
   },
   "hi": {
     "name": "हिन्दी",
@@ -2268,7 +2303,8 @@
       "b": "कोई ट्रैकिंग नहीं",
       "c": "ओपन सोर्स"
     },
-    "rv": "समीक्षाएँ"
+    "rv": "समीक्षाएँ",
+    "rvh": "लोग क्या कहते हैं"
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2331,7 +2367,8 @@
       "b": "કોઈ ટ્રેકિંગ નથી",
       "c": "ઓપન સોર્સ"
     },
-    "rv": "સમીક્ષાઓ"
+    "rv": "સમીક્ષાઓ",
+    "rvh": "લોકો શું કહે છે"
   },
   "mr": {
     "name": "मराठी",
@@ -2394,7 +2431,8 @@
       "b": "ट्रॅकिंग नाही",
       "c": "ओपन सोर्स"
     },
-    "rv": "पुनरावलोकने"
+    "rv": "पुनरावलोकने",
+    "rvh": "लोक काय म्हणतात"
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2457,7 +2495,8 @@
       "b": "ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ",
       "c": "ಓಪನ್ ಸೋರ್ಸ್"
     },
-    "rv": "ವಿಮರ್ಶೆಗಳು"
+    "rv": "ವಿಮರ್ಶೆಗಳು",
+    "rvh": "ಜನರು ಏನು ಹೇಳುತ್ತಾರೆ"
   },
   "ta": {
     "name": "தமிழ்",
@@ -2520,7 +2559,8 @@
       "b": "கண்காணிப்பு இல்லை",
       "c": "ஓபன் சோர்ஸ்"
     },
-    "rv": "மதிப்புரைகள்"
+    "rv": "மதிப்புரைகள்",
+    "rvh": "பயனர்கள் என்ன சொல்கிறார்கள்"
   },
   "te": {
     "name": "తెలుగు",
@@ -2583,7 +2623,8 @@
       "b": "ట్రాకింగ్ లేదు",
       "c": "ఓపెన్ సోర్స్"
     },
-    "rv": "సమీక్షలు"
+    "rv": "సమీక్షలు",
+    "rvh": "వినియోగదారులు ఏమంటున్నారు"
   },
   "sw": {
     "name": "Kiswahili",
@@ -2646,7 +2687,8 @@
       "b": "Hakuna ufuatiliaji",
       "c": "Chanzo huria"
     },
-    "rv": "maoni"
+    "rv": "maoni",
+    "rvh": "Watumiaji wanasema nini"
   },
   "am": {
     "name": "አማርኛ",
@@ -2709,6 +2751,7 @@
       "b": "ክትትል የለም",
       "c": "ክፍት ምንጭ"
     },
-    "rv": "ግምገማዎች"
+    "rv": "ግምገማዎች",
+    "rvh": "ተጠቃሚዎች ምን ይላሉ"
   }
 }
