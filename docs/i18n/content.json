@@ -72,7 +72,8 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
-    }
+    },
+    "nm": "Menu"
   },
   "es": {
     "name": "Español",
@@ -147,7 +148,8 @@
       "light": "Claro",
       "dark": "Oscuro",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menú"
   },
   "es_419": {
     "name": "Español (Latinoamérica)",
@@ -222,7 +224,8 @@
       "light": "Claro",
       "dark": "Oscuro",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menú"
   },
   "fr": {
     "name": "Français",
@@ -297,7 +300,8 @@
       "light": "Clair",
       "dark": "Sombre",
       "system": "Système"
-    }
+    },
+    "nm": "Menu"
   },
   "de": {
     "name": "Deutsch",
@@ -372,7 +376,8 @@
       "light": "Hell",
       "dark": "Dunkel",
       "system": "System"
-    }
+    },
+    "nm": "Menü"
   },
   "it": {
     "name": "Italiano",
@@ -447,7 +452,8 @@
       "light": "Chiaro",
       "dark": "Scuro",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menu"
   },
   "pt_PT": {
     "name": "Português (Portugal)",
@@ -522,7 +528,8 @@
       "light": "Claro",
       "dark": "Escuro",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menu"
   },
   "pt_BR": {
     "name": "Português (Brasil)",
@@ -597,7 +604,8 @@
       "light": "Claro",
       "dark": "Escuro",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menu"
   },
   "nl": {
     "name": "Nederlands",
@@ -672,7 +680,8 @@
       "light": "Licht",
       "dark": "Donker",
       "system": "Systeem"
-    }
+    },
+    "nm": "Menu"
   },
   "ca": {
     "name": "Català",
@@ -747,7 +756,8 @@
       "light": "Clar",
       "dark": "Fosc",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menú"
   },
   "ro": {
     "name": "Română",
@@ -822,7 +832,8 @@
       "light": "Luminos",
       "dark": "Întunecat",
       "system": "Sistem"
-    }
+    },
+    "nm": "Meniu"
   },
   "pl": {
     "name": "Polski",
@@ -897,7 +908,8 @@
       "light": "Jasny",
       "dark": "Ciemny",
       "system": "Systemowy"
-    }
+    },
+    "nm": "Menu"
   },
   "cs": {
     "name": "Čeština",
@@ -972,7 +984,8 @@
       "light": "Světlý",
       "dark": "Tmavý",
       "system": "Systém"
-    }
+    },
+    "nm": "Menu"
   },
   "sk": {
     "name": "Slovenčina",
@@ -1047,7 +1060,8 @@
       "light": "Svetlý",
       "dark": "Tmavý",
       "system": "Systém"
-    }
+    },
+    "nm": "Menu"
   },
   "sl": {
     "name": "Slovenščina",
@@ -1122,7 +1136,8 @@
       "light": "Svetla",
       "dark": "Temna",
       "system": "Sistem"
-    }
+    },
+    "nm": "Meni"
   },
   "hr": {
     "name": "Hrvatski",
@@ -1197,7 +1212,8 @@
       "light": "Svijetla",
       "dark": "Tamna",
       "system": "Sustav"
-    }
+    },
+    "nm": "Izbornik"
   },
   "sr": {
     "name": "Српски",
@@ -1272,7 +1288,8 @@
       "light": "Svetla",
       "dark": "Tamna",
       "system": "Sistem"
-    }
+    },
+    "nm": "Meni"
   },
   "ru": {
     "name": "Русский",
@@ -1347,7 +1364,8 @@
       "light": "Светлая",
       "dark": "Тёмная",
       "system": "Системная"
-    }
+    },
+    "nm": "Меню"
   },
   "el": {
     "name": "Ελληνικά",
@@ -1422,7 +1440,8 @@
       "light": "Φωτεινό",
       "dark": "Σκούρο",
       "system": "Σύστημα"
-    }
+    },
+    "nm": "Μενού"
   },
   "tr": {
     "name": "Türkçe",
@@ -1497,7 +1516,8 @@
       "light": "Açık",
       "dark": "Koyu",
       "system": "Sistem"
-    }
+    },
+    "nm": "Menü"
   },
   "hu": {
     "name": "Magyar",
@@ -1572,7 +1592,8 @@
       "light": "Világos",
       "dark": "Sötét",
       "system": "Rendszer"
-    }
+    },
+    "nm": "Menü"
   },
   "et": {
     "name": "Eesti",
@@ -1647,7 +1668,8 @@
       "light": "Hele",
       "dark": "Tume",
       "system": "Süsteem"
-    }
+    },
+    "nm": "Menüü"
   },
   "lv": {
     "name": "Latviešu",
@@ -1722,7 +1744,8 @@
       "light": "Gaišs",
       "dark": "Tumšs",
       "system": "Sistēmas"
-    }
+    },
+    "nm": "Izvēlne"
   },
   "lt": {
     "name": "Lietuvių",
@@ -1797,7 +1820,8 @@
       "light": "Šviesi",
       "dark": "Tamsi",
       "system": "Sistemos"
-    }
+    },
+    "nm": "Meniu"
   },
   "sv": {
     "name": "Svenska",
@@ -1872,7 +1896,8 @@
       "light": "Ljust",
       "dark": "Mörkt",
       "system": "System"
-    }
+    },
+    "nm": "Meny"
   },
   "no": {
     "name": "Norsk",
@@ -1947,7 +1972,8 @@
       "light": "Lyst",
       "dark": "Mørkt",
       "system": "System"
-    }
+    },
+    "nm": "Meny"
   },
   "da": {
     "name": "Dansk",
@@ -2022,7 +2048,8 @@
       "light": "Lyst",
       "dark": "Mørkt",
       "system": "System"
-    }
+    },
+    "nm": "Menu"
   },
   "id": {
     "name": "Bahasa Indonesia",
@@ -2097,7 +2124,8 @@
       "light": "Terang",
       "dark": "Gelap",
       "system": "Sistem"
-    }
+    },
+    "nm": "Menu"
   },
   "ms": {
     "name": "Bahasa Melayu",
@@ -2172,7 +2200,8 @@
       "light": "Cerah",
       "dark": "Gelap",
       "system": "Sistem"
-    }
+    },
+    "nm": "Menu"
   },
   "fil": {
     "name": "Filipino",
@@ -2247,7 +2276,8 @@
       "light": "Maliwanag",
       "dark": "Madilim",
       "system": "Sistema"
-    }
+    },
+    "nm": "Menu"
   },
   "ja": {
     "name": "日本語",
@@ -2322,7 +2352,8 @@
       "light": "ライト",
       "dark": "ダーク",
       "system": "システム"
-    }
+    },
+    "nm": "メニュー"
   },
   "ko": {
     "name": "한국어",
@@ -2397,7 +2428,8 @@
       "light": "라이트",
       "dark": "다크",
       "system": "시스템"
-    }
+    },
+    "nm": "메뉴"
   },
   "he": {
     "name": "עברית",
@@ -2473,7 +2505,8 @@
       "light": "בהיר",
       "dark": "כהה",
       "system": "מערכת"
-    }
+    },
+    "nm": "תפריט"
   },
   "ar": {
     "name": "العربية",
@@ -2549,7 +2582,8 @@
       "light": "فاتح",
       "dark": "داكن",
       "system": "النظام"
-    }
+    },
+    "nm": "القائمة"
   },
   "fa": {
     "name": "فارسی",
@@ -2625,7 +2659,8 @@
       "light": "روشن",
       "dark": "تیره",
       "system": "سیستم"
-    }
+    },
+    "nm": "منو"
   },
   "hi": {
     "name": "हिन्दी",
@@ -2700,7 +2735,8 @@
       "light": "लाइट",
       "dark": "डार्क",
       "system": "सिस्टम"
-    }
+    },
+    "nm": "मेनू"
   },
   "gu": {
     "name": "ગુજરાતી",
@@ -2775,7 +2811,8 @@
       "light": "લાઇટ",
       "dark": "ડાર્ક",
       "system": "સિસ્ટમ"
-    }
+    },
+    "nm": "મેનુ"
   },
   "mr": {
     "name": "मराठी",
@@ -2850,7 +2887,8 @@
       "light": "लाइट",
       "dark": "डार्क",
       "system": "सिस्टम"
-    }
+    },
+    "nm": "मेनू"
   },
   "kn": {
     "name": "ಕನ್ನಡ",
@@ -2925,7 +2963,8 @@
       "light": "ಲೈಟ್",
       "dark": "ಡಾರ್ಕ್",
       "system": "ಸಿಸ್ಟಂ"
-    }
+    },
+    "nm": "ಮೆನು"
   },
   "ta": {
     "name": "தமிழ்",
@@ -3000,7 +3039,8 @@
       "light": "ஒளி",
       "dark": "இருள்",
       "system": "கணினி"
-    }
+    },
+    "nm": "மெனு"
   },
   "te": {
     "name": "తెలుగు",
@@ -3075,7 +3115,8 @@
       "light": "లైట్",
       "dark": "డార్క్",
       "system": "సిస్టమ్"
-    }
+    },
+    "nm": "మెనూ"
   },
   "sw": {
     "name": "Kiswahili",
@@ -3150,7 +3191,8 @@
       "light": "Nuru",
       "dark": "Giza",
       "system": "Mfumo"
-    }
+    },
+    "nm": "Menyu"
   },
   "am": {
     "name": "አማርኛ",
@@ -3225,6 +3267,7 @@
       "light": "ብሩህ",
       "dark": "ጨለማ",
       "system": "ሲስተም"
-    }
+    },
+    "nm": "ምናሌ"
   }
 }
