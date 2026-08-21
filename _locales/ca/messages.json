@@ -136,5 +136,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Preparat per concentrar-te de nou? Inicia una nova sessió des del popup de FocusTube."
+  },
+  "helpLink": {
+    "message": "Ajuda"
   }
 }

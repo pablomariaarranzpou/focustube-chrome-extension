@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Gotowy, by znów się skupić? Rozpocznij nową sesję z popupu FocusTube."
+  },
+  "helpLink": {
+    "message": "Pomoc"
   }
 }

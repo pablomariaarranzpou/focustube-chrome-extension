@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Pripravljeni na ponovno osredotočanje? Začnite novo sejo iz pojavnega okna FocusTube."
+  },
+  "helpLink": {
+    "message": "Pomoč"
   }
 }

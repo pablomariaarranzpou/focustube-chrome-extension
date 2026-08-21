@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Έτοιμοι να συγκεντρωθείτε ξανά; Ξεκινήστε νέα συνεδρία από το αναδυόμενο παράθυρο του FocusTube."
+  },
+  "helpLink": {
+    "message": "Βοήθεια"
   }
 }

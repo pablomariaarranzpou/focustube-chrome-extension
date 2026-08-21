@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "மீண்டும் கவனம் செலுத்த தயாரா? FocusTube பாப்அப்பில் இருந்து புதிய செயற்பாட்டைத் தொடங்கு."
+  },
+  "helpLink": {
+    "message": "உதவி"
   }
 }

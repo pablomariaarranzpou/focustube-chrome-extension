@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "مستعد للتركيز مجددًا؟ ابدأ جلسة جديدة من نافذة FocusTube."
+  },
+  "helpLink": {
+    "message": "مساعدة"
   }
 }
