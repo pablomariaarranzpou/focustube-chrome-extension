@@ -2130,40 +2130,89 @@ footer a:hover {
   padding: 4px 10px;
 }
 
-/* ---- Support page -------------------------------------------------------
-   This page inherited the landing page's hero, which centres its heading and
-   caps its lead at a different width from the body copy. The result was five
-   different left edges down one page (27 / 140 / 187 / 233 / 263px) and a
-   67px headline on what is a help document. One column, one edge, one scale. */
-/* On a wide screen a lone centred column reads as a strip with the page empty
-   either side. The margin becomes an index instead: it fills the space with
-   something useful and lets people jump straight to their problem. */
-.support-grid {
-  display: block;
+/* ---- Support page ---------------------------------------------------------
+   Header, hero, content and footer share the site's own .wrap (1080px) —
+   nothing here defines its own container width any more. Three different
+   widths were stacked on top of each other before (1080 / 815 / 1120px),
+   each with its own left edge, so the page visibly zigzagged as you scrolled
+   past the hero into the answers. One container, top to bottom.
+   Reading measure is controlled separately, on the text itself (max-width in
+   ch on the prose), not on the container — so alignment stays constant while
+   line length stays comfortable. */
+
+.hero.support-hero {
+  padding-top: 56px;
+  padding-bottom: 0;
+  /* The opening block is centred; the answers below are left aligned, since
+     they are read as a document rather than looked at. */
+  text-align: center;
 }
 
-@media (min-width: 1180px) {
-  .support .wrap.support-grid {
-    display: grid;
-    grid-template-columns: 232px minmax(0, 1fr);
-    gap: 56px;
-    align-items: start;
-    max-width: min(94vw, 1120px);
-  }
+.support-hero .kicker {
+  margin-bottom: 12px;
+}
 
-  .support-toc {
-    position: sticky;
-    top: 32px;
-    font-size: 0.86rem;
-  }
+.support-hero h1 {
+  /* A help page is read, not pitched: nowhere near the hero's 67px. */
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  max-width: 20ch;
+  margin: 0 auto 16px;
+  /* The hero paints its heading with a gradient; here it would only make the
+     text harder to read at this size. */
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--ink);
+}
+
+/* .hero p.lead caps at 560px and wins on source order, which is narrower
+   than this needs and not centred on the wider measure below. */
+.hero.support-hero p.lead {
+  max-width: 46ch;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.support {
+  padding: 40px 0 96px;
+  /* Body copy reads best around 66-70 characters a line. The container
+     stays full width for alignment; this is what actually limits the line. */
+  font-size: clamp(1rem, 0.94rem + 0.25vw, 1.0625rem);
+}
+
+/* Below the sidebar breakpoint this is the only column, centred in .wrap
+   like every other section on the site. From it up, it is the right cell of
+   the toc/content grid, so it is capped rather than centred. */
+.support-body {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .support-body { margin: 0; }
 }
 
 .support-toc {
   display: none;
 }
 
-@media (min-width: 1180px) {
-  .support-toc { display: block; }
+@media (min-width: 1024px) {
+  .support .wrap.support-grid {
+    display: grid;
+    grid-template-columns: 208px minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  .support-toc {
+    display: block;
+    position: sticky;
+    top: 32px;
+    font-size: 0.86rem;
+  }
 }
 
 .support-toc-title {
@@ -2198,67 +2247,6 @@ footer a:hover {
 .support-toc a:hover {
   color: var(--ink);
   border-inline-start-color: var(--border);
-}
-
-.support-hero,
-.support {
-  /* Both the type and the column grow with the viewport. A column fixed in
-     pixels is a thin ribbon on a 27in screen: the line length stays the same
-     while everything around it gets bigger, which is what makes it read as a
-     poem rather than a document. Sized in ch so the line length in characters
-     stays constant while the column widens. */
-  font-size: clamp(1rem, 0.88rem + 0.5vw, 1.35rem);
-  --support-col: min(92vw, 70ch);
-}
-
-.support p,
-.support li,
-.support-hero p.lead {
-  font-size: inherit;
-}
-
-/* .hero sets text-align: start for the landing layout and comes later in the
-   file, so this needs both classes to win. */
-.hero.support-hero,
-.hero.support-hero .wrap {
-  padding-top: 56px;
-  padding-bottom: 0;
-  /* The opening block is centred; the answers below stay left aligned, since
-     they are read as a document rather than looked at. */
-  text-align: center;
-}
-
-.support-hero .wrap,
-.support .wrap {
-  max-width: var(--support-col);
-}
-
-.support-hero .kicker {
-  margin-bottom: 12px;
-}
-
-.support-hero h1 {
-  /* A help page is read, not pitched: nowhere near the hero's 67px. */
-  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  max-width: 20ch;
-  margin: 0 auto 16px;
-  /* The hero paints its heading with a gradient; here it would only make the
-     text harder to read at this size. */
-  background: none;
-  -webkit-text-fill-color: currentColor;
-  color: var(--ink);
-}
-
-/* .hero p.lead caps at 560px and wins on order, which was cutting this to
-   three quarters of the column and leaving a stub line under it. */
-.hero.support-hero p.lead {
-  max-width: none;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  text-wrap: pretty;
 }
 
 .support {
