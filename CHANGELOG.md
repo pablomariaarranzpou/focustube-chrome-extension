@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.5.7] - 2026-08-21
+
+### Added
+- **A Help button in the popup.** There was no way to reach help from inside the extension itself. A `Help` pill now sits next to `Rate FocusTube` and `GitHub`, linking to `focustube.io/support`, translated across all 45 locales. Checked the row against the longest translations (Latvian *Palīdzība*, Czech *Nápověda*, Russian *Помощь*) — it stays inside the popup's 400px width.
+- `homepage_url` in `manifest.json`, pointing at `https://focustube.io`. Used by Chrome for the "Website" link on the Web Store listing and for Search Console site verification — the two were easy to conflate with the dashboard's separate Support URL field, which is set manually there and isn't part of this repo.
+
+### Website
+- The support page (`docs/support/`) inherited the landing page's hero, which produced five different left edges down one page and a 67px headline on what is a help document. Rebuilt onto the site's own `.wrap` (1080px) top to bottom — header, hero, content and footer now share one container and one left edge, matching every other page on the site, instead of three independently-sized ones stacked vertically (a real defect on wide screens, where it read as a visible zigzag). Reading width is capped on the prose itself rather than the container, so line length stays comfortable without breaking alignment.
+- Added a sticky on-page index from 1024px up, since a single centred column of text reads as a bare strip once the screen is wide enough to have nothing beside it.
+- Fixed a callout box that specificity was pinning flush against the text above it (`.qa p` was overriding its margin), and a step that overstated when a reload is actually needed — FocusTube applies changes to open tabs live; a reload is only required for a tab that was already open when the extension was installed or updated.
+
+---
+
 ## [2.5.6] - 2026-08-17
 
 ### Fixed
