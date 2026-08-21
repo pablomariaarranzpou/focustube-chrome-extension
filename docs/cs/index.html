@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) — Google Ads AW-18403194353. Base pageview tag
+       only; the actual conversion (clicking through to install) is wired at
+       the bottom of the page against every outbound Chrome Web Store link,
+       once a click-type conversion action's label is filled in there. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18403194353"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18403194353');
+  </script>
   <title>FocusTube — Zbavte se rušivých prvků na YouTube</title>
   <meta name="description" content="FocusTube skrývá Shorts, doporučení, návrhy a komentáře na YouTube. Blokujte kanály a slova a zapněte časovaný Režim soustředění. Více než 4 000 uživatelů." />
   <link rel="canonical" href="https://focustube.io/cs/" />
@@ -938,6 +949,24 @@
   });
 
   paint(current());
+})();
+</script>
+
+<script>
+/* Google Ads click conversion: fires when someone follows a link off this
+   site to the Chrome Web Store. This is the closest thing to "clicked
+   install" that a page we own can ever measure - the actual install click
+   happens on Google's own store page, which nothing outside it can see.
+   AW-18403194353/CONVERSION_LABEL: create a "Website" > "Click" conversion
+   action in Google Ads pointing at focustube.io, then paste its label
+   (looks like AbCdEfGhIj1234) in place of CONVERSION_LABEL below. Until
+   then this is inert - gtag silently drops a malformed send_to. */
+(function () {
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href*="chromewebstore.google.com"]');
+    if (!a || typeof gtag !== 'function') return;
+    gtag('event', 'conversion', { send_to: 'AW-18403194353/CONVERSION_LABEL' });
+  });
 })();
 </script>
 </body>

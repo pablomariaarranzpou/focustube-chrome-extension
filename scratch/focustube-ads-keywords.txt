@@ -1,0 +1,71 @@
+FOCUSTUBE — GOOGLE ADS SEARCH CAMPAIGN
+Objetivo: instalaciones. Landing: https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb
+Sitio de apoyo: https://focustube.io
+
+Formato: una keyword por línea, en concordancia de frase ("..."), que es
+el punto medio razonable para empezar — más amplia que exacta [...], más
+controlada que amplia. Pégalas directamente en el Editor de Google Ads o
+en el Keyword Planner ("Get search volume and forecasts") para sacar el
+CPC y volumen reales de tu cuenta.
+
+============================================================
+GRUPO 1 — Genéricas / intención de instalar algo
+============================================================
+"youtube distraction blocker"
+"block youtube distractions"
+"youtube focus mode"
+"youtube productivity extension"
+"minimalist youtube"
+"distraction free youtube"
+"stop youtube rabbit hole"
+"youtube focus extension"
+"chrome extension block youtube"
+
+============================================================
+GRUPO 2 — Por función (cada una tiene su feature real en la ficha)
+============================================================
+"hide youtube shorts"
+"block youtube shorts extension"
+"hide youtube recommendations"
+"remove youtube suggestions"
+"hide youtube comments"
+"block youtube channels extension"
+"youtube minimalist home page"
+"disable youtube autoplay"
+"youtube blacklist channels extension"
+
+============================================================
+GRUPO 3 — Competidor (empezar con puja baja, medir antes de escalar)
+============================================================
+"unhook extension"
+"unhook youtube alternative"
+"unhook chrome extension alternative"
+"youtube distraction blocker alternative"
+"best youtube focus extension"
+"youtube detox extension"
+"remove youtube recommendations extension"
+
+============================================================
+NEGATIVAS (excluir — intención opuesta o producto distinto)
+============================================================
+-youtube unblocker
+-youtube vpn
+-youtube proxy
+-youtube shorts app
+-youtube ad blocker
+-download youtube
+-youtube premium
+-youtube music
+
+============================================================
+COMPETIDORES DE REFERENCIA (verificados en la Chrome Web Store)
+============================================================
+Unhook — Remove YouTube Recommended & Shorts   1M+ usuarios, 4.9★ (4.4K)
+UnHook YouTube                                  7K usuarios, 4.7★
+YouTube Distraction Blocker
+YouFocus — Hide YouTube Distractions
+YT Distraction Remover
+YouTube Recommendation Blocker
+YouTube Detox
+RYS — Remove YouTube Suggestions
+YouTube Feed Blocker
