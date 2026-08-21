@@ -2674,13 +2674,19 @@ main > section > .wrap > h2,
   margin-bottom: 0;
 }
 
-.qa-note {
+/* .qa-note is itself a <p>, so the generic ".qa p" rule (one class, one
+   type = 0,1,1) was beating this on specificity (".qa-note" alone is
+   0,1,0) and zeroing its margin-top — the note sat flush against the last
+   list item instead of reading as a separate callout. Scoping it under
+   ".qa" fixes the specificity (0,2,0) and states the actual relationship:
+   this is a note that lives inside a .qa article. */
+.qa .qa-note {
   margin-top: 28px;
   padding: 16px 18px;
   border-inline-start: 3px solid var(--coral);
   background: color-mix(in srgb, var(--coral) 8%, transparent);
   border-radius: 0 10px 10px 0;
-  font-size: 0.95rem;
+  font-size: 0.95em;
   line-height: 1.6;
 }
 
