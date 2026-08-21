@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Handa nang magkonsentra ulit? Magsimula ng bagong session mula sa FocusTube popup."
+  },
+  "helpLink": {
+    "message": "Tulong"
   }
 }

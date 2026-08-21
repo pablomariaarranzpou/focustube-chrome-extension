@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Klaar om weer te concentreren? Start een nieuwe sessie vanuit de FocusTube-popup."
+  },
+  "helpLink": {
+    "message": "Help"
   }
 }

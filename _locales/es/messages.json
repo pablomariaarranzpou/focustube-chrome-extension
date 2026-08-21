@@ -1,140 +1,143 @@
 {
-    "extensionName": {
-        "message": "FocusTube - Ocultar Shorts, Ocultar Palabras en la Lista Negra"
-    },
-    "extensionDescription": {
-        "message": "Oculta YouTube Shorts, recomendaciones, sugerencias y comentarios. Bloquea canales y palabras. La herramienta anti-distracciones."
-    },
-    "hideShorts": {
-        "message": "Ocultar Shorts"
-    },
-    "hideSuggestions": {
-        "message": "Ocultar Sugerencias"
-    },
-    "hideComments": {
-        "message": "Ocultar Comentarios"
-    },
-    "hideBlacklistedChannels": {
-        "message": "Ocultar Canales en la Lista Negra"
-    },
-    "hideBlacklistedWords": {
-        "message": "Ocultar Palabras en la Lista Negra"
-    },
-    "minimalistHome": {
-        "message": "Página de inicio minimalista"
-    },
-    "disableAutoplay": {
-        "message": "Desactivar Reproducción Automática"
-    },
-    "hideSidebar": {
-        "message": "Ocultar Barra Lateral"
-    },
-    "keepHistoryVisible": {
-        "message": "Mantener Historial visible"
-    },
-    "quickBlacklistButton": {
-        "message": "Mostrar botón de bloqueo rápido en el feed"
-    },
-    "editBlacklistedChannels": {
-        "message": "Editar Canales en la Lista Negra"
-    },
-    "concentrationModeBlacklist": {
-        "message": "Lista Negra del Modo Concentración"
-    },
-    "channelNamePlaceholder": {
-        "message": "Nombre del Canal"
-    },
-    "add": {
-        "message": "Agregar"
-    },
-    "editBlacklistedWords": {
-        "message": "Editar Palabras en la Lista Negra"
-    },
-    "concentrationModeBlacklistWords": {
-        "message": "Lista Negra de Palabras del Modo Concentración"
-    },
-    "wordPlaceholder": {
-        "message": "Ej: Call of Duty"
-    },
-    "tabSettings": {
-        "message": "Ajustes"
-    },
-    "tabFocusMode": {
-        "message": "Modo"
-    },
-    "focusModeOff": {
-        "message": "Apagado"
-    },
-    "focusModeAlways": {
-        "message": "Siempre"
-    },
-    "focusModeTimerMode": {
-        "message": "Timer"
-    },
-    "focusModeScheduleMode": {
-        "message": "Horario"
-    },
-    "focusModeOffDescription": {
-        "message": "FocusTube está en pausa: todo se muestra en YouTube, sin importar los Ajustes."
-    },
-    "focusModeAlwaysDescription": {
-        "message": "Tus Ajustes se aplican todo el tiempo."
-    },
-    "focusDurationLabel": {
-        "message": "Concentración (minutos)"
-    },
-    "breakDurationLabel": {
-        "message": "Descanso (minutos)"
-    },
-    "startFocusSession": {
-        "message": "Iniciar sesión de concentración"
-    },
-    "stopFocusSession": {
-        "message": "Detener"
-    },
-    "focusPhaseLabel": {
-        "message": "Concentrado"
-    },
-    "breakPhaseLabel": {
-        "message": "En descanso"
-    },
-    "dayMon": {
-        "message": "Lun"
-    },
-    "dayTue": {
-        "message": "Mar"
-    },
-    "dayWed": {
-        "message": "Mié"
-    },
-    "dayThu": {
-        "message": "Jue"
-    },
-    "dayFri": {
-        "message": "Vie"
-    },
-    "daySat": {
-        "message": "Sáb"
-    },
-    "daySun": {
-        "message": "Dom"
-    },
-    "scheduleRemoveButton": {
-        "message": "Eliminar"
-    },
-    "noScheduleBlocksMessage": {
-        "message": "Aún no hay bloques recurrentes"
-    },
-    "focusEndNotificationTitle": {
-        "message": "Sesión de concentración terminada"
-    },
-    "focusEndNotificationBody": {
-        "message": "Tu sesión de concentración ha terminado."
-    },
-    "breakEndNotificationTitle": {
-        "message": "Se acabó el descanso"
-    },
-    "breakEndNotificationBody": {
-        "message": "¿Listo para concentrarte de nuevo? Inicia una nueva sesión desde el popup de FocusTube."
-    }
+  "extensionName": {
+    "message": "FocusTube - Ocultar Shorts, Ocultar Palabras en la Lista Negra"
+  },
+  "extensionDescription": {
+    "message": "Oculta YouTube Shorts, recomendaciones, sugerencias y comentarios. Bloquea canales y palabras. La herramienta anti-distracciones."
+  },
+  "hideShorts": {
+    "message": "Ocultar Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Ocultar Sugerencias"
+  },
+  "hideComments": {
+    "message": "Ocultar Comentarios"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Ocultar Canales en la Lista Negra"
+  },
+  "hideBlacklistedWords": {
+    "message": "Ocultar Palabras en la Lista Negra"
+  },
+  "minimalistHome": {
+    "message": "Página de inicio minimalista"
+  },
+  "disableAutoplay": {
+    "message": "Desactivar Reproducción Automática"
+  },
+  "hideSidebar": {
+    "message": "Ocultar Barra Lateral"
+  },
+  "keepHistoryVisible": {
+    "message": "Mantener Historial visible"
+  },
+  "quickBlacklistButton": {
+    "message": "Mostrar botón de bloqueo rápido en el feed"
+  },
+  "editBlacklistedChannels": {
+    "message": "Editar Canales en la Lista Negra"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Lista Negra del Modo Concentración"
+  },
+  "channelNamePlaceholder": {
+    "message": "Nombre del Canal"
+  },
+  "add": {
+    "message": "Agregar"
+  },
+  "editBlacklistedWords": {
+    "message": "Editar Palabras en la Lista Negra"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Lista Negra de Palabras del Modo Concentración"
+  },
+  "wordPlaceholder": {
+    "message": "Ej: Call of Duty"
+  },
+  "tabSettings": {
+    "message": "Ajustes"
+  },
+  "tabFocusMode": {
+    "message": "Modo"
+  },
+  "focusModeOff": {
+    "message": "Apagado"
+  },
+  "focusModeAlways": {
+    "message": "Siempre"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Horario"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube está en pausa: todo se muestra en YouTube, sin importar los Ajustes."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Tus Ajustes se aplican todo el tiempo."
+  },
+  "focusDurationLabel": {
+    "message": "Concentración (minutos)"
+  },
+  "breakDurationLabel": {
+    "message": "Descanso (minutos)"
+  },
+  "startFocusSession": {
+    "message": "Iniciar sesión de concentración"
+  },
+  "stopFocusSession": {
+    "message": "Detener"
+  },
+  "focusPhaseLabel": {
+    "message": "Concentrado"
+  },
+  "breakPhaseLabel": {
+    "message": "En descanso"
+  },
+  "dayMon": {
+    "message": "Lun"
+  },
+  "dayTue": {
+    "message": "Mar"
+  },
+  "dayWed": {
+    "message": "Mié"
+  },
+  "dayThu": {
+    "message": "Jue"
+  },
+  "dayFri": {
+    "message": "Vie"
+  },
+  "daySat": {
+    "message": "Sáb"
+  },
+  "daySun": {
+    "message": "Dom"
+  },
+  "scheduleRemoveButton": {
+    "message": "Eliminar"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "Aún no hay bloques recurrentes"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Sesión de concentración terminada"
+  },
+  "focusEndNotificationBody": {
+    "message": "Tu sesión de concentración ha terminado."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Se acabó el descanso"
+  },
+  "breakEndNotificationBody": {
+    "message": "¿Listo para concentrarte de nuevo? Inicia una nueva sesión desde el popup de FocusTube."
+  },
+  "helpLink": {
+    "message": "Ayuda"
+  }
 }

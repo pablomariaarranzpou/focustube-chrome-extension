@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Spremni za ponovnu koncentraciju? Pokrenite novu sesiju iz FocusTube skočnog prozora."
+  },
+  "helpLink": {
+    "message": "Pomoć"
   }
 }

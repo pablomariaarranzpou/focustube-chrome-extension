@@ -1,0 +1,2582 @@
+{
+  "en": {
+    "t": "FocusTube — Support",
+    "d": "Help with FocusTube: what to do when nothing seems to change, how to pause it without uninstalling, and where to report a bug.",
+    "k": "Support",
+    "h1": "Something not working?",
+    "lead": "Start with the first one. It fixes most cases and takes a second to check.",
+    "toc": "On this page",
+    "qa1h2": "Nothing is being hidden",
+    "qa1intro": "Almost always one of these four, in this order.",
+    "steps": [
+      {
+        "h3": "If you just installed or updated it, reload the YouTube tabs you already had open",
+        "p": [
+          "Chrome only runs an extension on pages opened after it was installed, so a YouTube tab that was already open has no FocusTube in it at all until you reload. The same applies right after the extension updates.",
+          "Once it is running you do not need to keep reloading: switching something on or off takes effect on open tabs straight away."
+        ]
+      },
+      {
+        "h3": "Check the mode is not *Off*",
+        "p": [
+          "Open the popup and look at the **Mode** tab. On *Off*, everything on YouTube shows on purpose, no matter what is switched on in Settings. Settings decide *what* gets hidden; Mode decides *when* that applies."
+        ]
+      },
+      {
+        "h3": "On *Timer*, check a session is actually running",
+        "p": [
+          "This one catches people out. Choosing *Timer* does not start anything by itself — it only means \"hide things while a focus session is running\". Until you press start, no session is running, so nothing is hidden and the extension looks broken.",
+          "Either start a session, or switch the mode to **Always** if you want your settings to apply all the time."
+        ]
+      },
+      {
+        "h3": "On *Schedule*, check you are inside one of your windows",
+        "p": [
+          "Same idea. A schedule only applies on the days and times you set, so outside those windows YouTube is deliberately left alone. If it is Saturday and your schedule covers weekdays, nothing will be hidden — that is it working as configured."
+        ]
+      }
+    ],
+    "qa1note": "If you just want it on permanently and never want to think about this again, set the mode to **Always**.",
+    "qa2h2": "A setting used to work and suddenly stopped",
+    "qa2p": [
+      "YouTube changes its own page structure fairly often, and a change on their side can stop one of the toggles from finding what it is meant to hide. This is the most likely cause when a single feature breaks while the rest keep working.",
+      "It is worth reporting rather than waiting — these are usually quick to fix once someone knows which part of YouTube changed. Include what you were looking at and which toggle stopped working."
+    ],
+    "qa2btn": "Report it on GitHub",
+    "qa3h2": "You want the normal YouTube back for a bit",
+    "qa3p": [
+      "You do not have to uninstall or switch anything off one by one. Open the popup, go to **Mode**, and choose **Off**. Everything on YouTube shows again, and all your settings and blocklists stay exactly as you left them for when you switch back."
+    ],
+    "qa4h2": "What FocusTube can see",
+    "qa4p": [
+      "It runs only on YouTube pages, and asks for two permissions: `storage`, to remember your settings, and `alarms`, for Focus Mode timers and schedules. There is no account, nothing is sent anywhere, and nothing about your browsing is collected.",
+      "The whole extension is open source, so this is checkable rather than a promise — [read the code](repo)."
+    ],
+    "qa5h2": "Still stuck",
+    "qa5p": [
+      "Open an issue on GitHub and describe what you expected and what happened instead. Mentioning your browser version and whether you are on Windows, macOS or Linux usually saves a round trip."
+    ],
+    "qa5btn": "Open an issue",
+    "back": "Back to the site"
+  },
+  "es": {
+    "t": "FocusTube — Ayuda",
+    "d": "Ayuda de FocusTube: qué hacer cuando parece que nada cambia, cómo pausarlo sin desinstalarlo y dónde reportar un fallo.",
+    "k": "Ayuda",
+    "h1": "¿Algo no funciona?",
+    "lead": "Empieza por el primero. Soluciona la mayoría de los casos y se comprueba en un segundo.",
+    "toc": "En esta página",
+    "qa1h2": "No se está ocultando nada",
+    "qa1intro": "Casi siempre es uno de estos cuatro, en este orden.",
+    "steps": [
+      {
+        "h3": "Si acabas de instalarlo o actualizarlo, recarga las pestañas de YouTube que ya tenías abiertas",
+        "p": [
+          "Chrome solo ejecuta una extensión en las páginas abiertas después de instalarla, así que una pestaña de YouTube que ya estaba abierta no tiene FocusTube en absoluto hasta que la recargas. Lo mismo pasa justo después de actualizar la extensión.",
+          "Una vez en marcha no hace falta seguir recargando: activar o desactivar algo se aplica al instante en las pestañas abiertas."
+        ]
+      },
+      {
+        "h3": "Comprueba que el modo no esté en *Apagado*",
+        "p": [
+          "Abre el popup y mira la pestaña **Modo**. En *Apagado*, todo se muestra en YouTube a propósito, sin importar lo que hayas activado en Ajustes. Ajustes decide *qué* se oculta; Modo decide *cuándo* se aplica."
+        ]
+      },
+      {
+        "h3": "En *Timer*, comprueba que hay una sesión en marcha de verdad",
+        "p": [
+          "Este es el que más engaña. Elegir *Timer* no arranca nada por sí solo — solo significa \"ocultar cosas mientras haya una sesión de concentración en marcha\". Hasta que pulsas empezar, no hay ninguna sesión activa, así que no se oculta nada y la extensión parece rota.",
+          "O bien empieza una sesión, o cambia el modo a **Siempre** si quieres que tus ajustes se apliquen todo el tiempo."
+        ]
+      },
+      {
+        "h3": "En *Horario*, comprueba que estás dentro de una de tus franjas",
+        "p": [
+          "La misma idea. Un horario solo se aplica en los días y horas que fijaste, así que fuera de esas franjas YouTube se deja tal cual a propósito. Si es sábado y tu horario cubre los días laborables, no se ocultará nada — eso es que está funcionando como lo configuraste."
+        ]
+      }
+    ],
+    "qa1note": "Si simplemente quieres que esté siempre activo y no volver a pensar en esto, pon el modo en **Siempre**.",
+    "qa2h2": "Un ajuste que funcionaba dejó de hacerlo de repente",
+    "qa2p": [
+      "YouTube cambia la estructura de su propia página bastante a menudo, y un cambio por su parte puede hacer que uno de los interruptores deje de encontrar lo que debe ocultar. Es la causa más probable cuando falla una sola función mientras el resto sigue funcionando.",
+      "Merece la pena reportarlo en vez de esperar — suelen arreglarse rápido en cuanto alguien sabe qué parte de YouTube cambió. Incluye qué estabas mirando y qué interruptor dejó de funcionar."
+    ],
+    "qa2btn": "Repórtalo en GitHub",
+    "qa3h2": "Quieres el YouTube normal de vuelta un rato",
+    "qa3p": [
+      "No hace falta desinstalar ni desactivar cosas una por una. Abre el popup, ve a **Modo** y elige **Apagado**. Todo vuelve a mostrarse en YouTube, y todos tus ajustes y listas de bloqueo se quedan tal cual los dejaste para cuando vuelvas a activarlo."
+    ],
+    "qa4h2": "Qué puede ver FocusTube",
+    "qa4p": [
+      "Solo funciona en páginas de YouTube, y pide dos permisos: `storage`, para recordar tus ajustes, y `alarms`, para los temporizadores y horarios del Modo Enfoque. No hay cuenta, no se envía nada a ningún sitio, y no se recopila nada sobre tu navegación.",
+      "Toda la extensión es de código abierto, así que esto se puede comprobar en vez de solo prometerlo — [lee el código](repo)."
+    ],
+    "qa5h2": "Sigues atascado",
+    "qa5p": [
+      "Abre un issue en GitHub y describe qué esperabas y qué pasó en su lugar. Mencionar tu versión de navegador y si usas Windows, macOS o Linux suele ahorrar una vuelta de más."
+    ],
+    "qa5btn": "Abrir un issue",
+    "back": "Volver al sitio"
+  },
+  "es_419": {
+    "t": "FocusTube — Ayuda",
+    "d": "Ayuda de FocusTube: qué hacer cuando parece que nada cambia, cómo pausarlo sin desinstalarlo y dónde reportar un error.",
+    "k": "Ayuda",
+    "h1": "¿Algo no está funcionando?",
+    "lead": "Empieza por el primero. Soluciona la mayoría de los casos y toma un segundo revisarlo.",
+    "toc": "En esta página",
+    "qa1h2": "No se está ocultando nada",
+    "qa1intro": "Casi siempre es uno de estos cuatro, en este orden.",
+    "steps": [
+      {
+        "h3": "Si acabas de instalarlo o actualizarlo, recarga las pestañas de YouTube que ya tenías abiertas",
+        "p": [
+          "Chrome solo ejecuta una extensión en las páginas abiertas después de instalarla, así que una pestaña de YouTube que ya estaba abierta no tiene FocusTube para nada hasta que la recargas. Lo mismo pasa justo después de que la extensión se actualiza.",
+          "Una vez que está funcionando, no necesitas seguir recargando: activar o desactivar algo se aplica de inmediato en las pestañas abiertas."
+        ]
+      },
+      {
+        "h3": "Revisa que el modo no esté en *Apagado*",
+        "p": [
+          "Abre el popup y mira la pestaña **Modo**. En *Apagado*, todo se muestra en YouTube a propósito, sin importar lo que hayas activado en Configuración. Configuración decide *qué* se oculta; Modo decide *cuándo* se aplica eso."
+        ]
+      },
+      {
+        "h3": "En *Timer*, revisa que de verdad haya una sesión activa",
+        "p": [
+          "Este es el que más confunde a la gente. Elegir *Timer* no arranca nada por sí solo — solo significa \"ocultar cosas mientras haya una sesión de enfoque activa\". Hasta que le das a empezar, no hay ninguna sesión corriendo, así que no se oculta nada y la extensión parece que no sirve.",
+          "O empieza una sesión, o cambia el modo a **Siempre** si quieres que tu configuración se aplique todo el tiempo."
+        ]
+      },
+      {
+        "h3": "En *Horario*, revisa que estés dentro de una de tus franjas",
+        "p": [
+          "La misma idea. Un horario solo se aplica los días y horas que configuraste, así que fuera de esas franjas YouTube se deja tal cual a propósito. Si es sábado y tu horario cubre los días de semana, no se ocultará nada — eso es que está funcionando como lo configuraste."
+        ]
+      }
+    ],
+    "qa1note": "Si solo quieres que esté siempre activo y no pensar más en esto, pon el modo en **Siempre**.",
+    "qa2h2": "Una función que funcionaba dejó de funcionar de repente",
+    "qa2p": [
+      "YouTube cambia la estructura de su página bastante seguido, y un cambio de su parte puede hacer que uno de los interruptores deje de encontrar lo que debe ocultar. Es la causa más probable cuando una sola función falla mientras el resto sigue funcionando.",
+      "Vale la pena reportarlo en vez de esperar — normalmente se arreglan rápido en cuanto alguien sabe qué parte de YouTube cambió. Incluye qué estabas viendo y qué interruptor dejó de funcionar."
+    ],
+    "qa2btn": "Repórtalo en GitHub",
+    "qa3h2": "Quieres el YouTube normal de vuelta por un rato",
+    "qa3p": [
+      "No tienes que desinstalar ni apagar todo uno por uno. Abre el popup, ve a **Modo** y elige **Apagado**. Todo se vuelve a mostrar en YouTube, y toda tu configuración y listas de bloqueo se quedan exactamente como las dejaste para cuando lo actives de nuevo."
+    ],
+    "qa4h2": "Qué puede ver FocusTube",
+    "qa4p": [
+      "Solo funciona en páginas de YouTube, y pide dos permisos: `storage`, para recordar tu configuración, y `alarms`, para los timers y horarios del Modo Enfoque. No hay cuenta, no se envía nada a ningún lado, y no se recopila nada sobre tu navegación.",
+      "Toda la extensión es de código abierto, así que esto se puede comprobar en vez de solo confiar en la palabra — [lee el código](repo)."
+    ],
+    "qa5h2": "Sigues atascado",
+    "qa5p": [
+      "Abre un issue en GitHub y describe qué esperabas que pasara y qué pasó en realidad. Mencionar tu versión de navegador y si usas Windows, macOS o Linux normalmente ahorra idas y vueltas."
+    ],
+    "qa5btn": "Abrir un issue",
+    "back": "Volver al sitio"
+  },
+  "fr": {
+    "t": "FocusTube — Assistance",
+    "d": "Aide FocusTube : que faire quand rien ne semble changer, comment le mettre en pause sans le désinstaller, et où signaler un bug.",
+    "k": "Assistance",
+    "h1": "Quelque chose ne fonctionne pas ?",
+    "lead": "Commencez par le premier point. Il règle la plupart des cas et se vérifie en une seconde.",
+    "toc": "Sur cette page",
+    "qa1h2": "Rien n'est masqué",
+    "qa1intro": "C'est presque toujours l'un de ces quatre cas, dans cet ordre.",
+    "steps": [
+      {
+        "h3": "Si vous venez de l'installer ou de le mettre à jour, rechargez les onglets YouTube déjà ouverts",
+        "p": [
+          "Chrome n'exécute une extension que sur les pages ouvertes après son installation : un onglet YouTube déjà ouvert ne contient donc aucun FocusTube tant que vous ne le rechargez pas. C'est pareil juste après une mise à jour de l'extension.",
+          "Une fois en marche, plus besoin de recharger sans cesse : activer ou désactiver un réglage s'applique immédiatement aux onglets ouverts."
+        ]
+      },
+      {
+        "h3": "Vérifiez que le mode n'est pas sur *Désactivé*",
+        "p": [
+          "Ouvrez le popup et regardez l'onglet **Mode**. Sur *Désactivé*, tout s'affiche sur YouTube volontairement, quoi que vous ayez activé dans les Réglages. Les Réglages décident *ce qui* est masqué ; le Mode décide *quand* cela s'applique."
+        ]
+      },
+      {
+        "h3": "En mode *Minuteur*, vérifiez qu'une session est bien en cours",
+        "p": [
+          "C'est celui qui piège le plus de monde. Choisir *Minuteur* ne démarre rien tout seul — cela signifie seulement « masquer les éléments pendant qu'une session de concentration est en cours ». Tant que vous n'avez pas appuyé sur démarrer, aucune session ne tourne, donc rien n'est masqué et l'extension semble cassée.",
+          "Démarrez une session, ou basculez le mode sur **Toujours** si vous voulez que vos réglages s'appliquent en permanence."
+        ]
+      },
+      {
+        "h3": "En mode *Horaire*, vérifiez que vous êtes dans l'un de vos créneaux",
+        "p": [
+          "Même principe. Un horaire ne s'applique que les jours et heures que vous avez définis ; en dehors de ces créneaux, YouTube est délibérément laissé tel quel. Si on est samedi et que votre horaire couvre les jours de semaine, rien ne sera masqué — c'est normal, ça fonctionne comme configuré."
+        ]
+      }
+    ],
+    "qa1note": "Si vous voulez simplement que ce soit actif en permanence sans plus y penser, réglez le mode sur **Toujours**.",
+    "qa2h2": "Un réglage fonctionnait puis a soudainement cessé",
+    "qa2p": [
+      "YouTube modifie assez souvent la structure de ses propres pages, et un changement de leur côté peut empêcher l'un des interrupteurs de trouver ce qu'il est censé masquer. C'est la cause la plus probable quand une seule fonctionnalité casse alors que les autres continuent de fonctionner.",
+      "Mieux vaut le signaler que d'attendre — c'est généralement vite corrigé une fois que l'on sait quelle partie de YouTube a changé. Précisez ce que vous regardiez et quel interrupteur a cessé de fonctionner."
+    ],
+    "qa2btn": "Le signaler sur GitHub",
+    "qa3h2": "Vous voulez retrouver YouTube normal pour un moment",
+    "qa3p": [
+      "Inutile de désinstaller ou de désactiver chaque option une par une. Ouvrez le popup, allez dans **Mode** et choisissez **Désactivé**. Tout réapparaît sur YouTube, et tous vos réglages et listes de blocage restent exactement tels que vous les avez laissés pour quand vous réactiverez l'extension."
+    ],
+    "qa4h2": "Ce que FocusTube peut voir",
+    "qa4p": [
+      "Il ne fonctionne que sur les pages YouTube, et demande deux permissions : `storage`, pour mémoriser vos réglages, et `alarms`, pour les minuteurs et horaires du Mode Concentration. Il n'y a pas de compte, rien n'est envoyé où que ce soit, et rien de votre navigation n'est collecté.",
+      "L'extension est entièrement open source, donc c'est vérifiable plutôt qu'une simple promesse — [lisez le code](repo)."
+    ],
+    "qa5h2": "Toujours bloqué",
+    "qa5p": [
+      "Ouvrez un ticket (issue) sur GitHub et décrivez ce que vous attendiez et ce qui s'est passé à la place. Préciser votre version de navigateur et si vous êtes sur Windows, macOS ou Linux évite généralement un aller-retour."
+    ],
+    "qa5btn": "Ouvrir un ticket",
+    "back": "Retour au site"
+  },
+  "de": {
+    "t": "FocusTube — Support",
+    "d": "Hilfe zu FocusTube: was zu tun ist, wenn sich scheinbar nichts ändert, wie man es pausiert ohne es zu deinstallieren, und wo man einen Fehler meldet.",
+    "k": "Support",
+    "h1": "Funktioniert etwas nicht?",
+    "lead": "Fang mit dem ersten Punkt an. Er löst die meisten Fälle und ist in einer Sekunde geprüft.",
+    "toc": "Auf dieser Seite",
+    "qa1h2": "Es wird nichts ausgeblendet",
+    "qa1intro": "Fast immer ist es einer dieser vier Gründe, in dieser Reihenfolge.",
+    "steps": [
+      {
+        "h3": "Falls du es gerade installiert oder aktualisiert hast: lade die bereits geöffneten YouTube-Tabs neu",
+        "p": [
+          "Chrome führt eine Erweiterung nur auf Seiten aus, die nach der Installation geöffnet wurden — ein bereits geöffneter YouTube-Tab enthält also gar kein FocusTube, bis du ihn neu lädst. Dasselbe gilt direkt nach einem Update der Erweiterung.",
+          "Sobald sie läuft, musst du nicht ständig neu laden: Ein- oder Ausschalten wirkt sich sofort auf geöffnete Tabs aus."
+        ]
+      },
+      {
+        "h3": "Prüfe, dass der Modus nicht auf *Aus* steht",
+        "p": [
+          "Öffne das Popup und schau auf den Tab **Modus**. Bei *Aus* wird auf YouTube absichtlich alles angezeigt, egal was in den Einstellungen aktiviert ist. Die Einstellungen bestimmen, *was* ausgeblendet wird; der Modus bestimmt, *wann* das gilt."
+        ]
+      },
+      {
+        "h3": "Bei *Timer* prüfen, ob wirklich eine Sitzung läuft",
+        "p": [
+          "Das ist der Punkt, an dem die meisten hängen bleiben. *Timer* auszuwählen startet von selbst gar nichts — es bedeutet nur „Dinge ausblenden, solange eine Fokus-Sitzung läuft“. Bis du auf Start drückst, läuft keine Sitzung, also wird nichts ausgeblendet und die Erweiterung wirkt kaputt.",
+          "Starte entweder eine Sitzung oder stelle den Modus auf **Immer**, wenn deine Einstellungen dauerhaft gelten sollen."
+        ]
+      },
+      {
+        "h3": "Bei *Zeitplan* prüfen, ob du gerade in einem deiner Zeitfenster bist",
+        "p": [
+          "Gleicher Gedanke. Ein Zeitplan gilt nur an den festgelegten Tagen und Uhrzeiten, außerhalb davon bleibt YouTube absichtlich unverändert. Ist heute Samstag und dein Zeitplan deckt nur Werktage ab, wird nichts ausgeblendet — genau so soll es funktionieren."
+        ]
+      }
+    ],
+    "qa1note": "Wenn es einfach dauerhaft aktiv sein soll und du nie wieder darüber nachdenken willst, stelle den Modus auf **Immer**.",
+    "qa2h2": "Eine Einstellung funktionierte und hörte plötzlich auf",
+    "qa2p": [
+      "YouTube ändert recht häufig die Struktur seiner eigenen Seiten, und eine Änderung auf deren Seite kann dazu führen, dass einer der Schalter nicht mehr findet, was er ausblenden soll. Das ist die wahrscheinlichste Ursache, wenn eine einzelne Funktion ausfällt, während der Rest weiterhin funktioniert.",
+      "Es lohnt sich, es zu melden statt zu warten — sowas ist meist schnell behoben, sobald jemand weiß, welcher Teil von YouTube sich geändert hat. Gib an, was du dir angesehen hast und welcher Schalter aufgehört hat zu funktionieren."
+    ],
+    "qa2btn": "Auf GitHub melden",
+    "qa3h2": "Du willst das normale YouTube für eine Weile zurück",
+    "qa3p": [
+      "Du musst nicht deinstallieren oder alles einzeln ausschalten. Öffne das Popup, geh zu **Modus** und wähle **Aus**. Auf YouTube wird wieder alles angezeigt, und alle deine Einstellungen und Sperrlisten bleiben genau so erhalten, wie du sie verlassen hast, für wenn du wieder umschaltest."
+    ],
+    "qa4h2": "Was FocusTube sehen kann",
+    "qa4p": [
+      "Es läuft nur auf YouTube-Seiten und fragt nach zwei Berechtigungen: `storage`, um deine Einstellungen zu speichern, und `alarms`, für die Timer und Zeitpläne des Fokusmodus. Es gibt kein Konto, es wird nichts irgendwohin gesendet, und nichts über dein Surfverhalten wird erfasst.",
+      "Die gesamte Erweiterung ist Open Source, das lässt sich also nachprüfen statt nur versprochen zu werden — [den Code ansehen](repo)."
+    ],
+    "qa5h2": "Immer noch nicht weiter",
+    "qa5p": [
+      "Erstelle ein Issue auf GitHub und beschreibe, was du erwartet hast und was stattdessen passiert ist. Die Angabe deiner Browserversion und ob du Windows, macOS oder Linux nutzt, erspart meist eine Rückfrage."
+    ],
+    "qa5btn": "Ein Issue erstellen",
+    "back": "Zurück zur Website"
+  },
+  "it": {
+    "t": "FocusTube — Assistenza",
+    "d": "Assistenza FocusTube: cosa fare quando sembra che nulla cambi, come metterlo in pausa senza disinstallarlo e dove segnalare un bug.",
+    "k": "Assistenza",
+    "h1": "Qualcosa non funziona?",
+    "lead": "Inizia dal primo punto. Risolve la maggior parte dei casi e si verifica in un secondo.",
+    "toc": "In questa pagina",
+    "qa1h2": "Non viene nascosto nulla",
+    "qa1intro": "Quasi sempre è uno di questi quattro casi, in quest'ordine.",
+    "steps": [
+      {
+        "h3": "Se l'hai appena installato o aggiornato, ricarica le schede YouTube già aperte",
+        "p": [
+          "Chrome esegue un'estensione solo sulle pagine aperte dopo l'installazione, quindi una scheda YouTube già aperta non ha alcun FocusTube finché non la ricarichi. Vale lo stesso subito dopo un aggiornamento dell'estensione.",
+          "Una volta attiva non serve continuare a ricaricare: attivare o disattivare qualcosa ha effetto subito sulle schede aperte."
+        ]
+      },
+      {
+        "h3": "Controlla che la modalità non sia su *Disattivo*",
+        "p": [
+          "Apri il popup e guarda la scheda **Modalità**. Su *Disattivo*, tutto viene mostrato su YouTube di proposito, indipendentemente da cosa hai attivato nelle Impostazioni. Le Impostazioni decidono *cosa* viene nascosto; la Modalità decide *quando* si applica."
+        ]
+      },
+      {
+        "h3": "Su *Timer*, controlla che ci sia davvero una sessione attiva",
+        "p": [
+          "Questo è quello che trae in inganno di più. Scegliere *Timer* non avvia nulla da solo — significa solo \"nascondi le cose finché è attiva una sessione di concentrazione\". Finché non premi avvia, nessuna sessione è in corso, quindi non viene nascosto nulla e l'estensione sembra rotta.",
+          "Avvia una sessione, oppure imposta la modalità su **Sempre** se vuoi che le impostazioni si applichino sempre."
+        ]
+      },
+      {
+        "h3": "Su *Orario*, controlla di essere in una delle tue fasce orarie",
+        "p": [
+          "Stessa logica. Un orario si applica solo nei giorni e orari impostati, quindi fuori da quelle fasce YouTube viene lasciato invariato di proposito. Se è sabato e il tuo orario copre i giorni feriali, non verrà nascosto nulla — significa che funziona come configurato."
+        ]
+      }
+    ],
+    "qa1note": "Se vuoi semplicemente che sia sempre attivo e non pensarci più, imposta la modalità su **Sempre**.",
+    "qa2h2": "Un'impostazione funzionava e all'improvviso si è fermata",
+    "qa2p": [
+      "YouTube cambia piuttosto spesso la struttura delle proprie pagine, e una modifica dalla loro parte può impedire a uno degli interruttori di trovare ciò che deve nascondere. È la causa più probabile quando una singola funzione si rompe mentre le altre continuano a funzionare.",
+      "Vale la pena segnalarlo invece di aspettare — di solito si risolve in fretta una volta che qualcuno sa quale parte di YouTube è cambiata. Indica cosa stavi guardando e quale interruttore ha smesso di funzionare."
+    ],
+    "qa2btn": "Segnalalo su GitHub",
+    "qa3h2": "Vuoi il YouTube normale per un po'",
+    "qa3p": [
+      "Non serve disinstallare o disattivare tutto uno per uno. Apri il popup, vai su **Modalità** e scegli **Disattivo**. Tutto torna visibile su YouTube, e tutte le tue impostazioni e liste di blocco restano esattamente come le hai lasciate per quando riattiverai l'estensione."
+    ],
+    "qa4h2": "Cosa può vedere FocusTube",
+    "qa4p": [
+      "Funziona solo sulle pagine YouTube e richiede due permessi: `storage`, per ricordare le tue impostazioni, e `alarms`, per i timer e gli orari della Modalità Focus. Non c'è alcun account, non viene inviato nulla da nessuna parte, e non viene raccolto nulla sulla tua navigazione.",
+      "L'intera estensione è open source, quindi questo è verificabile e non una semplice promessa — [leggi il codice](repo)."
+    ],
+    "qa5h2": "Ancora bloccato",
+    "qa5p": [
+      "Apri una issue su GitHub e descrivi cosa ti aspettavi e cosa è successo invece. Indicare la versione del browser e se usi Windows, macOS o Linux di solito evita un giro di domande in più."
+    ],
+    "qa5btn": "Apri una issue",
+    "back": "Torna al sito"
+  },
+  "pt_PT": {
+    "t": "FocusTube — Apoio",
+    "d": "Ajuda com o FocusTube: o que fazer quando nada parece mudar, como o pausar sem desinstalar, e onde reportar um erro.",
+    "k": "Apoio",
+    "h1": "Algo não está a funcionar?",
+    "lead": "Comece pelo primeiro. Resolve a maioria dos casos e demora um segundo a verificar.",
+    "toc": "Nesta página",
+    "qa1h2": "Nada está a ser ocultado",
+    "qa1intro": "Quase sempre é um destes quatro, por esta ordem.",
+    "steps": [
+      {
+        "h3": "Se acabou de o instalar ou atualizar, recarregue os separadores do YouTube que já tinha abertos",
+        "p": [
+          "O Chrome só executa uma extensão em páginas abertas depois de ser instalada, por isso um separador do YouTube que já estava aberto não tem o FocusTube nenhum até recarregar. O mesmo acontece logo após a extensão atualizar.",
+          "Depois de estar a funcionar não precisa de continuar a recarregar: ativar ou desativar algo aplica-se de imediato aos separadores abertos."
+        ]
+      },
+      {
+        "h3": "Verifique se o modo não está em *Desligado*",
+        "p": [
+          "Abra o popup e veja o separador **Modo**. Em *Desligado*, tudo é mostrado no YouTube de propósito, seja o que for que tenha ativado nas Definições. As Definições decidem *o que* é ocultado; o Modo decide *quando* isso se aplica."
+        ]
+      },
+      {
+        "h3": "Em *Temporizador*, verifique se há mesmo uma sessão a decorrer",
+        "p": [
+          "Este é o que mais engana. Escolher *Temporizador* não inicia nada por si só — significa apenas \"ocultar coisas enquanto decorre uma sessão de foco\". Até carregar em iniciar, não há nenhuma sessão a decorrer, por isso nada é ocultado e a extensão parece avariada.",
+          "Inicie uma sessão, ou mude o modo para **Sempre** se quiser que as suas definições se apliquem sempre."
+        ]
+      },
+      {
+        "h3": "Em *Horário*, verifique se está dentro de uma das suas janelas",
+        "p": [
+          "A mesma ideia. Um horário só se aplica nos dias e horas definidos, por isso fora dessas janelas o YouTube é deixado intacto de propósito. Se for sábado e o seu horário cobrir os dias úteis, nada será ocultado — isso é estar a funcionar como configurado."
+        ]
+      }
+    ],
+    "qa1note": "Se quiser simplesmente que esteja sempre ativo e nunca mais pensar nisto, defina o modo para **Sempre**.",
+    "qa2h2": "Uma definição que funcionava deixou de repente de funcionar",
+    "qa2p": [
+      "O YouTube muda a estrutura das suas próprias páginas com alguma frequência, e uma alteração do lado deles pode impedir um dos interruptores de encontrar o que deve ocultar. É a causa mais provável quando uma única funcionalidade falha enquanto as restantes continuam a funcionar.",
+      "Vale a pena reportar em vez de esperar — normalmente são rápidas de corrigir assim que alguém sabe que parte do YouTube mudou. Inclua o que estava a ver e que interruptor deixou de funcionar."
+    ],
+    "qa2btn": "Reportar no GitHub",
+    "qa3h2": "Quer o YouTube normal de volta por um bocado",
+    "qa3p": [
+      "Não precisa de desinstalar nem de desligar tudo um a um. Abra o popup, vá a **Modo** e escolha **Desligado**. Tudo volta a aparecer no YouTube, e todas as suas definições e listas de bloqueio ficam exatamente como as deixou para quando voltar a ativar."
+    ],
+    "qa4h2": "O que o FocusTube consegue ver",
+    "qa4p": [
+      "Só funciona em páginas do YouTube, e pede duas permissões: `storage`, para se lembrar das suas definições, e `alarms`, para os temporizadores e horários do Modo Foco. Não há conta, nada é enviado para lado nenhum, e nada sobre a sua navegação é recolhido.",
+      "Toda a extensão é open source, por isso isto é verificável em vez de ser apenas uma promessa — [leia o código](repo)."
+    ],
+    "qa5h2": "Continua sem funcionar",
+    "qa5p": [
+      "Abra uma issue no GitHub e descreva o que esperava e o que aconteceu em vez disso. Mencionar a sua versão do navegador e se está em Windows, macOS ou Linux costuma poupar uma troca extra de mensagens."
+    ],
+    "qa5btn": "Abrir uma issue",
+    "back": "Voltar ao site"
+  },
+  "pt_BR": {
+    "t": "FocusTube — Suporte",
+    "d": "Ajuda com o FocusTube: o que fazer quando nada parece mudar, como pausar sem desinstalar, e onde reportar um bug.",
+    "k": "Suporte",
+    "h1": "Algo não está funcionando?",
+    "lead": "Comece pelo primeiro. Ele resolve a maioria dos casos e leva um segundo para conferir.",
+    "toc": "Nesta página",
+    "qa1h2": "Nada está sendo ocultado",
+    "qa1intro": "Quase sempre é um destes quatro, nesta ordem.",
+    "steps": [
+      {
+        "h3": "Se você acabou de instalar ou atualizar, recarregue as abas do YouTube que já estavam abertas",
+        "p": [
+          "O Chrome só executa uma extensão em páginas abertas depois de instalada, então uma aba do YouTube que já estava aberta não tem o FocusTube nela até você recarregar. O mesmo vale logo depois que a extensão atualiza.",
+          "Depois que está funcionando, você não precisa ficar recarregando: ativar ou desativar algo tem efeito imediato nas abas abertas."
+        ]
+      },
+      {
+        "h3": "Confira se o modo não está em *Desligado*",
+        "p": [
+          "Abra o popup e veja a aba **Modo**. Em *Desligado*, tudo aparece no YouTube de propósito, não importa o que esteja ativado nas Configurações. As Configurações decidem *o que* é ocultado; o Modo decide *quando* isso vale."
+        ]
+      },
+      {
+        "h3": "No *Timer*, confira se realmente há uma sessão em andamento",
+        "p": [
+          "Esse é o que mais confunde. Escolher *Timer* não inicia nada sozinho — só significa \"ocultar coisas enquanto uma sessão de foco estiver rodando\". Até você apertar iniciar, nenhuma sessão está rodando, então nada é ocultado e a extensão parece quebrada.",
+          "Inicie uma sessão, ou mude o modo para **Sempre** se quiser que suas configurações valham o tempo todo."
+        ]
+      },
+      {
+        "h3": "No *Horário*, confira se você está dentro de uma das suas janelas",
+        "p": [
+          "Mesma ideia. Um horário só vale nos dias e horas que você definiu, então fora dessas janelas o YouTube fica intocado de propósito. Se for sábado e seu horário cobrir só dias de semana, nada será ocultado — isso é o esperado, está funcionando como configurado."
+        ]
+      }
+    ],
+    "qa1note": "Se você só quer que fique sempre ativo e nunca mais pensar nisso, coloque o modo em **Sempre**.",
+    "qa2h2": "Uma configuração que funcionava parou de repente",
+    "qa2p": [
+      "O YouTube muda a estrutura das próprias páginas com uma certa frequência, e uma mudança do lado deles pode fazer com que um dos botões pare de encontrar o que deveria ocultar. É a causa mais provável quando um único recurso quebra enquanto o resto continua funcionando.",
+      "Vale a pena reportar em vez de esperar — geralmente é rápido de corrigir assim que alguém sabe qual parte do YouTube mudou. Inclua o que você estava vendo e qual botão parou de funcionar."
+    ],
+    "qa2btn": "Reportar no GitHub",
+    "qa3h2": "Você quer o YouTube normal de volta por um tempo",
+    "qa3p": [
+      "Você não precisa desinstalar nem desligar tudo um por um. Abra o popup, vá em **Modo** e escolha **Desligado**. Tudo volta a aparecer no YouTube, e todas as suas configurações e listas de bloqueio ficam exatamente como você deixou para quando ativar de novo."
+    ],
+    "qa4h2": "O que o FocusTube consegue ver",
+    "qa4p": [
+      "Ele só funciona em páginas do YouTube, e pede duas permissões: `storage`, para lembrar suas configurações, e `alarms`, para os timers e horários do Modo Foco. Não existe conta, nada é enviado para lugar nenhum, e nada sobre sua navegação é coletado.",
+      "A extensão inteira é open source, então isso pode ser conferido em vez de ser só uma promessa — [leia o código](repo)."
+    ],
+    "qa5h2": "Ainda travado",
+    "qa5p": [
+      "Abra uma issue no GitHub e descreva o que você esperava e o que aconteceu no lugar disso. Mencionar a versão do seu navegador e se você usa Windows, macOS ou Linux geralmente evita uma ida e volta extra."
+    ],
+    "qa5btn": "Abrir uma issue",
+    "back": "Voltar ao site"
+  },
+  "nl": {
+    "t": "FocusTube — Ondersteuning",
+    "d": "Hulp bij FocusTube: wat te doen als er niets lijkt te veranderen, hoe je het pauzeert zonder te verwijderen, en waar je een bug meldt.",
+    "k": "Ondersteuning",
+    "h1": "Werkt er iets niet?",
+    "lead": "Begin bij de eerste. Die lost de meeste gevallen op en is in een paar seconden te controleren.",
+    "toc": "Op deze pagina",
+    "qa1h2": "Er wordt niets verborgen",
+    "qa1intro": "Bijna altijd is het een van deze vier, in deze volgorde.",
+    "steps": [
+      {
+        "h3": "Als je het net hebt geïnstalleerd of bijgewerkt: herlaad de YouTube-tabbladen die al open stonden",
+        "p": [
+          "Chrome voert een extensie alleen uit op pagina's die zijn geopend na installatie, dus een YouTube-tabblad dat al open stond heeft helemaal geen FocusTube totdat je het herlaadt. Hetzelfde geldt vlak na een update van de extensie.",
+          "Zodra het actief is, hoef je niet steeds te herladen: iets aan- of uitzetten werkt meteen door in geopende tabbladen."
+        ]
+      },
+      {
+        "h3": "Controleer of de modus niet op *Uit* staat",
+        "p": [
+          "Open de popup en kijk bij het tabblad **Modus**. Bij *Uit* wordt op YouTube expres alles getoond, ongeacht wat er in Instellingen is aangevinkt. Instellingen bepalen *wat* er verborgen wordt; Modus bepaalt *wanneer* dat geldt."
+        ]
+      },
+      {
+        "h3": "Controleer bij *Timer* of er echt een sessie loopt",
+        "p": [
+          "Dit is waar de meeste mensen intrappen. *Timer* kiezen start op zichzelf niets — het betekent alleen \"dingen verbergen zolang er een focussessie loopt\". Tot je op start drukt, loopt er geen sessie, dus wordt er niets verborgen en lijkt de extensie kapot.",
+          "Start een sessie, of zet de modus op **Altijd** als je wilt dat je instellingen voortdurend gelden."
+        ]
+      },
+      {
+        "h3": "Controleer bij *Schema* of je binnen een van je tijdvakken zit",
+        "p": [
+          "Zelfde idee. Een schema geldt alleen op de dagen en tijden die je hebt ingesteld, dus buiten die tijdvakken wordt YouTube expres met rust gelaten. Is het zaterdag en dekt je schema alleen doordeweekse dagen, dan wordt er niets verborgen — dat is dat het werkt zoals ingesteld."
+        ]
+      }
+    ],
+    "qa1note": "Wil je gewoon dat het permanent aanstaat en er nooit meer over hoeven na te denken, zet de modus dan op **Altijd**.",
+    "qa2h2": "Een instelling werkte en stopte plotseling",
+    "qa2p": [
+      "YouTube verandert vrij vaak de structuur van zijn eigen pagina's, en een wijziging aan hun kant kan ervoor zorgen dat een van de schakelaars niet meer vindt wat hij moet verbergen. Dit is de meest waarschijnlijke oorzaak wanneer één functie stukgaat terwijl de rest blijft werken.",
+      "Het is de moeite waard om dit te melden in plaats van te wachten — dit is meestal snel te verhelpen zodra iemand weet welk deel van YouTube is veranderd. Vermeld wat je aan het bekijken was en welke schakelaar stopte met werken."
+    ],
+    "qa2btn": "Meld het op GitHub",
+    "qa3h2": "Je wilt even het normale YouTube terug",
+    "qa3p": [
+      "Je hoeft niet te verwijderen of alles één voor één uit te zetten. Open de popup, ga naar **Modus** en kies **Uit**. Alles wordt weer getoond op YouTube, en al je instellingen en blokkeerlijsten blijven precies zoals je ze hebt achtergelaten voor wanneer je weer terugschakelt."
+    ],
+    "qa4h2": "Wat FocusTube kan zien",
+    "qa4p": [
+      "Het werkt alleen op YouTube-pagina's en vraagt om twee machtigingen: `storage`, om je instellingen te onthouden, en `alarms`, voor de timers en schema's van de Focusmodus. Er is geen account, er wordt niets ergens naartoe verstuurd, en er wordt niets over je surfgedrag verzameld.",
+      "De hele extensie is open source, dus dit is controleerbaar in plaats van een belofte — [bekijk de code](repo)."
+    ],
+    "qa5h2": "Nog steeds vastgelopen",
+    "qa5p": [
+      "Open een issue op GitHub en beschrijf wat je verwachtte en wat er in plaats daarvan gebeurde. Je browserversie vermelden en of je Windows, macOS of Linux gebruikt, bespaart meestal een extra vraag."
+    ],
+    "qa5btn": "Open een issue",
+    "back": "Terug naar de site"
+  },
+  "ca": {
+    "t": "FocusTube — Ajuda",
+    "d": "Ajuda de FocusTube: què fer quan sembla que res canvia, com posar-lo en pausa sense desinstal·lar-lo i on informar d'un error.",
+    "k": "Ajuda",
+    "h1": "Alguna cosa no funciona?",
+    "lead": "Comença pel primer. Resol la majoria de casos i es comprova en un segon.",
+    "toc": "En aquesta pàgina",
+    "qa1h2": "No s'amaga res",
+    "qa1intro": "Gairebé sempre és un d'aquests quatre, en aquest ordre.",
+    "steps": [
+      {
+        "h3": "Si acabes d'instal·lar-lo o actualitzar-lo, torna a carregar les pestanyes de YouTube que ja tenies obertes",
+        "p": [
+          "Chrome només executa una extensió a les pàgines obertes després d'instal·lar-la, així que una pestanya de YouTube que ja estava oberta no té cap FocusTube fins que la tornes a carregar. El mateix passa just després d'actualitzar l'extensió.",
+          "Un cop en marxa no cal seguir recarregant: activar o desactivar alguna cosa s'aplica de seguida a les pestanyes obertes."
+        ]
+      },
+      {
+        "h3": "Comprova que el mode no estigui en *Apagat*",
+        "p": [
+          "Obre el popup i mira la pestanya **Mode**. En *Apagat*, tot es mostra a YouTube a propòsit, sigui el que sigui el que hagis activat als Ajustos. Els Ajustos decideixen *què* s'amaga; el Mode decideix *quan* s'aplica."
+        ]
+      },
+      {
+        "h3": "En *Temporitzador*, comprova que hi ha una sessió activa de debò",
+        "p": [
+          "Aquest és el que enganya més gent. Triar *Temporitzador* no engega res per si sol — només vol dir \"amaga coses mentre hi hagi una sessió de concentració activa\". Fins que no prems iniciar, no hi ha cap sessió activa, així que no s'amaga res i l'extensió sembla trencada.",
+          "Inicia una sessió, o canvia el mode a **Sempre** si vols que els teus ajustos s'apliquin tota l'estona."
+        ]
+      },
+      {
+        "h3": "En *Horari*, comprova que estàs dins d'una de les teves franges",
+        "p": [
+          "La mateixa idea. Un horari només s'aplica els dies i hores que has fixat, així que fora d'aquestes franges YouTube es deixa tal qual a propòsit. Si és dissabte i el teu horari cobreix els dies feiners, no s'amagarà res — això vol dir que funciona tal com l'has configurat."
+        ]
+      }
+    ],
+    "qa1note": "Si simplement vols que estigui sempre actiu i no tornar-hi a pensar, posa el mode en **Sempre**.",
+    "qa2h2": "Un ajust que funcionava va deixar de fer-ho de sobte",
+    "qa2p": [
+      "YouTube canvia l'estructura de les seves pròpies pàgines bastant sovint, i un canvi per la seva banda pot fer que un dels interruptors deixi de trobar allò que ha d'amagar. És la causa més probable quan falla una sola funció mentre la resta segueix funcionant.",
+      "Val la pena informar-ho en lloc d'esperar — normalment es resol ràpid un cop algú sap quina part de YouTube ha canviat. Inclou què estaves mirant i quin interruptor va deixar de funcionar."
+    ],
+    "qa2btn": "Informa'n a GitHub",
+    "qa3h2": "Vols el YouTube normal de tornada una estona",
+    "qa3p": [
+      "No cal desinstal·lar ni desactivar-ho tot d'un en un. Obre el popup, vés a **Mode** i tria **Apagat**. Tot torna a mostrar-se a YouTube, i tots els teus ajustos i llistes de bloqueig es queden tal com els vas deixar per quan tornis a activar-ho."
+    ],
+    "qa4h2": "Què pot veure FocusTube",
+    "qa4p": [
+      "Només funciona a pàgines de YouTube, i demana dos permisos: `storage`, per recordar els teus ajustos, i `alarms`, pels temporitzadors i horaris del Mode Concentració. No hi ha cap compte, no s'envia res enlloc, i no es recull res sobre la teva navegació.",
+      "Tota l'extensió és de codi obert, així que això es pot comprovar en lloc de només prometre's — [llegeix el codi](repo)."
+    ],
+    "qa5h2": "Encara encallat",
+    "qa5p": [
+      "Obre una issue a GitHub i descriu què esperaves i què va passar en canvi. Esmentar la versió del teu navegador i si fas servir Windows, macOS o Linux sol estalviar una volta extra."
+    ],
+    "qa5btn": "Obre una issue",
+    "back": "Torna al lloc"
+  },
+  "ro": {
+    "t": "FocusTube — Asistență",
+    "d": "Ajutor pentru FocusTube: ce să faci când nimic nu pare să se schimbe, cum să-l pui pe pauză fără să-l dezinstalezi și unde raportezi o eroare.",
+    "k": "Asistență",
+    "h1": "Ceva nu funcționează?",
+    "lead": "Începe cu primul punct. Rezolvă majoritatea cazurilor și se verifică într-o secundă.",
+    "toc": "Pe această pagină",
+    "qa1h2": "Nu se ascunde nimic",
+    "qa1intro": "Aproape întotdeauna e unul dintre aceste patru motive, în această ordine.",
+    "steps": [
+      {
+        "h3": "Dacă tocmai l-ai instalat sau actualizat, reîncarcă filele YouTube pe care le aveai deja deschise",
+        "p": [
+          "Chrome rulează o extensie doar pe paginile deschise după instalare, deci o filă YouTube deschisă deja nu are deloc FocusTube până o reîncarci. Același lucru se întâmplă imediat după o actualizare a extensiei.",
+          "Odată pornită, nu mai trebuie să reîncarci mereu: activarea sau dezactivarea unei opțiuni se aplică imediat filelor deschise."
+        ]
+      },
+      {
+        "h3": "Verifică dacă modul nu este pe *Dezactivat*",
+        "p": [
+          "Deschide fereastra pop-up și uită-te la fila **Mod**. Pe *Dezactivat*, totul apare pe YouTube intenționat, indiferent ce ai activat în Setări. Setările decid *ce* se ascunde; Modul decide *când* se aplică asta."
+        ]
+      },
+      {
+        "h3": "Pe *Cronometru*, verifică dacă chiar rulează o sesiune",
+        "p": [
+          "Ăsta e cel care păcălește cel mai mult. Alegerea *Cronometru* nu pornește nimic de la sine — înseamnă doar „ascunde lucrurile cât timp rulează o sesiune de concentrare”. Până nu apeși start, nicio sesiune nu rulează, deci nu se ascunde nimic și extensia pare stricată.",
+          "Fie pornește o sesiune, fie schimbă modul pe **Mereu** dacă vrei ca setările tale să se aplice tot timpul."
+        ]
+      },
+      {
+        "h3": "Pe *Program*, verifică dacă te afli într-unul din intervalele tale",
+        "p": [
+          "Aceeași idee. Un program se aplică doar în zilele și orele stabilite, deci în afara acelor intervale YouTube este lăsat neschimbat intenționat. Dacă e sâmbătă și programul tău acoperă doar zilele lucrătoare, nu se va ascunde nimic — asta înseamnă că funcționează conform configurării."
+        ]
+      }
+    ],
+    "qa1note": "Dacă vrei pur și simplu să fie mereu activ și să nu te mai gândești la asta, setează modul pe **Mereu**.",
+    "qa2h2": "O setare care funcționa s-a oprit brusc",
+    "qa2p": [
+      "YouTube își schimbă destul de des structura propriilor pagini, iar o modificare de partea lor poate face ca unul dintre comutatoare să nu mai găsească ce trebuie să ascundă. E cauza cea mai probabilă când o singură funcție se strică în timp ce restul continuă să funcționeze.",
+      "Merită raportat în loc să aștepți — de obicei se rezolvă rapid odată ce cineva știe ce parte din YouTube s-a schimbat. Menționează ce te uitai și ce comutator a încetat să funcționeze."
+    ],
+    "qa2btn": "Raportează pe GitHub",
+    "qa3h2": "Vrei YouTube-ul normal înapoi pentru puțin timp",
+    "qa3p": [
+      "Nu trebuie să dezinstalezi sau să dezactivezi totul unul câte unul. Deschide fereastra pop-up, mergi la **Mod** și alege **Dezactivat**. Totul reapare pe YouTube, iar toate setările și listele tale de blocare rămân exact așa cum le-ai lăsat pentru când comuți înapoi."
+    ],
+    "qa4h2": "Ce poate vedea FocusTube",
+    "qa4p": [
+      "Rulează doar pe paginile YouTube și cere două permisiuni: `storage`, ca să-ți rețină setările, și `alarms`, pentru cronometrele și programele Modului Concentrare. Nu există niciun cont, nu se trimite nimic nicăieri, și nu se colectează nimic despre navigarea ta.",
+      "Întreaga extensie este open source, deci asta se poate verifica, nu e doar o promisiune — [citește codul](repo)."
+    ],
+    "qa5h2": "Tot blocat",
+    "qa5p": [
+      "Deschide un issue pe GitHub și descrie ce te așteptai și ce s-a întâmplat în schimb. Menționarea versiunii browserului și dacă folosești Windows, macOS sau Linux economisește de obicei un schimb de mesaje în plus."
+    ],
+    "qa5btn": "Deschide un issue",
+    "back": "Înapoi la site"
+  },
+  "pl": {
+    "t": "FocusTube — Pomoc",
+    "d": "Pomoc dotycząca FocusTube: co zrobić, gdy nic się nie zmienia, jak wstrzymać rozszerzenie bez odinstalowywania i gdzie zgłosić błąd.",
+    "k": "Pomoc",
+    "h1": "Coś nie działa?",
+    "lead": "Zacznij od pierwszego punktu. Rozwiązuje większość przypadków i sprawdza się w sekundę.",
+    "toc": "Na tej stronie",
+    "qa1h2": "Nic nie jest ukrywane",
+    "qa1intro": "Prawie zawsze chodzi o jedną z tych czterech rzeczy, w tej kolejności.",
+    "steps": [
+      {
+        "h3": "Jeśli właśnie zainstalowałeś lub zaktualizowałeś rozszerzenie, odśwież karty YouTube, które były już otwarte",
+        "p": [
+          "Chrome uruchamia rozszerzenie tylko na stronach otwartych po jego instalacji, więc karta YouTube, która była już otwarta, w ogóle nie ma FocusTube, dopóki jej nie odświeżysz. To samo dotyczy chwili tuż po aktualizacji rozszerzenia.",
+          "Gdy już działa, nie trzeba ciągle odświeżać: włączenie lub wyłączenie czegoś działa od razu na otwartych kartach."
+        ]
+      },
+      {
+        "h3": "Sprawdź, czy tryb nie jest ustawiony na *Wyłączony*",
+        "p": [
+          "Otwórz wyskakujące okienko i spójrz na zakładkę **Tryb**. Przy *Wyłączony* wszystko na YouTube jest pokazywane celowo, niezależnie od tego, co włączono w Ustawieniach. Ustawienia decydują *co* jest ukrywane; Tryb decyduje *kiedy* to obowiązuje."
+        ]
+      },
+      {
+        "h3": "Przy *Minutniku* sprawdź, czy naprawdę trwa sesja",
+        "p": [
+          "To ten, który myli najwięcej osób. Wybranie *Minutnika* samo w sobie niczego nie uruchamia — oznacza tylko „ukrywaj rzeczy, dopóki trwa sesja skupienia”. Dopóki nie naciśniesz start, żadna sesja nie trwa, więc nic nie jest ukrywane i rozszerzenie wygląda na zepsute.",
+          "Rozpocznij sesję albo przełącz tryb na **Zawsze**, jeśli chcesz, żeby ustawienia obowiązywały cały czas."
+        ]
+      },
+      {
+        "h3": "Przy *Harmonogramie* sprawdź, czy jesteś w jednym z ustawionych okresów",
+        "p": [
+          "Ta sama zasada. Harmonogram obowiązuje tylko w wyznaczonych dniach i godzinach, więc poza nimi YouTube jest celowo pozostawiony bez zmian. Jeśli jest sobota, a harmonogram obejmuje tylko dni robocze, nic nie zostanie ukryte — to oznacza, że działa zgodnie z konfiguracją."
+        ]
+      }
+    ],
+    "qa1note": "Jeśli chcesz po prostu, żeby było zawsze włączone i nigdy więcej się nad tym nie zastanawiać, ustaw tryb na **Zawsze**.",
+    "qa2h2": "Ustawienie, które działało, nagle przestało",
+    "qa2p": [
+      "YouTube dość często zmienia strukturę swoich własnych stron, a zmiana po ich stronie może sprawić, że jeden z przełączników przestanie znajdować to, co ma ukrywać. To najbardziej prawdopodobna przyczyna, gdy psuje się jedna funkcja, a reszta nadal działa.",
+      "Warto to zgłosić zamiast czekać — zwykle da się to szybko naprawić, gdy ktoś wie, która część YouTube się zmieniła. Podaj, co oglądałeś/aś i który przełącznik przestał działać."
+    ],
+    "qa2btn": "Zgłoś na GitHubie",
+    "qa3h2": "Chcesz na chwilę zwykłego YouTube z powrotem",
+    "qa3p": [
+      "Nie musisz odinstalowywać ani wyłączać wszystkiego pojedynczo. Otwórz wyskakujące okienko, przejdź do **Tryb** i wybierz **Wyłączony**. Wszystko znów pojawia się na YouTube, a wszystkie ustawienia i listy blokad zostają dokładnie takie, jak je zostawiłeś/aś, na czas, gdy przełączysz z powrotem."
+    ],
+    "qa4h2": "Co widzi FocusTube",
+    "qa4p": [
+      "Działa tylko na stronach YouTube i prosi o dwa uprawnienia: `storage`, aby zapamiętać ustawienia, oraz `alarms`, dla minutników i harmonogramów Trybu Skupienia. Nie ma konta, nic nie jest nigdzie wysyłane i nic z Twojego przeglądania nie jest zbierane.",
+      "Całe rozszerzenie jest open source, więc to da się sprawdzić, a nie tylko obiecać — [przeczytaj kod](repo)."
+    ],
+    "qa5h2": "Nadal utknąłeś/aś",
+    "qa5p": [
+      "Otwórz zgłoszenie (issue) na GitHubie i opisz, czego się spodziewałeś/aś i co się stało zamiast tego. Podanie wersji przeglądarki i tego, czy używasz Windows, macOS czy Linux, zwykle oszczędza dodatkową wymianę wiadomości."
+    ],
+    "qa5btn": "Otwórz zgłoszenie",
+    "back": "Wróć do strony"
+  },
+  "cs": {
+    "t": "FocusTube — Podpora",
+    "d": "Nápověda k FocusTube: co dělat, když se zdánlivě nic nemění, jak ho pozastavit bez odinstalování a kam nahlásit chybu.",
+    "k": "Podpora",
+    "h1": "Něco nefunguje?",
+    "lead": "Začněte prvním bodem. Vyřeší většinu případů a ověří se za vteřinu.",
+    "toc": "Na této stránce",
+    "qa1h2": "Nic se neskrývá",
+    "qa1intro": "Téměř vždy jde o jednu z těchto čtyř věcí, v tomto pořadí.",
+    "steps": [
+      {
+        "h3": "Pokud jste ho právě nainstalovali nebo aktualizovali, obnovte panely YouTube, které jste už měli otevřené",
+        "p": [
+          "Chrome spouští rozšíření jen na stránkách otevřených po jeho instalaci, takže panel YouTube, který byl už otevřený, nemá FocusTube vůbec žádné, dokud ho neobnovíte. Totéž platí těsně po aktualizaci rozšíření.",
+          "Jakmile běží, nemusíte pořád obnovovat: zapnutí nebo vypnutí něčeho se projeví okamžitě na otevřených panelech."
+        ]
+      },
+      {
+        "h3": "Zkontrolujte, že režim není na *Vypnuto*",
+        "p": [
+          "Otevřete vyskakovací okno a podívejte se na kartu **Režim**. Při *Vypnuto* se na YouTube záměrně zobrazuje vše, bez ohledu na to, co je zapnuté v Nastavení. Nastavení určuje, *co* se skrývá; Režim určuje, *kdy* to platí."
+        ]
+      },
+      {
+        "h3": "U *Časovače* zkontrolujte, jestli opravdu běží relace",
+        "p": [
+          "Tady se nejvíc lidí sekne. Výběr *Časovače* sám o sobě nic nespouští — znamená jen „skrývat věci, dokud běží relace soustředění“. Dokud nestisknete start, žádná relace neběží, takže se nic neskrývá a rozšíření vypadá rozbité.",
+          "Buď spusťte relaci, nebo přepněte režim na **Vždy**, pokud chcete, aby nastavení platilo stále."
+        ]
+      },
+      {
+        "h3": "U *Rozvrhu* zkontrolujte, že jste v jednom ze svých časových oken",
+        "p": [
+          "Stejná myšlenka. Rozvrh platí jen ve dnech a hodinách, které jste nastavili, mimo tato okna zůstává YouTube záměrně beze změny. Je-li sobota a rozvrh pokrývá jen všední dny, nic se neskryje — to znamená, že to funguje podle nastavení."
+        ]
+      }
+    ],
+    "qa1note": "Pokud chcete, aby to bylo prostě trvale zapnuté a už o tom nikdy nepřemýšlet, nastavte režim na **Vždy**.",
+    "qa2h2": "Nastavení fungovalo a najednou přestalo",
+    "qa2p": [
+      "YouTube dost často mění strukturu vlastních stránek a změna na jejich straně může způsobit, že jeden z přepínačů přestane nacházet to, co má skrývat. Je to nejpravděpodobnější příčina, když se pokazí jedna funkce, zatímco ostatní dál fungují.",
+      "Vyplatí se to nahlásit místo čekání — obvykle se to rychle opraví, jakmile někdo zjistí, která část YouTube se změnila. Uveďte, na co jste se dívali a který přepínač přestal fungovat."
+    ],
+    "qa2btn": "Nahlásit na GitHubu",
+    "qa3h2": "Chcete si na chvíli vrátit normální YouTube",
+    "qa3p": [
+      "Nemusíte nic odinstalovávat ani vypínat jedno po druhém. Otevřete vyskakovací okno, přejděte na **Režim** a zvolte **Vypnuto**. Na YouTube se vše znovu zobrazí a všechna vaše nastavení i seznamy blokování zůstanou přesně tak, jak jste je nechali, až budete přepínat zpět."
+    ],
+    "qa4h2": "Co FocusTube vidí",
+    "qa4p": [
+      "Funguje jen na stránkách YouTube a žádá o dvě oprávnění: `storage`, aby si pamatoval vaše nastavení, a `alarms`, pro časovače a rozvrhy Režimu soustředění. Neexistuje žádný účet, nic se nikam neodesílá a nic o vašem prohlížení se nesbírá.",
+      "Celé rozšíření je open source, takže tohle lze ověřit, ne jen slíbit — [přečtěte si kód](repo)."
+    ],
+    "qa5h2": "Pořád nic",
+    "qa5p": [
+      "Otevřete issue na GitHubu a popište, co jste očekávali a co se stalo místo toho. Uvedení verze prohlížeče a toho, jestli používáte Windows, macOS nebo Linux, obvykle ušetří dotaz navíc."
+    ],
+    "qa5btn": "Otevřít issue",
+    "back": "Zpět na web"
+  },
+  "sk": {
+    "t": "FocusTube — Podpora",
+    "d": "Pomoc s FocusTube: čo robiť, keď sa zdanlivo nič nemení, ako ho pozastaviť bez odinštalovania a kam nahlásiť chybu.",
+    "k": "Podpora",
+    "h1": "Niečo nefunguje?",
+    "lead": "Začnite prvým bodom. Vyrieši väčšinu prípadov a overí sa za sekundu.",
+    "toc": "Na tejto stránke",
+    "qa1h2": "Nič sa neskrýva",
+    "qa1intro": "Takmer vždy ide o jednu z týchto štyroch vecí, v tomto poradí.",
+    "steps": [
+      {
+        "h3": "Ak ste ho práve nainštalovali alebo aktualizovali, obnovte karty YouTube, ktoré ste už mali otvorené",
+        "p": [
+          "Chrome spúšťa rozšírenie len na stránkach otvorených po jeho inštalácii, takže karta YouTube, ktorá bola už otvorená, vôbec nemá FocusTube, kým ju neobnovíte. To isté platí hneď po aktualizácii rozšírenia.",
+          "Keď už beží, nemusíte stále obnovovať: zapnutie alebo vypnutie niečoho sa prejaví okamžite na otvorených kartách."
+        ]
+      },
+      {
+        "h3": "Skontrolujte, že režim nie je na *Vypnuté*",
+        "p": [
+          "Otvorte vyskakovacie okno a pozrite sa na kartu **Režim**. Pri *Vypnuté* sa na YouTube zámerne zobrazuje všetko, bez ohľadu na to, čo je zapnuté v Nastaveniach. Nastavenia určujú, *čo* sa skrýva; Režim určuje, *kedy* to platí."
+        ]
+      },
+      {
+        "h3": "Pri *Časovači* skontrolujte, či naozaj beží relácia",
+        "p": [
+          "Toto najviac ľudí zmätie. Výber *Časovač* sám o sebe nič nespúšťa — znamená len „skrývať veci, kým beží relácia sústredenia“. Kým nestlačíte štart, žiadna relácia nebeží, takže sa nič neskrýva a rozšírenie vyzerá rozbité.",
+          "Buď spustite reláciu, alebo prepnite režim na **Vždy**, ak chcete, aby nastavenia platili stále."
+        ]
+      },
+      {
+        "h3": "Pri *Pláne* skontrolujte, že ste v jednom zo svojich časových okien",
+        "p": [
+          "Rovnaká myšlienka. Plán platí len v dňoch a hodinách, ktoré ste nastavili, mimo týchto okien zostáva YouTube zámerne nezmenené. Ak je sobota a plán pokrýva len pracovné dni, nič sa neskryje — to znamená, že to funguje podľa nastavenia."
+        ]
+      }
+    ],
+    "qa1note": "Ak chcete, aby to bolo jednoducho trvalo zapnuté a už o tom nikdy nerozmýšľať, nastavte režim na **Vždy**.",
+    "qa2h2": "Nastavenie fungovalo a zrazu prestalo",
+    "qa2p": [
+      "YouTube dosť často mení štruktúru vlastných stránok a zmena na ich strane môže spôsobiť, že jeden z prepínačov prestane nachádzať to, čo má skryť. Je to najpravdepodobnejšia príčina, keď sa pokazí jedna funkcia, zatiaľ čo ostatné naďalej fungujú.",
+      "Oplatí sa to nahlásiť namiesto čakania — zvyčajne sa to rýchlo opraví, len čo niekto zistí, ktorá časť YouTube sa zmenila. Uveďte, na čo ste sa pozerali a ktorý prepínač prestal fungovať."
+    ],
+    "qa2btn": "Nahlásiť na GitHube",
+    "qa3h2": "Chcete si na chvíľu vrátiť normálny YouTube",
+    "qa3p": [
+      "Nemusíte nič odinštalovať ani vypínať jedno po druhom. Otvorte vyskakovacie okno, prejdite na **Režim** a zvoľte **Vypnuté**. Na YouTube sa všetko znova zobrazí a všetky vaše nastavenia aj zoznamy blokovania zostanú presne tak, ako ste ich nechali, keď prepnete späť."
+    ],
+    "qa4h2": "Čo FocusTube vidí",
+    "qa4p": [
+      "Funguje len na stránkach YouTube a žiada o dve povolenia: `storage`, aby si pamätal vaše nastavenia, a `alarms`, pre časovače a plány Režimu sústredenia. Neexistuje žiadny účet, nič sa nikam neposiela a nič o vašom prehliadaní sa nezbiera.",
+      "Celé rozšírenie je open source, takže toto sa dá overiť, nie je to len sľub — [prečítajte si kód](repo)."
+    ],
+    "qa5h2": "Stále bez výsledku",
+    "qa5p": [
+      "Otvorte issue na GitHube a opíšte, čo ste očakávali a čo sa stalo namiesto toho. Uvedenie verzie prehliadača a toho, či používate Windows, macOS alebo Linux, zvyčajne ušetrí ďalší dotaz."
+    ],
+    "qa5btn": "Otvoriť issue",
+    "back": "Späť na stránku"
+  },
+  "sl": {
+    "t": "FocusTube — Podpora",
+    "d": "Pomoč za FocusTube: kaj storiti, ko se zdi, da se nič ne spremeni, kako ga začasno ustaviti brez odstranitve in kje prijaviti napako.",
+    "k": "Podpora",
+    "h1": "Nekaj ne deluje?",
+    "lead": "Začnite s prvo točko. Reši večino primerov in jo preverite v sekundi.",
+    "toc": "Na tej strani",
+    "qa1h2": "Nič se ne skriva",
+    "qa1intro": "Skoraj vedno gre za enega od teh štirih razlogov, v tem vrstnem redu.",
+    "steps": [
+      {
+        "h3": "Če ste ga pravkar namestili ali posodobili, znova naložite zavihke YouTube, ki ste jih že imeli odprte",
+        "p": [
+          "Chrome razširitev zažene le na straneh, odprtih po namestitvi, zato zavihek YouTube, ki je bil že odprt, sploh nima FocusTube, dokler ga ne osvežite. Enako velja takoj po posodobitvi razširitve.",
+          "Ko enkrat teče, vam ni treba nenehno osveževati: vklop ali izklop nečesa se takoj uveljavi na odprtih zavihkih."
+        ]
+      },
+      {
+        "h3": "Preverite, da način ni nastavljen na *Izklopljeno*",
+        "p": [
+          "Odprite pojavno okno in poglejte zavihek **Način**. Pri *Izklopljeno* se na YouTubu namerno prikazuje vse, ne glede na to, kaj je vklopljeno v Nastavitvah. Nastavitve določajo, *kaj* se skrije; Način določa, *kdaj* to velja."
+        ]
+      },
+      {
+        "h3": "Pri *Časovniku* preverite, ali res teče seja",
+        "p": [
+          "Ta najbolj zmede ljudi. Izbira *Časovnik* sama po sebi ničesar ne zažene — pomeni le \"skrivaj stvari, dokler teče seja osredotočanja\". Dokler ne pritisnete začni, nobena seja ne teče, zato se nič ne skrije in razširitev je videti pokvarjena.",
+          "Začnite sejo ali pa preklopite način na **Vedno**, če želite, da vaše nastavitve veljajo ves čas."
+        ]
+      },
+      {
+        "h3": "Pri *Urniku* preverite, ali ste znotraj enega od svojih časovnih oken",
+        "p": [
+          "Enaka zamisel. Urnik velja le ob dnevih in urah, ki ste jih določili, zato je zunaj teh oken YouTube namerno nespremenjen. Če je sobota, vaš urnik pa pokriva le delovne dni, se ne bo nič skrilo — to pomeni, da deluje tako, kot je nastavljeno."
+        ]
+      }
+    ],
+    "qa1note": "Če želite le, da je trajno vklopljeno in o tem nikoli več razmišljati, nastavite način na **Vedno**.",
+    "qa2h2": "Nastavitev, ki je delovala, je nenadoma prenehala",
+    "qa2p": [
+      "YouTube precej pogosto spreminja strukturo svojih strani, sprememba na njihovi strani pa lahko povzroči, da eno od stikal ne najde več tistega, kar naj bi skrilo. To je najverjetnejši vzrok, ko se pokvari ena funkcija, medtem ko ostale še naprej delujejo.",
+      "Splača se to prijaviti namesto čakati — običajno se hitro popravi, ko nekdo izve, kateri del YouTuba se je spremenil. Navedite, kaj ste gledali in katero stikalo je prenehalo delovati."
+    ],
+    "qa2btn": "Prijavite na GitHubu",
+    "qa3h2": "Za nekaj časa želite nazaj navaden YouTube",
+    "qa3p": [
+      "Ni vam treba odstraniti razširitve ali izklapljati vsega posebej. Odprite pojavno okno, pojdite na **Način** in izberite **Izklopljeno**. Vse se spet prikaže na YouTubu, vse vaše nastavitve in seznami blokiranja pa ostanejo natanko takšni, kot ste jih pustili, ko boste znova preklopili."
+    ],
+    "qa4h2": "Kaj FocusTube lahko vidi",
+    "qa4p": [
+      "Deluje samo na straneh YouTube in zahteva dve dovoljenji: `storage`, da si zapomni vaše nastavitve, in `alarms`, za časovnike in urnike Načina osredotočanja. Ni računa, nič se ne pošilja nikamor in nič o vašem brskanju se ne zbira.",
+      "Celotna razširitev je odprtokodna, zato je to mogoče preveriti, ne le obljubiti — [preberite kodo](repo)."
+    ],
+    "qa5h2": "Še vedno ne gre",
+    "qa5p": [
+      "Odprite issue na GitHubu in opišite, kaj ste pričakovali in kaj se je zgodilo namesto tega. Navedba različice brskalnika in ali uporabljate Windows, macOS ali Linux običajno prihrani dodatno vprašanje."
+    ],
+    "qa5btn": "Odpri issue",
+    "back": "Nazaj na spletno mesto"
+  },
+  "hr": {
+    "t": "FocusTube — Podrška",
+    "d": "Pomoć za FocusTube: što učiniti kad se čini da se ništa ne mijenja, kako ga privremeno isključiti bez deinstalacije i gdje prijaviti grešku.",
+    "k": "Podrška",
+    "h1": "Nešto ne radi?",
+    "lead": "Počnite s prvim. Rješava većinu slučajeva, a provjera traje sekundu.",
+    "toc": "Na ovoj stranici",
+    "qa1h2": "Ništa se ne skriva",
+    "qa1intro": "Gotovo uvijek je riječ o jednom od ova četiri razloga, ovim redoslijedom.",
+    "steps": [
+      {
+        "h3": "Ako ste ga upravo instalirali ili ažurirali, ponovno učitajte YouTube kartice koje ste već imali otvorene",
+        "p": [
+          "Chrome pokreće proširenje samo na stranicama otvorenim nakon instalacije, pa kartica YouTubea koja je već bila otvorena uopće nema FocusTube dok je ne ponovno učitate. Isto vrijedi odmah nakon ažuriranja proširenja.",
+          "Kad jednom radi, ne morate stalno ponovno učitavati: uključivanje ili isključivanje nečega odmah se primjenjuje na otvorene kartice."
+        ]
+      },
+      {
+        "h3": "Provjerite da način rada nije postavljen na *Isključeno*",
+        "p": [
+          "Otvorite skočni prozor i pogledajte karticu **Način rada**. Kod *Isključeno*, sve se na YouTubeu namjerno prikazuje, bez obzira što je uključeno u Postavkama. Postavke određuju *što* se skriva; Način rada određuje *kada* se to primjenjuje."
+        ]
+      },
+      {
+        "h3": "Kod *Tajmera*, provjerite radi li stvarno sesija",
+        "p": [
+          "Ovo najviše zbunjuje ljude. Odabir *Tajmera* sam po sebi ništa ne pokreće — znači samo „skrivaj stvari dok traje sesija koncentracije”. Dok ne pritisnete start, nijedna sesija ne traje, pa se ništa ne skriva i proširenje izgleda pokvareno.",
+          "Ili pokrenite sesiju, ili prebacite način rada na **Uvijek** ako želite da se vaše postavke primjenjuju cijelo vrijeme."
+        ]
+      },
+      {
+        "h3": "Kod *Rasporeda*, provjerite jeste li unutar jednog od svojih vremenskih okvira",
+        "p": [
+          "Ista ideja. Raspored vrijedi samo u danima i satima koje ste postavili, pa je izvan tih okvira YouTube namjerno ostavljen netaknut. Ako je subota, a vaš raspored pokriva samo radne dane, ništa se neće sakriti — to znači da radi točno onako kako je podešeno."
+        ]
+      }
+    ],
+    "qa1note": "Ako jednostavno želite da bude trajno uključeno i da o tome nikad više ne razmišljate, postavite način rada na **Uvijek**.",
+    "qa2h2": "Postavka koja je radila iznenada je prestala",
+    "qa2p": [
+      "YouTube dosta često mijenja strukturu vlastitih stranica, a promjena s njihove strane može spriječiti jedan od prekidača da pronađe ono što treba sakriti. To je najvjerojatniji uzrok kad jedna značajka prestane raditi dok ostale i dalje rade.",
+      "Isplati se prijaviti umjesto čekati — obično se brzo popravi čim netko sazna koji je dio YouTubea promijenjen. Navedite što ste gledali i koji je prekidač prestao raditi."
+    ],
+    "qa2btn": "Prijavite na GitHubu",
+    "qa3h2": "Želite na neko vrijeme natrag uobičajeni YouTube",
+    "qa3p": [
+      "Ne morate deinstalirati niti isključivati sve pojedinačno. Otvorite skočni prozor, idite na **Način rada** i odaberite **Isključeno**. Sve se ponovno prikazuje na YouTubeu, a sve vaše postavke i popisi blokiranja ostaju točno onakvi kakvima ste ih ostavili za kad se vratite."
+    ],
+    "qa4h2": "Što FocusTube može vidjeti",
+    "qa4p": [
+      "Radi samo na YouTube stranicama i traži dvije dozvole: `storage`, da zapamti vaše postavke, i `alarms`, za tajmere i rasporede Načina koncentracije. Nema računa, ništa se nikamo ne šalje i ništa o vašem pregledavanju se ne prikuplja.",
+      "Cijelo proširenje je otvorenog koda, pa se to može provjeriti, a ne samo obećati — [pročitajte kod](repo)."
+    ],
+    "qa5h2": "I dalje zapeli",
+    "qa5p": [
+      "Otvorite issue na GitHubu i opišite što ste očekivali i što se dogodilo umjesto toga. Navođenje verzije preglednika i koristite li Windows, macOS ili Linux obično uštedi dodatno pitanje."
+    ],
+    "qa5btn": "Otvori issue",
+    "back": "Natrag na stranicu"
+  },
+  "sr": {
+    "t": "FocusTube — Podrška",
+    "d": "Pomoć za FocusTube: šta uraditi kada izgleda da se ništa ne menja, kako ga privremeno isključiti bez deinstalacije i gde prijaviti grešku.",
+    "k": "Podrška",
+    "h1": "Nešto ne radi?",
+    "lead": "Počnite od prvog. Rešava većinu slučajeva, a provera traje sekund.",
+    "toc": "Na ovoj stranici",
+    "qa1h2": "Ništa se ne sakriva",
+    "qa1intro": "Skoro uvek je reč o jednom od ova četiri razloga, ovim redosledom.",
+    "steps": [
+      {
+        "h3": "Ako ste ga upravo instalirali ili ažurirali, ponovo učitajte YouTube kartice koje ste već imali otvorene",
+        "p": [
+          "Chrome pokreće ekstenziju samo na stranicama otvorenim posle instalacije, pa kartica YouTubea koja je već bila otvorena uopšte nema FocusTube dok je ne osvežite. Isto važi odmah posle ažuriranja ekstenzije.",
+          "Kada jednom radi, ne morate stalno da osvežavate: uključivanje ili isključivanje nečega odmah se primenjuje na otvorene kartice."
+        ]
+      },
+      {
+        "h3": "Proverite da režim nije postavljen na *Isključeno*",
+        "p": [
+          "Otvorite iskačući prozor i pogledajte karticu **Režim**. Kod *Isključeno*, sve se na YouTubeu namerno prikazuje, bez obzira šta je uključeno u Podešavanjima. Podešavanja određuju *šta* se sakriva; Režim određuje *kada* se to primenjuje."
+        ]
+      },
+      {
+        "h3": "Kod *Tajmera*, proverite da li stvarno traje sesija",
+        "p": [
+          "Ovo najviše zbunjuje ljude. Izbor *Tajmera* sam po sebi ništa ne pokreće — znači samo „sakrivaj stvari dok traje sesija koncentracije”. Dok ne pritisnete start, nijedna sesija ne traje, pa se ništa ne sakriva i ekstenzija izgleda pokvareno.",
+          "Ili pokrenite sesiju, ili prebacite režim na **Uvek** ako želite da se vaša podešavanja primenjuju sve vreme."
+        ]
+      },
+      {
+        "h3": "Kod *Rasporeda*, proverite da li ste unutar jednog od svojih vremenskih okvira",
+        "p": [
+          "Ista ideja. Raspored važi samo u danima i satima koje ste postavili, pa je van tih okvira YouTube namerno ostavljen netaknut. Ako je subota, a vaš raspored pokriva samo radne dane, ništa se neće sakriti — to znači da radi tačno onako kako je podešeno."
+        ]
+      }
+    ],
+    "qa1note": "Ako jednostavno želite da bude trajno uključeno i da o tome nikad više ne razmišljate, postavite režim na **Uvek**.",
+    "qa2h2": "Podešavanje koje je radilo iznenada je prestalo",
+    "qa2p": [
+      "YouTube dosta često menja strukturu sopstvenih stranica, a promena s njihove strane može sprečiti jedan od prekidača da pronađe ono što treba da sakrije. To je najverovatniji uzrok kada jedna funkcija prestane da radi dok ostale i dalje rade.",
+      "Isplati se prijaviti umesto čekati — obično se brzo popravi čim neko sazna koji je deo YouTubea promenjen. Navedite šta ste gledali i koji je prekidač prestao da radi."
+    ],
+    "qa2btn": "Prijavite na GitHubu",
+    "qa3h2": "Želite na neko vreme nazad uobičajeni YouTube",
+    "qa3p": [
+      "Ne morate da deinstalirate niti da isključujete sve pojedinačno. Otvorite iskačući prozor, idite na **Režim** i izaberite **Isključeno**. Sve se ponovo prikazuje na YouTubeu, a sva vaša podešavanja i liste blokiranja ostaju tačno onakva kakvima ste ih ostavili za kad se vratite."
+    ],
+    "qa4h2": "Šta FocusTube može da vidi",
+    "qa4p": [
+      "Radi samo na YouTube stranicama i traži dve dozvole: `storage`, da zapamti vaša podešavanja, i `alarms`, za tajmere i rasporede Režima koncentracije. Nema naloga, ništa se nikuda ne šalje i ništa o vašem pregledanju se ne prikuplja.",
+      "Cela ekstenzija je otvorenog koda, pa to može da se proveri, a ne samo obeća — [pročitajte kod](repo)."
+    ],
+    "qa5h2": "I dalje zaglavljeni",
+    "qa5p": [
+      "Otvorite issue na GitHubu i opišite šta ste očekivali i šta se dogodilo umesto toga. Navođenje verzije pregledača i da li koristite Windows, macOS ili Linux obično uštedi dodatno pitanje."
+    ],
+    "qa5btn": "Otvori issue",
+    "back": "Nazad na sajt"
+  },
+  "ru": {
+    "t": "FocusTube — Поддержка",
+    "d": "Помощь по FocusTube: что делать, если ничего не меняется, как приостановить его без удаления и куда сообщить об ошибке.",
+    "k": "Поддержка",
+    "h1": "Что-то не работает?",
+    "lead": "Начните с первого пункта. Он решает большинство случаев и проверяется за секунду.",
+    "toc": "На этой странице",
+    "qa1h2": "Ничего не скрывается",
+    "qa1intro": "Почти всегда причина — одна из этих четырёх, именно в таком порядке.",
+    "steps": [
+      {
+        "h3": "Если вы только что установили или обновили расширение, перезагрузите уже открытые вкладки YouTube",
+        "p": [
+          "Chrome запускает расширение только на страницах, открытых после его установки, поэтому во вкладке YouTube, которая была открыта раньше, FocusTube вообще нет, пока вы её не перезагрузите. То же самое сразу после обновления расширения.",
+          "Как только оно заработало, постоянно перезагружать не нужно: включение или выключение чего-либо сразу применяется к открытым вкладкам."
+        ]
+      },
+      {
+        "h3": "Проверьте, что режим не установлен на *Выкл*",
+        "p": [
+          "Откройте всплывающее окно и посмотрите вкладку **Режим**. При *Выкл* на YouTube специально показывается всё, независимо от того, что включено в Настройках. Настройки решают, *что* скрывать; Режим решает, *когда* это применяется."
+        ]
+      },
+      {
+        "h3": "В режиме *Таймер* проверьте, действительно ли идёт сессия",
+        "p": [
+          "Именно на этом чаще всего ошибаются. Выбор *Таймера* сам по себе ничего не запускает — это означает лишь «скрывать всё, пока идёт сессия концентрации». Пока вы не нажали «старт», ни одна сессия не идёт, поэтому ничего не скрывается и расширение выглядит сломанным.",
+          "Либо запустите сессию, либо переключите режим на **Всегда**, если хотите, чтобы настройки применялись постоянно."
+        ]
+      },
+      {
+        "h3": "В режиме *Расписание* проверьте, что вы находитесь в одном из заданных промежутков",
+        "p": [
+          "Та же идея. Расписание применяется только в заданные дни и часы, а вне этих промежутков YouTube намеренно остаётся без изменений. Если сегодня суббота, а расписание охватывает только будни, ничего не будет скрыто — это значит, что всё работает так, как настроено."
+        ]
+      }
+    ],
+    "qa1note": "Если вы просто хотите, чтобы это работало постоянно и больше об этом не думать, установите режим **Всегда**.",
+    "qa2h2": "Настройка работала и вдруг перестала",
+    "qa2p": [
+      "YouTube довольно часто меняет структуру собственных страниц, и изменение на их стороне может помешать одному из переключателей находить то, что он должен скрывать. Это наиболее вероятная причина, когда ломается одна функция, а остальные продолжают работать.",
+      "Стоит сообщить об этом, а не ждать — обычно это быстро исправляют, как только становится известно, какая часть YouTube изменилась. Укажите, что вы смотрели и какой переключатель перестал работать."
+    ],
+    "qa2btn": "Сообщить на GitHub",
+    "qa3h2": "Хотите ненадолго вернуть обычный YouTube",
+    "qa3p": [
+      "Не нужно удалять расширение или выключать всё по отдельности. Откройте всплывающее окно, перейдите в **Режим** и выберите **Выкл**. На YouTube снова покажется всё, а все ваши настройки и списки блокировки останутся точно такими, какими вы их оставили, — на момент, когда включите обратно."
+    ],
+    "qa4h2": "Что видит FocusTube",
+    "qa4p": [
+      "Он работает только на страницах YouTube и запрашивает два разрешения: `storage` — чтобы запоминать ваши настройки, и `alarms` — для таймеров и расписаний Режима концентрации. Учётной записи нет, никуда ничего не отправляется, и о вашей истории просмотров ничего не собирается.",
+      "Всё расширение с открытым исходным кодом, так что это можно проверить, а не просто поверить на слово — [посмотреть код](repo)."
+    ],
+    "qa5h2": "Всё ещё не получается",
+    "qa5p": [
+      "Откройте issue на GitHub и опишите, что вы ожидали и что произошло на самом деле. Указание версии браузера и того, используете ли вы Windows, macOS или Linux, обычно избавляет от лишнего уточняющего вопроса."
+    ],
+    "qa5btn": "Открыть issue",
+    "back": "Вернуться на сайт"
+  },
+  "el": {
+    "t": "FocusTube — Υποστήριξη",
+    "d": "Βοήθεια για το FocusTube: τι να κάνετε όταν φαίνεται πως τίποτα δεν αλλάζει, πώς να το θέσετε σε παύση χωρίς απεγκατάσταση, και πού να αναφέρετε ένα σφάλμα.",
+    "k": "Υποστήριξη",
+    "h1": "Κάτι δεν λειτουργεί;",
+    "lead": "Ξεκινήστε με το πρώτο. Λύνει τις περισσότερες περιπτώσεις και ελέγχεται σε ένα δευτερόλεπτο.",
+    "toc": "Σε αυτή τη σελίδα",
+    "qa1h2": "Δεν κρύβεται τίποτα",
+    "qa1intro": "Σχεδόν πάντα φταίει ένα από αυτά τα τέσσερα, με αυτή τη σειρά.",
+    "steps": [
+      {
+        "h3": "Αν μόλις το εγκαταστήσατε ή το ενημερώσατε, ανανεώστε τις καρτέλες YouTube που είχατε ήδη ανοιχτές",
+        "p": [
+          "Το Chrome εκτελεί μια επέκταση μόνο σε σελίδες που ανοίγουν μετά την εγκατάστασή της, οπότε μια καρτέλα YouTube που ήταν ήδη ανοιχτή δεν έχει καθόλου FocusTube μέχρι να την ανανεώσετε. Το ίδιο ισχύει αμέσως μετά από μια ενημέρωση της επέκτασης.",
+          "Μόλις τρέξει, δεν χρειάζεται να ανανεώνετε συνέχεια: η ενεργοποίηση ή απενεργοποίηση κάτι εφαρμόζεται αμέσως στις ανοιχτές καρτέλες."
+        ]
+      },
+      {
+        "h3": "Ελέγξτε ότι η λειτουργία δεν είναι σε *Ανενεργό*",
+        "p": [
+          "Ανοίξτε το αναδυόμενο παράθυρο και δείτε την καρτέλα **Λειτουργία**. Σε *Ανενεργό*, όλα εμφανίζονται στο YouTube επίτηδες, ό,τι κι αν έχετε ενεργοποιήσει στις Ρυθμίσεις. Οι Ρυθμίσεις αποφασίζουν *τι* κρύβεται· η Λειτουργία αποφασίζει *πότε* ισχύει αυτό."
+        ]
+      },
+      {
+        "h3": "Στο *Χρονόμετρο*, ελέγξτε ότι πράγματι τρέχει μια συνεδρία",
+        "p": [
+          "Αυτό μπερδεύει τους περισσότερους. Η επιλογή *Χρονόμετρο* δεν ξεκινά τίποτα από μόνη της — σημαίνει απλώς «κρύψε πράγματα όσο τρέχει μια συνεδρία συγκέντρωσης». Μέχρι να πατήσετε έναρξη, καμία συνεδρία δεν τρέχει, οπότε τίποτα δεν κρύβεται και η επέκταση φαίνεται χαλασμένη.",
+          "Είτε ξεκινήστε μια συνεδρία, είτε αλλάξτε τη λειτουργία σε **Πάντα** αν θέλετε οι ρυθμίσεις σας να ισχύουν συνεχώς."
+        ]
+      },
+      {
+        "h3": "Στο *Πρόγραμμα*, ελέγξτε ότι βρίσκεστε μέσα σε ένα από τα χρονικά σας διαστήματα",
+        "p": [
+          "Ίδια λογική. Ένα πρόγραμμα ισχύει μόνο τις ημέρες και ώρες που ορίσατε, οπότε εκτός αυτών των διαστημάτων το YouTube παραμένει επίτηδες ανέγγιχτο. Αν είναι Σάββατο και το πρόγραμμά σας καλύπτει μόνο καθημερινές, δεν θα κρυφτεί τίποτα — αυτό σημαίνει ότι λειτουργεί όπως έχει ρυθμιστεί."
+        ]
+      }
+    ],
+    "qa1note": "Αν θέλετε απλώς να είναι μόνιμα ενεργό και να μην το ξανασκεφτείτε, ορίστε τη λειτουργία σε **Πάντα**.",
+    "qa2h2": "Μια ρύθμιση που λειτουργούσε σταμάτησε ξαφνικά",
+    "qa2p": [
+      "Το YouTube αλλάζει αρκετά συχνά τη δομή των δικών του σελίδων, και μια αλλαγή από την πλευρά τους μπορεί να εμποδίσει έναν από τους διακόπτες να βρει αυτό που πρέπει να κρύψει. Είναι η πιο πιθανή αιτία όταν χαλάει μία μόνο λειτουργία ενώ οι υπόλοιπες συνεχίζουν να δουλεύουν.",
+      "Αξίζει να το αναφέρετε αντί να περιμένετε — συνήθως διορθώνεται γρήγορα μόλις μάθει κάποιος ποιο μέρος του YouTube άλλαξε. Αναφέρετε τι βλέπατε και ποιος διακόπτης σταμάτησε να λειτουργεί."
+    ],
+    "qa2btn": "Αναφορά στο GitHub",
+    "qa3h2": "Θέλετε πίσω το κανονικό YouTube για λίγο",
+    "qa3p": [
+      "Δεν χρειάζεται να κάνετε απεγκατάσταση ή να απενεργοποιήσετε τα πάντα ένα προς ένα. Ανοίξτε το αναδυόμενο παράθυρο, πηγαίνετε στη **Λειτουργία** και επιλέξτε **Ανενεργό**. Όλα εμφανίζονται ξανά στο YouTube, και όλες οι ρυθμίσεις και οι λίστες αποκλεισμού σας παραμένουν ακριβώς όπως τις αφήσατε για όταν επιστρέψετε."
+    ],
+    "qa4h2": "Τι μπορεί να δει το FocusTube",
+    "qa4p": [
+      "Λειτουργεί μόνο σε σελίδες YouTube και ζητά δύο άδειες: `storage`, για να θυμάται τις ρυθμίσεις σας, και `alarms`, για τα χρονόμετρα και τα προγράμματα της Λειτουργίας Συγκέντρωσης. Δεν υπάρχει λογαριασμός, τίποτα δεν αποστέλλεται πουθενά, και τίποτα από την περιήγησή σας δεν συλλέγεται.",
+      "Όλη η επέκταση είναι ανοιχτού κώδικα, οπότε αυτό είναι επαληθεύσιμο και όχι απλώς μια υπόσχεση — [δείτε τον κώδικα](repo)."
+    ],
+    "qa5h2": "Ακόμα κολλημένοι",
+    "qa5p": [
+      "Ανοίξτε ένα issue στο GitHub και περιγράψτε τι περιμένατε και τι συνέβη αντ' αυτού. Αναφέροντας την έκδοση του browser σας και αν χρησιμοποιείτε Windows, macOS ή Linux συνήθως γλιτώνετε μια επιπλέον ανταλλαγή μηνυμάτων."
+    ],
+    "qa5btn": "Άνοιγμα issue",
+    "back": "Επιστροφή στον ιστότοπο"
+  },
+  "tr": {
+    "t": "FocusTube — Destek",
+    "d": "FocusTube yardımı: hiçbir şey değişmiyor gibi göründüğünde ne yapılır, kaldırmadan nasıl duraklatılır ve hata nereye bildirilir.",
+    "k": "Destek",
+    "h1": "Bir şey mi çalışmıyor?",
+    "lead": "İlkinden başlayın. Vakaların çoğunu çözer ve kontrolü bir saniye sürer.",
+    "toc": "Bu sayfada",
+    "qa1h2": "Hiçbir şey gizlenmiyor",
+    "qa1intro": "Neredeyse her zaman şu dört şeyden biridir, bu sırayla.",
+    "steps": [
+      {
+        "h3": "Yeni kurduysanız veya güncellediyseniz, zaten açık olan YouTube sekmelerini yeniden yükleyin",
+        "p": [
+          "Chrome bir uzantıyı yalnızca kurulumdan sonra açılan sayfalarda çalıştırır, bu yüzden zaten açık olan bir YouTube sekmesinde siz yeniden yükleyene kadar FocusTube hiç yoktur. Aynısı uzantı güncellendikten hemen sonra da geçerlidir.",
+          "Bir kez çalışmaya başladıktan sonra sürekli yenilemenize gerek yok: bir şeyi açıp kapatmak açık sekmelerde hemen etkili olur."
+        ]
+      },
+      {
+        "h3": "Modun *Kapalı* olmadığını kontrol edin",
+        "p": [
+          "Açılır pencereyi açın ve **Mod** sekmesine bakın. *Kapalı* durumundayken, Ayarlar'da ne açık olursa olsun YouTube'da her şey bilerek gösterilir. Ayarlar *neyin* gizleneceğine karar verir; Mod bunun *ne zaman* geçerli olacağına karar verir."
+        ]
+      },
+      {
+        "h3": "*Zamanlayıcı*'da gerçekten bir oturum çalıştığını kontrol edin",
+        "p": [
+          "İnsanları en çok kandıran budur. *Zamanlayıcı*'yı seçmek tek başına hiçbir şeyi başlatmaz — sadece \"bir odaklanma oturumu çalışırken bir şeyleri gizle\" anlamına gelir. Başlat'a basana kadar hiçbir oturum çalışmaz, bu yüzden hiçbir şey gizlenmez ve uzantı bozuk gibi görünür.",
+          "Ya bir oturum başlatın ya da ayarlarınızın her zaman geçerli olmasını istiyorsanız modu **Her Zaman**'a çevirin."
+        ]
+      },
+      {
+        "h3": "*Program*'da, zaman aralıklarınızdan birinin içinde olduğunuzu kontrol edin",
+        "p": [
+          "Aynı mantık. Bir program yalnızca ayarladığınız gün ve saatlerde geçerlidir, bu aralıkların dışında YouTube bilerek olduğu gibi bırakılır. Bugün cumartesiyse ve programınız yalnızca hafta içini kapsıyorsa hiçbir şey gizlenmez — bu, ayarlandığı gibi çalıştığı anlamına gelir."
+        ]
+      }
+    ],
+    "qa1note": "Sadece kalıcı olarak açık olmasını istiyor ve bunu bir daha hiç düşünmek istemiyorsanız, modu **Her Zaman**'a ayarlayın.",
+    "qa2h2": "Çalışan bir ayar aniden durdu",
+    "qa2p": [
+      "YouTube kendi sayfa yapısını oldukça sık değiştirir ve onların tarafındaki bir değişiklik, anahtarlardan birinin gizlemesi gereken şeyi bulamamasına neden olabilir. Diğerleri çalışmaya devam ederken tek bir özellik bozulduğunda en olası nedeni budur.",
+      "Beklemek yerine bildirmeye değer — birisi YouTube'un hangi kısmının değiştiğini öğrendiğinde genellikle hızlıca düzeltilir. Neye baktığınızı ve hangi anahtarın çalışmayı bıraktığını belirtin."
+    ],
+    "qa2btn": "GitHub'da bildir",
+    "qa3h2": "Bir süreliğine normal YouTube'u geri istiyorsunuz",
+    "qa3p": [
+      "Kaldırmanıza veya her şeyi tek tek kapatmanıza gerek yok. Açılır pencereyi açın, **Mod**'a gidin ve **Kapalı**'yı seçin. Her şey YouTube'da tekrar görünür ve tekrar açtığınızda tüm ayarlarınız ile engelleme listeleriniz tam olarak bıraktığınız gibi kalır."
+    ],
+    "qa4h2": "FocusTube neleri görebilir",
+    "qa4p": [
+      "Yalnızca YouTube sayfalarında çalışır ve iki izin ister: ayarlarınızı hatırlamak için `storage` ve Odaklanma Modu'nun zamanlayıcıları ile programları için `alarms`. Hesap yoktur, hiçbir şey hiçbir yere gönderilmez ve gezinme geçmişiniz hakkında hiçbir şey toplanmaz.",
+      "Uzantının tamamı açık kaynaktır, bu yüzden bu bir vaat değil, kontrol edilebilir bir şeydir — [kodu inceleyin](repo)."
+    ],
+    "qa5h2": "Hâlâ takıldıysanız",
+    "qa5p": [
+      "GitHub'da bir issue açın ve ne beklediğinizi, bunun yerine ne olduğunu anlatın. Tarayıcı sürümünüzü ve Windows, macOS ya da Linux kullandığınızı belirtmek genellikle ek bir soruyu önler."
+    ],
+    "qa5btn": "Issue aç",
+    "back": "Siteye dön"
+  },
+  "hu": {
+    "t": "FocusTube — Támogatás",
+    "d": "Segítség a FocusTube-hoz: mit tegyél, ha úgy tűnik, semmi nem változik, hogyan állítsd le eltávolítás nélkül, és hová jelents hibát.",
+    "k": "Támogatás",
+    "h1": "Valami nem működik?",
+    "lead": "Kezdd az elsővel. Az esetek többségét megoldja, és egy másodperc alatt ellenőrizhető.",
+    "toc": "Ezen az oldalon",
+    "qa1h2": "Semmi sincs elrejtve",
+    "qa1intro": "Szinte mindig e négy ok egyike áll fenn, ebben a sorrendben.",
+    "steps": [
+      {
+        "h3": "Ha most telepítetted vagy frissítetted, töltsd újra a már megnyitott YouTube-lapokat",
+        "p": [
+          "A Chrome egy kiegészítőt csak a telepítés után megnyitott oldalakon futtat, így egy már korábban megnyitott YouTube-lapon egyáltalán nincs FocusTube, amíg újra nem töltöd. Ugyanez igaz közvetlenül a kiegészítő frissítése után is.",
+          "Ha egyszer fut, nem kell folyton újratöltened: egy beállítás be- vagy kikapcsolása azonnal érvényesül a nyitott lapokon."
+        ]
+      },
+      {
+        "h3": "Ellenőrizd, hogy a mód nincs-e *Ki*-re állítva",
+        "p": [
+          "Nyisd meg a felugró ablakot, és nézd meg a **Mód** fület. *Ki* állásban minden szándékosan látszik a YouTube-on, függetlenül attól, mi van bekapcsolva a Beállításokban. A Beállítások döntik el, *mi* legyen elrejtve; a Mód dönti el, *mikor* érvényesüljön ez."
+        ]
+      },
+      {
+        "h3": "*Időzítő* módban ellenőrizd, tényleg fut-e egy munkamenet",
+        "p": [
+          "Ez az, ami a legtöbb embert megtéveszti. Az *Időzítő* kiválasztása önmagában semmit sem indít el — csak annyit jelent, hogy „rejtsd el a dolgokat, amíg fut egy koncentrációs munkamenet”. Amíg meg nem nyomod a start gombot, egyetlen munkamenet sem fut, így semmi sem tűnik el, és a kiegészítő elromlottnak tűnik.",
+          "Vagy indíts el egy munkamenetet, vagy állítsd a módot **Mindig**-re, ha azt szeretnéd, hogy a beállításaid folyamatosan érvényesüljenek."
+        ]
+      },
+      {
+        "h3": "*Ütemezés* módban ellenőrizd, hogy az egyik időablakodon belül vagy-e",
+        "p": [
+          "Ugyanez az elv. Az ütemezés csak a beállított napokon és időpontokban érvényes, azokon kívül a YouTube szándékosan érintetlen marad. Ha szombat van, és az ütemezésed csak a hétköznapokra vonatkozik, semmi nem lesz elrejtve — ez azt jelenti, hogy pontosan úgy működik, ahogy beállítottad."
+        ]
+      }
+    ],
+    "qa1note": "Ha egyszerűen csak azt szeretnéd, hogy folyamatosan bekapcsolva legyen, és soha többé ne kelljen ezen gondolkodnod, állítsd a módot **Mindig**-re.",
+    "qa2h2": "Egy korábban működő beállítás hirtelen leállt",
+    "qa2p": [
+      "A YouTube elég gyakran módosítja saját oldalainak felépítését, és egy náluk történt változtatás megakadályozhatja, hogy az egyik kapcsoló megtalálja, amit el kellene rejtenie. Ez a legvalószínűbb ok, amikor egyetlen funkció romlik el, míg a többi tovább működik.",
+      "Érdemes jelenteni, ahelyett hogy várnál rá — általában gyorsan javítják, amint valaki megtudja, mi változott a YouTube-on. Add meg, mit néztél, és melyik kapcsoló szűnt meg működni."
+    ],
+    "qa2btn": "Jelentsd a GitHubon",
+    "qa3h2": "Egy időre vissza szeretnéd kapni a normál YouTube-ot",
+    "qa3p": [
+      "Nem kell eltávolítanod, és nem kell mindent egyenként kikapcsolnod. Nyisd meg a felugró ablakot, menj a **Mód**-hoz, és válaszd a **Ki**-t. Minden újra megjelenik a YouTube-on, és minden beállításod és letiltási listád pontosan úgy marad, ahogy hagytad, amikor visszakapcsolsz."
+    ],
+    "qa4h2": "Mit láthat a FocusTube",
+    "qa4p": [
+      "Csak YouTube-oldalakon fut, és két engedélyt kér: `storage`, hogy megjegyezze a beállításaidat, és `alarms`, a Koncentráció mód időzítőihez és ütemezéseihez. Nincs fiók, semmi nem kerül elküldésre sehova, és semmit nem gyűjt a böngészésedről.",
+      "A teljes kiegészítő nyílt forráskódú, tehát ez ellenőrizhető, nem csupán egy ígéret — [nézd meg a kódot](repo)."
+    ],
+    "qa5h2": "Még mindig nem megy",
+    "qa5p": [
+      "Nyiss egy issue-t a GitHubon, és írd le, mire számítottál, és mi történt helyette. A böngésződ verziójának, valamint annak megadása, hogy Windowst, macOS-t vagy Linuxot használsz, általában megspórol egy plusz kérdést."
+    ],
+    "qa5btn": "Issue nyitása",
+    "back": "Vissza az oldalra"
+  },
+  "et": {
+    "t": "FocusTube — Abi",
+    "d": "Abi FocusTube kohta: mida teha, kui miski ei tundu muutuvat, kuidas seda peatada ilma eemaldamata ja kuhu vea korral teatada.",
+    "k": "Abi",
+    "h1": "Miski ei tööta?",
+    "lead": "Alusta esimesest. See lahendab enamiku juhtumeid ja selle kontrollimine võtab hetke.",
+    "toc": "Sellel lehel",
+    "qa1h2": "Midagi ei peideta",
+    "qa1intro": "Peaaegu alati on põhjuseks üks neist neljast, selles järjekorras.",
+    "steps": [
+      {
+        "h3": "Kui just paigaldasid või uuendasid seda, laadi juba avatud YouTube'i vahekaardid uuesti",
+        "p": [
+          "Chrome käivitab laienduse ainult lehtedel, mis avati pärast selle paigaldamist, seega juba avatud YouTube'i vahekaardil ei ole FocusTube't üldse enne, kui selle uuesti laadid. Sama kehtib kohe pärast laienduse uuendamist.",
+          "Kui see juba töötab, ei pea sa pidevalt uuesti laadima: millegi sisse- või väljalülitamine rakendub avatud vahekaartidele koheselt."
+        ]
+      },
+      {
+        "h3": "Kontrolli, et režiim ei ole *Väljas*",
+        "p": [
+          "Ava hüpikaken ja vaata vahekaarti **Režiim**. Kui see on *Väljas*, näidatakse YouTube'is kõike meelega, olenemata sellest, mis on Seadetes sisse lülitatud. Seaded otsustavad, *mida* peidetakse; Režiim otsustab, *millal* see kehtib."
+        ]
+      },
+      {
+        "h3": "*Taimeri* puhul kontrolli, kas seanss tõesti käib",
+        "p": [
+          "See ajab enim inimesi segadusse. *Taimeri* valimine iseenesest midagi ei käivita — see tähendab ainult „peida asju, kuni keskendumisseanss käib“. Kuni sa ei vajuta start, ei käi ükski seanss, seega midagi ei peideta ja laiendus tundub katki olevat.",
+          "Kas käivita seanss või lülita režiim **Alati** peale, kui soovid, et sinu seaded kehtiksid kogu aeg."
+        ]
+      },
+      {
+        "h3": "*Ajakava* puhul kontrolli, et oled ühe oma ajavahemiku sees",
+        "p": [
+          "Sama mõte. Ajakava kehtib ainult määratud päevadel ja kellaaegadel, seega väljaspool neid vahemikke jäetakse YouTube meelega puutumata. Kui täna on laupäev ja su ajakava katab ainult tööpäevi, ei peideta midagi — see tähendab, et see töötab nii, nagu on seadistatud."
+        ]
+      }
+    ],
+    "qa1note": "Kui soovid lihtsalt, et see oleks püsivalt sees ja sellele enam kunagi ei peaks mõtlema, sea režiimiks **Alati**.",
+    "qa2h2": "Seadistus, mis töötas, lakkas järsku toimimast",
+    "qa2p": [
+      "YouTube muudab oma lehtede struktuuri üsna sageli, ja muudatus nende poolel võib takistada ühel lülitil leidmast seda, mida ta peaks peitma. See on kõige tõenäolisem põhjus, kui üks funktsioon läheb katki, samas kui teised jätkavad tööd.",
+      "Tasub sellest teada anda, mitte oodata — tavaliselt parandatakse see kiiresti, kui keegi teab, milline osa YouTube'ist muutus. Märgi ära, mida vaatasid ja milline lüliti lakkas töötamast."
+    ],
+    "qa2btn": "Teata GitHubis",
+    "qa3h2": "Soovid mõneks ajaks tavalist YouTube't tagasi",
+    "qa3p": [
+      "Sul ei ole vaja laiendust eemaldada ega kõike ükshaaval välja lülitada. Ava hüpikaken, mine **Režiim** juurde ja vali **Väljas**. Kõik ilmub YouTube's uuesti nähtavale ning kõik su seaded ja blokeerimisloendid jäävad täpselt selliseks, nagu need jätsid, kuni lülitad tagasi."
+    ],
+    "qa4h2": "Mida FocusTube näha saab",
+    "qa4p": [
+      "See töötab ainult YouTube'i lehtedel ja küsib kahte luba: `storage`, et jätta meelde su seaded, ja `alarms`, Keskendumisrežiimi taimerite ja ajakavade jaoks. Kontot ei ole, midagi ei saadeta kuhugi ja midagi sinu sirvimise kohta ei koguta.",
+      "Kogu laiendus on avatud lähtekoodiga, seega saab seda kontrollida, mitte lihtsalt uskuda — [vaata koodi](repo)."
+    ],
+    "qa5h2": "Endiselt hätta jäänud",
+    "qa5p": [
+      "Ava GitHubis probleem (issue) ja kirjelda, mida ootasid ja mis selle asemel juhtus. Brauseri versiooni ja selle mainimine, kas kasutad Windowsit, macOS-i või Linuxit, hoiab tavaliselt kokku ühe lisaküsimuse."
+    ],
+    "qa5btn": "Ava probleem",
+    "back": "Tagasi saidile"
+  },
+  "lv": {
+    "t": "FocusTube — Atbalsts",
+    "d": "Palīdzība par FocusTube: ko darīt, ja šķiet, ka nekas nemainās, kā to apturēt bez atinstalēšanas un kur ziņot par kļūdu.",
+    "k": "Atbalsts",
+    "h1": "Kaut kas nedarbojas?",
+    "lead": "Sāciet ar pirmo punktu. Tas atrisina lielāko daļu gadījumu, un pārbaude aizņem sekundi.",
+    "toc": "Šajā lapā",
+    "qa1h2": "Nekas netiek slēpts",
+    "qa1intro": "Gandrīz vienmēr tas ir viens no šiem četriem iemesliem, šādā secībā.",
+    "steps": [
+      {
+        "h3": "Ja tikko to instalējāt vai atjaunināt, pārlādējiet jau atvērtās YouTube cilnes",
+        "p": [
+          "Chrome palaiž paplašinājumu tikai lapās, kas atvērtas pēc tā instalēšanas, tāpēc jau atvērtā YouTube cilnē FocusTube nemaz nav, kamēr to nepārlādējat. Tas pats attiecas uzreiz pēc paplašinājuma atjaunināšanas.",
+          "Kad tas jau darbojas, jums nav pastāvīgi jāpārlādē: kaut kā ieslēgšana vai izslēgšana uzreiz stājas spēkā atvērtajās cilnēs."
+        ]
+      },
+      {
+        "h3": "Pārbaudiet, vai režīms nav iestatīts uz *Izslēgts*",
+        "p": [
+          "Atveriet uznirstošo logu un skatiet cilni **Režīms**. Iestatījumā *Izslēgts* viss YouTube tiek rādīts apzināti, neatkarīgi no tā, kas ieslēgts Iestatījumos. Iestatījumi nosaka, *kas* tiek slēpts; Režīms nosaka, *kad* tas ir spēkā."
+        ]
+      },
+      {
+        "h3": "Ar *Taimeri* pārbaudiet, vai patiešām norit sesija",
+        "p": [
+          "Šis mulsina visvairāk cilvēku. Izvēloties *Taimeri*, pats par sevi nekas netiek palaists — tas nozīmē tikai „slēpt lietas, kamēr norit koncentrēšanās sesija”. Kamēr nenospiežat sākt, neviena sesija nenotiek, tāpēc nekas netiek slēpts un paplašinājums šķiet salauzts.",
+          "Vai nu sāciet sesiju, vai pārslēdziet režīmu uz **Vienmēr**, ja vēlaties, lai iestatījumi darbotos visu laiku."
+        ]
+      },
+      {
+        "h3": "Ar *Grafiku* pārbaudiet, vai atrodaties kādā no saviem laika logiem",
+        "p": [
+          "Tā pati doma. Grafiks darbojas tikai iestatītajās dienās un stundās, tāpēc ārpus tām YouTube apzināti tiek atstāts neskarts. Ja ir sestdiena un jūsu grafiks aptver tikai darba dienas, nekas netiks slēpts — tas nozīmē, ka viss darbojas tā, kā konfigurēts."
+        ]
+      }
+    ],
+    "qa1note": "Ja vēlaties vienkārši, lai tas būtu pastāvīgi ieslēgts un par to vairs nekad nedomāt, iestatiet režīmu uz **Vienmēr**.",
+    "qa2h2": "Iestatījums, kas darbojās, pēkšņi pārstāja darboties",
+    "qa2p": [
+      "YouTube diezgan bieži maina savu lapu struktūru, un izmaiņas viņu pusē var traucēt kādam no slēdžiem atrast to, kas tam jāslēpj. Tas ir visticamākais cēlonis, ja saplīst tikai viena funkcija, kamēr pārējās turpina darboties.",
+      "To ir vērts ziņot, nevis gaidīt — parasti tas tiek ātri novērsts, tiklīdz kāds uzzina, kura YouTube daļa mainījusies. Norādiet, ko skatījāties un kurš slēdzis pārstāja darboties."
+    ],
+    "qa2btn": "Ziņot GitHub",
+    "qa3h2": "Vēlaties uz brīdi atgūt parasto YouTube",
+    "qa3p": [
+      "Jums nav jāatinstalē vai jāizslēdz viss pa vienam. Atveriet uznirstošo logu, dodieties uz **Režīms** un izvēlieties **Izslēgts**. Viss atkal parādās YouTube, un visi jūsu iestatījumi un bloķēšanas saraksti paliek tieši tādi, kādus tos atstājāt, kad atkal ieslēgsiet."
+    ],
+    "qa4h2": "Ko FocusTube var redzēt",
+    "qa4p": [
+      "Tas darbojas tikai YouTube lapās un pieprasa divas atļaujas: `storage`, lai atcerētos jūsu iestatījumus, un `alarms`, Fokusa režīma taimeriem un grafikiem. Konta nav, nekas nekur netiek sūtīts, un nekas par jūsu pārlūkošanu netiek vākts.",
+      "Viss paplašinājums ir atvērtā pirmkoda, tāpēc to var pārbaudīt, nevis tikai solīt — [skatiet kodu](repo)."
+    ],
+    "qa5h2": "Joprojām neizdodas",
+    "qa5p": [
+      "Atveriet issue GitHub un aprakstiet, ko sagaidījāt un kas notika tā vietā. Norādot pārlūkprogrammas versiju un to, vai izmantojat Windows, macOS vai Linux, parasti ietaupāt vienu papildu jautājumu."
+    ],
+    "qa5btn": "Atvērt issue",
+    "back": "Atpakaļ uz vietni"
+  },
+  "lt": {
+    "t": "FocusTube — Pagalba",
+    "d": "Pagalba dėl FocusTube: ką daryti, kai atrodo, kad niekas nesikeičia, kaip jį pristabdyti neatinstaliavus ir kur pranešti apie klaidą.",
+    "k": "Pagalba",
+    "h1": "Kažkas neveikia?",
+    "lead": "Pradėkite nuo pirmo punkto. Jis išsprendžia daugumą atvejų ir patikrinamas per sekundę.",
+    "toc": "Šiame puslapyje",
+    "qa1h2": "Niekas nėra slepiama",
+    "qa1intro": "Beveik visada tai viena iš šių keturių priežasčių, būtent šia tvarka.",
+    "steps": [
+      {
+        "h3": "Jei ką tik įdiegėte ar atnaujinote, iš naujo įkelkite jau atidarytas „YouTube“ korteles",
+        "p": [
+          "„Chrome“ paleidžia plėtinį tik puslapiuose, atidarytuose po jo įdiegimo, todėl jau anksčiau atidarytoje „YouTube“ kortelėje „FocusTube“ visai nėra, kol jos iš naujo neįkeliate. Tas pats galioja iškart po plėtinio atnaujinimo.",
+          "Kai jis jau veikia, nereikia nuolat iš naujo įkelti: kažko įjungimas ar išjungimas iškart pritaikomas atidarytoms kortelėms."
+        ]
+      },
+      {
+        "h3": "Patikrinkite, ar režimas nėra nustatytas į *Išjungta*",
+        "p": [
+          "Atidarykite iššokantį langą ir žiūrėkite skirtuką **Režimas**. Esant *Išjungta*, viskas „YouTube“ rodoma sąmoningai, nesvarbu, kas įjungta Nustatymuose. Nustatymai nusprendžia, *kas* slepiama; Režimas nusprendžia, *kada* tai galioja."
+        ]
+      },
+      {
+        "h3": "Naudodami *Laikmatį*, patikrinkite, ar iš tikrųjų vyksta seansas",
+        "p": [
+          "Būtent čia dažniausiai suklystama. *Laikmačio* pasirinkimas savaime nieko nepaleidžia — tai reiškia tik „slėpti dalykus, kol vyksta susikaupimo seansas“. Kol nepaspaudžiate pradėti, joks seansas nevyksta, todėl niekas nėra slepiama ir plėtinys atrodo sugedęs.",
+          "Arba pradėkite seansą, arba perjunkite režimą į **Visada**, jei norite, kad nustatymai galiotų nuolat."
+        ]
+      },
+      {
+        "h3": "Naudodami *Tvarkaraštį*, patikrinkite, ar esate viename iš savo laiko intervalų",
+        "p": [
+          "Ta pati idėja. Tvarkaraštis galioja tik nustatytomis dienomis ir valandomis, todėl už šių intervalų ribų „YouTube“ sąmoningai paliekamas nepakeistas. Jei šiandien šeštadienis, o jūsų tvarkaraštis apima tik darbo dienas, niekas nebus paslėpta — tai reiškia, kad viskas veikia taip, kaip sukonfigūruota."
+        ]
+      }
+    ],
+    "qa1note": "Jei tiesiog norite, kad tai būtų nuolat įjungta ir niekada daugiau apie tai negalvoti, nustatykite režimą į **Visada**.",
+    "qa2h2": "Nustatymas, kuris veikė, staiga nustojo veikti",
+    "qa2p": [
+      "„YouTube“ gana dažnai keičia savo puslapių struktūrą, ir pokytis jų pusėje gali sutrukdyti vienam iš jungiklių rasti tai, ką jis turi paslėpti. Tai labiausiai tikėtina priežastis, kai sugenda viena funkcija, o likusios toliau veikia.",
+      "Verta pranešti, o ne laukti — paprastai tai greitai ištaisoma, kai kas nors sužino, kuri „YouTube“ dalis pasikeitė. Nurodykite, ką žiūrėjote ir kuris jungiklis nustojo veikti."
+    ],
+    "qa2btn": "Pranešti „GitHub“",
+    "qa3h2": "Norite trumpam susigrąžinti įprastą „YouTube“",
+    "qa3p": [
+      "Jums nereikia atinstaliuoti ar išjungti viską po vieną. Atidarykite iššokantį langą, eikite į **Režimas** ir pasirinkite **Išjungta**. Viskas vėl rodoma „YouTube“, o visi jūsų nustatymai ir blokavimo sąrašai lieka tokie, kokius juos palikote, kai vėl įjungsite."
+    ],
+    "qa4h2": "Ką FocusTube gali matyti",
+    "qa4p": [
+      "Jis veikia tik „YouTube“ puslapiuose ir prašo dviejų leidimų: `storage`, kad prisimintų jūsų nustatymus, ir `alarms`, Susikaupimo režimo laikmačiams ir tvarkaraščiams. Paskyros nėra, niekas niekur nesiunčiama, ir apie jūsų naršymą nieko nerenkama.",
+      "Visas plėtinys yra atvirojo kodo, todėl tai galima patikrinti, o ne tik pažadėti — [peržiūrėkite kodą](repo)."
+    ],
+    "qa5h2": "Vis dar nepavyksta",
+    "qa5p": [
+      "Atidarykite „issue“ „GitHub“ ir aprašykite, ko tikėjotės ir kas atsitiko vietoj to. Nurodžius naršyklės versiją ir tai, ar naudojate „Windows“, „macOS“ ar „Linux“, paprastai išvengiama papildomo klausimo."
+    ],
+    "qa5btn": "Atidaryti „issue“",
+    "back": "Grįžti į svetainę"
+  },
+  "sv": {
+    "t": "FocusTube — Support",
+    "d": "Hjälp med FocusTube: vad du ska göra när inget verkar ändras, hur du pausar det utan att avinstallera och var du rapporterar en bugg.",
+    "k": "Support",
+    "h1": "Fungerar något inte?",
+    "lead": "Börja med den första punkten. Den löser de flesta fall och tar en sekund att kontrollera.",
+    "toc": "På den här sidan",
+    "qa1h2": "Inget döljs",
+    "qa1intro": "Nästan alltid är det en av dessa fyra, i den här ordningen.",
+    "steps": [
+      {
+        "h3": "Om du precis har installerat eller uppdaterat den, ladda om de YouTube-flikar du redan hade öppna",
+        "p": [
+          "Chrome kör bara ett tillägg på sidor som öppnats efter installationen, så en YouTube-flik som redan var öppen har ingen FocusTube alls förrän du laddar om den. Samma sak gäller precis efter att tillägget uppdaterats.",
+          "När det väl körs behöver du inte ladda om hela tiden: att slå av eller på något gäller direkt på öppna flikar."
+        ]
+      },
+      {
+        "h3": "Kontrollera att läget inte är *Av*",
+        "p": [
+          "Öppna popup-fönstret och titta på fliken **Läge**. Vid *Av* visas allt på YouTube med avsikt, oavsett vad som är påslaget i Inställningar. Inställningar avgör *vad* som döljs; Läge avgör *när* det gäller."
+        ]
+      },
+      {
+        "h3": "Vid *Timer*, kontrollera att en session faktiskt pågår",
+        "p": [
+          "Det här är det som lurar flest. Att välja *Timer* startar inget av sig självt — det betyder bara \"dölj saker medan en fokussession pågår\". Tills du trycker på start pågår ingen session, så inget döljs och tillägget verkar trasigt.",
+          "Antingen starta en session, eller byt läge till **Alltid** om du vill att dina inställningar ska gälla hela tiden."
+        ]
+      },
+      {
+        "h3": "Vid *Schema*, kontrollera att du befinner dig inom ett av dina tidsfönster",
+        "p": [
+          "Samma idé. Ett schema gäller bara de dagar och tider du ställt in, så utanför dessa fönster lämnas YouTube medvetet orört. Är det lördag och ditt schema bara täcker vardagar döljs inget — det innebär att det fungerar som konfigurerat."
+        ]
+      }
+    ],
+    "qa1note": "Om du bara vill att det ska vara permanent på och aldrig tänka på det igen, ställ in läget på **Alltid**.",
+    "qa2h2": "En inställning som fungerade slutade plötsligt",
+    "qa2p": [
+      "YouTube ändrar ganska ofta strukturen på sina egna sidor, och en förändring på deras sida kan göra att en av växlarna slutar hitta det den ska dölja. Det är den mest sannolika orsaken när en enda funktion går sönder medan resten fortsätter fungera.",
+      "Det är värt att rapportera det istället för att vänta — det brukar åtgärdas snabbt så fort någon vet vilken del av YouTube som ändrats. Ange vad du tittade på och vilken växel som slutade fungera."
+    ],
+    "qa2btn": "Rapportera på GitHub",
+    "qa3h2": "Du vill ha tillbaka vanliga YouTube ett tag",
+    "qa3p": [
+      "Du behöver inte avinstallera eller stänga av allt en och en. Öppna popup-fönstret, gå till **Läge** och välj **Av**. Allt visas igen på YouTube, och alla dina inställningar och blocklistor förblir exakt som du lämnade dem tills du slår på det igen."
+    ],
+    "qa4h2": "Vad FocusTube kan se",
+    "qa4p": [
+      "Det körs bara på YouTube-sidor och begär två behörigheter: `storage`, för att komma ihåg dina inställningar, och `alarms`, för timers och scheman i Fokusläge. Det finns inget konto, inget skickas någonstans, och inget om ditt surfande samlas in.",
+      "Hela tillägget är öppen källkod, så det går att kontrollera istället för att bara lita på ett löfte — [läs koden](repo)."
+    ],
+    "qa5h2": "Fortfarande fast",
+    "qa5p": [
+      "Öppna ett issue på GitHub och beskriv vad du förväntade dig och vad som hände istället. Att nämna din webbläsarversion och om du använder Windows, macOS eller Linux sparar oftast en extra fråga."
+    ],
+    "qa5btn": "Öppna ett issue",
+    "back": "Tillbaka till webbplatsen"
+  },
+  "no": {
+    "t": "FocusTube — Kundestøtte",
+    "d": "Hjelp med FocusTube: hva du skal gjøre når ingenting ser ut til å endre seg, hvordan du pauser den uten å avinstallere, og hvor du melder en feil.",
+    "k": "Kundestøtte",
+    "h1": "Fungerer ikke noe?",
+    "lead": "Start med det første punktet. Det løser de fleste tilfeller og tar et sekund å sjekke.",
+    "toc": "På denne siden",
+    "qa1h2": "Ingenting blir skjult",
+    "qa1intro": "Nesten alltid er det en av disse fire, i denne rekkefølgen.",
+    "steps": [
+      {
+        "h3": "Hvis du nettopp har installert eller oppdatert den, last inn på nytt de YouTube-fanene du allerede hadde åpne",
+        "p": [
+          "Chrome kjører en utvidelse bare på sider åpnet etter installasjonen, så en YouTube-fane som allerede var åpen har ingen FocusTube i det hele tatt før du laster den inn på nytt. Det samme gjelder rett etter at utvidelsen har blitt oppdatert.",
+          "Når den først kjører, trenger du ikke å laste inn på nytt hele tiden: å slå noe av eller på trer i kraft umiddelbart i åpne faner."
+        ]
+      },
+      {
+        "h3": "Sjekk at modusen ikke står på *Av*",
+        "p": [
+          "Åpne popup-vinduet og se på fanen **Modus**. På *Av* vises alt på YouTube med vilje, uansett hva som er slått på i Innstillinger. Innstillinger bestemmer *hva* som skjules; Modus bestemmer *når* det gjelder."
+        ]
+      },
+      {
+        "h3": "Ved *Tidtaker*, sjekk at en økt faktisk kjører",
+        "p": [
+          "Dette er det som lurer flest. Å velge *Tidtaker* starter ingenting av seg selv — det betyr bare \"skjul ting mens en fokusøkt pågår\". Før du trykker start, kjører ingen økt, så ingenting skjules og utvidelsen ser ødelagt ut.",
+          "Enten start en økt, eller bytt modus til **Alltid** hvis du vil at innstillingene dine skal gjelde hele tiden."
+        ]
+      },
+      {
+        "h3": "Ved *Tidsplan*, sjekk at du er innenfor et av tidsvinduene dine",
+        "p": [
+          "Samme idé. En tidsplan gjelder bare de dagene og tidene du har satt, så utenfor disse vinduene lar man bevisst YouTube være urørt. Er det lørdag og tidsplanen din bare dekker hverdager, skjules ingenting — det betyr at det fungerer som konfigurert."
+        ]
+      }
+    ],
+    "qa1note": "Hvis du bare vil at det skal være permanent på og aldri tenke på dette igjen, sett modusen til **Alltid**.",
+    "qa2h2": "En innstilling som fungerte, sluttet plutselig å virke",
+    "qa2p": [
+      "YouTube endrer strukturen på sine egne sider ganske ofte, og en endring på deres side kan hindre en av bryterne fra å finne det den skal skjule. Det er den mest sannsynlige årsaken når én enkelt funksjon slutter å virke mens resten fortsetter å fungere.",
+      "Det er verdt å melde det i stedet for å vente — det pleier å bli fikset raskt så snart noen vet hvilken del av YouTube som har endret seg. Oppgi hva du så på og hvilken bryter som sluttet å virke."
+    ],
+    "qa2btn": "Meld på GitHub",
+    "qa3h2": "Du vil ha tilbake vanlig YouTube en stund",
+    "qa3p": [
+      "Du trenger ikke avinstallere eller slå av alt én etter én. Åpne popup-vinduet, gå til **Modus** og velg **Av**. Alt vises igjen på YouTube, og alle innstillingene og blokkeringslistene dine forblir nøyaktig slik du forlot dem til du slår det på igjen."
+    ],
+    "qa4h2": "Hva FocusTube kan se",
+    "qa4p": [
+      "Den kjører bare på YouTube-sider og ber om to tillatelser: `storage`, for å huske innstillingene dine, og `alarms`, for tidtakere og tidsplaner i Fokusmodus. Det finnes ingen konto, ingenting sendes noe sted, og ingenting om nettleseraktiviteten din samles inn.",
+      "Hele utvidelsen er åpen kildekode, så dette kan sjekkes i stedet for bare å loves — [se koden](repo)."
+    ],
+    "qa5h2": "Fortsatt fast",
+    "qa5p": [
+      "Åpne et issue på GitHub og beskriv hva du forventet og hva som skjedde i stedet. Å nevne nettleserversjonen din og om du bruker Windows, macOS eller Linux sparer som regel et ekstra spørsmål."
+    ],
+    "qa5btn": "Åpne et issue",
+    "back": "Tilbake til nettstedet"
+  },
+  "da": {
+    "t": "FocusTube — Support",
+    "d": "Hjælp til FocusTube: hvad du skal gøre, når intet ser ud til at ændre sig, hvordan du sætter den på pause uden at afinstallere, og hvor du rapporterer en fejl.",
+    "k": "Support",
+    "h1": "Er der noget, der ikke virker?",
+    "lead": "Start med det første punkt. Det løser de fleste tilfælde og tager et sekund at tjekke.",
+    "toc": "På denne side",
+    "qa1h2": "Intet bliver skjult",
+    "qa1intro": "Næsten altid er det en af disse fire, i denne rækkefølge.",
+    "steps": [
+      {
+        "h3": "Hvis du lige har installeret eller opdateret den, så genindlæs de YouTube-faner, du allerede havde åbne",
+        "p": [
+          "Chrome kører kun en udvidelse på sider, der er åbnet efter installationen, så en YouTube-fane, der allerede var åben, har slet ingen FocusTube, før du genindlæser den. Det samme gælder lige efter udvidelsen er blevet opdateret.",
+          "Når den først kører, behøver du ikke blive ved med at genindlæse: at slå noget til eller fra træder straks i kraft på åbne faner."
+        ]
+      },
+      {
+        "h3": "Tjek at tilstanden ikke er sat til *Fra*",
+        "p": [
+          "Åbn popup-vinduet og se fanen **Tilstand**. Ved *Fra* vises alt på YouTube med vilje, uanset hvad der er slået til i Indstillinger. Indstillinger afgør *hvad* der skjules; Tilstand afgør *hvornår* det gælder."
+        ]
+      },
+      {
+        "h3": "Ved *Timer*, tjek at en session faktisk kører",
+        "p": [
+          "Det er den, der narrer flest. At vælge *Timer* starter ikke noget af sig selv — det betyder blot \"skjul ting, mens en fokussession kører\". Før du trykker start, kører ingen session, så intet skjules, og udvidelsen ser ødelagt ud.",
+          "Start enten en session, eller skift tilstanden til **Altid**, hvis du vil have dine indstillinger til at gælde hele tiden."
+        ]
+      },
+      {
+        "h3": "Ved *Tidsplan*, tjek at du er inden for et af dine tidsvinduer",
+        "p": [
+          "Samme idé. En tidsplan gælder kun de dage og tidspunkter, du har indstillet, så uden for disse vinduer bliver YouTube bevidst efterladt urørt. Er det lørdag, og din tidsplan kun dækker hverdage, skjules intet — det betyder, at det fungerer som konfigureret."
+        ]
+      }
+    ],
+    "qa1note": "Hvis du bare vil have, at det er permanent slået til, og aldrig tænke på det igen, så sæt tilstanden til **Altid**.",
+    "qa2h2": "En indstilling, der virkede, holdt pludselig op",
+    "qa2p": [
+      "YouTube ændrer strukturen på sine egne sider ret ofte, og en ændring på deres side kan forhindre en af kontakterne i at finde det, den skal skjule. Det er den mest sandsynlige årsag, når kun én funktion går i stykker, mens resten fortsætter med at virke.",
+      "Det er værd at rapportere det i stedet for at vente — det plejer at blive løst hurtigt, så snart nogen ved, hvilken del af YouTube der er ændret. Angiv, hvad du kiggede på, og hvilken kontakt der holdt op med at virke."
+    ],
+    "qa2btn": "Rapportér på GitHub",
+    "qa3h2": "Du vil have det normale YouTube tilbage et stykke tid",
+    "qa3p": [
+      "Du behøver ikke afinstallere eller slå alt fra én ad gangen. Åbn popup-vinduet, gå til **Tilstand**, og vælg **Fra**. Alt vises igen på YouTube, og alle dine indstillinger og blokeringslister forbliver nøjagtig, som du forlod dem, til du slår det til igen."
+    ],
+    "qa4h2": "Hvad FocusTube kan se",
+    "qa4p": [
+      "Den kører kun på YouTube-sider og beder om to tilladelser: `storage`, for at huske dine indstillinger, og `alarms`, til timere og tidsplaner i Fokustilstand. Der er ingen konto, intet sendes nogen steder hen, og intet om din browsing indsamles.",
+      "Hele udvidelsen er open source, så det kan tjekkes i stedet for bare at blive lovet — [se koden](repo)."
+    ],
+    "qa5h2": "Stadig fast",
+    "qa5p": [
+      "Åbn et issue på GitHub, og beskriv hvad du forventede, og hvad der skete i stedet. At nævne din browserversion, og om du bruger Windows, macOS eller Linux, sparer som regel et ekstra spørgsmål."
+    ],
+    "qa5btn": "Åbn et issue",
+    "back": "Tilbage til siden"
+  },
+  "id": {
+    "t": "FocusTube — Dukungan",
+    "d": "Bantuan FocusTube: apa yang harus dilakukan jika tidak ada yang berubah, cara menjedanya tanpa menghapus instalan, dan ke mana melaporkan bug.",
+    "k": "Dukungan",
+    "h1": "Ada yang tidak berfungsi?",
+    "lead": "Mulai dari yang pertama. Ini menyelesaikan sebagian besar kasus dan hanya butuh sedetik untuk diperiksa.",
+    "toc": "Di halaman ini",
+    "qa1h2": "Tidak ada yang disembunyikan",
+    "qa1intro": "Hampir selalu salah satu dari empat hal ini, dengan urutan ini.",
+    "steps": [
+      {
+        "h3": "Jika baru saja menginstal atau memperbaruinya, muat ulang tab YouTube yang sudah terbuka",
+        "p": [
+          "Chrome hanya menjalankan ekstensi pada halaman yang dibuka setelah instalasi, jadi tab YouTube yang sudah terbuka sebelumnya sama sekali tidak memiliki FocusTube sampai Anda memuat ulang. Hal yang sama berlaku tepat setelah ekstensi diperbarui.",
+          "Setelah berjalan, Anda tidak perlu terus memuat ulang: mengaktifkan atau menonaktifkan sesuatu langsung berlaku di tab yang terbuka."
+        ]
+      },
+      {
+        "h3": "Periksa apakah mode tidak sedang *Nonaktif*",
+        "p": [
+          "Buka popup dan lihat tab **Mode**. Pada *Nonaktif*, semuanya sengaja ditampilkan di YouTube, apa pun yang diaktifkan di Pengaturan. Pengaturan menentukan *apa* yang disembunyikan; Mode menentukan *kapan* itu berlaku."
+        ]
+      },
+      {
+        "h3": "Pada *Timer*, periksa apakah sesi benar-benar sedang berjalan",
+        "p": [
+          "Ini yang paling sering mengecoh orang. Memilih *Timer* tidak memulai apa pun dengan sendirinya — artinya hanya \"sembunyikan hal-hal selama sesi fokus berjalan\". Sampai Anda menekan mulai, tidak ada sesi yang berjalan, jadi tidak ada yang disembunyikan dan ekstensi terlihat rusak.",
+          "Mulai sesi, atau alihkan mode ke **Selalu** jika Anda ingin pengaturan Anda berlaku sepanjang waktu."
+        ]
+      },
+      {
+        "h3": "Pada *Jadwal*, periksa apakah Anda berada dalam salah satu rentang waktu Anda",
+        "p": [
+          "Ide yang sama. Jadwal hanya berlaku pada hari dan waktu yang Anda tetapkan, jadi di luar rentang itu YouTube sengaja dibiarkan apa adanya. Jika hari ini Sabtu dan jadwal Anda hanya mencakup hari kerja, tidak ada yang akan disembunyikan — itu berarti berfungsi sesuai konfigurasi."
+        ]
+      }
+    ],
+    "qa1note": "Jika Anda hanya ingin agar selalu aktif dan tidak perlu memikirkannya lagi, atur mode ke **Selalu**.",
+    "qa2h2": "Pengaturan yang berfungsi tiba-tiba berhenti",
+    "qa2p": [
+      "YouTube cukup sering mengubah struktur halamannya sendiri, dan perubahan di pihak mereka dapat membuat salah satu sakelar berhenti menemukan apa yang seharusnya disembunyikan. Ini penyebab paling mungkin ketika satu fitur rusak sementara yang lain tetap berfungsi.",
+      "Ada baiknya melaporkannya daripada menunggu — biasanya cepat diperbaiki begitu seseorang tahu bagian YouTube mana yang berubah. Sertakan apa yang sedang Anda lihat dan sakelar mana yang berhenti berfungsi."
+    ],
+    "qa2btn": "Laporkan di GitHub",
+    "qa3h2": "Anda ingin YouTube normal kembali sebentar",
+    "qa3p": [
+      "Anda tidak perlu menghapus instalan atau mematikan semuanya satu per satu. Buka popup, buka **Mode**, dan pilih **Nonaktif**. Semuanya tampil kembali di YouTube, dan semua pengaturan serta daftar blokir Anda tetap persis seperti yang Anda tinggalkan untuk saat Anda mengaktifkannya kembali."
+    ],
+    "qa4h2": "Apa yang bisa dilihat FocusTube",
+    "qa4p": [
+      "Ekstensi ini hanya berjalan di halaman YouTube, dan meminta dua izin: `storage`, untuk mengingat pengaturan Anda, dan `alarms`, untuk timer dan jadwal Mode Fokus. Tidak ada akun, tidak ada yang dikirim ke mana pun, dan tidak ada yang dikumpulkan tentang penjelajahan Anda.",
+      "Seluruh ekstensi bersifat open source, jadi ini bisa diperiksa, bukan sekadar janji — [baca kodenya](repo)."
+    ],
+    "qa5h2": "Masih belum berhasil",
+    "qa5p": [
+      "Buka issue di GitHub dan jelaskan apa yang Anda harapkan dan apa yang sebenarnya terjadi. Menyebutkan versi browser Anda dan apakah Anda menggunakan Windows, macOS, atau Linux biasanya menghemat satu pertanyaan tambahan."
+    ],
+    "qa5btn": "Buka issue",
+    "back": "Kembali ke situs"
+  },
+  "ms": {
+    "t": "FocusTube — Sokongan",
+    "d": "Bantuan FocusTube: apa yang perlu dilakukan apabila tiada apa yang berubah, cara menjeda tanpa menyahpasang, dan ke mana melaporkan pepijat.",
+    "k": "Sokongan",
+    "h1": "Ada yang tidak berfungsi?",
+    "lead": "Mulakan dengan yang pertama. Ia menyelesaikan kebanyakan kes dan hanya mengambil masa sesaat untuk disemak.",
+    "toc": "Pada halaman ini",
+    "qa1h2": "Tiada apa yang disembunyikan",
+    "qa1intro": "Hampir selalu salah satu daripada empat perkara ini, mengikut susunan ini.",
+    "steps": [
+      {
+        "h3": "Jika anda baru sahaja memasang atau mengemas kininya, muat semula tab YouTube yang telah anda buka",
+        "p": [
+          "Chrome hanya menjalankan sambungan pada halaman yang dibuka selepas ia dipasang, jadi tab YouTube yang telah dibuka langsung tiada FocusTube sehingga anda muat semula. Perkara yang sama berlaku sejurus selepas sambungan dikemas kini.",
+          "Sebaik sahaja ia berjalan, anda tidak perlu terus memuat semula: menghidupkan atau mematikan sesuatu terpakai serta-merta pada tab yang terbuka."
+        ]
+      },
+      {
+        "h3": "Semak mod tidak berada pada *Mati*",
+        "p": [
+          "Buka pop timbul dan lihat tab **Mod**. Pada *Mati*, semuanya sengaja dipaparkan di YouTube, tidak kira apa yang dihidupkan dalam Tetapan. Tetapan menentukan *apa* yang disembunyikan; Mod menentukan *bila* ia terpakai."
+        ]
+      },
+      {
+        "h3": "Pada *Pemasa*, semak sama ada sesi sebenarnya sedang berjalan",
+        "p": [
+          "Ini yang paling mengelirukan orang. Memilih *Pemasa* tidak memulakan apa-apa dengan sendirinya — ia hanya bermaksud \"sembunyikan perkara semasa sesi fokus sedang berjalan\". Sehingga anda tekan mula, tiada sesi berjalan, jadi tiada apa yang disembunyikan dan sambungan itu kelihatan rosak.",
+          "Sama ada mulakan sesi, atau tukar mod kepada **Sentiasa** jika anda mahu tetapan anda terpakai sepanjang masa."
+        ]
+      },
+      {
+        "h3": "Pada *Jadual*, semak anda berada dalam salah satu tempoh masa anda",
+        "p": [
+          "Idea yang sama. Jadual hanya terpakai pada hari dan waktu yang anda tetapkan, jadi di luar tempoh itu YouTube sengaja dibiarkan tidak berubah. Jika hari ini Sabtu dan jadual anda hanya meliputi hari bekerja, tiada apa akan disembunyikan — itu bermakna ia berfungsi seperti yang dikonfigurasikan."
+        ]
+      }
+    ],
+    "qa1note": "Jika anda cuma mahu ia sentiasa aktif secara kekal dan tidak mahu memikirkannya lagi, tetapkan mod kepada **Sentiasa**.",
+    "qa2h2": "Tetapan yang berfungsi tiba-tiba berhenti",
+    "qa2p": [
+      "YouTube agak kerap menukar struktur halamannya sendiri, dan perubahan di pihak mereka boleh menyebabkan salah satu suis gagal mencari apa yang perlu disembunyikan. Ini punca yang paling mungkin apabila satu ciri sahaja rosak sementara yang lain terus berfungsi.",
+      "Berbaloi untuk melaporkannya berbanding menunggu — biasanya cepat dibaiki sebaik sahaja seseorang tahu bahagian YouTube mana yang berubah. Sertakan apa yang anda sedang lihat dan suis mana yang berhenti berfungsi."
+    ],
+    "qa2btn": "Laporkan di GitHub",
+    "qa3h2": "Anda mahu YouTube biasa kembali seketika",
+    "qa3p": [
+      "Anda tidak perlu menyahpasang atau mematikan semuanya satu per satu. Buka pop timbul, pergi ke **Mod** dan pilih **Mati**. Semuanya dipaparkan semula di YouTube, dan semua tetapan serta senarai sekatan anda kekal sama seperti yang anda tinggalkan untuk apabila anda mengaktifkannya semula."
+    ],
+    "qa4h2": "Apa yang FocusTube boleh lihat",
+    "qa4p": [
+      "Ia hanya berjalan pada halaman YouTube, dan meminta dua kebenaran: `storage`, untuk mengingati tetapan anda, dan `alarms`, untuk pemasa dan jadual Mod Fokus. Tiada akaun, tiada apa yang dihantar ke mana-mana, dan tiada apa mengenai pelayaran anda dikumpulkan.",
+      "Keseluruhan sambungan ini adalah sumber terbuka, jadi ini boleh disemak dan bukan sekadar janji — [baca kodnya](repo)."
+    ],
+    "qa5h2": "Masih tersekat",
+    "qa5p": [
+      "Buka isu di GitHub dan huraikan apa yang anda jangkakan dan apa yang berlaku sebaliknya. Menyatakan versi pelayar anda dan sama ada anda menggunakan Windows, macOS atau Linux biasanya menjimatkan satu soalan tambahan."
+    ],
+    "qa5btn": "Buka isu",
+    "back": "Kembali ke laman"
+  },
+  "fil": {
+    "t": "FocusTube — Suporte",
+    "d": "Tulong para sa FocusTube: ano ang gagawin kapag parang walang nagbabago, paano ito i-pause nang hindi ina-uninstall, at saan mag-report ng bug.",
+    "k": "Suporte",
+    "h1": "May hindi gumagana?",
+    "lead": "Magsimula sa una. Nalulutas nito ang karamihan sa mga kaso at isang segundo lang ang pagsuri.",
+    "toc": "Sa pahinang ito",
+    "qa1h2": "Walang itinatago",
+    "qa1intro": "Halos palagi, isa ito sa apat na ito, sa ganitong pagkakasunod-sunod.",
+    "steps": [
+      {
+        "h3": "Kung ka-install lang o ka-update lang, i-reload ang mga YouTube tab na bukas na noon pa",
+        "p": [
+          "Ang extension ay tumatakbo lang sa mga page na na-open pagkatapos i-install ito, kaya ang YouTube tab na bukas na bago pa ay wala talagang FocusTube hangga't hindi mo ito ni-reload. Ganito rin kaagad pagkatapos ma-update ang extension.",
+          "Kapag tumatakbo na ito, hindi mo na kailangang patuloy na mag-reload: ang pag-on o pag-off ng isang bagay ay agad na naaangkop sa mga bukas na tab."
+        ]
+      },
+      {
+        "h3": "Tingnan kung hindi *Naka-off* ang mode",
+        "p": [
+          "Buksan ang popup at tingnan ang tab na **Mode**. Sa *Naka-off*, sadyang lahat ay ipinapakita sa YouTube, kahit ano pa ang naka-on sa Settings. Ang Settings ang nagpapasya *kung ano* ang itinatago; ang Mode ang nagpapasya *kung kailan* ito nag-a-apply."
+        ]
+      },
+      {
+        "h3": "Sa *Timer*, tingnan kung talagang may tumatakbong session",
+        "p": [
+          "Ito ang pinaka-nakakalito. Ang pagpili ng *Timer* ay walang sinisimulan mag-isa — ibig lang sabihin nito ay \"itago ang mga bagay habang may tumatakbong focus session\". Hangga't hindi mo pinipindot ang start, walang session na tumatakbo, kaya walang itinatago at parang sira ang extension.",
+          "Alinman sa simulan ang isang session, o palitan ang mode sa **Palagi** kung gusto mong laging mag-apply ang settings mo."
+        ]
+      },
+      {
+        "h3": "Sa *Iskedyul*, tingnan kung nasa loob ka ng isa sa iyong mga time window",
+        "p": [
+          "Parehong ideya. Ang isang iskedyul ay nag-a-apply lamang sa mga araw at oras na itinakda mo, kaya sa labas ng mga window na iyon ay sadyang hindi ginagalaw ang YouTube. Kung Sabado ngayon at ang iskedyul mo ay saklaw lang ang mga weekday, walang itatago — ibig sabihin niyan ay gumagana ito ayon sa pagkaka-configure."
+        ]
+      }
+    ],
+    "qa1note": "Kung gusto mo lang na laging naka-on ito at hindi na ito iisipin pa, i-set ang mode sa **Palagi**.",
+    "qa2h2": "May setting na gumagana noon biglang huminto",
+    "qa2p": [
+      "Medyo madalas baguhin ng YouTube ang istraktura ng sarili nitong mga page, at ang pagbabago sa panig nila ay maaaring maging dahilan para hindi na makita ng isa sa mga toggle ang dapat nitong itago. Ito ang pinaka-malamang na dahilan kapag isang feature lang ang nasira habang gumagana pa rin ang iba.",
+      "Sulit itong i-report kaysa maghintay — kadalasan mabilis itong naaayos sa sandaling malaman ng isang tao kung aling bahagi ng YouTube ang nagbago. Isama kung ano ang tinitingnan mo at aling toggle ang huminto sa paggana."
+    ],
+    "qa2btn": "I-report sa GitHub",
+    "qa3h2": "Gusto mong bumalik sandali sa normal na YouTube",
+    "qa3p": [
+      "Hindi mo na kailangang mag-uninstall o patayin nang isa-isa ang lahat. Buksan ang popup, pumunta sa **Mode**, at piliin ang **Naka-off**. Lahat ay muling ipinapakita sa YouTube, at lahat ng settings at blocklist mo ay mananatiling eksaktong tulad ng iniwan mo ang mga ito para sa kapag na-on mo na ulit."
+    ],
+    "qa4h2": "Ano ang nakikita ng FocusTube",
+    "qa4p": [
+      "Tumatakbo lang ito sa mga page ng YouTube, at humihingi ng dalawang permission: `storage`, para tandaan ang settings mo, at `alarms`, para sa mga timer at iskedyul ng Focus Mode. Walang account, walang ipinapadala kahit saan, at walang kinokolekta tungkol sa iyong pagba-browse.",
+      "Bukas na source ang buong extension, kaya masusuri ito imbes na pangako lang — [basahin ang code](repo)."
+    ],
+    "qa5h2": "Hindi pa rin gumagana",
+    "qa5p": [
+      "Magbukas ng issue sa GitHub at ilarawan kung ano ang inaasahan mo at kung ano ang nangyari sa halip. Ang pagbanggit ng bersyon ng browser mo at kung Windows, macOS, o Linux ang gamit mo ay karaniwang nakakatipid ng isa pang round trip."
+    ],
+    "qa5btn": "Magbukas ng issue",
+    "back": "Bumalik sa site"
+  },
+  "ja": {
+    "t": "FocusTube — サポート",
+    "d": "FocusTubeのヘルプ：何も変わらないように見えるときの対処法、アンインストールせずに一時停止する方法、不具合の報告先について。",
+    "k": "サポート",
+    "h1": "何か動作しませんか？",
+    "lead": "まずは最初の項目から確認してください。ほとんどの場合はこれで解決し、確認も一瞬で済みます。",
+    "toc": "このページの内容",
+    "qa1h2": "何も非表示になっていない",
+    "qa1intro": "ほとんどの場合、この順番で次の4つのいずれかが原因です。",
+    "steps": [
+      {
+        "h3": "インストールまたは更新した直後の場合は、すでに開いていたYouTubeのタブを再読み込みしてください",
+        "p": [
+          "ChromeはインストールされたAFTERに開かれたページでしか拡張機能を実行しないため、すでに開いていたYouTubeのタブには、再読み込みするまでFocusTubeがまったく存在しません。拡張機能が更新された直後も同様です。",
+          "一度動き始めれば、常に再読み込みする必要はありません。設定のオン・オフは開いているタブに即座に反映されます。"
+        ]
+      },
+      {
+        "h3": "モードが*オフ*になっていないか確認してください",
+        "p": [
+          "ポップアップを開き、**モード**タブを確認してください。*オフ*の場合、設定で何がオンになっていても関係なく、YouTubeにはすべて意図的に表示されます。設定は*何を*非表示にするかを決め、モードは*いつ*それが適用されるかを決めます。"
+        ]
+      },
+      {
+        "h3": "*タイマー*では、実際にセッションが実行中か確認してください",
+        "p": [
+          "これが一番誤解されやすいポイントです。*タイマー*を選択しただけでは何も始まりません——「集中セッションが実行中の間だけ物事を非表示にする」という意味でしかないのです。開始を押すまでセッションは実行されておらず、そのため何も非表示にならず、拡張機能が壊れているように見えます。",
+          "セッションを開始するか、設定を常に適用したい場合はモードを**常時**に切り替えてください。"
+        ]
+      },
+      {
+        "h3": "*スケジュール*では、設定した時間帯の中にいるか確認してください",
+        "p": [
+          "考え方は同じです。スケジュールは設定した曜日と時間にしか適用されないため、その時間帯の外ではYouTubeは意図的にそのままにされます。今日が土曜日でスケジュールが平日しかカバーしていない場合、何も非表示になりません——それは設定通りに動作しているということです。"
+        ]
+      }
+    ],
+    "qa1note": "とにかく常にオンにしておき、二度とこれについて考えたくない場合は、モードを**常時**に設定してください。",
+    "qa2h2": "動いていた設定が突然止まった",
+    "qa2p": [
+      "YouTubeは自分のページ構造をかなり頻繁に変更しており、その変更によって、いずれかのトグルが非表示にすべきものを見つけられなくなることがあります。他の機能は動いているのに1つの機能だけ壊れた場合、これが最も可能性の高い原因です。",
+      "待つよりも報告する価値があります——YouTubeのどの部分が変わったかがわかれば、たいていすぐに修正されます。何を見ていたか、どのトグルが動かなくなったかを記載してください。"
+    ],
+    "qa2btn": "GitHubで報告する",
+    "qa3h2": "しばらく通常のYouTubeに戻したい",
+    "qa3p": [
+      "アンインストールしたり、一つずつオフにしたりする必要はありません。ポップアップを開き、**モード**に移動して**オフ**を選択してください。YouTubeにはすべてが再び表示され、設定やブロックリストはすべて、再度オンにするまで、あなたが残した状態のまま保持されます。"
+    ],
+    "qa4h2": "FocusTubeが見られる情報",
+    "qa4p": [
+      "YouTubeのページでのみ動作し、2つの権限を要求します。設定を記憶するための`storage`と、フォーカスモードのタイマーとスケジュールのための`alarms`です。アカウントはなく、どこにも何も送信されず、閲覧履歴について何も収集されません。",
+      "拡張機能全体がオープンソースなので、約束ではなく確認可能です——[コードを読む](repo)。"
+    ],
+    "qa5h2": "それでも解決しない",
+    "qa5p": [
+      "GitHubでissueを開き、期待していたことと実際に起きたことを説明してください。ブラウザのバージョンと、Windows、macOS、Linuxのどれを使っているかを記載すると、たいてい一往復のやり取りを省けます。"
+    ],
+    "qa5btn": "issueを開く",
+    "back": "サイトに戻る"
+  },
+  "ko": {
+    "t": "FocusTube — 지원",
+    "d": "FocusTube 도움말: 아무것도 바뀌지 않는 것처럼 보일 때 해야 할 일, 삭제하지 않고 일시 중지하는 방법, 버그 신고 방법.",
+    "k": "지원",
+    "h1": "작동하지 않는 부분이 있나요?",
+    "lead": "첫 번째 항목부터 확인하세요. 대부분의 경우를 해결하며 확인하는 데 1초면 충분합니다.",
+    "toc": "이 페이지의 내용",
+    "qa1h2": "아무것도 숨겨지지 않음",
+    "qa1intro": "거의 항상 다음 네 가지 중 하나이며, 이 순서대로 확인하면 됩니다.",
+    "steps": [
+      {
+        "h3": "방금 설치하거나 업데이트했다면 이미 열려 있던 YouTube 탭을 새로고침하세요",
+        "p": [
+          "Chrome은 설치된 이후에 열린 페이지에서만 확장 프로그램을 실행하므로, 이미 열려 있던 YouTube 탭에는 새로고침할 때까지 FocusTube가 전혀 적용되지 않습니다. 확장 프로그램이 업데이트된 직후에도 마찬가지입니다.",
+          "일단 실행되면 계속 새로고침할 필요는 없습니다. 무언가를 켜거나 끄면 열려 있는 탭에 즉시 적용됩니다."
+        ]
+      },
+      {
+        "h3": "모드가 *꺼짐*으로 설정되어 있지 않은지 확인하세요",
+        "p": [
+          "팝업을 열고 **모드** 탭을 확인하세요. *꺼짐* 상태에서는 설정에서 무엇을 켜두었든 상관없이 YouTube에 모든 것이 의도적으로 표시됩니다. 설정은 *무엇을* 숨길지를 결정하고, 모드는 *언제* 적용될지를 결정합니다."
+        ]
+      },
+      {
+        "h3": "*타이머*에서는 세션이 실제로 실행 중인지 확인하세요",
+        "p": [
+          "이 부분이 가장 많은 사람을 헷갈리게 합니다. *타이머*를 선택한다고 해서 저절로 무언가가 시작되지는 않습니다 — 이는 단지 \"집중 세션이 실행되는 동안 항목을 숨긴다\"는 의미일 뿐입니다. 시작을 누르기 전까지는 세션이 실행되지 않으므로 아무것도 숨겨지지 않고 확장 프로그램이 고장 난 것처럼 보입니다.",
+          "세션을 시작하거나, 설정이 항상 적용되기를 원한다면 모드를 **항상**으로 전환하세요."
+        ]
+      },
+      {
+        "h3": "*일정*에서는 설정한 시간대 중 하나에 해당하는지 확인하세요",
+        "p": [
+          "같은 원리입니다. 일정은 설정한 요일과 시간에만 적용되므로, 그 시간대를 벗어나면 YouTube는 의도적으로 그대로 유지됩니다. 오늘이 토요일이고 일정이 평일만 포함한다면 아무것도 숨겨지지 않습니다 — 이는 설정한 대로 작동하고 있다는 의미입니다."
+        ]
+      }
+    ],
+    "qa1note": "그냥 항상 켜져 있기를 원하고 다시는 이 문제를 신경 쓰고 싶지 않다면, 모드를 **항상**으로 설정하세요.",
+    "qa2h2": "작동하던 설정이 갑자기 멈췄어요",
+    "qa2p": [
+      "YouTube는 자체 페이지 구조를 꽤 자주 변경하며, 그쪽에서의 변경으로 인해 토글 중 하나가 숨겨야 할 대상을 더 이상 찾지 못할 수 있습니다. 다른 기능은 계속 작동하는데 한 가지 기능만 고장 났다면 이것이 가장 가능성 높은 원인입니다.",
+      "기다리기보다 신고하는 것이 좋습니다 — YouTube의 어느 부분이 바뀌었는지 알게 되면 보통 빠르게 수정됩니다. 무엇을 보고 있었는지와 어떤 토글이 작동을 멈췄는지 알려주세요."
+    ],
+    "qa2btn": "GitHub에 신고하기",
+    "qa3h2": "잠시 일반 YouTube로 돌아가고 싶어요",
+    "qa3p": [
+      "삭제하거나 하나씩 끌 필요가 없습니다. 팝업을 열고 **모드**로 이동해 **꺼짐**을 선택하세요. YouTube에 모든 것이 다시 표시되며, 다시 켤 때를 위해 모든 설정과 차단 목록은 남겨둔 그대로 유지됩니다."
+    ],
+    "qa4h2": "FocusTube가 볼 수 있는 것",
+    "qa4p": [
+      "YouTube 페이지에서만 작동하며, 두 가지 권한을 요청합니다: 설정을 기억하기 위한 `storage`와 집중 모드의 타이머 및 일정을 위한 `alarms`입니다. 계정도 없고, 어디로도 아무것도 전송되지 않으며, 탐색 기록에 대해 아무것도 수집하지 않습니다.",
+      "확장 프로그램 전체가 오픈 소스이므로 약속이 아니라 직접 확인할 수 있습니다 — [코드 보기](repo)."
+    ],
+    "qa5h2": "여전히 해결되지 않음",
+    "qa5p": [
+      "GitHub에서 이슈를 열고 예상했던 것과 실제로 발생한 일을 설명해 주세요. 브라우저 버전과 Windows, macOS, Linux 중 무엇을 사용하는지 언급하면 대개 한 번의 추가 확인을 줄일 수 있습니다."
+    ],
+    "qa5btn": "이슈 열기",
+    "back": "사이트로 돌아가기"
+  },
+  "he": {
+    "t": "FocusTube — תמיכה",
+    "d": "עזרה עבור FocusTube: מה לעשות כשנראה שכלום לא משתנה, איך להשהות אותו בלי להסיר את ההתקנה, ולאן לדווח על באג.",
+    "k": "תמיכה",
+    "h1": "משהו לא עובד?",
+    "lead": "התחילו מהסעיף הראשון. הוא פותר את רוב המקרים והבדיקה שלו לוקחת שנייה.",
+    "toc": "בעמוד זה",
+    "qa1h2": "שום דבר לא מוסתר",
+    "qa1intro": "כמעט תמיד מדובר באחת מארבע הסיבות הבאות, לפי הסדר הזה.",
+    "steps": [
+      {
+        "h3": "אם התקנתם או עדכנתם זה עתה, טענו מחדש את כרטיסיות היוטיוב שכבר היו פתוחות",
+        "p": [
+          "כרום מריץ תוסף רק בדפים שנפתחו אחרי ההתקנה שלו, כך שכרטיסיית יוטיוב שכבר הייתה פתוחה כלל לא מכילה את FocusTube עד שתטענו אותה מחדש. אותו הדבר קורה מיד אחרי עדכון התוסף.",
+          "ברגע שהוא פועל, אין צורך להמשיך לטעון מחדש: הפעלה או כיבוי של הגדרה משפיעים מיד על כרטיסיות פתוחות."
+        ]
+      },
+      {
+        "h3": "בדקו שהמצב אינו על *כבוי*",
+        "p": [
+          "פתחו את החלון הקופץ והסתכלו בכרטיסייה **מצב**. במצב *כבוי*, הכול מוצג ביוטיוב בכוונה, לא משנה מה מופעל בהגדרות. ההגדרות קובעות *מה* מוסתר; המצב קובע *מתי* זה חל."
+        ]
+      },
+      {
+        "h3": "במצב *טיימר*, בדקו שאכן פועל סשן",
+        "p": [
+          "זה מה שמבלבל הכי הרבה אנשים. בחירה ב-*טיימר* לא מפעילה כלום בעצמה — משמעותה רק \"הסתר דברים כל עוד סשן ריכוז פועל\". עד שלוחצים על התחל, אין שום סשן פעיל, כך שכלום לא מוסתר והתוסף נראה שבור.",
+          "התחילו סשן, או עברו למצב **תמיד** אם אתם רוצים שההגדרות שלכם יחולו כל הזמן."
+        ]
+      },
+      {
+        "h3": "במצב *לוח זמנים*, בדקו שאתם בתוך אחד מחלונות הזמן שלכם",
+        "p": [
+          "אותו רעיון. לוח זמנים חל רק בימים ובשעות שהגדרתם, כך שמחוץ לחלונות אלה יוטיוב נשאר בכוונה ללא שינוי. אם היום שבת ולוח הזמנים שלכם מכסה רק ימי חול, שום דבר לא יוסתר — זה אומר שהוא פועל בדיוק כפי שהוגדר."
+        ]
+      }
+    ],
+    "qa1note": "אם אתם פשוט רוצים שזה יהיה פעיל תמיד ולא לחשוב על זה שוב, הגדירו את המצב ל-**תמיד**.",
+    "qa2h2": "הגדרה שעבדה הפסיקה לפעול בפתאומיות",
+    "qa2p": [
+      "יוטיוב משנה את מבנה הדפים שלו די לעיתים קרובות, ושינוי מהצד שלהם עלול לגרום לאחד המתגים להפסיק למצוא את מה שהוא אמור להסתיר. זו הסיבה הסבירה ביותר כשתכונה בודדת נשברת בעוד השאר ממשיכות לפעול.",
+      "כדאי לדווח על כך במקום לחכות — בדרך כלל זה מתוקן במהירות ברגע שמישהו יודע איזה חלק ביוטיוב השתנה. ציינו מה צפיתם ואיזה מתג הפסיק לפעול."
+    ],
+    "qa2btn": "דווחו ב-GitHub",
+    "qa3h2": "אתם רוצים את היוטיוב הרגיל בחזרה לזמן מה",
+    "qa3p": [
+      "אין צורך להסיר את ההתקנה או לכבות הכול אחד אחד. פתחו את החלון הקופץ, עברו ל-**מצב** ובחרו **כבוי**. הכול חוזר להופיע ביוטיוב, וכל ההגדרות ורשימות החסימה שלכם נשארות בדיוק כפי שהשארתם אותן לקראת הרגע שבו תפעילו שוב."
+    ],
+    "qa4h2": "מה FocusTube יכול לראות",
+    "qa4p": [
+      "הוא פועל רק בדפי יוטיוב, ומבקש שתי הרשאות: `storage`, כדי לזכור את ההגדרות שלכם, ו-`alarms`, עבור הטיימרים ולוחות הזמנים של מצב הריכוז. אין חשבון, שום דבר לא נשלח לשום מקום, ושום דבר על הגלישה שלכם לא נאסף.",
+      "כל התוסף הוא קוד פתוח, כך שניתן לבדוק את זה ולא רק להבטיח — [קראו את הקוד](repo)."
+    ],
+    "qa5h2": "עדיין תקועים",
+    "qa5p": [
+      "פתחו issue ב-GitHub ותארו מה ציפיתם ומה קרה במקום זאת. ציון גרסת הדפדפן שלכם ואם אתם משתמשים ב-Windows, macOS או Linux בדרך כלל חוסך פנייה נוספת."
+    ],
+    "qa5btn": "פתחו issue",
+    "back": "חזרה לאתר"
+  },
+  "ar": {
+    "t": "FocusTube — الدعم",
+    "d": "مساعدة FocusTube: ماذا تفعل عندما يبدو أن لا شيء يتغير، وكيفية إيقافه مؤقتًا دون إلغاء التثبيت، وأين تُبلغ عن خلل.",
+    "k": "الدعم",
+    "h1": "هل هناك شيء لا يعمل؟",
+    "lead": "ابدأ بالنقطة الأولى. فهي تحل معظم الحالات ويستغرق التحقق منها ثانية واحدة.",
+    "toc": "في هذه الصفحة",
+    "qa1h2": "لا يوجد شيء مخفي",
+    "qa1intro": "غالبًا ما يكون السبب أحد هذه الأربعة، بهذا الترتيب.",
+    "steps": [
+      {
+        "h3": "إذا كنت قد ثبّتّه أو حدّثته للتو، أعد تحميل علامات تبويب يوتيوب التي كانت مفتوحة بالفعل",
+        "p": [
+          "يعمل Chrome على تشغيل الإضافة فقط في الصفحات التي تُفتح بعد تثبيتها، لذا فإن علامة تبويب يوتيوب التي كانت مفتوحة بالفعل لا تحتوي على FocusTube إطلاقًا حتى تعيد تحميلها. الأمر نفسه ينطبق مباشرة بعد تحديث الإضافة.",
+          "بمجرد أن تعمل، لن تحتاج إلى إعادة التحميل باستمرار: تفعيل شيء أو إيقافه يُطبَّق فورًا على علامات التبويب المفتوحة."
+        ]
+      },
+      {
+        "h3": "تحقق من أن الوضع ليس على *متوقف*",
+        "p": [
+          "افتح النافذة المنبثقة وانظر إلى تبويب **الوضع**. في وضع *متوقف*، يظهر كل شيء في يوتيوب عن قصد، بغض النظر عمّا هو مفعّل في الإعدادات. الإعدادات تحدد *ما* الذي يُخفى؛ والوضع يحدد *متى* ينطبق ذلك."
+        ]
+      },
+      {
+        "h3": "في وضع *المؤقت*، تحقق من أن هناك جلسة تعمل فعلًا",
+        "p": [
+          "هذا هو ما يُربك أغلب الناس. اختيار *المؤقت* لا يبدأ أي شيء بمفرده — بل يعني فقط \"إخفاء الأشياء طالما أن جلسة تركيز قيد التشغيل\". وإلى أن تضغط على بدء، لا توجد أي جلسة قيد التشغيل، لذا لا يُخفى شيء وتبدو الإضافة معطلة.",
+          "إما ابدأ جلسة، أو بدّل الوضع إلى **دائمًا** إذا كنت تريد أن تنطبق إعداداتك طوال الوقت."
+        ]
+      },
+      {
+        "h3": "في وضع *الجدول*، تحقق من أنك ضمن إحدى نوافذك الزمنية",
+        "p": [
+          "الفكرة نفسها. لا ينطبق الجدول إلا في الأيام والأوقات التي حددتها، لذا خارج تلك النوافذ يُترك يوتيوب دون تغيير عن قصد. إذا كان اليوم سبتًا وكان جدولك يغطي أيام الأسبوع فقط، فلن يُخفى شيء — وهذا يعني أنه يعمل تمامًا كما تم إعداده."
+        ]
+      }
+    ],
+    "qa1note": "إذا كنت تريد ببساطة أن يظل مفعّلًا بشكل دائم ولا تريد التفكير في هذا مرة أخرى، اضبط الوضع على **دائمًا**.",
+    "qa2h2": "إعداد كان يعمل توقف فجأة",
+    "qa2p": [
+      "يُغيّر يوتيوب هيكل صفحاته بشكل متكرر إلى حد ما، وقد يؤدي تغيير من جانبهم إلى منع أحد المفاتيح من إيجاد ما يُفترض أن يُخفيه. هذا هو السبب الأكثر احتمالًا عندما تتعطل ميزة واحدة بينما تستمر البقية في العمل.",
+      "يستحق الأمر الإبلاغ عنه بدلًا من الانتظار — عادةً ما يتم إصلاحه بسرعة بمجرد أن يعرف أحد أي جزء من يوتيوب قد تغيّر. اذكر ما كنت تشاهده وأي مفتاح توقف عن العمل."
+    ],
+    "qa2btn": "أبلغ عنه على GitHub",
+    "qa3h2": "تريد استعادة يوتيوب العادي لفترة قصيرة",
+    "qa3p": [
+      "لست بحاجة إلى إلغاء التثبيت أو إيقاف كل شيء واحدًا تلو الآخر. افتح النافذة المنبثقة، وانتقل إلى **الوضع**، واختر **متوقف**. يعود كل شيء للظهور في يوتيوب، وتبقى جميع إعداداتك وقوائم الحظر كما تركتها تمامًا لحين تفعيله من جديد."
+    ],
+    "qa4h2": "ما الذي يمكن لـFocusTube رؤيته",
+    "qa4p": [
+      "يعمل فقط على صفحات يوتيوب، ويطلب إذنين: `storage`، لتذكر إعداداتك، و`alarms`، لمؤقتات وجداول وضع التركيز. لا يوجد حساب، ولا يُرسَل أي شيء إلى أي مكان، ولا يُجمع أي شيء عن تصفحك.",
+      "الإضافة بأكملها مفتوحة المصدر، لذا يمكن التحقق من ذلك بدلًا من مجرد الوعد — [اطّلع على الكود](repo)."
+    ],
+    "qa5h2": "ما زلت عالقًا",
+    "qa5p": [
+      "افتح issue على GitHub وصِف ما كنت تتوقعه وما حدث بدلًا من ذلك. ذكر إصدار متصفحك وما إذا كنت تستخدم Windows أو macOS أو Linux عادةً ما يوفر جولة أسئلة إضافية."
+    ],
+    "qa5btn": "افتح issue",
+    "back": "العودة إلى الموقع"
+  },
+  "fa": {
+    "t": "FocusTube — پشتیبانی",
+    "d": "راهنمای FocusTube: وقتی به‌نظر می‌رسد چیزی تغییر نمی‌کند چه باید کرد، چگونه بدون حذف نصب آن را موقتاً متوقف کنیم، و کجا یک باگ را گزارش دهیم.",
+    "k": "پشتیبانی",
+    "h1": "چیزی کار نمی‌کند؟",
+    "lead": "از مورد اول شروع کنید. بیشتر موارد را حل می‌کند و بررسی آن یک ثانیه طول می‌کشد.",
+    "toc": "در این صفحه",
+    "qa1h2": "چیزی پنهان نمی‌شود",
+    "qa1intro": "تقریباً همیشه یکی از این چهار مورد است، به همین ترتیب.",
+    "steps": [
+      {
+        "h3": "اگر تازه آن را نصب یا به‌روزرسانی کرده‌اید، تب‌های یوتیوبی را که از قبل باز بودند، بازخوانی کنید",
+        "p": [
+          "کروم افزونه را فقط در صفحاتی اجرا می‌کند که پس از نصب آن باز شده باشند، پس تب یوتیوبی که از قبل باز بوده، تا زمانی که آن را بازخوانی نکنید، اصلاً FocusTube ندارد. همین موضوع بلافاصله پس از به‌روزرسانی افزونه هم صادق است.",
+          "وقتی افزونه در حال اجراست، دیگر نیازی به بازخوانی مداوم نیست: روشن یا خاموش کردن یک گزینه بلافاصله در تب‌های باز اعمال می‌شود."
+        ]
+      },
+      {
+        "h3": "بررسی کنید که حالت روی *خاموش* نباشد",
+        "p": [
+          "پنجرهٔ بازشو را باز کنید و به تب **حالت** نگاه کنید. در حالت *خاموش*، همه‌چیز در یوتیوب عمداً نمایش داده می‌شود، فارغ از اینکه چه چیزی در تنظیمات فعال باشد. تنظیمات تعیین می‌کنند *چه چیزی* پنهان شود؛ حالت تعیین می‌کند *چه زمانی* این اعمال شود."
+        ]
+      },
+      {
+        "h3": "در حالت *تایمر*، بررسی کنید که واقعاً یک نشست در حال اجراست",
+        "p": [
+          "این همان چیزی است که بیشتر افراد را گیج می‌کند. انتخاب *تایمر* به‌خودی‌خود چیزی را شروع نمی‌کند — فقط به این معناست که «تا زمانی که یک نشست تمرکز در حال اجراست، چیزها را پنهان کن». تا زمانی که دکمهٔ شروع را نزنید، هیچ نشستی در حال اجرا نیست، پس چیزی پنهان نمی‌شود و افزونه خراب به‌نظر می‌رسد.",
+          "یا یک نشست را شروع کنید، یا اگر می‌خواهید تنظیماتتان همیشه اعمال شود، حالت را روی **همیشه** بگذارید."
+        ]
+      },
+      {
+        "h3": "در حالت *برنامه*، بررسی کنید که در یکی از بازه‌های زمانی خود هستید",
+        "p": [
+          "همان ایده. یک برنامه فقط در روزها و ساعت‌هایی که تعیین کرده‌اید اعمال می‌شود، پس خارج از آن بازه‌ها یوتیوب عمداً دست‌نخورده باقی می‌ماند. اگر امروز شنبه باشد و برنامهٔ شما فقط روزهای کاری را پوشش دهد، چیزی پنهان نخواهد شد — یعنی دقیقاً طبق پیکربندی کار می‌کند."
+        ]
+      }
+    ],
+    "qa1note": "اگر فقط می‌خواهید همیشه فعال باشد و دیگر هرگز به این موضوع فکر نکنید، حالت را روی **همیشه** بگذارید.",
+    "qa2h2": "تنظیمی که کار می‌کرد، ناگهان از کار افتاد",
+    "qa2p": [
+      "یوتیوب نسبتاً مرتب ساختار صفحات خودش را تغییر می‌دهد، و تغییری از سمت آن‌ها می‌تواند باعث شود یکی از کلیدها دیگر آنچه را باید پنهان کند پیدا نکند. این محتمل‌ترین دلیل زمانی است که فقط یک ویژگی خراب می‌شود درحالی‌که بقیه همچنان کار می‌کنند.",
+      "گزارش دادن آن بهتر از منتظر ماندن است — معمولاً به‌محض اینکه کسی بفهمد کدام بخش از یوتیوب تغییر کرده، به‌سرعت رفع می‌شود. بگویید چه چیزی را تماشا می‌کردید و کدام کلید از کار افتاده است."
+    ],
+    "qa2btn": "در گیت‌هاب گزارش دهید",
+    "qa3h2": "می‌خواهید برای مدتی یوتیوب عادی را برگردانید",
+    "qa3p": [
+      "لازم نیست افزونه را حذف کنید یا همه‌چیز را یکی‌یکی خاموش کنید. پنجرهٔ بازشو را باز کنید، به **حالت** بروید و **خاموش** را انتخاب کنید. همه‌چیز دوباره در یوتیوب نمایش داده می‌شود، و همهٔ تنظیمات و فهرست‌های مسدودسازی شما دقیقاً همان‌طور که رهایشان کرده بودید باقی می‌مانند تا زمانی که دوباره روشنش کنید."
+    ],
+    "qa4h2": "FocusTube چه چیزی می‌تواند ببیند",
+    "qa4p": [
+      "این افزونه فقط روی صفحات یوتیوب اجرا می‌شود و دو مجوز درخواست می‌کند: `storage`، برای به‌خاطر سپردن تنظیمات شما، و `alarms`، برای تایمرها و برنامه‌های حالت تمرکز. هیچ حسابی وجود ندارد، چیزی به هیچ‌کجا فرستاده نمی‌شود، و چیزی دربارهٔ مرور شما جمع‌آوری نمی‌شود.",
+      "کل افزونه متن‌باز است، پس این موضوع قابل بررسی است، نه فقط یک وعده — [کد را بخوانید](repo)."
+    ],
+    "qa5h2": "هنوز گیر کرده‌اید",
+    "qa5p": [
+      "یک issue در گیت‌هاب باز کنید و توضیح دهید چه انتظاری داشتید و در عوض چه اتفاقی افتاد. ذکر نسخهٔ مرورگرتان و اینکه از ویندوز، macOS یا لینوکس استفاده می‌کنید معمولاً از یک رفت‌وبرگشت اضافه جلوگیری می‌کند."
+    ],
+    "qa5btn": "باز کردن issue",
+    "back": "بازگشت به سایت"
+  },
+  "hi": {
+    "t": "FocusTube — सहायता",
+    "d": "FocusTube की मदद: जब कुछ भी बदलता हुआ न दिखे तो क्या करें, इसे अनइंस्टॉल किए बिना कैसे रोकें, और बग कहाँ रिपोर्ट करें।",
+    "k": "सहायता",
+    "h1": "क्या कुछ काम नहीं कर रहा है?",
+    "lead": "पहले वाले से शुरू करें। यह ज़्यादातर मामलों को हल कर देता है और जाँचने में एक सेकंड लगता है।",
+    "toc": "इस पेज पर",
+    "qa1h2": "कुछ भी छिपाया नहीं जा रहा",
+    "qa1intro": "लगभग हमेशा इन चार में से एक कारण होता है, इसी क्रम में।",
+    "steps": [
+      {
+        "h3": "अगर आपने इसे अभी इंस्टॉल या अपडेट किया है, तो पहले से खुले YouTube टैब को रीलोड करें",
+        "p": [
+          "Chrome किसी एक्सटेंशन को केवल उन पेजों पर चलाता है जो उसे इंस्टॉल करने के बाद खुले हों, इसलिए पहले से खुला हुआ YouTube टैब तब तक बिल्कुल भी FocusTube नहीं रखता जब तक आप उसे रीलोड नहीं करते। एक्सटेंशन अपडेट होने के तुरंत बाद भी यही बात लागू होती है।",
+          "एक बार यह चलने लगे, तो आपको बार-बार रीलोड करने की ज़रूरत नहीं है: किसी चीज़ को चालू या बंद करना खुले टैब पर तुरंत लागू हो जाता है।"
+        ]
+      },
+      {
+        "h3": "जाँचें कि मोड *बंद* पर तो नहीं है",
+        "p": [
+          "पॉपअप खोलें और **मोड** टैब देखें। *बंद* पर, YouTube पर जानबूझकर सब कुछ दिखाया जाता है, चाहे Settings में कुछ भी चालू हो। Settings तय करती है कि *क्या* छिपाया जाए; Mode तय करता है कि यह *कब* लागू हो।"
+        ]
+      },
+      {
+        "h3": "*Timer* में जाँचें कि क्या वाकई कोई सेशन चल रहा है",
+        "p": [
+          "यही सबसे ज़्यादा लोगों को उलझाता है। *Timer* चुनने से खुद कुछ भी शुरू नहीं होता — इसका मतलब बस इतना है \"जब तक फोकस सेशन चल रहा है, चीज़ें छिपाओ\"। जब तक आप स्टार्ट नहीं दबाते, कोई सेशन नहीं चल रहा होता, इसलिए कुछ भी नहीं छिपता और एक्सटेंशन टूटा हुआ लगता है।",
+          "या तो एक सेशन शुरू करें, या अगर आप चाहते हैं कि आपकी सेटिंग्स हर समय लागू रहें तो मोड को **हमेशा** पर बदल दें।"
+        ]
+      },
+      {
+        "h3": "*Schedule* में जाँचें कि आप अपनी किसी समय-सीमा के भीतर हैं",
+        "p": [
+          "वही विचार। कोई schedule केवल उन दिनों और समय पर लागू होता है जो आपने सेट किए हैं, इसलिए उन समय-सीमाओं के बाहर YouTube को जानबूझकर वैसे ही छोड़ दिया जाता है। अगर आज शनिवार है और आपका schedule केवल कार्यदिवसों को कवर करता है, तो कुछ भी नहीं छिपेगा — इसका मतलब है कि यह ठीक वैसे ही काम कर रहा है जैसा कॉन्फ़िगर किया गया है।"
+        ]
+      }
+    ],
+    "qa1note": "अगर आप बस चाहते हैं कि यह हमेशा के लिए चालू रहे और इसके बारे में फिर कभी न सोचना पड़े, तो मोड को **हमेशा** पर सेट करें।",
+    "qa2h2": "एक सेटिंग जो काम कर रही थी अचानक बंद हो गई",
+    "qa2p": [
+      "YouTube अपने पेजों की संरचना काफी बार बदलता है, और उनकी तरफ से किया गया बदलाव किसी टॉगल को यह ढूँढने से रोक सकता है कि उसे क्या छिपाना है। जब बाकी सब कुछ काम करता रहे और सिर्फ एक फीचर टूटे, तो यही सबसे संभावित कारण है।",
+      "इंतज़ार करने के बजाय इसकी रिपोर्ट करना बेहतर है — आमतौर पर जैसे ही किसी को पता चलता है कि YouTube का कौन-सा हिस्सा बदला है, यह जल्दी ठीक हो जाता है। बताएं कि आप क्या देख रहे थे और कौन-सा टॉगल काम करना बंद कर गया।"
+    ],
+    "qa2btn": "GitHub पर रिपोर्ट करें",
+    "qa3h2": "आप कुछ समय के लिए सामान्य YouTube वापस चाहते हैं",
+    "qa3p": [
+      "आपको अनइंस्टॉल करने या सब कुछ एक-एक करके बंद करने की ज़रूरत नहीं है। पॉपअप खोलें, **Mode** पर जाएँ और **बंद** चुनें। YouTube पर सब कुछ फिर से दिखने लगता है, और आपकी सारी सेटिंग्स और ब्लॉकलिस्ट ठीक वैसे ही रहती हैं जैसे आपने उन्हें छोड़ा था, जब आप इसे फिर से चालू करेंगे।"
+    ],
+    "qa4h2": "FocusTube क्या देख सकता है",
+    "qa4p": [
+      "यह केवल YouTube पेजों पर चलता है, और दो अनुमतियाँ माँगता है: आपकी सेटिंग्स याद रखने के लिए `storage`, और Focus Mode के टाइमर व शेड्यूल के लिए `alarms`। कोई अकाउंट नहीं है, कहीं भी कुछ नहीं भेजा जाता, और आपकी ब्राउज़िंग के बारे में कुछ भी इकट्ठा नहीं किया जाता।",
+      "पूरा एक्सटेंशन ओपन सोर्स है, इसलिए यह सिर्फ एक वादा नहीं बल्कि जाँचा जा सकने वाला है — [कोड पढ़ें](repo)।"
+    ],
+    "qa5h2": "अब भी अटके हुए हैं",
+    "qa5p": [
+      "GitHub पर एक issue खोलें और बताएं कि आपको क्या उम्मीद थी और इसके बजाय क्या हुआ। अपने ब्राउज़र का वर्शन बताना और यह बताना कि आप Windows, macOS या Linux में से क्या इस्तेमाल कर रहे हैं, आमतौर पर एक अतिरिक्त सवाल-जवाब बचा देता है।"
+    ],
+    "qa5btn": "Issue खोलें",
+    "back": "साइट पर वापस जाएँ"
+  },
+  "gu": {
+    "t": "FocusTube — સહાય",
+    "d": "FocusTube ની મદદ: જ્યારે કંઈ બદલાતું ન લાગે ત્યારે શું કરવું, અનઇન્સ્ટોલ કર્યા વિના તેને કેવી રીતે થોભાવવું, અને બગ ક્યાં જણાવવો.",
+    "k": "સહાય",
+    "h1": "કંઈક કામ નથી કરી રહ્યું?",
+    "lead": "પહેલા મુદ્દાથી શરૂ કરો. તે મોટાભાગના કિસ્સા ઉકેલે છે અને તપાસવામાં એક સેકન્ડ લે છે.",
+    "toc": "આ પેજ પર",
+    "qa1h2": "કંઈ છુપાવવામાં આવતું નથી",
+    "qa1intro": "લગભગ હંમેશા આ ચારમાંથી એક કારણ હોય છે, આ ક્રમમાં.",
+    "steps": [
+      {
+        "h3": "જો તમે હમણાં જ ઇન્સ્ટોલ કે અપડેટ કર્યું હોય, તો પહેલેથી ખુલ્લા YouTube ટૅબ ફરીથી લોડ કરો",
+        "p": [
+          "Chrome એક્સટેન્શનને ફક્ત તે પેજ પર ચલાવે છે જે તેને ઇન્સ્ટોલ કર્યા પછી ખોલવામાં આવ્યા હોય, તેથી પહેલેથી ખુલ્લું YouTube ટૅબ તમે તેને ફરીથી લોડ ન કરો ત્યાં સુધી બિલકુલ FocusTube ધરાવતું નથી. એક્સટેન્શન અપડેટ થયા પછી તરત જ પણ આવું જ થાય છે.",
+          "એકવાર તે ચાલવા લાગે પછી તમારે વારંવાર રિલોડ કરવાની જરૂર નથી: કંઈક ચાલુ કે બંધ કરવું ખુલ્લા ટૅબ પર તરત જ લાગુ થાય છે."
+        ]
+      },
+      {
+        "h3": "તપાસો કે મોડ *બંધ* પર તો નથી",
+        "p": [
+          "પોપઅપ ખોલો અને **મોડ** ટૅબ જુઓ. *બંધ* પર, Settings માં ગમે તે ચાલુ હોય, YouTube પર જાણી જોઈને બધું જ બતાવવામાં આવે છે. Settings નક્કી કરે છે કે *શું* છુપાવવું; Mode નક્કી કરે છે કે તે *ક્યારે* લાગુ થાય."
+        ]
+      },
+      {
+        "h3": "*Timer* માં, તપાસો કે ખરેખર કોઈ સેશન ચાલી રહ્યું છે",
+        "p": [
+          "આ સૌથી વધુ લોકોને મૂંઝવે છે. *Timer* પસંદ કરવાથી પોતાની મેળે કંઈ શરૂ થતું નથી — તેનો અર્થ ફક્ત એટલો જ છે કે \"જ્યાં સુધી ફોકસ સેશન ચાલી રહ્યું હોય ત્યાં સુધી વસ્તુઓ છુપાવો\". જ્યાં સુધી તમે સ્ટાર્ટ ન દબાવો, ત્યાં સુધી કોઈ સેશન ચાલતું નથી, તેથી કંઈ છુપાવવામાં આવતું નથી અને એક્સટેન્શન તૂટેલું લાગે છે.",
+          "કાં તો સેશન શરૂ કરો, અથવા જો તમે ઇચ્છો કે તમારી સેટિંગ્સ હંમેશા લાગુ રહે તો મોડને **હંમેશા** પર બદલો."
+        ]
+      },
+      {
+        "h3": "*Schedule* માં, તપાસો કે તમે તમારા સમય-ગાળામાંથી એકની અંદર છો",
+        "p": [
+          "એ જ વિચાર. Schedule ફક્ત તમે નક્કી કરેલા દિવસો અને સમય પર જ લાગુ થાય છે, તેથી તે સમય-ગાળાની બહાર YouTube ને જાણી જોઈને એમ જ છોડી દેવામાં આવે છે. જો આજે શનિવાર હોય અને તમારું schedule ફક્ત કામકાજના દિવસો આવરી લેતું હોય, તો કંઈ છુપાવવામાં આવશે નહીં — તેનો અર્થ એ કે તે ગોઠવણી પ્રમાણે જ કામ કરી રહ્યું છે."
+        ]
+      }
+    ],
+    "qa1note": "જો તમે ફક્ત એટલું જ ઇચ્છો છો કે તે કાયમ માટે ચાલુ રહે અને ફરી ક્યારેય તેના વિશે વિચારવું ન પડે, તો મોડને **હંમેશા** પર સેટ કરો.",
+    "qa2h2": "એક સેટિંગ જે કામ કરતું હતું તે અચાનક બંધ થઈ ગયું",
+    "qa2p": [
+      "YouTube પોતાના પેજની રચના ઘણી વાર બદલે છે, અને તેમના તરફથી થયેલો ફેરફાર કોઈ એક ટૉગલને તે જે છુપાવવાનું હોય તે શોધવાથી રોકી શકે છે. જ્યારે બાકીના બધા કામ કરતા રહે અને ફક્ત એક જ ફીચર તૂટે, ત્યારે આ સૌથી સંભવિત કારણ છે.",
+      "રાહ જોવાને બદલે તેની જાણ કરવી યોગ્ય છે — સામાન્ય રીતે, YouTube નો કયો ભાગ બદલાયો છે તે કોઈને ખબર પડતાં જ તે ઝડપથી ઠીક થઈ જાય છે. તમે શું જોઈ રહ્યા હતા અને કયું ટૉગલ કામ કરવાનું બંધ થયું તે જણાવો."
+    ],
+    "qa2btn": "GitHub પર જણાવો",
+    "qa3h2": "તમે થોડા સમય માટે સામાન્ય YouTube પાછું ઇચ્છો છો",
+    "qa3p": [
+      "તમારે અનઇન્સ્ટોલ કરવાની કે બધું એક પછી એક બંધ કરવાની જરૂર નથી. પોપઅપ ખોલો, **Mode** પર જાઓ અને **બંધ** પસંદ કરો. YouTube પર બધું ફરીથી દેખાવા લાગે છે, અને તમારી બધી સેટિંગ્સ અને બ્લોકલિસ્ટ તમે તેને જ્યાં છોડી હતી ત્યાં જ, ફરીથી ચાલુ કરો ત્યાં સુધી, બરાબર એ જ રીતે રહે છે."
+    ],
+    "qa4h2": "FocusTube શું જોઈ શકે છે",
+    "qa4p": [
+      "તે ફક્ત YouTube પેજ પર જ ચાલે છે, અને બે પરવાનગીઓ માંગે છે: તમારી સેટિંગ્સ યાદ રાખવા માટે `storage`, અને Focus Mode ના ટાઈમર અને શેડ્યૂલ માટે `alarms`. કોઈ એકાઉન્ટ નથી, ક્યાંય કંઈ મોકલવામાં આવતું નથી, અને તમારા બ્રાઉઝિંગ વિશે કંઈ એકત્રિત કરવામાં આવતું નથી.",
+      "આખું એક્સટેન્શન ઓપન સોર્સ છે, તેથી આ ફક્ત વચન નહીં પણ ચકાસી શકાય તેવું છે — [કોડ વાંચો](repo)."
+    ],
+    "qa5h2": "હજુ પણ અટવાયેલા છો",
+    "qa5p": [
+      "GitHub પર એક issue ખોલો અને વર્ણવો કે તમે શું અપેક્ષા રાખી હતી અને તેના બદલે શું થયું. તમારા બ્રાઉઝરનું વર્ઝન અને તમે Windows, macOS કે Linux વાપરો છો તે જણાવવાથી સામાન્ય રીતે એક વધારાનો સવાલ-જવાબ બચી જાય છે."
+    ],
+    "qa5btn": "Issue ખોલો",
+    "back": "સાઇટ પર પાછા જાઓ"
+  },
+  "mr": {
+    "t": "FocusTube — मदत",
+    "d": "FocusTube ची मदत: काहीही बदलत नाही असे वाटत असताना काय करावे, अनइन्स्टॉल न करता ते कसे थांबवावे, आणि बग कुठे कळवावा.",
+    "k": "मदत",
+    "h1": "काहीतरी काम करत नाही का?",
+    "lead": "पहिल्या मुद्द्यापासून सुरुवात करा. तो बहुतेक प्रकरणे सोडवतो आणि तपासायला एक सेकंद लागतो.",
+    "toc": "या पानावर",
+    "qa1h2": "काहीही लपवले जात नाही",
+    "qa1intro": "जवळजवळ नेहमीच या चार पैकी एक कारण असते, याच क्रमाने.",
+    "steps": [
+      {
+        "h3": "जर तुम्ही नुकतेच इन्स्टॉल किंवा अपडेट केले असेल, तर आधीच उघडे असलेले YouTube टॅब पुन्हा लोड करा",
+        "p": [
+          "Chrome एक्सटेंशन फक्त इन्स्टॉलेशन नंतर उघडलेल्या पानांवरच चालवते, त्यामुळे आधीच उघडे असलेल्या YouTube टॅबमध्ये तुम्ही ते रीलोड करेपर्यंत FocusTube अजिबात नसते. एक्सटेंशन अपडेट झाल्यानंतर लगेचही असेच घडते.",
+          "एकदा ते सुरू झाले की तुम्हाला सतत रीलोड करण्याची गरज नाही: काहीतरी चालू किंवा बंद करणे उघड्या टॅबवर लगेच लागू होते."
+        ]
+      },
+      {
+        "h3": "मोड *बंद* वर तर नाही ना ते तपासा",
+        "p": [
+          "पॉपअप उघडा आणि **मोड** टॅब पहा. *बंद* वर, Settings मध्ये काहीही चालू असले तरी YouTube वर मुद्दाम सर्व काही दाखवले जाते. Settings ठरवते *काय* लपवायचे; Mode ठरवते ते *केव्हा* लागू होईल."
+        ]
+      },
+      {
+        "h3": "*Timer* मध्ये, खरोखर सेशन चालू आहे का ते तपासा",
+        "p": [
+          "हे बहुतेकांना गोंधळात टाकते. *Timer* निवडल्याने आपोआप काहीही सुरू होत नाही — याचा अर्थ फक्त \"फोकस सेशन चालू असेपर्यंत गोष्टी लपवा\" असा होतो. तुम्ही स्टार्ट दाबेपर्यंत कोणतेही सेशन चालू नसते, त्यामुळे काहीही लपवले जात नाही आणि एक्सटेंशन तुटलेले वाटते.",
+          "एकतर सेशन सुरू करा, किंवा तुमच्या सेटिंग्ज सतत लागू राहाव्यात असे वाटत असल्यास मोड **नेहमी** वर बदला."
+        ]
+      },
+      {
+        "h3": "*Schedule* मध्ये, तुम्ही तुमच्या वेळेच्या कोणत्या तरी कक्षेत आहात का ते तपासा",
+        "p": [
+          "तीच कल्पना. Schedule फक्त तुम्ही ठरवलेल्या दिवशी आणि वेळीच लागू होते, त्यामुळे त्या कक्षेबाहेर YouTube मुद्दाम जसेच्या तसे ठेवले जाते. आज शनिवार असेल आणि तुमचे schedule फक्त आठवड्याचे दिवस कव्हर करत असेल, तर काहीही लपवले जाणार नाही — याचा अर्थ ते नीट कॉन्फिगर केल्याप्रमाणेच काम करत आहे."
+        ]
+      }
+    ],
+    "qa1note": "जर तुम्हाला फक्त ते कायमचे चालू ठेवायचे असेल आणि पुन्हा कधी याचा विचार करायचा नसेल, तर मोड **नेहमी** वर सेट करा.",
+    "qa2h2": "एक सेटिंग जी काम करत होती ती अचानक बंद झाली",
+    "qa2p": [
+      "YouTube स्वतःच्या पानांची रचना बऱ्याचदा बदलते, आणि त्यांच्या बाजूने झालेल्या बदलामुळे एखादे टॉगल त्याला जे लपवायचे आहे ते शोधू शकत नाही. बाकीचे सर्व काम करत असताना फक्त एकच फीचर बिघडते तेव्हा हे सर्वात संभाव्य कारण असते.",
+      "वाट पाहण्याऐवजी ते कळवणे योग्य आहे — YouTube चा कोणता भाग बदलला हे एकदा कळले की सहसा लवकर दुरुस्त होते. तुम्ही काय पाहत होता आणि कोणते टॉगल काम करेनासे झाले ते नमूद करा."
+    ],
+    "qa2btn": "GitHub वर कळवा",
+    "qa3h2": "तुम्हाला थोड्या वेळासाठी नेहमीचे YouTube परत हवे आहे",
+    "qa3p": [
+      "तुम्हाला अनइन्स्टॉल करण्याची किंवा सर्वकाही एकेक करून बंद करण्याची गरज नाही. पॉपअप उघडा, **Mode** वर जा आणि **बंद** निवडा. YouTube वर पुन्हा सर्वकाही दिसू लागते, आणि तुम्ही पुन्हा चालू करेपर्यंत तुमच्या सर्व सेटिंग्ज आणि ब्लॉकलिस्ट तुम्ही सोडल्या होत्या तशाच राहतात."
+    ],
+    "qa4h2": "FocusTube काय पाहू शकते",
+    "qa4p": [
+      "हे फक्त YouTube पानांवर चालते, आणि दोन परवानग्या मागते: तुमच्या सेटिंग्ज लक्षात ठेवण्यासाठी `storage`, आणि Focus Mode च्या टायमर आणि वेळापत्रकांसाठी `alarms`. कोणतेही खाते नाही, कुठेही काहीही पाठवले जात नाही, आणि तुमच्या ब्राउझिंगबद्दल काहीही गोळा केले जात नाही.",
+      "संपूर्ण एक्सटेंशन ओपन सोर्स आहे, त्यामुळे हे फक्त वचन नसून पडताळता येण्यासारखे आहे — [कोड वाचा](repo)."
+    ],
+    "qa5h2": "अजूनही अडकलात",
+    "qa5p": [
+      "GitHub वर एक issue उघडा आणि तुम्हाला काय अपेक्षित होते आणि त्याऐवजी काय झाले ते सांगा. तुमच्या ब्राउझरची आवृत्ती आणि तुम्ही Windows, macOS किंवा Linux वापरता हे नमूद केल्याने सहसा एक अतिरिक्त प्रश्नोत्तर वाचते."
+    ],
+    "qa5btn": "Issue उघडा",
+    "back": "साइटवर परत जा"
+  },
+  "kn": {
+    "t": "FocusTube — ಬೆಂಬಲ",
+    "d": "FocusTube ಸಹಾಯ: ಏನೂ ಬದಲಾಗುತ್ತಿಲ್ಲ ಎಂದು ಕಂಡಾಗ ಏನು ಮಾಡಬೇಕು, ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡದೆ ಅದನ್ನು ಹೇಗೆ ವಿರಮಿಸುವುದು, ಮತ್ತು ದೋಷವನ್ನು ಎಲ್ಲಿ ವರದಿ ಮಾಡುವುದು.",
+    "k": "ಬೆಂಬಲ",
+    "h1": "ಏನಾದರೂ ಕೆಲಸ ಮಾಡುತ್ತಿಲ್ಲವೇ?",
+    "lead": "ಮೊದಲನೆಯದರಿಂದ ಪ್ರಾರಂಭಿಸಿ. ಇದು ಹೆಚ್ಚಿನ ಸಂದರ್ಭಗಳನ್ನು ಪರಿಹರಿಸುತ್ತದೆ ಮತ್ತು ಪರಿಶೀಲಿಸಲು ಒಂದು ಸೆಕೆಂಡ್ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ.",
+    "toc": "ಈ ಪುಟದಲ್ಲಿ",
+    "qa1h2": "ಏನನ್ನೂ ಮರೆಮಾಡಲಾಗುತ್ತಿಲ್ಲ",
+    "qa1intro": "ಬಹುತೇಕ ಯಾವಾಗಲೂ ಈ ನಾಲ್ಕರಲ್ಲಿ ಒಂದು ಕಾರಣ, ಈ ಕ್ರಮದಲ್ಲಿ.",
+    "steps": [
+      {
+        "h3": "ನೀವು ಇದೀಗ ಇನ್‌ಸ್ಟಾಲ್ ಅಥವಾ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದ್ದರೆ, ಈಗಾಗಲೇ ತೆರೆದಿದ್ದ YouTube ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ",
+        "p": [
+          "Chrome ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದ ನಂತರ ತೆರೆದ ಪುಟಗಳಲ್ಲಿ ಮಾತ್ರ ಚಲಾಯಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಈಗಾಗಲೇ ತೆರೆದಿದ್ದ YouTube ಟ್ಯಾಬ್‌ನಲ್ಲಿ ನೀವು ಅದನ್ನು ಮರುಲೋಡ್ ಮಾಡುವವರೆಗೆ FocusTube ಇರುವುದೇ ಇಲ್ಲ. ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅಪ್‌ಡೇಟ್ ಆದ ತಕ್ಷಣವೇ ಇದೇ ಅನ್ವಯಿಸುತ್ತದೆ.",
+          "ಒಮ್ಮೆ ಅದು ಚಾಲನೆಯಲ್ಲಿದ್ದರೆ, ನೀವು ಮತ್ತೆ ಮತ್ತೆ ಮರುಲೋಡ್ ಮಾಡಬೇಕಾಗಿಲ್ಲ: ಏನನ್ನಾದರೂ ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡುವುದು ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ ತಕ್ಷಣ ಅನ್ವಯವಾಗುತ್ತದೆ."
+        ]
+      },
+      {
+        "h3": "ಮೋಡ್ *ಆಫ್* ನಲ್ಲಿ ಇಲ್ಲ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+        "p": [
+          "ಪಾಪ್‌ಅಪ್ ತೆರೆದು **ಮೋಡ್** ಟ್ಯಾಬ್ ನೋಡಿ. *ಆಫ್* ನಲ್ಲಿ, Settings ನಲ್ಲಿ ಏನೇ ಆನ್ ಇದ್ದರೂ, YouTube ನಲ್ಲಿ ಎಲ್ಲವನ್ನೂ ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ತೋರಿಸಲಾಗುತ್ತದೆ. Settings *ಏನನ್ನು* ಮರೆಮಾಡಬೇಕು ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ; Mode ಅದು *ಯಾವಾಗ* ಅನ್ವಯಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ."
+        ]
+      },
+      {
+        "h3": "*Timer* ನಲ್ಲಿ, ನಿಜವಾಗಿಯೂ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+        "p": [
+          "ಇದು ಹೆಚ್ಚಿನ ಜನರನ್ನು ಗೊಂದಲಗೊಳಿಸುತ್ತದೆ. *Timer* ಆಯ್ಕೆಮಾಡುವುದರಿಂದ ಸ್ವತಃ ಏನೂ ಪ್ರಾರಂಭವಾಗುವುದಿಲ್ಲ — ಇದರ ಅರ್ಥ ಕೇವಲ \"ಫೋಕಸ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿರುವವರೆಗೆ ವಿಷಯಗಳನ್ನು ಮರೆಮಾಡಿ\" ಎಂದಷ್ಟೇ. ನೀವು ಸ್ಟಾರ್ಟ್ ಒತ್ತುವವರೆಗೆ, ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲ, ಆದ್ದರಿಂದ ಏನನ್ನೂ ಮರೆಮಾಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಮುರಿದಂತೆ ಕಾಣುತ್ತದೆ.",
+          "ಒಂದೋ ಸೆಷನ್ ಪ್ರಾರಂಭಿಸಿ, ಅಥವಾ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಯಾವಾಗಲೂ ಅನ್ವಯವಾಗಬೇಕೆಂದು ಬಯಸಿದರೆ ಮೋಡ್ ಅನ್ನು **ಯಾವಾಗಲೂ** ಗೆ ಬದಲಾಯಿಸಿ."
+        ]
+      },
+      {
+        "h3": "*Schedule* ನಲ್ಲಿ, ನೀವು ನಿಮ್ಮ ಸಮಯದ ಅವಧಿಗಳಲ್ಲಿ ಒಂದರೊಳಗೆ ಇದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+        "p": [
+          "ಅದೇ ಆಲೋಚನೆ. Schedule ನೀವು ಹೊಂದಿಸಿದ ದಿನಗಳು ಮತ್ತು ಸಮಯಗಳಲ್ಲಿ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಆ ಅವಧಿಗಳ ಹೊರಗೆ YouTube ಅನ್ನು ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ಹಾಗೆಯೇ ಬಿಡಲಾಗುತ್ತದೆ. ಇಂದು ಶನಿವಾರವಾಗಿದ್ದು ನಿಮ್ಮ schedule ಕೇವಲ ವಾರದ ದಿನಗಳನ್ನು ಒಳಗೊಂಡಿದ್ದರೆ, ಏನನ್ನೂ ಮರೆಮಾಡಲಾಗುವುದಿಲ್ಲ — ಇದರರ್ಥ ಅದು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದಂತೆಯೇ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ."
+        ]
+      }
+    ],
+    "qa1note": "ಇದು ಶಾಶ್ವತವಾಗಿ ಆನ್ ಆಗಿರಬೇಕು ಮತ್ತು ಇದರ ಬಗ್ಗೆ ಮತ್ತೆಂದೂ ಯೋಚಿಸಬಾರದು ಎಂದು ನೀವು ಬಯಸಿದರೆ, ಮೋಡ್ ಅನ್ನು **ಯಾವಾಗಲೂ** ಗೆ ಹೊಂದಿಸಿ.",
+    "qa2h2": "ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದ ಸೆಟ್ಟಿಂಗ್ ಇದ್ದಕ್ಕಿದ್ದಂತೆ ನಿಂತುಹೋಯಿತು",
+    "qa2p": [
+      "YouTube ತನ್ನ ಸ್ವಂತ ಪುಟಗಳ ರಚನೆಯನ್ನು ಸಾಕಷ್ಟು ಬಾರಿ ಬದಲಾಯಿಸುತ್ತದೆ, ಮತ್ತು ಅವರ ಕಡೆಯಿಂದ ಆಗುವ ಬದಲಾವಣೆಯು ಟಾಗಲ್‌ಗಳಲ್ಲಿ ಒಂದು ಅದು ಮರೆಮಾಡಬೇಕಾದದ್ದನ್ನು ಕಂಡುಹಿಡಿಯುವುದನ್ನು ನಿಲ್ಲಿಸಬಹುದು. ಉಳಿದವು ಕೆಲಸ ಮಾಡುತ್ತಿರುವಾಗ ಒಂದೇ ಫೀಚರ್ ಮುರಿದಾಗ ಇದು ಅತ್ಯಂತ ಸಂಭವನೀಯ ಕಾರಣ.",
+      "ಕಾಯುವ ಬದಲು ಇದನ್ನು ವರದಿ ಮಾಡುವುದು ಯೋಗ್ಯವಾಗಿದೆ — YouTube ನ ಯಾವ ಭಾಗ ಬದಲಾಗಿದೆ ಎಂದು ಯಾರಿಗಾದರೂ ತಿಳಿದ ತಕ್ಷಣ ಸಾಮಾನ್ಯವಾಗಿ ಇದನ್ನು ತ್ವರಿತವಾಗಿ ಸರಿಪಡಿಸಲಾಗುತ್ತದೆ. ನೀವು ಏನನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ ಮತ್ತು ಯಾವ ಟಾಗಲ್ ಕೆಲಸ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಿತು ಎಂಬುದನ್ನು ಸೇರಿಸಿ."
+    ],
+    "qa2btn": "GitHub ನಲ್ಲಿ ವರದಿ ಮಾಡಿ",
+    "qa3h2": "ಸ್ವಲ್ಪ ಸಮಯದವರೆಗೆ ಸಾಮಾನ್ಯ YouTube ಅನ್ನು ಮತ್ತೆ ಪಡೆಯಲು ಬಯಸುತ್ತೀರಿ",
+    "qa3p": [
+      "ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವ ಅಥವಾ ಎಲ್ಲವನ್ನೂ ಒಂದೊಂದಾಗಿ ಆಫ್ ಮಾಡುವ ಅಗತ್ಯವಿಲ್ಲ. ಪಾಪ್‌ಅಪ್ ತೆರೆಯಿರಿ, **Mode** ಗೆ ಹೋಗಿ ಮತ್ತು **ಆಫ್** ಆಯ್ಕೆಮಾಡಿ. YouTube ನಲ್ಲಿ ಎಲ್ಲವೂ ಮತ್ತೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ, ಮತ್ತು ನೀವು ಮತ್ತೆ ಆನ್ ಮಾಡುವವರೆಗೆ ನಿಮ್ಮ ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಬ್ಲಾಕ್‌ಲಿಸ್ಟ್‌ಗಳು ನೀವು ಬಿಟ್ಟಂತೆಯೇ ಇರುತ್ತವೆ."
+    ],
+    "qa4h2": "FocusTube ಏನನ್ನು ನೋಡಬಹುದು",
+    "qa4p": [
+      "ಇದು YouTube ಪುಟಗಳಲ್ಲಿ ಮಾತ್ರ ಚಲಿಸುತ್ತದೆ, ಮತ್ತು ಎರಡು ಅನುಮತಿಗಳನ್ನು ಕೇಳುತ್ತದೆ: ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು `storage`, ಮತ್ತು Focus Mode ನ ಟೈಮರ್‌ಗಳು ಮತ್ತು ಶೆಡ್ಯೂಲ್‌ಗಳಿಗಾಗಿ `alarms`. ಯಾವುದೇ ಖಾತೆ ಇಲ್ಲ, ಎಲ್ಲಿಗೂ ಏನೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ, ಮತ್ತು ನಿಮ್ಮ ಬ್ರೌಸಿಂಗ್ ಬಗ್ಗೆ ಏನನ್ನೂ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ.",
+      "ಇಡೀ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಓಪನ್ ಸೋರ್ಸ್ ಆಗಿದೆ, ಆದ್ದರಿಂದ ಇದು ಕೇವಲ ಭರವಸೆಯಲ್ಲ, ಪರಿಶೀಲಿಸಬಹುದಾಗಿದೆ — [ಕೋಡ್ ಓದಿ](repo)."
+    ],
+    "qa5h2": "ಇನ್ನೂ ಸಿಲುಕಿದ್ದೀರಾ",
+    "qa5p": [
+      "GitHub ನಲ್ಲಿ issue ತೆರೆಯಿರಿ ಮತ್ತು ನೀವು ಏನನ್ನು ನಿರೀಕ್ಷಿಸಿದ್ದೀರಿ ಮತ್ತು ಬದಲಿಗೆ ಏನಾಯಿತು ಎಂಬುದನ್ನು ವಿವರಿಸಿ. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಆವೃತ್ತಿಯನ್ನು ಮತ್ತು ನೀವು Windows, macOS ಅಥವಾ Linux ಬಳಸುತ್ತೀರಾ ಎಂಬುದನ್ನು ಉಲ್ಲೇಖಿಸುವುದು ಸಾಮಾನ್ಯವಾಗಿ ಹೆಚ್ಚುವರಿ ಪ್ರಶ್ನೋತ್ತರವನ್ನು ಉಳಿಸುತ್ತದೆ."
+    ],
+    "qa5btn": "Issue ತೆರೆಯಿರಿ",
+    "back": "ಸೈಟ್‌ಗೆ ಹಿಂತಿರುಗಿ"
+  },
+  "ta": {
+    "t": "FocusTube — உதவி",
+    "d": "FocusTube உதவி: எதுவும் மாறாதது போல் தோன்றும்போது என்ன செய்வது, நீக்காமல் அதை எப்படி இடைநிறுத்துவது, மற்றும் பிழையை எங்கு தெரிவிப்பது.",
+    "k": "உதவி",
+    "h1": "ஏதாவது வேலை செய்யவில்லையா?",
+    "lead": "முதலாவதிலிருந்து தொடங்குங்கள். இது பெரும்பாலான சூழ்நிலைகளைத் தீர்க்கும், சரிபார்க்க ஒரு நொடி போதும்.",
+    "toc": "இந்தப் பக்கத்தில்",
+    "qa1h2": "எதுவும் மறைக்கப்படவில்லை",
+    "qa1intro": "எப்போதுமே ஏறக்குறைய இந்த நான்கில் ஒன்றுதான் காரணம், இதே வரிசையில்.",
+    "steps": [
+      {
+        "h3": "இப்போதுதான் நிறுவினீர்கள் அல்லது புதுப்பித்தீர்கள் என்றால், ஏற்கனவே திறந்திருந்த YouTube தாவல்களை மீண்டும் ஏற்றவும்",
+        "p": [
+          "Chrome நிறுவப்பட்ட பிறகு திறக்கப்பட்ட பக்கங்களில் மட்டுமே ஒரு நீட்டிப்பை இயக்குகிறது, எனவே ஏற்கனவே திறந்திருந்த YouTube தாவலில், நீங்கள் அதை மீண்டும் ஏற்றும் வரை FocusTube சிறிதும் இல்லை. நீட்டிப்பு புதுப்பிக்கப்பட்ட உடனேயும் இதே நிலைமைதான்.",
+          "ஒருமுறை இயங்கத் தொடங்கிய பிறகு, தொடர்ந்து மீண்டும் ஏற்ற வேண்டியதில்லை: எதையாவது இயக்குவது அல்லது நிறுத்துவது திறந்த தாவல்களில் உடனடியாக நடைமுறைக்கு வரும்."
+        ]
+      },
+      {
+        "h3": "பயன்முறை *ஆஃப்* இல் இல்லை என்பதைச் சரிபார்க்கவும்",
+        "p": [
+          "பாப்அப்பைத் திறந்து **பயன்முறை** தாவலைப் பாருங்கள். *ஆஃப்* இல், Settings இல் என்ன இயக்கப்பட்டிருந்தாலும், YouTube இல் அனைத்தும் வேண்டுமென்றே காட்டப்படும். எதை மறைக்க வேண்டும் என்பதை Settings தீர்மானிக்கிறது; அது எப்போது நடைமுறைக்கு வரும் என்பதை Mode தீர்மானிக்கிறது."
+        ]
+      },
+      {
+        "h3": "*Timer* இல், உண்மையிலேயே ஒரு அமர்வு இயங்குகிறதா எனச் சரிபார்க்கவும்",
+        "p": [
+          "இதுதான் அதிகமான பேரைக் குழப்பும். *Timer* ஐத் தேர்ந்தெடுப்பது தானாகவே எதையும் தொடங்காது — இதன் பொருள் \"கவனம் அமர்வு இயங்கும்போது மட்டும் விஷயங்களை மறை\" என்பதே. நீங்கள் தொடங்கு அழுத்தும் வரை, எந்த அமர்வும் இயங்காது, எனவே எதுவும் மறைக்கப்படாது, நீட்டிப்பு உடைந்ததாகத் தெரியும்.",
+          "ஒரு அமர்வைத் தொடங்குங்கள், அல்லது உங்கள் அமைப்புகள் எப்போதும் நடைமுறையில் இருக்க வேண்டும் என்றால் பயன்முறையை **எப்போதும்** என மாற்றுங்கள்."
+        ]
+      },
+      {
+        "h3": "*Schedule* இல், உங்கள் நேரக் கட்டங்களில் ஒன்றுக்குள் இருக்கிறீர்களா எனச் சரிபார்க்கவும்",
+        "p": [
+          "அதே கருத்து. நீங்கள் அமைத்த நாட்கள் மற்றும் நேரங்களில் மட்டுமே Schedule நடைமுறைக்கு வரும், எனவே அந்தக் கட்டங்களுக்கு வெளியே YouTube வேண்டுமென்றே தொடாமல் விடப்படுகிறது. இன்று சனிக்கிழமையாக இருந்து உங்கள் schedule வார நாட்களை மட்டுமே உள்ளடக்கியிருந்தால், எதுவும் மறைக்கப்படாது — அது கட்டமைக்கப்பட்டபடியே செயல்படுகிறது என்று பொருள்."
+        ]
+      }
+    ],
+    "qa1note": "இது எப்போதும் நிரந்தரமாக இயங்க வேண்டும் என்றும் இதைப் பற்றி மீண்டும் யோசிக்கக் கூடாது என்றும் நீங்கள் விரும்பினால், பயன்முறையை **எப்போதும்** எனச் சரிசெய்யுங்கள்.",
+    "qa2h2": "வேலை செய்து கொண்டிருந்த ஒரு அமைப்பு திடீரென நிறுத்தியது",
+    "qa2p": [
+      "YouTube தன் சொந்தப் பக்க அமைப்பை அடிக்கடி மாற்றுகிறது, அவர்கள் தரப்பில் ஏற்படும் மாற்றம் ஏதேனும் ஒரு டாக்கிள் அது மறைக்க வேண்டியதைக் கண்டறியாமல் போகச் செய்யலாம். மற்றவை வேலை செய்து கொண்டிருக்கும்போது ஒரே ஒரு அம்சம் மட்டும் உடைந்தால் இதுவே மிகவும் சாத்தியமான காரணம்.",
+      "காத்திருப்பதை விட இதைத் தெரிவிப்பது நல்லது — YouTube இன் எந்தப் பகுதி மாறியது என யாரேனும் அறிந்தவுடன் பொதுவாக இது விரைவாக சரி செய்யப்படும். நீங்கள் என்ன பார்த்துக் கொண்டிருந்தீர்கள், எந்த டாக்கிள் வேலை செய்யாமல் போனது என்பதைக் குறிப்பிடுங்கள்."
+    ],
+    "qa2btn": "GitHub இல் தெரிவிக்கவும்",
+    "qa3h2": "சிறிது நேரத்திற்கு வழக்கமான YouTube ஐத் திரும்பப் பெற விரும்புகிறீர்கள்",
+    "qa3p": [
+      "நீக்க வேண்டியதோ அல்லது ஒவ்வொன்றாக அணைக்க வேண்டியதோ இல்லை. பாப்அப்பைத் திறந்து, **Mode** க்குச் சென்று **ஆஃப்** ஐத் தேர்ந்தெடுக்கவும். YouTube இல் அனைத்தும் மீண்டும் தோன்றும், நீங்கள் மீண்டும் இயக்கும் வரை உங்கள் அமைப்புகள் மற்றும் தடுப்பு பட்டியல்கள் அனைத்தும் நீங்கள் விட்டுச் சென்றபடியே இருக்கும்."
+    ],
+    "qa4h2": "FocusTube என்ன பார்க்க முடியும்",
+    "qa4p": [
+      "இது YouTube பக்கங்களில் மட்டுமே இயங்குகிறது, இரண்டு அனுமதிகளைக் கோருகிறது: உங்கள் அமைப்புகளை நினைவில் வைக்க `storage`, மற்றும் Focus Mode இன் டைமர்கள் மற்றும் அட்டவணைகளுக்கு `alarms`. கணக்கு எதுவும் இல்லை, எதுவும் எங்கும் அனுப்பப்படுவதில்லை, உங்கள் உலாவல் பற்றி எதுவும் சேகரிக்கப்படுவதில்லை.",
+      "முழு நீட்டிப்பும் ஓபன் சோர்ஸ், எனவே இது வெறும் வாக்குறுதி அல்ல, சரிபார்க்கக்கூடியது — [குறியீட்டைப் படியுங்கள்](repo)."
+    ],
+    "qa5h2": "இன்னும் சிக்கியிருக்கிறீர்களா",
+    "qa5p": [
+      "GitHub இல் ஒரு issue ஐத் திறந்து, நீங்கள் எதை எதிர்பார்த்தீர்கள், அதற்குப் பதிலாக என்ன நடந்தது என்பதை விவரிக்கவும். உங்கள் உலாவி பதிப்பையும், Windows, macOS அல்லது Linux பயன்படுத்துகிறீர்களா என்பதையும் குறிப்பிடுவது பொதுவாக ஒரு கூடுதல் கேள்வி பதிலைச் சேமிக்கும்."
+    ],
+    "qa5btn": "Issue திறக்கவும்",
+    "back": "தளத்திற்குத் திரும்பு"
+  },
+  "te": {
+    "t": "FocusTube — మద్దతు",
+    "d": "FocusTube సహాయం: ఏమీ మారడం లేదని అనిపించినప్పుడు ఏం చేయాలి, అన్‌ఇన్‌స్టాల్ చేయకుండా దాన్ని ఎలా పాజ్ చేయాలి, మరియు బగ్‌ను ఎక్కడ నివేదించాలి.",
+    "k": "మద్దతు",
+    "h1": "ఏదైనా పని చేయడం లేదా?",
+    "lead": "మొదటిదానితో ప్రారంభించండి. ఇది చాలా సందర్భాలను పరిష్కరిస్తుంది మరియు తనిఖీ చేయడానికి ఒక సెకను పడుతుంది.",
+    "toc": "ఈ పేజీలో",
+    "qa1h2": "ఏమీ దాచబడలేదు",
+    "qa1intro": "దాదాపు ఎల్లప్పుడూ ఈ నాలుగింటిలో ఒకటి కారణం, ఇదే క్రమంలో.",
+    "steps": [
+      {
+        "h3": "మీరు ఇప్పుడే ఇన్‌స్టాల్ చేసినా లేదా అప్‌డేట్ చేసినా, ఇప్పటికే తెరిచి ఉన్న YouTube ట్యాబ్‌లను రీలోడ్ చేయండి",
+        "p": [
+          "Chrome ఎక్స్‌టెన్షన్‌ను ఇన్‌స్టాల్ చేసిన తర్వాత తెరిచిన పేజీలలో మాత్రమే అమలు చేస్తుంది, కాబట్టి ఇప్పటికే తెరిచి ఉన్న YouTube ట్యాబ్‌లో మీరు దాన్ని రీలోడ్ చేసేవరకు FocusTube అస్సలు ఉండదు. ఎక్స్‌టెన్షన్ అప్‌డేట్ అయిన వెంటనే కూడా ఇదే వర్తిస్తుంది.",
+          "ఇది ఒకసారి నడవడం ప్రారంభించాక, మీరు నిరంతరం రీలోడ్ చేయాల్సిన అవసరం లేదు: దేనినైనా ఆన్ లేదా ఆఫ్ చేయడం తెరిచి ఉన్న ట్యాబ్‌లలో వెంటనే అమలవుతుంది."
+        ]
+      },
+      {
+        "h3": "మోడ్ *ఆఫ్*లో లేదని తనిఖీ చేయండి",
+        "p": [
+          "పాప్అప్‌ను తెరిచి **మోడ్** ట్యాబ్‌ను చూడండి. *ఆఫ్*లో, Settings లో ఏది ఆన్‌లో ఉన్నా, YouTube లో ప్రతిదీ ఉద్దేశపూర్వకంగా చూపబడుతుంది. Settings *ఏమి* దాచాలో నిర్ణయిస్తుంది; Mode అది *ఎప్పుడు* వర్తిస్తుందో నిర్ణయిస్తుంది."
+        ]
+      },
+      {
+        "h3": "*Timer*లో, నిజంగా ఒక సెషన్ నడుస్తుందో లేదో తనిఖీ చేయండి",
+        "p": [
+          "ఇదే చాలా మందిని గందరగోళపరుస్తుంది. *Timer* ఎంచుకోవడం వల్ల అదే స్వయంగా ఏమీ ప్రారంభం కాదు — దీని అర్థం \"ఫోకస్ సెషన్ నడుస్తున్నంత సేపు విషయాలను దాచు\" అని మాత్రమే. మీరు స్టార్ట్ నొక్కేవరకు, ఏ సెషన్ నడవదు, కాబట్టి ఏమీ దాచబడదు మరియు ఎక్స్‌టెన్షన్ పాడైనట్లు కనిపిస్తుంది.",
+          "ఒక సెషన్‌ను ప్రారంభించండి, లేదా మీ సెట్టింగ్‌లు ఎల్లప్పుడూ వర్తించాలని మీరు కోరుకుంటే మోడ్‌ను **ఎల్లప్పుడూ**కి మార్చండి."
+        ]
+      },
+      {
+        "h3": "*Schedule*లో, మీరు మీ సమయ విండోలలో ఒకదానిలో ఉన్నారో లేదో తనిఖీ చేయండి",
+        "p": [
+          "అదే ఆలోచన. Schedule మీరు నిర్దేశించిన రోజులు మరియు సమయాలలో మాత్రమే వర్తిస్తుంది, కాబట్టి ఆ విండోల వెలుపల YouTube ఉద్దేశపూర్వకంగా అలాగే వదిలేయబడుతుంది. ఈరోజు శనివారం అయి, మీ schedule వారంలోని పని దినాలను మాత్రమే కవర్ చేస్తే, ఏమీ దాచబడదు — అది కాన్ఫిగర్ చేసినట్లే పనిచేస్తోందని అర్థం."
+        ]
+      }
+    ],
+    "qa1note": "ఇది శాశ్వతంగా ఆన్‌లో ఉండాలని మరియు దీని గురించి మళ్లీ ఎప్పుడూ ఆలోచించకూడదని మీరు కోరుకుంటే, మోడ్‌ను **ఎల్లప్పుడూ**కి సెట్ చేయండి.",
+    "qa2h2": "పనిచేస్తున్న ఒక సెట్టింగ్ అకస్మాత్తుగా ఆగిపోయింది",
+    "qa2p": [
+      "YouTube తన స్వంత పేజీ నిర్మాణాన్ని చాలా తరచుగా మారుస్తుంది, మరియు వారి వైపు నుండి వచ్చిన మార్పు, టోగుల్స్‌లో ఒకటి అది దాచాల్సినదాన్ని కనుగొనలేకుండా చేయవచ్చు. మిగిలినవి పనిచేస్తూనే ఉండగా, ఒకే ఒక ఫీచర్ విరిగినప్పుడు ఇదే అత్యంత సంభావ్య కారణం.",
+      "వేచి ఉండటం కంటే దీన్ని నివేదించడం మంచిది — YouTube లో ఏ భాగం మారిందో ఎవరైనా తెలుసుకున్న వెంటనే సాధారణంగా ఇది త్వరగా పరిష్కరించబడుతుంది. మీరు ఏమి చూస్తున్నారో మరియు ఏ టోగుల్ పనిచేయడం మానేసిందో పేర్కొనండి."
+    ],
+    "qa2btn": "GitHubలో నివేదించండి",
+    "qa3h2": "మీరు కొంతసేపు సాధారణ YouTube ను తిరిగి పొందాలనుకుంటున్నారు",
+    "qa3p": [
+      "మీరు అన్‌ఇన్‌స్టాల్ చేయాల్సిన అవసరం లేదా ప్రతిదాన్ని ఒక్కొక్కటిగా ఆఫ్ చేయాల్సిన అవసరం లేదు. పాప్అప్‌ను తెరిచి, **Mode**కి వెళ్లి **ఆఫ్** ఎంచుకోండి. YouTube లో ప్రతిదీ మళ్లీ కనిపిస్తుంది, మరియు మీరు తిరిగి ఆన్ చేసేవరకు మీ సెట్టింగ్‌లు మరియు బ్లాక్‌లిస్ట్‌లు అన్నీ మీరు వదిలిన విధంగానే ఉంటాయి."
+    ],
+    "qa4h2": "FocusTube ఏమి చూడగలదు",
+    "qa4p": [
+      "ఇది YouTube పేజీలలో మాత్రమే నడుస్తుంది, మరియు రెండు అనుమతులను అడుగుతుంది: మీ సెట్టింగ్‌లను గుర్తుంచుకోవడానికి `storage`, మరియు Focus Mode యొక్క టైమర్‌లు మరియు షెడ్యూల్‌ల కోసం `alarms`. ఖాతా ఏదీ లేదు, ఎక్కడికీ ఏమీ పంపబడదు, మరియు మీ బ్రౌజింగ్ గురించి ఏమీ సేకరించబడదు.",
+      "మొత్తం ఎక్స్‌టెన్షన్ ఓపెన్ సోర్స్, కాబట్టి ఇది కేవలం వాగ్దానం కాదు, తనిఖీ చేయదగినది — [కోడ్‌ను చదవండి](repo)."
+    ],
+    "qa5h2": "ఇంకా ఇరుక్కుపోయారా",
+    "qa5p": [
+      "GitHubలో ఒక issue తెరిచి, మీరు ఏమి ఆశించారో మరియు దానికి బదులుగా ఏమి జరిగిందో వివరించండి. మీ బ్రౌజర్ వెర్షన్‌ను మరియు మీరు Windows, macOS లేదా Linux వాడుతున్నారో పేర్కొనడం సాధారణంగా అదనపు ప్రశ్నోత్తరాన్ని ఆదా చేస్తుంది."
+    ],
+    "qa5btn": "Issue తెరవండి",
+    "back": "సైట్‌కు తిరిగి వెళ్లండి"
+  },
+  "sw": {
+    "t": "FocusTube — Msaada",
+    "d": "Msaada wa FocusTube: la kufanya wakati kinaonekana hakuna kinachobadilika, jinsi ya kukisimamisha bila kukiondoa, na wapi kuripoti hitilafu.",
+    "k": "Msaada",
+    "h1": "Kuna kitu hakifanyi kazi?",
+    "lead": "Anza na jambo la kwanza. Linatatua visa vingi na huchukua sekunde moja kukagua.",
+    "toc": "Katika ukurasa huu",
+    "qa1h2": "Hakuna kinachofichwa",
+    "qa1intro": "Karibu daima ni mojawapo ya mambo haya manne, kwa mpangilio huu.",
+    "steps": [
+      {
+        "h3": "Ikiwa umeisakinisha au kuisasisha hivi karibuni, pakia upya tabo za YouTube ulizokuwa nazo tayari wazi",
+        "p": [
+          "Chrome huendesha kiendelezi tu kwenye kurasa zilizofunguliwa baada ya kusakinishwa kwake, kwa hivyo tabo ya YouTube iliyokuwa tayari wazi haina FocusTube kabisa mpaka uipakie upya. Vivyo hivyo mara tu baada ya kiendelezi kusasishwa.",
+          "Mara tu kinapoendesha, huhitaji kuendelea kupakia upya: kuwasha au kuzima kitu kunatumika mara moja kwenye tabo zilizo wazi."
+        ]
+      },
+      {
+        "h3": "Angalia kuwa hali haiko kwenye *Imezimwa*",
+        "p": [
+          "Fungua kidirisha ibukizi na angalia kichupo cha **Hali**. Kwenye *Imezimwa*, kila kitu kinaonyeshwa YouTube kwa makusudi, haijalishi ni nini kimewashwa katika Mipangilio. Mipangilio huamua *nini* kinafichwa; Hali huamua *lini* hilo linatumika."
+        ]
+      },
+      {
+        "h3": "Kwenye *Kipima muda*, angalia kama kipindi kinaendesha kweli",
+        "p": [
+          "Hii ndiyo inayowachanganya watu wengi zaidi. Kuchagua *Kipima muda* hakuanzishi chochote peke yake — inamaanisha tu \"ficha vitu wakati kipindi cha umakini kinaendesha\". Mpaka ubonyeze anza, hakuna kipindi kinachoendesha, kwa hivyo hakuna kinachofichwa na kiendelezi kinaonekana kimeharibika.",
+          "Ama anzisha kipindi, au badilisha hali kuwa **Kila wakati** ikiwa unataka mipangilio yako itumike wakati wote."
+        ]
+      },
+      {
+        "h3": "Kwenye *Ratiba*, angalia kama uko ndani ya mojawapo ya vipindi vyako vya muda",
+        "p": [
+          "Wazo lile lile. Ratiba inatumika tu siku na saa ulizoweka, kwa hivyo nje ya vipindi hivyo YouTube inaachwa bila kuguswa kwa makusudi. Ikiwa leo ni Jumamosi na ratiba yako inashughulikia siku za wiki tu, hakuna kitakachofichwa — hilo linamaanisha inafanya kazi kama ilivyowekwa."
+        ]
+      }
+    ],
+    "qa1note": "Ikiwa unataka tu iwe imewashwa kudumu na usifikirie kuhusu hili tena kamwe, weka hali kuwa **Kila wakati**.",
+    "qa2h2": "Mpangilio uliokuwa ukifanya kazi ulisimama ghafla",
+    "qa2p": [
+      "YouTube hubadilisha muundo wa kurasa zake mara kwa mara, na mabadiliko upande wao yanaweza kuzuia mojawapo ya swichi kupata kile inachopaswa kuficha. Hii ndiyo sababu inayowezekana zaidi wakati kipengele kimoja tu kinaharibika wakati vingine vinaendelea kufanya kazi.",
+      "Inafaa kuripoti badala ya kusubiri — kwa kawaida hurekebishwa haraka mara mtu anapojua ni sehemu gani ya YouTube iliyobadilika. Jumuisha ulichokuwa unatazama na swichi gani iliyoacha kufanya kazi."
+    ],
+    "qa2btn": "Ripoti kwenye GitHub",
+    "qa3h2": "Unataka YouTube ya kawaida irudi kwa muda",
+    "qa3p": [
+      "Huhitaji kuondoa kiendelezi au kuzima kila kitu kimoja kimoja. Fungua kidirisha ibukizi, nenda kwenye **Hali**, na chagua **Imezimwa**. Kila kitu kinaonekana tena kwenye YouTube, na mipangilio yako yote na orodha za kuzuia zinabaki kama ulivyoziacha kwa wakati utakapowasha tena."
+    ],
+    "qa4h2": "FocusTube inaweza kuona nini",
+    "qa4p": [
+      "Inaendesha tu kwenye kurasa za YouTube, na inaomba ruhusa mbili: `storage`, kukumbuka mipangilio yako, na `alarms`, kwa vipima muda na ratiba za Hali ya Umakini. Hakuna akaunti, hakuna kinachotumwa popote, na hakuna kinachokusanywa kuhusu uvinjari wako.",
+      "Kiendelezi chote ni chanzo huria, kwa hivyo hii inaweza kukaguliwa badala ya kuwa ahadi tu — [soma msimbo](repo)."
+    ],
+    "qa5h2": "Bado umekwama",
+    "qa5p": [
+      "Fungua issue kwenye GitHub na eleza ulichotarajia na kilichotokea badala yake. Kutaja toleo la kivinjari chako na kama unatumia Windows, macOS, au Linux kwa kawaida huokoa mzunguko wa ziada wa maswali."
+    ],
+    "qa5btn": "Fungua issue",
+    "back": "Rudi kwenye tovuti"
+  },
+  "am": {
+    "t": "FocusTube — ድጋፍ",
+    "d": "የFocusTube እርዳታ፦ ምንም የማይለወጥ ሲመስል ምን ማድረግ እንዳለበት፣ ሳይሰርዙ እንዴት ማቆም እንደሚቻል፣ እና ስህተትን የት ማሳወቅ እንዳለበት።",
+    "k": "ድጋፍ",
+    "h1": "የሆነ ነገር አይሰራም?",
+    "lead": "ከመጀመሪያው ይጀምሩ። አብዛኞቹን ጉዳዮች ይፈታል፣ ማረጋገጫውም አንድ ሰከንድ ብቻ ይወስዳል።",
+    "toc": "በዚህ ገጽ ላይ",
+    "qa1h2": "ምንም ነገር አልተደበቀም",
+    "qa1intro": "ሁልጊዜ ማለት ይቻላል ከእነዚህ አራት ምክንያቶች አንዱ ነው፣ በዚህ ቅደም ተከተል።",
+    "steps": [
+      {
+        "h3": "አሁን ከጫኑት ወይም ካዘመኑት፣ ቀድሞውኑ ክፍት የነበሩትን የYouTube ትሮች እንደገና ይጫኑ",
+        "p": [
+          "Chrome ቅጥያውን የሚያስኬደው ከተጫነ በኋላ በተከፈቱ ገጾች ላይ ብቻ ነው፣ ስለዚህ ቀድሞውኑ ክፍት የነበረ የYouTube ትር እንደገና እስኪጫኑት ድረስ ምንም FocusTube የለውም። ቅጥያው ከተዘመነ በኋላ ወዲያውኑም ተመሳሳይ ነው።",
+          "አንዴ ከሮጠ በኋላ ያለማቋረጥ እንደገና መጫን አያስፈልግም፦ የሆነ ነገር ማብራት ወይም ማጥፋት በተከፈቱ ትሮች ላይ ወዲያውኑ ተግባራዊ ይሆናል።"
+        ]
+      },
+      {
+        "h3": "ሁነታው *ጠፍቷል* ላይ አለመሆኑን ያረጋግጡ",
+        "p": [
+          "ብቅ-ባይ መስኮቱን ይክፈቱ እና **ሁነታ** ትርን ይመልከቱ። *ጠፍቷል* ላይ ሳለ፣ በቅንብሮች ውስጥ ምንም ቢበራ በYouTube ላይ ሁሉም ነገር ሆን ተብሎ ይታያል። ቅንብሮች *ምን* እንደሚደበቅ ይወስናሉ፤ ሁነታ ደግሞ ያ *መቼ* ተግባራዊ እንደሚሆን ይወስናል።"
+        ]
+      },
+      {
+        "h3": "በ*ሰዓት ቆጣሪ* ላይ፣ በእውነት ክፍለ ጊዜ እየሮጠ መሆኑን ያረጋግጡ",
+        "p": [
+          "ይህ አብዛኞቹን ሰዎች የሚያሳስት ነው። *ሰዓት ቆጣሪ*ን መምረጥ ራሱ ምንም አይጀምርም — ትርጉሙ \"የትኩረት ክፍለ ጊዜ እየሮጠ ሳለ ነገሮችን ደብቅ\" ማለት ብቻ ነው። ጀምር ሳይጫኑ፣ ምንም ክፍለ ጊዜ አይሮጥም፣ ስለዚህ ምንም አይደበቅም እና ቅጥያው የተበላሸ ይመስላል።",
+          "ወይ ክፍለ ጊዜ ይጀምሩ፣ ወይም ቅንብሮችዎ ሁልጊዜ ተግባራዊ እንዲሆኑ ከፈለጉ ሁነታውን ወደ **ሁልጊዜ** ይቀይሩ።"
+        ]
+      },
+      {
+        "h3": "በ*መርሃግብር* ላይ፣ ከጊዜ ክፍተቶችዎ በአንዱ ውስጥ መሆንዎን ያረጋግጡ",
+        "p": [
+          "ተመሳሳይ ሀሳብ ነው። መርሃግብር የሚሰራው እርስዎ ባዘጋጇቸው ቀናት እና ሰዓቶች ላይ ብቻ ነው፣ ስለዚህ ከእነዚህ ክፍተቶች ውጪ YouTube ሆን ተብሎ ሳይነካ ይቀራል። ዛሬ ቅዳሜ ሆኖ መርሃግብርዎ የስራ ቀናትን ብቻ የሚሸፍን ከሆነ፣ ምንም አይደበቅም — ይህ ማለት እንደተዋቀረው በትክክል እየሰራ ነው ማለት ነው።"
+        ]
+      }
+    ],
+    "qa1note": "በቀላሉ ዘላቂ ሆኖ እንዲበራ እና ስለዚህ ጉዳይ ዳግመኛ ማሰብ ካልፈለጉ፣ ሁነታውን ወደ **ሁልጊዜ** ያቀናብሩ።",
+    "qa2h2": "ይሰራ የነበረ ቅንብር በድንገት ቆመ",
+    "qa2p": [
+      "YouTube የራሱን የገጽ አወቃቀር በጣም ብዙ ጊዜ ይለውጣል፣ ከነሱ በኩል የሚደረግ ለውጥ ከመቀያየሪያዎቹ አንዱ መደበቅ ያለበትን ነገር ማግኘት እንዳይችል ሊያደርገው ይችላል። የተቀሩት እየሰሩ ሳሉ አንድ ብቻ ባህሪ ሲበላሽ ይህ በጣም አይነተኛው ምክንያት ነው።",
+      "ከመጠበቅ ይልቅ ማሳወቅ የተሻለ ነው — የYouTube የትኛው ክፍል እንደተለወጠ አንድ ሰው እንዳወቀ ብዙውን ጊዜ በፍጥነት ይስተካከላል። ምን እየተመለከቱ እንደነበር እና የትኛው መቀያየሪያ መስራት እንዳቆመ ያካትቱ።"
+    ],
+    "qa2btn": "በGitHub ላይ ያሳውቁ",
+    "qa3h2": "ለተወሰነ ጊዜ መደበኛውን YouTube መልሰው ማግኘት ይፈልጋሉ",
+    "qa3p": [
+      "ማራገፍ ወይም ሁሉንም አንድ በአንድ ማጥፋት አያስፈልግዎትም። ብቅ-ባይ መስኮቱን ይክፈቱ፣ ወደ **ሁነታ** ይሂዱ እና **ጠፍቷል**ን ይምረጡ። ሁሉም ነገር በYouTube ላይ እንደገና ይታያል፣ እና እንደገና እስከሚያበሩት ድረስ ሁሉም ቅንብሮችዎ እና የማገጃ ዝርዝሮችዎ በትክክል እርስዎ እንደተዉት ይቆያሉ።"
+    ],
+    "qa4h2": "FocusTube ምን ማየት ይችላል",
+    "qa4p": [
+      "የሚሰራው በYouTube ገጾች ላይ ብቻ ነው፣ እና ሁለት ፈቃዶችን ይጠይቃል፦ ቅንብሮችዎን ለማስታወስ `storage`፣ እና ለትኩረት ሁነታ ሰዓት ቆጣሪዎች እና መርሃግብሮች `alarms`። ምንም መለያ የለም፣ ምንም ነገር ወደየትም አይላክም፣ እና ስለ አሰሳዎ ምንም አይሰበሰብም።",
+      "ጠቅላላው ቅጥያ ክፍት ምንጭ ነው፣ ስለዚህ ይህ ተስፋ ብቻ ሳይሆን ማረጋገጥ የሚቻል ነው — [ኮዱን ያንብቡ](repo)።"
+    ],
+    "qa5h2": "አሁንም ተቸግረዋል",
+    "qa5p": [
+      "በGitHub ላይ issue ይክፈቱ እና ምን እንደጠበቁ እና በምትኩ ምን እንደተከሰተ ይግለጹ። የአሳሽዎን ስሪት እና Windows፣ macOS ወይም Linux እየተጠቀሙ መሆኑን መጥቀስ ብዙውን ጊዜ ተጨማሪ ጥያቄ ማዳን ይችላል።"
+    ],
+    "qa5btn": "Issue ይክፈቱ",
+    "back": "ወደ ጣቢያው ተመለስ"
+  }
+}

@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Готовы снова сосредоточиться? Начните новую сессию во всплывающем окне FocusTube."
+  },
+  "helpLink": {
+    "message": "Помощь"
   }
 }

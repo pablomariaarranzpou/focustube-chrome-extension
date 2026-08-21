@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Klar til å konsentrere deg igjen? Start en ny økt fra FocusTube-popupen."
+  },
+  "helpLink": {
+    "message": "Hjelp"
   }
 }

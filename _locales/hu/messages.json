@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Készen állsz újra koncentrálni? Indíts új munkamenetet a FocusTube felugró ablakából."
+  },
+  "helpLink": {
+    "message": "Súgó"
   }
 }

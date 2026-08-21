@@ -2130,44 +2130,153 @@ footer a:hover {
   padding: 4px 10px;
 }
 
-/* ---- Support page -------------------------------------------------------
-   Reuses the site shell; only the Q&A rhythm is new. */
-.support-hero {
-  padding: 60px 0 20px;
+/* ---- Support page ---------------------------------------------------------
+   Header, hero, content and footer share the site's own .wrap (1080px) —
+   nothing here defines its own container width any more. Three different
+   widths were stacked on top of each other before (1080 / 815 / 1120px),
+   each with its own left edge, so the page visibly zigzagged as you scrolled
+   past the hero into the answers. One container, top to bottom.
+   Reading measure is controlled separately, on the text itself (max-width in
+   ch on the prose), not on the container — so alignment stays constant while
+   line length stays comfortable. */
+
+.hero.support-hero {
+  padding-top: 56px;
+  padding-bottom: 0;
+  /* The opening block is centred; the answers below are left aligned, since
+     they are read as a document rather than looked at. */
+  text-align: center;
+}
+
+.support-hero .kicker {
+  margin-bottom: 12px;
 }
 
 .support-hero h1 {
+  /* A help page is read, not pitched: nowhere near the hero's 67px. */
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
   max-width: 20ch;
+  margin: 0 auto 16px;
+  /* The hero paints its heading with a gradient; here it would only make the
+     text harder to read at this size. */
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--ink);
+}
+
+/* .hero p.lead caps at 560px and wins on source order, which is narrower
+   than this needs and not centred on the wider measure below. */
+.hero.support-hero p.lead {
+  max-width: 46ch;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 
 .support {
-  padding: 10px 0 80px;
+  padding: 40px 0 96px;
+  /* Body copy reads best around 66-70 characters a line. The container
+     stays full width for alignment; this is what actually limits the line. */
+  font-size: clamp(1rem, 0.94rem + 0.25vw, 1.0625rem);
 }
 
-.support .wrap {
-  max-width: 760px;
+/* Below the sidebar breakpoint this is the only column, centred in .wrap
+   like every other section on the site. From it up, it is the right cell of
+   the toc/content grid, so it is capped rather than centred. */
+.support-body {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .support-body { margin: 0; }
+}
+
+.support-toc {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .support .wrap.support-grid {
+    display: grid;
+    grid-template-columns: 208px minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  .support-toc {
+    display: block;
+    position: sticky;
+    top: 32px;
+    font-size: 0.86rem;
+  }
+}
+
+.support-toc-title {
+  margin: 0 0 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.support-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+  border-inline-start: 2px solid var(--border);
+}
+
+.support-toc a {
+  display: block;
+  padding: 7px 14px;
+  margin-inline-start: -2px;
+  border-inline-start: 2px solid transparent;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.support-toc a:hover {
+  color: var(--ink);
+  border-inline-start-color: var(--border);
+}
+
+.support {
+  padding: 40px 0 96px;
 }
 
 .qa {
   border-top: 1px solid var(--border);
-  padding: 30px 0;
+  padding: 32px 0;
 }
 
-.qa:first-child {
+.qa:first-of-type {
   border-top: none;
+  padding-top: 8px;
 }
 
 .qa h2 {
-  font-size: clamp(1.15rem, 3vw, 1.5rem);
-  font-weight: 800;
+  font-size: 1.5em;
+  font-weight: 700;
   letter-spacing: -0.015em;
-  margin: 0 0 12px;
+  line-height: 1.25;
+  margin: 0 0 10px;
   text-wrap: balance;
 }
 
 .qa p {
-  margin: 0 0 12px;
-  line-height: 1.65;
+  margin: 0 0 14px;
+  line-height: 1.7;
+  /* Keeps a paragraph from ending on a single stranded word. */
+  text-wrap: pretty;
   color: var(--ink);
 }
 
@@ -2178,13 +2287,20 @@ footer a:hover {
 .qa code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.85em;
-  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  background: color-mix(in srgb, var(--ink) 9%, transparent);
   border-radius: 6px;
   padding: 2px 7px;
 }
 
 .qa .btn {
-  margin-top: 6px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+/* A paragraph that exists only to hold a button should not also carry the
+   paragraph spacing above it. */
+.qa p:has(> .btn) {
+  margin-bottom: 0;
 }
 
 /* ---- Install button -----------------------------------------------------
@@ -2505,62 +2621,73 @@ main > section > .wrap > h2,
 [dir="rtl"] .ext-tg.is-on::after { transform: translateX(-10px); }
 
 /* ---- Support: the ordered diagnostic --------------------------------------
-   Most "it does nothing" reports are one of four states, and the order matters
-   — so it is a numbered list rather than more prose. */
+   Most "it does nothing" reports are one of four states, and the order they
+   are checked in matters, so it is a numbered list rather than more prose. */
 .qa-lead .steps {
   list-style: none;
   counter-reset: step;
-  margin: 18px 0 0;
+  margin: 24px 0 0;
   padding: 0;
   display: grid;
-  gap: 16px;
+  gap: 24px;
 }
 
 .qa-lead .steps > li {
   counter-increment: step;
   position: relative;
-  padding-inline-start: 46px;
+  padding-inline-start: 44px;
 }
 
 .qa-lead .steps > li::before {
   content: counter(step);
   position: absolute;
   inset-inline-start: 0;
-  top: 1px;
-  width: 30px;
-  height: 30px;
+  top: 0;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: var(--coral);
   color: #2b0f12;
   font-weight: 800;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.85rem;
+  display: grid;
+  place-items: center;
   font-variant-numeric: tabular-nums;
 }
 
 .qa-lead .steps h3 {
-  font-size: 1rem;
+  font-size: 1.08em;
   font-weight: 700;
-  margin: 4px 0 6px;
   letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin: 2px 0 8px;
 }
 
 .qa-lead .steps p {
-  font-size: 0.92rem;
-  margin: 0 0 8px;
+  font-size: 0.95em;
+  line-height: 1.7;
+  text-wrap: pretty;
+  margin: 0 0 10px;
 }
 
-.qa-lead .steps p:last-child { margin-bottom: 0; }
+.qa-lead .steps p:last-child {
+  margin-bottom: 0;
+}
 
-.qa-note {
-  margin-top: 20px;
-  padding: 14px 16px;
+/* .qa-note is itself a <p>, so the generic ".qa p" rule (one class, one
+   type = 0,1,1) was beating this on specificity (".qa-note" alone is
+   0,1,0) and zeroing its margin-top — the note sat flush against the last
+   list item instead of reading as a separate callout. Scoping it under
+   ".qa" fixes the specificity (0,2,0) and states the actual relationship:
+   this is a note that lives inside a .qa article. */
+.qa .qa-note {
+  margin-top: 28px;
+  padding: 16px 18px;
   border-inline-start: 3px solid var(--coral);
   background: color-mix(in srgb, var(--coral) 8%, transparent);
   border-radius: 0 10px 10px 0;
-  font-size: 0.92rem;
+  font-size: 0.95em;
+  line-height: 1.6;
 }
 
 /* ---- Reviews -------------------------------------------------------------

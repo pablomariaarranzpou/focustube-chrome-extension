@@ -103,5 +103,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Valmis uuesti keskenduma? Alusta uut seanssi FocusTube hüpikaknast."
+  },
+  "helpLink": {
+    "message": "Abi"
   }
 }

@@ -6,14 +6,24 @@ const path = require('path');
 
 const ROOT = __dirname;
 const content = JSON.parse(fs.readFileSync(path.join(ROOT, 'i18n/content.json'), 'utf8'));
+const supportContent = JSON.parse(fs.readFileSync(path.join(ROOT, 'i18n/support.json'), 'utf8'));
 const template = fs.readFileSync(path.join(ROOT, 'template.html'), 'utf8');
+const supportTemplate = fs.readFileSync(path.join(ROOT, 'support/template.html'), 'utf8');
 // The extension manifest is the single source of truth for the version we advertise.
 const VERSION = JSON.parse(
   fs.readFileSync(path.join(ROOT, '..', 'manifest.json'), 'utf8')
 ).version;
 
 const DEFAULT_LOCALE = 'en';
-const SITE_ORIGIN = 'https://pablomariaarranzpou.github.io/focustube-chrome-extension';
+// The site moved to a custom domain (docs/CNAME says focustube.io) but this
+// constant was never updated, so every canonical link, hreflang tag, sitemap
+// entry, robots.txt line and og:url/og:image on every one of the 43 generated
+// pages pointed at the old GitHub Pages URL instead of the domain the site
+// actually serves from — including the support page's own canonical, the
+// extension's homepage_url, and its Help link, which all correctly say
+// focustube.io. Search engines were being told the site canonically lives
+// somewhere it doesn't.
+const SITE_ORIGIN = 'https://focustube.io';
 const STORE_URL =
   'https://chromewebstore.google.com/detail/focustube-hide-youtube-sh/bolmmhkapeekgcjopdmnbmnhgaapbpdb';
 const REPO_URL = 'https://github.com/pablomariaarranzpou/focustube-chrome-extension';
@@ -59,6 +69,25 @@ function escapeAttr(str) {
   return escapeHtml(str).replace(/"/g, '&quot;');
 }
 
+// A tiny, safe markdown for the support page's prose, where a translator
+// needs *emphasis*, **strength** and the odd `code` word but should never be
+// typing raw HTML. Escaping runs first, so the only tags that can end up in
+// the page are the ones this function introduces itself - a typo in the
+// source text can produce stray asterisks, never a broken or injected tag.
+// [text](repo) is the one inline link this content uses; repoUrl is passed in
+// rather than read from a module-level constant so this stays reusable.
+function mdInline(raw, repoUrl) {
+  let s = escapeHtml(raw);
+  s = s.replace(/`([^`]+)`/g, (_, t) => `<code>${t}</code>`);
+  s = s.replace(
+    /\[([^\]]+)\]\(repo\)/g,
+    (_, t) => `<a href="${repoUrl}" target="_blank" rel="noopener">${t}</a>`
+  );
+  s = s.replace(/\*\*([^*]+)\*\*/g, (_, t) => `<strong>${t}</strong>`);
+  s = s.replace(/\*([^*]+)\*/g, (_, t) => `<em>${t}</em>`);
+  return s;
+}
+
 // String.replace treats $& / $1 / $' in the replacement as special. Translated
 // copy is arbitrary text, so always substitute through a function to keep it literal.
 function sub(html, token, value) {
@@ -70,26 +99,36 @@ function urlFor(code) {
   return folder ? `${SITE_ORIGIN}/${folder}/` : `${SITE_ORIGIN}/`;
 }
 
+// The support page is one directory below each locale's home page.
+function urlForSupport(code) {
+  return `${urlFor(code)}support/`;
+}
+
 function hreflangFor(code) {
   const folder = FOLDERS[code];
   return folder ? folder : 'en';
 }
 
-function buildHreflangLinks() {
+// urlFn lets the same builder serve both the home page (urlFor) and the
+// support page (urlForSupport) without duplicating the hreflang logic.
+function buildHreflangLinks(urlFn) {
+  urlFn = urlFn || urlFor;
   const lines = locales.map(
-    (code) => `  <link rel="alternate" hreflang="${hreflangFor(code)}" href="${urlFor(code)}" />`
+    (code) => `  <link rel="alternate" hreflang="${hreflangFor(code)}" href="${urlFn(code)}" />`
   );
-  lines.push(`  <link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/" />`);
+  lines.push(`  <link rel="alternate" hreflang="x-default" href="${urlFn(DEFAULT_LOCALE)}" />`);
   return lines.join('\n');
 }
 
 // Builds the language-suggestion banner's client script, embedded ONLY on the
 // default (English) page. Data is the site's own hreflang tag and endonym
-// name per locale - nothing new to translate or get wrong.
-function buildLangSuggestScript() {
+// name per locale - nothing new to translate or get wrong. urlFn again lets
+// this serve either the home page or the support page.
+function buildLangSuggestScript(urlFn) {
+  urlFn = urlFn || urlFor;
   const data = locales
     .filter((code) => code !== DEFAULT_LOCALE)
-    .map((code) => ({ href: urlFor(code), tag: hreflangFor(code), name: content[code].name }));
+    .map((code) => ({ href: urlFn(code), tag: hreflangFor(code), name: content[code].name }));
 
   // </script> inside the embedded JSON would end the tag early.
   const json = JSON.stringify(data).replace(/</g, '\\u003c');
@@ -147,12 +186,18 @@ function buildLangSuggestScript() {
     })();`;
 }
 
-function buildLangOptions(currentCode, depth) {
-  const prefix = depth ? '../' : '';
+// upLevels is how many "../" reach docs/ from the page being rendered: 0 or 1
+// for a home page (docs/index.html vs docs/es/index.html), 1 or 2 for a
+// support page one directory deeper (docs/support/ vs docs/es/support/).
+// suffix appends 'support/' so the switcher lands on the same kind of page
+// in the new language instead of always jumping to the home page.
+function buildLangOptions(currentCode, upLevels, suffix) {
+  suffix = suffix || '';
+  const prefix = '../'.repeat(upLevels);
   return locales
     .map((code) => {
       const folder = FOLDERS[code];
-      const href = folder ? `${prefix}${folder}/` : `${prefix}`;
+      const href = folder ? `${prefix}${folder}/${suffix}` : `${prefix}${suffix}`;
       const selected = code === currentCode ? ' selected' : '';
       return `        <option value="${escapeAttr(href)}"${selected}>${escapeHtml(content[code].name)}</option>`;
     })
@@ -241,7 +286,7 @@ for (const code of locales) {
     '{{CTA2_TITLE}}': escapeHtml(c.c2t),
     '{{CTA2_LEAD}}': escapeHtml(c.c2l),
     '{{FOOTER_LINK}}': escapeHtml(c.flink),
-    '{{LANG_OPTIONS}}': buildLangOptions(code, !!folder),
+    '{{LANG_OPTIONS}}': buildLangOptions(code, folder ? 1 : 0),
     '{{LANG_SUGGEST_SCRIPT}}': isDefault ? buildLangSuggestScript() : '',
     '{{SPOTLIGHT_H2}}': escapeHtml(c.sph),
     '{{MH_BADGE}}': escapeHtml(c.mh.badge),
@@ -292,28 +337,147 @@ for (const code of locales) {
   console.log(`wrote ${folder ? folder + '/' : ''}index.html${isDefault ? ' (default)' : ''}`);
 }
 
+function buildSupportJsonLd(code, s) {
+  const url = urlForSupport(code);
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#page`,
+    url,
+    name: s.t,
+    description: s.d,
+    inLanguage: hreflangFor(code),
+    isPartOf: { '@id': `${urlFor(code)}#website` },
+    about: { '@id': `${urlFor(code)}#app` },
+  };
+  return JSON.stringify(data, null, 2).replace(/</g, '\\u003c');
+}
+
+// ---- One support page per locale, same loop shape as the home page above ----
+const supportLocales = Object.keys(supportContent);
+const missingSupport = locales.filter((code) => !supportLocales.includes(code));
+if (missingSupport.length) {
+  throw new Error(`docs/i18n/support.json is missing: ${missingSupport.join(', ')}`);
+}
+
+for (const code of locales) {
+  const c = content[code]; // still needed for c.name, c.nf, c.ni, theme labels, etc.
+  const s = supportContent[code];
+  const folder = FOLDERS[code];
+  const isDefault = code === DEFAULT_LOCALE;
+  // One extra directory level deeper than the home page (docs/support/ vs
+  // docs/es/support/), so this needs its own root and up-level count.
+  const root = folder ? '../../' : '../';
+  const lang = hreflangFor(code);
+
+  let html = supportTemplate;
+
+  const simple = {
+    '{{LANG}}': lang,
+    '{{DIR_ATTR}}': c.dir ? ` dir="${c.dir}"` : '',
+    '{{TITLE}}': escapeHtml(s.t),
+    '{{TITLE_ATTR}}': escapeAttr(s.t),
+    '{{DESC}}': escapeAttr(s.d),
+    '{{CANONICAL}}': urlForSupport(code),
+    '{{OG_LOCALE}}': OG_LOCALES[code] || lang,
+    '{{OG_IMAGE}}': OG_IMAGE,
+    '{{OG_IMAGE_W}}': String(OG_IMAGE_W),
+    '{{OG_IMAGE_H}}': String(OG_IMAGE_H),
+    '{{HREFLANG_LINKS}}': buildHreflangLinks(urlForSupport),
+    '{{JSONLD}}': buildSupportJsonLd(code, s),
+    '{{ROOT}}': root,
+    '{{STORE_URL}}': STORE_URL,
+    '{{REPO_URL}}': REPO_URL,
+    '{{VERSION}}': escapeHtml(VERSION),
+    '{{NAV_FEATURES}}': escapeHtml(c.nf),
+    '{{NAV_INSTALL}}': escapeHtml(c.ni),
+    '{{SKIP}}': escapeHtml(c.skip || 'Skip to content'),
+    '{{THEME_LABEL}}': escapeAttr(c.theme.label),
+    '{{THEME_LIGHT}}': escapeAttr(c.theme.light),
+    '{{THEME_DARK}}': escapeAttr(c.theme.dark),
+    '{{THEME_SYSTEM}}': escapeAttr(c.theme.system),
+    '{{LANG_OPTIONS}}': buildLangOptions(code, folder ? 2 : 1, 'support/'),
+    '{{LANG_SUGGEST_SCRIPT}}': isDefault ? buildLangSuggestScript(urlForSupport) : '',
+
+    '{{SUP_KICKER}}': escapeHtml(s.k),
+    '{{SUP_H1}}': escapeHtml(s.h1),
+    '{{SUP_LEAD}}': escapeHtml(s.lead),
+    '{{SUP_TOC}}': escapeHtml(s.toc),
+    '{{SUP_QA1_H2}}': escapeHtml(s.qa1h2),
+    '{{SUP_QA1_INTRO}}': escapeHtml(s.qa1intro),
+    '{{SUP_STEP1_H3}}': mdInline(s.steps[0].h3, REPO_URL),
+    '{{SUP_STEP1_P1}}': mdInline(s.steps[0].p[0], REPO_URL),
+    '{{SUP_STEP1_P2}}': mdInline(s.steps[0].p[1], REPO_URL),
+    '{{SUP_STEP2_H3}}': mdInline(s.steps[1].h3, REPO_URL),
+    '{{SUP_STEP2_P1}}': mdInline(s.steps[1].p[0], REPO_URL),
+    '{{SUP_STEP3_H3}}': mdInline(s.steps[2].h3, REPO_URL),
+    '{{SUP_STEP3_P1}}': mdInline(s.steps[2].p[0], REPO_URL),
+    '{{SUP_STEP3_P2}}': mdInline(s.steps[2].p[1], REPO_URL),
+    '{{SUP_STEP4_H3}}': mdInline(s.steps[3].h3, REPO_URL),
+    '{{SUP_STEP4_P1}}': mdInline(s.steps[3].p[0], REPO_URL),
+    '{{SUP_QA1_NOTE}}': mdInline(s.qa1note, REPO_URL),
+
+    '{{SUP_QA2_H2}}': escapeHtml(s.qa2h2),
+    '{{SUP_QA2_P1}}': mdInline(s.qa2p[0], REPO_URL),
+    '{{SUP_QA2_P2}}': mdInline(s.qa2p[1], REPO_URL),
+    '{{SUP_QA2_BTN}}': escapeHtml(s.qa2btn),
+
+    '{{SUP_QA3_H2}}': escapeHtml(s.qa3h2),
+    '{{SUP_QA3_P1}}': mdInline(s.qa3p[0], REPO_URL),
+
+    '{{SUP_QA4_H2}}': escapeHtml(s.qa4h2),
+    '{{SUP_QA4_P1}}': mdInline(s.qa4p[0], REPO_URL),
+    '{{SUP_QA4_P2}}': mdInline(s.qa4p[1], REPO_URL),
+
+    '{{SUP_QA5_H2}}': escapeHtml(s.qa5h2),
+    '{{SUP_QA5_P1}}': mdInline(s.qa5p[0], REPO_URL),
+    '{{SUP_QA5_BTN}}': escapeHtml(s.qa5btn),
+
+    '{{SUP_BACK}}': escapeHtml(s.back),
+  };
+
+  for (const [token, value] of Object.entries(simple)) {
+    html = sub(html, token, value);
+  }
+
+  const leftover = html.match(/{{[A-Z0-9_]+}}/g);
+  if (leftover) {
+    throw new Error(`${code} support: unreplaced placeholders: ${[...new Set(leftover)].join(', ')}`);
+  }
+
+  const outDir = folder ? path.join(ROOT, folder, 'support') : path.join(ROOT, 'support');
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'index.html'), html);
+  console.log(`wrote ${folder ? folder + '/' : ''}support/index.html${isDefault ? ' (default)' : ''}`);
+}
+
 // ---- sitemap.xml: every locale, each listing its alternates ----
 const today = new Date().toISOString().slice(0, 10);
-const urls = locales
-  .map((code) => {
-    const alts = locales
-      .map(
-        (alt) =>
-          `    <xhtml:link rel="alternate" hreflang="${hreflangFor(alt)}" href="${urlFor(alt)}" />`
-      )
-      .join('\n');
-    return [
-      '  <url>',
-      `    <loc>${urlFor(code)}</loc>`,
-      `    <lastmod>${today}</lastmod>`,
-      '    <changefreq>monthly</changefreq>',
-      `    <priority>${code === DEFAULT_LOCALE ? '1.0' : '0.8'}</priority>`,
-      alts,
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/" />`,
-      '  </url>',
-    ].join('\n');
-  })
-  .join('\n');
+
+function buildUrlEntries(urlFn, priority) {
+  return locales
+    .map((code) => {
+      const alts = locales
+        .map(
+          (alt) =>
+            `    <xhtml:link rel="alternate" hreflang="${hreflangFor(alt)}" href="${urlFn(alt)}" />`
+        )
+        .join('\n');
+      return [
+        '  <url>',
+        `    <loc>${urlFn(code)}</loc>`,
+        `    <lastmod>${today}</lastmod>`,
+        '    <changefreq>monthly</changefreq>',
+        `    <priority>${code === DEFAULT_LOCALE ? priority : '0.8'}</priority>`,
+        alts,
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFn(DEFAULT_LOCALE)}" />`,
+        '  </url>',
+      ].join('\n');
+    })
+    .join('\n');
+}
+
+const urls = buildUrlEntries(urlFor, '1.0') + '\n' + buildUrlEntries(urlForSupport, '0.6');
 
 fs.writeFileSync(
   path.join(ROOT, 'sitemap.xml'),
