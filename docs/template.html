@@ -67,8 +67,17 @@
         <img src="{{ROOT}}assets/focustube-icon.png" alt="" width="28" height="28" class="brand-icon" />
         FocusTube
       </a>
-      <nav aria-label="Main">
-        <a href="#minimalist-home">{{NAV_FEATURES}}</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="{{NAV_MENU}}">
+        <svg class="nav-toggle-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <svg class="nav-toggle-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6 6 18"/>
+        </svg>
+      </button>
+      <nav aria-label="Main" id="siteNav">
+        <a href="{{ROOT}}#minimalist-home">{{NAV_FEATURES}}</a>
+        <a href="{{ROOT}}support/">{{NAV_SUPPORT}}</a>
         <a href="{{STORE_URL}}" target="_blank" rel="noopener">{{NAV_INSTALL}}</a>
         <a href="{{REPO_URL}}" target="_blank" rel="noopener">GitHub</a>
         <div class="theme-switch" role="group" aria-label="{{THEME_LABEL}}">
@@ -652,7 +661,7 @@
     <div class="wrap">
       <span>© <span id="year">2026</span> FocusTube · v{{VERSION}}</span>
       <span>
-        <a href="{{ROOT}}support/">Support</a>
+        <a href="{{ROOT}}support/">{{NAV_SUPPORT}}</a>
         &middot;
         <a href="{{REPO_URL}}" target="_blank" rel="noopener">{{FOOTER_LINK}}</a>
       </span>
@@ -773,6 +782,43 @@
 
   document.querySelectorAll('[data-reveal], [data-reveal-words]').forEach(function (el) {
     io.observe(el);
+  });
+})();
+</script>
+
+<script>
+/* Mobile nav: a plain toggle. Closes on a link click, a click outside it, or
+   Escape - the three ways people expect a dropdown menu to close. */
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('siteNav');
+  if (!toggle || !nav) return;
+
+  function close() {
+    toggle.setAttribute('aria-expanded', 'false');
+    nav.classList.remove('is-open');
+  }
+  function open() {
+    toggle.setAttribute('aria-expanded', 'true');
+    nav.classList.add('is-open');
+  }
+
+  toggle.addEventListener('click', function () {
+    if (toggle.getAttribute('aria-expanded') === 'true') close();
+    else open();
+  });
+
+  nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) close();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (toggle.getAttribute('aria-expanded') !== 'true') return;
+    if (!nav.contains(e.target) && !toggle.contains(e.target)) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
   });
 })();
 </script>

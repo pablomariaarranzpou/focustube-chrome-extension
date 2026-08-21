@@ -79,15 +79,80 @@ header .wrap {
   border-radius: 6px;
 }
 
-nav a {
+header nav a {
   color: var(--muted);
   text-decoration: none;
   font-size: 0.95rem;
   margin-left: 24px;
 }
 
-nav a:hover {
+header nav a:hover {
   color: var(--ink);
+}
+
+/* ---- Mobile nav ------------------------------------------------------
+   Below the breakpoint, the brand, four nav links and the three theme
+   buttons no longer fit on one line — they were left to wrap on their own,
+   which is what read as "todo muy junto". The toggle turns the same nav
+   into a full-width dropdown instead of a second cramped row. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.nav-toggle-close { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-open { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-close { display: block; }
+
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  header .wrap {
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    display: none;
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  header nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  header nav a {
+    margin-left: 0;
+    padding: 11px 4px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  header nav a:hover {
+    background: color-mix(in srgb, var(--ink) 6%, transparent);
+  }
+
+  header nav .theme-switch {
+    margin-inline-start: 0;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
 }
 
 /* Hero */
