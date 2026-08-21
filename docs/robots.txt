@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pablomariaarranzpou.github.io/focustube-chrome-extension/sitemap.xml
+Sitemap: https://focustube.io/sitemap.xml
