@@ -2135,9 +2135,86 @@ footer a:hover {
    caps its lead at a different width from the body copy. The result was five
    different left edges down one page (27 / 140 / 187 / 233 / 263px) and a
    67px headline on what is a help document. One column, one edge, one scale. */
+/* On a wide screen a lone centred column reads as a strip with the page empty
+   either side. The margin becomes an index instead: it fills the space with
+   something useful and lets people jump straight to their problem. */
+.support-grid {
+  display: block;
+}
+
+@media (min-width: 1180px) {
+  .support .wrap.support-grid {
+    display: grid;
+    grid-template-columns: 232px minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+    max-width: min(94vw, 1120px);
+  }
+
+  .support-toc {
+    position: sticky;
+    top: 32px;
+    font-size: 0.86rem;
+  }
+}
+
+.support-toc {
+  display: none;
+}
+
+@media (min-width: 1180px) {
+  .support-toc { display: block; }
+}
+
+.support-toc-title {
+  margin: 0 0 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.support-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+  border-inline-start: 2px solid var(--border);
+}
+
+.support-toc a {
+  display: block;
+  padding: 7px 14px;
+  margin-inline-start: -2px;
+  border-inline-start: 2px solid transparent;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.support-toc a:hover {
+  color: var(--ink);
+  border-inline-start-color: var(--border);
+}
+
 .support-hero,
 .support {
-  --support-col: 680px;
+  /* Both the type and the column grow with the viewport. A column fixed in
+     pixels is a thin ribbon on a 27in screen: the line length stays the same
+     while everything around it gets bigger, which is what makes it read as a
+     poem rather than a document. Sized in ch so the line length in characters
+     stays constant while the column widens. */
+  font-size: clamp(1rem, 0.88rem + 0.5vw, 1.35rem);
+  --support-col: min(92vw, 70ch);
+}
+
+.support p,
+.support li,
+.support-hero p.lead {
+  font-size: inherit;
 }
 
 /* .hero sets text-align: start for the landing layout and comes later in the
@@ -2162,7 +2239,7 @@ footer a:hover {
 
 .support-hero h1 {
   /* A help page is read, not pitched: nowhere near the hero's 67px. */
-  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   max-width: 20ch;
@@ -2199,7 +2276,7 @@ footer a:hover {
 }
 
 .qa h2 {
-  font-size: 1.35rem;
+  font-size: 1.5em;
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.25;
@@ -2591,7 +2668,7 @@ main > section > .wrap > h2,
 }
 
 .qa-lead .steps h3 {
-  font-size: 1.02rem;
+  font-size: 1.08em;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.4;
@@ -2599,7 +2676,7 @@ main > section > .wrap > h2,
 }
 
 .qa-lead .steps p {
-  font-size: 0.95rem;
+  font-size: 0.95em;
   line-height: 1.7;
   text-wrap: pretty;
   margin: 0 0 10px;

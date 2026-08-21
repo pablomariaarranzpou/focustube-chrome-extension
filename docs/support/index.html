@@ -36,9 +36,20 @@
   </section>
 
   <section class="support">
-    <div class="wrap">
+    <div class="wrap support-grid">
+      <nav class="support-toc" aria-label="On this page">
+        <p class="support-toc-title">On this page</p>
+        <ul>
+          <li><a href="#nothing-hidden">Nothing is being hidden</a></li>
+          <li><a href="#stopped-working">A setting used to work and suddenly stopped</a></li>
+          <li><a href="#pause-it">You want the normal YouTube back for a bit</a></li>
+          <li><a href="#what-it-sees">What FocusTube can see</a></li>
+          <li><a href="#still-stuck">Still stuck</a></li>
+        </ul>
+      </nav>
+      <div class="support-body">
 
-      <article class="qa qa-lead">
+      <article id="nothing-hidden" class="qa qa-lead">
         <h2>Nothing is being hidden</h2>
         <p>Almost always one of these four, in this order.</p>
 
@@ -69,30 +80,31 @@
         <p class="qa-note">If you just want it on permanently and never want to think about this again, set the mode to <strong>Always</strong>.</p>
       </article>
 
-      <article class="qa">
+      <article id="stopped-working" class="qa">
         <h2>A setting used to work and suddenly stopped</h2>
         <p>YouTube changes its own page structure fairly often, and a change on their side can stop one of the toggles from finding what it is meant to hide. This is the most likely cause when a single feature breaks while the rest keep working.</p>
         <p>It is worth reporting rather than waiting — these are usually quick to fix once someone knows which part of YouTube changed. Include what you were looking at and which toggle stopped working.</p>
         <p><a class="btn btn-primary" href="https://github.com/pablomariaarranzpou/focustube-chrome-extension/issues/new" target="_blank" rel="noopener">Report it on GitHub</a></p>
       </article>
 
-      <article class="qa">
+      <article id="pause-it" class="qa">
         <h2>You want the normal YouTube back for a bit</h2>
         <p>You do not have to uninstall or switch anything off one by one. Open the popup, go to <strong>Mode</strong>, and choose <strong>Off</strong>. Everything on YouTube shows again, and all your settings and blocklists stay exactly as you left them for when you switch back.</p>
       </article>
 
-      <article class="qa">
+      <article id="what-it-sees" class="qa">
         <h2>What FocusTube can see</h2>
         <p>It runs only on YouTube pages, and asks for two permissions: <code>storage</code>, to remember your settings, and <code>alarms</code>, for Focus Mode timers and schedules. There is no account, nothing is sent anywhere, and nothing about your browsing is collected.</p>
         <p>The whole extension is open source, so this is checkable rather than a promise — <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank" rel="noopener">read the code</a>.</p>
       </article>
 
-      <article class="qa">
+      <article id="still-stuck" class="qa">
         <h2>Still stuck</h2>
         <p>Open an issue on GitHub and describe what you expected and what happened instead. Mentioning your browser version and whether you are on Windows, macOS or Linux usually saves a round trip.</p>
         <p><a class="btn btn-secondary" href="https://github.com/pablomariaarranzpou/focustube-chrome-extension/issues" target="_blank" rel="noopener">Open an issue</a></p>
       </article>
 
+      </div>
     </div>
   </section>
 </main>
