@@ -274,19 +274,25 @@
 </script>
 
 <script>
-/* Google Ads click conversion: fires when someone follows a link off this
-   site to the Chrome Web Store. This is the closest thing to "clicked
-   install" that a page we own can ever measure - the actual install click
-   happens on Google's own store page, which nothing outside it can see.
-   AW-18403194353/CONVERSION_LABEL: create a "Website" > "Click" conversion
-   action in Google Ads pointing at focustube.io, then paste its label
-   (looks like AbCdEfGhIj1234) in place of CONVERSION_LABEL below. Until
-   then this is inert - gtag silently drops a malformed send_to. */
+/* Google Ads conversion: fires when someone follows a link off this site to
+   the Chrome Web Store. This is the closest thing to "clicked install" that
+   a page we own can ever measure - the actual install click happens on
+   Google's own store page, which nothing outside it can see.
+   The action itself is set up in Google Ads as a "Page view" type, not
+   "Click" - that only changes how Google's dashboard labels and reports it,
+   not what fires it; gtag has no idea which category an action was created
+   under, it just runs the event whenever this code calls it. Firing it here,
+   on the actual click rather than on any page loading, is what keeps this
+   an honest signal instead of counting every visitor as a conversion. */
 (function () {
   document.addEventListener('click', function (e) {
     var a = e.target.closest('a[href*="chromewebstore.google.com"]');
     if (!a || typeof gtag !== 'function') return;
-    gtag('event', 'conversion', { send_to: 'AW-18403194353/CONVERSION_LABEL' });
+    gtag('event', 'conversion', {
+      send_to: 'AW-18403194353/8XFBCPmQ0-UcEPHrqcdE',
+      value: 1.0,
+      currency: 'EUR'
+    });
   });
 })();
 </script>
