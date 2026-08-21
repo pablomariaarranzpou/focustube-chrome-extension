@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Redo att koncentrera dig igen? Starta ett nytt pass från FocusTube-popupen."
+  },
+  "helpLink": {
+    "message": "Hjälp"
   }
 }

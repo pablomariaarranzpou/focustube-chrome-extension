@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Uko tayari kujielekeza tena? Anzisha kipindi kipya kutoka kwenye popup ya FocusTube."
+  },
+  "helpLink": {
+    "message": "Msaada"
   }
 }

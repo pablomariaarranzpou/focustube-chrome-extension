@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "また集中する準備はできましたか？FocusTubeのポップアップから新しいセッションを開始してください。"
+  },
+  "helpLink": {
+    "message": "ヘルプ"
   }
 }

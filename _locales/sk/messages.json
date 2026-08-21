@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Pripravení sústrediť sa znova? Spustite novú reláciu vo vyskakovacom okne FocusTube."
+  },
+  "helpLink": {
+    "message": "Pomoc"
   }
 }

@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "ફરીથી ફોકસ કરવા તૈયાર છો? FocusTube પોપઅપમાંથી નવું સેશન શરૂ કરો."
+  },
+  "helpLink": {
+    "message": "મદદ"
   }
 }

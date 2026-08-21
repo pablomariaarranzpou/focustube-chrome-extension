@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "ಮತ್ತೆ ಏಕಾಗ್ರತೆ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ? FocusTube ಪಾಪ್‌ಅಪ್‌ನಿಂದ ಹೊಸ ಸೆಶನ್ ಪ್ರಾರಂಭಿಸಿ."
+  },
+  "helpLink": {
+    "message": "ಸಹಾಯ"
   }
 }

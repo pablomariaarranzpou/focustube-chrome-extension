@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "እንደገና ለማተኮር ተዘጋጅተዋል? ከFocusTube ብቅ ባይ አዲስ ክፍለ ጊዜ ይጀምሩ።"
+  },
+  "helpLink": {
+    "message": "እገዛ"
   }
 }

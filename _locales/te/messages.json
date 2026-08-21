@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "మళ్లీ దృష్టి పెట్టడానికి సిద్ధమేనా? FocusTube పాప్అప్ నుండి కొత్త సెషన్ ప్రారంభించండి."
+  },
+  "helpLink": {
+    "message": "సహాయం"
   }
 }

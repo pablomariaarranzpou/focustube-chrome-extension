@@ -139,5 +139,8 @@
   },
   "breakEndNotificationBody": {
     "message": "Gatavi atkal koncentrēties? Sāciet jaunu sesiju no FocusTube uznirstošā loga."
+  },
+  "helpLink": {
+    "message": "Palīdzība"
   }
 }

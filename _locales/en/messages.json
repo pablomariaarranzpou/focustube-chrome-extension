@@ -1,140 +1,143 @@
 {
-    "extensionName": {
-        "message": "FocusTube - Hide YouTube Shorts, Recommendations, Suggestions & Block Words"
-    },
-    "extensionDescription": {
-        "message": "Hide YouTube Shorts, recommendations, suggestions, and comments. Block channels and words. The ultimate distraction-free tool."
-    },
-    "hideShorts": {
-        "message": "Hide Shorts"
-    },
-    "hideSuggestions": {
-        "message": "Hide Suggestions"
-    },
-    "hideComments": {
-        "message": "Hide Comments"
-    },
-    "hideBlacklistedChannels": {
-        "message": "Hide Blacklisted Channels"
-    },
-    "hideBlacklistedWords": {
-        "message": "Hide Blacklisted Words"
-    },
-    "minimalistHome": {
-        "message": "Minimalist Home Page"
-    },
-    "disableAutoplay": {
-        "message": "Disable Autoplay"
-    },
-    "hideSidebar": {
-        "message": "Hide Sidebar"
-    },
-    "keepHistoryVisible": {
-        "message": "Keep History visible"
-    },
-    "quickBlacklistButton": {
-        "message": "Show quick block button in feed"
-    },
-    "editBlacklistedChannels": {
-        "message": "Edit Blacklisted Channels"
-    },
-    "concentrationModeBlacklist": {
-        "message": "Concentration Mode Blacklist"
-    },
-    "channelNamePlaceholder": {
-        "message": "Channel Name"
-    },
-    "add": {
-        "message": "Add"
-    },
-    "editBlacklistedWords": {
-        "message": "Edit Blacklisted Words"
-    },
-    "concentrationModeBlacklistWords": {
-        "message": "Concentration Mode Blacklist Words"
-    },
-    "wordPlaceholder": {
-        "message": "Ex: Gaming"
-    },
-    "tabSettings": {
-        "message": "Settings"
-    },
-    "tabFocusMode": {
-        "message": "Mode"
-    },
-    "focusModeOff": {
-        "message": "Off"
-    },
-    "focusModeAlways": {
-        "message": "Always"
-    },
-    "focusModeTimerMode": {
-        "message": "Timer"
-    },
-    "focusModeScheduleMode": {
-        "message": "Schedule"
-    },
-    "focusModeOffDescription": {
-        "message": "FocusTube is paused - everything on YouTube shows, no matter what's in Settings."
-    },
-    "focusModeAlwaysDescription": {
-        "message": "Your Settings apply all the time."
-    },
-    "focusDurationLabel": {
-        "message": "Focus (minutes)"
-    },
-    "breakDurationLabel": {
-        "message": "Break (minutes)"
-    },
-    "startFocusSession": {
-        "message": "Start Focus Session"
-    },
-    "stopFocusSession": {
-        "message": "Stop"
-    },
-    "focusPhaseLabel": {
-        "message": "Focusing"
-    },
-    "breakPhaseLabel": {
-        "message": "On break"
-    },
-    "dayMon": {
-        "message": "Mon"
-    },
-    "dayTue": {
-        "message": "Tue"
-    },
-    "dayWed": {
-        "message": "Wed"
-    },
-    "dayThu": {
-        "message": "Thu"
-    },
-    "dayFri": {
-        "message": "Fri"
-    },
-    "daySat": {
-        "message": "Sat"
-    },
-    "daySun": {
-        "message": "Sun"
-    },
-    "scheduleRemoveButton": {
-        "message": "Remove"
-    },
-    "noScheduleBlocksMessage": {
-        "message": "No recurring blocks yet"
-    },
-    "focusEndNotificationTitle": {
-        "message": "Focus session ended"
-    },
-    "focusEndNotificationBody": {
-        "message": "Your focus session has ended."
-    },
-    "breakEndNotificationTitle": {
-        "message": "Break's over"
-    },
-    "breakEndNotificationBody": {
-        "message": "Ready to focus again? Start a new session from the FocusTube popup."
-    }
+  "extensionName": {
+    "message": "FocusTube - Hide YouTube Shorts, Recommendations, Suggestions & Block Words"
+  },
+  "extensionDescription": {
+    "message": "Hide YouTube Shorts, recommendations, suggestions, and comments. Block channels and words. The ultimate distraction-free tool."
+  },
+  "hideShorts": {
+    "message": "Hide Shorts"
+  },
+  "hideSuggestions": {
+    "message": "Hide Suggestions"
+  },
+  "hideComments": {
+    "message": "Hide Comments"
+  },
+  "hideBlacklistedChannels": {
+    "message": "Hide Blacklisted Channels"
+  },
+  "hideBlacklistedWords": {
+    "message": "Hide Blacklisted Words"
+  },
+  "minimalistHome": {
+    "message": "Minimalist Home Page"
+  },
+  "disableAutoplay": {
+    "message": "Disable Autoplay"
+  },
+  "hideSidebar": {
+    "message": "Hide Sidebar"
+  },
+  "keepHistoryVisible": {
+    "message": "Keep History visible"
+  },
+  "quickBlacklistButton": {
+    "message": "Show quick block button in feed"
+  },
+  "editBlacklistedChannels": {
+    "message": "Edit Blacklisted Channels"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Concentration Mode Blacklist"
+  },
+  "channelNamePlaceholder": {
+    "message": "Channel Name"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "editBlacklistedWords": {
+    "message": "Edit Blacklisted Words"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Concentration Mode Blacklist Words"
+  },
+  "wordPlaceholder": {
+    "message": "Ex: Gaming"
+  },
+  "tabSettings": {
+    "message": "Settings"
+  },
+  "tabFocusMode": {
+    "message": "Mode"
+  },
+  "focusModeOff": {
+    "message": "Off"
+  },
+  "focusModeAlways": {
+    "message": "Always"
+  },
+  "focusModeTimerMode": {
+    "message": "Timer"
+  },
+  "focusModeScheduleMode": {
+    "message": "Schedule"
+  },
+  "focusModeOffDescription": {
+    "message": "FocusTube is paused - everything on YouTube shows, no matter what's in Settings."
+  },
+  "focusModeAlwaysDescription": {
+    "message": "Your Settings apply all the time."
+  },
+  "focusDurationLabel": {
+    "message": "Focus (minutes)"
+  },
+  "breakDurationLabel": {
+    "message": "Break (minutes)"
+  },
+  "startFocusSession": {
+    "message": "Start Focus Session"
+  },
+  "stopFocusSession": {
+    "message": "Stop"
+  },
+  "focusPhaseLabel": {
+    "message": "Focusing"
+  },
+  "breakPhaseLabel": {
+    "message": "On break"
+  },
+  "dayMon": {
+    "message": "Mon"
+  },
+  "dayTue": {
+    "message": "Tue"
+  },
+  "dayWed": {
+    "message": "Wed"
+  },
+  "dayThu": {
+    "message": "Thu"
+  },
+  "dayFri": {
+    "message": "Fri"
+  },
+  "daySat": {
+    "message": "Sat"
+  },
+  "daySun": {
+    "message": "Sun"
+  },
+  "scheduleRemoveButton": {
+    "message": "Remove"
+  },
+  "noScheduleBlocksMessage": {
+    "message": "No recurring blocks yet"
+  },
+  "focusEndNotificationTitle": {
+    "message": "Focus session ended"
+  },
+  "focusEndNotificationBody": {
+    "message": "Your focus session has ended."
+  },
+  "breakEndNotificationTitle": {
+    "message": "Break's over"
+  },
+  "breakEndNotificationBody": {
+    "message": "Ready to focus again? Start a new session from the FocusTube popup."
+  },
+  "helpLink": {
+    "message": "Help"
+  }
 }
