@@ -109,8 +109,16 @@ class PopupController {
       ta: 'ta', te: 'te', tr: 'tr',
     };
 
+    // getUILanguage() reports the browser's actual locale, which is often
+    // more specific than anything in _locales/ - a browser set to Mexican
+    // or Argentinian Spanish reports "es-MX" / "es-AR", not "es". Chrome's
+    // own chrome.i18n.getMessage() falls back to the base language in that
+    // case (which is why the popup's own text was already correctly in
+    // Spanish); an exact-only lookup here missed that and fell through to
+    // English every time, even though everything else on screen was right.
     const uiLang = (chrome.i18n.getUILanguage() || '').toLowerCase();
-    const folder = SITE_FOLDER[uiLang];
+    const base = uiLang.split('-')[0];
+    const folder = SITE_FOLDER[uiLang] || SITE_FOLDER[base];
     helpLink.href = folder
       ? `https://focustube.io/${folder}/support/`
       : 'https://focustube.io/support/';
