@@ -63,7 +63,7 @@ class PopupController {
     // Set up UI localization
     this.localizeUI();
 
-    this.setupLanguageSelector();
+    this.setupLanguagePicker();
 
     // Tabs: Settings / Focus Mode
     this.setupTabs();
@@ -200,42 +200,102 @@ class PopupController {
   }
 
   /**
-   * Populate and wire the manual language picker. "Auto" (empty value)
-   * clears the override and falls back to Chrome's own detected language;
-   * anything else stores the chosen locale and reloads the popup so every
-   * string - including ones rendered by code this method has no reach into
-   * (blacklist items, schedule blocks, mode descriptions) - re-renders from
-   * a clean, consistent state rather than being patched in place one at a
-   * time and risking something being missed.
+   * Which language is actually showing right now: the manual override if
+   * one is set, otherwise whatever Chrome auto-detected - resolved the same
+   * way chrome.i18n itself resolves it (exact match, then base language,
+   * then English), so this never disagrees with what the popup's own text
+   * is doing. Case-insensitive and hyphen/underscore-insensitive because
+   * getUILanguage() returns e.g. "pt-BR" while LANGUAGE_NAMES is keyed
+   * "pt_BR" (the _locales/ folder's own capitalization).
    */
-  setupLanguageSelector() {
-    const select = document.getElementById('langOverrideSelect');
-    if (!select) return;
+  resolveActiveLocale() {
+    if (this._overrideCode) return this._overrideCode;
 
-    const autoOption = document.createElement('option');
-    autoOption.value = '';
-    autoOption.textContent = 'Auto';
-    select.appendChild(autoOption);
+    if (!this._localeLookup) {
+      this._localeLookup = {};
+      Object.keys(LANGUAGE_NAMES).forEach(code => {
+        this._localeLookup[code.toLowerCase()] = code;
+      });
+    }
+
+    const raw = (chrome.i18n.getUILanguage() || 'en').toLowerCase().replace('-', '_');
+    if (this._localeLookup[raw]) return this._localeLookup[raw];
+    const base = raw.split('_')[0];
+    if (this._localeLookup[base]) return this._localeLookup[base];
+    return 'en';
+  }
+
+  /**
+   * A flag icon if one exists for this locale, or the globe fallback -
+   * Catalan has no flag (see flagIcons.js) and any future locale without
+   * one gets the same graceful fallback rather than a broken image.
+   */
+  flagOrGlobeIcon(code) {
+    if (typeof FLAG_ICONS !== 'undefined' && FLAG_ICONS[code]) return FLAG_ICONS[code];
+    return '<svg class="fallback-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>';
+  }
+
+  /**
+   * Build and wire the corner language picker: a trigger button showing the
+   * active language's flag, and a popover panel listing every language.
+   * There is no separate "Auto" entry - the language already highlighted in
+   * the list *is* whatever's currently showing (detected or overridden), so
+   * there's only ever one answer to "what language is this", never a picker
+   * that can disagree with the page around it. Picking a different language
+   * stores it and reloads the popup, so every string re-renders from a
+   * clean state, including ones this method has no direct reach into
+   * (blacklist items, schedule blocks, mode descriptions).
+   */
+  setupLanguagePicker() {
+    const trigger = document.getElementById('langPickerTrigger');
+    const panel = document.getElementById('langPickerPanel');
+    if (!trigger || !panel) return;
+
+    const activeCode = this.resolveActiveLocale();
+
+    trigger.innerHTML = `<span class="flag-icon">${this.flagOrGlobeIcon(activeCode)}</span>`;
+
+    const resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.id = 'langPickerReset';
+    resetBtn.textContent = this.getMsg('languagePickerReset') || 'Use system language';
+    resetBtn.addEventListener('click', async () => {
+      await this.storage.remove(['ft_lang_override']);
+      window.location.reload();
+    });
+    panel.appendChild(resetBtn);
 
     Object.entries(LANGUAGE_NAMES).forEach(([code, name]) => {
-      const option = document.createElement('option');
-      option.value = code;
-      option.textContent = name;
-      select.appendChild(option);
-    });
-
-    this.storage.get(['ft_lang_override']).then(result => {
-      select.value = result.ft_lang_override || '';
-    });
-
-    select.addEventListener('change', async () => {
-      const code = select.value;
-      if (code) {
+      const option = document.createElement('button');
+      option.type = 'button';
+      option.className = 'lang-option' + (code === activeCode ? ' is-active' : '');
+      option.innerHTML = `<span class="flag-icon">${this.flagOrGlobeIcon(code)}</span><span>${name}</span>`;
+      option.addEventListener('click', async () => {
+        if (code === activeCode) { close(); return; }
         await this.storage.set({ ft_lang_override: code });
-      } else {
-        await this.storage.remove(['ft_lang_override']);
-      }
-      window.location.reload();
+        window.location.reload();
+      });
+      panel.appendChild(option);
+    });
+
+    function open() {
+      panel.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+    function close() {
+      panel.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (panel.classList.contains('is-open')) close(); else open();
+    });
+    document.addEventListener('click', (e) => {
+      if (panel.classList.contains('is-open') && !panel.contains(e.target) && e.target !== trigger) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
     });
   }
 

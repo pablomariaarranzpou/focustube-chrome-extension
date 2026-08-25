@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTube-ஐ மதிப்பிடுங்கள்"
+  },
+  "languagePickerReset": {
+    "message": "உலாவி மொழியைப் பயன்படுத்து"
   }
 }

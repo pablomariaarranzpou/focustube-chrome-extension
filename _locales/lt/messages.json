@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Įvertinkite FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Naudoti naršyklės kalbą"
   }
 }

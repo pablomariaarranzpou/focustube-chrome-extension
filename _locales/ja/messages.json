@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTubeを評価"
+  },
+  "languagePickerReset": {
+    "message": "ブラウザの言語を使用"
   }
 }

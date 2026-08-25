@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Beoordeel FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Browsertaal gebruiken"
   }
 }

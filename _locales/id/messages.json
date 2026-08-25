@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Beri Nilai FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Gunakan bahasa browser"
   }
 }

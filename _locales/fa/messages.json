@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "امتیاز به FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "استفاده از زبان مرورگر"
   }
 }

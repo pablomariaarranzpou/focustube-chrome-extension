@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Értékeld a FocusTube-ot"
+  },
+  "languagePickerReset": {
+    "message": "Böngésző nyelvének használata"
   }
 }

@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ን ደረጃ ይስጡ"
+  },
+  "languagePickerReset": {
+    "message": "የአሳሽ ቋንቋ ይጠቀሙ"
   }
 }

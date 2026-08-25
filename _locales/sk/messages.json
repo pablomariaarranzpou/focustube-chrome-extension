@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Ohodnoťte FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Použiť jazyk prehliadača"
   }
 }
