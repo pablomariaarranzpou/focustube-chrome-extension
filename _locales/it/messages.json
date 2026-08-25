@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Usa la lingua del browser"
+  },
+  "modeGateBannerOff": {
+    "message": "La Modalità Concentrazione è disattivata: le Impostazioni non vengono applicate a YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Il Timer non ha nessuna sessione in corso: le Impostazioni non sono ancora applicate."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Sei in pausa: le Impostazioni sono sospese finché non finisce."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Sei fuori dall'orario attivo del tuo Orario: le Impostazioni non sono applicate al momento."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Passa a Sempre"
   }
 }

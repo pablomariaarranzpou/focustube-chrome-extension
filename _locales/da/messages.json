@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Brug browsersprog"
+  },
+  "modeGateBannerOff": {
+    "message": "Fokustilstand er slået fra: Indstillinger anvendes ikke på YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Timeren har ingen aktiv session: Indstillinger anvendes endnu ikke."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Du holder pause: Indstillinger er sat på pause, indtil den slutter."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Du er uden for din Tidsplans aktive timer: Indstillinger anvendes ikke lige nu."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Skift til Altid"
   }
 }

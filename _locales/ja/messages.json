@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "ブラウザの言語を使用"
+  },
+  "modeGateBannerOff": {
+    "message": "集中モードがオフです。設定はYouTubeに適用されません。"
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "タイマーのセッションが実行されていません。設定はまだ適用されていません。"
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "休憩中です。終了するまで設定は一時停止されます。"
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "スケジュールの有効時間外です。現在、設定は適用されていません。"
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "常時に切り替える"
   }
 }

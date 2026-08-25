@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "브라우저 언어 사용"
+  },
+  "modeGateBannerOff": {
+    "message": "포커스 모드가 꺼져 있습니다. 설정이 YouTube에 적용되지 않습니다."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "실행 중인 타이머 세션이 없습니다. 설정이 아직 적용되지 않습니다."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "휴식 중입니다. 끝날 때까지 설정이 일시 중지됩니다."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "일정의 활성 시간이 아닙니다. 지금은 설정이 적용되지 않습니다."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "항상으로 전환"
   }
 }

@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Use browser language"
+  },
+  "modeGateBannerOff": {
+    "message": "Focus Mode is off - Settings aren't applied to YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Timer mode has no session running - Settings aren't applied yet."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "You're on a break - Settings are paused until it ends."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Outside your Schedule's active hours - Settings aren't applied right now."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Switch to Always"
   }
 }

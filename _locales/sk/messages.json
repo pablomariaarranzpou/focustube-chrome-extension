@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Použiť jazyk prehliadača"
+  },
+  "modeGateBannerOff": {
+    "message": "Režim sústredenia je vypnutý: Nastavenia sa na YouTube neuplatňujú."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Časovač nemá spustené žiadne sedenie: Nastavenia sa zatiaľ neuplatňujú."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Máte prestávku: Nastavenia sú pozastavené, kým sa neskončí."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Ste mimo aktívnych hodín vášho Plánu: Nastavenia sa teraz neuplatňujú."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Prepnúť na Vždy"
   }
 }

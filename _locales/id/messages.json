@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Gunakan bahasa browser"
+  },
+  "modeGateBannerOff": {
+    "message": "Mode Fokus nonaktif: Pengaturan tidak diterapkan ke YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Timer tidak memiliki sesi yang berjalan: Pengaturan belum diterapkan."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Anda sedang istirahat: Pengaturan dijeda sampai selesai."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Anda berada di luar jam aktif Jadwal Anda: Pengaturan tidak diterapkan saat ini."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Beralih ke Selalu"
   }
 }

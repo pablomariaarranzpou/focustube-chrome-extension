@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Böngésző nyelvének használata"
+  },
+  "modeGateBannerOff": {
+    "message": "A Fókusz mód ki van kapcsolva: a Beállítások nem érvényesülnek a YouTube-on."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Az Időzítőnek nincs futó munkamenete: a Beállítások még nem érvényesülnek."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Szünetben vagy: a Beállítások szüneteltetve vannak, amíg véget nem ér."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Az Ütemezés aktív óráin kívül vagy: a Beállítások jelenleg nem érvényesülnek."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Váltás Mindig módra"
   }
 }

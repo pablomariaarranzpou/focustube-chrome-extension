@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Guna bahasa pelayar"
+  },
+  "modeGateBannerOff": {
+    "message": "Mod Fokus dimatikan: Tetapan tidak dikenakan pada YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Pemasa tiada sesi yang sedang berjalan: Tetapan belum dikenakan lagi."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Anda sedang berehat: Tetapan dijeda sehingga ia tamat."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Anda berada di luar waktu aktif Jadual anda: Tetapan tidak dikenakan sekarang."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Tukar kepada Sentiasa"
   }
 }

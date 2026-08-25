@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Folosește limba browserului"
+  },
+  "modeGateBannerOff": {
+    "message": "Modul Concentrare este oprit: Setările nu se aplică pe YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Cronometrul nu are nicio sesiune activă: Setările nu sunt încă aplicate."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Ești în pauză: Setările sunt întrerupte până se termină."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Ești în afara orelor active ale Programului: Setările nu se aplică acum."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Comută la Mereu"
   }
 }

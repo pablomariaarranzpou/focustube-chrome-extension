@@ -145,5 +145,20 @@
   },
   "languagePickerReset": {
     "message": "Utilitza l'idioma del navegador"
+  },
+  "modeGateBannerOff": {
+    "message": "El Mode de Concentració està apagat: la Configuració no s'aplica a YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "El Temporitzador no té cap sessió en marxa: la Configuració encara no s'aplica."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Ets en descans: la Configuració està en pausa fins que acabi."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Ets fora de l'horari actiu: la Configuració no s'aplica ara mateix."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Canvia a Sempre"
   }
 }

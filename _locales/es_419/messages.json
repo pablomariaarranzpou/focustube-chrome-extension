@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Usar idioma del navegador"
+  },
+  "modeGateBannerOff": {
+    "message": "El Modo Concentración está apagado: la Configuración no se aplica en YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "El Timer no tiene ninguna sesión en curso: la Configuración aún no se aplica."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Estás en un descanso: la Configuración está en pausa hasta que termine."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Estás fuera del horario activo: la Configuración no se aplica en este momento."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Cambiar a Siempre"
   }
 }

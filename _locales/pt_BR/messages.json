@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Usar idioma do navegador"
+  },
+  "modeGateBannerOff": {
+    "message": "O Modo Foco está desligado: as Configurações não são aplicadas ao YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "O Timer não tem nenhuma sessão em andamento: as Configurações ainda não são aplicadas."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Você está em uma pausa: as Configurações ficam pausadas até ela terminar."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Você está fora do horário ativo do seu Horário: as Configurações não são aplicadas agora."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Mudar para Sempre"
   }
 }

@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "Bruk nettleserspråk"
+  },
+  "modeGateBannerOff": {
+    "message": "Fokusmodus er av: Innstillinger blir ikke brukt på YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Tidtakeren har ingen økt i gang: Innstillinger blir ikke brukt ennå."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Du har pause: Innstillinger er satt på pause til den er over."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Du er utenfor Tidsplanens aktive timer: Innstillinger blir ikke brukt akkurat nå."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Bytt til Alltid"
   }
 }

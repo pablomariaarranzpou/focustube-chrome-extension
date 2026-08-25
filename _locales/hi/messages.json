@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "ब्राउज़र की भाषा उपयोग करें"
+  },
+  "modeGateBannerOff": {
+    "message": "फ़ोकस मोड बंद है: सेटिंग्स YouTube पर लागू नहीं होतीं।"
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "टाइमर का कोई सेशन नहीं चल रहा: सेटिंग्स अभी लागू नहीं हुई हैं।"
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "आप ब्रेक पर हैं: ब्रेक खत्म होने तक सेटिंग्स रुकी हुई हैं।"
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "आप अपने शेड्यूल के सक्रिय समय से बाहर हैं: सेटिंग्स अभी लागू नहीं हो रहीं।"
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "हमेशा पर स्विच करें"
   }
 }

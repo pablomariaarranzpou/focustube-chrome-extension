@@ -148,5 +148,20 @@
   },
   "languagePickerReset": {
     "message": "استفاده از زبان مرورگر"
+  },
+  "modeGateBannerOff": {
+    "message": "حالت تمرکز خاموش است: تنظیمات در YouTube اعمال نمی‌شود."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "هیچ جلسه‌ای از تایمر در حال اجرا نیست: تنظیمات هنوز اعمال نشده است."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "شما در حال استراحت هستید: تنظیمات تا پایان آن متوقف است."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "شما خارج از ساعات فعال برنامه هستید: تنظیمات اکنون اعمال نمی‌شود."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "تغییر به همیشه"
   }
 }
