@@ -8,11 +8,23 @@
   "hideShorts": {
     "message": "Peida Shorts"
   },
+  "hideSuggestions": {
+    "message": "Peida soovitused"
+  },
   "hideComments": {
     "message": "Peida Kommentaarid"
   },
+  "hideBlacklistedChannels": {
+    "message": "Peida blokeeritud kanalid"
+  },
+  "hideBlacklistedWords": {
+    "message": "Peida blokeeritud sõnad"
+  },
   "minimalistHome": {
     "message": "Minimalistlik Avaleht"
+  },
+  "disableAutoplay": {
+    "message": "Keela automaatesitus"
   },
   "hideSidebar": {
     "message": "Peida Külgriba"
@@ -22,6 +34,27 @@
   },
   "quickBlacklistButton": {
     "message": "Kuva kiire blokeerimise nupp voos"
+  },
+  "editBlacklistedChannels": {
+    "message": "Muuda blokeeritud kanaleid"
+  },
+  "concentrationModeBlacklist": {
+    "message": "Blokeeritud kanalid"
+  },
+  "channelNamePlaceholder": {
+    "message": "Kanali nimi"
+  },
+  "add": {
+    "message": "Lisa"
+  },
+  "editBlacklistedWords": {
+    "message": "Muuda blokeeritud sõnu"
+  },
+  "concentrationModeBlacklistWords": {
+    "message": "Blokeeritud sõnad"
+  },
+  "wordPlaceholder": {
+    "message": "Nt: Mängud"
   },
   "tabSettings": {
     "message": "Seaded"
