@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Novērtējiet FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Izmantot pārlūkprogrammas valodu"
   }
 }

@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Αξιολογήστε το FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Χρήση γλώσσας περιηγητή"
   }
 }

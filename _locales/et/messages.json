@@ -109,5 +109,8 @@
   },
   "rateFocusTube": {
     "message": "Hinda FocusTubet"
+  },
+  "languagePickerReset": {
+    "message": "Kasuta brauseri keelt"
   }
 }

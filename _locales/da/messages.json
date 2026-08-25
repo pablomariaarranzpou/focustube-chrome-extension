@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Bedøm FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Brug browsersprog"
   }
 }

@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTube को रेट करें"
+  },
+  "languagePickerReset": {
+    "message": "ब्राउज़र की भाषा उपयोग करें"
   }
 }

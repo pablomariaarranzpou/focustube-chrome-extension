@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "قيّم FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "استخدام لغة المتصفح"
   }
 }

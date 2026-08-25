@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTube'u değerlendirin"
+  },
+  "languagePickerReset": {
+    "message": "Tarayıcı dilini kullan"
   }
 }

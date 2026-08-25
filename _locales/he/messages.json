@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "דרגו את FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "השתמש בשפת הדפדפן"
   }
 }

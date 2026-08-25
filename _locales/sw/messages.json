@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Kadiria FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Tumia lugha ya kivinjari"
   }
 }

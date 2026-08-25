@@ -220,6 +220,131 @@
       background-color: #ef4444;
     }
 
+    /* ── Manual language picker ──
+       A corner icon, not a full-width control - the language choice doesn't
+       deserve the visual weight a whole row gives it. Deliberately not a
+       native <select>: opening one and moving the mouse over its OS-rendered
+       dropdown makes the browser think the pointer left the closed box,
+       flickering its :hover style on and off (the "se pone rojo y luego
+       negro" bug) - nothing CSS on the <select> itself can fix that, since
+       the open dropdown isn't a styleable element. A real popover panel this
+       code fully owns has no such state to lose track of. */
+    .extension-container {
+      position: relative;
+    }
+    #langPickerTrigger {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border: none;
+      border-radius: 50%;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      overflow: hidden;
+      color: #9ca3af;
+      transition: background-color 0.15s;
+    }
+    #langPickerTrigger:hover,
+    #langPickerTrigger[aria-expanded="true"] {
+      background-color: #f3f4f6;
+    }
+    #langPickerTrigger svg {
+      width: 13px;
+      height: 13px;
+    }
+    #langPickerTrigger .flag-icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    #langPickerTrigger .flag-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    #langPickerPanel {
+      display: none;
+      position: absolute;
+      top: 34px;
+      right: 10px;
+      width: 200px;
+      max-height: 260px;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      z-index: 40;
+      padding: 4px;
+    }
+    #langPickerPanel.is-open {
+      display: block;
+    }
+    #langPickerReset {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #f3f4f6;
+      margin-bottom: 4px;
+      padding: 7px 8px 9px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #9ca3af;
+      cursor: pointer;
+    }
+    #langPickerReset:hover {
+      color: #f9737a;
+    }
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      background: none;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #1f2937;
+      text-align: left;
+      cursor: pointer;
+    }
+    .lang-option:hover {
+      background-color: #f9fafb;
+    }
+    .lang-option.is-active {
+      background-color: #fef2f2;
+      color: #ef4444;
+      font-weight: 700;
+    }
+    .lang-option .flag-icon {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      background: #f3f4f6;
+      color: #9ca3af;
+    }
+    .lang-option .flag-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    .lang-option .flag-icon .fallback-globe {
+      width: 11px;
+      height: 11px;
+    }
+
     /* ── Tabs ── */
     .tab-bar {
       display: flex;
@@ -349,6 +474,17 @@
         </a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank">GitHub</a>
       </div>
+
+      <!-- Corner icon shows the currently-active language's flag (globe if
+           none, e.g. Catalan). Clicking opens a scrollable panel of every
+           language; picking one stores it as an override and reloads. No
+           separate "Auto" entry: whichever language is actually showing
+           right now - detected or overridden - is the one already
+           highlighted in the list, so there is only ever one answer to
+           "what language is this in", never two that can disagree. Built by
+           setupLanguagePicker() in PopupController.js, using FLAG_ICONS. -->
+      <button type="button" id="langPickerTrigger" aria-expanded="false" aria-haspopup="true" aria-label="Language"></button>
+      <div id="langPickerPanel"></div>
 
       <!-- Tabs: Focus Mode is primary/first - it's the whole point of the extension -->
       <div class="tab-bar">
@@ -603,6 +739,7 @@
   </div>
 
   <script src="src/utils/ConfigRegistry.js"></script>
+  <script src="src/ui/flagIcons.js"></script>
   <script src="src/ui/PopupController.js"></script>
 </body>
 </html>

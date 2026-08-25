@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Evaluează FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Folosește limba browserului"
   }
 }

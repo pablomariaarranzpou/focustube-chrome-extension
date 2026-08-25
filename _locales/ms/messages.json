@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Nilaikan FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Guna bahasa pelayar"
   }
 }

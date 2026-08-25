@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "I-rate ang FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Gamitin ang wika ng browser"
   }
 }

@@ -142,5 +142,8 @@
   },
   "rateFocusTube": {
     "message": "Valora FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Usar idioma del navegador"
   }
 }

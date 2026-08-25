@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "FocusTube bewerten"
+  },
+  "languagePickerReset": {
+    "message": "Browsersprache verwenden"
   }
 }

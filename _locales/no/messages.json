@@ -145,5 +145,8 @@
   },
   "rateFocusTube": {
     "message": "Vurder FocusTube"
+  },
+  "languagePickerReset": {
+    "message": "Bruk nettleserspråk"
   }
 }
