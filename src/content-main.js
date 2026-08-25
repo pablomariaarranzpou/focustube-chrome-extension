@@ -95,9 +95,12 @@ try {
   console.error('FocusTube: Critical error starting content script:', e);
 }
 
-// Handle cleanup on page unload
-window.addEventListener('beforeunload', () => {
-  if (window.__focusTubeManager) {
-    window.__focusTubeManager.cleanup();
-  }
-});
+// There used to be a beforeunload listener here calling cleanup() on every
+// feature. It had no caller relying on it and nothing else in the codebase
+// depended on it running - the whole page context (observers, timers,
+// injected DOM) is torn down by the browser on real navigation regardless,
+// and YouTube's own in-page navigation goes through yt-navigate-finish, not
+// a real unload. All it did was make Chrome consider this page unsafe to
+// serve from the back/forward cache, which is exactly the kind of thing
+// Chrome Web Store's review flags: a listener that costs bfcache eligibility
+// for zero functional benefit.
