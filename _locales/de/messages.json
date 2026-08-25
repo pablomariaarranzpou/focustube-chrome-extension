@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube bewerten"
   },
+  "languagePickerReset": {
+    "message": "Browsersprache verwenden"
+  },
   "modeGateBannerOff": {
     "message": "Fokusmodus ist aus: Einstellungen werden auf YouTube nicht angewendet."
   },

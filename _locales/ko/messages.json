@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube 평가하기"
   },
+  "languagePickerReset": {
+    "message": "브라우저 언어 사용"
+  },
   "modeGateBannerOff": {
     "message": "포커스 모드가 꺼져 있습니다. 설정이 YouTube에 적용되지 않습니다."
   },

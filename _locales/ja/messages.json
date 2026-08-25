@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTubeを評価"
   },
+  "languagePickerReset": {
+    "message": "ブラウザの言語を使用"
+  },
   "modeGateBannerOff": {
     "message": "集中モードがオフです。設定はYouTubeに適用されません。"
   },

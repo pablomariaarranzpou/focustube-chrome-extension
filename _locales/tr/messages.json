@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube'u değerlendirin"
   },
+  "languagePickerReset": {
+    "message": "Tarayıcı dilini kullan"
+  },
   "modeGateBannerOff": {
     "message": "Odak Modu kapalı: Ayarlar YouTube'a uygulanmıyor."
   },

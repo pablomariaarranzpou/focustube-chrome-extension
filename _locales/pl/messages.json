@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Oceń FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Użyj języka przeglądarki"
+  },
   "modeGateBannerOff": {
     "message": "Tryb skupienia jest wyłączony: Ustawienia nie są stosowane na YouTube."
   },

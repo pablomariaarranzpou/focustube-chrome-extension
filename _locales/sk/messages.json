@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Ohodnoťte FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Použiť jazyk prehliadača"
+  },
   "modeGateBannerOff": {
     "message": "Režim sústredenia je vypnutý: Nastavenia sa na YouTube neuplatňujú."
   },

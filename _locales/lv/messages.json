@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Novērtējiet FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Izmantot pārlūkprogrammas valodu"
+  },
   "modeGateBannerOff": {
     "message": "Fokusa režīms ir izslēgts: Iestatījumi YouTube netiek piemēroti."
   },

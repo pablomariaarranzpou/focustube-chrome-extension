@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "דרגו את FocusTube"
   },
+  "languagePickerReset": {
+    "message": "השתמש בשפת הדפדפן"
+  },
   "modeGateBannerOff": {
     "message": "מצב ריכוז כבוי: ההגדרות לא חלות על YouTube."
   },

@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Оцените FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Использовать язык браузера"
+  },
   "modeGateBannerOff": {
     "message": "Режим фокусировки выключен: Настройки не применяются на YouTube."
   },

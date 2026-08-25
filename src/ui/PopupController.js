@@ -4,6 +4,27 @@
 const FOCUS_DAY_KEYS = ['daySun', 'dayMon', 'dayTue', 'dayWed', 'dayThu', 'dayFri', 'daySat'];
 
 /**
+ * Endonym for every locale the popup can be manually switched to - each
+ * language's own name for itself, not its English name, same convention
+ * the website's own language switcher already uses (and the same list:
+ * copied from docs/i18n/content.json's "name" field, not re-typed by hand).
+ * Chrome's two extra English variants (en_AU, en_GB) aren't included - they
+ * have no distinct translation to switch to, "English" already covers them.
+ */
+const LANGUAGE_NAMES = {
+  en: 'English', es: 'Español', es_419: 'Español (Latinoamérica)',
+  fr: 'Français', de: 'Deutsch', it: 'Italiano', pt_PT: 'Português (Portugal)',
+  pt_BR: 'Português (Brasil)', nl: 'Nederlands', ca: 'Català', ro: 'Română',
+  pl: 'Polski', cs: 'Čeština', sk: 'Slovenčina', sl: 'Slovenščina',
+  hr: 'Hrvatski', sr: 'Српски', ru: 'Русский', el: 'Ελληνικά', tr: 'Türkçe',
+  hu: 'Magyar', et: 'Eesti', lv: 'Latviešu', lt: 'Lietuvių', sv: 'Svenska',
+  no: 'Norsk', da: 'Dansk', id: 'Bahasa Indonesia', ms: 'Bahasa Melayu',
+  fil: 'Filipino', ja: '日本語', ko: '한국어', he: 'עברית', ar: 'العربية',
+  fa: 'فارسی', hi: 'हिन्दी', gu: 'ગુજરાતી', mr: 'मराठी', kn: 'ಕನ್ನಡ',
+  ta: 'தமிழ்', te: 'తెలుగు', sw: 'Kiswahili', am: 'አማርኛ',
+};
+
+/**
  * UI Controller for popup interface.
  * Manages the interaction between UI elements and feature states.
  * Uses MVC pattern for clean separation of concerns.
@@ -20,6 +41,11 @@ class PopupController {
     this.selectedDays = new Set();
     this.countdownInterval = null;
     this.focusSession = null; // current session snapshot from the background, or null
+
+    // Set once loadLanguageOverride() resolves, before anything renders. Null
+    // means "no manual override" - every getMsg() call falls through to
+    // chrome.i18n.getMessage() exactly as before this feature existed.
+    this.overrideMessages = null;
   }
 
   /**
@@ -30,8 +56,14 @@ class PopupController {
 
     console.debug('FocusTube: Initializing PopupController');
 
+    // Must resolve before anything below reads a string, or the popup would
+    // render once in the wrong language and then flash to the override.
+    await this.loadLanguageOverride();
+
     // Set up UI localization
     this.localizeUI();
+
+    this.setupLanguagePicker();
 
     // Tabs: Settings / Focus Mode
     this.setupTabs();
@@ -56,6 +88,44 @@ class PopupController {
   }
 
   /**
+   * Load a manually-chosen language override, if the user has set one via
+   * the language picker (see setupLanguageSelector()). Leaves
+   * this.overrideMessages null on no override, or on any failure - a
+   * broken fetch must never leave the popup without text, so this always
+   * falls back to Chrome's own auto-detected language rather than throwing.
+   */
+  async loadLanguageOverride() {
+    try {
+      const result = await this.storage.get(['ft_lang_override']);
+      const code = result.ft_lang_override;
+      if (!code) {
+        this.overrideMessages = null;
+        this._overrideCode = null;
+        return;
+      }
+      const response = await fetch(chrome.runtime.getURL(`_locales/${code}/messages.json`));
+      this.overrideMessages = await response.json();
+      this._overrideCode = code;
+    } catch (error) {
+      console.debug('FocusTube: Language override failed to load, using Chrome default', error);
+      this.overrideMessages = null;
+      this._overrideCode = null;
+    }
+  }
+
+  /**
+   * Every string in the popup should go through here rather than calling
+   * chrome.i18n.getMessage() directly, so a manual override (if any) takes
+   * precedence. With no override set this returns exactly what
+   * chrome.i18n.getMessage() would - nobody who never touches the language
+   * picker sees any change in behavior.
+   */
+  getMsg(key) {
+    const overridden = this.overrideMessages && this.overrideMessages[key];
+    return (overridden && overridden.message) || chrome.i18n.getMessage(key);
+  }
+
+  /**
    * Localize UI strings
    */
   localizeUI() {
@@ -64,33 +134,33 @@ class PopupController {
     elements.forEach(el => {
       const messageName = el.getAttribute('data-message');
       if (messageName) {
-        el.textContent = chrome.i18n.getMessage(messageName);
+        el.textContent = this.getMsg(messageName);
       }
     });
 
     // Localize input placeholders
     const blacklistInput = document.getElementById('blacklistInput');
     if (blacklistInput) {
-      blacklistInput.placeholder = chrome.i18n.getMessage('channelNamePlaceholder') || 'Channel name';
+      blacklistInput.placeholder = this.getMsg('channelNamePlaceholder') || 'Channel name';
     }
 
     const blacklistWordsInput = document.getElementById('blacklistWordsInput');
     if (blacklistWordsInput) {
-      blacklistWordsInput.placeholder = chrome.i18n.getMessage('wordPlaceholder') || 'Word';
+      blacklistWordsInput.placeholder = this.getMsg('wordPlaceholder') || 'Word';
     }
 
     // Set document title
-    document.title = chrome.i18n.getMessage('extensionName') || 'FocusTube';
+    document.title = this.getMsg('extensionName') || 'FocusTube';
 
     this.localizeHelpLink();
   }
 
   /**
-   * Point the Help link at the support page in whatever language Chrome is
-   * already rendering this popup in, instead of always sending everyone to
-   * the English page regardless of their locale. getUILanguage() returns
-   * the same locale chrome.i18n resolved above (default_locale fallback
-   * included), so this always matches what the user is actually reading.
+   * Point the Help link at the support page in whatever language this popup
+   * is actually showing - the manual override if one is set, otherwise
+   * whatever language Chrome is already rendering it in. getUILanguage()
+   * returns the same locale chrome.i18n resolves for everything else, so
+   * with no override this always matches what the user is reading.
    * Keys are the site's own folder names (docs/generate.js FOLDERS) - the
    * two English regional variants and any locale the site hasn't got its
    * own folder for fall back to the English root.
@@ -109,6 +179,11 @@ class PopupController {
       ta: 'ta', te: 'te', tr: 'tr',
     };
 
+    // With a manual override, use that locale directly - it's already an
+    // exact _locales/ folder name, unlike getUILanguage()'s browser-reported
+    // tag, so no base-language fallback is needed here.
+    const overrideCode = this.overrideMessages ? this._overrideCode : null;
+
     // getUILanguage() reports the browser's actual locale, which is often
     // more specific than anything in _locales/ - a browser set to Mexican
     // or Argentinian Spanish reports "es-MX" / "es-AR", not "es". Chrome's
@@ -116,12 +191,134 @@ class PopupController {
     // case (which is why the popup's own text was already correctly in
     // Spanish); an exact-only lookup here missed that and fell through to
     // English every time, even though everything else on screen was right.
-    const uiLang = (chrome.i18n.getUILanguage() || '').toLowerCase();
+    const uiLang = (overrideCode || chrome.i18n.getUILanguage() || '').toLowerCase();
     const base = uiLang.split('-')[0];
     const folder = SITE_FOLDER[uiLang] || SITE_FOLDER[base];
     helpLink.href = folder
       ? `https://focustube.io/${folder}/support/`
       : 'https://focustube.io/support/';
+  }
+
+  /**
+   * Which language is actually showing right now: the manual override if
+   * one is set, otherwise whatever Chrome auto-detected - resolved the same
+   * way chrome.i18n itself resolves it (exact match, then base language,
+   * then English), so this never disagrees with what the popup's own text
+   * is doing. Case-insensitive and hyphen/underscore-insensitive because
+   * getUILanguage() returns e.g. "pt-BR" while LANGUAGE_NAMES is keyed
+   * "pt_BR" (the _locales/ folder's own capitalization).
+   */
+  resolveActiveLocale() {
+    if (this._overrideCode) return this._overrideCode;
+
+    if (!this._localeLookup) {
+      this._localeLookup = {};
+      Object.keys(LANGUAGE_NAMES).forEach(code => {
+        this._localeLookup[code.toLowerCase()] = code;
+      });
+    }
+
+    const raw = (chrome.i18n.getUILanguage() || 'en').toLowerCase().replace('-', '_');
+    if (this._localeLookup[raw]) return this._localeLookup[raw];
+    const base = raw.split('_')[0];
+    if (this._localeLookup[base]) return this._localeLookup[base];
+    return 'en';
+  }
+
+  /**
+   * A flag icon if one exists for this locale, or the globe fallback -
+   * Catalan has no flag (see flagIcons.js) and any future locale without
+   * one gets the same graceful fallback rather than a broken image.
+   */
+  flagOrGlobeIcon(code) {
+    if (typeof FLAG_ICONS !== 'undefined' && FLAG_ICONS[code]) return FLAG_ICONS[code];
+    return '<svg class="fallback-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>';
+  }
+
+  /**
+   * Build and wire the corner language picker: a trigger button showing the
+   * active language's flag, and a popover panel listing every language.
+   * There is no separate "Auto" entry - the language already highlighted in
+   * the list *is* whatever's currently showing (detected or overridden), so
+   * there's only ever one answer to "what language is this", never a picker
+   * that can disagree with the page around it. Picking a different language
+   * stores it and reloads the popup, so every string re-renders from a
+   * clean state, including ones this method has no direct reach into
+   * (blacklist items, schedule blocks, mode descriptions).
+   */
+  setupLanguagePicker() {
+    const trigger = document.getElementById('langPickerTrigger');
+    const panel = document.getElementById('langPickerPanel');
+    if (!trigger || !panel) return;
+
+    const activeCode = this.resolveActiveLocale();
+
+    trigger.innerHTML = `<span class="flag-icon">${this.flagOrGlobeIcon(activeCode)}</span>`;
+
+    const resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.id = 'langPickerReset';
+    resetBtn.textContent = this.getMsg('languagePickerReset') || 'Use system language';
+    resetBtn.addEventListener('click', async () => {
+      await this.storage.remove(['ft_lang_override']);
+      window.location.reload();
+    });
+    panel.appendChild(resetBtn);
+
+    Object.entries(LANGUAGE_NAMES).forEach(([code, name]) => {
+      const option = document.createElement('button');
+      option.type = 'button';
+      option.className = 'lang-option' + (code === activeCode ? ' is-active' : '');
+      option.innerHTML = `<span class="flag-icon">${this.flagOrGlobeIcon(code)}</span><span>${name}</span>`;
+      option.addEventListener('click', async () => {
+        if (code === activeCode) { close(); return; }
+        await this.storage.set({ ft_lang_override: code });
+        window.location.reload();
+      });
+      panel.appendChild(option);
+    });
+
+    // Chrome sizes the popup window to the document's normal-flow height -
+    // position:absolute content contributes nothing to that. On a short tab
+    // (Mode > Off/Always is one line; Settings is much taller) the window
+    // can end up shorter than this panel needs, clipping it at the real
+    // window edge even though nothing in this code's own layout looks
+    // wrong. An invisible spacer in the normal flow forces the window tall
+    // enough without visually moving anything - the panel still floats in
+    // its usual position on top of the content, the spacer is never seen.
+    let spacer = null;
+    function open() {
+      panel.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+
+      const container = document.querySelector('.extension-container');
+      const shortfall = panel.getBoundingClientRect().bottom - container.getBoundingClientRect().bottom;
+      if (shortfall > 0) {
+        if (!spacer) {
+          spacer = document.createElement('div');
+          spacer.setAttribute('aria-hidden', 'true');
+          spacer.style.visibility = 'hidden';
+          container.appendChild(spacer);
+        }
+        spacer.style.height = `${shortfall}px`;
+      }
+    }
+    function close() {
+      panel.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+      if (spacer) spacer.style.height = '0px';
+    }
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (panel.classList.contains('is-open')) close(); else open();
+    });
+    document.addEventListener('click', (e) => {
+      if (panel.classList.contains('is-open') && !panel.contains(e.target) && e.target !== trigger) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+    });
   }
 
   /**
@@ -508,7 +705,7 @@ class PopupController {
     `;
 
     const removeButton = div.querySelector('.remove-button');
-    removeButton.textContent = chrome.i18n.getMessage('removeButton');
+    removeButton.textContent = this.getMsg('removeButton');
     removeButton.addEventListener('click', async () => {
       await this.removeFromBlacklist(channelName);
     });
@@ -528,7 +725,7 @@ class PopupController {
     `;
 
     const removeButton = div.querySelector('.remove-button');
-    removeButton.textContent = chrome.i18n.getMessage('removeButton');
+    removeButton.textContent = this.getMsg('removeButton');
     removeButton.addEventListener('click', async () => {
       await this.removeFromBlacklistWords(word);
     });
@@ -848,8 +1045,8 @@ class PopupController {
       key = 'modeGateBannerOff'; // 'off', or an unrecognized/missing mode
     }
 
-    text.textContent = chrome.i18n.getMessage(key);
-    action.textContent = chrome.i18n.getMessage('modeGateBannerSwitchToAlways');
+    text.textContent = this.getMsg(key);
+    action.textContent = this.getMsg('modeGateBannerSwitchToAlways');
     banner.hidden = false;
   }
 
@@ -876,7 +1073,7 @@ class PopupController {
 
     if (phaseLabel) {
       const key = this.focusSession.phase === 'break' ? 'breakPhaseLabel' : 'focusPhaseLabel';
-      phaseLabel.textContent = chrome.i18n.getMessage(key);
+      phaseLabel.textContent = this.getMsg(key);
     }
 
     this.tickCountdown();
@@ -936,7 +1133,7 @@ class PopupController {
     if (this.recurringSchedule.length === 0) {
       const empty = document.createElement('div');
       empty.className = 'text-sm text-gray-500';
-      empty.textContent = chrome.i18n.getMessage('noScheduleBlocksMessage');
+      empty.textContent = this.getMsg('noScheduleBlocksMessage');
       listElement.appendChild(empty);
       return;
     }
@@ -950,7 +1147,7 @@ class PopupController {
     const dayLabels = block.days
       .slice()
       .sort()
-      .map(d => chrome.i18n.getMessage(FOCUS_DAY_KEYS[d]))
+      .map(d => this.getMsg(FOCUS_DAY_KEYS[d]))
       .join(', ');
     const timeRange = `${this.formatMinutesToTime(block.startMinutes)} - ${this.formatMinutesToTime(block.endMinutes)}`;
 
@@ -965,7 +1162,7 @@ class PopupController {
     `;
 
     const removeButton = div.querySelector('.remove-button');
-    removeButton.textContent = chrome.i18n.getMessage('removeButton');
+    removeButton.textContent = this.getMsg('removeButton');
     removeButton.addEventListener('click', () => this.removeScheduleBlock(block.id));
 
     return div;

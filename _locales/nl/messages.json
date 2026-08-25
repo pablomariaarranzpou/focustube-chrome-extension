@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Beoordeel FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Browsertaal gebruiken"
+  },
   "modeGateBannerOff": {
     "message": "Focusmodus staat uit: Instellingen worden niet toegepast op YouTube."
   },

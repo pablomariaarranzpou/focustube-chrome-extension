@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Įvertinkite FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Naudoti naršyklės kalbą"
+  },
   "modeGateBannerOff": {
     "message": "Sutelkto dėmesio režimas išjungtas: Nustatymai „YouTube“ netaikomi."
   },

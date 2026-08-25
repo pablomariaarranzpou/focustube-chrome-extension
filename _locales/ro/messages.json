@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Evaluează FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Folosește limba browserului"
+  },
   "modeGateBannerOff": {
     "message": "Modul Concentrare este oprit: Setările nu se aplică pe YouTube."
   },

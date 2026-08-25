@@ -143,6 +143,9 @@
   "rateFocusTube": {
     "message": "Notez FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Utiliser la langue du navigateur"
+  },
   "modeGateBannerOff": {
     "message": "Le Mode Concentration est désactivé : les Réglages ne s'appliquent pas à YouTube."
   },

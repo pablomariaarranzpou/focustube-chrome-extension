@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "امتیاز به FocusTube"
   },
+  "languagePickerReset": {
+    "message": "استفاده از زبان مرورگر"
+  },
   "modeGateBannerOff": {
     "message": "حالت تمرکز خاموش است: تنظیمات در YouTube اعمال نمی‌شود."
   },

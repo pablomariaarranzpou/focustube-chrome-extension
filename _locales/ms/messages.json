@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Nilaikan FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Guna bahasa pelayar"
+  },
   "modeGateBannerOff": {
     "message": "Mod Fokus dimatikan: Tetapan tidak dikenakan pada YouTube."
   },

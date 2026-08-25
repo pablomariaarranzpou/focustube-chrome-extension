@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Betygsätt FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Använd webbläsarens språk"
+  },
   "modeGateBannerOff": {
     "message": "Fokusläge är av: Inställningar tillämpas inte på YouTube."
   },

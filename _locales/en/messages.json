@@ -143,6 +143,9 @@
   "rateFocusTube": {
     "message": "Rate FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Use browser language"
+  },
   "modeGateBannerOff": {
     "message": "Focus Mode is off - Settings aren't applied to YouTube."
   },

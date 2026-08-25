@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Αξιολογήστε το FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Χρήση γλώσσας περιηγητή"
+  },
   "modeGateBannerOff": {
     "message": "Η Λειτουργία Εστίασης είναι ανενεργή: οι Ρυθμίσεις δεν εφαρμόζονται στο YouTube."
   },

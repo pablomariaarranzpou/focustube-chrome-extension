@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube ን ደረጃ ይስጡ"
   },
+  "languagePickerReset": {
+    "message": "የአሳሽ ቋንቋ ይጠቀሙ"
+  },
   "modeGateBannerOff": {
     "message": "ትኩረት ሁነታ ጠፍቷል: ቅንብሮች በYouTube ላይ አይተገበሩም።"
   },

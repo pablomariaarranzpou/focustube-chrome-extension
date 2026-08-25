@@ -141,17 +141,36 @@ async function broadcastState() {
   chrome.runtime.sendMessage(message, () => void chrome.runtime.lastError);
 }
 
-function notify(titleKey, bodyKey) {
+// Mirrors PopupController's getMsg(): a manual language override (set from
+// the popup's picker) applies here too, so a session-end notification
+// doesn't switch back to Chrome's auto-detected language when the popup
+// itself is showing something else. Same fallback rule - any failure here
+// (no override set, or the fetch fails) falls through to
+// chrome.i18n.getMessage(), never leaves a notification without text.
+async function localizedMessage(key) {
+  try {
+    const result = await chrome.storage.sync.get(['ft_lang_override']);
+    const code = result.ft_lang_override;
+    if (!code) return chrome.i18n.getMessage(key);
+    const response = await fetch(chrome.runtime.getURL(`_locales/${code}/messages.json`));
+    const messages = await response.json();
+    return (messages[key] && messages[key].message) || chrome.i18n.getMessage(key);
+  } catch (error) {
+    return chrome.i18n.getMessage(key);
+  }
+}
+
+async function notify(titleKey, bodyKey) {
   // `notifications` is an optional permission (requested on demand from the
   // popup). If the user hasn't granted it, skip silently - the session logic
   // is unaffected, they just don't get the OS alert.
-  chrome.permissions.contains({ permissions: ['notifications'] }, (granted) => {
+  chrome.permissions.contains({ permissions: ['notifications'] }, async (granted) => {
     if (chrome.runtime.lastError || !granted) return;
     chrome.notifications.create({
       type: 'basic',
       iconUrl: chrome.runtime.getURL('128.png'),
-      title: chrome.i18n.getMessage(titleKey),
-      message: chrome.i18n.getMessage(bodyKey)
+      title: await localizedMessage(titleKey),
+      message: await localizedMessage(bodyKey)
     });
   });
 }

@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Avalie o FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Usar idioma do navegador"
+  },
   "modeGateBannerOff": {
     "message": "O Modo Foco está desligado: as Configurações não são aplicadas ao YouTube."
   },

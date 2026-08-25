@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Értékeld a FocusTube-ot"
   },
+  "languagePickerReset": {
+    "message": "Böngésző nyelvének használata"
+  },
   "modeGateBannerOff": {
     "message": "A Fókusz mód ki van kapcsolva: a Beállítások nem érvényesülnek a YouTube-on."
   },

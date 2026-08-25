@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "I-rate ang FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Gamitin ang wika ng browser"
+  },
   "modeGateBannerOff": {
     "message": "Naka-off ang Focus Mode: hindi inilalapat ang Mga Setting sa YouTube."
   },

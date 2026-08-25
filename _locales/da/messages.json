@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Bedøm FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Brug browsersprog"
+  },
   "modeGateBannerOff": {
     "message": "Fokustilstand er slået fra: Indstillinger anvendes ikke på YouTube."
   },

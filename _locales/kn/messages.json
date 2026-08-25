@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube ಅನ್ನು ರೇಟ್ ಮಾಡಿ"
   },
+  "languagePickerReset": {
+    "message": "ಬ್ರೌಸರ್ ಭಾಷೆಯನ್ನು ಬಳಸಿ"
+  },
   "modeGateBannerOff": {
     "message": "ಫೋಕಸ್ ಮೋಡ್ ಆಫ್ ಆಗಿದೆ: ಸೆಟ್ಟಿಂಗ್‌ಗಳು YouTube ನಲ್ಲಿ ಅನ್ವಯವಾಗುವುದಿಲ್ಲ."
   },

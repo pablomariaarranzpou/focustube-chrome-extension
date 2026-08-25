@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "قيّم FocusTube"
   },
+  "languagePickerReset": {
+    "message": "استخدام لغة المتصفح"
+  },
   "modeGateBannerOff": {
     "message": "وضع التركيز متوقف: لا تُطبَّق الإعدادات على YouTube."
   },

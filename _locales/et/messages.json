@@ -110,6 +110,9 @@
   "rateFocusTube": {
     "message": "Hinda FocusTubet"
   },
+  "languagePickerReset": {
+    "message": "Kasuta brauseri keelt"
+  },
   "modeGateBannerOff": {
     "message": "Fookusrežiim on väljas: Seadeid YouTube'is ei rakendata."
   },

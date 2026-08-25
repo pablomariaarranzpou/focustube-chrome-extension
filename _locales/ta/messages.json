@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "FocusTube-ஐ மதிப்பிடுங்கள்"
   },
+  "languagePickerReset": {
+    "message": "உலாவி மொழியைப் பயன்படுத்து"
+  },
   "modeGateBannerOff": {
     "message": "கவனம் பயன்முறை ஆஃப் செய்யப்பட்டுள்ளது: அமைப்புகள் YouTube-இல் பயன்படுத்தப்படவில்லை."
   },

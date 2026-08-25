@@ -146,6 +146,9 @@
   "rateFocusTube": {
     "message": "Ocenite FocusTube"
   },
+  "languagePickerReset": {
+    "message": "Koristi jezik pregledača"
+  },
   "modeGateBannerOff": {
     "message": "Režim fokusa je isključen: Podešavanja se ne primenjuju na YouTube-u."
   },
