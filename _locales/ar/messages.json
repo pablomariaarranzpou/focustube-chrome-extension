@@ -122,7 +122,7 @@
   "daySun": {
     "message": "أحد"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "إزالة"
   },
   "noScheduleBlocksMessage": {

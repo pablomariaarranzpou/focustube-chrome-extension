@@ -122,7 +122,7 @@
   "daySun": {
     "message": "V"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Eltávolítás"
   },
   "noScheduleBlocksMessage": {

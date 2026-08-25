@@ -122,7 +122,7 @@
   "daySun": {
     "message": "Paz"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Kaldır"
   },
   "noScheduleBlocksMessage": {

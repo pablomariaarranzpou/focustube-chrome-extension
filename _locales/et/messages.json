@@ -86,7 +86,7 @@
   "daySun": {
     "message": "P"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Eemalda"
   },
   "noScheduleBlocksMessage": {

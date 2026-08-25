@@ -122,7 +122,7 @@
   "daySun": {
     "message": "Sk"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Pašalinti"
   },
   "noScheduleBlocksMessage": {

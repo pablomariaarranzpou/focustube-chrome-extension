@@ -122,7 +122,7 @@
   "daySun": {
     "message": "रवि"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "काढा"
   },
   "noScheduleBlocksMessage": {
