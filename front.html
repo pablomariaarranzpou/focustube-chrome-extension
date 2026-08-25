@@ -220,6 +220,44 @@
       background-color: #ef4444;
     }
 
+    /* ── Manual language override ──
+       Its own row rather than a 4th pill in #logoLinks: that row is already
+       tight in the popup's fixed 400px width in some of the longer
+       translations (see PX_PER_CHAR in scripts/ui-text-budgets.js), and a
+       selected language's own endonym name (e.g. "Português (Brasil)") can
+       run long - safer as a row that can grow on its own than squeezed
+       between three pills that already barely fit. */
+    #langOverrideRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 0.75rem;
+    }
+    #langOverrideSelect {
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      background: #fff;
+      color: #6b7280;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 22px 3px 10px;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+    }
+    #langOverrideSelect:hover {
+      border-color: #f9737a;
+      color: #f9737a;
+    }
+    #langOverrideIcon {
+      color: #9ca3af;
+      flex-shrink: 0;
+    }
+
     /* ── Tabs ── */
     .tab-bar {
       display: flex;
@@ -348,6 +386,18 @@
           <span class="i18n" data-message="helpLink"></span>
         </a>
         <a href="https://github.com/pablomariaarranzpou/focustube-chrome-extension" target="_blank">GitHub</a>
+      </div>
+
+      <!-- Defaults to Chrome's own auto-detected language (the "Auto" option,
+           empty value) - selecting anything else stores an override that
+           every string in this popup and the Focus/break notifications will
+           use instead, until switched back. Populated from LANGUAGE_NAMES in
+           PopupController.js. -->
+      <div id="langOverrideRow">
+        <svg id="langOverrideIcon" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+        </svg>
+        <select id="langOverrideSelect" aria-label="Language"></select>
       </div>
 
       <!-- Tabs: Focus Mode is primary/first - it's the whole point of the extension -->
