@@ -193,6 +193,32 @@
     }
     #rateLaterBtn:hover { background-color: #e5e7eb; }
 
+    /* ── Brand row: small logo + name, centered ──
+       Deliberately small (20px icon, no accent color on the text) - it's
+       identity, not a call to action, so it shouldn't compete with the
+       pills or the toggles below it. Centering it also means the language
+       picker's corner icon (see #langPickerTrigger) reads as sitting beside
+       this row rather than sharing the tighter Rate/Help/GitHub pill row -
+       the popup gains a bit of height for that, not width, matching the
+       400px pin below. */
+    #brandHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.5rem;
+    }
+    #brandHeader img {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+    }
+    #brandHeader span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+
     /* ── Permanent logo links row ── */
     #logoLinks {
       display: flex;
@@ -512,11 +538,16 @@
 
   <div class="flex justify-center items-center">
     <div class="p-8 bg-white shadow-md rounded-md extension-container">
-      <!-- The popup opens because someone just clicked the FocusTube toolbar
-           icon, so repeating the logo here told them nothing they didn't
-           already know - it just spent ~45px of a 400px-wide popup on
-           identity they'd already established. This row already carries
-           the same brand contact points (rate it, get help, see the code). -->
+      <!-- Small brand row: logo + name, kept deliberately quiet (20px icon,
+           no accent color) so it reads as identity rather than a fourth
+           thing competing with the Rate/Help/GitHub pills right below it.
+           Reuses 128.png - the extension's own toolbar icon - rather than a
+           second logo asset. -->
+      <div id="brandHeader">
+        <img src="128.png" alt="" width="20" height="20" />
+        <span>FocusTube</span>
+      </div>
+
       <div id="logoLinks">
         <a id="rateUsPillLink" href="https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank">&#9733; <span class="i18n" data-message="rateFocusTube"></span></a>
         <a id="helpLink" href="https://focustube.io/support/" target="_blank">
