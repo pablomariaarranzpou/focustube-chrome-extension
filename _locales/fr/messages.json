@@ -119,7 +119,7 @@
   "daySun": {
     "message": "Dim"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Supprimer"
   },
   "noScheduleBlocksMessage": {

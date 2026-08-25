@@ -504,10 +504,11 @@ class PopupController {
     div.className = 'blacklist-item';
     div.innerHTML = `
       <div class="channel-id">${this.escapeHtml(channelName)}</div>
-      <button class="remove-button">Remove</button>
+      <button class="remove-button"></button>
     `;
 
     const removeButton = div.querySelector('.remove-button');
+    removeButton.textContent = chrome.i18n.getMessage('removeButton');
     removeButton.addEventListener('click', async () => {
       await this.removeFromBlacklist(channelName);
     });
@@ -523,10 +524,11 @@ class PopupController {
     div.className = 'blacklist-item';
     div.innerHTML = `
       <div class="word">${this.escapeHtml(word)}</div>
-      <button class="remove-button">Remove</button>
+      <button class="remove-button"></button>
     `;
 
     const removeButton = div.querySelector('.remove-button');
+    removeButton.textContent = chrome.i18n.getMessage('removeButton');
     removeButton.addEventListener('click', async () => {
       await this.removeFromBlacklistWords(word);
     });
@@ -907,11 +909,11 @@ class PopupController {
         <span class="schedule-days">${this.escapeHtml(dayLabels)}</span>
         <span class="schedule-time">${this.escapeHtml(timeRange)}</span>
       </div>
-      <button class="remove-button i18n" data-message="scheduleRemoveButton"></button>
+      <button class="remove-button i18n" data-message="removeButton"></button>
     `;
 
     const removeButton = div.querySelector('.remove-button');
-    removeButton.textContent = chrome.i18n.getMessage('scheduleRemoveButton');
+    removeButton.textContent = chrome.i18n.getMessage('removeButton');
     removeButton.addEventListener('click', () => this.removeScheduleBlock(block.id));
 
     return div;

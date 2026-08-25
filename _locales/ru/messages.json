@@ -122,7 +122,7 @@
   "daySun": {
     "message": "Вс"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "Удалить"
   },
   "noScheduleBlocksMessage": {

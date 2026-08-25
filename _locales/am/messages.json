@@ -122,7 +122,7 @@
   "daySun": {
     "message": "እሑ"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "አስወግድ"
   },
   "noScheduleBlocksMessage": {

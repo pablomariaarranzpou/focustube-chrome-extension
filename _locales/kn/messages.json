@@ -122,7 +122,7 @@
   "daySun": {
     "message": "ಭಾನು"
   },
-  "scheduleRemoveButton": {
+  "removeButton": {
     "message": "ತೆಗೆದುಹಾಕಿ"
   },
   "noScheduleBlocksMessage": {
