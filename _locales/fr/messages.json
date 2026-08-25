@@ -139,5 +139,8 @@
   },
   "helpLink": {
     "message": "Aide"
+  },
+  "rateFocusTube": {
+    "message": "Notez FocusTube"
   }
 }

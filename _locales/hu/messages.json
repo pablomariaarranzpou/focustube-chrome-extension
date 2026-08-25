@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "Súgó"
+  },
+  "rateFocusTube": {
+    "message": "Értékeld a FocusTube-ot"
   }
 }

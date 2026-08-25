@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "도움말"
+  },
+  "rateFocusTube": {
+    "message": "FocusTube 평가하기"
   }
 }
