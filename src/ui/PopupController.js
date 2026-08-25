@@ -81,6 +81,47 @@ class PopupController {
 
     // Set document title
     document.title = chrome.i18n.getMessage('extensionName') || 'FocusTube';
+
+    this.localizeHelpLink();
+  }
+
+  /**
+   * Point the Help link at the support page in whatever language Chrome is
+   * already rendering this popup in, instead of always sending everyone to
+   * the English page regardless of their locale. getUILanguage() returns
+   * the same locale chrome.i18n resolved above (default_locale fallback
+   * included), so this always matches what the user is actually reading.
+   * Keys are the site's own folder names (docs/generate.js FOLDERS) - the
+   * two English regional variants and any locale the site hasn't got its
+   * own folder for fall back to the English root.
+   */
+  localizeHelpLink() {
+    const helpLink = document.getElementById('helpLink');
+    if (!helpLink) return;
+
+    const SITE_FOLDER = {
+      am: 'am', ar: 'ar', ca: 'ca', cs: 'cs', da: 'da', de: 'de', el: 'el',
+      es: 'es', 'es-419': 'es-419', et: 'et', fa: 'fa', fil: 'fil', fr: 'fr',
+      gu: 'gu', he: 'he', hi: 'hi', hr: 'hr', hu: 'hu', id: 'id', it: 'it',
+      ja: 'ja', kn: 'kn', ko: 'ko', lt: 'lt', lv: 'lv', mr: 'mr', ms: 'ms',
+      nl: 'nl', no: 'no', pl: 'pl', 'pt-br': 'pt-br', 'pt-pt': 'pt-pt',
+      ro: 'ro', ru: 'ru', sk: 'sk', sl: 'sl', sr: 'sr', sv: 'sv', sw: 'sw',
+      ta: 'ta', te: 'te', tr: 'tr',
+    };
+
+    // getUILanguage() reports the browser's actual locale, which is often
+    // more specific than anything in _locales/ - a browser set to Mexican
+    // or Argentinian Spanish reports "es-MX" / "es-AR", not "es". Chrome's
+    // own chrome.i18n.getMessage() falls back to the base language in that
+    // case (which is why the popup's own text was already correctly in
+    // Spanish); an exact-only lookup here missed that and fell through to
+    // English every time, even though everything else on screen was right.
+    const uiLang = (chrome.i18n.getUILanguage() || '').toLowerCase();
+    const base = uiLang.split('-')[0];
+    const folder = SITE_FOLDER[uiLang] || SITE_FOLDER[base];
+    helpLink.href = folder
+      ? `https://focustube.io/${folder}/support/`
+      : 'https://focustube.io/support/';
   }
 
   /**
