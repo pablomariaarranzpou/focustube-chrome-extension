@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "Βοήθεια"
+  },
+  "rateFocusTube": {
+    "message": "Αξιολογήστε το FocusTube"
   }
 }

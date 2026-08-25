@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "ヘルプ"
+  },
+  "rateFocusTube": {
+    "message": "FocusTubeを評価"
   }
 }

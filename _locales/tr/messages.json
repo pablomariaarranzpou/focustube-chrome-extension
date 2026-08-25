@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "Yardım"
+  },
+  "rateFocusTube": {
+    "message": "FocusTube'u değerlendirin"
   }
 }

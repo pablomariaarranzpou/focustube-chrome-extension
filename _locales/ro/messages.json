@@ -142,5 +142,8 @@
   },
   "helpLink": {
     "message": "Ajutor"
+  },
+  "rateFocusTube": {
+    "message": "Evaluează FocusTube"
   }
 }
