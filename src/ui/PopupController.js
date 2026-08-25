@@ -278,13 +278,35 @@ class PopupController {
       panel.appendChild(option);
     });
 
+    // Chrome sizes the popup window to the document's normal-flow height -
+    // position:absolute content contributes nothing to that. On a short tab
+    // (Mode > Off/Always is one line; Settings is much taller) the window
+    // can end up shorter than this panel needs, clipping it at the real
+    // window edge even though nothing in this code's own layout looks
+    // wrong. An invisible spacer in the normal flow forces the window tall
+    // enough without visually moving anything - the panel still floats in
+    // its usual position on top of the content, the spacer is never seen.
+    let spacer = null;
     function open() {
       panel.classList.add('is-open');
       trigger.setAttribute('aria-expanded', 'true');
+
+      const container = document.querySelector('.extension-container');
+      const shortfall = panel.getBoundingClientRect().bottom - container.getBoundingClientRect().bottom;
+      if (shortfall > 0) {
+        if (!spacer) {
+          spacer = document.createElement('div');
+          spacer.setAttribute('aria-hidden', 'true');
+          spacer.style.visibility = 'hidden';
+          container.appendChild(spacer);
+        }
+        spacer.style.height = `${shortfall}px`;
+      }
     }
     function close() {
       panel.classList.remove('is-open');
       trigger.setAttribute('aria-expanded', 'false');
+      if (spacer) spacer.style.height = '0px';
     }
 
     trigger.addEventListener('click', (e) => {
