@@ -38,7 +38,13 @@
 // <script src="src/features/QuickBlacklistButtonFeature.js"></script>
 // <script src="src/features/FocusModeFeature.js"></script>
 
-console.log('FocusTube content script loaded - Version 2.4.8');
+// Read from the manifest rather than hardcoding a number here, which is
+// exactly how this went stale before: last touched at 2.4.8, still claiming
+// that at 2.5.7. getManifest() needs no permission and works in content
+// scripts, so there's nothing to keep in sync by hand going forward.
+console.debug(
+  `FocusTube content script loaded - Version ${chrome.runtime.getManifest().version}`
+);
 
 // Global feature manager
 let featureManager = null;
@@ -48,7 +54,7 @@ let featureManager = null;
  */
 function initializeFocusTube() {
   try {
-    console.log('FocusTube: Starting initialization...');
+    console.debug('FocusTube: Starting initialization...');
 
     // Create feature manager
     featureManager = new FeatureManager();
@@ -71,7 +77,7 @@ function initializeFocusTube() {
 
     // Set up message handling for popup communication
     featureManager.setupMessageListener();
-    console.log('FocusTube: Message listener set up');
+    console.debug('FocusTube: Message listener set up');
 
     // Initialize synchronously - this loads from storage and activates features
     // Using chrome.storage.sync.get with callback (synchronous pattern like content.js)
@@ -80,7 +86,7 @@ function initializeFocusTube() {
     // Make manager globally available for debugging
     window.__focusTubeManager = featureManager;
 
-    console.log('FocusTube: Initialization complete');
+    console.debug('FocusTube: Initialization complete');
 
   } catch (error) {
     console.error('FocusTube: Initialization failed:', error);
