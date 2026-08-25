@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Beoordeel FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Focusmodus staat uit: Instellingen worden niet toegepast op YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "De Timer heeft geen actieve sessie: Instellingen worden nog niet toegepast."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Je hebt pauze: Instellingen zijn gepauzeerd tot deze eindigt."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Je bevindt je buiten de actieve uren van je Schema: Instellingen worden nu niet toegepast."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Overschakelen naar Altijd"
   }
 }

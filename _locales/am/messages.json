@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ን ደረጃ ይስጡ"
+  },
+  "modeGateBannerOff": {
+    "message": "ትኩረት ሁነታ ጠፍቷል: ቅንብሮች በYouTube ላይ አይተገበሩም።"
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "የሰዓት ቆጣሪ ክፍለ ጊዜ እየሮጠ አይደለም: ቅንብሮች ገና አልተተገበሩም።"
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "በእረፍት ላይ ነዎት: ቅንብሮች እስኪያልቅ ድረስ ቆመዋል።"
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "ከመርሃግብርዎ ንቁ ሰዓታት ውጪ ነዎት: ቅንብሮች አሁን አይተገበሩም።"
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "ወደ ሁልጊዜ ቀይር"
   }
 }

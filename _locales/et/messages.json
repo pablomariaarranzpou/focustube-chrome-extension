@@ -109,5 +109,20 @@
   },
   "rateFocusTube": {
     "message": "Hinda FocusTubet"
+  },
+  "modeGateBannerOff": {
+    "message": "Fookusrežiim on väljas: Seadeid YouTube'is ei rakendata."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Taimeril ei ole ühtegi käimasolevat seanssi: Seadeid ei ole veel rakendatud."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Oled pausil: Seaded on peatatud kuni pausi lõpuni."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Oled väljaspool Ajakava aktiivseid tunde: Seadeid praegu ei rakendata."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Lülitu režiimile Alati"
   }
 }

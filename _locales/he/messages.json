@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "דרגו את FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "מצב ריכוז כבוי: ההגדרות לא חלות על YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "אין הפעלת טיימר פעילה: ההגדרות עדיין לא חלות."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "בהפסקה כעת: ההגדרות מושהות עד לסיומה."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "מחוץ לשעות הפעילות של לוח הזמנים: ההגדרות לא חלות כרגע."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "עבור למצב תמיד"
   }
 }

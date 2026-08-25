@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Ocijenite FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Način rada Fokus je isključen: Postavke se ne primjenjuju na YouTubeu."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Tajmer nema pokrenutu sesiju: Postavke se još ne primjenjuju."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Na pauzi ste: Postavke su pauzirane dok ne završi."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Izvan ste aktivnih sati vašeg Rasporeda: Postavke se trenutno ne primjenjuju."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Prijeđi na Uvijek"
   }
 }

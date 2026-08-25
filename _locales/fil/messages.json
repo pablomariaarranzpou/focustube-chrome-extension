@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "I-rate ang FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Naka-off ang Focus Mode: hindi inilalapat ang Mga Setting sa YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Walang tumatakbong session ang Timer: hindi pa inilalapat ang Mga Setting."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Nasa break ka: naka-pause ang Mga Setting hanggang matapos ito."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Wala ka sa aktibong oras ng iyong Iskedyul: hindi inilalapat ang Mga Setting ngayon."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Lumipat sa Palagi"
   }
 }

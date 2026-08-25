@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Oceń FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Tryb skupienia jest wyłączony: Ustawienia nie są stosowane na YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Minutnik nie ma uruchomionej sesji: Ustawienia nie są jeszcze stosowane."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Masz przerwę: Ustawienia są wstrzymane do jej końca."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Jesteś poza aktywnymi godzinami Harmonogramu: Ustawienia nie są teraz stosowane."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Przełącz na Zawsze"
   }
 }

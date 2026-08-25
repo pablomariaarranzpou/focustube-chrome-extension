@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Įvertinkite FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Sutelkto dėmesio režimas išjungtas: Nustatymai „YouTube“ netaikomi."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Laikmatis neturi veikiančio seanso: Nustatymai dar netaikomi."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Jūs darote pertrauką: Nustatymai pristabdyti, kol ji baigsis."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Esate ne aktyviomis Tvarkaraščio valandomis: Nustatymai šiuo metu netaikomi."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Perjungti į Visada"
   }
 }

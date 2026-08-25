@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Kadiria FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Hali ya Kuzingatia imezimwa: Mipangilio haitumiki kwenye YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Kipima muda hakina kipindi kinachoendelea: Mipangilio bado haitumiki."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Uko kwenye mapumziko: Mipangilio imesitishwa hadi yatakapoisha."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Uko nje ya saa amilifu za Ratiba yako: Mipangilio hayatumiki sasa hivi."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Badilisha kwenda Kila wakati"
   }
 }

@@ -688,6 +688,9 @@ class PopupController {
 
     const addScheduleButton = document.getElementById('addScheduleButton');
     if (addScheduleButton) addScheduleButton.addEventListener('click', () => this.addScheduleBlock());
+
+    const gateBannerAction = document.getElementById('modeGateBannerAction');
+    if (gateBannerAction) gateBannerAction.addEventListener('click', () => this.setFocusMode('always'));
   }
 
   async setFocusMode(mode) {
@@ -698,6 +701,16 @@ class PopupController {
     const response = await this.sendToBackground({ type: 'setFocusMode', mode });
     if (response && response.success) {
       this.updateModeSelectorUI(mode);
+      // 'always' is the one mode whose gate is unconditionally open (see
+      // FocusModeStateComputer.js) - safe to hide the banner right away
+      // instead of waiting on the background's broadcast round-trip, the
+      // same optimistic-update treatment updateModeSelectorUI above already
+      // gets. Off/timer/schedule depend on session/schedule state this
+      // response doesn't carry, so those wait for the real
+      // 'focusModeStateChanged' broadcast into handleFocusModeStateChanged().
+      if (mode === 'always') {
+        this.renderModeGateBanner({ mode: 'always', gateOpen: true });
+      }
     }
   }
 
@@ -799,6 +812,45 @@ class PopupController {
     if (snapshot.mode) {
       this.updateModeSelectorUI(snapshot.mode);
     }
+
+    this.renderModeGateBanner(snapshot);
+  }
+
+  /**
+   * Shows/hides the "your Settings aren't applying right now" banner that
+   * sits above both tabs. gateOpen (from computeFocusGate()) is the single
+   * source of truth for whether Settings are actually being applied to
+   * YouTube at this instant - this just picks which localized explanation
+   * matches *why* it's closed, so toggling something on the Settings tab
+   * while e.g. Timer mode is idle doesn't look like the toggle silently
+   * failed. mode 'always' can never have gateOpen: false, so it never
+   * reaches the closed branch below.
+   */
+  renderModeGateBanner(snapshot) {
+    const banner = document.getElementById('modeGateBanner');
+    const text = document.getElementById('modeGateBannerText');
+    const action = document.getElementById('modeGateBannerAction');
+    if (!banner || !text || !action) return;
+
+    if (!snapshot || snapshot.gateOpen) {
+      banner.hidden = true;
+      return;
+    }
+
+    let key;
+    if (snapshot.mode === 'timer') {
+      // Break phase is a running session too, just not one Settings apply
+      // during - a different message than "no session running at all".
+      key = snapshot.sessionPhase === 'break' ? 'modeGateBannerTimerBreak' : 'modeGateBannerTimerIdle';
+    } else if (snapshot.mode === 'schedule') {
+      key = 'modeGateBannerScheduleOutside';
+    } else {
+      key = 'modeGateBannerOff'; // 'off', or an unrecognized/missing mode
+    }
+
+    text.textContent = chrome.i18n.getMessage(key);
+    action.textContent = chrome.i18n.getMessage('modeGateBannerSwitchToAlways');
+    banner.hidden = false;
   }
 
   /**

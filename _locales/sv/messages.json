@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Betygsätt FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Fokusläge är av: Inställningar tillämpas inte på YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Timern har ingen pågående session: Inställningar tillämpas inte än."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Du har paus: Inställningar är pausade tills den är slut."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Du är utanför Schemats aktiva timmar: Inställningar tillämpas inte just nu."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Byt till Alltid"
   }
 }

@@ -142,5 +142,20 @@
   },
   "rateFocusTube": {
     "message": "Valora FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "El Modo Concentración está apagado: los Ajustes no se aplican en YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "El Timer no tiene ninguna sesión en marcha: los Ajustes aún no se aplican."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Estás en un descanso: los Ajustes están en pausa hasta que termine."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Estás fuera del horario activo: los Ajustes no se aplican ahora mismo."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Cambiar a Siempre"
   }
 }

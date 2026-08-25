@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ను రేట్ చేయండి"
+  },
+  "modeGateBannerOff": {
+    "message": "ఫోకస్ మోడ్ ఆఫ్ చేయబడింది: సెట్టింగ్‌లు YouTubeలో వర్తించడం లేదు."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "టైమర్ సెషన్ ఏదీ నడవడం లేదు: సెట్టింగ్‌లు ఇంకా వర్తించలేదు."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "మీరు విరామంలో ఉన్నారు: అది ముగిసే వరకు సెట్టింగ్‌లు పాజ్ చేయబడ్డాయి."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "మీరు మీ షెడ్యూల్ యొక్క యాక్టివ్ సమయానికి వెలుపల ఉన్నారు: సెట్టింగ్‌లు ఇప్పుడు వర్తించడం లేదు."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "ఎల్లప్పుడూకి మారండి"
   }
 }

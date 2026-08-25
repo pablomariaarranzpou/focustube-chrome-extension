@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ಅನ್ನು ರೇಟ್ ಮಾಡಿ"
+  },
+  "modeGateBannerOff": {
+    "message": "ಫೋಕಸ್ ಮೋಡ್ ಆಫ್ ಆಗಿದೆ: ಸೆಟ್ಟಿಂಗ್‌ಗಳು YouTube ನಲ್ಲಿ ಅನ್ವಯವಾಗುವುದಿಲ್ಲ."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "ಟೈಮರ್‌ನ ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲ: ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಇನ್ನೂ ಅನ್ವಯವಾಗಿಲ್ಲ."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "ನೀವು ವಿರಾಮದಲ್ಲಿದ್ದೀರಿ: ಅದು ಮುಗಿಯುವವರೆಗೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ವಿರಾಮದಲ್ಲಿವೆ."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "ನಿಮ್ಮ ವೇಳಾಪಟ್ಟಿಯ ಸಕ್ರಿಯ ಸಮಯದ ಹೊರಗಿದ್ದೀರಿ: ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಈಗ ಅನ್ವಯವಾಗುತ್ತಿಲ್ಲ."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "ಯಾವಾಗಲೂಗೆ ಬದಲಿಸಿ"
   }
 }

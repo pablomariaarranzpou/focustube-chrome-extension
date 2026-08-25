@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Ocenite FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Način osredotočenosti je izklopljen: Nastavitve se na YouTubu ne uporabljajo."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Časovnik nima aktivne seje: Nastavitve se še ne uporabljajo."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Na odmoru ste: Nastavitve so v premoru, dokler se ne konča."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Ste izven aktivnih ur svojega Urnika: Nastavitve se trenutno ne uporabljajo."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Preklopi na Vedno"
   }
 }

@@ -249,6 +249,59 @@
       display: block;
     }
 
+    /* ── Mode gate banner: visible on BOTH tabs (sits above the tab panes,
+       not inside one) whenever the mode gate is closed, so a toggle flipped
+       on the Settings tab doesn't silently do nothing with no clue why. ── */
+    .mode-gate-banner {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin-bottom: 1rem;
+    }
+    /* Author styles beat the UA stylesheet's [hidden]{display:none} no
+       matter the specificity - display:flex above would otherwise show the
+       banner even while its `hidden` attribute is set. This compound
+       selector out-specifies the base rule so hidden actually wins. */
+    .mode-gate-banner[hidden] {
+      display: none;
+    }
+    .mode-gate-banner svg {
+      flex-shrink: 0;
+      margin-top: 1px;
+      color: #b45309;
+    }
+    .mode-gate-banner span {
+      flex: 1;
+      font-size: 0.75rem;
+      line-height: 1.35;
+      color: #92400e;
+    }
+    .mode-gate-banner button {
+      /* No white-space: nowrap - a couple of locales' "Switch to Always"
+         translation is long enough that forcing one line would either
+         overflow the 400px popup or squeeze the message text next to it
+         down to nothing. Wrapping onto a second line is the safe outcome;
+         the popup grows to fit, same as every other free-flowing label. */
+      flex-shrink: 0;
+      max-width: 40%;
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #f9737a;
+      text-decoration: underline;
+      text-align: right;
+      cursor: pointer;
+    }
+    .mode-gate-banner button:hover {
+      color: #ef4444;
+    }
+
     /* ── Focus Mode: single mode selector (Off / Always / Timer / Schedule) ── */
     .mode-selector {
       display: flex;
@@ -358,6 +411,23 @@
         <button type="button" class="tab-button" data-tab="settingsTabPane">
           <span class="i18n" data-message="tabSettings"></span>
         </button>
+      </div>
+
+      <!-- Shown on both tabs whenever the mode gate is closed - Off, Timer with
+           no session running, or Schedule outside every window - the exact
+           three cases the support page's first diagnostic step walks through.
+           Someone toggling things on the Settings tab has no way to see the
+           Mode tab is what's actually suppressing them; this puts the reason
+           right where the confusion happens instead of relying on them to
+           find the support page. Built by renderModeGateBanner() in
+           PopupController.js - text and the visible mode both come from
+           there, this is just the empty shell. -->
+      <div id="modeGateBanner" class="mode-gate-banner" hidden>
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 9v4M12 16.5v.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>
+        </svg>
+        <span id="modeGateBannerText"></span>
+        <button type="button" id="modeGateBannerAction"></button>
       </div>
 
       <!-- Settings tab: WHAT gets hidden. The Mode tab decides WHEN these apply -

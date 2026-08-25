@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Ohodnoťte FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Režim soustředění je vypnutý: Nastavení se na YouTube neuplatňuje."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Časovač nemá spuštěné žádné sezení: Nastavení se zatím neuplatňuje."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Máte přestávku: Nastavení je pozastaveno, dokud neskončí."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Jste mimo aktivní hodiny Rozvrhu: Nastavení se teď neuplatňuje."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Přepnout na Vždy"
   }
 }

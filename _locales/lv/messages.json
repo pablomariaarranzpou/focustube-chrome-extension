@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Novērtējiet FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Fokusa režīms ir izslēgts: Iestatījumi YouTube netiek piemēroti."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Taimerim nav aktīvas sesijas: Iestatījumi vēl netiek piemēroti."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Jums ir pārtraukums: Iestatījumi ir pauzēti, līdz tas beigsies."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Esat ārpus Grafika aktīvajām stundām: Iestatījumi pašlaik netiek piemēroti."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Pārslēgties uz Vienmēr"
   }
 }

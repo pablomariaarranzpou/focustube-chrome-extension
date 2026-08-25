@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ને રેટ કરો"
+  },
+  "modeGateBannerOff": {
+    "message": "ફોકસ મોડ બંધ છે: સેટિંગ્સ YouTube પર લાગુ થતાં નથી."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "ટાઈમરનું કોઈ સત્ર ચાલી રહ્યું નથી: સેટિંગ્સ હજુ લાગુ થયાં નથી."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "તમે વિરામમાં છો: સેટિંગ્સ પૂરું ન થાય ત્યાં સુધી અટકેલાં છે."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "તમે તમારા શેડ્યૂલના સક્રિય કલાકોની બહાર છો: સેટિંગ્સ અત્યારે લાગુ થતાં નથી."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "હંમેશા પર સ્વિચ કરો"
   }
 }

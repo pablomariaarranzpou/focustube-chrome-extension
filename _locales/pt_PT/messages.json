@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Avalia o FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "O Modo Foco está desligado: as Definições não são aplicadas ao YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "O Temporizador não tem nenhuma sessão em curso: as Definições ainda não são aplicadas."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Está numa pausa: as Definições ficam suspensas até esta terminar."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Está fora do horário ativo do seu Horário: as Definições não são aplicadas neste momento."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Mudar para Sempre"
   }
 }

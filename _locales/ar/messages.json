@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "قيّم FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "وضع التركيز متوقف: لا تُطبَّق الإعدادات على YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "لا توجد جلسة مؤقت قيد التشغيل: لم تُطبَّق الإعدادات بعد."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "أنت في استراحة: الإعدادات متوقفة مؤقتًا حتى تنتهي."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "أنت خارج ساعات الجدول النشطة: لا تُطبَّق الإعدادات الآن."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "التبديل إلى دائمًا"
   }
 }

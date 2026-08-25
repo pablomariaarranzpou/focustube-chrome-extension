@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Оцените FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Режим фокусировки выключен: Настройки не применяются на YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "У Таймера нет активного сеанса: Настройки пока не применяются."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "У вас перерыв: Настройки приостановлены до его окончания."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Вы вне активных часов Расписания: Настройки сейчас не применяются."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Переключиться на Всегда"
   }
 }

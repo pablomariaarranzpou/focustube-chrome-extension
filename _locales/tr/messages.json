@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube'u değerlendirin"
+  },
+  "modeGateBannerOff": {
+    "message": "Odak Modu kapalı: Ayarlar YouTube'a uygulanmıyor."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Zamanlayıcının çalışan bir oturumu yok: Ayarlar henüz uygulanmıyor."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Moladasınız: Ayarlar mola bitene kadar duraklatıldı."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Programınızın etkin saatleri dışındasınız: Ayarlar şu anda uygulanmıyor."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Her Zaman'a geç"
   }
 }

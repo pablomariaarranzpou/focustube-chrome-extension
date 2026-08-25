@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "Αξιολογήστε το FocusTube"
+  },
+  "modeGateBannerOff": {
+    "message": "Η Λειτουργία Εστίασης είναι ανενεργή: οι Ρυθμίσεις δεν εφαρμόζονται στο YouTube."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Δεν εκτελείται καμία περίοδος Χρονομέτρου: οι Ρυθμίσεις δεν έχουν εφαρμοστεί ακόμα."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Είστε σε διάλειμμα: οι Ρυθμίσεις είναι σε παύση μέχρι να τελειώσει."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Είστε εκτός των ενεργών ωρών του Προγράμματός σας: οι Ρυθμίσεις δεν εφαρμόζονται αυτή τη στιγμή."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Μετάβαση σε Πάντα"
   }
 }

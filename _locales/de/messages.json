@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube bewerten"
+  },
+  "modeGateBannerOff": {
+    "message": "Fokusmodus ist aus: Einstellungen werden auf YouTube nicht angewendet."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "Der Timer hat keine laufende Sitzung: Einstellungen werden noch nicht angewendet."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "Du machst Pause: Einstellungen sind pausiert, bis sie endet."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "Du bist außerhalb der aktiven Zeiten deines Zeitplans: Einstellungen werden gerade nicht angewendet."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "Zu Immer wechseln"
   }
 }

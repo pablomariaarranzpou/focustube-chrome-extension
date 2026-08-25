@@ -145,5 +145,20 @@
   },
   "rateFocusTube": {
     "message": "FocusTube ला रेट करा"
+  },
+  "modeGateBannerOff": {
+    "message": "फोकस मोड बंद आहे: सेटिंग्ज YouTube वर लागू होत नाहीत."
+  },
+  "modeGateBannerTimerIdle": {
+    "message": "टायमरचे कोणतेही सत्र सुरू नाही: सेटिंग्ज अजून लागू झालेली नाहीत."
+  },
+  "modeGateBannerTimerBreak": {
+    "message": "तुम्ही विश्रांतीत आहात: ती संपेपर्यंत सेटिंग्ज थांबवली आहेत."
+  },
+  "modeGateBannerScheduleOutside": {
+    "message": "तुम्ही तुमच्या वेळापत्रकाच्या सक्रिय वेळेबाहेर आहात: सेटिंग्ज सध्या लागू होत नाहीत."
+  },
+  "modeGateBannerSwitchToAlways": {
+    "message": "नेहमीवर स्विच करा"
   }
 }
