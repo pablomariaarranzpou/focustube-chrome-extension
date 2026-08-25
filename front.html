@@ -193,18 +193,6 @@
     }
     #rateLaterBtn:hover { background-color: #e5e7eb; }
 
-    /* ── Compact header ── */
-    #appHeader {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.5rem;
-    }
-    #appHeader img {
-      height: 34px;
-      width: auto;
-    }
-
     /* ── Permanent logo links row ── */
     #logoLinks {
       display: flex;
@@ -346,9 +334,11 @@
 
   <div class="flex justify-center items-center">
     <div class="p-8 bg-white shadow-md rounded-md extension-container">
-      <div id="appHeader">
-        <img src="logo.png" alt="Logo" />
-      </div>
+      <!-- The popup opens because someone just clicked the FocusTube toolbar
+           icon, so repeating the logo here told them nothing they didn't
+           already know - it just spent ~45px of a 400px-wide popup on
+           identity they'd already established. This row already carries
+           the same brand contact points (rate it, get help, see the code). -->
       <div id="logoLinks">
         <a id="rateUsPillLink" href="https://chromewebstore.google.com/detail/focustube/bolmmhkapeekgcjopdmnbmnhgaapbpdb/reviews" target="_blank">&#9733; Rate FocusTube</a>
         <a id="helpLink" href="https://focustube.io/support/" target="_blank">
@@ -435,7 +425,7 @@
                 class="toggle-input"
               />
               <div class="toggle-slider"></div>
-              <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="keepHistoryVisible"></span>
+              <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="keepHistoryVisible"></span>
             </label>
           </div>
           <label class="toggle-container">
@@ -458,7 +448,7 @@
                 checked
               />
               <div class="toggle-slider"></div>
-              <span class="ml-3 text-base font-medium text-gray-600 i18n" data-message="quickBlacklistButton"></span>
+              <span class="ml-3 text-lg font-medium text-gray-900 i18n" data-message="quickBlacklistButton"></span>
             </label>
           </div>
           <label class="toggle-container">
